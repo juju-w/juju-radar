@@ -5,7 +5,8 @@ from pathlib import Path
 from datetime import datetime,timezone
 
 def fetch(url,limit=25000000):
- req=urllib.request.Request(url,headers={'User-Agent':'Juju-Radar-Static-Updater','Accept':'application/vnd.github+json' if 'api.github.com/' in url else '*/*'})
+ accept='application/octet-stream' if '/releases/assets/' in url else 'application/vnd.github+json' if 'api.github.com/' in url else '*/*'
+ req=urllib.request.Request(url,headers={'User-Agent':'Juju-Radar-Static-Updater','Accept':accept})
  with urllib.request.urlopen(req,timeout=45) as r:
   data=r.read(limit+1)
   if len(data)>limit:raise ValueError('Response size limit exceeded')
@@ -25,10 +26,12 @@ def install(repo,root,state_dir):
   if current.get('release_id')==release['id']:print('Unchanged '+tag);return
   if current.get('release_id',0)>release['id']:raise ValueError('Refusing older release')
   assets={a['name']:a['browser_download_url'] for a in release['assets']}
+  asset_api={a['name']:a['url'] for a in release['assets']}
   for name in ['site.tar.gz','manifest.json']:
    expected='https://github.com/'+repo+'/releases/download/'+tag+'/'+name
    if assets.get(name)!=expected:raise ValueError('Missing or unexpected release asset')
-  manifest=json.loads(fetch(assets['manifest.json'],2000000));commit=manifest['commit']
+   if not re.fullmatch(re.escape('https://api.github.com/repos/'+repo+'/releases/assets/')+r'\d+',asset_api.get(name,'')):raise ValueError('Unexpected asset API URL')
+  manifest=json.loads(fetch(asset_api['manifest.json'],2000000));commit=manifest['commit']
   if not re.fullmatch(r'[0-9a-f]{40}',commit) or release['target_commitish']!=commit:raise ValueError('Release commit mismatch')
   files=manifest['files']
   if not isinstance(files,dict) or not 1<=len(files)<=5000:raise ValueError('Invalid manifest')
@@ -36,7 +39,7 @@ def install(repo,root,state_dir):
    path=Path(name)
    if path.is_absolute() or '..' in path.parts or any(p.startswith('.') for p in path.parts) or not re.fullmatch(r'[A-Za-z0-9_./-]+',name) or path.suffix not in ['.html','.css','.js','.json','.xml','.ris'] or not re.fullmatch(r'[0-9a-f]{64}',digest):raise ValueError('Unsafe manifest path or digest')
   if not all(p in files for p in ['index.html','feed.xml','papers.xml','catalog.json']):raise ValueError('Incomplete website')
-  archive=fetch(assets['site.tar.gz'])
+  archive=fetch(asset_api['site.tar.gz'])
   if hashlib.sha256(archive).hexdigest()!=manifest['archive_sha256']:raise ValueError('Archive hash mismatch')
   release_dir=state_dir/'releases'/tag;release_dir.mkdir(parents=True,exist_ok=True)
   with tempfile.TemporaryDirectory(dir=state_dir) as tmp:
