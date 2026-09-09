@@ -5,7 +5,7 @@ from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from email.utils import format_datetime
 from xml.etree import ElementTree as ET
-ROOT=Path(__file__).resolve().parents[2]; SITE=ROOT/'site'; BASE='https://happy.asteronline.cn/juju-radar/'; PREFIX='/juju-radar/'
+ROOT=Path(__file__).resolve().parents[2]; SITE=ROOT/'site'; BASE='https://www.asteronline.cn/juju-radar/'; PREFIX='/juju-radar/'
 E=lambda x:html.escape(str(x),quote=True)
 FILES=['article.md','issue.json','sources.json','zotero-papers.json']
 def digest(folder):
@@ -53,7 +53,7 @@ def topics(text):
  result=[k for k,vs in patterns.items() if any(v.lower() in text.lower() for v in vs)]
  return result or ['其他']
 def slug(x):return hashlib.sha256(x.encode()).hexdigest()[:16]
-def jsonwrite(p,d):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+def jsonwrite(p,d):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(d,ensure_ascii=False,indent=2).replace('https://happy.asteronline.cn','https://www.asteronline.cn')+'\n')
 def ris(p):
  def f(k,v):return k+'  - '+' '.join(str(v).splitlines())+'\n' if v else ''
  s=f('TY',{'report':'RPRT','journalArticle':'JOUR'}.get(p.get('item_type'),'UNPB'))+f('TI',p['title'])+f('UR',p['url'])+f('DO',p.get('doi'))+f('DA',p.get('published_date'))+f('JO',p.get('publicationTitle'))
@@ -80,7 +80,7 @@ def build(preview=False):
  def shell(title,body,canonical='',script=''):
   return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(title)} · Juju Radar</title><meta name="description" content="每日 AI 动态、论文和开源项目，附中文解读与原始链接。"><link rel="icon" href="data:,"><link rel="canonical" href="{BASE+canonical}"><link rel="stylesheet" href="{PREFIX}assets/site-{cv}.css"><link rel="alternate" type="application/rss+xml" title="Juju Radar 每日精选" href="{BASE}feed.xml"><link rel="alternate" type="application/rss+xml" title="Juju Radar 论文" href="{BASE}papers.xml"></head><body><div class="wrap"><header><a class="brand" href="{PREFIX}">Juju Radar</a><nav aria-label="主导航"><a data-view="daily" href="{PREFIX}">精选</a><a data-view="library" href="{PREFIX}papers/">论文库</a><a href="{PREFIX}archive/">往期</a><a href="{PREFIX}subscribe/">订阅</a></nav></header>{body}<footer><div class="footer-main"><span>内容由 AI 辅助整理 · 原始来源见各条链接</span><a href="{PREFIX}subscribe/">RSS 与文献导出</a></div>{registration_html}</footer></div>{script}</body></html>'''
  def save(path,text):
-  p=out/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text)
+  p=out/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text.replace('https://happy.asteronline.cn','https://www.asteronline.cn'))
  issues=[];entries=[];papers={};projects={}
  for folder in folders:
   date=folder.name;article=(folder/'article.md').read_text();info=json.loads((folder/'issue.json').read_text());sources=json.loads((folder/'sources.json').read_text())['sources']
@@ -156,8 +156,8 @@ def build(preview=False):
   ET.SubElement(ch,'{http://www.w3.org/2005/Atom}link',href=BASE+filename,rel='self',type='application/rss+xml')
   for item in items:
    node=ET.SubElement(ch,'item')
-   for k in ['title','link','description','pubDate']:ET.SubElement(node,k).text=item[k]
-   ET.SubElement(node,'guid',isPermaLink='true').text=item['link']
+   for k in ['title','link','description','pubDate']:ET.SubElement(node,k).text=item[k].replace('https://happy.asteronline.cn','https://www.asteronline.cn')
+   ET.SubElement(node,'guid',isPermaLink='true').text=item['link'].replace('https://www.asteronline.cn','https://happy.asteronline.cn')
   ET.ElementTree(root).write(out/filename,encoding='utf-8',xml_declaration=True)
  def pub(date):return format_datetime(datetime.fromisoformat(date).replace(hour=9,tzinfo=timezone(timedelta(hours=8))))
  feed('feed.xml','Juju Radar 每日精选',[{'title':i['title'],'link':BASE+'read/'+i['date']+'/','description':md((ROOT/'issues'/i['date']/'article.md').read_text().split('## 原始资料')[0]),'pubDate':pub(i['date'])} for i in issues])

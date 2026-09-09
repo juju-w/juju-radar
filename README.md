@@ -2,11 +2,11 @@
 
 每日 AI 动态、论文和开源项目，附中文解读与原始链接。
 
-**网站：[happy.asteronline.cn/juju-radar](https://happy.asteronline.cn/juju-radar/)**
+**网站：[www.asteronline.cn/juju-radar](https://www.asteronline.cn/juju-radar/)**
 
-- [每日精选 RSS](https://happy.asteronline.cn/juju-radar/feed.xml)
-- [论文 RSS](https://happy.asteronline.cn/juju-radar/papers.xml)
-- [Zotero 文献导出](https://happy.asteronline.cn/juju-radar/papers.ris)
+- [每日精选 RSS](https://www.asteronline.cn/juju-radar/feed.xml)
+- [论文 RSS](https://www.asteronline.cn/juju-radar/papers.xml)
+- [Zotero 文献导出](https://www.asteronline.cn/juju-radar/papers.ris)
 
 ## 内容
 
