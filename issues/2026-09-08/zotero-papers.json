@@ -1,0 +1,311 @@
+{
+  "issue_date": "2026-09-08",
+  "papers": [
+    {
+      "id": "arxiv:2609.04611",
+      "title": "τ^τ-Bench: An Environment for End-To-End, Realistic Agent Construction",
+      "url": "https://arxiv.org/abs/2609.04611",
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2609.04611",
+      "published_date": "2026-09-04",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Quan",
+          "lastName": "Shi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Keshav",
+          "lastName": "Dhandhania"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Karthik",
+          "lastName": "Narasimhan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Victor",
+          "lastName": "Barres"
+        }
+      ],
+      "authors": [
+        "Shi, Quan",
+        "Dhandhania, Keshav",
+        "Narasimhan, Karthik",
+        "Barres, Victor"
+      ],
+      "tags": [
+        "Agent/Coding",
+        "待阅读"
+      ],
+      "note": "以下为2026-09-08期已核验稿件的阅读笔记，保留当时的证据与判断，不代表后续研究已确认。\n\n🛠️ 客服能跑起来，不代表能处理好客户的问题\n\nAgent / Coding Agent · **9/10｜建议深挖**\n\nSierra 与普林斯顿大学的 τ^τ-Bench，把“开发一个客服 Agent”本身做成了测试。模型拿到的不是整理好的需求文档，而是业务记录、旧代码、生产接口和一个可以追问的模拟客户。它要先弄清规则，再在模型选择和服务成本限制内做出产品，最后接受未见过的模拟用户测试。\n\n在覆盖四个领域的 53 项构建任务上，论文中最好的配置是 Claude Opus 5 配合 Claude Code，最终通过率为 **23.9%**；专家编写的参考方案为 82.2%。这个差距不能简单归结为“代码写得差”。作者检查执行记录后发现，模型常常搜索几下就开始实现，很少向客户追问，也很少认真比较不同架构。\n\n分项比总分更有意思：同一配置在零售领域达到 72.8%，在银行领域却只有 5.9%。后者的规则材料复杂得多。这提醒我们，评估一个 Agent 能否上线，应该把遗漏的需求、接口边界和业务例外也放进验收。只看它自己的测试全部通过，容易高估交付质量。\n\n这些都是作者在特定任务、预算与模拟用户下的结果，不能解释成现实中所有 AI 客服只有四分之一能用。代码库已于 9 月 4 日公开；论文进入 9 月 7 日的 arXiv 公告，本期重点读它披露的失败分析。\n\n[论文与完整实验](https://arxiv.org/html/2609.04611v1) · [代码与任务](https://github.com/sierra-research/hyper-tau-bench)\n\n入选理由：新公告论文披露真实构建任务与失败机制；开源已在9/4，不当成9/7新代码。\n\n论文原始日期：2026-09-04；本期归档日期：2026-09-08。\n本期资料：https://happy.asteronline.cn/juju-radar/2026-09-08/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.05295",
+      "title": "RISE: Recursive Improvement via Self-Extrapolating Policy Distillation",
+      "url": "https://arxiv.org/abs/2609.05295",
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2609.05295",
+      "published_date": "2026-09-04",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yang",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Semih",
+          "lastName": "Yavuz"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shafiq",
+          "lastName": "Joty"
+        }
+      ],
+      "authors": [
+        "Li, Yang",
+        "Yavuz, Semih",
+        "Joty, Shafiq"
+      ],
+      "tags": [
+        "训练方法",
+        "待阅读"
+      ],
+      "note": "以下为2026-09-08期已核验稿件的阅读笔记，保留当时的证据与判断，不代表后续研究已确认。\n\n🧠 RISE：沿着刚刚学会的方向，再往前走一点\n\n模型训练 · **8.5/10｜建议深挖**\n\n训练模型时，如果只告诉它整道题对不对，反馈往往太粗；找一个更强的模型当老师，又多了一层成本和依赖。RISE 的做法是比较模型当前版本与较早版本，提取这段训练带来的变化，再沿着变化方向外推，构造一个临时的老师，把更细的逐词反馈教回当前模型。\n\n可以把它理解为：先靠能验算的答案确定进步方向，再用这个方向改善推理过程中的选择。老师会随训练更新，所以不必一直追着一个固定的外部模型学。这里的新意是把过去的训练过程变成新的监督信号，而不是让模型反复夸奖自己的答案。\n\n作者在 1.7B 至 8B 规模的模型上，测试了数学、科学知识、代码和多轮任务。以 Qwen3-8B 的一组实验为例，数学平均分从 GRPO 基线的 60.0 提高到 62.7。但额外训练并不免费，论文报告的总耗时约为 GRPO 的 1.3–1.6 倍；奖励如果有漏洞，外推也可能放大错误方向。它是一种值得复现的训练方法，还远谈不上证明模型能无限自我改进。\n\n[RISE 论文](https://arxiv.org/html/2609.05295v1)\n\n入选理由：自身训练轨迹构造老师，机制不同于外部教师蒸馏；有实验和计算开销。\n\n论文原始日期：2026-09-04；本期归档日期：2026-09-08。\n本期资料：https://happy.asteronline.cn/juju-radar/2026-09-08/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.05416",
+      "title": "WorldSculpt: Generating Compositional Worlds from Grounded Videos",
+      "url": "https://arxiv.org/abs/2609.05416",
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2609.05416",
+      "published_date": "2026-09-04",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Muyao",
+          "lastName": "Niu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jixuan",
+          "lastName": "He"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruihan",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lian",
+          "lastName": "Fu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yonghao",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zheng-Hui",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yifan",
+          "lastName": "Zhan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fengbo",
+          "lastName": "Lan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yongtao",
+          "lastName": "Ge"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yinqiang",
+          "lastName": "Zheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kaipeng",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhixiang",
+          "lastName": "Wang"
+        }
+      ],
+      "authors": [
+        "Niu, Muyao",
+        "He, Jixuan",
+        "Yu, Ruihan",
+        "Fu, Lian",
+        "Yu, Yonghao",
+        "Huang, Zheng-Hui",
+        "Zhan, Yifan",
+        "Lan, Fengbo",
+        "Ge, Yongtao",
+        "Zheng, Yinqiang",
+        "Zhang, Kaipeng",
+        "Wang, Zhixiang"
+      ],
+      "tags": [
+        "3D生成/仿真",
+        "待阅读"
+      ],
+      "note": "以下为2026-09-08期已核验稿件的阅读笔记，保留当时的证据与判断，不代表后续研究已确认。\n\n🪑 WorldSculpt：把生成的房间拆成能单独取用的物体\n\n3D 生成 / 仿真 · **8.5/10｜持续观察**\n\n生成一个看起来完整的房间，和拿到一套可以继续编辑的 3D 资产，仍有距离。很多场景模型把物体融在一起，椅子和花瓶虽然看得见，却不方便单独选中、移动或放进仿真环境。WorldSculpt 针对的就是这个问题：结合多视角图像，逐个生成物体网格，再把它们放回同一个空间坐标系。\n\n它借用了 Pixal3D 已经学到的单物体生成能力，增加多视角信息的融合。值得注意的是，模型微调时只用单个物体，测试时却能处理包含数百个物体、相互遮挡的复杂场景。这条路线的价值，在于让生成结果更接近游戏、内容制作和机器人仿真真正需要的资产形式。\n\n不过，输入并非随手拍一段视频就够：方法需要相机位姿、物体掩码和 3D 包围盒等信息，完全看不见的部分也仍靠推断。论文中的几何指标优势来自作者实验，不能当作物理仿真已经可靠的证明。仓库可见推理代码及权重入口；9 月 7 日的 README 更新也不应另算一次重大发布。\n\n[WorldSculpt 论文](https://arxiv.org/html/2609.05416v1) · [项目代码](https://github.com/AlayaLab/WorldSculpt)\n\n入选理由：单物体训练迁移复杂场景，输出独立可用网格；不将普通commit重报为发布。\n\n论文原始日期：2026-09-04；本期归档日期：2026-09-08。\n本期资料：https://happy.asteronline.cn/juju-radar/2026-09-08/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "doi:10.1038/s41587-026-03286-y",
+      "title": "Integration of proteomic aging clocks in a phase 2a clinical trial supports simultaneous geroprotective assessment",
+      "url": "https://www.nature.com/articles/s41587-026-03286-y",
+      "doi": "10.1038/s41587-026-03286-y",
+      "pdf_url": "https://www.nature.com/articles/s41587-026-03286-y.pdf",
+      "published_date": "2026-09-07",
+      "item_type": "journalArticle",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Alex",
+          "lastName": "Zhavoronkov"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fedor",
+          "lastName": "Galkin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shan",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Feng",
+          "lastName": "Ren"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Alex",
+          "lastName": "Aliper"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mikhail",
+          "lastName": "Durymanov"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Denis",
+          "lastName": "Sidorenko"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hui",
+          "lastName": "Cui"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jing-Dong J.",
+          "lastName": "Han"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hao",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaodong",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zuojun",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Christoph",
+          "lastName": "Kuppe"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "M.",
+          "lastName": "Austin Argentieri"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kejun",
+          "lastName": "Ying"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ludger J. E.",
+          "lastName": "Goeminne"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mahdi",
+          "lastName": "Moqri"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Alexander",
+          "lastName": "Tyshkovskiy"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Vadim N.",
+          "lastName": "Gladyshev"
+        }
+      ],
+      "authors": [
+        "Zhavoronkov, Alex",
+        "Galkin, Fedor",
+        "Chen, Shan",
+        "Ren, Feng",
+        "Aliper, Alex",
+        "Durymanov, Mikhail",
+        "Sidorenko, Denis",
+        "Cui, Hui",
+        "Han, Jing-Dong J.",
+        "Xu, Hao",
+        "Liu, Xiaodong",
+        "Xu, Zuojun",
+        "Kuppe, Christoph",
+        "Austin Argentieri, M.",
+        "Ying, Kejun",
+        "Goeminne, Ludger J. E.",
+        "Moqri, Mahdi",
+        "Tyshkovskiy, Alexander",
+        "Gladyshev, Vadim N."
+      ],
+      "tags": [
+        "AI for Science/生物医药",
+        "待阅读"
+      ],
+      "note": "以下为2026-09-08期已核验稿件的阅读笔记，保留当时的证据与判断，不代表后续研究已确认。\n\n🧪 AI 设计的药物，出现了值得追踪的衰老指标变化\n\nAI for Science / 生物医药 · **8.5/10｜持续观察**\n\n英矽智能的候选药 rentosertib 原本用于研究特发性肺纤维化。9 月 7 日发表于《Nature Biotechnology》的新分析，用六种蛋白质衰老时钟，重新检查了一项 12 周二期早期试验中 42 名患者的血液蛋白数据。接受治疗的组中，六种模型预测的生物学年龄都呈下降方向。\n\n“衰老时钟”可以理解为根据生物指标估计年龄或相关风险的模型。多个不同模型给出一致方向，比只挑一个指标更值得追踪。对 AI 制药而言，这项工作也提供了一种研究思路：在治疗某种疾病的试验中，同时观察与衰老有关的变化，尽量从难得的人体数据里获得更多信息。\n\n但**预测年龄下降，还不能证明人变年轻或活得更久**。这只是小样本的探索性分析，原试验的蛋白质数据子集也不等于一场独立的抗衰老临床试验。论文明确指出，现有数据无法充分分开疾病改善与衰老变化的影响。值得关注的是后续验证，而不是把它当成已经成功的抗衰老药。\n\n[原始论文与方法](https://www.nature.com/articles/s41587-026-03286-y)\n\n入选理由：新发表人体数据探索分析，有六时钟比较及明确的疾病/衰老不可充分区分局限。\n\n论文原始日期：2026-09-07；本期归档日期：2026-09-08。\n本期资料：https://happy.asteronline.cn/juju-radar/2026-09-08/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "publicationTitle": "Nature Biotechnology",
+      "ISSN": "1546-1696"
+    }
+  ]
+}

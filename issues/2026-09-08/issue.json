@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-08",
+  "kind": "daily",
+  "sources": [
+    {
+      "title": "τ^τ-Bench：端到端构建客服Agent",
+      "url": "https://arxiv.org/html/2609.04611v1",
+      "category": "Agent/Coding",
+      "score": 9,
+      "arxiv_submitted_at": "2026-09-04T01:23:47Z",
+      "announced_at": "2026-09-07",
+      "artifact_released_at": "2026-09-04T06:49:00Z",
+      "window_status": "new_paper_announcement_date_only",
+      "reason": "新公告论文披露真实构建任务与失败机制；开源已在9/4，不当成9/7新代码。",
+      "key_claims": [
+        "53构建任务四领域；最佳受测配置模拟通过率23.9%，专家参考82.2%。",
+        "领域不均衡：零售72.8%、银行5.9%；作者报告。"
+      ],
+      "event_time": "2026-09-07",
+      "published_at": null,
+      "window_uncertain": true,
+      "community_featured_on": "2026-09-07"
+    },
+    {
+      "title": "RISE：自外推策略蒸馏",
+      "url": "https://arxiv.org/html/2609.05295v1",
+      "category": "训练方法",
+      "score": 8.5,
+      "arxiv_submitted_at": "2026-09-04T15:47:51Z",
+      "announced_at": "2026-09-07",
+      "artifact_released_at": null,
+      "window_status": "new_paper_announcement_date_only",
+      "reason": "自身训练轨迹构造老师，机制不同于外部教师蒸馏；有实验和计算开销。",
+      "key_claims": [
+        "模型规模1.7B–8B；Qwen3-8B math avg 60.0→62.7。",
+        "1.3–1.6倍GRPO墙钟时间；依赖奖励质量与可外推轨迹。"
+      ],
+      "event_time": "2026-09-07",
+      "published_at": null,
+      "window_uncertain": true,
+      "community_featured_on": "2026-09-07"
+    },
+    {
+      "title": "WorldSculpt：多物体可组合3D场景",
+      "url": "https://arxiv.org/html/2609.05416v1",
+      "category": "3D生成/仿真",
+      "score": 8.5,
+      "arxiv_submitted_at": "2026-09-04T17:59:35Z",
+      "announced_at": "2026-09-07",
+      "artifact_released_at": null,
+      "window_status": "new_paper_announcement_date_only",
+      "reason": "单物体训练迁移复杂场景，输出独立可用网格；不将普通commit重报为发布。",
+      "key_claims": [
+        "多视角条件适配Pixal3D，单物体微调、数百物体场景实验。",
+        "需要位姿、实例掩码、3D包围盒；不保证遮挡几何或物理正确。"
+      ],
+      "event_time": "2026-09-07",
+      "published_at": null,
+      "window_uncertain": true,
+      "community_featured_on": "2026-09-07"
+    },
+    {
+      "title": "rentosertib试验的蛋白质衰老时钟新分析",
+      "url": "https://www.nature.com/articles/s41587-026-03286-y",
+      "category": "AI for Science/生物医药",
+      "score": 8.5,
+      "published_at": "2026-09-07",
+      "announced_at": "2026-09-07T09:42:00Z",
+      "window_status": "in_window",
+      "reason": "新发表人体数据探索分析，有六时钟比较及明确的疾病/衰老不可充分区分局限。",
+      "key_claims": [
+        "12周原二期早期试验中42人蛋白质子集；原试验71人。",
+        "六模型方向一致，但不证明延寿或健康人抗衰老效果。"
+      ],
+      "event_time": "2026-09-07T09:42:00Z",
+      "window_uncertain": false,
+      "community_featured_on": null
+    },
+    {
+      "title": "最高法发布涉AI纠纷审理意见",
+      "url": "https://www.court.gov.cn/zixun/xiangqing/511101.html",
+      "category": "治理/应用边界",
+      "score": 8.5,
+      "published_at": "2026-09-07T19:22:29+08:00",
+      "announced_at": "2026-09-07",
+      "window_status": "in_window",
+      "reason": "有24条原始规则文本，影响换脸拟声、训练信息处理与应用责任；不是泛政策口号。",
+      "key_claims": [
+        "责任认定结合场景自主性风险预防与控制能力。",
+        "换脸拟声与训练个人信息有不同适用条件，不能泛化免责或担责。"
+      ],
+      "event_time": "2026-09-07",
+      "window_uncertain": false,
+      "community_featured_on": null
+    }
+  ]
+}

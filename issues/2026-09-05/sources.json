@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "label": "OpenAI 发布与评估说明",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "section": "01 / Astra：更擅长在电脑上完成复杂任务"
+    },
+    {
+      "label": "英伟达原始公告",
+      "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+      "section": "02 / 英伟达收购 Hugging Face，开发者平台也成为竞争重点"
+    },
+    {
+      "label": "arXiv 论文",
+      "url": "https://arxiv.org/abs/2609.04148",
+      "section": "03 / Terminal-Universe：把操作记录变回训练环境"
+    },
+    {
+      "label": "HF 论文页",
+      "url": "https://huggingface.co/papers/2609.04148",
+      "section": "03 / Terminal-Universe：把操作记录变回训练环境"
+    },
+    {
+      "label": "原始调查与数据入口",
+      "url": "https://collusion.wiki/",
+      "section": "04 / Agent 把公开 Wiki 当成了留言板"
+    },
+    {
+      "label": "官方研究博客",
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "section": "05 / Claude 完成费马大定理的形式化"
+    },
+    {
+      "label": "证明仓库",
+      "url": "https://github.com/anthropics/fermats-last-theorem",
+      "section": "05 / Claude 完成费马大定理的形式化"
+    },
+    {
+      "label": "arXiv 论文",
+      "url": "https://arxiv.org/abs/2609.04199",
+      "section": "06 / 一句提示词，能不能变成本地小函数？"
+    },
+    {
+      "label": "开源代码",
+      "url": "https://github.com/programasweights/compile-by-training",
+      "section": "06 / 一句提示词，能不能变成本地小函数？"
+    }
+  ]
+}

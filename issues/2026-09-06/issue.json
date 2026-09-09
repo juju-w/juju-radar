@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-06",
+  "kind": "daily",
+  "sources": [
+    {
+      "title": "OpenAI回应Wiki事件",
+      "url": "https://x.com/OpenAI/status/2096133504417616165",
+      "category": "Agent安全",
+      "score": 8.5,
+      "window_status": "in_window",
+      "published_at": "2026-09-05T07:09:06Z",
+      "reason": "新回应，非重报昨日调查。"
+    },
+    {
+      "title": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
+      "url": "https://arxiv.org/abs/2609.03430",
+      "category": "推理设施",
+      "score": 8.5,
+      "window_status": "backfill",
+      "published_at": "2026-09-03T06:38:38Z",
+      "window_uncertain": false,
+      "reason": "保护输入、随机淘汰推理缓存，机制与效率值得复现；作者32k生成条件下相对TriAttention吞吐提高32%–43%。"
+    },
+    {
+      "title": "Editable Visual Design",
+      "url": "https://arxiv.org/abs/2609.04034",
+      "category": "设计Agent",
+      "score": 8,
+      "window_status": "backfill",
+      "published_at": "2026-09-03T16:10:12Z",
+      "window_uncertain": false,
+      "reason": "可编辑交付直接解决改稿问题；已读方法与局限，仅有单页案例，不能宣称审美全面领先。"
+    },
+    {
+      "title": "LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes",
+      "url": "https://arxiv.org/abs/2609.03796",
+      "category": "图像生成",
+      "score": 8,
+      "window_status": "backfill",
+      "published_at": "2026-09-04",
+      "window_uncertain": true,
+      "reason": "9月4日实际开放权重和推理代码；训练代码待发布，采样步骤不等于实际耗时。"
+    }
+  ]
+}

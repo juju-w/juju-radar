@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-09",
+  "kind": "daily",
+  "sources": [
+    {
+      "title": "OpenAI 发布 Navier–Stokes 证明及相关研究过程争议",
+      "url": "https://openai.com/index/navier-stokes-solution/",
+      "category": "AI for Science / Agent",
+      "score": 9.5,
+      "key_claims": [
+        "公布有光滑外力三维不可压缩Navier–Stokes证明材料和Lean形式化。",
+        "内部模型与约一万个并发Agent；人类参与研究方向、算力分配和结果整合。",
+        "Buckmaster的异议需与OpenAI说明对读；声明不等于数据窃取证据。"
+      ],
+      "reason": "实质研究材料和过程说明首次公开，远超9/7的一般研究加速宣言；重大能力与科研信任问题。",
+      "related_urls": [
+        "https://cims.nyu.edu/~tristanb/statement.pdf",
+        "https://github.com/openai/NavierStokesAndEuler",
+        "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf"
+      ],
+      "event_time": "2026-09-08",
+      "published_at": "2026-09-08",
+      "window_uncertain": true
+    },
+    {
+      "title": "AlphaGenome Atlas 预计算90亿种单碱基变异",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "category": "生物信息 / AI for Science",
+      "score": 9,
+      "key_claims": [
+        "90亿种单碱基变异的模型预测，不是患者样本或90亿项实验。",
+        "调控效应结合蛋白质变异效应帮助筛选；学术非商业可用。"
+      ],
+      "reason": "模型推理产品化为可重复查询的科研基础资料，有明确用途与开放入口。",
+      "event_time": "2026-09-08",
+      "published_at": "2026-09-08",
+      "window_uncertain": true
+    },
+    {
+      "title": "Images 2.5 局部编辑；Runway进入Adobe时间线",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "category": "视觉生成 / 创作工具",
+      "score": 8.5,
+      "key_claims": [
+        "参考图忠实度、多轮一致性、局部编辑为重点。",
+        "官方最高50%延迟降低，无独立实测。",
+        "Runway新插件可直接放回Premiere/AE时间线，不当作同一家产品。"
+      ],
+      "reason": "与实际改图返工直接相关；结合当日Runway说明创作流程变化，不是仅凭小版本号入选。",
+      "related_urls": [
+        "https://runway.com/news/company-news/runway-for-adobe"
+      ],
+      "event_time": "2026-09-08",
+      "published_at": "2026-09-08",
+      "window_uncertain": true
+    },
+    {
+      "title": "小鹏IRON产线运行与量产交付时间表",
+      "url": "https://www.xpeng.com/news/01a080371029a057bc8e8a02a2c6012b",
+      "category": "机器人 / 制造",
+      "score": 8.5,
+      "key_claims": [
+        "产线投入运行；官方核心制造工序自动化率>80%。",
+        "计划2026年底量产，2027年发布交付；尚非规模交付。"
+      ],
+      "reason": "机器人从样机展示推进制造环节，有时间表和工艺信息，但保留公司自报局限。",
+      "event_time": "2026-09-08",
+      "published_at": "2026-09-08",
+      "window_uncertain": true
+    }
+  ]
+}

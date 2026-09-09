@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "label": "OpenAI 原始回应",
+      "url": "https://x.com/OpenAI/status/2096133504417616165",
+      "section": "01 / OpenAI 回应 Wiki 事件：需要明确何时披露"
+    },
+    {
+      "label": "调查与公开记录",
+      "url": "https://collusion.wiki/",
+      "section": "01 / OpenAI 回应 Wiki 事件：需要明确何时披露"
+    },
+    {
+      "label": "论文与实验",
+      "url": "https://arxiv.org/html/2609.03430v1",
+      "section": "02 / 随机删缓存，为什么也能做好长推理？"
+    },
+    {
+      "label": "代码与复现工具",
+      "url": "https://github.com/SalesforceAIResearch/Random-Attention",
+      "section": "02 / 随机删缓存，为什么也能做好长推理？"
+    },
+    {
+      "label": "论文与案例",
+      "url": "https://arxiv.org/html/2609.04034v1",
+      "section": "03 / AI 画完海报，还能单独改一个字"
+    },
+    {
+      "label": "项目代码",
+      "url": "https://github.com/yejy53/Editable-Design",
+      "section": "03 / AI 画完海报，还能单独改一个字"
+    },
+    {
+      "label": "官方仓库与发布记录",
+      "url": "https://github.com/inclusionAI/LLaDA-Image",
+      "section": "04 / LLaDA-Image 开放权重，先学图像再学文字"
+    },
+    {
+      "label": "技术论文",
+      "url": "https://arxiv.org/html/2609.03796v1",
+      "section": "04 / LLaDA-Image 开放权重，先学图像再学文字"
+    },
+    {
+      "label": "Turbo 权重",
+      "url": "https://huggingface.co/inclusionAI/LLaDA-Image-Turbo",
+      "section": "04 / LLaDA-Image 开放权重，先学图像再学文字"
+    }
+  ]
+}

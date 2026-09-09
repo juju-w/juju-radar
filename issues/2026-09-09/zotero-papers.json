@@ -1,0 +1,45 @@
+{
+  "issue_date": "2026-09-09",
+  "papers": [
+    {
+      "id": "openai-navier-stokes-2026-09-08",
+      "title": "Finite time blowup for Navier–Stokes",
+      "url": "https://openai.com/index/navier-stokes-solution/",
+      "pdf_url": "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf",
+      "published_date": "2026-09-08",
+      "item_type": "report",
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "OpenAI"
+        }
+      ],
+      "authors": [
+        "OpenAI"
+      ],
+      "tags": [
+        "AI科研",
+        "数学",
+        "待阅读"
+      ],
+      "evidence_status": "primary_verified",
+      "note": "OpenAI公布了带光滑外力的三维不可压缩Navier–Stokes有限时间爆破证明材料及Lean形式化。此处primary_verified指已阅读一手论文与声明，不代表独立证明数学正确性。\n\n入选理由：研究材料和大规模Agent协作过程具有重要性，编辑重要度9.5/10。需分开检查定理假设、形式化推导，以及研究过程与贡献归属。未运行完整Lean构建，也未独立复核166页证明。\n\n对读材料：https://cims.nyu.edu/~tristanb/statement.pdf\n代码：https://github.com/openai/NavierStokesAndEuler\n本期资料：https://happy.asteronline.cn/juju-radar/2026-09-09/\nAI辅助整理。"
+    },
+    {
+      "id": "arxiv:2609.04010",
+      "title": "Unlocking Lossless Speedups in LLMs via Discrete Diffusion",
+      "url": "https://arxiv.org/abs/2609.04010",
+      "pdf_url": "https://arxiv.org/pdf/2609.04010",
+      "published_date": "2026-09-03",
+      "item_type": "preprint",
+      "tags": [
+        "推理效率",
+        "扩散模型",
+        "补看",
+        "待阅读"
+      ],
+      "evidence_status": "primary_verified",
+      "note": "Uno在自回归模型上训练轻量扩散参数，一次提出多个token，再由Ψ-Spec采样器验证接受。无损针对基础模型采样分布，不代表回答内容无错误。\n\n入选理由：推理加速机制和公开实现值得复现，编辑重要度8.5/10。论文自报最高约3倍加速，实际效果取决于硬件、批量、上下文和采样配置；本期没有运行性能实验。\n\n补看：论文9月3日提交，9月8日HF推荐。代码9月3日至4日已存在，9月8日只有README格式调整，不作为当天新发布。\n项目：https://s-sahoo.com/uno/\n代码：https://github.com/ifm-ai/uno\n本期资料：https://happy.asteronline.cn/juju-radar/2026-09-09/\nAI辅助整理。"
+    }
+  ]
+}

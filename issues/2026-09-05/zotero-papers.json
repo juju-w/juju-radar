@@ -1,0 +1,147 @@
+{
+  "issue_date": "2026-09-05",
+  "papers": [
+    {
+      "id": "arxiv:2609.04148",
+      "title": "Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments",
+      "url": "https://arxiv.org/abs/2609.04148",
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2609.04148",
+      "published_date": "2026-09-03",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Jie",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenru",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Beichen",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuwu",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuhui",
+          "lastName": "Su"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mouxiang",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peng",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhihai",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Que",
+          "lastName": "Shen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hao",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "An",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fei",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yujiu",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dayiheng",
+          "lastName": "Liu"
+        }
+      ],
+      "authors": [
+        "Wu, Jie",
+        "Zhang, Zhenru",
+        "Zhang, Beichen",
+        "Wang, Xuwu",
+        "Su, Yuhui",
+        "Chen, Mouxiang",
+        "Wang, Peng",
+        "Wang, Zhihai",
+        "Shen, Que",
+        "Zhou, Hao",
+        "Yang, An",
+        "Huang, Fei",
+        "Yang, Yujiu",
+        "Liu, Dayiheng"
+      ],
+      "tags": [
+        "Agent训练",
+        "待阅读",
+        "补看"
+      ],
+      "note": "以下为2026-09-05期已核验稿件的阅读笔记，保留当时的证据与判断，不代表后续研究已确认。\n\n🧰 03 / Terminal-Universe：把操作记录变回训练环境\n\n**Agent 训练 · 9/10 · 近期论文补看 · 建议深挖**\n\n一个编程 Agent 完成任务后，会留下读文件、改代码、运行命令和修复错误的记录。通常，这些轨迹被当成示范答案使用。Qwen 团队的 Terminal-Universe 更进一步：既然操作记录透露了原来的文件和目录状态，能不能据此恢复出一个还能运行的工作环境？\n\n它先回放记录中的文件操作，尽量还原 Agent 修改前的工作区，再由另一个 Agent 补齐缺失文件和依赖。恢复后的环境不仅能重做原任务，还能产生新的任务、跨项目任务和多轮需求。**一份已经结束的操作记录，因此可以变成反复练习的地方。**\n\n作者报告恢复了约 3.73 万个满足任务需要的环境。Qwen3.5-27B 在相关数据上继续训练后，Terminal-Bench 2.1 提升 11.9 个百分点，EvoCode-Bench v2 的多轮指标 MT@4 提升 13.8 个百分点。这个结果支持继续研究环境数据的价值，但还不能说明恢复出的环境都和原现场完全一致。\n\n局限也很实际：统一的 Ubuntu 容器未必能还原特殊系统依赖；同一个教师模型负责生成任务、答案和校验器，也可能把错误一路带过去。论文于北京时间 9 月 4 日凌晨提交，作为近期补看。接下来值得验证的是，独立校验和更复杂的真实项目能否保持同样的训练收益。\n\n[arXiv 论文](https://arxiv.org/abs/2609.04148) · [HF 论文页](https://huggingface.co/papers/2609.04148)\n\n入选理由：从轨迹恢复可反复使用的环境，机制新且贴近Agent工程；正文已核验，不再按提交时间提前淘汰。\n\n论文原始日期：2026-09-03；本期归档日期：2026-09-05。\n本期资料：https://happy.asteronline.cn/juju-radar/2026-09-05/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.04199",
+      "title": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
+      "url": "https://arxiv.org/abs/2609.04199",
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2609.04199",
+      "published_date": "2026-09-03",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yuntian",
+          "lastName": "Deng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Pengyu",
+          "lastName": "Nie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Stuart",
+          "lastName": "Shieber"
+        }
+      ],
+      "authors": [
+        "Deng, Yuntian",
+        "Nie, Pengyu",
+        "Shieber, Stuart"
+      ],
+      "tags": [
+        "本地AI/新方法",
+        "待阅读",
+        "补看"
+      ],
+      "note": "以下为2026-09-05期已核验稿件的阅读笔记，保留当时的证据与判断，不代表后续研究已确认。\n\n🧪 06 / 一句提示词，能不能变成本地小函数？\n\n**本地 AI 与新方法 · 8.5/10 · 近期论文补看 · 值得探索**\n\n“判断这段话的情绪，只输出正面、负面或中性。”这类需求不难描述，但如果每天要处理大量输入，每次都调用大模型，就会不断产生费用、延迟和对远程服务的依赖。Compile by Training 尝试先为这样的固定任务训练一个专用函数。\n\n它让教师模型生成输入输出例子，再训练一个小型适配器，最后保存为 `.paw` 文件。之后的新输入交给共享的 0.6B 本地解释器处理，不必再次调用教师模型。同一个函数还可以保存、复用，并接进普通程序。\n\n作者在特定的 FuzzyBench-Hard 子集上报告了 83.6% 的语义准确率，编译过程约需一分钟。这里的“编译”仍然包含训练，结果也会出错，不能像确定性程序那样保证正确。仓库采用 MIT 许可，默认训练配置建议约 40GB 可用加速器显存；本地执行轻量，不代表生成函数没有成本。\n\n这篇论文于北京时间 9 月 4 日凌晨提交，作为近期补看。它值得继续尝试的场景是需求稳定、调用频繁、结果容易检查的任务。真正影响实用性的，将是初次训练成本能否被后续调用摊薄，以及换一种输入后还能保持多少准确率。\n\n[arXiv 论文](https://arxiv.org/abs/2609.04199) · [开源代码](https://github.com/programasweights/compile-by-training)\n\n入选理由：把固定自然语言任务变为可复用本地神经函数，运行与训练成本边界清楚，保留探索性。\n\n论文原始日期：2026-09-03；本期归档日期：2026-09-05。\n本期资料：https://happy.asteronline.cn/juju-radar/2026-09-05/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

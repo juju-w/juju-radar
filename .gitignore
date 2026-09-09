@@ -1,0 +1,15 @@
+.env
+.env.*
+*.pem
+*.key
+*.p12
+.DS_Store
+__pycache__/
+*.pyc
+site/dist/
+site/preview/
+site/*receipt.json
+site/preview-build.json
+public/
+release/
+.scan-*.json

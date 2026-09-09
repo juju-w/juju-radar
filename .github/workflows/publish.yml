@@ -1,0 +1,57 @@
+name: Check and publish website
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: website-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Check public file boundary
+        run: python3 site/scripts/check.py --source-only
+      - name: Install pinned Gitleaks
+        shell: bash
+        run: |
+          curl --fail --silent --show-error --location --retry 3 -o "$RUNNER_TEMP/gitleaks.tar.gz" https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz
+          echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  $RUNNER_TEMP/gitleaks.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/gitleaks.tar.gz" -C "$RUNNER_TEMP" gitleaks
+      - name: Scan source and complete history
+        run: |
+          "$RUNNER_TEMP/gitleaks" dir . --redact --no-banner
+          "$RUNNER_TEMP/gitleaks" git . --redact --no-banner --log-opts="--all"
+      - name: Build and validate website
+        run: python3 site/scripts/package.py
+      - name: Scan generated files
+        run: '"$RUNNER_TEMP/gitleaks" dir site/dist --redact --no-banner'
+  publish:
+    needs: check
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Build approved static package
+        run: python3 site/scripts/package.py
+      - name: Publish versioned static files
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          COMMIT: ${{ github.sha }}
+          RELEASE_TAG: site-${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          gh release create "$RELEASE_TAG" release/site.tar.gz release/manifest.json --target "$COMMIT" --title "Website $COMMIT" --notes "Checked static website build. Source commit: $COMMIT" --latest

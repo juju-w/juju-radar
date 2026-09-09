@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "label": "证明论文",
+      "url": "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf",
+      "section": "OpenAI 公布流体难题证明，研究过程也受到追问"
+    },
+    {
+      "label": "OpenAI 的过程说明",
+      "url": "https://openai.com/index/navier-stokes-solution/",
+      "section": "OpenAI 公布流体难题证明，研究过程也受到追问"
+    },
+    {
+      "label": "Buckmaster 声明",
+      "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
+      "section": "OpenAI 公布流体难题证明，研究过程也受到追问"
+    },
+    {
+      "label": "形式化代码库",
+      "url": "https://github.com/openai/NavierStokesAndEuler",
+      "section": "OpenAI 公布流体难题证明，研究过程也受到追问"
+    },
+    {
+      "label": "DeepMind 发布说明",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "section": "90 亿种 DNA 变异，先用预测排出实验顺序"
+    },
+    {
+      "label": "图谱入口",
+      "url": "https://alphagenome.google/",
+      "section": "90 亿种 DNA 变异，先用预测排出实验顺序"
+    },
+    {
+      "label": "Images 2.5 发布说明",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "section": "图像模型开始认真解决“只改这里”"
+    },
+    {
+      "label": "Runway 插件说明",
+      "url": "https://runway.com/news/company-news/runway-for-adobe",
+      "section": "图像模型开始认真解决“只改这里”"
+    },
+    {
+      "label": "小鹏官方公告",
+      "url": "https://www.xpeng.com/news/01a080371029a057bc8e8a02a2c6012b",
+      "section": "IRON 走下产线，人形机器人要接受制造的考验了"
+    },
+    {
+      "label": "Uno 项目与方法",
+      "url": "https://s-sahoo.com/uno/",
+      "section": "推荐阅读"
+    },
+    {
+      "label": "代码与实验配置",
+      "url": "https://github.com/ifm-ai/uno",
+      "section": "推荐阅读"
+    }
+  ]
+}

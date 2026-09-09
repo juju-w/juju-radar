@@ -1,0 +1,140 @@
+{
+  "date": "2026-09-05",
+  "kind": "daily",
+  "sources": [
+    {
+      "title": "Astra",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "category": "前沿模型/Agent",
+      "score": 9.5,
+      "window_status": "backfill",
+      "published_at": "2026-09-03",
+      "window_uncertain": true,
+      "timestamps": {
+        "arxiv_submitted_at": null,
+        "announced_at": {
+          "value": "2026-09-03",
+          "source_url": "https://openai.com/index/gpt-6-astra/",
+          "precision": "date",
+          "note": "Date only; no exact-time window claim."
+        },
+        "artifact_released_at": null,
+        "community_featured_on": null
+      },
+      "reason": "计算机操作和科学终端能力明显提高，影响开发者工作方式；应高于普通账号开放新闻。"
+    },
+    {
+      "title": "NVIDIA × Hugging Face",
+      "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+      "category": "战略/开源生态",
+      "score": 9.5,
+      "window_status": "backfill",
+      "published_at": "2026-09-03",
+      "window_uncertain": true,
+      "timestamps": {
+        "arxiv_submitted_at": null,
+        "announced_at": {
+          "value": "2026-09-03",
+          "source_url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+          "precision": "date",
+          "note": "Date only; no exact-time window claim."
+        },
+        "artifact_released_at": null,
+        "community_featured_on": null
+      },
+      "reason": "开发者分发平台的控制权变化，长期意义高于普通公司贷款；保留交易协议和中立承诺边界。"
+    },
+    {
+      "title": "Terminal-Universe",
+      "url": "https://arxiv.org/abs/2609.04148",
+      "category": "Agent训练",
+      "score": 9,
+      "window_status": "backfill",
+      "published_at": "2026-09-03T17:41:05Z",
+      "window_uncertain": false,
+      "timestamps": {
+        "arxiv_submitted_at": {
+          "value": "2026-09-03T17:41:05Z",
+          "source_url": "https://arxiv.org/abs/2609.04148",
+          "precision": "second",
+          "timezone": "UTC"
+        },
+        "announced_at": null,
+        "artifact_released_at": null,
+        "community_featured_on": {
+          "value": "2026-09-04",
+          "source_url": "https://huggingface.co/papers/2609.04148",
+          "precision": "date"
+        }
+      },
+      "reason": "从轨迹恢复可反复使用的环境，机制新且贴近Agent工程；正文已核验，不再按提交时间提前淘汰。"
+    },
+    {
+      "title": "Wiki Agent 调查",
+      "url": "https://collusion.wiki/",
+      "category": "真实异常",
+      "score": 9,
+      "window_status": "recent_disclosure_date_only",
+      "published_at": "2026-09-04",
+      "window_uncertain": true,
+      "timestamps": {
+        "arxiv_submitted_at": null,
+        "announced_at": {
+          "value": "2026-09-04",
+          "source_url": "https://collusion.wiki/",
+          "precision": "date",
+          "note": "Date only; no exact-time window claim."
+        },
+        "artifact_released_at": null,
+        "community_featured_on": null
+      },
+      "reason": "公开记录揭示任务间意外交流与评测污染，保留研究者归因限制。"
+    },
+    {
+      "title": "Claude 费马大定理形式化",
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "category": "AI科研",
+      "score": 9,
+      "window_status": "recent_disclosure_date_only",
+      "published_at": "2026-09-04",
+      "window_uncertain": true,
+      "timestamps": {
+        "arxiv_submitted_at": null,
+        "announced_at": {
+          "value": "2026-09-04",
+          "source_url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+          "precision": "date",
+          "note": "Date only; no exact-time window claim."
+        },
+        "artifact_released_at": null,
+        "community_featured_on": null
+      },
+      "reason": "已有复杂数学证明的大规模机器核验，有可查代码；本期价值高于图像模型单项作者跑分，维持科研覆盖。"
+    },
+    {
+      "title": "Compile by Training",
+      "url": "https://arxiv.org/abs/2609.04199",
+      "category": "本地AI/新方法",
+      "score": 8.5,
+      "window_status": "backfill",
+      "published_at": "2026-09-03T17:59:49Z",
+      "window_uncertain": false,
+      "timestamps": {
+        "arxiv_submitted_at": {
+          "value": "2026-09-03T17:59:49Z",
+          "source_url": "https://arxiv.org/abs/2609.04199",
+          "precision": "second",
+          "timezone": "UTC"
+        },
+        "announced_at": null,
+        "artifact_released_at": null,
+        "community_featured_on": {
+          "value": "2026-09-04",
+          "source_url": "https://huggingface.co/papers/2609.04199",
+          "precision": "date"
+        }
+      },
+      "reason": "把固定自然语言任务变为可复用本地神经函数，运行与训练成本边界清楚，保留探索性。"
+    }
+  ]
+}

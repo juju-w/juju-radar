@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "label": "论文与完整实验",
+      "url": "https://arxiv.org/html/2609.04611v1",
+      "section": "客服能跑起来，不代表能处理好客户的问题"
+    },
+    {
+      "label": "代码与任务",
+      "url": "https://github.com/sierra-research/hyper-tau-bench",
+      "section": "客服能跑起来，不代表能处理好客户的问题"
+    },
+    {
+      "label": "RISE 论文",
+      "url": "https://arxiv.org/html/2609.05295v1",
+      "section": "RISE：沿着刚刚学会的方向，再往前走一点"
+    },
+    {
+      "label": "WorldSculpt 论文",
+      "url": "https://arxiv.org/html/2609.05416v1",
+      "section": "WorldSculpt：把生成的房间拆成能单独取用的物体"
+    },
+    {
+      "label": "项目代码",
+      "url": "https://github.com/AlayaLab/WorldSculpt",
+      "section": "WorldSculpt：把生成的房间拆成能单独取用的物体"
+    },
+    {
+      "label": "原始论文与方法",
+      "url": "https://www.nature.com/articles/s41587-026-03286-y",
+      "section": "AI 设计的药物，出现了值得追踪的衰老指标变化"
+    },
+    {
+      "label": "最高法发布说明及《意见》全文",
+      "url": "https://www.court.gov.cn/zixun/xiangqing/511101.html",
+      "section": "AI 换脸、拟声和训练数据，最高法给出更细的审理指引"
+    }
+  ]
+}

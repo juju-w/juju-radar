@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-07",
+  "kind": "daily",
+  "sources": [
+    {
+      "title": "OpenAI 披露内部科研自动化数据",
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+      "category": "AI研究自动化",
+      "score": 9,
+      "window_status": "in_window_date_precision",
+      "published_at": "2026-09-06",
+      "window_uncertain": true,
+      "reason": "新公开的实际使用规模和干预数据；3.1为时长比而非生产率。"
+    },
+    {
+      "title": "Meta 公布 AIRA₃ 赛时模型组合",
+      "url": "https://x.com/AIatMeta/status/2096271547229167748",
+      "category": "多智能体研究",
+      "score": 8.5,
+      "window_status": "backfill",
+      "published_at": "2026-09-05T16:17:38Z",
+      "reason": "前两期未覆盖的官方说明；比赛在此前，名次按官方自报且榜单身份未独立核验。"
+    },
+    {
+      "title": "An Alien Mind：思维链监控局限",
+      "url": "https://openai.com/index/an-alien-mind/",
+      "category": "对齐与安全",
+      "score": 9,
+      "window_status": "in_window_date_precision",
+      "published_at": "2026-09-06",
+      "window_uncertain": true,
+      "reason": "新披露的监控研究判断，与Wiki旧闻不同；不把推测等同测量。"
+    },
+    {
+      "title": "Principia：双物体相对运动评测",
+      "url": "https://arxiv.org/abs/2609.04200",
+      "category": "视频物理评测",
+      "score": 8.5,
+      "window_status": "background_reading",
+      "published_at": "2026-09-03T17:59:50Z",
+      "community_featured_on": "2026-09-04",
+      "reason": "HF周末回看发现的未覆盖研究，公开标原始日期；超过72小时提交窗，作为论文补读而非当日新闻或新代码发布。"
+    }
+  ]
+}

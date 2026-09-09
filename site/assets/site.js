@@ -1,0 +1,13 @@
+(() => {
+ const dataNode=document.getElementById('catalog-data');if(!dataNode)return;
+ const data=JSON.parse(dataNode.textContent), list=document.getElementById('results'), q=document.getElementById('query'),type=document.getElementById('type'),topic=document.getElementById('topic');
+ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const arrow='<svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 10h13m-5-5 5 5-5 5"/></svg>';
+ function render(){const p=new URLSearchParams(location.search);q.value=p.get('q')||'';type.value=p.get('type')||'';topic.value=p.get('topic')||'';const mode=p.get('view')||'daily',date=p.get('date')||data.latest,search=q.value.trim().toLocaleLowerCase();
+ const filtering=!!(search||type.value||topic.value), rows=data.entries.filter(e=>(mode==='library'?['paper','project'].includes(e.type):(filtering||e.type==='news'&&e.dates.includes(date)))&&(!type.value||e.type===type.value)&&(!topic.value||e.topics.includes(topic.value))&&(!search||[e.title,e.summary,e.note,e.category,e.authors,e.url].join(' ').toLocaleLowerCase().includes(search)));
+ document.getElementById('results-title').textContent=filtering?'检索结果':mode==='library'?'论文与项目':date===data.latest?'最新精选':date+' 精选';document.getElementById('result-count').textContent=`${filtering||mode==='library'?'全库':date.replaceAll('-','.')} · ${rows.length} 条`;
+ list.innerHTML=rows.length?rows.map(e=>`<article class="entry"><div class="meta">${esc(e.category)} · ${esc(e.date)} 收录${e.backfill?' · 补看':''}</div><h2><a href="${esc(e.path)}">${esc(e.title)}</a></h2><p>${esc(e.summary)}</p><div class="links"><a href="${esc(e.path)}">阅读笔记 ${arrow}</a><a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">原始资料 ${arrow}</a></div></article>`).join(''):'<div class="empty"><p>没有找到匹配的资料，试试更短的关键词或其他主题。</p><button id="reset">清除筛选</button></div>';
+ document.querySelectorAll('nav a[data-view]').forEach(a=>a.classList.toggle('active',a.dataset.view===mode));document.querySelectorAll('.dates a').forEach(a=>a.classList.toggle('current',a.dataset.date===date&&mode==='daily'&&!filtering));document.getElementById('reset')?.addEventListener('click',()=>{history.pushState({},'',location.pathname);render()});}
+ function change(){const p=new URLSearchParams(location.search);for(const [k,v]of [['q',q.value],['type',type.value],['topic',topic.value]])v?p.set(k,v):p.delete(k);history.replaceState({},'',location.pathname+(p.size?'?'+p:''));render()}
+ q.addEventListener('input',change);type.addEventListener('change',change);topic.addEventListener('change',change);window.addEventListener('popstate',render);render();
+})();

@@ -1,0 +1,377 @@
+{
+  "issue_date": "2026-09-06",
+  "papers": [
+    {
+      "id": "arxiv:2609.03430",
+      "title": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
+      "url": "https://arxiv.org/abs/2609.03430",
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2609.03430",
+      "published_date": "2026-09-03",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Heng",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jielin",
+          "lastName": "Qiu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenting",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Cheng",
+          "lastName": "Qian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Liangwei",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiawei",
+          "lastName": "Han"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Heng",
+          "lastName": "Ji"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Silvio",
+          "lastName": "Savarese"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shelby",
+          "lastName": "Heinecke"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huan",
+          "lastName": "Wang"
+        }
+      ],
+      "authors": [
+        "Wang, Heng",
+        "Qiu, Jielin",
+        "Zhao, Wenting",
+        "Qian, Cheng",
+        "Yang, Liangwei",
+        "Han, Jiawei",
+        "Ji, Heng",
+        "Savarese, Silvio",
+        "Heinecke, Shelby",
+        "Wang, Huan"
+      ],
+      "tags": [
+        "推理设施",
+        "待阅读",
+        "补看"
+      ],
+      "note": "以下为2026-09-06期已核验稿件的阅读笔记，保留当时的证据与判断，不代表后续研究已确认。\n\n🧠 02 / 随机删缓存，为什么也能做好长推理？\n\n**推理基础设施 · 8.5/10 · 近期补看：9 月 3 日提交 · 建议深挖**\n\n模型思考得越久，保存前文计算结果的 KV 缓存就越大。为了省显存，很多方法会给缓存内容打分，再决定删掉谁。Salesforce AI Research 等团队的 Random Attention 提出一个反直觉的对照：保住用户的问题，其余推理记录在各个注意力头里随机保留，省掉复杂的评分。\n\n作者在四个模型、数学与科学及代码推理任务上测试，发现这种方法能接近强基线的准确率。其解释是，问题中的信息一旦丢失很难恢复；推理过程却常常复述中间结果，同一信息还可能保存在不同注意力头中。保护好输入后，剩余内容未必需要精细排序。\n\n在论文的 vLLM 服务实验中，生成长度为 32k token 时，相对 TriAttention 的吞吐提升为 32%–43%。这不是所有请求都快这么多：短输出、很长的代码输入，以及只出现一次的关键信息，都可能改变收益。结果目前来自作者实验，也不能直接推广到任意模型或长期 Agent 记忆。\n\n它最值得复现的地方，是用很便宜的随机对照重新检查复杂算法的收益。做推理优化时，先确认究竟是哪一部分信息必须保留，可能比设计更复杂的分数更有用。\n\n[论文与实验](https://arxiv.org/html/2609.03430v1) · [代码与复现工具](https://github.com/SalesforceAIResearch/Random-Attention)\n\n入选理由：保护输入、随机淘汰推理缓存，机制与效率值得复现；作者32k生成条件下相对TriAttention吞吐提高32%–43%。\n\n论文原始日期：2026-09-03；本期归档日期：2026-09-06。\n本期资料：https://happy.asteronline.cn/juju-radar/2026-09-06/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.04034",
+      "title": "Editable Visual Design",
+      "url": "https://arxiv.org/abs/2609.04034",
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2609.04034",
+      "published_date": "2026-09-03",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Junyan",
+          "lastName": "Ye"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wei",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dongzhi",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zichen",
+          "lastName": "Wen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "HaoDong",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhutao",
+          "lastName": "Lv"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaxin",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jinhua",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jun",
+          "lastName": "He"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zilong",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rui",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weijia",
+          "lastName": "Li"
+        }
+      ],
+      "authors": [
+        "Ye, Junyan",
+        "Liu, Wei",
+        "Jiang, Dongzhi",
+        "Wen, Zichen",
+        "Li, HaoDong",
+        "Lv, Zhutao",
+        "Lin, Jiaxin",
+        "Yu, Jinhua",
+        "He, Jun",
+        "Huang, Zilong",
+        "Chen, Rui",
+        "Li, Weijia"
+      ],
+      "tags": [
+        "设计Agent",
+        "待阅读",
+        "补看"
+      ],
+      "note": "以下为2026-09-06期已核验稿件的阅读笔记，保留当时的证据与判断，不代表后续研究已确认。\n\n🎨 03 / AI 画完海报，还能单独改一个字\n\n**设计 Agent · 8/10 · 近期补看：9 月 3 日提交 · 建议深挖**\n\n直接生成一张海报，文字、插画和背景通常都变成了像素。想换一句标题，往往又要重新生图。Editable Visual Design 把制作过程拆开：先用生图模型确定视觉方向并生成独立素材，再让 Coding Agent 用 HTML/CSS 编排真实文字和图层，最后看渲染结果修正布局。\n\n它交付的是能继续编辑的页面。文字可以直接改，素材可以拖动、缩放，背景也能单独处理。对于需要经常修订的知识卡片、海报和信息图，这比只拿到一张漂亮的成品图更接近实际工作需要。\n\n论文同时保留了设计过程的回放，便于查看从要求、素材到排版的变化。不过它主要展示单页案例，没有给出可据此宣称“审美全面领先”的大规模评分；多页内容能否保持一致，仍受底层模型能力影响。它提供的是一种有用的工作方法，效果还要在真实改稿中检验。\n\n[论文与案例](https://arxiv.org/html/2609.04034v1) · [项目代码](https://github.com/yejy53/Editable-Design)\n\n入选理由：可编辑交付直接解决改稿问题；已读方法与局限，仅有单页案例，不能宣称审美全面领先。\n\n论文原始日期：2026-09-03；本期归档日期：2026-09-06。\n本期资料：https://happy.asteronline.cn/juju-radar/2026-09-06/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.03796",
+      "title": "LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes",
+      "url": "https://arxiv.org/abs/2609.03796",
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2609.03796",
+      "published_date": "2026-09-03",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Chuyan",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haoxing",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kun",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenglin",
+          "lastName": "Cheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Long",
+          "lastName": "Cui"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruishan",
+          "lastName": "Fang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhangxuan",
+          "lastName": "Gu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhicheng",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenzhong",
+          "lastName": "Lan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuanting",
+          "lastName": "Lei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haoquan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jianguo",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rongchuan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sidu",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tao",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Deyuan",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiacheng",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lin",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxuan",
+          "lastName": "Lou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhisheng",
+          "lastName": "Lu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxin",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuheng",
+          "lastName": "Shen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peng",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chaoyang",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hongjun",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaomei",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yongxin",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chengzhang",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hongru",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jun",
+          "lastName": "Xie"
+        }
+      ],
+      "authors": [
+        "Chen, Chuyan",
+        "Chen, Haoxing",
+        "Chen, Kun",
+        "Cheng, Zhenglin",
+        "Cui, Long",
+        "Fang, Ruishan",
+        "Gu, Zhangxuan",
+        "Huang, Zhicheng",
+        "Lan, Zhenzhong",
+        "Lei, Yuanting",
+        "Li, Haoquan",
+        "Li, Jianguo",
+        "Li, Rongchuan",
+        "Li, Sidu",
+        "Lin, Tao",
+        "Liu, Deyuan",
+        "Liu, Jiacheng",
+        "Liu, Lin",
+        "Lou, Yuxuan",
+        "Lu, Zhisheng",
+        "Ma, Yuxin",
+        "Shen, Shuheng",
+        "Sun, Peng",
+        "Wang, Chaoyang",
+        "Wang, Hongjun",
+        "Wang, Xiaomei",
+        "Wang, Yongxin",
+        "Wu, Chengzhang",
+        "Wu, Hongru",
+        "Xie, Jun"
+      ],
+      "tags": [
+        "图像生成",
+        "待阅读",
+        "补看"
+      ],
+      "note": "以下为2026-09-06期已核验稿件的阅读笔记，保留当时的证据与判断，不代表后续研究已确认。\n\n🖼️ 04 / LLaDA-Image 开放权重，先学图像再学文字\n\n**图像生成与编辑 · 8/10 · 近期补看：9 月 4 日开放权重 · 持续观察**\n\ninclusionAI 已发布 LLaDA-Image 的 Base、Turbo 权重与推理代码。模型支持图像生成和指令编辑，生成部分采用 6B 参数的扩散 Transformer。其训练路线有一个值得注意的选择：前期先通过纯图像学习视觉规律，后续再加入图文配对监督和生成、编辑联合训练。\n\nTurbo 版本经过蒸馏，论文报告可用 2–4 步采样，仓库示例推荐 4 步。这降低了反复生成和修改时的计算步骤，但采样步数不等于端到端耗时，实际速度还取决于硬件、分辨率和整条推理流程。\n\n项目列出了 Qwen-Image-Bench 上的领先成绩，目前应当视为作者自报，不能据此认定它在所有风格和编辑任务上都更好。开放程度也要分开看：**权重和推理代码已经有了，训练配方写在论文里，训练代码仍标为待发布。** 后续更值得看社区能否复现质量，以及中文细节、显存占用和连续编辑的实际表现。\n\n[官方仓库与发布记录](https://github.com/inclusionAI/LLaDA-Image) · [技术论文](https://arxiv.org/html/2609.03796v1) · [Turbo 权重](https://huggingface.co/inclusionAI/LLaDA-Image-Turbo)\n\n入选理由：9月4日实际开放权重和推理代码；训练代码待发布，采样步骤不等于实际耗时。\n\n论文原始日期：2026-09-03；本期归档日期：2026-09-06。\n本期资料：https://happy.asteronline.cn/juju-radar/2026-09-06/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

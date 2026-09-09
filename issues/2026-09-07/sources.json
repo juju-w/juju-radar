@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "label": "OpenAI：科研自动化内部报告",
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+      "section": "01 / Agent 已进入科研日常，3.1 倍该怎么读"
+    },
+    {
+      "label": "Meta：AIRA₃ 参赛说明",
+      "url": "https://x.com/AIatMeta/status/2096271545589190927",
+      "section": "02 / Meta 公布 AIRA₃ 夺金组合，用的是 GPT 与 Claude"
+    },
+    {
+      "label": "Meta：赛时模型组合",
+      "url": "https://x.com/AIatMeta/status/2096271547229167748",
+      "section": "02 / Meta 公布 AIRA₃ 夺金组合，用的是 GPT 与 Claude"
+    },
+    {
+      "label": "OpenAI：An Alien Mind",
+      "url": "https://openai.com/index/an-alien-mind/",
+      "section": "03 / OpenAI 首席科学家：推理过程越来越难监控"
+    },
+    {
+      "label": "Principia：论文与版本记录",
+      "url": "https://arxiv.org/abs/2609.04200",
+      "section": "04 / 视频里的物理对不对？先放两个物体一起看"
+    },
+    {
+      "label": "论文全文：方法、结果与局限",
+      "url": "https://arxiv.org/html/2609.04200v1",
+      "section": "04 / 视频里的物理对不对？先放两个物体一起看"
+    }
+  ]
+}

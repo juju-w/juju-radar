@@ -1,0 +1,49 @@
+{
+  "issue_date": "2026-09-07",
+  "papers": [
+    {
+      "id": "arxiv:2609.04200",
+      "title": "Principia: Relational Physics Tests for Video Models",
+      "url": "https://arxiv.org/abs/2609.04200",
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2609.04200",
+      "published_date": "2026-09-03",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Varun Varma",
+          "lastName": "Thozhiyoor"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shivam",
+          "lastName": "Tripathi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Venkatesh Babu",
+          "lastName": "Radhakrishnan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Anand",
+          "lastName": "Bhattad"
+        }
+      ],
+      "authors": [
+        "Thozhiyoor, Varun Varma",
+        "Tripathi, Shivam",
+        "Radhakrishnan, Venkatesh Babu",
+        "Bhattad, Anand"
+      ],
+      "tags": [
+        "视频物理评测",
+        "待阅读",
+        "补看"
+      ],
+      "note": "以下为2026-09-07期已核验稿件的阅读笔记，保留当时的证据与判断，不代表后续研究已确认。\n\n🎬 04 / 视频里的物理对不对？先放两个物体一起看\n\n**视频生成 / 物理评测 · 8.5/10 · 论文补读 · 建议深挖**\n\nPrincipia 提出了一个简洁的评测思路：不急着从视频里恢复真实速度、尺寸或相机参数，先比较同一画面中两个物体的相对运动。论文于 9 月 3 日提交，9 月 4 日进入 Hugging Face 每日论文列表，本期补读，不计作过去 24 小时的新发布。\n\n比如，两块质量不同的滑块，在坡度、摩擦条件、起点相同的斜面上同时释放，理应同时到达终点。单独看其中一块，运动可能很像真的；放在一起，违反物理关系的地方就容易暴露。论文把这类测试扩展到重力、摩擦、碰撞和振动等八类现象。\n\n作者测试的六个视频生成模型，整体物理一致性得分最高约为 0.42。这个数值是连续评分，**不等于只有 42% 的视频正确**；它与常用的视觉质量分数也不能直接相减或换算。\n\n这种评测适合追问“视频能不能用于预测动作后果”。不过，它覆盖的是特定牛顿力学场景，不包含流体、软体等全部物理现象；缺失物体和严重形变也会影响评估。对世界模型的检验，仍需一项项落到具体任务上。\n\n[Principia：论文与版本记录](https://arxiv.org/abs/2609.04200) · [论文全文：方法、结果与局限](https://arxiv.org/html/2609.04200v1)\n\n入选理由：HF周末回看发现的未覆盖研究，公开标原始日期；超过72小时提交窗，作为论文补读而非当日新闻或新代码发布。\n\n论文原始日期：2026-09-03；本期归档日期：2026-09-07。\n本期资料：https://happy.asteronline.cn/juju-radar/2026-09-07/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
