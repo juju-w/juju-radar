@@ -5,7 +5,7 @@ from pathlib import Path
 from html.parser import HTMLParser
 from xml.etree import ElementTree as ET
 ROOT=Path(__file__).resolve().parents[2]
-STATIC={'.gitignore','.public-export-marker','README.md','SECURITY.md','.github/workflows/publish.yml','site/publications.json','site/registration.json','site/assets/site.css','site/assets/site.js','site/scripts/build.py','site/scripts/build-source-page.py','site/scripts/check.py','site/scripts/package.py','ops/pull-release.py'}
+STATIC={'.gitignore','.public-export-marker','README.md','SECURITY.md','.github/workflows/publish.yml','site/paper-summaries.json','site/publications.json','site/registration.json','site/assets/site.css','site/assets/site.js','site/scripts/build.py','site/scripts/build-source-page.py','site/scripts/check.py','site/scripts/package.py','ops/pull-release.py'}
 PATTERNS=[('private key',r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----'),('GitHub credential',r'(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,})'),('cloud access key',r'(?:AKIA|ASIA)[A-Z0-9]{16}|AKID[A-Za-z0-9]{28,}'),('credential URL',r'https?://[^\s/@:]+:[^\s/@]+@'),('credential assignment',r'(?i)(?:api[_-]?key|app[_-]?secret|access[_-]?token|password|secret[_-]?key)\s*[=:]\s*[\"\x27][A-Za-z0-9/+_=-]{12,}'),('local metadata',r'/Users/[A-Za-z0-9_-]+/|/home/[A-Za-z0-9_-]+/')]
 def scan(paths):
  bad=[]
@@ -47,6 +47,12 @@ def main():
   for name,count in [('feed.xml',len(data['issues'])),('papers.xml',paper_count)]:
    items=ET.parse(dist/name).findall('./channel/item');assert len(items)==count;assert len({i.findtext('guid') for i in items})==count
   assert (dist/'papers.ris').read_text().count('ER  -')==paper_count
+  assert not any(e['type']=='project' for e in data['entries'])
+  library=(dist/'papers/index.html').read_text()
+  for e in data['entries']:
+   if e['type']=='paper':
+    assert e['title_zh'] and e['summary']
+    assert 'href="'+e['path']+'"' in library
   archive=(dist/'archive/index.html').read_text()
   for e in data['entries']:
    if e['type']=='news':assert 'href="'+e['path']+'"' in archive,'Archive omits selected item '+e['id']
