@@ -13,3 +13,11 @@ site/preview-build.json
 public/
 release/
 .scan-*.json
+
+# Audio and album artwork are deployed separately from website code.
+*.mp3
+*.wav
+*.flac
+*.m4a
+music-v*/
+media/

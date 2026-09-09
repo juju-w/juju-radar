@@ -37,3 +37,11 @@ python3 ops/pull-release.py --repo juju-w/juju-radar --root /srv/juju-radar --st
 ## 内容更正
 
 欢迎通过 Issues 或 PR 指出错误并附原始来源。仓库与网站内容由 AI 辅助整理。
+
+## 音乐播放器
+
+播放器代码位于 `site/assets/music/`，随网站发布。音频、封面及曲目清单独立部署到网站根目录的 `music-v1/`，不进入 Git 或 GitHub Release；缺少曲目清单时网站保留正常阅读页面。播放器使用同源阅读框架，站内跳转时保持播放，首次访问尝试自动播放，受浏览器策略限制时显示播放按钮。
+
+媒体清单 `music-v1/playlist.json` 为数组，每项包含 `title`、`artist`、`album`、`track`、`duration`、`url`、`cover`。默认专辑为 `Misty for Direct Cutting`。音乐按需加载，服务器应支持音频 Range 请求。更新器仅覆盖发布清单内的文件，不删除独立媒体目录。
+
+液态玻璃效果使用 [deepika-builds/liquid-glass](https://github.com/deepika-builds/liquid-glass)，MIT 许可已保留在脚本中；Chromium 使用 SVG 折射，其他浏览器使用模糊回退。

@@ -5,7 +5,7 @@ from pathlib import Path
 from html.parser import HTMLParser
 from xml.etree import ElementTree as ET
 ROOT=Path(__file__).resolve().parents[2]
-STATIC={'.gitignore','.public-export-marker','README.md','SECURITY.md','.github/workflows/publish.yml','site/paper-summaries.json','site/publications.json','site/registration.json','site/assets/site.css','site/assets/site.js','site/scripts/build.py','site/scripts/build-source-page.py','site/scripts/check.py','site/scripts/package.py','ops/pull-release.py'}
+STATIC={'.gitignore','.public-export-marker','README.md','SECURITY.md','.github/workflows/publish.yml','site/paper-summaries.json','site/publications.json','site/registration.json','site/assets/site.css','site/assets/site.js','site/scripts/build.py','site/scripts/build-source-page.py','site/scripts/check.py','site/scripts/package.py','ops/pull-release.py','site/assets/music/bootstrap.js','site/assets/music/player.js','site/assets/music/liquid-glass.js','site/assets/music/music.css','site/assets/music/shell.html'}
 PATTERNS=[('private key',r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----'),('GitHub credential',r'(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,})'),('cloud access key',r'(?:AKIA|ASIA)[A-Z0-9]{16}|AKID[A-Za-z0-9]{28,}'),('credential URL',r'https?://[^\s/@:]+:[^\s/@]+@'),('credential assignment',r'(?i)(?:api[_-]?key|app[_-]?secret|access[_-]?token|password|secret[_-]?key)\s*[=:]\s*[\"\x27][A-Za-z0-9/+_=-]{12,}'),('local metadata',r'/Users/[A-Za-z0-9_-]+/|/home/[A-Za-z0-9_-]+/')]
 def scan(paths):
  bad=[]
@@ -43,7 +43,9 @@ def main():
  scan(sources())
  if not a.source_only:
   dist=ROOT/'site/dist';data=json.loads((dist/'catalog.json').read_text());paper_count=sum(e['type']=='paper' for e in data['entries'])
-  for p in dist.rglob('*.html'):Links(dist).feed(p.read_text());assert '粤ICP备2025379346号-1' in p.read_text()
+  for p in dist.rglob('*.html'):
+   Links(dist).feed(p.read_text())
+   if not p.relative_to(dist).parts[0]=='assets':assert '粤ICP备2025379346号-1' in p.read_text()
   for name,count in [('feed.xml',len(data['issues'])),('papers.xml',paper_count)]:
    items=ET.parse(dist/name).findall('./channel/item');assert len(items)==count;assert len({i.findtext('guid') for i in items})==count
   assert (dist/'papers.ris').read_text().count('ER  -')==paper_count
