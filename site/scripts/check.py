@@ -47,5 +47,8 @@ def main():
   for name,count in [('feed.xml',len(data['issues'])),('papers.xml',paper_count)]:
    items=ET.parse(dist/name).findall('./channel/item');assert len(items)==count;assert len({i.findtext('guid') for i in items})==count
   assert (dist/'papers.ris').read_text().count('ER  -')==paper_count
+  archive=(dist/'archive/index.html').read_text()
+  for e in data['entries']:
+   if e['type']=='news':assert 'href="'+e['path']+'"' in archive,'Archive omits selected item '+e['id']
  print('Public file allowlist and '+('source' if a.source_only else 'site')+' checks passed')
 if __name__=='__main__':main()
