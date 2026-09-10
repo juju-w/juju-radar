@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "label": "发布说明",
+      "url": "https://deepseek.com/news/deepseek-v4-1-flash/",
+      "section": "DeepSeek V4.1 Flash：长任务先从缓存省起"
+    },
+    {
+      "label": "技术报告",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf",
+      "section": "DeepSeek V4.1 Flash：长任务先从缓存省起"
+    },
+    {
+      "label": "权重与推理文件",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "section": "DeepSeek V4.1 Flash：长任务先从缓存省起"
+    },
+    {
+      "label": "Cursor Projects 发布说明",
+      "url": "https://cursor.com/blog/projects",
+      "section": "Cursor Projects：把几个月的工作留在同一个项目里"
+    },
+    {
+      "label": "Agents API 公测说明",
+      "url": "https://openai.com/index/introducing-the-agents-api/",
+      "section": "OpenAI Agents API：把 Codex 的运行框架交给开发者"
+    },
+    {
+      "label": "GPT-Live-1 API 发布说明",
+      "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
+      "section": "GPT-Live-1：一边说话，也能听见你改主意"
+    },
+    {
+      "label": "论文正文",
+      "url": "https://arxiv.org/html/2609.10522v1",
+      "section": "Show-Harness：给机器人一组模型看得懂的动作"
+    },
+    {
+      "label": "代码",
+      "url": "https://github.com/showlab/Show-Harness",
+      "section": "Show-Harness：给机器人一组模型看得懂的动作"
+    },
+    {
+      "label": "模型适配器",
+      "url": "https://huggingface.co/showlab/Show-Harness-VLMs",
+      "section": "Show-Harness：给机器人一组模型看得懂的动作"
+    },
+    {
+      "label": "论文正文",
+      "url": "https://arxiv.org/html/2609.10540v1",
+      "section": "补看：游戏规则交给程序，世界模型负责画面"
+    },
+    {
+      "label": "项目与公开状态",
+      "url": "https://github.com/AlayaLab/pwm",
+      "section": "补看：游戏规则交给程序，世界模型负责画面"
+    }
+  ]
+}

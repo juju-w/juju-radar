@@ -1,0 +1,169 @@
+{
+  "issue_date": "2026-09-11",
+  "papers": [
+    {
+      "id": "deepseek-v4.1-flash-technical-report",
+      "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf",
+      "doi": "",
+      "pdf_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/main/DeepSeek_V41_Tech_Report.pdf",
+      "published_date": "2026-09-10",
+      "item_type": "report",
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "DeepSeek-AI"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "推理基础设施"
+      ],
+      "note": "DeepSeek 于 9 月 10 日正式发布 V4.1 Flash，支持原生图像理解和百万 token 上下文。它采用输入、输出不对称的因果编码器—解码器结构：读入内容时每个 token 激活约 8B 参数，生成内容时激活约 16B。Agent 经常一次读入很多工具结果、只输出一小段操作，这种设计针对的正是输入远多于输出的工作负载。\n\n更值得细读的是 **KV Cache，也就是模型为了复用前文计算而保存的缓存**。新模型让不同层复用缓存，并采用 FP4 精度存储；在相同序列长度下，全局 KV 缓存降到每 token 890 字节，约为 V4 Flash 的四分之一。另一项部署优化只重放最近一段内容来恢复局部状态，使需要持久保存到 SSD 或主机内存的 KV 缓存约降到八分之一。这两个比例对应不同缓存，不能理解成整套服务显存和费用都按同样比例下降。\n\n权重、推理文件和技术报告已公开，API 也已切换。部署时要留意：552B 是主干参数，另外还有 196B 的 Engram 条件记忆等组件；8B/16B 是每个 token 的激活量，并不意味着普通显卡就能装下模型。官方列出的代码任务成绩有明显进步，但框架、推理预算和测试集版本会影响结果。技术报告也承认，最难的推理任务仍与领先闭源模型有差距，缓存近似恢复的极端情况还需继续检查。\n\n对现有 API 用户还有一件实际的事：官方计划在北京时间 **9 月 14 日 12:00 后，将 V4 Pro 请求路由到 V4.1 Flash**，直至后续 Pro 上线。依赖旧模型行为的应用，应先做自己的任务回归测试，而不只比较排行榜。\n\n重要度9.5/10。非对称计算与两类缓存压缩直接影响长任务成本，正式权重和报告公开，非此前测试接口重复报道。\n原始报告：https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-11/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.10522",
+      "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+      "url": "https://arxiv.org/abs/2609.10522",
+      "doi": "10.48550/arXiv.2609.10522",
+      "pdf_url": "https://arxiv.org/pdf/2609.10522",
+      "published_date": "2026-09-09",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Chen,",
+          "lastName": "Yanzhe"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bai,",
+          "lastName": "Zechen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Cao,",
+          "lastName": "Zhijun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zeng,",
+          "lastName": "Wenzheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lin, Kevin",
+          "lastName": "Qinghong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lin,",
+          "lastName": "Yiqi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Liang,",
+          "lastName": "Guoqiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ma, Kevin",
+          "lastName": "Yuchen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huang,",
+          "lastName": "Qiming"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shou, Mike",
+          "lastName": "Zheng"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "机器人 / 论文与开源"
+      ],
+      "note": "这篇 9 月 9 日提交、9 月 10 日进入 HF 每日论文列表的研究，尝试把机器人动作变成视觉语言模型能直接选择的选项，例如向左移动一小步、下降、抓取和松开。与机器人对应的解释器，再把选项落实成幅度受限的实际动作。每走一步，模型重新接收相机画面和执行反馈。\n\n它同时支持两种用法：调用前沿模型直接操作，或用少量示范微调小模型。研究者还提供 GUMI 图形界面，让人通过键盘和浏览器收集示范。论文、代码、训练流程及适配器文件均已可见；这种统一接口值得参考，因为它让示范采集、模型决策和机器人执行使用同一套动作表达。\n\n实验以 Franka 和 AgileX 的单、双臂夹爪操作为主；基本测试包含十种物体与容器组合，每项通常十次试验，并设步数上限。作者报告的泛化优势还不能推广到人形机器人、灵巧手或复杂接触任务。它也不是“给任何机器人装个聊天模型就能干活”：相机、动作解释器和反馈规则仍是系统的一部分。\n\n重要度：8.5/10；离散语义动作接口打通示范采集与机器人控制；实机评估和代码均可检查。\n原始链接：https://arxiv.org/abs/2609.10522\n代码：https://github.com/showlab/Show-Harness\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-11/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.10540",
+      "title": "Programmable World Model",
+      "url": "https://arxiv.org/abs/2609.10540",
+      "doi": "10.48550/arXiv.2609.10540",
+      "pdf_url": "https://arxiv.org/pdf/2609.10540",
+      "published_date": "2026-09-09",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Huang,",
+          "lastName": "Zheng-Hui"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lin,",
+          "lastName": "Guixu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lin,",
+          "lastName": "Jiacheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huang,",
+          "lastName": "Yi-Chuan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yu,",
+          "lastName": "Ruihan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Niu,",
+          "lastName": "Muyao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yang,",
+          "lastName": "Siqi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Liu,",
+          "lastName": "Yu-Lun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chuang,",
+          "lastName": "Yung-Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhang,",
+          "lastName": "Kaipeng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wang,",
+          "lastName": "Zhixiang"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "世界模型 / 探索性论文",
+        "补看"
+      ],
+      "note": "Programmable World Model 的项目页于 9 月 5 日公开，论文于 9 月 9 日提交；这里补看的是新近完整论文，不当作昨天首次发布的项目。它针对一个熟悉的问题：生成的视频看起来连贯，但镜头一转，画面外的人物和已经发生的事件可能被“忘掉”。\n\n作者让程序保存对象的位置、状态和交互规则，视频模型负责把这些状态画出来。自然语言先被 Agent 转成可执行规则；引擎维护世界状态，再用带状态的三维包围盒生成空间控制信号，交给视频生成器。角色离开镜头后仍存在，事件是否发生也有明确记录，画面不再独自承担全部记忆。\n\n在作者自建的 50 段 CombatStateBench 测试中，数量准确率和状态准确率分别为 94% 和 98%。这两个指标由视觉语言模型判读，且状态指标只检查死亡事件后是否出现相应画面，不要求认出具体角色；对照模型使用的控制接口也不同。因此，结果说明显式状态控制有帮助，尚不能证明通用游戏模拟已经解决。仓库目前仍把推理代码与预训练权重列为未发布。\n\n重要度：8/10；9月5日项目页之后，9月9日完整论文可核验显式状态与生成画面的分工；作为补看。\n原始链接：https://arxiv.org/abs/2609.10540\n代码：https://github.com/AlayaLab/pwm\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-11/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
