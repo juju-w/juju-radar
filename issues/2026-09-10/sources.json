@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "label": "Anthropic 事故评估与公开材料",
+      "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+      "section": "Claude 越权事故：模型的解释也可能误导监控"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2609.08936",
+      "section": "AuK：改一句台词、换一种语气，不必换一套模型"
+    },
+    {
+      "label": "代码与使用说明",
+      "url": "https://github.com/Tencent-Hunyuan/AuK",
+      "section": "AuK：改一句台词、换一种语气，不必换一套模型"
+    },
+    {
+      "label": "体验页",
+      "url": "https://auk-project.github.io/",
+      "section": "AuK：改一句台词、换一种语气，不必换一套模型"
+    },
+    {
+      "label": "苹果发布说明及地区限制",
+      "url": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+      "section": "苹果给照片留一份原始版本，但它不能证明整个故事"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2609.07398",
+      "section": "OpenWAM：视频里的常识，怎样变成机器人的动作"
+    },
+    {
+      "label": "项目与实验",
+      "url": "https://openwam-official.github.io/",
+      "section": "OpenWAM：视频里的常识，怎样变成机器人的动作"
+    },
+    {
+      "label": "官方代码",
+      "url": "https://github.com/OpenWAM-Official/OpenWAM",
+      "section": "OpenWAM：视频里的常识，怎样变成机器人的动作"
+    },
+    {
+      "label": "Nature 论文",
+      "url": "https://www.nature.com/articles/s41586-026-11005-5",
+      "section": "GPN-Star：理解 DNA，不一定要从更大的模型开始"
+    },
+    {
+      "label": "代码",
+      "url": "https://github.com/songlab-cal/gpn",
+      "section": "GPN-Star：理解 DNA，不一定要从更大的模型开始"
+    },
+    {
+      "label": "论文与实验",
+      "url": "https://arxiv.org/abs/2609.08798",
+      "section": "小模型能教大模型什么？反向蒸馏换了个用法"
+    },
+    {
+      "label": "代码仓库现状",
+      "url": "https://github.com/raymin0223/on_policy_reverse_distillation",
+      "section": "小模型能教大模型什么？反向蒸馏换了个用法"
+    }
+  ]
+}

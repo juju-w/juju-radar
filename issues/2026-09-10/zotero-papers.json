@@ -1,0 +1,531 @@
+{
+  "issue_date": "2026-09-10",
+  "papers": [
+    {
+      "id": "arxiv:2609.08936",
+      "title": "AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing",
+      "url": "https://arxiv.org/abs/2609.08936",
+      "doi": "10.48550/arXiv.2609.08936",
+      "pdf_url": "https://arxiv.org/pdf/2609.08936",
+      "published_date": "2026-09-08",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Ziyang",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhikang",
+          "lastName": "Niu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenming",
+          "lastName": "Tu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianrui",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruiqi",
+          "lastName": "Yan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junxi",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yanru",
+          "lastName": "Huo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Nickk",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yang",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qicong",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zeyu",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hui",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haitao",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zixuan",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yalin",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jie",
+          "lastName": "Fang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yifan",
+          "lastName": "Duan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zeyue",
+          "lastName": "Tian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guangzheng",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haina",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuyi",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jinwen",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingyu",
+          "lastName": "Cui"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tian",
+          "lastName": "Tan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "",
+          "lastName": "Auden"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sen",
+          "lastName": "Liang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Steve",
+          "lastName": "Yves"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shan",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Liefeng",
+          "lastName": "Bo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zilong",
+          "lastName": "Zheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kai",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Eng-Siong",
+          "lastName": "Chng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xie",
+          "lastName": "Chen"
+        }
+      ],
+      "authors": [
+        "Ma, Ziyang",
+        "Niu, Zhikang",
+        "Tu, Wenming",
+        "Wang, Tianrui",
+        "Yan, Ruiqi",
+        "Liu, Junxi",
+        "Huo, Yanru",
+        "Huang, Nickk",
+        "Liu, Yang",
+        "Xie, Qicong",
+        "Xie, Zeyu",
+        "Wang, Hui",
+        "Li, Haitao",
+        "Jiang, Zixuan",
+        "Li, Yalin",
+        "Fang, Jie",
+        "Duan, Yifan",
+        "Tian, Zeyue",
+        "Li, Guangzheng",
+        "Zhu, Haina",
+        "Wang, Shuyi",
+        "Wang, Jinwen",
+        "Cui, Mingyu",
+        "Tan, Tian",
+        "Auden",
+        "Liang, Sen",
+        "Yves, Steve",
+        "Yang, Shan",
+        "Bo, Liefeng",
+        "Zheng, Zilong",
+        "Yu, Kai",
+        "Chng, Eng-Siong",
+        "Chen, Xie"
+      ],
+      "tags": [
+        "语音生成",
+        "音频编辑",
+        "待阅读"
+      ],
+      "note": "腾讯混元、上海交大等团队在 9 月 9 日开放 AuK 的代码与权重。它把文字转语音、台词替换、语气调整、降噪和人声分离，统一成“指令加可选音频”的输入方式。对音频制作来说，这意味着录好一段话以后，修改其中一句、调整情绪或去掉背景声，可以沿用同一套工具。\n\n方法上的关键是把生成与编辑一起训练：语言模型负责理解要改什么，音频编码器保存声音信息，生成网络据此输出音频。论文还观察到，一些只在编辑任务中训练过的变化，可以迁移到生成任务。不过，这部分是作者的定性观察，不能当作任意编辑都能成功的证明。\n\nAuK-Flash 将采样减到四步；作者在相同硬件、音频时长和批量下，报告相对完整版约 4.5 倍提速。1.5B 指生成主干的参数规模，实际运行还要加载语义编码器等组件，不能直接按一个 1.5B 小模型估算显存。自由表达的复杂指令也仍依赖提示词预处理。本期核对了发布文件，没有独立试听、测显存或复测速度。\n\n\n\n入选理由：同时开放生成与编辑模型、权重、推理和微调入口，机制与日常内容制作有关。 重要度 8.5/10。\n原始资料：https://arxiv.org/abs/2609.08936\nhttps://github.com/Tencent-Hunyuan/AuK\nhttps://auk-project.github.io/\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-10/\nAI辅助整理；一手核验不表示独立复现。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.07398",
+      "title": "OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining",
+      "url": "https://arxiv.org/abs/2609.07398",
+      "doi": "10.48550/arXiv.2609.07398",
+      "pdf_url": "https://arxiv.org/pdf/2609.07398",
+      "published_date": "2026-09-07",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yuran",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Siqiao",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingleyang",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenhao",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaqi",
+          "lastName": "Liang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weiyang",
+          "lastName": "Jin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yue",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuemin",
+          "lastName": "Chi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Donghao",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qize",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yu-Kai",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuhan",
+          "lastName": "Rui"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shenzhe",
+          "lastName": "Yao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhen",
+          "lastName": "Yuan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenhao",
+          "lastName": "Shen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kefei",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zijie",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ning",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaowei",
+          "lastName": "Chi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guanqi",
+          "lastName": "He"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shanghang",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hao",
+          "lastName": "Dong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lin",
+          "lastName": "Shao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hang",
+          "lastName": "Zhao"
+        }
+      ],
+      "authors": [
+        "Wang, Yuran",
+        "Huang, Siqiao",
+        "Li, Mingleyang",
+        "Zhang, Chenhao",
+        "Liang, Jiaqi",
+        "Jin, Weiyang",
+        "Chen, Yue",
+        "Chi, Xuemin",
+        "Zhou, Donghao",
+        "Yu, Qize",
+        "Wang, Yu-Kai",
+        "Rui, Yuhan",
+        "Yao, Shenzhe",
+        "Yuan, Zhen",
+        "Shen, Zhenhao",
+        "Zhu, Kefei",
+        "Zhu, Zijie",
+        "Gao, Ning",
+        "Chi, Xiaowei",
+        "He, Guanqi",
+        "Zhang, Shanghang",
+        "Dong, Hao",
+        "Shao, Lin",
+        "Zhao, Hang"
+      ],
+      "tags": [
+        "机器人",
+        "世界模型",
+        "待阅读"
+      ],
+      "note": "OpenWAM 团队在 9 月 9 日的项目更新中公布论文，代码和模型早在 9 月 6 日已开放。它想解决一个很实际的研究问题：机器人模型同时更换视频底座、动作网络和训练数据后，即使分数提高，也很难知道究竟是哪一步起了作用。OpenWAM 把这些选择拆成模块，在同一套训练和评测流程里逐项比较。\n\n其中一个结果是，视频知识要帮助行动，需要给动作预测足够的独立能力，并让它读到世界模型的信息。在最终模型里，预测未来画面与预测动作共同迭代：画面会怎样变，与机械臂该怎样动，在生成过程中相互参照。约 6,400 小时的训练数据包含机器人轨迹和人类第一视角视频，分别提供动作监督与更广的场景经验。\n\n值得读的是这些对照实验，而不只是榜单名次。作者发现，预训练对未见场景的帮助更明显；这对收集下一批机器人数据很有参考价值。但仿真成绩、特定机械臂和灵巧手实验，还不能直接推到家庭环境中的长期可靠运行。论文 9 月 7 日已提交，本期报道的是新公布的系统研究说明，不把代码开放日期改成昨天。\n\n\n\n入选理由：新论文解释视频与动作耦合的受控实验；代码先前开放，时间分别记录。 重要度 8.5/10。\n原始资料：https://arxiv.org/abs/2609.07398\nhttps://openwam-official.github.io/\nhttps://github.com/OpenWAM-Official/OpenWAM\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-10/\nAI辅助整理；一手核验不表示独立复现。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "doi:10.1038/s41586-026-11005-5",
+      "title": "Predicting genome-wide functional constraints with GPN-Star",
+      "url": "https://www.nature.com/articles/s41586-026-11005-5",
+      "doi": "10.1038/s41586-026-11005-5",
+      "pdf_url": "https://www.nature.com/articles/s41586-026-11005-5.pdf",
+      "published_date": "2026-09-09",
+      "item_type": "journalArticle",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Chengzhong",
+          "lastName": "Ye"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Gonzalo",
+          "lastName": "Benegas"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Carlos",
+          "lastName": "Albors"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jianan Canal",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sebastian",
+          "lastName": "Prillo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peter D.",
+          "lastName": "Fields"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Brian",
+          "lastName": "Clarke"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yun S.",
+          "lastName": "Song"
+        }
+      ],
+      "authors": [
+        "Ye, Chengzhong",
+        "Benegas, Gonzalo",
+        "Albors, Carlos",
+        "Li, Jianan Canal",
+        "Prillo, Sebastian",
+        "Fields, Peter D.",
+        "Clarke, Brian",
+        "Song, Yun S."
+      ],
+      "tags": [
+        "AI科研",
+        "基因组",
+        "待阅读"
+      ],
+      "note": "9 月 9 日发表于 Nature 的 GPN-Star，把物种之间的演化关系直接写进基因组模型。它不仅读取 DNA 字母，还利用跨物种的序列对齐和物种树，判断哪些位置在漫长演化中很少改变。一个区域长期被保留下来，通常能为它是否承担重要功能提供线索。\n\n研究中一个有用的发现是，“看多远的演化历史”要随问题变化：更深的物种比较有助于识别变化较慢的编码区域，而更近的灵长类比较，对一些变化较快的调控区域和复杂性状更有帮助。与单纯扩大参数或上下文相比，把合适的生物学结构交给模型，可能更有效。\n\n这与昨天 AlphaGenome Atlas 的介绍不同：这里重点是借助演化记录学习功能约束，以及为什么不同任务需要不同的比较尺度。论文已提供代码、模型和预计算结果。它仍依赖序列对齐，对插入、缺失和较大的结构变异不够灵活；预测的演化约束也不等于对患者的致病诊断，更没有证明新治疗有效。\n\n\n\n入选理由：期刊正式发表新研究，以演化结构而非单纯参数扩张改善变异解释，与昨日Atlas方法不同。 重要度 8.5/10。\n原始资料：https://www.nature.com/articles/s41586-026-11005-5\nhttps://github.com/songlab-cal/gpn\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-10/\nAI辅助整理；一手核验不表示独立复现。",
+      "evidence_status": "primary_verified",
+      "publicationTitle": "Nature"
+    },
+    {
+      "id": "arxiv:2609.08798",
+      "title": "Eliciting Weak-to-Strong Generalization with On-Policy Reverse Distillation",
+      "url": "https://arxiv.org/abs/2609.08798",
+      "doi": "10.48550/arXiv.2609.08798",
+      "pdf_url": "https://arxiv.org/pdf/2609.08798",
+      "published_date": "2026-09-08",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Youngrok",
+          "lastName": "Park"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sangmin",
+          "lastName": "Bae"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hojung",
+          "lastName": "Jung"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jongwoo",
+          "lastName": "Ko"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yunseon",
+          "lastName": "Choi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Young Jin",
+          "lastName": "Kim"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Pashmina",
+          "lastName": "Cameron"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Aaron",
+          "lastName": "Courville"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Se-Young",
+          "lastName": "Yun"
+        }
+      ],
+      "authors": [
+        "Park, Youngrok",
+        "Bae, Sangmin",
+        "Jung, Hojung",
+        "Ko, Jongwoo",
+        "Choi, Yunseon",
+        "Kim, Young Jin",
+        "Cameron, Pashmina",
+        "Courville, Aaron",
+        "Yun, Se-Young"
+      ],
+      "tags": [
+        "训练方法",
+        "蒸馏",
+        "补看",
+        "待阅读"
+      ],
+      "note": "OPRD 研究的是一个有趣的问题：已经训练好的弱模型，能否帮助更强的模型学得更快，又不把学生限制在老师的水平？论文 9 月 8 日提交，9 月 9 日出现在 HF 每日论文中，本期作为技术补看，不把推荐日期当成首次发布。\n\n它没有要求学生照抄老师的答案。学生先生成自己的解题过程，用能够检查答案的程序得到奖励；老师训练前后的输出变化，则用于调整学生更新时的力度。更准确地说，方法会放大学生学习方向中沿着老师变化方向的分量，同时保留其他分量。正确性依据仍来自验证器，老师提供的是训练上的帮助。\n\n作者用 Qwen3 系列做数学和规则推理实验，包括让 4B 老师辅助 8B 学生。结果显示，在论文设定下可以用更少的更新取得更好的表现。但这依赖可靠的验证器，不能据此断言弱模型能监督所有开放任务；理论分析对优化驻点的结论，也不是最终正确率的保证。核对时，公开仓库 README 仍为占位说明，尚不能称为已有完整复现代码。\n\n\n\n入选理由：弱教师只改变验证器支持更新的力度，有机制新意；超窗按补看，代码尚为占位。 重要度 8/10。\n原始资料：https://arxiv.org/abs/2609.08798\nhttps://github.com/raymin0223/on_policy_reverse_distillation\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-10/\nAI辅助整理；一手核验不表示独立复现。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
