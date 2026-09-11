@@ -1,0 +1,40 @@
+{
+  "anthropic-2026-09": {
+    "issue_id": "2026-09-11-anthropic",
+    "title": "Anthropic 威胁报告 · 双语导读",
+    "description": "Kimi 数据转发与交友骗局的中英摘要，附官方原文、页码和章节导航。由 Juju Radar 整理，非全文翻译。",
+    "content_kind": "original_summary",
+    "date": "2026-09-11",
+    "report_title": "Detecting and countering misuse of AI: September 2026",
+    "report_url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "pdf_url": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026.pdf",
+    "blocks": [
+      {
+        "id": "kimi",
+        "title": "Kimi：数据去了哪里",
+        "pages": "148–149",
+        "page": 148,
+        "en": "Anthropic alleges that Moonshot routed Kimi users’ requests through Claude, including surveillance material and corporate credentials. This does not establish that the material was classified.",
+        "zh": "Anthropic 指称，Moonshot 将 Kimi 用户请求转交 Claude，其中涉及监控资料和企业凭据。这不足以认定相关材料属于国家秘密。"
+      },
+      {
+        "id": "dating",
+        "title": "交友骗局：聊天与付费",
+        "pages": "139–142",
+        "page": 139,
+        "en": "The report describes dating apps concealing AI personas while charging for continued interaction. It provides neither victims’ ages nor a verified total financial loss.",
+        "zh": "报告描述了一批隐瞒 AI 身份、诱导用户付费聊天的交友应用，未披露受害者年龄及经核实的损失总额。"
+      }
+    ],
+    "chapters": [
+      {"title": "报告概述", "page": 3},
+      {"title": "网络攻击", "page": 4},
+      {"title": "舆论影响活动", "page": 41},
+      {"title": "监控活动", "page": 81},
+      {"title": "常规武器", "page": 111},
+      {"title": "生物领域滥用", "page": 129},
+      {"title": "诈骗", "page": 139},
+      {"title": "违规蒸馏", "page": 143}
+    ]
+  }
+}

@@ -49,6 +49,13 @@ def main() -> None:
             )
         )
 
+    related_guides_html = ""
+    guides_path = folder.parent.parent / "site" / "reading-guides.json"
+    if guides_path.exists():
+        for key, guide in json.loads(guides_path.read_text()).items():
+            if guide['issue_id'] == folder.name:
+                related_guides_html += '<a class="source" href="https://www.asteronline.cn/juju-radar/guides/' + escape(key, quote=True) + '/"><span class="copy"><strong>' + escape(guide['title']) + '</strong><small>本站导读 · 中英摘要、原文页码与章节导航，非全文翻译</small></span><span class="arrow">↗</span></a>'
+
     registration_html = ""
     registration_path = folder.parent.parent / "site" / "registration.json"
     if registration_path.exists():
@@ -79,10 +86,11 @@ strong{{font-size:16px;line-height:1.45}}small{{margin-top:3px;color:var(--muted
 <p class="eyebrow">JUJU RADAR · SOURCE INDEX</p>
 <h1>{title}</h1>
 <p class="intro">本页汇总本期引用的官方公告、论文和代码仓库。点击条目即可前往原始页面。</p>
+{related_guides_html}
 {cards}
 <footer>Juju Radar · {date}<br>资料链接以原始发布页面为准。{registration_html}</footer>
 </main></body></html>
-""".format(title=escape(title), cards="\n".join(cards), date=escape(folder.name[:10] + (' · 特别版' if len(folder.name)>10 else '')), registration_html=registration_html)
+""".format(title=escape(title), cards="\n".join(cards), date=escape(folder.name[:10] + (' · 特别版' if len(folder.name)>10 else '')), registration_html=registration_html, related_guides_html=related_guides_html)
 
     output = folder / "sources.html"
     output.write_text(page, encoding="utf-8")
