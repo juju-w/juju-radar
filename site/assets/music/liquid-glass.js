@@ -69,7 +69,7 @@ SOFTWARE.
     svg.setAttribute("width", "0");
     svg.setAttribute("height", "0");
     svg.setAttribute("aria-hidden", "true");
-    svg.style.position = "absolute";
+    svg.style.cssText = "position:fixed;top:0;left:0;width:0;height:0;overflow:hidden;pointer-events:none";
     svgDefs = document.createElementNS(SVG_NS, "defs");
     svg.appendChild(svgDefs);
     document.body.appendChild(svg);

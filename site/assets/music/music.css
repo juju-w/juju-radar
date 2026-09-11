@@ -9,3 +9,6 @@
 .player .title,.panel li button{color:#19324e;text-shadow:0 1px 3px #ffffffd9}.subtitle,.caption{color:#455e78;text-shadow:0 1px 2px #ffffffd9}.panel select{background:#ffffff60}.player.lg-fallback,.panel.lg-fallback{background:linear-gradient(140deg,#ffffffb3,#f0f6ff80)}
 /* A clearer rim and a quieter center keep controls readable over article text. */
 .player{background:radial-gradient(ellipse at center,rgba(255,255,255,.64) 0%,rgba(247,251,255,.48) 58%,rgba(255,255,255,.12) 100%)}.panel{background:radial-gradient(ellipse at center,rgba(255,255,255,.8),rgba(248,251,255,.62) 65%,rgba(255,255,255,.18))}
+
+/* Only the reading frame scrolls; player and SVG filters stay in the viewport. */
+html,body{height:100%;overflow:hidden}iframe#site{height:100vh;height:100dvh}
