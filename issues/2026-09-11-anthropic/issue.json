@@ -1,9 +1,12 @@
 {
   "date": "2026-09-11",
+  "issue_id": "2026-09-11-anthropic",
   "kind": "special",
+  "section": "深度解读",
+  "published_at": "2026-09-11T20:24:28+08:00",
   "sources": [
     {
-      "title": "Anthropic 154 页报告：AI 如何进入攻击、监控和诈骗",
+      "title": "Kimi 请求去了哪里？Anthropic 报告里的敏感数据与交友骗局",
       "url": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026.pdf",
       "related_urls": [
         "https://www.anthropic.com/threat-intelligence-report-september-2026",
@@ -15,17 +18,16 @@
       "event_time": "2025-12 至 2026-08，部分案例附更早背景",
       "window_status": "特别版：9月10日披露的跨月调查，不按当日事件统计",
       "window_uncertain": false,
-      "reason": "从虚假交友应用到本地监控平台，Anthropic 披露了 AI 被用于持续运营的案例。本文拆解关键发现，也核对封号、组织归因和生物风险结论的证据边界。",
+      "reason": "Anthropic 指称 Kimi 请求被转发至 Claude，涉及监控资料、内部代码和有效凭据。交友应用则把 AI 人设、真人验证与充值收费混在一起。本文重点核对这两组案例及其证据边界。",
       "key_claims": [
         "报告154页覆盖七类滥用，样本为显著案例而非总体发生率。",
         "马里平台本地运行，报告承认账号封禁未停止已部署平台。",
         "交友应用约4700个AI人设触达至少25000名用户，不等于已确认付费受害者人数。",
         "蒸馏归因来自Anthropic，须区分统计窗口及各家公司被指称的行为。",
-        "生物章节不证明威胁迫近，武器案例成熟度不同。"
+        "生物章节不证明威胁迫近，武器案例成熟度不同。",
+        "重点核对第149页监控资料与国企凭据案例，归因来自Anthropic，未独立认定国家秘密泄漏。",
+        "交友应用按额度充值并混用AI人设与真人；报告没有年龄分布或确认损失金额。"
       ]
     }
-  ],
-  "issue_id": "2026-09-11-anthropic",
-  "section": "深度解读",
-  "published_at": "2026-09-11T20:24:28+08:00"
+  ]
 }
