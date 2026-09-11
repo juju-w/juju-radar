@@ -45,3 +45,9 @@ python3 ops/pull-release.py --repo juju-w/juju-radar --root /srv/juju-radar --st
 媒体清单 `music-v1/playlist.json` 为数组，每项包含 `title`、`artist`、`album`、`track`、`duration`、`url`、`cover`。默认专辑为 `Misty for Direct Cutting`。音乐按需加载，服务器应支持音频 Range 请求。更新器仅覆盖发布清单内的文件，不删除独立媒体目录。
 
 液态玻璃效果使用 [deepika-builds/liquid-glass](https://github.com/deepika-builds/liquid-glass)，MIT 许可已保留在脚本中；Chromium 使用 SVG 折射，其他浏览器使用模糊回退。
+
+## 特别版与深度解读
+
+重大报告与专题分析单独发布到“深度解读”，并在收录当天的精选列表显示一个特别版入口。同日每日精选保持独立，两篇各有固定地址及 RSS 条目。
+
+特别版目录使用 `issues/YYYY-MM-DD-topic/`；公开元数据包含 `date`、`issue_id`、`kind: special`、`section`、带时区的 `published_at` 和来源。目录标识决定链接，日期用于往期分组；不能用特别版覆盖同日目录。经核验的报告可以用 `item_type: report` 收入文献库，相关期次指回特别版。所有内容仍经公开文件白名单、敏感信息扫描与构建检查后发布。

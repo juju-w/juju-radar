@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "label": "Anthropic 完整报告 PDF（154 页）",
+      "url": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026.pdf",
+      "section": "原始资料"
+    },
+    {
+      "label": "Anthropic 报告网页版",
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "section": "原始资料"
+    },
+    {
+      "label": "微软 CaptiveCrunch 调查（7 月 31 日）",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
+      "section": "原始资料"
+    }
+  ]
+}

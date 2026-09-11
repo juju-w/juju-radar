@@ -12,7 +12,7 @@ def scan(paths):
  for path in paths:
   rel=path.relative_to(ROOT).as_posix()
   if path.is_symlink():bad.append((rel,'symlink'));continue
-  if rel not in STATIC and not re.fullmatch(r'issues/\d{4}-\d{2}-\d{2}/(?:article\.md|issue\.json|sources\.json|zotero-papers\.json)',rel):bad.append((rel,'not in public allowlist'))
+  if rel not in STATIC and not re.fullmatch(r'issues/\d{4}-\d{2}-\d{2}(?:-[a-z0-9]+)*/(?:article\.md|issue\.json|sources\.json|zotero-papers\.json)',rel):bad.append((rel,'not in public allowlist'))
   if rel in ['site/assets/share-cover.png','site/assets/wechat-cover.png']:
    data=path.read_bytes();width,height=(1200,630) if rel.endswith('/share-cover.png') else (512,512)
    assert data[:8]==b'\x89PNG\r\n\x1a\n' and data[16:24]==width.to_bytes(4,'big')+height.to_bytes(4,'big'),'Invalid share cover'
@@ -59,7 +59,15 @@ def main():
    if e['type']=='paper':
     assert e['title_zh'] and e['summary']
     assert 'href="'+e['path']+'"' in library
+  assert len({i['id'] for i in data['issues']})==len(data['issues'])
   archive=(dist/'archive/index.html').read_text()
+  assert archive.count('class="archive-group"')==len({i['date'] for i in data['issues']})
+  for i in data['issues']:
+   assert re.fullmatch(r'\d{4}-\d{2}-\d{2}',i['date'])
+   if i['kind']=='special':
+    selected=[e for e in data['entries'] if e['type']=='news' and i['id'] in e['issue_ids']]
+    assert len(selected)==1 and selected[0]['path']==i['path']
+    assert 'href="'+i['path']+'"' in (dist/'specials/index.html').read_text()
   for e in data['entries']:
    if e['type']=='news':assert 'href="'+e['path']+'"' in archive,'Archive omits selected item '+e['id']
  print('Public file allowlist and '+('source' if a.source_only else 'site')+' checks passed')

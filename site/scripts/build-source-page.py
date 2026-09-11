@@ -82,7 +82,7 @@ strong{{font-size:16px;line-height:1.45}}small{{margin-top:3px;color:var(--muted
 {cards}
 <footer>Juju Radar · {date}<br>资料链接以原始发布页面为准。{registration_html}</footer>
 </main></body></html>
-""".format(title=escape(title), cards="\n".join(cards), date=escape(folder.name), registration_html=registration_html)
+""".format(title=escape(title), cards="\n".join(cards), date=escape(folder.name[:10] + (' · 特别版' if len(folder.name)>10 else '')), registration_html=registration_html)
 
     output = folder / "sources.html"
     output.write_text(page, encoding="utf-8")

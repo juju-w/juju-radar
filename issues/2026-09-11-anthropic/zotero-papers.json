@@ -1,0 +1,32 @@
+{
+  "issue_date": "2026-09-11",
+  "papers": [
+    {
+      "id": "anthropic-threat-intelligence-september-2026",
+      "title": "Detecting and countering misuse of AI: September 2026",
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "pdf_url": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026.pdf",
+      "doi": "",
+      "published_date": "2026-09-10",
+      "item_type": "report",
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "Anthropic"
+        }
+      ],
+      "authors": [
+        "Anthropic"
+      ],
+      "tags": [
+        "Juju Radar",
+        "AI安全",
+        "威胁情报",
+        "特别版",
+        "待阅读"
+      ],
+      "note": "Anthropic公布154页报告，主要回顾2025年12月至2026年8月处置的七类滥用。关键变化在于AI从回答问题进入持续运营，包括网络行动、交友诈骗、监控分析与数据转发。\n\n马里平台案例显示，封号可停止开发协助，无法撤回已本地部署的系统。交友案例强调单轮对话之外的身份与收费设计；虚假新闻案例同时记录大规模产出和有限真实触达。\n\n组织和公司归因、交互规模来自Anthropic，外部未完整复核；武器研发成熟度不同，生物章节明确不证明威胁迫近。建议重点读3、103–105、137–140、143–154页。\n\nJuju Radar特别版：https://www.asteronline.cn/juju-radar/read/2026-09-11-anthropic/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

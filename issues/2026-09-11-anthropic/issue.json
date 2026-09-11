@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-11",
+  "kind": "special",
+  "sources": [
+    {
+      "title": "Anthropic 154 页报告：AI 如何进入攻击、监控和诈骗",
+      "url": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026.pdf",
+      "related_urls": [
+        "https://www.anthropic.com/threat-intelligence-report-september-2026",
+        "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/"
+      ],
+      "category": "AI安全 / 威胁情报 / 深度解读",
+      "score": 9.5,
+      "published_at": "2026-09-10",
+      "event_time": "2025-12 至 2026-08，部分案例附更早背景",
+      "window_status": "特别版：9月10日披露的跨月调查，不按当日事件统计",
+      "window_uncertain": false,
+      "reason": "从虚假交友应用到本地监控平台，Anthropic 披露了 AI 被用于持续运营的案例。本文拆解关键发现，也核对封号、组织归因和生物风险结论的证据边界。",
+      "key_claims": [
+        "报告154页覆盖七类滥用，样本为显著案例而非总体发生率。",
+        "马里平台本地运行，报告承认账号封禁未停止已部署平台。",
+        "交友应用约4700个AI人设触达至少25000名用户，不等于已确认付费受害者人数。",
+        "蒸馏归因来自Anthropic，须区分统计窗口及各家公司被指称的行为。",
+        "生物章节不证明威胁迫近，武器案例成熟度不同。"
+      ]
+    }
+  ],
+  "issue_id": "2026-09-11-anthropic",
+  "section": "深度解读",
+  "published_at": "2026-09-11T20:24:28+08:00"
+}
