@@ -18,7 +18,7 @@
   lastDocument=doc;
   const link=doc.querySelector('link[rel="canonical"]')?.href;
   if(!link?.startsWith(origin+'/juju-radar/'))return;
-  desired={title:meta(doc,'og:title')||doc.title,desc:(meta(doc,'og:description')||'').slice(0,120),link,imgUrl:origin+'/juju-radar/assets/wechat-cover.png'};
+  desired={title:meta(doc,'og:title')||doc.title,desc:(meta(doc,'og:description')||'').slice(0,120),link,imgUrl:origin+'/juju-radar/assets/wechat-cover.png?v=8077d64f03'};
   apply();
   if(doc.defaultView.sessionStorage.getItem('juju-wechat-share')===link){doc.defaultView.sessionStorage.removeItem('juju-wechat-share');show(link,desired.title);}
  }
