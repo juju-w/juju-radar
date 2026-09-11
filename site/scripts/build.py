@@ -68,7 +68,6 @@ ARROW='<svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" 
 def build(preview=False):
  registration=json.loads((SITE/'registration.json').read_text())
  paper_summaries=json.loads((SITE/'paper-summaries.json').read_text())
- guides=json.loads((SITE/'reading-guides.json').read_text())
  registration_html='<div class="registration">'+''.join('<a href="'+E(registration[k+'_url'])+'" target="_blank" rel="noopener noreferrer">'+E(registration[k+'_number'])+'</a>' for k in ['icp','police'])+'</div>'
  approvals=json.loads((SITE/'publications.json').read_text())
  folders=[ROOT/'issues'/d for d in sorted(approvals['issues'])]
@@ -89,8 +88,6 @@ def build(preview=False):
  for name in music_names:shutil.copyfile(music_source/name,music_dest/name)
  share_js=(SITE/'assets/share.js').read_bytes();sv=hashlib.sha256(share_js).hexdigest()[:10]
  (out/f'assets/share-{sv}.js').write_bytes(share_js)
- guide_js=(SITE/'assets/reading-guide.js').read_bytes();gv=hashlib.sha256(guide_js).hexdigest()[:10]
- (out/f'assets/reading-guide-{gv}.js').write_bytes(guide_js)
  shutil.copyfile(SITE/'assets/share-cover.png',out/'assets/share-cover.png')
  shutil.copyfile(SITE/'assets/wechat-cover.png',out/'assets/wechat-cover.png')
  wxjs=(SITE/'assets/wechat-share.js').read_bytes();wv=hashlib.sha256(wxjs).hexdigest()[:10]
@@ -99,7 +96,7 @@ def build(preview=False):
   return f'<button type="button" class="share-button" data-share-title="{E(title)}" data-share-url="{E(BASE+path.removeprefix(PREFIX))}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 15V3m-4 4 4-4 4 4M5 12v8h14v-8"/></svg>{label}</button>'
  def shell(title,body,canonical='',script='',description=''):
   description=' '.join((description or '每日 AI 动态、论文和开源项目，附中文解读与原始链接。').split())[:180]
-  article=canonical.startswith(('notes/','read/','projects/','guides/')) or (canonical.startswith('papers/') and canonical!='papers/')
+  article=canonical.startswith(('notes/','read/','projects/')) or (canonical.startswith('papers/') and canonical!='papers/')
   website={'@type':'WebSite','@id':BASE+'#website','url':BASE,'name':'Juju Radar','alternateName':'JuJu雷达','inLanguage':'zh-CN'}
   publisher={'@type':'Organization','@id':BASE+'about/#publisher','name':'Juju Radar','url':BASE+'about/'}
   page={'@type':'Article' if article else 'WebPage','@id':BASE+canonical+'#page','url':BASE+canonical,'name':title,'description':description,'inLanguage':'zh-CN','isPartOf':{'@id':BASE+'#website'}}
@@ -112,9 +109,9 @@ def build(preview=False):
    crumbs.append({'@type':'ListItem','position':2,'name':title,'item':BASE+canonical})
    body=re.sub(r'(<main[^>]*>)',lambda m:m[0]+f'<nav class="breadcrumbs" aria-label="面包屑"><a href="{PREFIX}">Juju Radar</a><span aria-hidden="true"> / </span><span>{E(title)}</span></nav>',body,count=1)
   schema=json.dumps({'@context':'https://schema.org','@graph':[website,publisher,page,{'@type':'BreadcrumbList','itemListElement':crumbs}]},ensure_ascii=False).replace('<','\\u003c')
-  if article:
+  if canonical.startswith(('notes/','read/','projects/')) or (canonical.startswith('papers/') and canonical!='papers/'):
    body=re.sub(r'(</h1>(?:<div class="meta">.*?</div>)?)',lambda m:m[0]+'<div class="share-actions">'+share_button(title,canonical)+'</div>',body,count=1)
-  return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(title)} · Juju Radar</title><meta name="description" content="{E(description)}"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(description)}"><meta property="og:url" content="{BASE+canonical}"><meta property="og:type" content="{'article' if article else 'website'}"><meta property="og:site_name" content="Juju Radar"><meta property="og:image" content="{BASE}assets/share-cover.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Juju Radar · AI 精选与研究笔记"><meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:locale" content="zh_CN"><script type="application/ld+json">{schema}</script><link rel="icon" href="{BASE}assets/wechat-cover.png"><link rel="canonical" href="{BASE+canonical}"><link rel="stylesheet" href="{PREFIX}assets/site-{cv}.css"><link rel="alternate" type="application/rss+xml" title="Juju Radar 每日精选" href="{BASE}feed.xml"><link rel="alternate" type="application/rss+xml" title="Juju Radar 论文" href="{BASE}papers.xml"></head><body><div class="wrap"><header><a class="brand" href="{PREFIX}">Juju Radar</a><nav aria-label="主导航"><a data-view="daily" href="{PREFIX}">精选</a><a data-view="library" href="{PREFIX}papers/">论文库</a><a href="{PREFIX}specials/">深度解读</a><a href="{PREFIX}archive/">往期</a><a href="{PREFIX}subscribe/">订阅</a></nav></header>{body}<footer><div class="footer-main"><span>内容由 AI 辅助整理 · 原始来源见各条链接</span><span><a href="{PREFIX}about/">关于与引用</a> · <a href="{PREFIX}subscribe/">RSS 与文献导出</a></span></div>{registration_html}</footer></div>{script}<script src="{PREFIX}assets/wechat-share-{wv}.js" defer></script><script src="{PREFIX}assets/share-{sv}.js" defer></script><script src="{PREFIX}assets/music-{music_version}/bootstrap.js" defer></script></body></html>'''
+  return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(title)} · Juju Radar</title><meta name="description" content="{E(description)}"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(description)}"><meta property="og:url" content="{BASE+canonical}"><meta property="og:type" content="{'article' if canonical.startswith(('notes/','read/','projects/')) or (canonical.startswith('papers/') and canonical!='papers/') else 'website'}"><meta property="og:site_name" content="Juju Radar"><meta property="og:image" content="{BASE}assets/share-cover.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Juju Radar · AI 精选与研究笔记"><meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:locale" content="zh_CN"><script type="application/ld+json">{schema}</script><link rel="icon" href="{BASE}assets/wechat-cover.png"><link rel="canonical" href="{BASE+canonical}"><link rel="stylesheet" href="{PREFIX}assets/site-{cv}.css"><link rel="alternate" type="application/rss+xml" title="Juju Radar 每日精选" href="{BASE}feed.xml"><link rel="alternate" type="application/rss+xml" title="Juju Radar 论文" href="{BASE}papers.xml"></head><body><div class="wrap"><header><a class="brand" href="{PREFIX}">Juju Radar</a><nav aria-label="主导航"><a data-view="daily" href="{PREFIX}">精选</a><a data-view="library" href="{PREFIX}papers/">论文库</a><a href="{PREFIX}specials/">深度解读</a><a href="{PREFIX}archive/">往期</a><a href="{PREFIX}subscribe/">订阅</a></nav></header>{body}<footer><div class="footer-main"><span>内容由 AI 辅助整理 · 原始来源见各条链接</span><span><a href="{PREFIX}about/">关于与引用</a> · <a href="{PREFIX}subscribe/">RSS 与文献导出</a></span></div>{registration_html}</footer></div>{script}<script src="{PREFIX}assets/wechat-share-{wv}.js" defer></script><script src="{PREFIX}assets/share-{sv}.js" defer></script><script src="{PREFIX}assets/music-{music_version}/bootstrap.js" defer></script></body></html>'''
  def save(path,text):
   p=out/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text.replace('https://happy.asteronline.cn','https://www.asteronline.cn'))
  issues=[];entries=[];papers={};projects={}
@@ -144,10 +141,7 @@ def build(preview=False):
   edition='<p class="edition">特别版 · 深度解读</p>' if special else ''
   back='specials/' if special else 'archive/'
   back_label='全部深度解读' if special else '全部往期'
-  guide_links=''.join(f'<aside class="guide-callout"><a href="{PREFIX}guides/{E(key)}/">{E(g["title"])} {ARROW}</a><span>中英摘要、原文页码与章节导航</span></aside>' for key,g in guides.items() if g['issue_id']==issue_id)
-  article_html=md(text)
-  if guide_links:article_html=re.sub(r'(</h1>)',lambda m:m[0]+guide_links,article_html,count=1)
-  save('read/'+issue_id+'/index.html',shell(title,f'<main class="reading"><a class="back" href="{PREFIX}{back}">{back_label}</a>{edition}{article_html}<div class="actions"><a href="{BASE+issue_id}/">本期全部原始资料 {ARROW}</a><a href="{PREFIX}?date={date}">当天精选列表</a></div></main>','read/'+issue_id+'/',description=desc))
+  save('read/'+issue_id+'/index.html',shell(title,f'<main class="reading"><a class="back" href="{PREFIX}{back}">{back_label}</a>{edition}{md(text)}<div class="actions"><a href="{BASE+issue_id}/">本期全部原始资料 {ARROW}</a><a href="{PREFIX}?date={date}">当天精选列表</a></div></main>','read/'+issue_id+'/',description=desc))
   if (folder/'zotero-papers.json').exists():
    for p in json.loads((folder/'zotero-papers.json').read_text())['papers']:
     if p.get('evidence_status')!='primary_verified':continue
@@ -221,28 +215,14 @@ def build(preview=False):
  feed('feed.xml','Juju Radar 精选与深度解读',[{'title':('【特别版】' if i['kind']=='special' else '')+i['title'],'link':BASE+'read/'+i['id']+'/','guid':(BASE if i['kind']=='special' else BASE.replace('https://www.asteronline.cn','https://happy.asteronline.cn'))+'read/'+i['id']+'/','description':md((ROOT/'issues'/i['id']/'article.md').read_text().split('## 原始资料')[0]),'pubDate':format_datetime(datetime.fromisoformat(i['published_at'])) if i['kind']=='special' else pub(i['date'])} for i in issues])
  feed('papers.xml','Juju Radar 论文',[{'title':p['title'],'link':BASE+'papers/'+slug(ident)+'/','description':md(p['note'])+'<p><a href="'+E(p['url'])+'">论文原文</a></p>','pubDate':pub(p['date'])} for ident,p in sorted(papers.items(),key=lambda kv:kv[1]['date'],reverse=True)])
  save('about/index.html',shell('关于 JuJu雷达与引用说明',f'<main class="reading"><h1>关于 JuJu雷达</h1><p class="lead">Juju Radar（JuJu雷达）整理 AI 动态、论文与开源项目，提供中文解读和原始资料链接。</p><h2>内容与来源</h2><p>内容由 AI 辅助整理。文章保留原始来源，论文笔记区分方法与局限；收录不代表独立复现或对结论作出保证。阅读具体判断时，请同时核对原始材料。</p><h2>日期与更正</h2><p>收录日期表示本站整理该资料的日期，不等于事件发生或论文首次公开的日期。后续修订沿用原文章链接。</p><h2>如何引用</h2><p>引用本站中文解读时，请注明文章标题、Juju Radar、文章永久链接及访问日期。引用论文或项目自身的结论时，请优先标注原论文、作者或项目，并保留原始链接。</p><h2>查找与订阅</h2><p><a href="{PREFIX}archive/">往期精选</a> · <a href="{PREFIX}papers/">论文库</a> · <a href="{PREFIX}specials/">深度解读</a> · <a href="{PREFIX}subscribe/">RSS 与文献导出</a></p></main>','about/',description='了解 Juju Radar 的 AI 中文精选、原始资料、收录日期和引用方式。'))
- for key,g in guides.items():
-  if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',key) or g['content_kind']!='original_summary':raise ValueError('Invalid reading guide')
-  if g['issue_id'] not in approvals['issues']:raise ValueError('Guide has no published analysis')
-  sections=[]
-  for b in g['blocks']:
-   if not re.fullmatch(r'[a-z0-9-]+',b['id']):raise ValueError('Invalid guide paragraph ID')
-   sections.append(f'<section class="guide-section" id="{E(b["id"])}"><h2>{E(b["title"])}</h2><a class="guide-source" href="{E(g["pdf_url"])}#page={int(b["page"])}" target="_blank" rel="noopener noreferrer">官方 PDF · 第 {E(b["pages"])} 页 {ARROW}</a><div class="bilingual-pair"><div class="guide-en" lang="en"><span class="language-label">English summary · Juju Radar</span><p>{E(b["en"])}</p></div><div class="guide-zh" lang="zh-CN"><span class="language-label">对应中文</span><p>{E(b["zh"])}</p></div></div></section>')
-  chapters=''.join(f'<li><a href="{E(g["pdf_url"])}#page={int(c["page"])}" target="_blank" rel="noopener noreferrer"><span>{E(c["title"])}</span><span class="meta">第 {int(c["page"])} 页 ↗</span></a></li>' for c in g['chapters'])
-  toc=''.join(f'<a href="#{E(b["id"])}">{E(b["title"])}</a>' for b in g['blocks'])
-  body=f'''<main class="reading reading-guide" data-reading-guide data-language="both"><a class="back" href="{PREFIX}read/{E(g['issue_id'])}/">返回深度解读</a><p class="edition">报告导读 · 中英对照</p><h1>{E(g['title'])}</h1><div class="meta">{E(g['date'])} 整理 · 约 2 分钟</div>
-<p class="lead">两则中英摘要，方便核对原文。</p><p class="notice">英文为 Juju Radar 撰写的摘要，下方为对应中文；本页不是报告原文或全文翻译。</p>
-<div class="actions"><a href="{E(g['report_url'])}" target="_blank" rel="noopener noreferrer">官方网页版 {ARROW}</a><a href="{E(g['pdf_url'])}" target="_blank" rel="noopener noreferrer">官方 PDF {ARROW}</a></div>
-<div class="guide-controls" data-language-controls role="group" aria-label="阅读语言" hidden><button type="button" data-language="both" aria-pressed="true">中英对照</button><button type="button" data-language="zh" aria-pressed="false">仅中文</button><button type="button" data-language="en" aria-pressed="false">仅英文</button></div>
-<nav class="guide-toc" aria-label="导读目录">{toc}<a href="#chapters">原文章节</a></nav>{''.join(sections)}
-<section id="chapters" class="guide-section"><h2>原文章节</h2><p class="meta">以下链接前往 Anthropic 官方 PDF。部分手机阅读器不支持定位，请按页码查找。</p><ul class="guide-chapters">{chapters}</ul><p>需要阅读全文时，可以打开官方网页版，使用浏览器的翻译功能。更多背景与分析见<a href="{PREFIX}read/{E(g['issue_id'])}/">本站深度解读</a>。</p></section>
-<section class="guide-rights"><h2>来源与版权</h2><p>原报告：<a href="{E(g['report_url'])}" target="_blank" rel="noopener noreferrer">{E(g['report_title'])}</a>，Anthropic 发布。</p><p>原报告版权归相应权利人所有。本站仅提供原创摘要和原始链接，未托管报告原文、图表或完整译文。本页由 Juju Radar 借助 AI 整理，未经 Anthropic 审核或背书。</p><p>内容纠错或权利问题，可通过<a href="https://github.com/juju-w/juju-radar/issues" target="_blank" rel="noopener noreferrer">仓库 Issues</a>联系。</p></section></main>'''
-  save('guides/'+key+'/index.html',shell(g['title'],body,'guides/'+key+'/',script=f'<script src="{PREFIX}assets/reading-guide-{gv}.js" defer></script>',description=g['description']))
  save('robots.txt','User-agent: *\nAllow: /juju-radar/\nDisallow: /juju-radar/api/\nDisallow: /juju-radar/music-v1/\n\nSitemap: '+BASE+'sitemap.xml\n')
  urls=sorted({str(p.relative_to(out)).removesuffix('index.html') for p in out.rglob('index.html') if 'assets' not in p.relative_to(out).parts})
  sm=ET.Element('urlset',xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
  for path in urls:ET.SubElement(ET.SubElement(sm,'url'),'loc').text=BASE+path
  ET.ElementTree(sm).write(out/'sitemap.xml',encoding='utf-8',xml_declaration=True)
+ # The withdrawn guide's existing share link leads to the full analysis.
+ retired_target=BASE+'read/2026-09-11-anthropic/'
+ save('guides/anthropic-2026-09/index.html',f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url={retired_target}"><link rel="canonical" href="{retired_target}"><title>前往深度解读 · Juju Radar</title></head><body><p><a href="{retired_target}">阅读 Anthropic 报告深度解读</a></p>{registration_html}</body></html>')
  manifest={'mode':'preview' if preview else 'public','issues':{p.name:digest(p) for p in folders},'counts':{'issues':len(issues),'papers':len(papers),'projects':len(projects),'entries':len(entries)},'files':{str(p.relative_to(out)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(out.rglob('*')) if p.is_file()}}
  jsonwrite(SITE/('preview-build.json' if preview else 'build-receipt.json'),manifest)
  print(json.dumps({'output':str(out),**manifest['counts']},ensure_ascii=False))

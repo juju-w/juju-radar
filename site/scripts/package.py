@@ -12,7 +12,6 @@ for date in json.loads((ROOT/'site/publications.json').read_text())['issues']:
  with tempfile.TemporaryDirectory() as t:
   folder=Path(t)/'issues'/date;folder.mkdir(parents=True);(Path(t)/'site').mkdir()
   shutil.copy2(ROOT/'issues'/date/'article.md',folder/'article.md');shutil.copy2(ROOT/'site/registration.json',Path(t)/'site/registration.json')
-  shutil.copy2(ROOT/'site/reading-guides.json',Path(t)/'site/reading-guides.json')
   subprocess.run(['python3',str(ROOT/'site/scripts/build-source-page.py'),str(folder)],check=True,stdout=subprocess.DEVNULL)
   (DIST/date).mkdir(exist_ok=True);shutil.copy2(folder/'sources.html',DIST/date/'index.html')
 run('python3','site/scripts/check.py')
