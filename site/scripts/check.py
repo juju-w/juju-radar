@@ -53,6 +53,14 @@ def main():
   for name,count in [('feed.xml',len(data['issues'])),('papers.xml',paper_count)]:
    items=ET.parse(dist/name).findall('./channel/item');assert len(items)==count;assert len({i.findtext('guid') for i in items})==count
   assert (dist/'papers.ris').read_text().count('ER  -')==paper_count
+  sitemap={n.text for n in ET.parse(dist/'sitemap.xml').iter() if n.tag.endswith('loc')}
+  for section in ['read','notes','papers','projects']:
+   for page in (dist/section).glob('*/index.html'):
+    source=page.read_text();markup=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)[1])
+    article=next(n for n in markup['@graph'] if n['@type']=='Article')
+    assert article['url'] in sitemap and article['headline'] and article['description']
+  assert 'Sitemap: https://www.asteronline.cn/juju-radar/sitemap.xml' in (dist/'robots.txt').read_text()
+
   assert not any(e['type']=='project' for e in data['entries'])
   library=(dist/'papers/index.html').read_text()
   for e in data['entries']:

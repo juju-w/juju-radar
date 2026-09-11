@@ -15,3 +15,5 @@ footer{display:block}.footer-main{display:flex;justify-content:space-between;gap
 
 .edition{display:inline-block;margin:18px 0 8px;padding:5px 10px;border:1px solid #d8e4ee;border-radius:4px;color:#0f4c81;background:#f2f6fa;font-size:13px;font-weight:600}
 @media(max-width:640px){header{flex-wrap:wrap;gap:14px}header nav{width:100%;justify-content:space-between;gap:10px}header nav a{white-space:nowrap}}
+
+.breadcrumbs{font-size:12px;line-height:1.6;color:var(--muted);margin:0 0 20px;overflow-wrap:anywhere}.breadcrumbs a{color:inherit}
