@@ -30,6 +30,8 @@ jobs:
         run: |
           "$RUNNER_TEMP/gitleaks" dir . --redact --no-banner
           "$RUNNER_TEMP/gitleaks" git . --redact --no-banner --log-opts="--all"
+      - name: Test WeChat signing service
+        run: python3 ops/test-wechat-sign.py
       - name: Build and validate website
         run: python3 site/scripts/package.py
       - name: Scan generated files

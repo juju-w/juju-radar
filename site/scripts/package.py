@@ -17,7 +17,7 @@ for date in json.loads((ROOT/'site/publications.json').read_text())['issues']:
 run('python3','site/scripts/check.py')
 commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
 files={str(p.relative_to(DIST)):hashlib.sha256(p.read_bytes()).hexdigest() for p in DIST.rglob('*') if p.is_file()}
-assert all(Path(p).suffix in ['.html','.css','.js','.json','.xml','.ris'] for p in files)
+assert all((Path(p).suffix in ['.html','.css','.js','.json','.xml','.ris'] or p in ['assets/share-cover.png','assets/wechat-cover.png']) for p in files)
 release=ROOT/'release';release.mkdir(exist_ok=True)
 with tarfile.open(release/'site.tar.gz','w:gz') as tar:
  for name in sorted(files):tar.add(DIST/name,arcname=name,recursive=False)

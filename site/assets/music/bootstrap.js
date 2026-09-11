@@ -8,7 +8,9 @@
   // Fail quietly without replacing the article if optional music files are unavailable.
   const media=await fetch('/juju-radar/music-v1/playlist.json');if(!media.ok)return;
   const [markup,css]=await Promise.all([get('shell.html'),get('music.css')]);
-  const frame=document.createElement('iframe');frame.id='site';frame.title='Juju Radar reading area';frame.hidden=true;
+  const frame=document.createElement('iframe');frame.id='site';frame.allow='clipboard-write';
+  const policy=document.permissionsPolicy||document.featurePolicy;
+  if(!policy?.features || policy.features().includes('web-share'))frame.allow+='; web-share';frame.title='Juju Radar reading area';frame.hidden=true;
   const loaded=new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('Reading frame timed out')),15000);frame.addEventListener('load',()=>{clearTimeout(timer);resolve();},{once:true});});
   frame.src=location.href;document.body.append(frame);
   try{await loaded;}catch(e){frame.remove();return;}
@@ -21,7 +23,7 @@
    document.head.append(style);frame.hidden=false;
    document.body.append(template.content);
    await script('liquid-glass.js');await script('player.js');
-   const sync=()=>{try{document.title=frame.contentDocument.title;}catch(e){}};frame.addEventListener('load',sync);sync();
+   const sync=()=>{try{document.title=frame.contentDocument.title;}catch(e){}};frame.addEventListener('load',sync);sync();window.dispatchEvent(new Event('juju:reading-ready'));
   }catch(e){style.remove();for(const link of styles)link.disabled=false;document.body.replaceChildren(...original);}
  })().catch(()=>{});
 })();
