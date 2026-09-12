@@ -1,0 +1,79 @@
+{
+  "sources": [
+    {
+      "label": "Amodei 原文",
+      "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+      "section": "Anthropic CEO：放慢能力提升，让外部审查进入公司"
+    },
+    {
+      "label": "公开倡议",
+      "url": "https://www.pacingthefrontier.com/",
+      "section": "Anthropic CEO：放慢能力提升，让外部审查进入公司"
+    },
+    {
+      "label": "AP 报道与采访",
+      "url": "https://apnews.com/article/d59552edcb27892d8ee4d98a48397706",
+      "section": "Anthropic CEO：放慢能力提升，让外部审查进入公司"
+    },
+    {
+      "label": "研究团队报告",
+      "url": "https://www.rubyhack.ai/",
+      "section": "RubyGems 新披露：训练任务为何碰上了公共软件仓库"
+    },
+    {
+      "label": "RubyGems 平台说明",
+      "url": "https://blog.rubygems.org/2026/09/11/update-may-spam-publishing-campaign.html",
+      "section": "RubyGems 新披露：训练任务为何碰上了公共软件仓库"
+    },
+    {
+      "label": "ABC 引述 OpenAI 回应",
+      "url": "https://www.abc.net.au/news/2026-09-12/openai-agents-rubygems-cyber-attack-before-hugging-face-hack/107146386",
+      "section": "RubyGems 新披露：训练任务为何碰上了公共软件仓库"
+    },
+    {
+      "label": "技术报告",
+      "url": "https://arxiv.org/abs/2609.11274",
+      "section": "补看小米语音模型：几个人同时说话，只转写指定的人"
+    },
+    {
+      "label": "官方代码",
+      "url": "https://github.com/xiaomi-research/xiaomi-cocktailasr-1",
+      "section": "补看小米语音模型：几个人同时说话，只转写指定的人"
+    },
+    {
+      "label": "模型权重",
+      "url": "https://huggingface.co/Ease3/Xiaomi-CocktailASR-1",
+      "section": "补看小米语音模型：几个人同时说话，只转写指定的人"
+    },
+    {
+      "label": "技术报告",
+      "url": "https://arxiv.org/abs/2609.10712",
+      "section": "补看 NVIDIA 数学报告：证明要反复检查，模型也会一起看漏"
+    },
+    {
+      "label": "推理流程与提交证明",
+      "url": "https://github.com/NVIDIA-NeMo/Skills/tree/main/recipes/nemotron-imo-tts",
+      "section": "补看 NVIDIA 数学报告：证明要反复检查，模型也会一起看漏"
+    },
+    {
+      "label": "模型与数据集合",
+      "url": "https://huggingface.co/collections/nvidia/nemotron-labs-imo-2026",
+      "section": "补看 NVIDIA 数学报告：证明要反复检查，模型也会一起看漏"
+    },
+    {
+      "label": "Minitap 原文",
+      "url": "https://www.minitap.ai/blog/i-expected-better-from-google",
+      "section": "补看 Artemis 署名争议：当前仓库已注明 Minitap 来源"
+    },
+    {
+      "label": "Artemis 当前仓库",
+      "url": "https://github.com/google/artemis",
+      "section": "补看 Artemis 署名争议：当前仓库已注明 Minitap 来源"
+    },
+    {
+      "label": "公开讨论",
+      "url": "https://github.com/google/artemis/issues/40",
+      "section": "补看 Artemis 署名争议：当前仓库已注明 Minitap 来源"
+    }
+  ]
+}

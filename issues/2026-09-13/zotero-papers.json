@@ -1,0 +1,161 @@
+{
+  "issue_date": "2026-09-13",
+  "papers": [
+    {
+      "id": "arxiv:2609.11274",
+      "title": "Xiaomi-CocktailASR-1 Technical Report",
+      "url": "https://arxiv.org/abs/2609.11274",
+      "doi": "10.48550/arXiv.2609.11274",
+      "pdf_url": "https://arxiv.org/pdf/2609.11274",
+      "published_date": "2026-09-10",
+      "item_type": "preprint",
+      "authors": [
+        "Zhang, Yiru",
+        "Su, Hang",
+        "Fan, Lichun",
+        "Zeng, Ying",
+        "Liu, Chang",
+        "Wang, Yifeng",
+        "Liang, Yuquan",
+        "Li, Tao",
+        "Li, Lian",
+        "Yang, Wenhao",
+        "Luan, Jian",
+        "Zou, Cong",
+        "Qu, Heng"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yiru",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hang",
+          "lastName": "Su"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lichun",
+          "lastName": "Fan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ying",
+          "lastName": "Zeng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chang",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yifeng",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuquan",
+          "lastName": "Liang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tao",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lian",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenhao",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jian",
+          "lastName": "Luan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Cong",
+          "lastName": "Zou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Heng",
+          "lastName": "Qu"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "补看",
+        "语音 / 开源模型"
+      ],
+      "note": "Xiaomi-CocktailASR-1 处理的是一个很具体的问题：给它一小段目标说话人的录音，再输入多人混合语音，让它只转写这个人的话。模型把参考录音和待识别音频一起编码，直接生成文字，省去单独分离人声再做识别的步骤；目标人物没有说话时，它还需要学会输出空文本。\n\n这类能力适合用来研究嘈杂会议、穿戴设备等场景。论文在 AliMeeting-Far 上报告的目标说话人词错误率为 20.63%，对照的既有方法为 27.5%；代码仓库和权重页面均已公开。但不同数据集上的优势并不一致，不能笼统写成“解决了多人语音识别”。\n\n还有一个容易忽略的统计口径：论文的部分单人语音比较使用“非空输出错误率”，会排除模型没有输出文字的样本，必须结合误拒绝率一起看。能拒绝非目标声音，也不代表它已经具备防冒用的身份认证能力。论文 9 月 10 日提交，本期作为补看收录。\n\n重要度：8.5/10。指定说话人直接转写与拒绝训练值得补读；需同时看识别与误拒绝指标。\n本期为补看。原文：https://arxiv.org/abs/2609.11274\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-13/\nAI辅助整理，未独立复现实验。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.10712",
+      "title": "An Open Recipe for IMO Gold: Training Nemotron for Olympiad Mathematics",
+      "url": "https://arxiv.org/abs/2609.10712",
+      "doi": "10.48550/arXiv.2609.10712",
+      "pdf_url": "https://arxiv.org/pdf/2609.10712",
+      "published_date": "2026-09-09",
+      "item_type": "preprint",
+      "authors": [
+        "Moshkov, Ivan",
+        "Ge, Stephen",
+        "Armstrong, George",
+        "Du, Wei",
+        "Mahdavi, Sadegh",
+        "Gitman, Igor"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Ivan",
+          "lastName": "Moshkov"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Stephen",
+          "lastName": "Ge"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "George",
+          "lastName": "Armstrong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wei",
+          "lastName": "Du"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sadegh",
+          "lastName": "Mahdavi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Igor",
+          "lastName": "Gitman"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "补看",
+        "数学推理 / 训练与推理方法"
+      ],
+      "note": "NVIDIA 的这份报告解释了 Nemotron 数学系统怎样达到 IMO 2026 金牌分数线：三个模型检查点分工生成证明、评判和修改，再用单独一轮高计算量评审选择提交结果。整个过程使用自然语言，不依赖形式化证明器。报告称，官方阅卷给出 30/42 分，当年的金牌线是 29 分。\n\n更值得读的是资源账和失败分析。找到六份最终提交证明花了约 7.07 亿个生成词元、1,464 个 GB200 GPU 小时；把已经启动的轮次运行完，总量接近 23.1 亿词元、4,800 GPU 小时。模型评审给两道题的证明多算了分，说明反复让模型检查，也可能保留共同盲点。\n\n训练数据、推理代码和检查点让这些取舍可以继续研究，但这并不是一套低成本解题方案。权重页面注明 9 月 3 日已发布，本期补读的是随后公开的技术报告，不重报“模型刚刚开源”。报告的 arXiv 提交日期是 9 月 9 日。\n\n重要度：8.5/10。公开报告提供推理流程、资源账与评审盲点；9月3日已放权重，不重报开源首发。\n本期为补看。原文：https://arxiv.org/abs/2609.10712\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-13/\nAI辅助整理，未独立复现实验。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
