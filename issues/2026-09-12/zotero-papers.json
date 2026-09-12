@@ -1,0 +1,726 @@
+{
+  "issue_date": "2026-09-12",
+  "papers": [
+    {
+      "id": "arxiv:2609.10715",
+      "title": "NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction",
+      "url": "https://arxiv.org/abs/2609.10715",
+      "doi": "10.48550/arXiv.2609.10715",
+      "pdf_url": "https://arxiv.org/pdf/2609.10715",
+      "published_date": "2026-09-09",
+      "item_type": "preprint",
+      "authors": [
+        "NCP Team",
+        "Cao, Jiaqi",
+        "Chen, Chiyu",
+        "Cheng, Shuang",
+        "Cheng, Xu",
+        "Dai, Beiya",
+        "Feng, Yufan",
+        "Ge, Kewen",
+        "Ge, Ruijun",
+        "Huang, Jiayi",
+        "Jiao, Yang",
+        "Lin, Dahua",
+        "Lin, Zhouhan",
+        "Liu, Yifan",
+        "Liu, Yuliang",
+        "Qi, Biqing",
+        "Ruan, Mowen",
+        "Shen, Junzhe",
+        "Song, Yunchong",
+        "Sun, Hao",
+        "Tian, Zhongbo",
+        "Wang, Yixuan",
+        "Wei, Rubin",
+        "Xiong, Jiaxin",
+        "Yang, Kangyu",
+        "Yao, Qian",
+        "Zhang, Qi",
+        "Zhou, Bowen"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "NCP Team"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaqi",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chiyu",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuang",
+          "lastName": "Cheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xu",
+          "lastName": "Cheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Beiya",
+          "lastName": "Dai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yufan",
+          "lastName": "Feng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kewen",
+          "lastName": "Ge"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruijun",
+          "lastName": "Ge"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiayi",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yang",
+          "lastName": "Jiao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dahua",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhouhan",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yifan",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuliang",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Biqing",
+          "lastName": "Qi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mowen",
+          "lastName": "Ruan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junzhe",
+          "lastName": "Shen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yunchong",
+          "lastName": "Song"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hao",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhongbo",
+          "lastName": "Tian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yixuan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rubin",
+          "lastName": "Wei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaxin",
+          "lastName": "Xiong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kangyu",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qian",
+          "lastName": "Yao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qi",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bowen",
+          "lastName": "Zhou"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "基础模型 / 预训练"
+      ],
+      "note": "上海人工智能实验室与上海交大 LUMIA Lab 的 NCP-ArchPreview，把两种预测放进同一次训练。模型从内部表示中学习离散的概念编码，预测后续概念，再把结果送回文字生成部分。这里的“概念”是模型学出的编码，并非人事先写好的词义标签；最终输出仍然逐个生成词元。\n\n这次报告给出 8.9B 参数规模的实验，并公开多个训练阶段的检查点。相比 OLMo-3-7B，它用约 51.3% 的训练词元达到对方第一阶段的最终损失。但两者参数量不同，更有参考价值的是另一组对照：**与同为 8.9B 参数的基线相比，约用 85% 的计算量接近其训练损失**。\n\n“学得更快”能否变成“实际更好用”，还要分阶段看。作者报告预训练后的下游平均成绩提高 2.45 个百分点，继续中期训练后优势缩小到 0.59 个百分点；长上下文训练也尚未包含在这次预览中。它提供了一个可检查的预训练改法，距离证明所有任务都能明显受益，还有一段路。\n\n判断：共同训练词元和概念预测，8.9B规模及参数匹配对照，检查点公开；长上下文与下游收益仍待验证。\n原始论文：https://arxiv.org/abs/2609.10715\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-12/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.11929",
+      "title": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
+      "url": "https://arxiv.org/abs/2609.11929",
+      "doi": "10.48550/arXiv.2609.11929",
+      "pdf_url": "https://arxiv.org/pdf/2609.11929",
+      "published_date": "2026-09-10",
+      "item_type": "preprint",
+      "authors": [
+        "Diao, Haiwen",
+        "Wang, Jiahao",
+        "Ding, Chenjing",
+        "Deng, Hanming",
+        "Chen, Jiangnan",
+        "Zhang, Ruixi",
+        "Wang, Ruohui",
+        "Tong, Wenwen",
+        "Fan, Xiangyu",
+        "Wang, Yubo",
+        "Zhu, Yue",
+        "Niu, Yuwei",
+        "Bai, Zhengqi",
+        "Lin, Zhiqian",
+        "Yang, Zhitao",
+        "Cai, Zhongang",
+        "Yang, Bo",
+        "Feng, Chen",
+        "Lv, Chengguang",
+        "Liu, Guangjia",
+        "Wang, Guanlin",
+        "Zhang, Hanyu",
+        "Yu, Haojia",
+        "Xiao, Hongcan",
+        "Wang, Hongli",
+        "Wu, Huan",
+        "Zhong, Huaping",
+        "Fang, Jian",
+        "Fan, Jianan",
+        "Li, Jiaqi",
+        "Lu, Jiefan",
+        "Zuo, Jing",
+        "Ni, Jingcheng",
+        "Xu, Junxiang",
+        "Dai, Linjun",
+        "Xu, Mutian",
+        "Yan, Peishen",
+        "Wu, Penghao",
+        "Mao, Ruijie",
+        "Wang, Ruisi",
+        "Bai, Shihao",
+        "Yang, Shuang",
+        "Yang, Shuya",
+        "Zheng, Shuyan",
+        "Wu, Silei",
+        "Li, Siying",
+        "Chu, Tao",
+        "Zhong, Tianbo",
+        "Zhou, Tongxi",
+        "Luo, Weichao",
+        "Fan, Weichen",
+        "Jia, Wenhao",
+        "Gao, Wenjie",
+        "Kong, Xiangli",
+        "Li, Yan",
+        "Yong, Yang",
+        "Wen, Zimo",
+        "Qian, Zixuan",
+        "Sun, Wenxiu",
+        "Gong, Ruihao",
+        "Wang, Quan",
+        "Lu, Lewei",
+        "Yang, Lei",
+        "Liu, Ziwei",
+        "Lin, Dahua"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Haiwen",
+          "lastName": "Diao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiahao",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenjing",
+          "lastName": "Ding"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hanming",
+          "lastName": "Deng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiangnan",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruixi",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruohui",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenwen",
+          "lastName": "Tong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiangyu",
+          "lastName": "Fan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yubo",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yue",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuwei",
+          "lastName": "Niu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhengqi",
+          "lastName": "Bai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhiqian",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhitao",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhongang",
+          "lastName": "Cai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bo",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chen",
+          "lastName": "Feng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chengguang",
+          "lastName": "Lv"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guangjia",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guanlin",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hanyu",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haojia",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hongcan",
+          "lastName": "Xiao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hongli",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huan",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huaping",
+          "lastName": "Zhong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jian",
+          "lastName": "Fang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jianan",
+          "lastName": "Fan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaqi",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiefan",
+          "lastName": "Lu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jing",
+          "lastName": "Zuo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingcheng",
+          "lastName": "Ni"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junxiang",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Linjun",
+          "lastName": "Dai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mutian",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peishen",
+          "lastName": "Yan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Penghao",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruijie",
+          "lastName": "Mao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruisi",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shihao",
+          "lastName": "Bai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuang",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuya",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuyan",
+          "lastName": "Zheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Silei",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Siying",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tao",
+          "lastName": "Chu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianbo",
+          "lastName": "Zhong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tongxi",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weichao",
+          "lastName": "Luo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weichen",
+          "lastName": "Fan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenhao",
+          "lastName": "Jia"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenjie",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiangli",
+          "lastName": "Kong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yang",
+          "lastName": "Yong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zimo",
+          "lastName": "Wen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zixuan",
+          "lastName": "Qian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenxiu",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruihao",
+          "lastName": "Gong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Quan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lewei",
+          "lastName": "Lu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lei",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ziwei",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dahua",
+          "lastName": "Lin"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "多模态 / 图像生成"
+      ],
+      "note": "SenseNova-U1.5 的新进展是 **9 月 11 日公开技术报告**。模型与权重在 8 月已经发布，这次可以更仔细地看它如何训练：一个 8B 参数架构同时承担视觉理解和生成，不依赖单独的视觉编码器或 VAE 图像压缩器。\n\n报告中值得注意的是训练分工。团队先针对审美、文字、信息图和编辑等能力训练不同专家，再通过多专家蒸馏，把它们的长处汇入统一模型。空间重建训练则用来加强画面结构，配合原生 4K 生成。这些做法试图兼顾“理解画面内容”和“准确画出细节”，两者并不会自动同步进步。\n\n现有权重和推理代码可以获取，U1.5 的完整训练流程仍待开放。官方部分高分使用了提示词增强，比较时需把这一步计入工作流。项目也列出了密集文字出错、复杂编辑漂移等问题；对中文信息图来说，能生成一张好看的示例，与能稳定交付可用图片，仍是两回事。\n\n判断：新的是技术报告；权重8月20日已发，报告补齐多专家蒸馏、空间重建与评测条件，不能重报模型首发。\n原始论文：https://arxiv.org/abs/2609.11929\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-12/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.11561",
+      "title": "Memory as Plans: World-Action Modeling with Memory-Grounded Planning",
+      "url": "https://arxiv.org/abs/2609.11561",
+      "doi": "10.48550/arXiv.2609.11561",
+      "pdf_url": "https://arxiv.org/pdf/2609.11561",
+      "published_date": "2026-09-10",
+      "item_type": "preprint",
+      "authors": [
+        "Zhao, Sizhe",
+        "Xie, Haozhe",
+        "Zhao, Weiyu",
+        "Zhang, Chenchu",
+        "Wang, Huan",
+        "Wang, Chenyang",
+        "Liu, Qinglin",
+        "Zhang, Shengping"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Sizhe",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haozhe",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weiyu",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenchu",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenyang",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qinglin",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shengping",
+          "lastName": "Zhang"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "机器人 / 记忆与规划"
+      ],
+      "note": "机器人先看到按钮的颜色，按钮被遮住后，人才告诉它要找哪一种。只看当前相机画面，已经不够完成这个任务。MaP-WAM 将历史保存为一段段任务记录，里面有文字指令和少量真实画面；规划器读这些记录，提出下一段动作的文字和视觉计划。\n\n执行器只接收眼前这段计划，并根据实际画面判断进度、修正偏差。这样的分工让它不必在每次动作推理时重新处理全部历史。**近似保持不变的是执行器的推理延迟**，不能理解为整套规划系统的成本永远不随记忆增长。\n\n作者在 RMBench 上报告 83.3% 的成功率。实机部分是 Franka 机械臂上的两项任务：寻找被遮住的按钮，以及记住次数后依次按按钮；每项用 50 条示范训练，再独立测试 50 次，成功率分别为 88% 和 68%。这些结果支持了记忆与执行分工的思路，但任务范围还很窄，代码仓库也仍把训练和推理代码列为待发布。\n\n判断：历史供规划、短上下文执行的分工有新意；实机两任务各50次，训练推理代码仍待发布。\n原始论文：https://arxiv.org/abs/2609.11561\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-12/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.11699",
+      "title": "Negative Self-Distillation: Learning to Reason by Avoiding Flaws",
+      "url": "https://arxiv.org/abs/2609.11699",
+      "doi": "10.48550/arXiv.2609.11699",
+      "pdf_url": "https://arxiv.org/pdf/2609.11699",
+      "published_date": "2026-09-10",
+      "item_type": "preprint",
+      "authors": [
+        "Pei, Rongcan",
+        "Wei, Zhepei",
+        "Xu, Shuyao",
+        "Zhu, Xinyu",
+        "Chen, Wei-Lin",
+        "Meng, Yu"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Rongcan",
+          "lastName": "Pei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhepei",
+          "lastName": "Wei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuyao",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinyu",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wei-Lin",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yu",
+          "lastName": "Meng"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "推理训练 / 开源论文"
+      ],
+      "note": "Negative Self-Distillation，中文可译为“负向自蒸馏”。它先给模型加入容易诱导错误推理的条件，再比较模型在正常条件和干扰条件下的输出倾向，让训练有针对性地远离这些错误。关键在于筛选：如果对所有词元都一概拉开差异，正常的语言表达也可能被破坏。\n\n实验使用 MATH 题目训练，去掉标准答案；默认做法会结合模型自己生成的解答来构造干扰。作者在 Qwen3 的 1.7B、4B 和 8B 模型上测试，七项数学评测的平均成绩分别提高 2.3、7.5 和 6.0 个百分点。代码和训练后的检查点已公开。\n\n这些数字来自作者的数学实验，主表采用非思考模式、每题八次采样的平均成绩，这里统计的是平均答对率，不是八次里答对一次就算成功；编程或知识问答也未必会同样提升。它有意思的地方是：除了寻找更好的正确答案，还可以研究模型在什么条件下容易走偏，再把这类倾向变成训练信号。这里仍然需要题目、模型计算和训练资源。\n\n判断：用自身负向条件产生训练信号；有多规模数学实验与代码，保留采样和任务局限。\n原始论文：https://arxiv.org/abs/2609.11699\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-12/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

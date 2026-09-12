@@ -1,0 +1,69 @@
+{
+  "sources": [
+    {
+      "label": "论文与完整报告",
+      "url": "https://arxiv.org/abs/2609.10715",
+      "section": "NCP：在预测下一个词之外，再预测概念"
+    },
+    {
+      "label": "模型检查点",
+      "url": "https://huggingface.co/collections/ArchSpace-Collection/ncp-archpreview",
+      "section": "NCP：在预测下一个词之外，再预测概念"
+    },
+    {
+      "label": "评测代码",
+      "url": "https://github.com/LUMIA-Group/ncp_olmo_eval",
+      "section": "NCP：在预测下一个词之外，再预测概念"
+    },
+    {
+      "label": "技术报告",
+      "url": "https://arxiv.org/abs/2609.11929",
+      "section": "SenseNova-U1.5：读图和画图，怎样放进同一个模型"
+    },
+    {
+      "label": "代码与发布记录",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "section": "SenseNova-U1.5：读图和画图，怎样放进同一个模型"
+    },
+    {
+      "label": "模型文件",
+      "url": "https://huggingface.co/collections/sensenova/sensenova-u15",
+      "section": "SenseNova-U1.5：读图和画图，怎样放进同一个模型"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2609.11561",
+      "section": "MaP-WAM：机器人记住过去，不必每一步都重看过去"
+    },
+    {
+      "label": "项目演示",
+      "url": "https://sizhezhao.github.io/projects/MaP-WAM/",
+      "section": "MaP-WAM：机器人记住过去，不必每一步都重看过去"
+    },
+    {
+      "label": "代码发布进度",
+      "url": "https://github.com/aipixel/MaP-WAM",
+      "section": "MaP-WAM：机器人记住过去，不必每一步都重看过去"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2609.11699",
+      "section": "NSD：没有标准答案，也能研究自己容易怎么错"
+    },
+    {
+      "label": "代码与检查点",
+      "url": "https://github.com/Prongcan/NSD",
+      "section": "NSD：没有标准答案，也能研究自己容易怎么错"
+    },
+    {
+      "label": "OpenAI 工程原文",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one/",
+      "section": "OpenAI Habitat：模型很快，产品也可能慢在存储层"
+    },
+    {
+      "label": "官方发布与训练方法",
+      "url": "https://cognition.com/blog/swe-2",
+      "section": "补看 SWE-2：把不同推理预算，一起放进训练"
+    }
+  ]
+}
