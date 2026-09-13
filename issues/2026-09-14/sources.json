@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "label": "Mi-Ripple 论文",
+      "url": "https://arxiv.org/abs/2609.11317",
+      "section": "原始资料"
+    },
+    {
+      "label": "Mi-Ripple 代码与适用限制",
+      "url": "https://github.com/miyang-ai/Mi-Ripple",
+      "section": "原始资料"
+    },
+    {
+      "label": "Beyond Solver Verdicts 论文",
+      "url": "https://arxiv.org/abs/2609.11085",
+      "section": "原始资料"
+    },
+    {
+      "label": "论文正文与补充实验",
+      "url": "https://arxiv.org/html/2609.11085v1",
+      "section": "原始资料"
+    },
+    {
+      "label": "X-AuT 论文",
+      "url": "https://arxiv.org/abs/2609.11412",
+      "section": "原始资料"
+    },
+    {
+      "label": "X-AuT 项目与实验结果",
+      "url": "https://xpeng-ai.github.io/x-aut",
+      "section": "原始资料"
+    },
+    {
+      "label": "X-AuT 代码与开放范围",
+      "url": "https://github.com/XPENG-AI/X-AuT",
+      "section": "原始资料"
+    },
+    {
+      "label": "X-AuT 模型权重",
+      "url": "https://huggingface.co/XPENG-AI/X-AuT",
+      "section": "原始资料"
+    },
+    {
+      "label": "美联社：特朗普回应 AI 监管问题",
+      "url": "https://apnews.com/article/9df0ebb4c1b0619aa0f88057b5a1092d",
+      "section": "原始资料"
+    },
+    {
+      "label": "Axios：Johnson 谈 AI 安全方案",
+      "url": "https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson",
+      "section": "原始资料"
+    }
+  ]
+}
