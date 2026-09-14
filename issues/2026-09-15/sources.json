@@ -1,0 +1,69 @@
+{
+  "sources": [
+    {
+      "label": "Anthropic：测试系统扩容复盘",
+      "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+      "section": "原始资料"
+    },
+    {
+      "label": "Apple：Siri AI 开始开放及地区限制",
+      "url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+      "section": "原始资料"
+    },
+    {
+      "label": "路透社：企业客户的数据留存担忧（转述 The Information）",
+      "url": "https://wsau.com/2026/09/14/palantir-nvidia-curb-ai-model-use-over-data-fears-the-information-reports/",
+      "section": "原始资料"
+    },
+    {
+      "label": "Anthropic：9 月 1 日公布的企业安全监控方案",
+      "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+      "section": "原始资料"
+    },
+    {
+      "label": "NVIDIA：本地 Agent Portable Computer 开放 Windows 支持",
+      "url": "https://blogs.nvidia.com/blog/local-ai-perplexity-windows-pcs/",
+      "section": "原始资料"
+    },
+    {
+      "label": "LIT 论文",
+      "url": "https://arxiv.org/abs/2609.12641",
+      "section": "原始资料"
+    },
+    {
+      "label": "LIT 代码与开放范围",
+      "url": "https://github.com/MAGICLAB-NUS/LIT",
+      "section": "原始资料"
+    },
+    {
+      "label": "LIT 实机模型权重",
+      "url": "https://huggingface.co/shailes-h/Molmoact2-LIT",
+      "section": "原始资料"
+    },
+    {
+      "label": "SAS 论文",
+      "url": "https://arxiv.org/abs/2609.13141",
+      "section": "原始资料"
+    },
+    {
+      "label": "SAS 训练、评测与推理代码",
+      "url": "https://github.com/Tencent-Hunyuan/Simple-Attention-Sparsification",
+      "section": "原始资料"
+    },
+    {
+      "label": "SNAP3D 论文",
+      "url": "https://arxiv.org/abs/2609.13146",
+      "section": "原始资料"
+    },
+    {
+      "label": "SNAP3D 演示",
+      "url": "https://lucytuan.github.io/SNAP3D/",
+      "section": "原始资料"
+    },
+    {
+      "label": "SNAP3D 仓库（代码待发布）",
+      "url": "https://github.com/LucyTuan/SNAP3D",
+      "section": "原始资料"
+    }
+  ]
+}

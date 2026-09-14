@@ -1,0 +1,152 @@
+{
+  "issue_date": "2026-09-15",
+  "papers": [
+    {
+      "id": "arxiv:2609.12641",
+      "title": "Breaking the Vision-Action Shortcut: Latent Interface Training for Generalizable Robotics Foundation Models",
+      "url": "https://arxiv.org/abs/2609.12641",
+      "doi": "10.48550/arXiv.2609.12641",
+      "pdf_url": "https://arxiv.org/pdf/2609.12641",
+      "published_date": "2026-09-11",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Jianman",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shailesh",
+          "lastName": "Shailesh"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhongyi",
+          "lastName": "Luo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiafei",
+          "lastName": "Duan"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "机器人",
+        "泛化训练"
+      ],
+      "note": "Juju Radar · 2026-09-15\n\n机器人在训练场景里表现不错，换一盏灯、换一个摄像头位置，成功率却明显下降。LIT 的解释是：模型可能把无关的视觉细节也当成了动作线索。看得多，未必意味着学到了该看的东西。\n\n它分两步训练。先不给图像，只用语言、机器人状态和示范动作的终点学习怎么运动；再加入视觉，但让视觉信息经过一组中间表示，才传给动作模块。训练时还要求这组表示能还原目标位置和姿态，鼓励它保留与动作有关的空间信息。实际运行时，不需要人额外提供终点坐标。\n\n作者在四种机器人模型架构上做了实验，真实机器人部分只有三个任务。换机位后，三个任务合计成功率从 30.0% 升到 46.7%；有改善，但远谈不上可靠。相关代码、实机模型权重和数据已公开，尚未独立复现。这篇适合继续追：它尝试改变视觉信息进入动作模块的方式，而非单纯增加训练图片。论文 9 月 11 日提交，14 日进入 arXiv 公告。\n\n入选理由：利用无图像动作预训练和受位姿监督的中间表示，减少机器人把背景当动作线索；跨四种架构，并有小规模真实机器人验证。\n重要度：8.5/10。\n论文提交：2026-09-11；arXiv公告：2026-09-14。\n论文：https://arxiv.org/abs/2609.12641\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-15/\nAI 辅助整理；原始 PDF 以链接附件保存，未独立复现。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.13141",
+      "title": "SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking",
+      "url": "https://arxiv.org/abs/2609.13141",
+      "doi": "10.48550/arXiv.2609.13141",
+      "pdf_url": "https://arxiv.org/pdf/2609.13141",
+      "published_date": "2026-09-11",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Zhiwei",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lei",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hao",
+          "lastName": "Gu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiang",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haitao",
+          "lastName": "Mi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sirui",
+          "lastName": "Han"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Leo",
+          "lastName": "Liang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhijiang",
+          "lastName": "Guo"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "稀疏注意力",
+        "推理效率"
+      ],
+      "note": "Juju Radar · 2026-09-15\n\n长文档和长任务越来越常见，每生成一个新词都把前面的内容读一遍，计算会很贵。稀疏注意力只选一部分上下文参与计算，难点是选谁。以往一些方法让选择器模仿原模型关注了哪里，但原模型看得多的地方，未必是在有限预算下最有用的地方。\n\n腾讯混元团队的 SAS 把选择器的分数直接接进注意力计算，让最终预测的误差也能反过来训练选择器。它仍然只选有限的内容块，但同时保留所选内容之间的优先程度。代码包含训练、评测和基于 SGLang 的稀疏推理实现。\n\n在 Qwen3 的几种规模模型上，作者报告了推理、长上下文理解和工具使用任务的改善。速度测试需要注意口径：Qwen3-4B、单卡、批量为 1、512K 上下文时，逐词解码约快 5.6 倍；测试先读完输入，再计量生成阶段，输入预处理并没有提速。8K 上下文时两者速度接近。因此，它更像是长任务的一项专门优化，不能直接写成“所有请求快了五倍”。论文 9 月 11 日提交，14 日公告。\n\n入选理由：用最终预测损失训练上下文选择器，绕开仅模仿原模型注意力的局限；公开训练评测流水线，区分解码耗时与完整请求耗时。\n重要度：8.5/10。\n论文提交：2026-09-11；arXiv公告：2026-09-14。\n论文：https://arxiv.org/abs/2609.13141\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-15/\nAI 辅助整理；原始 PDF 以链接附件保存，未独立复现。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.13146",
+      "title": "SNAP3D: Physically Grounded 3D Parts for Assembly from a Single Image",
+      "url": "https://arxiv.org/abs/2609.13146",
+      "doi": "10.48550/arXiv.2609.13146",
+      "pdf_url": "https://arxiv.org/pdf/2609.13146",
+      "published_date": "2026-09-11",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yu-Rou",
+          "lastName": "Tuan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hao-Tang",
+          "lastName": "Tsui"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Nicolas",
+          "lastName": "Ugrinovic"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kris",
+          "lastName": "Kitani"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoxuan",
+          "lastName": "Ma"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "3D 生成",
+        "探索性研究"
+      ],
+      "note": "Juju Radar · 2026-09-15\n\n生成一把椅子的 3D 模型，椅面、椅腿都很像样，不代表打印出来就能拼成椅子：零件可能互相穿插，也可能根本没有连接位置。SNAP3D 专门补这一段，从已有模型的零件出发，先消除重叠，再找接触面、生成连接结构，最后用物理模拟调整连接件。\n\n作者在 100 个模型上测试，并展示了六个 3D 打印后手工装配的实物。论文报告 95% 的模型通过规定的仿真稳定性检查，但这不等于 95% 都能直接制造：仿真固定了接触地面的部件，按位移和转角判断其他部件是否稳定，也没有完整建模打印材料的变形。\n\n还有个很实际的缺口：装好之后站得住，不代表装配过程一定可行。作者尚未处理装配顺序，某个连接口可能被其他零件挡住。当前项目页有演示，仓库明确写着代码待发布。这是本期偏探索的一篇：如果生成结果要走出屏幕，评价标准就得包括能不能接上、装上、用上。论文 9 月 11 日提交，14 日公告。\n\n入选理由：把3D生成的评价从形状相似延伸到零件能否连接与站稳，有物理仿真及六件打印实物；装配顺序和材料变形仍未解决。\n重要度：8/10。\n论文提交：2026-09-11；arXiv公告：2026-09-14。\n论文：https://arxiv.org/abs/2609.13146\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-15/\nAI 辅助整理；原始 PDF 以链接附件保存，未独立复现。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
