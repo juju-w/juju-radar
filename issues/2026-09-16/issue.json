@@ -1,0 +1,157 @@
+{
+  "date": "2026-09-16",
+  "kind": "daily",
+  "sources": [
+    {
+      "title": "🎙️ Gemini 一边跟你聊天，一边在后台办事",
+      "category": "语音模型 / Agent",
+      "score": 9,
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking",
+      "related_urls": [
+        "https://deepmind.google/models/model-cards/gemini-3-8-audio/"
+      ],
+      "published_at": "2026-09-15",
+      "reason": "新语音模型实际开始开放；并行推理、语音与工具调用改变语音Agent的交互方式，开放范围和成功率仍有限。",
+      "key_claims": [
+        "跟语音助手说完一句话，接下来常常是等。Google 9 月 15 日发布的 Gemini 3.8 Live 系列，试图让这段等待不再打断对话：模型可以先回应请求，继续交流，同时在后台调用工具；Extended Thinking 版本还能一边进行多步推理，一边说明进展。",
+        "这次变化不只是声音更自然。查资料、协调预订、修改文档都需要时间，语音助手过去容易在“聊天”和“执行任务”之间来回切换。如果两者能并行，用户就能在过程中补充条件、调整要求。Google 已从当天开始向 Gemini API 和 AI Studio 开放两款模型，消费端按产品陆续上线；企业端部分入口仍是私有预览，不能理解为所有账号都已可用。",
+        "官方给 Extended Thinking 报出的 τ-Voice 任务完成率是 68.6%，银行场景 τ-Voice-banking 为 35.1%。这也提醒我们：对话连贯，并不等于事情办得稳。官方演示和特定评测还不能替代真实任务测试；模型卡也列出了幻觉、延迟和超时等限制。值得继续看的是，它在任务出错、用户改口和工具卡住时，能不能把对话接下去。"
+      ],
+      "event_time": "2026-09-15",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "artifact_released_at": null
+    },
+    {
+      "title": "🔬 Atria Dawn 开放权重，尝试把科研任务做到底",
+      "category": "开放模型 / 科研 Agent",
+      "score": 9,
+      "url": "https://arxiv.org/abs/2609.15818",
+      "related_urls": [
+        "https://github.com/atria-asi/Atria-Dawn-Preview",
+        "https://huggingface.co/internlm/Atria-Dawn-Preview"
+      ],
+      "published_at": "2026-09-15",
+      "arxiv_submitted_at": "2026-09-14T16:22:30+00:00",
+      "announced_at": "2026-09-15",
+      "reason": "744B MoE科研Agent开放模型权重与部署入口，训练重视可执行环境和验证；同时披露研发中的人机分工，避免仅以榜单为卖点。",
+      "key_claims": [
+        "上海人工智能实验室发布 Atria Dawn Preview，基于总参数量 7440 亿的 GLM-5.2 混合专家模型，面向需要持续使用工具的科研和工程任务。仓库提供部署说明，Hugging Face 已能看到模型权重文件，也有在线 API 入口。它是大型开放权重模型，不能因为“开放”就理解成普通电脑可以轻松运行。",
+        "训练材料不只是一份正确答案。团队把任务、工具调用、生成的文件和外部检查放在一起：代码用测试检查，实验看指标，文档查来源，失败后再根据反馈修改。论文报告了 16 项评测，其中 5 项在列出的模型中得分最高；但软件工程、终端任务和部分专业工作仍落后，比较表也没有覆盖所有最新模型。",
+        "比“超级智能”这个论文标题更值得细读的，是团队对自身研发过程的记录。56 位参与者提供了 769 条任务记录；在有有效回答的 455 个已完成 AI 辅助任务里，约三分之一被参与者认为没有 AI 就做不成。这是事后自评，不能当成随机对照实验的效率提升。方法和参数的最终选择仍大多由人完成。它展示了一种已经发生的人机分工，但没有证明模型能独立完成整个科研项目。论文 9 月 14 日提交，15 日公告。"
+      ],
+      "event_time": "2026-09-15",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "artifact_released_at": null,
+      "community_featured_on": "2026-09-15",
+      "timestamps": {
+        "arxiv_submission_source": "https://arxiv.org/abs/2609.15818",
+        "arxiv_announcement_source": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
+        "announcement_evidence": "Tue, 15 Sep 2026 日期标题下列出本论文",
+        "announcement_precision": "date",
+        "artifact_release_date": "not_verified",
+        "hf_date_page": "https://huggingface.co/papers/date/2026-09-15"
+      }
+    },
+    {
+      "title": "🛠️ AI 修漏洞到底行不行？先看“修好”怎么算",
+      "category": "Coding Agent / 安全评测",
+      "score": 8.5,
+      "url": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading",
+      "related_urls": [
+        "https://1password.com/blog/why-ai-generated-patches-still-require-human-review",
+        "https://github.com/trailofbits/skills/tree/main/plugins/post-patch-validation"
+      ],
+      "published_at": "2026-09-15",
+      "reason": "对公开补丁数据的重分析指出实验限制和验收口径差异，并发布补丁验证技能；同时交代反驳方自身失败和商业参与。",
+      "key_claims": [
+        "1Password 在 8 月研究了六个复杂漏洞，得到一个很醒目的数字：AI 生成的补丁中，只有 26% 完整修复漏洞且不改变应用行为。9 月 15 日，安全公司 Trail of Bits 重新分析公开数据，指出不少实验禁止运行测试，或故意给出了错误修复建议，这些条件会影响人们对总体数字的理解。",
+        "Trail of Bits 筛出允许执行、没有错误提示且排除查阅上游补丁的样本后，称约 86% 能挡住给定的攻击样例。不过，26% 和 86% 回答的不是同一个问题：挡住一个样例，仍可能漏掉同一漏洞的其他触发方式，也可能引入新问题。不能拿后一个数字直接推翻前一个，更不能据此宣布 AI 补丁已经可靠。",
+        "这篇反驳也应带着同样的标准读：Trail of Bits 自己参与 AI 修复项目，并承认给 freenginx 提交过有缺陷的补丁。它同时公开了一套补丁验证技能，要求检查修复前后表现、额外构造同根因变体，再做回归测试。对实际开发更有用的结论是：让 Agent 交补丁时，一起交出它检查了哪些路径、还有哪些没查；“原来的报错没了”远远不够。"
+      ],
+      "event_time": "2026-09-15",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "artifact_released_at": null
+    },
+    {
+      "title": "⚡ 同样的电力预算，从 16 台服务器跑到 19 台",
+      "category": "算力基础设施 / 能效",
+      "score": 8.5,
+      "url": "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/",
+      "related_urls": [
+        "https://www.nvidia.com/en-us/case-studies/lambda/"
+      ],
+      "published_at": "2026-09-15T09:55:00-07:00",
+      "event_time": "2026-09-15T09:55:00-07:00",
+      "reason": "AI Infra Summit披露Lambda固定功率预算下的B200集群测试，有具体硬件、负载和数字，区别于新平台宣传倍率。",
+      "key_claims": [
+        "AI 数据中心有时不是买不到服务器，而是供电额度已经用满。NVIDIA 在 9 月 15 日披露的 Lambda 测试中，团队把每台机器的功率上限适当调低，再动态分配机架电力，在原来容纳 16 台服务器的功率预算里运行了 19 台。",
+        "按 NVIDIA 发布的客户案例，测试使用 HGX B200 集群。在 GPT-OSS-120B 推理负载、每节点每秒 40 个请求的条件下，集群吞吐量约提高 24%。思路并不神秘：单台机器少追一点峰值性能，省下的电力可以支持更多机器；训练和推理混跑时，还能利用两类负载耗电节奏的差异。",
+        "这是厂商披露的客户测试，尚非独立复现，也没有证明所有模型、延迟要求和机房都能得到同样收益。更多服务器依然需要购置、机架和散热，“同样电力”不等于“零成本扩容”。但对被供电限制住的集群，怎样分配功率，已经可能和买哪张卡一样值得算账。"
+      ],
+      "window_status": "within_window",
+      "window_uncertain": false,
+      "artifact_released_at": null
+    },
+    {
+      "title": "🧠 难题一直做不对，训练方法可能太早放弃了",
+      "category": "强化学习 / 训练方法",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2609.13443",
+      "related_urls": [],
+      "published_at": "2026-09-15",
+      "arxiv_submitted_at": "2026-09-11T19:02:08+00:00",
+      "announced_at": "2026-09-15",
+      "reason": "NGU按解题情况动态分配训练采样预算，在匹配算力实验中改善难题表现；机制简单但不把反复尝试误写成无限重试。",
+      "key_claims": [
+        "强化学习训练之后，模型可能只是把原来会做的题做得更熟，真正的难题依旧不会。Never Give Up（NGU）研究发现，给每道题分配同样的尝试次数，会让不少计算花在已经容易做对的题上，难题却得不到足够的有效样本。",
+        "NGU 的改动是：某道题一旦采样到正确答案，就让出预算；还没做对的题回到队列，继续尝试。它配合异步训练运行，并保留一定概率放弃当前题目，避免被无解题无限拖住。因此，“不放弃”是方法名，不是让模型永远重试，更不是给聊天提示词加一句鼓励。",
+        "作者用 Qwen3-4B 做数学实验，在每组约 120 个 H100 小时、三次不同随机种子的比较中，改善了难题与易题之间的训练效果取舍。编程实验也观察到对困难测试的持续改进。局限是训练集要有足够多的易题，才能腾出预算；若几乎全是难题，反复排队可能更慢，还会增加旧样本与当前模型不一致的问题。这篇适合做训练的人细读。论文 9 月 11 日提交，15 日公告。"
+      ],
+      "event_time": "2026-09-15",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "artifact_released_at": null,
+      "community_featured_on": "2026-09-15",
+      "timestamps": {
+        "arxiv_submission_source": "https://arxiv.org/abs/2609.13443",
+        "arxiv_announcement_source": "https://arxiv.org/list/cs.LG/recent?skip=0&show=2000",
+        "announcement_evidence": "Tue, 15 Sep 2026 日期标题下列出本论文",
+        "announcement_precision": "date",
+        "artifact_release_date": "not_verified",
+        "hf_date_page": "https://huggingface.co/papers/date/2026-09-15"
+      }
+    },
+    {
+      "title": "🩻 把片子换了，医疗 AI 的回答为什么没怎么变",
+      "category": "医疗 AI / 多模态评测",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2609.15635",
+      "related_urls": [],
+      "published_at": "2026-09-15",
+      "arxiv_submitted_at": "2026-09-14T14:25:20+00:00",
+      "announced_at": "2026-09-15",
+      "reason": "ModaLens保持报告和问题不变只换影像，测量文本报告如何改变模型对图片的敏感性；明确这不是误诊率或视觉正确性证明。",
+      "key_claims": [
+        "给医疗多模态模型一张胸片，再附上文字报告，它的答案可能主要来自报告。ModaLens 用一个直接的办法检查：保持问题和报告不变，把图片换成另一项检查的图片，看看回答会不会跟着变。",
+        "在来自 293 位患者的 3199 组影像案例上，研究者对 MedGemma-27B 进行了成对测试。要求明确输出答案时，附有报告的回答改变率为 4.26%；拿掉报告后升到 20.94%。这些是“换图后回答是否变化”的比例，既不是诊断准确率，也不是误诊率。",
+        "这不能证明模型完全没看图，更不能直接判定听从报告就是错的：报告可能是医生对影像的可靠解释，替换的图片也可能仍包含同一征象。研究没有获得独立的影像标注，而且主实验限于单家机构的胸片与英文报告。它提出了一个值得保留的检查方法：多模态系统答对问题时，要分别测试每种输入到底起了多大作用。否则，漂亮的总分可能遮住对单一路径的依赖。论文 9 月 14 日提交，15 日公告。"
+      ],
+      "event_time": "2026-09-15",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "artifact_released_at": null,
+      "community_featured_on": "2026-09-15",
+      "timestamps": {
+        "arxiv_submission_source": "https://arxiv.org/abs/2609.15635",
+        "arxiv_announcement_source": "https://arxiv.org/list/cs.CV/recent?skip=0&show=2000",
+        "announcement_evidence": "Tue, 15 Sep 2026 日期标题下列出本论文",
+        "announcement_precision": "date",
+        "artifact_release_date": "not_verified",
+        "hf_date_page": "https://huggingface.co/papers/date/2026-09-15"
+      }
+    }
+  ]
+}

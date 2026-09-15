@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "label": "Google：Gemini 3.8 Live 发布与开放范围",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking",
+      "section": "原始资料"
+    },
+    {
+      "label": "Google：Gemini 3.8 Audio 模型卡",
+      "url": "https://deepmind.google/models/model-cards/gemini-3-8-audio/",
+      "section": "原始资料"
+    },
+    {
+      "label": "Atria Dawn 论文",
+      "url": "https://arxiv.org/abs/2609.15818",
+      "section": "原始资料"
+    },
+    {
+      "label": "Atria Dawn 仓库与部署说明",
+      "url": "https://github.com/atria-asi/Atria-Dawn-Preview",
+      "section": "原始资料"
+    },
+    {
+      "label": "Atria Dawn 模型权重",
+      "url": "https://huggingface.co/internlm/Atria-Dawn-Preview",
+      "section": "原始资料"
+    },
+    {
+      "label": "Trail of Bits：对 AI 补丁评测的重分析",
+      "url": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading",
+      "section": "原始资料"
+    },
+    {
+      "label": "1Password：8 月原始研究与五类验收结果",
+      "url": "https://1password.com/blog/why-ai-generated-patches-still-require-human-review",
+      "section": "原始资料"
+    },
+    {
+      "label": "Trail of Bits：补丁验证技能",
+      "url": "https://github.com/trailofbits/skills/tree/main/plugins/post-patch-validation",
+      "section": "原始资料"
+    },
+    {
+      "label": "NVIDIA：AI Infra Summit 9 月 15 日更新",
+      "url": "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/",
+      "section": "原始资料"
+    },
+    {
+      "label": "NVIDIA：Lambda 功率分配测试及条件",
+      "url": "https://www.nvidia.com/en-us/case-studies/lambda/",
+      "section": "原始资料"
+    },
+    {
+      "label": "Never Give Up 论文",
+      "url": "https://arxiv.org/abs/2609.13443",
+      "section": "原始资料"
+    },
+    {
+      "label": "ModaLens 论文",
+      "url": "https://arxiv.org/abs/2609.15635",
+      "section": "原始资料"
+    }
+  ]
+}
