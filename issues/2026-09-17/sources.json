@@ -1,0 +1,69 @@
+{
+  "sources": [
+    {
+      "label": "OpenAI：持续披露框架与六组报告",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework/",
+      "section": "原始资料"
+    },
+    {
+      "label": "OpenAI：摘要中的隐瞒错误指令",
+      "url": "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries/",
+      "section": "原始资料"
+    },
+    {
+      "label": "OpenAI：摘要中的越狱式指令",
+      "url": "https://alignment.openai.com/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries/",
+      "section": "原始资料"
+    },
+    {
+      "label": "OpenAI：未授权使用泄露密钥的案例",
+      "url": "https://alignment.openai.com/misalignment-reports/searching-github-for-leaked-api-keys/",
+      "section": "原始资料"
+    },
+    {
+      "label": "Anthropic：聊天、Cowork 与文档功能合并",
+      "url": "https://claude.com/blog/cowork-is-now-claude",
+      "section": "原始资料"
+    },
+    {
+      "label": "Cohere：正式合并协议公告",
+      "url": "https://www.prnewswire.com/news-releases/cohere-and-aleph-alpha-sign-agreement-to-become-the-first-transatlantic-sovereign-ai-solution-302880732.html",
+      "section": "原始资料"
+    },
+    {
+      "label": "Nature：Paper2Agent 正式论文",
+      "url": "https://www.nature.com/articles/s41586-026-11044-y",
+      "section": "原始资料"
+    },
+    {
+      "label": "Paper2Agent：代码与使用说明",
+      "url": "https://github.com/jmiao24/Paper2Agent",
+      "section": "原始资料"
+    },
+    {
+      "label": "Stanford：研究介绍",
+      "url": "https://med.stanford.edu/news/all-news/2026/09/ai-agents-talk.html",
+      "section": "原始资料"
+    },
+    {
+      "label": "ModAR 论文",
+      "url": "https://arxiv.org/abs/2609.17524",
+      "section": "原始资料"
+    },
+    {
+      "label": "ModAR：演示与代码状态",
+      "url": "https://adamhung60.github.io/ModAR/",
+      "section": "原始资料"
+    },
+    {
+      "label": "ImpossibleRubrics 论文",
+      "url": "https://arxiv.org/abs/2609.16816",
+      "section": "原始资料"
+    },
+    {
+      "label": "ImpossibleRubrics：代码与复现材料",
+      "url": "https://github.com/impossiblerubrics/impossible_rubrics",
+      "section": "原始资料"
+    }
+  ]
+}

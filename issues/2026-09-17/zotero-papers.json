@@ -1,0 +1,128 @@
+{
+  "issue_date": "2026-09-17",
+  "papers": [
+    {
+      "id": "doi:10.1038/s41586-026-11044-y",
+      "title": "Reimagining research papers as interactive and reliable AI agents",
+      "url": "https://www.nature.com/articles/s41586-026-11044-y",
+      "doi": "10.1038/s41586-026-11044-y",
+      "pdf_url": "https://www.nature.com/articles/s41586-026-11044-y.pdf",
+      "published_date": "2026-09-16",
+      "item_type": "journalArticle",
+      "creators": [
+        {
+          "creatorType": "author",
+          "lastName": "Miao",
+          "firstName": "Jiacheng"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Davis",
+          "firstName": "Joe R."
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhang",
+          "firstName": "Yaohui"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Pritchard",
+          "firstName": "Jonathan K."
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zou",
+          "firstName": "James"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "AI for Science",
+        "开源"
+      ],
+      "note": "Juju Radar · 2026-09-17\n\nNature 9 月 16 日刊出 Paper2Agent 研究。它把论文、代码、数据和示例流程整理成可供 Agent 调用的 MCP 工具：读者不只是问“这篇讲了什么”，还可以要求“用这个方法分析我的数据”。这次值得读的是正式论文中的验证与案例，不把项目的整个发展过程都算作当天首发。\n\n关键步骤发生在聊天之前。系统先配置环境，把论文方法封装成函数，再运行测试、对照原始结果；反复验证失败的工具会被排除。这样后续对话调用的是整理并检查过的研究流程，而不是每问一次都临时重写一套分析代码。仓库目前可访问，但这里没有替作者完成独立复现。\n\n论文还让多个研究工具协作，结合基因组预测和已有扰动实验数据，为银屑病相关位点筛选候选致病基因。这个例子里，Agent 提出分析方案，人类研究者选择其中一条继续验证。它提供了研究线索与数据支持，不能写成 AI 已独立发现并确证疾病机制。\n\n原文也承认，不少代码库因为文件不完整、文档缺失或环境问题，无法成功转换。更值得期待的是一种可复用的论文附件：除了 PDF 和仓库，作者还能交付经过检查的工具。它能降低后续使用门槛，但方法是否适合新数据、结论是否成立，仍需要研究者判断。\n\n入选理由：Nature正式发表Paper2Agent研究，重点是把方法与代码封装为经过测试的工具，并展示跨论文分析；不是PDF问答包装。\n重要度：9/10。\nNature正式发表：2026-09-16。\n原文：https://www.nature.com/articles/s41586-026-11044-y\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-17/\nAI辅助整理，尚未独立复现；PDF为链接附件。",
+      "evidence_status": "primary_verified",
+      "publicationTitle": "Nature"
+    },
+    {
+      "id": "arxiv:2609.17524",
+      "title": "Modality-Autoregressive World-Action Models",
+      "url": "https://arxiv.org/abs/2609.17524",
+      "doi": "10.48550/arXiv.2609.17524",
+      "pdf_url": "https://arxiv.org/pdf/2609.17524",
+      "published_date": "2026-09-15",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "lastName": "Hung",
+          "firstName": "Adam"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Duisterhof",
+          "firstName": "Bardienus P."
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Ramanan",
+          "firstName": "Deva"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Ichnowski",
+          "firstName": "Jeffrey"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "机器人",
+        "世界动作模型"
+      ],
+      "note": "Juju Radar · 2026-09-17\n\n不少机器人世界模型先预测“接下来会看到什么”，再决定怎么动。ModAR 问得更细：为了抓取、折叠和摆放，真的需要把未来画面的颜色与纹理也生成出来吗？它依次预测点的运动轨迹、视觉语义特征和深度，再据此生成动作，让前一步的预测给后一步提供条件。\n\n在作者的仿真实验里，运动、语义和几何信息带来了收益，额外预测 RGB 图像却没有稳定改善。与经过视频模型预训练的 Flex-π 相比，约 3010 万参数的 ModAR 取得 75% 的平均成功率，对方为 72%；该组实验使用的训练计算量约为对方的二十分之一。\n\n这里不能读成“小模型全面胜过大模型”。这是特定任务内的系统比较，双方的模型规模、预训练、目标模态和训练方案都不同，不是只换一个架构的公平消融。实机部分只有三个双臂任务，每项 30 次测试；模型使用离散任务标签，尚未证明能听懂任意指令、应对陌生场景，顺序生成也会增加推理延迟。\n\n有价值的启发是：机器人需要的是对行动有用的预测，画面逼真未必是最好的训练目标。论文 9 月 15 日提交、16 日公告；项目页已有演示，代码仍标注即将开放。\n\n入选理由：ModAR用运动轨迹、视觉特征和深度依次预测未来，再预测动作；对世界模型是否必须生成RGB提供受控实验。\n重要度：8.5/10。\n原始提交：2026-09-15T17:56:24+00:00；arXiv公告：2026-09-16。\n原文：https://arxiv.org/abs/2609.17524\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-17/\nAI辅助整理，尚未独立复现；PDF为链接附件。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.16816",
+      "title": "ImpossibleRubrics: Stress-Testing Generated Rubrics as Reward Signals",
+      "url": "https://arxiv.org/abs/2609.16816",
+      "doi": "10.48550/arXiv.2609.16816",
+      "pdf_url": "https://arxiv.org/pdf/2609.16816",
+      "published_date": "2026-09-15",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "lastName": "Qin",
+          "firstName": "Bowen"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Xie",
+          "firstName": "Yi"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Liu",
+          "firstName": "Yesheng"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Yang",
+          "firstName": "Xi"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "评测",
+        "强化学习"
+      ],
+      "note": "Juju Radar · 2026-09-17\n\n现在不少训练和评测先让模型写一份评分细则，再按这份细则给回答打分。ImpossibleRubrics 检查了一个容易漏掉的问题：假如题目根本无法根据现有材料得出确定结论，评分标准会不会反而奖励那个编得最完整的答案？\n\n研究准备了 169 个此类任务和 48 个可回答的对照任务。每题附有一份独立约束，规定哪些说法有证据、哪些不该出现；攻击模型则尝试写出违反约束、却能拿到不低于诚实回答分数的答案。这样测的是评分细则能否被利用，不是普通问答的准确率。\n\n在用于统一比较的 150 个任务上，11 种模型生成的细则被成功利用的比例为 8% 至 26%。论文还报告了一个专门筛出的 45 题困难子集，那里失败率明显更高，不能拿它代表日常任务。细则生成、攻击和判断都依赖模型，样本主要是封闭证据材料，结果也不宜外推到所有科研或商业评审。\n\n最值得留意的不是谁排第一，而是标准可能要求错了东西：材料没有给出某个概率，细则却奖励一个确定数字。条目越具体，反而越清楚地告诉攻击者应该编什么。代码和复现材料已公开；论文 9 月 15 日提交、16 日公告。做自动评分时，应先检查“无法作答”是否也是合法结果。\n\n入选理由：ImpossibleRubrics直接攻击模型生成的评分细则，检验是否奖励违反证据的回答；区分主样本与特意筛选的困难样本。\n重要度：8.5/10。\n原始提交：2026-09-15T08:21:40+00:00；arXiv公告：2026-09-16。\n原文：https://arxiv.org/abs/2609.16816\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-17/\nAI辅助整理，尚未独立复现；PDF为链接附件。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
