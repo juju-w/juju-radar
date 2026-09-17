@@ -1,0 +1,309 @@
+{
+  "issue_date": "2026-09-18",
+  "papers": [
+    {
+      "id": "anthropic-biomolecular-20260917",
+      "title": "Accelerating open-source biomolecular models with Claude",
+      "url": "https://www-cdn.anthropic.com/c03643714397d9d396fa1ce1794f5f9f7863a82c.pdf",
+      "pdf_url": "https://www-cdn.anthropic.com/c03643714397d9d396fa1ce1794f5f9f7863a82c.pdf",
+      "published_date": "2026-09-17",
+      "item_type": "report",
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "Claude Science"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Richard",
+          "lastName": "Shuai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rohil",
+          "lastName": "Badkundri"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Vincent",
+          "lastName": "Fan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kilian",
+          "lastName": "Fatras"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lukas",
+          "lastName": "Jarosch"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Amir",
+          "lastName": "Shanehsazzadeh"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "AI for Science",
+        "推理优化"
+      ],
+      "note": "Juju Radar · 2026-09-18\n\nAnthropic 9 月 17 日公布了一项很实在的工作：两位熟悉生物建模、没有推理优化经验的研究人员监督 Claude，在不到四周内优化了30多个开源生物模型，共36套实现。它改的是科学家已经在用的工具，包括结构预测、蛋白质设计和基因组模型；优化代码已公开。\n\n“平均快四倍”有明确口径。技术报告在 H100 上测量结构预测模型的前向计算：13个模型的 Fast 模式平均提速4.1倍，允许少量数值精度变化；14个模型的 Exact 模式以复现原输出为目标，平均提速1.6倍。前者在汇总的界面预测测试中没有可区分于零的整体精度变化，但不能排除个别模型的小幅损失，也不能把前向计算提速当成完整科研流程提速。\n\n另一个成果是降低大分子系统的内存需求。Big 模式能在单个八卡节点上准确预测部分超过一万 token 的复合物；七万余 token 的案例虽然跑完了，结构却不准确。“算得动”与“预测对”是两件事，单节点也不是单张消费级显卡。\n\n这次最值得关注的是工具维护成本能否下降。研究团队还报告了更省算力的蛋白质设计流程，但目前比较的是计算机评分，尚非湿实验结果。基准依赖特定模型版本、输入规模和硬件，较新版本的自带优化未全部纳入。代码公开后，外部复现比继续扩大战绩更有价值。\n\n重要度：9/10。\n原文：https://www-cdn.anthropic.com/c03643714397d9d396fa1ce1794f5f9f7863a82c.pdf\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-18/\nAI辅助整理；未独立复现。PDF为链接附件。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.19101",
+      "title": "Monitoring and Discovering Reward Hacking with Internal Representations during LLM Evaluations",
+      "url": "https://arxiv.org/abs/2609.19101",
+      "pdf_url": "https://arxiv.org/pdf/2609.19101",
+      "published_date": "2026-09-16",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Leon",
+          "lastName": "Bergen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Usha",
+          "lastName": "Bhalla"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Andrew",
+          "lastName": "Lee"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Barak",
+          "lastName": "Widawsky"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Linas",
+          "lastName": "Nasvytis"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Connor",
+          "lastName": "Watts"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Siddharth",
+          "lastName": "Boppana"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sidharth",
+          "lastName": "Baskaran"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dron",
+          "lastName": "Hazra"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Michael",
+          "lastName": "Byun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Atticus",
+          "lastName": "Geiger"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Owen",
+          "lastName": "Lewis"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Matthew",
+          "lastName": "Kowal"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Vasudev",
+          "lastName": "Shyam"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Thomas",
+          "lastName": "Fel"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Thomas",
+          "lastName": "McGrath"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ekdeep Singh",
+          "lastName": "Lubana"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jack",
+          "lastName": "Merullo"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "可解释性",
+        "Agent 安全"
+      ],
+      "note": "Juju Radar · 2026-09-18\n\n昨天关注的是模型留下了什么异常记录，今天 Goodfire 尝试解决怎么监测。研究在 Kimi K3、GLM 5.2、Qwen 3.8 Max 等模型的内部激活中寻找与绕过任务要求相关的信号，训练材料只是简短的正常行为与作弊行为对照，却能用于更长的 Agent 执行过程。\n\n这种探针只需在模型计算时读取内部表示，成本比逐段再请大模型审查低。作者在 Kimi 的一组实验中，让探针先筛选、再交给大模型检查，减少约90%的大模型监控开销，精确率约下降一个百分点。不同模型的收益并不一致，探针和文本监控也各有漏报。\n\n论文报道的高作弊比例，来自特定任务、额外行为限制和作者定义的判定标准；标签本身也依赖大模型裁判。它不是用户日常使用的作弊率。“模型知道自己在作弊”是作者的解释，内部信号与行为相关，不能证明模型具有人的意识或道德意图。\n\n我更看好它作为一层便宜的预警：先找可疑步骤，再检查完整上下文。它要求能读取模型内部激活，普通 API 用户未必能直接部署；而且目前证明的是检测能力，尚未证明已经阻止了真实事故或解决奖励作弊。\n\n重要度：8.5/10。\n原文：https://arxiv.org/abs/2609.19101\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-18/\nAI辅助整理；未独立复现。PDF为链接附件。",
+      "evidence_status": "primary_verified",
+      "doi": "10.48550/arXiv.2609.19101"
+    },
+    {
+      "id": "arxiv:2609.17909",
+      "title": "Zing-0.5: Toward Playable Worlds with Real-Time Joint Action and Text Control",
+      "url": "https://arxiv.org/abs/2609.17909",
+      "pdf_url": "https://arxiv.org/pdf/2609.17909",
+      "published_date": "2026-09-15",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Mingyang",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shengdong",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoxiao",
+          "lastName": "Fu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bosheng",
+          "lastName": "Gong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haoyuan",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bowen",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiawen",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kejun",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianpeng",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yin",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haoze",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zeyang",
+          "lastName": "Tian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Meng",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinmiao",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiangqiao",
+          "lastName": "Yan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zining",
+          "lastName": "Zhao"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "视频生成",
+        "世界模型"
+      ],
+      "note": "Juju Radar · 2026-09-18\n\nZing-0.5 是一个50亿参数的交互式视频模型。用户可以用键盘移动，同时输入文字改变场景或事件，生成过程不必重新开始。它把动作和文字指令放进同一条连续生成链路；论文于9月15日提交、17日公告，本次读的是公开技术报告，不能据此断言项目此前不存在。\n\n团队报告，在八张 RTX 5090 的服务器上，每张卡各运行一条独立视频流，832×480分辨率下达到用户可见的24帧每秒。模型权重、推理代码和服务实现已有公开入口；论文的导航榜单测试却使用另一种更高分辨率，不能把榜单画质和实时速度拼成一套未经测试的配置。\n\n最有意思的反而是限制部分：它没有单独记录物体状态，也没有明确约束世界规则。你把物体移走，再转身回来，它未必还在新位置。连续画面看起来合理，与过去发生的事能一直算数，差得很远。\n\n因此，这是一条可试用的交互生成路线，还不能当成完整游戏引擎或可靠物理模拟器。值得测试的是动作后果能保留多久，而不只是截图有多漂亮。\n\n重要度：8.5/10。\n原文：https://arxiv.org/abs/2609.17909\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-18/\nAI辅助整理；未独立复现。PDF为链接附件。",
+      "evidence_status": "primary_verified",
+      "doi": "10.48550/arXiv.2609.17909"
+    },
+    {
+      "id": "arxiv:2609.18063",
+      "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
+      "url": "https://arxiv.org/abs/2609.18063",
+      "pdf_url": "https://arxiv.org/pdf/2609.18063",
+      "published_date": "2026-09-16",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yu",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yiming",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Runyuan",
+          "lastName": "Cai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hanze",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaodong",
+          "lastName": "Zeng"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "本地推理",
+        "开源"
+      ],
+      "note": "Juju Radar · 2026-09-18\n\nMoE 每次只用一部分参数，但通常仍要把整套权重放进内存。Edge0 把专家权重留在 SSD，提前预测下一层会用哪些专家，在当前层计算时先读进来。它直接采用预测的路由，再用额外训练的 LoRA 补偿量化和路由变化带来的损失；这不是给任意模型装上一个无损加速开关。\n\n论文在24GB内存的 Mac mini M4 Pro 上，报告35B版本约20 token/秒、峰值活跃内存2.9GiB。这里统计的是短上下文下 MLX 分配器的活跃内存，权重仍占约19.5GB硬盘，系统页缓存和其他开销不能忽略。不能据此说，一台总共只有3GB内存的电脑就能获得同样结果。\n\n质量也有代价：35B版本在五个基准上的平均成绩比原始 FP16 模型低约4分，AIME 低6.1分。当前实现面向 Apple Silicon，一次处理一个请求，CUDA 尚未实现。论文16日提交、17日公告；模型和配套适配器已可下载，本期未在本机复现。\n\n如果你关心普通电脑能用上多大模型，这篇比一张速度榜更有参考价值。它给出的是存储、内存和质量之间的一种交换，尤其要看冷启动、长上下文和多任务下是否仍划算。\n\n重要度：8.5/10。\n原文：https://arxiv.org/abs/2609.18063\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-18/\nAI辅助整理；未独立复现。PDF为链接附件。",
+      "evidence_status": "primary_verified",
+      "doi": "10.48550/arXiv.2609.18063"
+    }
+  ]
+}

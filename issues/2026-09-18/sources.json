@@ -1,0 +1,79 @@
+{
+  "sources": [
+    {
+      "label": "Anthropic：研究介绍",
+      "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+      "section": "原始资料"
+    },
+    {
+      "label": "Anthropic：完整技术报告",
+      "url": "https://www-cdn.anthropic.com/c03643714397d9d396fa1ce1794f5f9f7863a82c.pdf",
+      "section": "原始资料"
+    },
+    {
+      "label": "生物模型优化代码",
+      "url": "https://github.com/anthropics/uplifting-biomolecular-modeling",
+      "section": "原始资料"
+    },
+    {
+      "label": "Qwen：全模态模型与工作流发布",
+      "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+      "section": "原始资料"
+    },
+    {
+      "label": "Qwen-MM-Plugins：多模态插件",
+      "url": "https://github.com/QwenLM/Qwen-MM-Plugins",
+      "section": "原始资料"
+    },
+    {
+      "label": "华为：大会公告与交付计划",
+      "url": "https://www.huawei.com/en/news/2026/9/hc-wang-keynote",
+      "section": "原始资料"
+    },
+    {
+      "label": "华为：Peerium架构与部署状态",
+      "url": "https://www.huawei.com/en/news/2026/9/new-computing-architecture-peerium",
+      "section": "原始资料"
+    },
+    {
+      "label": "Goodfire：论文原文",
+      "url": "https://arxiv.org/abs/2609.19101",
+      "section": "原始资料"
+    },
+    {
+      "label": "Goodfire：方法介绍",
+      "url": "https://www.goodfire.com/research/reward-hacking-activation-monitors",
+      "section": "原始资料"
+    },
+    {
+      "label": "Zing-0.5：论文原文",
+      "url": "https://arxiv.org/abs/2609.17909",
+      "section": "原始资料"
+    },
+    {
+      "label": "Zing-0.5：推理代码",
+      "url": "https://github.com/seedleap/zing-world-model",
+      "section": "原始资料"
+    },
+    {
+      "label": "Zing-0.5：模型权重",
+      "url": "https://huggingface.co/seedleap/zing-0.5",
+      "section": "原始资料"
+    },
+    {
+      "label": "Edge0：论文原文",
+      "url": "https://arxiv.org/abs/2609.18063",
+      "section": "原始资料"
+    },
+    {
+      "label": "Edge0：框架与限制",
+      "url": "https://github.com/Edge0-AI/Edge0",
+      "section": "原始资料"
+    },
+    {
+      "label": "Edge0：35B模型与适配器",
+      "url": "https://huggingface.co/Edge0/Edge0-35B-A3B-preview",
+      "section": "原始资料"
+    }
+  ]
+}
