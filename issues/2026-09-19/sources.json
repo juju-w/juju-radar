@@ -1,0 +1,89 @@
+{
+  "sources": [
+    {
+      "label": "CNN：原始调查",
+      "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
+      "section": "原始资料"
+    },
+    {
+      "label": "Qwen：实时同传更新",
+      "url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
+      "section": "原始资料"
+    },
+    {
+      "label": "Qwen：多人翻译评测",
+      "url": "https://github.com/QwenLM/Omnilingua-Bench",
+      "section": "原始资料"
+    },
+    {
+      "label": "Qwen：实时同传演示",
+      "url": "https://omni.qwen.ai/live-translate",
+      "section": "原始资料"
+    },
+    {
+      "label": "SoL-Pi：论文摘要与日期",
+      "url": "https://arxiv.org/abs/2609.20519",
+      "section": "原始资料"
+    },
+    {
+      "label": "SoL-Pi：论文全文",
+      "url": "https://arxiv.org/html/2609.20519v1",
+      "section": "原始资料"
+    },
+    {
+      "label": "SoL-Pi：扩展代码",
+      "url": "https://github.com/NVlabs/SoL-Pi",
+      "section": "原始资料"
+    },
+    {
+      "label": "SoL-Pi：项目介绍",
+      "url": "https://nvlabs.github.io/SoL-Pi/",
+      "section": "原始资料"
+    },
+    {
+      "label": "JEPA-Anything：论文摘要与日期",
+      "url": "https://arxiv.org/abs/2609.20800",
+      "section": "原始资料"
+    },
+    {
+      "label": "JEPA-Anything：论文全文",
+      "url": "https://arxiv.org/html/2609.20800v1",
+      "section": "原始资料"
+    },
+    {
+      "label": "JEPA-Anything：通用核心与示例",
+      "url": "https://github.com/Gen-Verse/JEPA-Anything",
+      "section": "原始资料"
+    },
+    {
+      "label": "JEPA-Anything：领域代码与检查点",
+      "url": "https://huggingface.co/datasets/Gen-Verse/jepa-anything",
+      "section": "原始资料"
+    },
+    {
+      "label": "Trail of Bits：审计经验原文",
+      "url": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/",
+      "section": "原始资料"
+    },
+    {
+      "label": "MASM：语言工具与静态分析",
+      "url": "https://github.com/trailofbits/masm-lsp",
+      "section": "原始资料"
+    },
+    {
+      "label": "MASM：反编译器",
+      "url": "https://github.com/trailofbits/masm-decompiler",
+      "section": "原始资料"
+    },
+    {
+      "label": "MASM：Lean证明",
+      "url": "https://github.com/trailofbits/masm-lean",
+      "section": "原始资料"
+    },
+    {
+      "label": "Anthropic：合作公告",
+      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "section": "原始资料"
+    }
+  ]
+}

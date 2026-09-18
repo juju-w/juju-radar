@@ -1,0 +1,178 @@
+{
+  "issue_date": "2026-09-19",
+  "papers": [
+    {
+      "id": "arxiv:2609.20519",
+      "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+      "url": "https://arxiv.org/abs/2609.20519",
+      "pdf_url": "https://arxiv.org/pdf/2609.20519",
+      "published_date": "2026-09-17",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Haozhe",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tian",
+          "lastName": "Ye"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sensen",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qihang",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yitong",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingchen",
+          "lastName": "Zhuge"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Duomin",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruihua",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ping",
+          "lastName": "Luo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiawang",
+          "lastName": "Bian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lei",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ligeng",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Enze",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Song",
+          "lastName": "Han"
+        }
+      ],
+      "doi": "10.48550/arXiv.2609.20519",
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "Agent",
+        "开源工程"
+      ],
+      "note": "Juju Radar · 2026-09-19\n\nNVIDIA 等机构的 SoL-Pi，把改进对象放在 Agent 的运行框架，而非模型参数上。研究团队让 Agent 提出并测试优化方案，经过152个假设、535个可执行环境和3000多次运行，保留下几种能减少重复开销的办法。\n\n其中一些做法很具体：把改文件与后续测试合并进一次工具请求；长输出先保留完整记录，之后用短摘要和可回查的引用；压缩测试日志时，校验退出状态、关键原文等证据，出错就退回原始输出。上下文压缩也要算账，节省的后续开销需要抵过重写缓存的成本。\n\n效果有两面。在冻结的51个留出任务上，四种机制一起启用时，GPT-5.6 Sol 的 token 用量减少49%，API 成本减少33.2%，平均得分却从44.833降到42.003。另一种偏重成绩的配置只选部分机制，得分更高，但不能把它与“省一半 token”拼成同一个结果。\n\n这个项目的价值，是把工具调用、日志和上下文的浪费变成可测量的问题。扩展代码已公开，但任务集仍有限，前期搜索本身也很花钱；它不等于模型已经能够无成本地递归自我升级。做 Coding Agent 的读者，可以先看日志压缩的失败回退设计。\n\n论文17日提交、18日公告；本期未独立复现。\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-19/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.20800",
+      "title": "JEPA-Anything: Learning Predictive Models across Different Worlds",
+      "url": "https://arxiv.org/abs/2609.20800",
+      "pdf_url": "https://arxiv.org/pdf/2609.20800",
+      "published_date": "2026-09-17",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Taoyong",
+          "lastName": "Cui"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhongyao",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinyue",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weiyang",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhaochen",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuying",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qiang",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mengyue",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wanli",
+          "lastName": "Ouyang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Pheng Ann",
+          "lastName": "Heng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yingcheng",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenfei",
+          "lastName": "Yin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ling",
+          "lastName": "Yang"
+        }
+      ],
+      "doi": "10.48550/arXiv.2609.20800",
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "世界模型",
+        "AI for Science"
+      ],
+      "note": "Juju Radar · 2026-09-19\n\n如果目标是预测系统接下来会怎样变化，视觉、细胞、天气能不能共用一套学习方法？JEPA-Anything 把这个问题放到七类领域中测试。它的关键做法，是把内部表示分成若干互补的部分，分别预测，再重新组合，让不同变化因素不必挤在同一份表示里。\n\n论文在十项配对的动力学任务上报告了改进，范围包括干预后的场景、分子运动和物理场。但“共用方法”不是“一套权重通吃所有领域”：各领域仍有自己的输入、编码器和任务设置。数学上的正交约束，也不等于模型自动找到了真正的因果机制。\n\n生物部分还有后续实验：研究者考察了 IL-18 与 CD73 阻断的组合，在共培养、患者来源样本和小鼠中验证部分结果。患者来源的类器官与肿瘤片段，不是患者接受治疗的临床试验；样本规模和适用条件都不支持直接推导人体疗效。\n\n这是本期值得多看一眼的探索。GitHub 提供通用核心和示例，Hugging Face 上可见领域代码与检查点；仓库的快速示例并不复现全部论文结果。本期未运行这些工件。后续要看跨任务复现，以及换到分布外条件时，预测还能不能可靠。\n\n论文17日提交、18日公告；本期未独立复现。\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-19/",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
