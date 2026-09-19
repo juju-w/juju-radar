@@ -17,6 +17,12 @@ def main() -> None:
     article = article_path.read_text(encoding="utf-8")
     title_match = re.search(r"^title:\s*(.+)$", article, re.M)
     title = title_match.group(1).strip() if title_match else folder.name
+    note_match = re.search(r"^sourceNote:\s*(.+)$", article, re.M)
+    source_note = (
+        '<details class="editor-note"><summary>编辑说明</summary><p>'
+        + escape(note_match.group(1).strip()) + '</p></details>'
+        if note_match else ''
+    )
 
     sources = []
     seen = set()
@@ -73,6 +79,7 @@ main{{width:min(100%,680px);min-height:100vh;margin:0 auto;padding:38px 20px 56p
 .source:active{{background:var(--wash)}}.index{{flex:0 0 30px;color:var(--blue);font-size:12px;font-weight:800;line-height:1.8}}.copy{{min-width:0;flex:1}}strong,small,em{{display:block}}
 strong{{font-size:16px;line-height:1.45}}small{{margin-top:3px;color:var(--muted);font-size:12px}}em{{margin-top:7px;overflow:hidden;color:#71808e;font-size:11px;font-style:normal;text-overflow:ellipsis;white-space:nowrap}}
 .arrow{{color:var(--blue);font-size:17px;line-height:1.4}}footer{{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}}
+.editor-note{{margin-top:28px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:13px}}.editor-note summary{{cursor:pointer;color:var(--blue)}}.editor-note p{{margin:12px 0 0}}
 </style>
 </head>
 <body><main>
@@ -80,9 +87,10 @@ strong{{font-size:16px;line-height:1.45}}small{{margin-top:3px;color:var(--muted
 <h1>{title}</h1>
 <p class="intro">本页汇总本期引用的官方公告、论文和代码仓库。点击条目即可前往原始页面。</p>
 {cards}
+{source_note}
 <footer>Juju Radar · {date}<br>资料链接以原始发布页面为准。{registration_html}</footer>
 </main></body></html>
-""".format(title=escape(title), cards="\n".join(cards), date=escape(folder.name[:10] + (' · 特别版' if len(folder.name)>10 else '')), registration_html=registration_html)
+""".format(title=escape(title), cards="\n".join(cards), source_note=source_note, date=escape(folder.name[:10] + (' · 特别版' if len(folder.name)>10 else '')), registration_html=registration_html)
 
     output = folder / "sources.html"
     output.write_text(page, encoding="utf-8")
