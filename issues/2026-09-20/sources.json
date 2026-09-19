@@ -1,0 +1,79 @@
+{
+  "sources": [
+    {
+      "label": "NBC News：Google 对测试事件的回应",
+      "url": "https://www.nbcnews.com/tech/tech-news/google-says-ai-model-gained-unauthorized-access-three-systems-rcna598651",
+      "section": "原始资料"
+    },
+    {
+      "label": "NBC News：同文备用阅读地址",
+      "url": "https://tech.yahoo.com/ai/gemini/articles/google-says-ai-model-gained-013729328.html",
+      "section": "原始资料"
+    },
+    {
+      "label": "Buist 案：原始起诉书 PDF",
+      "url": "https://chatgptiseatingtheworld.com/wp-content/uploads/2026/09/Buist_et_al_v_Anthropic_PBC_-Sept-18-2026.pdf",
+      "section": "原始资料"
+    },
+    {
+      "label": "AP：诉讼报道",
+      "url": "https://apnews.com/article/960af4308161eaf4ed13c383b0ce1c1b",
+      "section": "原始资料"
+    },
+    {
+      "label": "NanoJev：项目与代码",
+      "url": "https://github.com/TianyuCodings/NanoJev",
+      "section": "原始资料"
+    },
+    {
+      "label": "NanoJev：模型",
+      "url": "https://huggingface.co/C-Tianyu/NanoJev",
+      "section": "原始资料"
+    },
+    {
+      "label": "NanoJev：数据",
+      "url": "https://huggingface.co/datasets/C-Tianyu/NanoJev-Data",
+      "section": "原始资料"
+    },
+    {
+      "label": "NanoJev：输出约定",
+      "url": "https://github.com/TianyuCodings/NanoJev/blob/main/docs/TYPESAFE_CONTRACT.md",
+      "section": "原始资料"
+    },
+    {
+      "label": "NanoJev：游戏演示说明",
+      "url": "https://github.com/TianyuCodings/NanoJev/blob/main/docs/GAME_RELEASE.md",
+      "section": "原始资料"
+    },
+    {
+      "label": "DeepSeek：论文摘要与提交日期",
+      "url": "https://arxiv.org/abs/2609.19969",
+      "section": "原始资料"
+    },
+    {
+      "label": "DeepSeek：技术报告全文",
+      "url": "https://arxiv.org/html/2609.19969v1",
+      "section": "原始资料"
+    },
+    {
+      "label": "DeepSeek：模型权重",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "section": "原始资料"
+    },
+    {
+      "label": "FAMOS：论文摘要与提交日期",
+      "url": "https://arxiv.org/abs/2609.20817",
+      "section": "原始资料"
+    },
+    {
+      "label": "FAMOS：论文全文",
+      "url": "https://arxiv.org/html/2609.20817v1",
+      "section": "原始资料"
+    },
+    {
+      "label": "FAMOS：项目演示",
+      "url": "https://kevinqu7.github.io/famos/",
+      "section": "原始资料"
+    }
+  ]
+}

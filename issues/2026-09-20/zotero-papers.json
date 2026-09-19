@@ -1,0 +1,3042 @@
+{
+  "issue_date": "2026-09-20",
+  "papers": [
+    {
+      "id": "arxiv:2609.19969",
+      "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+      "url": "https://arxiv.org/abs/2609.19969",
+      "doi": "10.48550/arXiv.2609.19969",
+      "pdf_url": "https://arxiv.org/pdf/2609.19969",
+      "published_date": "2026-09-17",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "DeepSeek-AI"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Anyi",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "B.",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bangcai",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bing",
+          "lastName": "Xue"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "BingCheng",
+          "lastName": "Xian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bingzheng",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bochao",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bowei",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Boyi",
+          "lastName": "Deng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "C. C.",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chao",
+          "lastName": "Jin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chaofan",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chen",
+          "lastName": "Dong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenbing",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenfan",
+          "lastName": "Feng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chengda",
+          "lastName": "Lu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenggang",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chengqi",
+          "lastName": "Deng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chengyuan",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenhao",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenqi",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenze",
+          "lastName": "Shao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chuhao",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chuqi",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Damai",
+          "lastName": "Dai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dejian",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Deli",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Di",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Di",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Donghao",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Erhang",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Eric",
+          "lastName": "Fu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "F.",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fangwei",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fangyun",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fangzhou",
+          "lastName": "Yuan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Feiyu",
+          "lastName": "Xia"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fucong",
+          "lastName": "Dai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guangbo",
+          "lastName": "Hao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guanglin",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guanting",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guoai",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guofan",
+          "lastName": "Fan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guolai",
+          "lastName": "Meng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guowei",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haichuan",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haiyang",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haiyang",
+          "lastName": "Shen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Han",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Han",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Han",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hangyuan",
+          "lastName": "Deng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hanwei",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hanxiang",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hanxun",
+          "lastName": "Zhong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hao",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hao",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hao",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hao",
+          "lastName": "Qin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haodong",
+          "lastName": "Wen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haofen",
+          "lastName": "Liang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haofeng",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haohua",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haoling",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haoming",
+          "lastName": "Luo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haoran",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haotian",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haotian",
+          "lastName": "Yuan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haoting",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haowen",
+          "lastName": "Luo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haoyang",
+          "lastName": "Cai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haoyu",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haozhe",
+          "lastName": "Ji"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hengran",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hengrui",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hengxu",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Honghui",
+          "lastName": "Ding"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hongxuan",
+          "lastName": "Tang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huadong",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huanqi",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huazuo",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hui",
+          "lastName": "Qu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hui",
+          "lastName": "Zeng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "J.",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "J. H.",
+          "lastName": "Jin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "J. H.",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "J. X.",
+          "lastName": "Zou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jia",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiahui",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiajun",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jialiang",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jialin",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiamin",
+          "lastName": "Tang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jian",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jianan",
+          "lastName": "Tong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jianwen",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaqi",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiarui",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiasheng",
+          "lastName": "Ye"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiashi",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaxin",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaying",
+          "lastName": "Ding"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jibai",
+          "lastName": "Lu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiewen",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jin",
+          "lastName": "Yan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jincheng",
+          "lastName": "Zhai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingchang",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingcheng",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingli",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingsheng",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingting",
+          "lastName": "Xiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingyan",
+          "lastName": "Yun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingyang",
+          "lastName": "Yuan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingyuan",
+          "lastName": "Cheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jinhua",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jinpeng",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jinyi",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jinyi",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiping",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jueliang",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junbo",
+          "lastName": "Pei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junbo",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junguang",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junjie",
+          "lastName": "Qiu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junkang",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junqi",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junren",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junxian",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junxiao",
+          "lastName": "Song"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junyi",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kai",
+          "lastName": "Dong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kaifeng",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kaige",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kang",
+          "lastName": "Guan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kangdong",
+          "lastName": "Yuan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ke",
+          "lastName": "Hong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ke",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kefan",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kexin",
+          "lastName": "Ji"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kexin",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kexing",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kuai",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lan",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lean",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lecong",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lei",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Letian",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Liang",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Liansheng",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lihua",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lingxiao",
+          "lastName": "Luo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lingyue",
+          "lastName": "Fu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Litao",
+          "lastName": "Deng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Litong",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Liyue",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Longhao",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lu",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Luotian",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Luyao",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Luyao",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "M. S.",
+          "lastName": "Di"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Max",
+          "lastName": "Mei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Menghao",
+          "lastName": "Ye"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Miao",
+          "lastName": "Cui"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingchuan",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Minghua",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Minghui",
+          "lastName": "Tang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingjing",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingqi",
+          "lastName": "Wei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingshu",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingxing",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingxu",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingyu",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingyu",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingze",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Muyang",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ni",
+          "lastName": "Shentu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ning",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Niufang",
+          "lastName": "Ning"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Panpan",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peixin",
+          "lastName": "Cong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peiyi",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peiyuan",
+          "lastName": "Xin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Pengfei",
+          "lastName": "Ren"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Pengfei",
+          "lastName": "Yan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Pengle",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qi",
+          "lastName": "Kang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qi",
+          "lastName": "Tang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qiancheng",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qiang",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qihao",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qingyang",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qinyu",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qiushi",
+          "lastName": "Du"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qizhou",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rongxian",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rui",
+          "lastName": "Ding"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rui",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rui",
+          "lastName": "Tian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rui",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruidong",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruifan",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruihan",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruihang",
+          "lastName": "Xia"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruijie",
+          "lastName": "Lu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruilin",
+          "lastName": "Geng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruipeng",
+          "lastName": "Hong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruiqi",
+          "lastName": "Ge"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruisong",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruize",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruizhe",
+          "lastName": "Pan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Runji",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Runqian",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Runxin",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruohong",
+          "lastName": "Tian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruomeng",
+          "lastName": "Shen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruoyu",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ryan",
+          "lastName": "X."
+        },
+        {
+          "creatorType": "author",
+          "firstName": "S. H.",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shanghao",
+          "lastName": "Lu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shangyan",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shanhuang",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shaofei",
+          "lastName": "Cai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shaoheng",
+          "lastName": "Nie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shaoyuan",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shengding",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shengkai",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shengwen",
+          "lastName": "Ran"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shengyu",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shengyuan",
+          "lastName": "Jia"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shi",
+          "lastName": "Bai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shi",
+          "lastName": "Feng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shicheng",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shichun",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shiqiang",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shirong",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shiyu",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shiyuan",
+          "lastName": "Feng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shufan",
+          "lastName": "Gong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuhan",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuiping",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shunfeng",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuo",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuomeng",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuting",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuting",
+          "lastName": "Pan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuying",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sinuo",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Siyi",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sizhe",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Songyang",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Songyang",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tao",
+          "lastName": "Ni"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tao",
+          "lastName": "Yun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tian",
+          "lastName": "Jin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tian",
+          "lastName": "Pei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tian",
+          "lastName": "Ye"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianle",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianran",
+          "lastName": "Ji"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianyi",
+          "lastName": "Cui"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianyuan",
+          "lastName": "Yue"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tingting",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tongrui",
+          "lastName": "Xiong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wangding",
+          "lastName": "Zeng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wei",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wei",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weibin",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weihao",
+          "lastName": "Zeng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weilin",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wen",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenfeng",
+          "lastName": "Liang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenjie",
+          "lastName": "Pang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenjing",
+          "lastName": "Luo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenjing",
+          "lastName": "Yao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenjun",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenkai",
+          "lastName": "Shao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenkai",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenli",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenlu",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenlve",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenqian",
+          "lastName": "Yan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wentao",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xi",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiang",
+          "lastName": "He"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiang",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiangli",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiangwen",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiangying",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiankui",
+          "lastName": "Wei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiao",
+          "lastName": "Bi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaodong",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaohan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaojian",
+          "lastName": "Qu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaokang",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaokang",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaotao",
+          "lastName": "Nie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoyao",
+          "lastName": "Zou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoyuan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xicheng",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xieting",
+          "lastName": "Chu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xin",
+          "lastName": "Cheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xin",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xin",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinbo",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xingchao",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xingchen",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xingkai",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xingyou",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xintong",
+          "lastName": "Yao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinyang",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinyong",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinyu",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinyu",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xu",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuanyu",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xubei",
+          "lastName": "Zhong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuecheng",
+          "lastName": "Su"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuejie",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuheng",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xujie",
+          "lastName": "Fan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuncheng",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuwei",
+          "lastName": "Fu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Y. C.",
+          "lastName": "Yan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Y. H.",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Y. T.",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Y. W.",
+          "lastName": "M."
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Y. Z.",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yafei",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yang",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yang",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yanru",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yanwen",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yao",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yao",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yao",
+          "lastName": "Meng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yao",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yaofeng",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yaohui",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yaoyang",
+          "lastName": "Ye"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yehang",
+          "lastName": "Yin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yexinrui",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yi",
+          "lastName": "Qian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yi",
+          "lastName": "Tao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yi",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yichao",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yichen",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yicheng",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yifan",
+          "lastName": "Ding"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yifan",
+          "lastName": "Shi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yifeng",
+          "lastName": "Peng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yifeng",
+          "lastName": "Zhai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yijia",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yiliang",
+          "lastName": "Xiong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yilun",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ying",
+          "lastName": "He"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ying",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yingjia",
+          "lastName": "Luo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yinmin",
+          "lastName": "Zhong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yiping",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yisong",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yixiang",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yixiao",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yixuan",
+          "lastName": "Tan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yixuan",
+          "lastName": "Wei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yiyang",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yiyao",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yiyuan",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yizai",
+          "lastName": "Cai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yizhen",
+          "lastName": "Wei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yizhi",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yonglun",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yongqi",
+          "lastName": "Zhuo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yongqiang",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yongtong",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yu",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yu",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuan",
+          "lastName": "Bian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuan",
+          "lastName": "Cheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuan",
+          "lastName": "Ou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuan",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuanfan",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuanhang",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuanhao",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuchen",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuchen",
+          "lastName": "Yao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yudong",
+          "lastName": "Han"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuduan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuhan",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuhao",
+          "lastName": "Meng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuheng",
+          "lastName": "Zou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "YuKun",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yunchuan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yunfan",
+          "lastName": "Xiao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yunfan",
+          "lastName": "Xiong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yupeng",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuqian",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuqian",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuqing",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yushun",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yutong",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuwei",
+          "lastName": "Xiao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxian",
+          "lastName": "Gu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxiang",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxiang",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxiang",
+          "lastName": "Luo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxiang",
+          "lastName": "You"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxin",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxin",
+          "lastName": "Xiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxuan",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxuan",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuyang",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuzhe",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuzhen",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuzhuo",
+          "lastName": "Bai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Z. Y.",
+          "lastName": "Z."
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zanlin",
+          "lastName": "Ni"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zehao",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zehua",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zehui",
+          "lastName": "Ren"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zejun",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhangli",
+          "lastName": "Sha"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhanying",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhaochen",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhaoshuai",
+          "lastName": "Du"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhe",
+          "lastName": "Fu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhean",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenda",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zheng",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhengyan",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenhua",
+          "lastName": "Dong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhewen",
+          "lastName": "Hao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhibang",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhibin",
+          "lastName": "Gou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhicheng",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhihao",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhihong",
+          "lastName": "Shao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhihuan",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhijie",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhirui",
+          "lastName": "Lu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhixian",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhixuan",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhixuan",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhixuan",
+          "lastName": "Pan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhiyu",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhizhou",
+          "lastName": "Ren"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhu",
+          "lastName": "He"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhuoshu",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhuping",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zian",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zihao",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zihui",
+          "lastName": "Gu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zijia",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zili",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zilin",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zilong",
+          "lastName": "Hou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zilong",
+          "lastName": "Lyu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ziqiao",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ziwei",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ziya",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ziyi",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zizheng",
+          "lastName": "Pan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zonglin",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zongqing",
+          "lastName": "Yao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zui",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zuofan",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenchen",
+          "lastName": "Ling"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chengyu",
+          "lastName": "Hou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chong",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "D.",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Di",
+          "lastName": "Qi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dongjie",
+          "lastName": "Ji"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fang",
+          "lastName": "Wei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fanyi",
+          "lastName": "Xia"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fei",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Feiyi",
+          "lastName": "Tan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hailong",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haiyan",
+          "lastName": "Zhai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hui",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huihui",
+          "lastName": "Tan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huijie",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jia",
+          "lastName": "Luo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jia",
+          "lastName": "Song"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jialu",
+          "lastName": "Cai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jian",
+          "lastName": "Liang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiangting",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaqi",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiayi",
+          "lastName": "Shao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jie",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jieyu",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jin",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingde",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingzi",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jinqian",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jinyang",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "JinZhao",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junhua",
+          "lastName": "Ling"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junmin",
+          "lastName": "Zheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kaicheng",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ke",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Le",
+          "lastName": "Su"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Leyi",
+          "lastName": "Xia"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Liangfeng",
+          "lastName": "Ding"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lin",
+          "lastName": "Zhuo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Linwang",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Linyan",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Liyu",
+          "lastName": "Cai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Luqi",
+          "lastName": "Yao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "M. K.",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Meng",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Miao",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Miaojun",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Min",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingming",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingming",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingze",
+          "lastName": "Yin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Minmin",
+          "lastName": "Han"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Nan",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ning",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ningxin",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Panpan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peihan",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peng",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peng",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qian",
+          "lastName": "Ying"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qiang",
+          "lastName": "Xiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qiao",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qingmiao",
+          "lastName": "Mao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qiwei",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rongli",
+          "lastName": "Jin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruyi",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sha",
+          "lastName": "Tao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shangmian",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shaoqing",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shichao",
+          "lastName": "Zou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Si",
+          "lastName": "Lei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianyang",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianyu",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tingting",
+          "lastName": "Yin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "W. L.",
+          "lastName": "Xiao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wei",
+          "lastName": "An"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wei",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wei",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weiwei",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenqing",
+          "lastName": "Hou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "X.",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiangfei",
+          "lastName": "Meng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xianzhu",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiao",
+          "lastName": "Peng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoqian",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoting",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaowen",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoxiang",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoyu",
+          "lastName": "Ye"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinrou",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinyu",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xue",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xueyin",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yanan",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yanhong",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yao",
+          "lastName": "Xia"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yao",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yi",
+          "lastName": "Shao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yihong",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yiling",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ying",
+          "lastName": "Tang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yining",
+          "lastName": "Lou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yiru",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yishi",
+          "lastName": "Piao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yixuan",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yong",
+          "lastName": "Xiong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuchen",
+          "lastName": "Xuan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuehan",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuer",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yukun",
+          "lastName": "Zha"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yunxian",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuping",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuting",
+          "lastName": "Yan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yutong",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuwen",
+          "lastName": "Sheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxuan",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zekai",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhe",
+          "lastName": "Ju"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenzhen",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zheren",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zheyang",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhigang",
+          "lastName": "Yan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhongyu",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zi",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zihua",
+          "lastName": "Qu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ziling",
+          "lastName": "Yan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ziyi",
+          "lastName": "Wan"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "补看",
+        "基础模型 / 推理基础设施"
+      ],
+      "evidence_status": "primary_verified",
+      "note": "Juju Radar · 2026-09-20\n\nDeepSeek-V4.1-Flash 已在9月10日发布，这次补看的是随后公开的技术报告。长任务 Agent 会不断读文件、日志和历史记录，输入往往比输出更重。报告把“读完输入”和“生成回答”分开设计：每个输入 token 激活约80亿参数，生成阶段则约160亿。\n\n另一处重点是键值缓存，也就是模型为避免重复计算而保留的中间状态。跨层复用与低精度存储，让常驻显存的全局缓存降到每个 token 890字节，约为 DeepSeek-V4-Flash 对应部分的四分之一。这个比例只指该类缓存，不能理解成整套模型只需四分之一显存。\n\n对放在主机内存或硬盘里的持久缓存，论文又采用局部滑动窗口状态重建，报告体积约降到前代的八分之一。它是在存储和重新计算之间作取舍，也不意味着一次 API 调用的价格会自动降到八分之一。\n\n这篇最值得读的是成本怎样分摊：哪些输入只处理一次，哪些状态可以复用，哪些可以需要时再算。作者也提醒，稀疏选择失误和近似状态重建，在尚未充分测试的边界条件下仍可能影响能力。权重可以获取，实际收益还要放进具体的长任务中检验。\n\n近期补看；编辑重要度9.0/10。AI辅助整理，未独立复现。\n原文：https://arxiv.org/abs/2609.19969\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-20/"
+    },
+    {
+      "id": "arxiv:2609.20817",
+      "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+      "url": "https://arxiv.org/abs/2609.20817",
+      "doi": "10.48550/arXiv.2609.20817",
+      "pdf_url": "https://arxiv.org/pdf/2609.20817",
+      "published_date": "2026-09-17",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Kevin",
+          "lastName": "Qu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tao",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Massimiliano",
+          "lastName": "Viola"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Liyuan",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhizhuo",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sayan Deb",
+          "lastName": "Sarkar"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Konrad",
+          "lastName": "Schindler"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Iro",
+          "lastName": "Armeni"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "补看",
+        "机器人 / 三维视觉"
+      ],
+      "evidence_status": "primary_verified",
+      "note": "Juju Radar · 2026-09-20\n\n机器人看到一个柜子，光认出“这是柜子”还不够：哪一块能动，是拉开还是旋转，转轴在哪里？FAMOS 把物体处于不同状态时的几份稀疏点云放到一起，预测活动部件与关节。输入并不要求是完整、按时间排好的动作录像。\n\n方法的关键，是交替比较单次观察里的形状和多次观察之间的变化。团队还用程序生成带有已知结构的物体，再与人工制作的资产混合训练，让模型学到的不只是某种柜门的外观，也包括部件之间怎样运动。\n\n作者在单张 RTX 5090 上报告：两个状态、每个状态2048个点的配置，推理耗时65.6毫秒。这从已有点云开始计算，不包含把相机画面重建成点云的整个过程。论文中的可动范围辅助任务，也只对应观察到的运动跨度，不能当成物体的完整机械限位。\n\n它补的是操作之前的结构理解，还没有证明机器人因此能可靠地开门、拿东西。陌生形状、很小的部件和噪声点云仍容易出错；当前还主要处理活动部件直接连接固定主体的简单结构。先读失败案例，再看演示，更容易判断它离自己的场景有多远。\n\n近期补看；编辑重要度8.3/10。AI辅助整理，未独立复现。\n原文：https://arxiv.org/abs/2609.20817\n本期资料：https://www.asteronline.cn/juju-radar/2026-09-20/"
+    }
+  ]
+}
