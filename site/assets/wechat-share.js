@@ -1,7 +1,10 @@
 /* Only the top-level WeChat page owns JS-SDK configuration. */
 (() => {
  if(window!==window.top||!/MicroMessenger/i.test(navigator.userAgent))return;
- let sdkReady=false, desired, configured=false, lastDocument, retryTimer;
+ let sdkReady=false, desired, configured=false, lastDocument;
+ const entryUrl=location.href.split('#')[0];
+ const ios=/iPhone|iPad|iPod/i.test(navigator.userAgent);
+ let signingUrl='',signGeneration=0,sdkLoaded;
  const origin='https://www.asteronline.cn';
  const currentDocument=()=>document.querySelector('#site')?.contentDocument||document;
  const meta=(doc,key)=>doc.querySelector(`meta[property="${key}"]`)?.content||'';
@@ -19,7 +22,7 @@
   const link=doc.querySelector('link[rel="canonical"]')?.href;
   if(!link?.startsWith(origin+'/juju-radar/'))return;
   desired={title:meta(doc,'og:title')||doc.title,desc:(meta(doc,'og:description')||'').slice(0,120),link,imgUrl:origin+'/juju-radar/assets/wechat-cover.png?v=8077d64f03'};
-  apply();
+  configure();apply();
   if(doc.defaultView.sessionStorage.getItem('juju-wechat-share')===link){doc.defaultView.sessionStorage.removeItem('juju-wechat-share');show(link,desired.title);}
  }
  function show(link,title){
@@ -39,16 +42,21 @@
   if(!dialog.open)dialog.showModal();
  }
  window.jujuWechatShare={show};
- // Capture iframe load; later same-origin page navigations update the menu without re-signing.
- document.addEventListener('load',e=>{if(e.target.id==='site'){lastDocument=null;sync();}},true);
+ function configure(){
+  const url=ios?entryUrl:location.href.split('#')[0];
+  if(!sdkLoaded||url===signingUrl)return;
+  signingUrl=url;sdkReady=false;configured=false;
+  const generation=++signGeneration,controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),10000);
+  Promise.all([sdkLoaded,fetch('/juju-radar/api/wechat-sign',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url}),signal:controller.signal}).then(r=>{if(!r.ok)throw Error('Unavailable');return r.json();})]).then(([,config])=>{
+   if(generation!==signGeneration)return;
+   wx.ready(()=>{if(generation===signGeneration){sdkReady=true;apply();}});
+   wx.error(()=>{if(generation===signGeneration){sdkReady=false;configured=false;}});
+   wx.config({...config,debug:false,jsApiList:['updateAppMessageShareData','updateTimelineShareData']});
+  }).catch(()=>{if(generation===signGeneration)signingUrl='';}).finally(()=>clearTimeout(timer));
+ }
+ // The music shell emits this after mirroring the reading URL to the address bar.
  window.addEventListener('juju:reading-ready',()=>{lastDocument=null;sync();});
- sync();
- const controller=new AbortController();retryTimer=setTimeout(()=>controller.abort(),10000);
- Promise.all([
-  new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='https://res.wx.qq.com/open/js/jweixin-1.6.0.js';s.onload=resolve;s.onerror=reject;document.head.append(s);}),
-  fetch('/juju-radar/api/wechat-sign',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url:location.href.split('#')[0]}),signal:controller.signal}).then(r=>{if(!r.ok)throw Error('Unavailable');return r.json();})
- ]).then(([,config])=>{
-  wx.ready(()=>{sdkReady=true;apply();});wx.error(()=>{sdkReady=false;configured=false;});
-  wx.config({...config,debug:false,jsApiList:['updateAppMessageShareData','updateTimelineShareData']});
- }).catch(()=>{}).finally(()=>clearTimeout(retryTimer));
+ sdkLoaded=new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='https://res.wx.qq.com/open/js/jweixin-1.6.0.js';s.onload=resolve;s.onerror=reject;document.head.append(s);});
+ sync();configure();
 })();

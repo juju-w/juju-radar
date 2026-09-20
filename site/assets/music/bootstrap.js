@@ -23,7 +23,29 @@
    document.head.append(style);frame.hidden=false;
    document.body.append(template.content);
    await script('liquid-glass.js');await script('player.js');
-   const sync=()=>{try{document.title=frame.contentDocument.title;}catch(e){}};frame.addEventListener('load',sync);sync();window.dispatchEvent(new Event('juju:reading-ready'));
+   const sync=()=>{
+    try{
+     const doc=frame.contentDocument,url=new URL(frame.contentWindow.location.href);
+     if(url.origin!==location.origin||!url.pathname.startsWith('/juju-radar/'))return;
+     // The iframe owns navigation history; mirror its current entry without adding a second entry.
+     history.replaceState(history.state,'',url.pathname+url.search+url.hash);
+     document.title=doc.title;
+     for(const selector of ['link[rel="canonical"]','meta[name="description"]','meta[property="og:title"]','meta[property="og:description"]','meta[property="og:url"]']){
+      const source=doc.querySelector(selector),target=document.querySelector(selector);
+      if(source&&target){if(source.tagName==='LINK')target.href=source.href;else target.content=source.content;}
+     }
+     window.dispatchEvent(new Event('juju:reading-ready'));
+    }catch(e){}
+   };
+   const bind=()=>{
+    const win=frame.contentWindow;
+    for(const name of ['pushState','replaceState']){
+     const original=win.history[name].bind(win.history);
+     win.history[name]=function(...args){const result=original(...args);sync();return result;};
+    }
+    win.addEventListener('popstate',sync);win.addEventListener('hashchange',sync);sync();
+   };
+   frame.addEventListener('load',bind);bind();
   }catch(e){style.remove();for(const link of styles)link.disabled=false;document.body.replaceChildren(...original);}
  })().catch(()=>{});
 })();
