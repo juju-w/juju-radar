@@ -72,7 +72,11 @@ def build(preview=False):
  approvals=json.loads((SITE/'publications.json').read_text())
  folders=[ROOT/'issues'/d for d in sorted(approvals['issues'])]
  if preview:
-  folders=sorted(p for p in (ROOT/'issues').iterdir() if re.fullmatch(r'\d{4}-\d{2}-\d{2}(?:-[a-z0-9]+)*',p.name) and (p/'article.md').exists())
+  folders=sorted(
+   p for p in (ROOT/'issues').iterdir()
+   if re.fullmatch(r'\d{4}-\d{2}-\d{2}(?:-[a-z0-9]+)*',p.name)
+   and all((p/name).exists() for name in FILES)
+  )
  for p in folders:
   if not preview and approvals['issues'][p.name]['sha256']!=digest(p):raise ValueError('Content changed since approval: '+p.name)
  out=SITE/('preview' if preview else 'dist');out.mkdir(exist_ok=True)
@@ -86,6 +90,8 @@ def build(preview=False):
  music_version=hashlib.sha256(b''.join((music_source/n).read_bytes() for n in music_names)).hexdigest()[:10]
  music_dest=out/'assets'/('music-'+music_version);music_dest.mkdir()
  for name in music_names:shutil.copyfile(music_source/name,music_dest/name)
+ archive_js=(SITE/'assets/archive.js').read_bytes();av=hashlib.sha256(archive_js).hexdigest()[:10]
+ (out/f'assets/archive-{av}.js').write_bytes(archive_js)
  share_js=(SITE/'assets/share.js').read_bytes();sv=hashlib.sha256(share_js).hexdigest()[:10]
  (out/f'assets/share-{sv}.js').write_bytes(share_js)
  shutil.copyfile(SITE/'assets/share-cover.png',out/'assets/share-cover.png')
@@ -200,7 +206,7 @@ def build(preview=False):
   count=f'{len(daily)-special_count} 条精选'+(f' · {special_count} 篇特别版' if special_count else '')
   rows=''.join(f'<li class="archive-item"><a class="archive-item-title" href="{e["path"]}">{E(e["title"])}</a><div class="meta">{E(e["category"])}{" · 补看" if e.get("backfill") else ""}</div></li>' for e in daily)
   archive_groups.append(f'<section class="archive-group" id="date-{date}" data-date="{date}"><div class="archive-heading"><h2>{date}</h2><span class="meta">{count}</span><a href="{issue["path"]}">阅读整期 {ARROW}</a>{share_button(issue["title"],issue["path"],"分享整期")}</div><p class="archive-issue-title">{E(issue["title"])}</p><ol class="archive-items">{rows}</ol></section>')
- save('archive/index.html',shell('往期归档','<main class="reading"><h1>往期归档</h1><p class="lead">按日期查看每条精选与特别版，也可以阅读整期文章。</p>'+''.join(archive_groups)+'</main>','archive/'))
+ save('archive/index.html',shell('往期归档','<main class="reading archive-page"><h1>往期归档</h1><p class="lead">按日期查看每条精选与特别版，也可以阅读整期文章。</p>'+''.join(archive_groups)+'</main>','archive/',script=f'<script src="{PREFIX}assets/archive-{av}.js" defer></script>'))
  save('subscribe/index.html',shell('订阅与导出',f'<main class="reading"><h1>订阅与下载</h1><p class="lead">支持 RSS 订阅和 Zotero 文献导入。</p><h2 id="daily">每日精选 RSS</h2><p>每日精选与特别版各一条，包含完整正文。复制下面的地址，在 RSS 阅读器中添加订阅。</p><a class="feed-url" href="{BASE}feed.xml">{BASE}feed.xml</a><h2 id="papers">论文 RSS</h2><p>每篇论文一条，附中文笔记和原始链接。同一论文重复收录时保留同一条订阅标识。</p><a class="feed-url" href="{BASE}papers.xml">{BASE}papers.xml</a><h2>导入 Zotero</h2><p><a href="{PREFIX}papers.ris" download>下载全部 {len(papers)} 篇论文（RIS）</a></p><p>在 Zotero 中选择“文件 → 导入”，打开下载的 RIS 文件。单篇论文页面也提供独立下载；PDF 为原始链接，未打包全文。</p><h2>内容如何更新</h2><p>每天整理一手材料，保留入选理由和证据边界；核验后每天更新。更正沿用原链接。所有日期均区分收录日与原始发布日期。</p></main>','subscribe/'))
  def feed(filename,title,items):
   ET.register_namespace('atom','http://www.w3.org/2005/Atom');root=ET.Element('rss',version='2.0');ch=ET.SubElement(root,'channel')

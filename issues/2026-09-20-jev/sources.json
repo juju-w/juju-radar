@@ -1,0 +1,99 @@
+{
+  "sources": [
+    {
+      "label": "发布说明",
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "section": "原始资料"
+    },
+    {
+      "label": "接口介绍",
+      "url": "https://docs.typesafe.ai/introduction",
+      "section": "Jev 到底返回什么？"
+    },
+    {
+      "label": "Vercel Evaluation 文档",
+      "url": "https://vercel.com/docs/ai-gateway/modalities/evaluation",
+      "section": "Jev 到底返回什么？"
+    },
+    {
+      "label": "Choice 文档",
+      "url": "https://docs.typesafe.ai/primitives/choice",
+      "section": "Jev 到底返回什么？"
+    },
+    {
+      "label": "System One 文档",
+      "url": "https://docs.typesafe.ai/concepts/system-one",
+      "section": "Jev 到底返回什么？"
+    },
+    {
+      "label": "并行提问模式",
+      "url": "https://docs.typesafe.ai/patterns/fan-out",
+      "section": "快在哪里：少生成，也少等几次"
+    },
+    {
+      "label": "黑箱分析",
+      "url": "https://archerhume.com/posts/jevs-architecture-unmasked",
+      "section": "快在哪里：少生成，也少等几次"
+    },
+    {
+      "label": "训练目标说明",
+      "url": "https://docs.typesafe.ai/introduction/machine-learning-primer",
+      "section": "RLCD 想解决的，是概率能不能拿来用"
+    },
+    {
+      "label": "置信度文档",
+      "url": "https://docs.typesafe.ai/confidence",
+      "section": "RLCD 想解决的，是概率能不能拿来用"
+    },
+    {
+      "label": "评测方法",
+      "url": "https://evals.typesafe.ai/",
+      "section": "快近 200 倍、便宜数百倍”，该怎样读？"
+    },
+    {
+      "label": "BANKING77 实验与完整记录",
+      "url": "https://github.com/simonmesmith/jev-banking77-experiment",
+      "section": "一项独立公开测试，补上了什么证据？"
+    },
+    {
+      "label": "模型与价格",
+      "url": "https://docs.typesafe.ai/models",
+      "section": "一项独立公开测试，补上了什么证据？"
+    },
+    {
+      "label": "演示与计时说明",
+      "url": "https://github.com/browser-use/jev-ultrafast",
+      "section": "七秒查机票的演示，模型实际做了什么？"
+    },
+    {
+      "label": "官方产品说明",
+      "url": "https://typesafe.ai/",
+      "section": "零幻觉”保证了哪一层？"
+    },
+    {
+      "label": "vLLM 文档",
+      "url": "https://docs.vllm.ai/en/latest/features/structured_outputs/",
+      "section": "零幻觉”保证了哪一层？"
+    },
+    {
+      "label": "已知能力边界",
+      "url": "https://docs.typesafe.ai/model-jaggedness/jev-1.13",
+      "section": "官方列出的弱点，比宣传语更有参考价值"
+    },
+    {
+      "label": "NanoJev 模型卡",
+      "url": "https://huggingface.co/C-Tianyu/NanoJev",
+      "section": "Jev 和 NanoJev：接口相似，证据需要分开"
+    },
+    {
+      "label": "项目更新记录",
+      "url": "https://github.com/TianyuCodings/NanoJev",
+      "section": "Jev 和 NanoJev：接口相似，证据需要分开"
+    },
+    {
+      "label": "LangChain 接入示例",
+      "url": "https://www.langchain.com/blog/building-a-harness-with-jev",
+      "section": "放进现有 Agent，先替换哪一段？"
+    }
+  ]
+}

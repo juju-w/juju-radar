@@ -1,9 +1,6 @@
 {
   "date": "2026-09-11",
-  "issue_id": "2026-09-11-anthropic",
   "kind": "special",
-  "section": "深度解读",
-  "published_at": "2026-09-11T20:24:28+08:00",
   "sources": [
     {
       "title": "Kimi 请求去了哪里？Anthropic 报告里的敏感数据与交友骗局",
@@ -29,5 +26,8 @@
         "交友应用按额度充值并混用AI人设与真人；报告没有年龄分布或确认损失金额。"
       ]
     }
-  ]
+  ],
+  "issue_id": "2026-09-11-anthropic",
+  "section": "深度解读",
+  "published_at": "2026-09-11T20:24:28+08:00"
 }

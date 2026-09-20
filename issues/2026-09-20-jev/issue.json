@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-20",
+  "kind": "special",
+  "sources": [
+    {
+      "title": "Jev 为什么突然火了？快速决策模型能给 Agent 带来什么",
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "related_urls": [
+        "https://docs.typesafe.ai/introduction",
+        "https://docs.typesafe.ai/models",
+        "https://docs.typesafe.ai/concepts/system-one",
+        "https://docs.typesafe.ai/primitives/choice",
+        "https://docs.typesafe.ai/primitives/score",
+        "https://docs.typesafe.ai/primitives/noul",
+        "https://docs.typesafe.ai/patterns/fan-out",
+        "https://docs.typesafe.ai/introduction/machine-learning-primer",
+        "https://docs.typesafe.ai/confidence",
+        "https://docs.typesafe.ai/model-jaggedness/jev-1.13",
+        "https://evals.typesafe.ai/",
+        "https://vercel.com/docs/ai-gateway/modalities/evaluation",
+        "https://github.com/browser-use/jev-ultrafast",
+        "https://github.com/simonmesmith/jev-banking77-experiment",
+        "https://archerhume.com/posts/jevs-architecture-unmasked",
+        "https://huggingface.co/C-Tianyu/NanoJev",
+        "https://github.com/TianyuCodings/NanoJev",
+        "https://www.langchain.com/blog/building-a-harness-with-jev",
+        "https://docs.vllm.ai/en/latest/features/structured_outputs/"
+      ],
+      "category": "决策模型 / AI 自动化 / 深度解读",
+      "score": 9,
+      "published_at": "2026-09-15",
+      "event_time": "2026-09-15",
+      "window_status": "special_topic",
+      "window_uncertain": false,
+      "reason": "Jev 用同一套模型针对自然语言状态和动态候选项返回概率分布，适合高频语义判断；厂商性能结论仍需独立业务数据验证。",
+      "key_claims": [
+        "Jev 不生成自由文本，面向 Choice、Score、Noul/boolean 等有限判断返回概率。",
+        "厂商报告 70–500ms、每百万输入 token 0.042 美元；193.6 倍与 444.6 倍来自特定工作流评测。",
+        "独立 BANKING77 公开实验取得 92.40%，但使用类别定义和检索到的标注样例，并非零样本。",
+        "通过 Vercel AI Gateway 完成一次中文三问题连通性测试；单样例不构成性能或准确率评测。"
+      ]
+    }
+  ],
+  "issue_id": "2026-09-20-jev",
+  "section": "深度解读",
+  "published_at": "2026-09-21T00:45:23+08:00"
+}
