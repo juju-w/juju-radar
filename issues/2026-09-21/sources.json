@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "label": "阶跃星辰：Step 5 Preview 官方页面",
+      "url": "https://www.stepfun.com/step-5-preview",
+      "section": "原始资料"
+    },
+    {
+      "label": "阶跃星辰：开放平台",
+      "url": "https://platform.stepfun.com/",
+      "section": "原始资料"
+    },
+    {
+      "label": "Vercel：Step 5 Preview 模型页与价格",
+      "url": "https://vercel.com/ai-gateway/models/step-5-preview",
+      "section": "原始资料"
+    },
+    {
+      "label": "阶跃星辰：中文发布",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyNTYxNzg5Mg%3D%3D&mid=2247488120&idx=1&sn=8ba9ac7f0b36682d6262290677c665da",
+      "section": "原始资料"
+    },
+    {
+      "label": "Qwen：Qwen-Image-2.1 官方博客",
+      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "section": "原始资料"
+    },
+    {
+      "label": "Qwen-Image-2.1：代码与使用说明",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "section": "原始资料"
+    },
+    {
+      "label": "Qwen-Image-2.1：模型权重",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "section": "原始资料"
+    },
+    {
+      "label": "Qwen Research License",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1/blob/main/LICENSE",
+      "section": "原始资料"
+    },
+    {
+      "label": "独立调查：ChatGPT 广告收集器与 __obi",
+      "url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector",
+      "section": "原始资料"
+    },
+    {
+      "label": "OpenAI Cookie 政策",
+      "url": "https://openai.com/en-GB/policies/cookie-policy/",
+      "section": "原始资料"
+    },
+    {
+      "label": "OpenAI 转化测量说明",
+      "url": "https://help.openai.com/en/articles/20001409-conversion-measurement",
+      "section": "原始资料"
+    },
+    {
+      "label": "OpenAI Pixel 配置说明",
+      "url": "https://github.com/openai/plugins/blob/main/plugins/openai-ads-conversions/skills/openai-ads-conversions-setup/references/measurement-pixel.md",
+      "section": "原始资料"
+    }
+  ]
+}
