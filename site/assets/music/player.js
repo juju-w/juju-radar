@@ -6,13 +6,13 @@ for(const id of ['play','next','prev','loop','list','close','shuffle','fold'])ic
 const time=n=>Number.isFinite(n)?`${Math.floor(n/60)}:${String(Math.floor(n%60)).padStart(2,'0')}`:'0:00';
 function list(){ $('tracks').replaceChildren(...tracks.map((t,i)=>{const li=document.createElement('li'),b=document.createElement('button'),num=document.createElement('span'),name=document.createElement('span');num.className='num';num.textContent=String(t.track).padStart(2,'0');name.textContent=t.title;b.append(num,name);b.setAttribute('aria-current',String(i===index));b.onclick=()=>{bag=[];history=[];load(i,true);};li.append(b);return li;}));}
 async function play(){const g=generation;try{await audio.play();if(g===generation)$('status').textContent='';}catch(e){if(g===generation&&e.name!=='AbortError')$('status').textContent=e.name==='NotAllowedError'?'Press play to listen.':'Unable to play. Please try again.';}}
-function load(i,start=false){generation++;index=(i+tracks.length)%tracks.length;const t=tracks[index];audio.src=t.url;$('title').textContent=t.title;$('artist').textContent=t.artist;$('art').src=t.cover;$('duration').textContent=time(t.duration);$('elapsed').textContent='0:00';$('seek').value=0;list();positionPanel();if(start)play();}
+function load(i,start=false){generation++;index=(i+tracks.length)%tracks.length;const t=tracks[index];audio.src=t.url;$('title').textContent=t.title;$('artist').textContent=t.artist;$('album-name').textContent=t.album;$('current-album').title='切换专辑 · '+t.album;$('track-count').textContent=tracks.length+' 首';$('art').src=t.cover;$('duration').textContent=time(t.duration);$('elapsed').textContent='0:00';$('seek').value=0;list();positionPanel();if(start)play();}
 $('play').onclick=()=>audio.paused?play():audio.pause();$('prev').onclick=()=>load(shuffle&&history.length?history.pop():index-1,true);$('next').onclick=()=>advance();
 audio.onplay=()=>{icon('play','pause');$('play').setAttribute('aria-label','Pause');$('play').title='Pause';};audio.onpause=()=>{icon('play','play');$('play').setAttribute('aria-label','Play');$('play').title='Play';};audio.onended=()=>repeat==='one'?load(index,true):advance();audio.onerror=()=>{$('status').textContent='Unable to load this track. Try the next one.';};
 audio.ontimeupdate=()=>{$('elapsed').textContent=time(audio.currentTime);if(Number.isFinite(audio.duration)&&audio.duration>0)$('seek').value=audio.currentTime/audio.duration*1000;};
 $('seek').oninput=()=>{if(Number.isFinite(audio.duration))audio.currentTime=Number($('seek').value)/1000*audio.duration;};audio.volume=.25;$('volume').oninput=()=>audio.volume=Number($('volume').value);
 $('loop').onclick=()=>{repeat=repeat==='all'?'one':'all';$('loop').dataset.mode=repeat;const label=repeat==='all'?'Repeat all':'Repeat one';$('loop').setAttribute('aria-label',label);$('loop').title=label;};
-function panel(open){$('panel').hidden=!open;$('list').setAttribute('aria-expanded',String(open));positionPanel();} $('list').onclick=()=>panel($('panel').hidden);$('close').onclick=()=>{panel(false);$('list').focus();};document.addEventListener('keydown',e=>{if(e.key==='Escape')panel(false);});
+function panel(open){$('panel').hidden=!open;$('list').setAttribute('aria-expanded',String(open));positionPanel();} $('list').onclick=()=>panel($('panel').hidden);$('current-album').onclick=()=>{panel(true);$('album').focus();};$('close').onclick=()=>{panel(false);$('list').focus();};document.addEventListener('keydown',e=>{if(e.key==='Escape')panel(false);});
 $('album').onchange=()=>{const playing=!audio.paused;bag=[];history=[];tracks=all.filter(t=>t.album===$('album').value);load(0,playing);};
 fetch('/juju-radar/music-v1/playlist.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(data=>{all=data;for(const artist of [...new Set(all.map(t=>t.artist))]){const group=document.createElement('optgroup');group.label=artist;for(const name of [...new Set(all.filter(t=>t.artist===artist).map(t=>t.album))]){const o=document.createElement('option');o.value=o.textContent=name;group.append(o);}$('album').append(group);}$('album').value='Misty for Direct Cutting';tracks=all.filter(t=>t.album===$('album').value);load(0,false);}).catch(()=>{$('title').textContent='Playlist unavailable';$('status').textContent='Please refresh the page.';});
 
@@ -31,10 +31,11 @@ function saveWidget(){try{localStorage.setItem('jazz-widget',JSON.stringify({y:f
 function positionPanel(){
  if($('panel').hidden)return;
  const rect=widget.getBoundingClientRect(),p=$('panel');
- p.style.bottom='auto';p.style.maxHeight=Math.max(100,innerHeight-28)+'px';
+ const aboveSpace=Math.max(0,rect.top-26),belowSpace=Math.max(0,innerHeight-rect.bottom-26);
+ const above=aboveSpace>=belowSpace;
+ p.style.bottom='auto';p.style.maxHeight=Math.max(100,above?aboveSpace:belowSpace)+'px';
  const height=p.getBoundingClientRect().height;
- const above=rect.top-height-12,below=rect.bottom+12;
- p.style.top=Math.max(14,Math.min(innerHeight-height-14,above>=14?above:below))+'px';
+ p.style.top=Math.max(14,above?rect.top-height-12:rect.bottom+12)+'px';
 }
 function positionWidget(){const max=Math.max(14,innerHeight-widget.offsetHeight-14);widget.style.bottom='auto';widget.style.top=(14+fraction*(max-14))+'px';positionPanel();}
 function setFolded(value){folded=value;widget.classList.toggle('folded',folded);icon('fold',folded?'expand':'fold');$('fold').setAttribute('aria-label',folded?'Expand player':'Collapse player');$('fold').title=folded?'Expand':'Collapse';$('fold').setAttribute('aria-expanded',String(!folded));if(folded)panel(false);positionWidget();saveWidget();}
