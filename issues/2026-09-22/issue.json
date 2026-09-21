@@ -1,0 +1,118 @@
+{
+  "date": "2026-09-22",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "mimo-v2-6",
+      "title": "🧠 MiMo-V2.6：重点不是模型变大，而是一次怎样喂下75万条轨迹",
+      "category": "基础模型 / Agent训练",
+      "score": 9.5,
+      "url": "https://mimo.mi.com/docs/en-US/news/latest/v2-6",
+      "related_urls": [
+        "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+        "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf",
+        "https://arxiv.org/abs/2609.22068"
+      ],
+      "published_at": "2026-09-21T20:51:03Z",
+      "event_time": "2026-09-21T20:51:03Z",
+      "window_status": "in_window",
+      "window_uncertain": false,
+      "reason": "开放模型权重、技术报告和强化学习资源，且披露了批次、轨迹规模、成本与组内评分机制；重点在多任务长程RL方法，官方榜单保留复测边界。",
+      "key_claims": [
+        "MiMo-V2.6 Pro为1.02T总参数、约42B激活参数的稀疏MoE，支持文本、图像、视频和音频以及1M上下文，权重采用MIT许可证。",
+        "Pro和Flash各训练30步，累计约75万条轨迹，官方披露成本约262万美元和85万美元；每一步1568个任务，每个任务16条rollout。",
+        "训练将代码、通用Agent、视觉和网络安全任务混合，使用全异步GRPO和组内Agent评分，并加入冻结路由与奖励投机防护。",
+        "训练过程DeepSWE从58.4升到72.6，最终模型卡为71.9；30步实验不能证明开放式递归自我改进。"
+      ]
+    },
+    {
+      "id": "amazon-meta-muse",
+      "title": "🛒 Amazon封住Muse：AI能替你购物，不代表商家必须让它进门",
+      "category": "Agent / 平台规则",
+      "score": 9.3,
+      "url": "https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/",
+      "related_urls": [
+        "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+        "https://www.axios.com/2026/09/21/amazon-meta-muse-ai-agentic-shopping"
+      ],
+      "published_at": "2026-09-20T23:05:00-07:00",
+      "event_time": "2026-09-20T23:05:00-07:00",
+      "window_status": "in_window",
+      "window_uncertain": false,
+      "reason": "真实Agent在账户和支付场景遭遇平台阻断，暴露用户授权、网站授权、机器身份与商业入口之间的冲突；双方说法可交叉核对。",
+      "key_claims": [
+        "Amazon阻止Meta Muse代用户访问购物流程，称Agent不表明身份且未经网站授权。",
+        "Meta称凭据存放于安全存储，模型看不到密码和支付信息，Sentinel审查对外动作，购买前需用户确认。",
+        "争议不仅是安全问题，也涉及谁控制商品推荐、广告曝光、支付路径和客户关系。",
+        "现有浏览器Agent继承用户会话，但缺少网站普遍接受的机器身份、权限范围与撤销机制。"
+      ]
+    },
+    {
+      "id": "bc-openai-lawsuit",
+      "title": "⚖️ 不列颠哥伦比亚省起诉OpenAI：风险识别之后，谁来决定是否报警",
+      "category": "AI安全 / 法律责任",
+      "score": 9.2,
+      "url": "https://news.gov.bc.ca/releases/2026AG0067-001105",
+      "related_urls": [
+        "https://apnews.com/article/d574e2703a6e9472b59aa3a5371c57a5",
+        "https://apnews.com/article/b746b33f2909c53b4e60c19be762cc6d"
+      ],
+      "published_at": "2026-09-21T11:45:00-07:00",
+      "event_time": "2026-09-21T11:45:00-07:00",
+      "window_status": "in_window",
+      "window_uncertain": false,
+      "reason": "省政府从研究法律选择走到正式起诉，把高风险升级门槛、跨境通报和平台可审计责任推入司法程序；严格区分诉讼指控与法院认定。",
+      "key_claims": [
+        "B.C.政府宣布在加州起诉OpenAI，指控其在Tumbler Ridge枪击案前未向执法部门报告平台发现的暴力威胁。",
+        "OpenAI此前表示2025年6月封禁涉案账户，考虑过转介警方但判定未达门槛，并在案后承认未发现第二账户。",
+        "完整起诉书和新内部证据未随政府声明公开，责任与因果关系仍待法院审理。",
+        "案件可能影响平台风险升级规则、人工复核记录和跨境执法通报义务。"
+      ]
+    },
+    {
+      "id": "grok-4-7",
+      "title": "🚀 Grok 4.7：更长的强化学习，把提升集中在数小时任务",
+      "category": "基础模型 / Coding Agent",
+      "score": 9.0,
+      "url": "https://x.ai/news/grok-4-7",
+      "related_urls": [
+        "https://docs.x.ai/developers/models/grok-4.7",
+        "https://artificialanalysis.ai/articles/benchmarking-grok-4-7"
+      ],
+      "published_at": "2026-09-21",
+      "event_time": "2026-09-21",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "更大基座与更长RL显著改善多小时编码和终端任务，价格保持不变；官方同表也显示并非全面领先，适合有边界地报道。",
+      "key_claims": [
+        "Grok 4.7使用更大基座、更长强化学习和更难的多小时任务混合，支持500k上下文。",
+        "官方CursorBench为46.3%、DeepSWE为71.0%、Terminal-Bench为38.0%，较4.6明显提升。",
+        "同表中Fable 5.1在CursorBench和Terminal-Bench更高，GPT-5.6 Sol在DeepSWE略高。",
+        "API低于200k上下文时输入2美元、缓存0.5美元、输出6美元每百万token；超过200k价格加倍。"
+      ]
+    },
+    {
+      "id": "recreationworld",
+      "title": "🧪 近期论文补看：Agent能重做界面，离重做行为还很远",
+      "category": "论文 / Computer Use",
+      "score": 8.7,
+      "url": "https://arxiv.org/abs/2609.22000",
+      "related_urls": [
+        "https://recreation-bench.cc/",
+        "https://github.com/QwenLM/RecreationWorld",
+        "https://huggingface.co/datasets/Qwen/RecreationBench"
+      ],
+      "published_at": "2026-09-18T17:00:00Z",
+      "event_time": "2026-09-21T00:00:00Z",
+      "window_status": "recent_supplement",
+      "window_uncertain": false,
+      "reason": "HF 9月21日收录的近期论文，首次公开早于严格窗口，明确列作补看；把GUI探索、编码和隐藏可执行测试放进同一长程任务，评测信号有新意。",
+      "key_claims": [
+        "RecreationBench含250个任务，覆盖Ubuntu、macOS、Windows、Android和Web五个平台。",
+        "Agent只看到运行中的参考应用，需在GUI探索、写代码、启动和验证之间反复切换。",
+        "GPT-6 Astra总分58.1%，但只有2.8%的任务通过全部程序测试；静态界面明显比交互行为容易复刻。",
+        "论文开放基准、任务环境和测试套件；Android环境尚无数据包级外连证明。"
+      ]
+    }
+  ]
+}

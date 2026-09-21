@@ -1,0 +1,357 @@
+{
+  "issue_date": "2026-09-22",
+  "papers": [
+    {
+      "id": "arxiv:2609.22000",
+      "title": "RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents",
+      "url": "https://arxiv.org/abs/2609.22000",
+      "doi": null,
+      "published_date": "2026-09-18",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Shuai",
+          "lastName": "Bai",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jiayong",
+          "lastName": "Deng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yikun",
+          "lastName": "Fu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Chang",
+          "lastName": "Gao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xuhao",
+          "lastName": "Hu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mianqiu",
+          "lastName": "Huang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yizhen",
+          "lastName": "Jiang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yuheng",
+          "lastName": "Jing",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dehui",
+          "lastName": "Kong",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Keliang",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ning",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wanli",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dayiheng",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dunjie",
+          "lastName": "Lu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Changwei",
+          "lastName": "Luo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Que",
+          "lastName": "Shen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zheyuan",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zijian",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jie",
+          "lastName": "Wu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gao",
+          "lastName": "Wu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zhihui",
+          "lastName": "Xie",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Rui",
+          "lastName": "Xie",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Haiyang",
+          "lastName": "Xu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "An",
+          "lastName": "Yang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jiakang",
+          "lastName": "Yuan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yanming",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jiajun",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xi",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zhenru",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zhuo",
+          "lastName": "Zhen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mingkang",
+          "lastName": "Zhu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bowen",
+          "lastName": "Zhou",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "Computer Use",
+        "Agent评测",
+        "可执行验证",
+        "待阅读",
+        "补看"
+      ],
+      "note": "RecreationWorld把GUI探索、代码实现和运行验证放进一个长任务：Agent只能操作正在运行的参考应用，再从零重做出可执行版本。RecreationBench包含250项任务，覆盖Ubuntu、macOS、Windows、Android和Web，并用固定的程序断言与视觉断言验证行为。\n\n最有信息量的结果不是总分，而是完成度差距：GPT-6 Astra总体得58.1%，但只有2.8%的任务通过全部程序测试。模型更容易复刻静态结构，对交互状态、计算结果和跨步骤行为明显更弱。\n\n论文9月18日提交、9月21日进入HF Daily Papers，本期作为近期补看而非当天首发。训练迁移只在有限模型和基准上验证，各平台的隔离强度也不完全一致。重要度8.7/10。\n\n原文：https://arxiv.org/abs/2609.22000\n项目：https://recreation-bench.cc/\n代码：https://github.com/QwenLM/RecreationWorld\n本期资料页：https://www.asteronline.cn/juju-radar/2026-09-22/\n\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://arxiv.org/pdf/2609.22000",
+      "authors": [
+        "Bai, Shuai",
+        "Deng, Jiayong",
+        "Fu, Yikun",
+        "Gao, Chang",
+        "Hu, Xuhao",
+        "Huang, Mianqiu",
+        "Jiang, Yizhen",
+        "Jing, Yuheng",
+        "Kong, Dehui",
+        "Li, Keliang",
+        "Li, Ning",
+        "Li, Wanli",
+        "Liu, Dayiheng",
+        "Lu, Dunjie",
+        "Luo, Changwei",
+        "Shen, Que",
+        "Wang, Zheyuan",
+        "Wang, Zijian",
+        "Wu, Jie",
+        "Wu, Gao",
+        "Xie, Zhihui",
+        "Xie, Rui",
+        "Xu, Haiyang",
+        "Yang, An",
+        "Yuan, Jiakang",
+        "Zhang, Yanming",
+        "Zhang, Jiajun",
+        "Zhang, Xi",
+        "Zhang, Zhenru",
+        "Zhen, Zhuo",
+        "Zhu, Mingkang",
+        "Zhou, Bowen"
+      ]
+    },
+    {
+      "id": "arxiv:2609.22068",
+      "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
+      "url": "https://arxiv.org/abs/2609.22068",
+      "doi": null,
+      "published_date": "2026-09-18",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Bowen",
+          "lastName": "Ye",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Lei",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shicheng",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zihao",
+          "lastName": "Yue",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Linghao",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hanglong",
+          "lastName": "Lv",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yuanxin",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wenhan",
+          "lastName": "Ma",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hao",
+          "lastName": "Tian",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Rang",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jinhao",
+          "lastName": "Dong",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yikai",
+          "lastName": "Zhao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xiangwei",
+          "lastName": "Deng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hailin",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Liang",
+          "lastName": "Zhao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Qi",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Lingpeng",
+          "lastName": "Kong",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tong",
+          "lastName": "Yang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Fuli",
+          "lastName": "Luo",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "Coding Agent",
+        "强化学习",
+        "训练环境",
+        "待阅读",
+        "补看"
+      ],
+      "note": "CodeMidas只以现有源码为任务输入，让Agent探索功能、写出行为规格、生成可执行测试，再用多次解题rollout筛选任务。最终从3185个仓库构造5545项训练任务，覆盖23种语言和15个技术领域。\n\n它的意义在于扩大Agent强化学习环境的供给：不再依赖GitHub issue或提交记录，而是从已经实现的功能反推任务和验证器。论文报告用这些任务训练MiMo-V2.5后，DeepSWE、ProgramBench和Terminal-Bench均提升。\n\n这些提升来自论文和小米团队自己的训练实验，尚需独立复现；任务质量仍取决于自动生成测试是否真正覆盖原功能。本期作为MiMo-V2.6条目的配套论文收录，重要度8.6/10。\n\n原文：https://arxiv.org/abs/2609.22068\n项目：https://mimo.xiaomi.com/rl/\n本期资料页：https://www.asteronline.cn/juju-radar/2026-09-22/\n\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://arxiv.org/pdf/2609.22068",
+      "authors": [
+        "Ye, Bowen",
+        "Li, Lei",
+        "Li, Shicheng",
+        "Yue, Zihao",
+        "Zhang, Linghao",
+        "Lv, Hanglong",
+        "Liu, Yuanxin",
+        "Ma, Wenhan",
+        "Tian, Hao",
+        "Li, Rang",
+        "Dong, Jinhao",
+        "Zhao, Yikai",
+        "Deng, Xiangwei",
+        "Zhang, Hailin",
+        "Zhao, Liang",
+        "Liu, Qi",
+        "Kong, Lingpeng",
+        "Yang, Tong",
+        "Luo, Fuli"
+      ]
+    }
+  ]
+}

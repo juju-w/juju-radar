@@ -1,0 +1,89 @@
+{
+  "sources": [
+    {
+      "label": "小米MiMo：MiMo-V2.6发布说明",
+      "url": "https://mimo.mi.com/docs/en-US/news/latest/v2-6",
+      "section": "原始资料"
+    },
+    {
+      "label": "MiMo-V2.6-Pro-RL模型卡与权重",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "section": "原始资料"
+    },
+    {
+      "label": "MiMo-V2.6技术报告",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf",
+      "section": "原始资料"
+    },
+    {
+      "label": "CodeMidas论文",
+      "url": "https://arxiv.org/abs/2609.22068",
+      "section": "原始资料"
+    },
+    {
+      "label": "GeekWire：Amazon封禁Meta Muse",
+      "url": "https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/",
+      "section": "原始资料"
+    },
+    {
+      "label": "Meta：Muse发布与安全设计",
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "section": "原始资料"
+    },
+    {
+      "label": "Axios：Amazon与Muse的购物入口之争",
+      "url": "https://www.axios.com/2026/09/21/amazon-meta-muse-ai-agentic-shopping",
+      "section": "原始资料"
+    },
+    {
+      "label": "不列颠哥伦比亚省政府：起诉OpenAI声明",
+      "url": "https://news.gov.bc.ca/releases/2026AG0067-001105",
+      "section": "原始资料"
+    },
+    {
+      "label": "美联社：OpenAI曾考虑向警方转介涉案账户",
+      "url": "https://apnews.com/article/d574e2703a6e9472b59aa3a5371c57a5",
+      "section": "原始资料"
+    },
+    {
+      "label": "美联社：OpenAI承认未发现第二个账户",
+      "url": "https://apnews.com/article/b746b33f2909c53b4e60c19be762cc6d",
+      "section": "原始资料"
+    },
+    {
+      "label": "xAI：Grok 4.7发布说明",
+      "url": "https://x.ai/news/grok-4-7",
+      "section": "原始资料"
+    },
+    {
+      "label": "xAI：Grok 4.7 API文档与价格",
+      "url": "https://docs.x.ai/developers/models/grok-4.7",
+      "section": "原始资料"
+    },
+    {
+      "label": "Artificial Analysis：Grok 4.7独立评测",
+      "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
+      "section": "原始资料"
+    },
+    {
+      "label": "RecreationWorld论文",
+      "url": "https://arxiv.org/abs/2609.22000",
+      "section": "原始资料"
+    },
+    {
+      "label": "RecreationWorld项目页",
+      "url": "https://recreation-bench.cc/",
+      "section": "原始资料"
+    },
+    {
+      "label": "RecreationWorld代码",
+      "url": "https://github.com/QwenLM/RecreationWorld",
+      "section": "原始资料"
+    },
+    {
+      "label": "RecreationBench数据集",
+      "url": "https://huggingface.co/datasets/Qwen/RecreationBench",
+      "section": "原始资料"
+    }
+  ]
+}
