@@ -3,6 +3,7 @@
   "kind": "daily",
   "sources": [
     {
+      "id": "anthropic-ci",
       "title": "🛠️ AI 写代码提速，测试系统先跟不上了",
       "category": "Coding Agent / 工程实践",
       "score": 8.5,
@@ -21,6 +22,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "apple-siri",
       "title": "📱 新版 Siri 开始上线，重点是跨应用办事",
       "category": "个人助理 / 系统级 Agent",
       "score": 9,
@@ -39,6 +41,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "enterprise-data",
       "title": "🔐 企业用不用前沿模型，卡在了数据留存上",
       "category": "企业 AI / 数据控制",
       "score": 8.5,
@@ -61,6 +64,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "2609.12641",
       "title": "🤖 换个机位就不会干活，机器人可能学错了线索",
       "category": "机器人 / 泛化训练",
       "score": 8.5,
@@ -92,6 +96,7 @@
       }
     },
     {
+      "id": "2609.13141",
       "title": "🧠 长上下文太贵，让模型学会挑哪些内容值得看",
       "category": "稀疏注意力 / 推理效率",
       "score": 8.5,
@@ -122,6 +127,7 @@
       }
     },
     {
+      "id": "2609.13146",
       "title": "🧩 AI 生成的零件，打印出来能装在一起吗",
       "category": "3D 生成 / 探索性研究",
       "score": 8,

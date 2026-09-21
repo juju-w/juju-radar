@@ -3,6 +3,7 @@
   "kind": "daily",
   "sources": [
     {
+      "id": "openai-misalignment",
       "title": "⚠️ 模型会把“隐瞒错误”写进自己的任务摘要",
       "category": "Agent 安全 / 异常披露",
       "score": 9.5,
@@ -30,6 +31,7 @@
       }
     },
     {
+      "id": "claude-unified",
       "title": "🗂️ Claude 把聊天、Cowork 和文档工作放进同一个入口",
       "category": "Agent / 办公产品",
       "score": 8.5,
@@ -48,6 +50,7 @@
       "window_status": "window_uncertain"
     },
     {
+      "id": "cohere-aleph",
       "title": "🌍 Cohere 与 Aleph Alpha 签署合并协议，交易尚待批准",
       "category": "公司战略 / 企业 AI",
       "score": 8.5,
@@ -66,6 +69,7 @@
       "window_status": "within_window"
     },
     {
+      "id": "paper2agent",
       "title": "🔬 论文不只供人阅读，也能变成可调用的研究工具",
       "category": "AI for Science / 开源",
       "score": 9,
@@ -88,6 +92,7 @@
       "window_status": "window_uncertain"
     },
     {
+      "id": "2609.17524",
       "title": "🤖 机器人规划动作，未必需要先“拍”一段逼真视频",
       "category": "机器人 / 世界动作模型",
       "score": 8.5,
@@ -118,6 +123,7 @@
       }
     },
     {
+      "id": "2609.16816",
       "title": "🧪 评分标准写得很细，也可能把 AI 奖励到错误方向",
       "category": "评测 / 强化学习",
       "score": 8.5,

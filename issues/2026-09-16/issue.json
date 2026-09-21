@@ -3,6 +3,7 @@
   "kind": "daily",
   "sources": [
     {
+      "id": "gemini-live",
       "title": "🎙️ Gemini 一边跟你聊天，一边在后台办事",
       "category": "语音模型 / Agent",
       "score": 9,
@@ -23,6 +24,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "2609.15818",
       "title": "🔬 Atria Dawn 开放权重，尝试把科研任务做到底",
       "category": "开放模型 / 科研 Agent",
       "score": 9,
@@ -55,6 +57,7 @@
       }
     },
     {
+      "id": "patch-benchmark",
       "title": "🛠️ AI 修漏洞到底行不行？先看“修好”怎么算",
       "category": "Coding Agent / 安全评测",
       "score": 8.5,
@@ -76,6 +79,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "lambda-power",
       "title": "⚡ 同样的电力预算，从 16 台服务器跑到 19 台",
       "category": "算力基础设施 / 能效",
       "score": 8.5,
@@ -96,6 +100,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "2609.13443",
       "title": "🧠 难题一直做不对，训练方法可能太早放弃了",
       "category": "强化学习 / 训练方法",
       "score": 8.5,
@@ -125,6 +130,7 @@
       }
     },
     {
+      "id": "2609.15635",
       "title": "🩻 把片子换了，医疗 AI 的回答为什么没怎么变",
       "category": "医疗 AI / 多模态评测",
       "score": 8.5,

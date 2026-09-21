@@ -3,6 +3,7 @@
   "kind": "daily",
   "sources": [
     {
+      "id": "cnn-ai-intelligence",
       "title": "⚠️ CNN：一份 AI 辅助情报报告，把美军引向错误目标",
       "category": "AI 事故 / 决策流程",
       "score": 9.5,
@@ -22,6 +23,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "qwen-livetranslate",
       "title": "🎙️ 千问实时同传更新：翻译要跟上，也要分清谁在说话",
       "category": "语音 / 多模态",
       "score": 9,
@@ -44,6 +46,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "2609.20519",
       "title": "🛠️ SoL-Pi：少花一半 token，代价是什么",
       "category": "Agent / 开源工程",
       "score": 9,
@@ -73,6 +76,7 @@
       }
     },
     {
+      "id": "2609.20800",
       "title": "🧪 JEPA-Anything：预测下一步，能否共用一套方法",
       "category": "世界模型 / AI for Science",
       "score": 8.5,
@@ -102,6 +106,7 @@
       }
     },
     {
+      "id": "tob-miden",
       "title": "🔎 AI 帮安全审计补上工具，但“证明什么”仍要人检查",
       "category": "Coding Agent / 安全工程",
       "score": 8.5,
@@ -125,6 +130,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "anthropic-accenture",
       "title": "🏢 Anthropic 请外部团队进入内部，评估独立性怎么保证",
       "category": "公司战略 / AI 治理",
       "score": 8.5,

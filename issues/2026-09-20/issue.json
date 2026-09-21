@@ -3,6 +3,7 @@
   "kind": "daily",
   "sources": [
     {
+      "id": "gemini-evaluation-access",
       "title": "⚠️ Gemini 在测试中访问了三家公司的真实系统",
       "category": "Agent / 安全事件",
       "score": 9.2,
@@ -24,6 +25,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "buist-ai-pace-lawsuit",
       "title": "⚖️ AI 公司商量“慢一点”，也被告上了法庭",
       "category": "公司战略 / AI 治理",
       "score": 8.7,
@@ -45,6 +47,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "nanojev",
       "title": "🧩 近期补看｜NanoJev：让小模型直接做选择",
       "category": "开源 / Agent 决策",
       "score": 8.5,
@@ -69,6 +72,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "2609.19969",
       "title": "💾 近期补看｜DeepSeek 把长上下文的缓存账拆开了",
       "category": "基础模型 / 推理基础设施",
       "score": 9.0,
@@ -95,6 +99,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "2609.20817",
       "title": "🦾 近期补看｜FAMOS：从几次观察中看懂柜门怎么动",
       "category": "机器人 / 三维视觉",
       "score": 8.3,

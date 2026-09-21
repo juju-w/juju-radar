@@ -52,6 +52,37 @@ def md(s):
  return '\n'.join(out)
 def paragraphs(text):
  return [plain(x) for x in text.split('\n\n') if len(plain(x))>45 and not x.lstrip().startswith(('#','>','['))]
+def uniq(values):
+ return list(dict.fromkeys(v for v in values if v))
+def source_for_item(issue_id,sources,item_index,heading,body):
+ """Bind one scored article section to its editorial source, never to a Markdown heading offset."""
+ inline_urls=re.findall(r'\]\((https?://[^)]+)\)',body)
+ marker=re.search(r'<!--\s*source-id:\s*([^\s>]+)\s*-->',body)
+ if issue_id[:10]>='2026-09-22' and not marker:
+  raise ValueError(f'{issue_id}: missing source-id for {heading}')
+ source=None
+ if marker:
+  matches=[s for s in sources if str(s.get('id',''))==marker[1]]
+  if len(matches)!=1:raise ValueError(f'{issue_id}: unknown or duplicate source-id {marker[1]} for {heading}')
+  source=matches[0]
+ if source is None and inline_urls:
+  matches=[]
+  for s in sources:
+   known={s.get('url'),*s.get('related_urls',[])}
+   if any(u in known for u in inline_urls):matches.append(s)
+  if len(matches)==1:source=matches[0]
+ if source is None:
+  if item_index>=len(sources):raise ValueError(f'{issue_id}: more scored article sections than sources')
+  source=sources[item_index]
+ meta=next((plain(x) for x in body.split('\n\n') if re.search(r'\d(?:\.\d)?/10',plain(x))), '')
+ declared=re.split(r'\s+·\s+\d(?:\.\d)?/10',meta,maxsplit=1)[0].strip()
+ actual=str(source.get('category','')).strip()
+ catnorm=lambda x:re.sub(r'[^0-9a-z\u4e00-\u9fff]+|[与和]','',re.sub(r'^(?:近期)?补看\s*[·｜|:]?\s*','',x).lower())
+ if source.get('id') and declared and actual and catnorm(declared)!=catnorm(actual):
+  raise ValueError(f'{issue_id}: source mapping mismatch for {heading}: article category {declared!r}, source category {actual!r}')
+ known_urls={source.get('url'),*source.get('related_urls',[])}
+ public_url=(inline_urls[0] if inline_urls and not source.get('id') else next((u for u in inline_urls if u in known_urls),source.get('url')))
+ return source,public_url,uniq([source.get('url'),*source.get('related_urls',[]),*inline_urls])
 def topics(text):
  patterns={'Agent':['agent','astra','终端','客服'],'机器人':['机器人','具身'],'视觉与多模态':['视频','视觉','图像','设计','worldsculpt','3d'],'AI 科研':['science','生物','衰老','数学','科研','navier','费马'],'算力与推理':['推理','缓存','kv','芯片','算力','diffusion'],'开源与训练':['训练','开源','distillation','compile'],'产业与安全':['战略','收购','事故','安全','越界','司法','监控']}
  result=[k for k,vs in patterns.items() if any(v.lower() in text.lower() for v in vs)]
@@ -131,17 +162,19 @@ def build(preview=False):
   if special:
    entries.append({'id':issue_id,'type':'news','kind':'special','date':date,'dates':[date],'issue_ids':[issue_id],'title':title,'category':'特别版 · 深度解读','topics':topics(title+' '+desc),'summary':desc,'note':plain(article),'url':info['sources'][0]['url'],'path':PREFIX+'read/'+issue_id+'/','related_urls':[s['url'] for s in sources]})
   sections=re.split(r'^##\s+',article,flags=re.M)[1:]
-  for n,section in enumerate(sections):
+  item_index=0
+  for section_no,section in enumerate(sections,1):
    heading,_,body=section.partition('\n'); heading=heading.strip()
    if special or not re.search(r'\d(?:\.\d)?/10',body[:180]):continue
    heading=re.sub(r'^[^\w\u4e00-\u9fff]+','',heading)
-   urls=re.findall(r'\]\((https?://[^)]+)\)',body)
-   source=next((s for s in info['sources'] if s.get('url') in urls),info['sources'][min(n,len(info['sources'])-1)])
+   source,public_url,related_urls=source_for_item(issue_id,info['sources'],item_index,heading,body)
+   item_index+=1
    ps=paragraphs(body);summary=plain(re.sub(r'\[[^\]]+\]\(https?://[^)]+\)', '', next((b for b in body.split('\n\n') if len(plain(b))>45 and not b.lstrip().startswith(('#','>','['))), source.get('reason',''))))
-   category=source.get('category','AI 进展');path='notes/'+date+'-'+str(n+1)+'/'
-   e={'id':date+'-'+str(n+1),'type':'news','kind':'daily','date':date,'dates':[date],'issue_ids':[issue_id],'title':heading,'category':category,'topics':topics(category+' '+heading),'summary':summary,'note':plain(body),'url':urls[0] if urls else source['url'],'path':PREFIX+path,'backfill':'补看' in str(source.get('window_status','')), 'related_urls':urls}
+   category=source.get('category','AI 进展');path='notes/'+date+'-'+str(section_no)+'/'
+   e={'id':date+'-'+str(section_no),'type':'news','kind':'daily','date':date,'dates':[date],'issue_ids':[issue_id],'source_id':source.get('id'),'title':heading,'category':category,'topics':topics(category+' '+heading),'summary':summary,'note':plain(body),'url':public_url,'path':PREFIX+path,'backfill':'补看' in str(source.get('window_status','')), 'related_urls':related_urls}
    entries.append(e)
-   save(path+'index.html',shell(heading,f'<main class="reading"><a class="back" href="{PREFIX}read/{date}/">返回 {date} 完整精选</a><h1>{E(heading)}</h1><div class="meta">{date} 收录 · {E(category)}</div>{md(body)}<div class="actions"><a href="{BASE+date}/">本期全部原始资料 {ARROW}</a></div></main>',path,description=summary))
+   save(path+'index.html',shell(heading,f'<main class="reading"><a class="back" href="{PREFIX}read/{date}/">返回 {date} 完整精选</a><h1>{E(heading)}</h1><div class="meta">{date} 收录 · {E(category)}</div>{md(body)}<div class="actions"><a href="{E(public_url)}" target="_blank" rel="noopener noreferrer">查看原始资料 {ARROW}</a><a href="{BASE+date}/">本期全部原始资料</a></div></main>',path,description=summary))
+  if not special and item_index!=len(info['sources']):raise ValueError(f'{issue_id}: {item_index} scored article sections but {len(info["sources"])} sources')
   text=article.split('## 原始资料')[0]
   text=re.sub(r'^---\n.*?\n---\n','',text,flags=re.S)
   edition='<p class="edition">特别版 · 深度解读</p>' if special else ''

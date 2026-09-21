@@ -3,6 +3,7 @@
   "kind": "daily",
   "sources": [
     {
+      "id": "step-5-preview",
       "title": "🚀 Step 5 Preview 上线：600B 总参数，每次只激活 27B",
       "category": "基础模型 / Agent",
       "score": 9.2,
@@ -25,6 +26,7 @@
       ]
     },
     {
+      "id": "qwen-image-2-1",
       "title": "🎨 Qwen-Image-2.1 开放权重，但商业使用要另谈许可",
       "category": "图像生成 / 开放权重",
       "score": 9.0,
@@ -47,6 +49,7 @@
       ]
     },
     {
+      "id": "openai-obi-cookie",
       "title": "🍪 ChatGPT 广告 Cookie 被指可以跨站关联浏览行为",
       "category": "隐私 / 广告基础设施",
       "score": 8.8,

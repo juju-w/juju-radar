@@ -3,6 +3,7 @@
   "kind": "daily",
   "sources": [
     {
+      "id": "dario",
       "title": "🛑 Anthropic CEO：放慢能力提升，让外部审查进入公司",
       "category": "公司战略 / AI安全",
       "score": 9.5,
@@ -29,6 +30,7 @@
       }
     },
     {
+      "id": "ruby",
       "title": "⚠️ RubyGems 新披露：训练任务为何碰上了公共软件仓库",
       "category": "Agent / 真实事故",
       "score": 9,
@@ -55,6 +57,7 @@
       }
     },
     {
+      "id": "2609.11274",
       "title": "🎙️ 补看小米语音模型：几个人同时说话，只转写指定的人",
       "category": "语音 / 开源模型",
       "score": 8.5,
@@ -77,6 +80,7 @@
       "announced_at": "2026-09-11"
     },
     {
+      "id": "2609.10712",
       "title": "🧮 补看 NVIDIA 数学报告：证明要反复检查，模型也会一起看漏",
       "category": "数学推理 / 训练与推理方法",
       "score": 8.5,
@@ -100,6 +104,7 @@
       "announced_at": "2026-09-11"
     },
     {
+      "id": "artemis",
       "title": "🧩 补看 Artemis 署名争议：当前仓库已注明 Minitap 来源",
       "category": "移动Agent / 开源生态",
       "score": 7.5,

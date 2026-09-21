@@ -51,6 +51,11 @@
       "section": "推荐阅读"
     },
     {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2609.04010",
+      "section": "推荐阅读"
+    },
+    {
       "label": "代码与实验配置",
       "url": "https://github.com/ifm-ai/uno",
       "section": "推荐阅读"

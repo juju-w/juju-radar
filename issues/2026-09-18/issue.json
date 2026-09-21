@@ -3,6 +3,7 @@
   "kind": "daily",
   "sources": [
     {
+      "id": "anthropic-biomolecular",
       "title": "🔬 Claude 优化了30多个生物模型，四倍提速要怎么看",
       "category": "AI for Science / 推理优化",
       "score": 9,
@@ -25,6 +26,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "qwen-omni",
       "title": "🎬 千问把长视频理解、剪辑和整理笔记接成工作流",
       "category": "多模态 / Agent",
       "score": 9,
@@ -51,6 +53,7 @@
       }
     },
     {
+      "id": "huawei-peerium",
       "title": "🖥️ 华为更新超节点架构，昇腾960交付时间提前",
       "category": "芯片 / 算力基础设施",
       "score": 8.5,
@@ -71,6 +74,7 @@
       "artifact_released_at": null
     },
     {
+      "id": "2609.19101",
       "title": "🧠 不只读回答，还能从模型内部检测“钻评分空子”",
       "category": "可解释性 / Agent 安全",
       "score": 8.5,
@@ -98,6 +102,7 @@
       "announced_at": "2026-09-17"
     },
     {
+      "id": "2609.17909",
       "title": "🎮 Zing-0.5：视频可以边生成，边用键盘和文字改变",
       "category": "视频生成 / 世界模型",
       "score": 8.5,
@@ -126,6 +131,7 @@
       "announced_at": "2026-09-17"
     },
     {
+      "id": "2609.18063",
       "title": "💾 35B模型放进硬盘：Edge0 的“3GB内存”要加上条件",
       "category": "本地推理 / 开源",
       "score": 8.5,
