@@ -1,0 +1,97 @@
+{
+  "issue_date": "2026-09-23",
+  "papers": [
+    {
+      "id": "arxiv:2609.24972",
+      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+      "url": "https://arxiv.org/abs/2609.24972",
+      "doi": "10.48550/arXiv.2609.24972",
+      "published_date": "2026-09-21",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Peng",
+          "lastName": "Xia",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Rujun",
+          "lastName": "Han",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zifeng",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yanfei",
+          "lastName": "Chen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yufan",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yoonho",
+          "lastName": "Lee",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Chengsong",
+          "lastName": "Huang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Han",
+          "lastName": "Yu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zhongying",
+          "lastName": "CuiZhu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yifei",
+          "lastName": "Ming",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Huaxiu",
+          "lastName": "Yao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Burak",
+          "lastName": "Gokturk",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tomas",
+          "lastName": "Pfister",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Chen-Yu",
+          "lastName": "Lee",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "Agent系统",
+        "Harness",
+        "递归自我改进",
+        "过拟合",
+        "待阅读",
+        "补看"
+      ],
+      "note": "RRSI冻结基础模型，只让系统修改提示、控制流、工具、技能、记忆、子Agent和上下文管理。它用编辑预算、历史去重、基准泄漏critic、噪声门槛、成本规则与组件裁剪，减少Agent外壳搜索对固定评测的过拟合。\n\n论文在八个基准上报告：搜索集最高提升14.1个百分点，五项分布外评测最高提升4.7个百分点，并比未正则化演化少用30%策略token。Terminal-Bench 2.1从74.2升到80.2，SWE-bench Verified从82.0升到83.8。\n\n需要注意：完整搜索使用多个模型角色，主要是Claude Opus 4.8，部分judge使用Gemini 3.5；这不是单一模型无人协助地自我进化。论文提交比本期严格窗口早约5小时，因此列作近期补看。重要度8.8/10。\n\n原文：https://arxiv.org/abs/2609.24972\n代码：https://github.com/google-research/rrsi\n项目：https://regularized-rsi.com/\n本期资料页：https://www.asteronline.cn/juju-radar/2026-09-23/\n\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://arxiv.org/pdf/2609.24972"
+    }
+  ]
+}

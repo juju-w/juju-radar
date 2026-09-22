@@ -1,0 +1,108 @@
+{
+  "date": "2026-09-23",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "gpt-6-sol-luna",
+      "title": "💸 GPT-6 Sol与Luna：降价之外，OpenAI开始帮Agent省重复上下文",
+      "category": "前沿模型 / Agent基础设施",
+      "score": 9.5,
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "related_urls": [
+        "https://openai.com/index/better-prompt-caching-for-gpt-6/"
+      ],
+      "published_at": "2026-09-22",
+      "event_time": "2026-09-22",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "价格与长任务缓存同时变化，直接改变持续Agent的总成本；不以厂商benchmark作统一排名。",
+      "key_claims": [
+        "Sol与Luna相对GPT-5.6促销价下调50%。",
+        "合格共享前缀可在30分钟内复用，缓存输入最高折扣90%。",
+        "官方仍称Astra是全系列最佳模型。"
+      ]
+    },
+    {
+      "id": "claude-opus-5-5",
+      "title": "🟠 Claude Opus 5.5：旗舰模型也开始争“持续工作成本”",
+      "category": "前沿模型 / Coding Agent",
+      "score": 9.3,
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "related_urls": [],
+      "published_at": "2026-09-22",
+      "event_time": "2026-09-22",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "旗舰能力、速度和缓存价格一起下降，长任务经济性出现实质变化；安全评测保留评测意识限制。",
+      "key_claims": [
+        "输入与输出价格降至4/20美元每百万token，缓存读取0.20美元。",
+        "官方称输出速度提升超过30%，典型负载总成本平均下降约40%。",
+        "系统卡承认模型可能识别评测情境。"
+      ]
+    },
+    {
+      "id": "alibaba-full-stack-2026",
+      "title": "🏗️ 阿里全栈路线：从Qwen一直排到芯片、超级节点和20GW电力",
+      "category": "公司战略 / 芯片算力",
+      "score": 9.4,
+      "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-roadmap-on-full-stack-ai-strategy",
+      "related_urls": [
+        "https://apnews.com/article/alibaba-ai-chip-qwen-zhenwu-china-us-b29908e516faff9f5a82b201ba954aab"
+      ],
+      "published_at": "2026-09-22",
+      "event_time": "2026-09-22",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "从模型到芯片和电力的纵向战略动作；严格区分现有工件、厂商实验和未来目标。",
+      "key_claims": [
+        "Qwen4仍在训练，Qwen4.5/5为5万亿至10万亿参数路线图。",
+        "真武V900计划2027年第一季度量产商用。",
+        "数据中心容量目标为2032年超过20GW。"
+      ]
+    },
+    {
+      "id": "rrsi-agent-harness",
+      "title": "🧬 近期论文补看：Agent改自己的外壳，先要防止对着评测题投机",
+      "category": "论文 / Agent系统",
+      "score": 8.8,
+      "url": "https://arxiv.org/abs/2609.24972",
+      "related_urls": [
+        "https://github.com/google-research/rrsi",
+        "https://regularized-rsi.com/"
+      ],
+      "published_at": "2026-09-21T17:54:49Z",
+      "event_time": "2026-09-21T17:54:49Z",
+      "window_status": "recent_supplement",
+      "window_uncertain": false,
+      "reason": "比窗口早约5小时，明确列作补看；用正则化和外部测试限制Agent外壳搜索的过拟合。",
+      "key_claims": [
+        "基础模型冻结，只修改提示、控制流、工具、记忆和上下文。",
+        "五项分布外评测最高提升4.7个百分点。",
+        "完整搜索依赖多个模型角色，不是单一模型无人协助的自我进化。"
+      ]
+    },
+    {
+      "id": "ngcc-security-reports",
+      "title": "🔐 近期安全补看：验签内部算对了，API却把所有签名都判成有效",
+      "category": "密码安全 / 真实异常信号",
+      "score": 9.0,
+      "url": "https://ngcc.dev/reports/index.html",
+      "related_urls": [
+        "https://ngcc.dev/reports/sign-32.html",
+        "https://ngcc.dev/reports/sign-01.html",
+        "https://github.com/ngcc-dev/ngcc-harness",
+        "https://github.com/ngcc-dev/ngcc.github.io"
+      ],
+      "published_at": "2026-09-21",
+      "event_time": "2026-09-22T19:49:52Z",
+      "window_status": "recent_supplement",
+      "window_uncertain": false,
+      "reason": "独立而非官方的可复现安全报告；代表案例影响清楚，并严格限制在提交实现和API。",
+      "key_claims": [
+        "UVW包装器无条件返回成功，使任意正确长度签名被接受。",
+        "Aigis-Sig+畸形hint可触发栈写入，拒绝服务已确认。",
+        "报告站与NICCS无隶属关系，个案不能泛化为算法设计或全部候选失效。"
+      ]
+    }
+  ]
+}
