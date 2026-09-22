@@ -37,7 +37,8 @@ def install(repo,root,state_dir):
   if not isinstance(files,dict) or not 1<=len(files)<=5000:raise ValueError('Invalid manifest')
   for name,digest in files.items():
    path=Path(name)
-   if path.is_absolute() or '..' in path.parts or any(p.startswith('.') for p in path.parts) or not re.fullmatch(r'[A-Za-z0-9_./-]+',name) or (path.suffix not in ['.html','.css','.js','.json','.xml','.ris'] and name not in ['assets/share-cover.png','assets/wechat-cover.png','robots.txt']) or not re.fullmatch(r'[0-9a-f]{64}',digest):raise ValueError('Unsafe manifest path or digest')
+   article_image=re.fullmatch(r'read/\d{4}-\d{2}-\d{2}(?:-[a-z0-9]+)*/images/[A-Za-z0-9._-]+\.png',name)
+   if path.is_absolute() or '..' in path.parts or any(p.startswith('.') for p in path.parts) or not re.fullmatch(r'[A-Za-z0-9_./-]+',name) or (path.suffix not in ['.html','.css','.js','.json','.xml','.ris'] and name not in ['assets/share-cover.png','assets/wechat-cover.png','robots.txt'] and not article_image) or not re.fullmatch(r'[0-9a-f]{64}',digest):raise ValueError('Unsafe manifest path or digest')
   if not all(p in files for p in ['index.html','feed.xml','papers.xml','catalog.json']):raise ValueError('Incomplete website')
   archive=fetch(asset_api['site.tar.gz'])
   if hashlib.sha256(archive).hexdigest()!=manifest['archive_sha256']:raise ValueError('Archive hash mismatch')
