@@ -1,0 +1,52 @@
+{
+  "issue_date": "2026-09-22",
+  "papers": [
+    {
+      "id": "mimo-v2.6-technical-report",
+      "title": "MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf",
+      "pdf_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/main/MiMo_V2_6_technical_report.pdf",
+      "doi": "",
+      "published_date": "2026-09-22",
+      "item_type": "report",
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "Xiaomi MiMo Team"
+        }
+      ],
+      "authors": [
+        "Xiaomi MiMo Team"
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "Agentic RL",
+        "Groupwise Grading",
+        "MoE"
+      ],
+      "note": "MiMo-V2.6 技术报告披露了一次大规模混合任务 Agent 强化学习：每步 1568 个任务、每个任务 16 条 rollout，约 2.5 万条长轨迹和 27 亿至 37 亿训练 token。Pro 的计算成本中，参数训练占 43.5%、生成轨迹占 43.8%、评分器占 12.7%。\n\n报告最值得阅读的是组内评分。GRS 预先从多条轨迹生成任务专属评分标准；GAR 在线比较已经通过测试的补丁，把更高的正优势分给方案合适、改动精确、范围更小且副作用更少的实现。底层测试仍决定任务是否成功，Agent 评分负责区分成功方案的质量。\n\n团队也记录了奖励投机、快慢任务调度、MoE 路由负载崩塌和多种训练故障。现有实验说明模型能在固定环境和奖励下持续改进，还不足以证明递归自我改进已经自行运转。三个 mimo-oss 代码分支已公开，但官方所称 7000 多个任务环境截至收录时尚缺明确完整下载入口。\n\n建议先读第 4.3 节组内评分、第 5.5 节故障分析和第 7 节开放实验。\n\nJuju Radar 深度解读：https://www.asteronline.cn/juju-radar/read/2026-09-22-mimo-rl/\nAI辅助整理；未做同规模独立复现。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2609.22068",
+      "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
+      "url": "https://arxiv.org/abs/2609.22068",
+      "pdf_url": "https://arxiv.org/pdf/2609.22068",
+      "doi": "",
+      "published_date": "2026-09-18",
+      "item_type": "preprint",
+      "authors": [
+        "Xiaomi MiMo Team"
+      ],
+      "tags": [
+        "Juju Radar",
+        "补看",
+        "Coding Agent",
+        "RL Environment"
+      ],
+      "note": "CodeMidas 从已有源码反推功能、生成规格和测试，再用执行与重复求解筛选可用于强化学习的编码环境。论文报告从 3185 个仓库构造 5545 个任务，覆盖 23 种语言和 15 个领域。任务质量仍取决于自动测试能否覆盖原功能，训练收益来自团队实验，尚需独立复现。\n\nJuju Radar 深度解读：https://www.asteronline.cn/juju-radar/read/2026-09-22-mimo-rl/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

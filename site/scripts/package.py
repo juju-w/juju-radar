@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build the site, include dated source pages, validate and package static files only."""
-import hashlib,json,subprocess,tarfile
+import hashlib,json,re,subprocess,tarfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2];DIST=ROOT/'site/dist'
 def run(*args):subprocess.run(args,cwd=ROOT,check=True)
@@ -17,7 +17,7 @@ for date in json.loads((ROOT/'site/publications.json').read_text())['issues']:
 run('python3','site/scripts/check.py')
 commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
 files={str(p.relative_to(DIST)):hashlib.sha256(p.read_bytes()).hexdigest() for p in DIST.rglob('*') if p.is_file()}
-assert all((Path(p).suffix in ['.html','.css','.js','.json','.xml','.ris'] or p in ['assets/share-cover.png','assets/wechat-cover.png','robots.txt']) for p in files)
+assert all((Path(p).suffix in ['.html','.css','.js','.json','.xml','.ris'] or p in ['assets/share-cover.png','assets/wechat-cover.png','robots.txt'] or re.fullmatch(r'read/\d{4}-\d{2}-\d{2}(?:-[a-z0-9]+)*/images/[A-Za-z0-9._-]+\.png',p)) for p in files)
 release=ROOT/'release';release.mkdir(exist_ok=True)
 with tarfile.open(release/'site.tar.gz','w:gz') as tar:
  for name in sorted(files):tar.add(DIST/name,arcname=name,recursive=False)

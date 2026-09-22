@@ -29,9 +29,15 @@ def plain(s):
  return re.sub(r'[*#>`]','',s).strip()
 def inline(s):
  tokens=[]
+ def image(m):
+  u=html.unescape(m[2]);alt=E(m[1])
+  if not u.startswith(('https://','http://',PREFIX)):return E(m[0])
+  val=f'<img src="{E(u)}" alt="{alt}" loading="lazy">'
+  tokens.append(val);return f'LINKTOKEN{len(tokens)-1}END'
  def link(m):
   u=html.unescape(m[2]); label=E(m[1]); val=f'<a href="{E(u)}" target="_blank" rel="noopener noreferrer">{label}</a>' if u.startswith(('https://','http://')) else label
   tokens.append(val);return f'LINKTOKEN{len(tokens)-1}END'
+ s=re.sub(r'!\[([^\]]*)\]\(([^\s)]+)\)',image,s)
  s=re.sub(r'\[([^\]]+)\]\((https?://[^\s)]+)\)',link,s)
  s=E(s);s=re.sub(r'\*\*(.+?)\*\*',r'<strong>\1</strong>',s);s=re.sub(r'`([^`]+)`',r'<code>\1</code>',s)
  for i,t in enumerate(tokens):s=s.replace(f'LINKTOKEN{i}END',t)
@@ -176,6 +182,11 @@ def build(preview=False):
    save(path+'index.html',shell(heading,f'<main class="reading"><a class="back" href="{PREFIX}read/{date}/">返回 {date} 完整精选</a><h1>{E(heading)}</h1><div class="meta">{date} 收录 · {E(category)}</div>{md(body)}<div class="actions"><a href="{E(public_url)}" target="_blank" rel="noopener noreferrer">查看原始资料 {ARROW}</a><a href="{BASE+date}/">本期全部原始资料</a></div></main>',path,description=summary))
   if not special and item_index!=len(info['sources']):raise ValueError(f'{issue_id}: {item_index} scored article sections but {len(info["sources"])} sources')
   text=article.split('## 原始资料')[0]
+  for image_rel in dict.fromkeys(re.findall(r'!\[[^\]]*\]\((images/[A-Za-z0-9._-]+\.png)\)',text)):
+   source_image=folder/image_rel
+   if not source_image.is_file():raise ValueError(f'{issue_id}: missing article image {image_rel}')
+   target_image=out/'read'/issue_id/image_rel;target_image.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source_image,target_image)
+   text=text.replace(']('+image_rel+')',']('+PREFIX+'read/'+issue_id+'/'+image_rel+')')
   text=re.sub(r'^---\n.*?\n---\n','',text,flags=re.S)
   edition='<p class="edition">特别版 · 深度解读</p>' if special else ''
   back='specials/' if special else 'archive/'

@@ -18,3 +18,4 @@ footer{display:block}.footer-main{display:flex;justify-content:space-between;gap
 @media(max-width:640px){header{flex-wrap:wrap;gap:14px}header nav{width:100%;justify-content:space-between;gap:10px}header nav a{white-space:nowrap}}
 
 .breadcrumbs{font-size:12px;line-height:1.6;color:var(--muted);margin:0 0 20px;overflow-wrap:anywhere}.breadcrumbs a{color:inherit}
+.reading p>img{display:block;width:100%;max-width:100%;height:auto;margin:1.6rem auto;border-radius:16px;border:1px solid var(--line);background:#f4f7fa}

@@ -175,14 +175,6 @@
     "title_zh": "WorldSculpt：从视频生成可拆分的三维场景",
     "summary": "将场景表示为多个可独立操作的物体。方法依赖分割、位姿等输入，生成结果的物理性质仍需另行验证。"
   },
-  "deepseek-v4.1-flash-technical-report": {
-    "summary": "输入与输出采用不同激活规模，通过跨层复用和局部重放压缩两类缓存；权重已公开，节省比例不等于整机成本降幅。",
-    "title_zh": "DeepSeek V4.1 Flash：长任务先从缓存省起"
-  },
-  "openai-navier-stokes-2026-09-08": {
-    "title_zh": "带外力条件下的 Navier–Stokes 有限时间爆破证明",
-    "summary": "OpenAI 公布分析证明与 Lean 形式化材料。阅读时需要核对外力假设、定理范围及研究过程争议；本期未独立复核证明。"
-  },
   "arxiv:2609.22000": {
     "title_zh": "RecreationWorld：让Agent重做一个正在运行的应用",
     "summary": "只给Agent一个运行中的参考应用，要求它在GUI探索、写代码和运行验证之间往返，再用隐藏程序与视觉测试检查结果。250项任务中，Astra总分58.1%，但全程序测试通过覆盖仅2.8%；论文、环境、代码和数据集已开放，本期补看。"
@@ -190,5 +182,17 @@
   "arxiv:2609.22068": {
     "title_zh": "CodeMidas：从现有源码自动构造Agent训练环境",
     "summary": "让Agent从源码反推功能、生成可执行测试并反复验证，从3185个仓库构造5545项任务。训练实验在多项Coding Agent基准上提升，但任务质量仍取决于自动测试能否覆盖原功能；本期作为MiMo-V2.6配套论文补看。"
+  },
+  "deepseek-v4.1-flash-technical-report": {
+    "summary": "输入与输出采用不同激活规模，通过跨层复用和局部重放压缩两类缓存；权重已公开，节省比例不等于整机成本降幅。",
+    "title_zh": "DeepSeek V4.1 Flash：长任务先从缓存省起"
+  },
+  "mimo-v2.6-technical-report": {
+    "title_zh": "MiMo-V2.6：怎样把Agent强化学习做大",
+    "summary": "小米披露每步约2.5万条长轨迹的混合任务强化学习，并把组内评分、奖励投机防护、任务调度和MoE路由故障写进报告。团队结果显示固定环境中的能力持续提高，但递归自我改进尚未自行运转，7000多个环境也仍需明确公开入口。"
+  },
+  "openai-navier-stokes-2026-09-08": {
+    "title_zh": "带外力条件下的 Navier–Stokes 有限时间爆破证明",
+    "summary": "OpenAI 公布分析证明与 Lean 形式化材料。阅读时需要核对外力假设、定理范围及研究过程争议；本期未独立复核证明。"
   }
 }

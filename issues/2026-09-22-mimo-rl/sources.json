@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "label": "MiMo-V2.6 技术报告 PDF",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf",
+      "section": "原始资料"
+    },
+    {
+      "label": "小米 MiMo 官方发布说明",
+      "url": "https://mimo.mi.com/docs/en-US/news/latest/v2-6",
+      "section": "原始资料"
+    },
+    {
+      "label": "MiMo-V2.6 Hugging Face 合集",
+      "url": "https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
+      "section": "原始资料"
+    },
+    {
+      "label": "MiMo-V2.6-Pro-RL 模型与权重",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "section": "原始资料"
+    },
+    {
+      "label": "MiMo-V2.6-Flash-RL 模型与权重",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+      "section": "原始资料"
+    },
+    {
+      "label": "MiMo-V2.6-Distill-Qwen-9B",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+      "section": "原始资料"
+    },
+    {
+      "label": "MiMo Agent 的 mimo-oss 分支",
+      "url": "https://github.com/XiaomiMiMo/mimoagent/tree/mimo-oss",
+      "section": "原始资料"
+    },
+    {
+      "label": "Uni-Agent 的 mimo-oss 分支",
+      "url": "https://github.com/XiaomiMiMo/uni-agent/tree/mimo-oss",
+      "section": "原始资料"
+    },
+    {
+      "label": "verl 的 mimo-oss 分支",
+      "url": "https://github.com/XiaomiMiMo/verl/tree/mimo-oss",
+      "section": "原始资料"
+    },
+    {
+      "label": "罗福莉：The Hard Road to Scaling Up RL",
+      "url": "https://x.com/_LuoFuli/status/2102162926802968749",
+      "section": "原始资料"
+    },
+    {
+      "label": "CodeMidas 论文",
+      "url": "https://arxiv.org/abs/2609.22068",
+      "section": "原始资料"
+    },
+    {
+      "label": "DeepSeek-R1 论文",
+      "url": "https://arxiv.org/abs/2501.12948",
+      "section": "原始资料"
+    }
+  ]
+}

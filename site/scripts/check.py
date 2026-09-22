@@ -12,10 +12,15 @@ def scan(paths):
  for path in paths:
   rel=path.relative_to(ROOT).as_posix()
   if path.is_symlink():bad.append((rel,'symlink'));continue
-  if rel not in STATIC and not re.fullmatch(r'issues/\d{4}-\d{2}-\d{2}(?:-[a-z0-9]+)*/(?:article\.md|issue\.json|sources\.json|zotero-papers\.json)',rel):bad.append((rel,'not in public allowlist'))
-  if rel in ['site/assets/share-cover.png','site/assets/wechat-cover.png']:
+  issue_text=re.fullmatch(r'issues/\d{4}-\d{2}-\d{2}(?:-[a-z0-9]+)*/(?:article\.md|issue\.json|sources\.json|zotero-papers\.json)',rel)
+  issue_image=re.fullmatch(r'issues/\d{4}-\d{2}-\d{2}(?:-[a-z0-9]+)*/images/[A-Za-z0-9._-]+\.png',rel)
+  if rel not in STATIC and not issue_text and not issue_image:bad.append((rel,'not in public allowlist'))
+  if rel in ['site/assets/share-cover.png','site/assets/wechat-cover.png'] or issue_image:
    data=path.read_bytes();width,height=(1200,630) if rel.endswith('/share-cover.png') else (512,512)
-   assert data[:8]==b'\x89PNG\r\n\x1a\n' and data[16:24]==width.to_bytes(4,'big')+height.to_bytes(4,'big'),'Invalid share cover'
+   if issue_image:
+    assert data[:8]==b'\x89PNG\r\n\x1a\n' and len(data)<=5_000_000,'Invalid article image'
+   else:
+    assert data[:8]==b'\x89PNG\r\n\x1a\n' and data[16:24]==width.to_bytes(4,'big')+height.to_bytes(4,'big'),'Invalid share cover'
    continue
   text=path.read_text()
   for label,pattern in PATTERNS:
