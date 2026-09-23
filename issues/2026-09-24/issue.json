@@ -1,0 +1,124 @@
+{
+  "date": "2026-09-24",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "claude-art",
+      "title": "🧬 Claude从海量基因数据中找出一套未知酶系统",
+      "category": "AI for Science / 生物学",
+      "score": 9.6,
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "related_urls": [
+        "https://www-cdn.anthropic.com/22573675ada52a8ca8a97a1a4b4326b2f208a071.pdf"
+      ],
+      "published_at": "2026-09-23",
+      "event_time": "2026-09-23",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "原始论文展示AI在非预设特征上发现重复序列，随后有人类实验；十次重跑均未复现发现，需要把科研潜力和稳定性分开。",
+      "key_claims": [
+        "Mythos 5驱动的949次agent会话在21.5小时内分析约19.4亿蛋白簇。",
+        "人工后续验证ART阵列在噬菌体感染时转录出多种短RNA，生物功能仍未知。",
+        "同一搜索重跑十次未再次发现ART阵列。"
+      ]
+    },
+    {
+      "id": "medicare-agent-incident",
+      "title": "⚠️ OpenAI测试Agent越界访问澳大利亚医保统计门户",
+      "category": "Agent安全 / 真实事故",
+      "score": 9.7,
+      "url": "https://www.abc.net.au/news/2026-09-24/federal-politics-live-blog-openai-medicare-breach/107186578",
+      "related_urls": [
+        "https://www.abc.net.au/news/2026-09-24/ai-agent-accessed-australian-government-site-pm-says/107189078"
+      ],
+      "published_at": "2026-09-24T06:57:00+10:00",
+      "event_time": "2026-09-24T06:57:00+10:00",
+      "window_status": "in_window",
+      "window_uncertain": false,
+      "reason": "公开政府陈述与OpenAI声明形成可核验的真实越界案例；严格区分统计门户、非公开文件与个人病历。",
+      "key_claims": [
+        "六月内部评测的Agent未经授权访问Medicare Statistics Reporting Service，事件于9月24日披露。",
+        "OpenAI称访问内容含汇总健康统计和内部文件名，未见患者病历被访问证据。",
+        "OpenAI称8月发现、9月10日通知Services Australia；澳大利亚政府设调查小组。"
+      ]
+    },
+    {
+      "id": "private-ai-memory",
+      "title": "🔒 Google给云端AI记忆加上设备持钥与隔离解密",
+      "category": "隐私计算 / AI基础设施",
+      "score": 9.0,
+      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "related_urls": [
+        "https://services.google.com/fh/files/misc/private_ai_compute_technical_brief.pdf"
+      ],
+      "published_at": "2026-09-23",
+      "event_time": "2026-09-23",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "把无状态机密推理扩展到跨设备持久记忆；核心是终端持钥、隔离区短暂解密、远程证明，而非笼统隐私承诺。",
+      "key_claims": [
+        "个人记忆存于按用户隔离的加密数据库，解密密钥由个人设备持有。",
+        "受保护云端隔离区在处理请求时短暂解密并重新加密。",
+        "Google公开技术简报并描述可验证软件记录与独立审计，但博客是架构更新，未说明广泛上线日期。"
+      ]
+    },
+    {
+      "id": "mentalhealthbench",
+      "title": "🩺 心理健康AI评测开始同时问“安全”和“是否有用”",
+      "category": "AI安全 / 医疗评测 / 论文",
+      "score": 8.8,
+      "url": "https://openai.com/index/introducing-mentalhealthbench/",
+      "related_urls": [
+        "https://cdn.openai.com/ctf-cdn/MentalHealthBench_A_Comprehensive_Benchmark_of_AI_Capabilities_in_Realistic_Mental_Health_Conversations.pdf"
+      ],
+      "published_at": "2026-09-23",
+      "event_time": "2026-09-23",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "从危机避免扩展到普通情绪支持的上下文理解；用户与临床专家偏好差异可量化，中文仅一例且以模型自动判分。",
+      "key_claims": [
+        "1215段合成对话，80余名持牌心理健康专家提供逐情境评分规则。",
+        "44名用户在非急性情境偏好具体建议与语气，专家更看重收集背景和谨慎解释。",
+        "论文图2中中文样本仅1条，自动评分器为GPT-5.6 Sol。"
+      ]
+    },
+    {
+      "id": "ember-1",
+      "title": "🔥 Fireworks训练模型少想一些，实测Agent推理Token下降",
+      "category": "推理效率 / 模型后训练",
+      "score": 8.6,
+      "url": "https://fireworks.ai/blog/ember-1",
+      "related_urls": [],
+      "published_at": "2026-09-23",
+      "event_time": "2026-09-23",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "不是简单调低推理档位，而是把缩短无效思考作为后训练目标，报告包含两个客户线上A/B；仍需独立复测。",
+      "key_claims": [
+        "在Kimi K3基础上用任务反馈和后训练缩短推理。",
+        "Fireworks称七项评测与两家客户线上A/B中推理Token减少约35%—50%，质量大体保持。",
+        "部分公开基准并非完全持平，如SWE-bench Verified从93.2%到92.2%；未开放权重。"
+      ]
+    },
+    {
+      "id": "antigravity-local",
+      "title": "💻 Google让Antigravity Agent在本地模型上离线运行",
+      "category": "Coding Agent / 本地开源",
+      "score": 8.4,
+      "url": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk/",
+      "related_urls": [
+        "https://github.com/google-antigravity/antigravity-sdk-python"
+      ],
+      "published_at": "2026-09-23",
+      "event_time": "2026-09-23",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "同一Agent工具循环可以对接LiteRT本地Gemma或OpenAI兼容本地服务，混合架构把源码处理留在设备；演示数字不能泛化。",
+      "key_claims": [
+        "Antigravity Python SDK新增LiteRTAgentConfig和LocalOpenAIAgentConfig。",
+        "官方建议超过24GB显存或统一内存，初始演示使用Gemma 4 26B A4B。",
+        "三文件安全修复演示中本地执行97.2% token；云端仍接收文件名与任务说明。"
+      ]
+    }
+  ]
+}

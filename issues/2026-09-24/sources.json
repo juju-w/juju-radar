@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "label": "Anthropic：Claude发现ART酶系统",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "section": "原始资料"
+    },
+    {
+      "label": "ART原始论文PDF",
+      "url": "https://www-cdn.anthropic.com/22573675ada52a8ca8a97a1a4b4326b2f208a071.pdf",
+      "section": "原始资料"
+    },
+    {
+      "label": "ABC：澳大利亚医保统计门户事件直播，含政府与OpenAI声明",
+      "url": "https://www.abc.net.au/news/2026-09-24/federal-politics-live-blog-openai-medicare-breach/107186578",
+      "section": "原始资料"
+    },
+    {
+      "label": "Google DeepMind：云端加密记忆架构",
+      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "section": "原始资料"
+    },
+    {
+      "label": "Google：Private AI Compute技术简报",
+      "url": "https://services.google.com/fh/files/misc/private_ai_compute_technical_brief.pdf",
+      "section": "原始资料"
+    },
+    {
+      "label": "OpenAI：MentalHealthBench发布说明",
+      "url": "https://openai.com/index/introducing-mentalhealthbench/",
+      "section": "原始资料"
+    },
+    {
+      "label": "MentalHealthBench原始论文PDF",
+      "url": "https://cdn.openai.com/ctf-cdn/MentalHealthBench_A_Comprehensive_Benchmark_of_AI_Capabilities_in_Realistic_Mental_Health_Conversations.pdf",
+      "section": "原始资料"
+    },
+    {
+      "label": "Fireworks：Ember-1技术说明与评测",
+      "url": "https://fireworks.ai/blog/ember-1",
+      "section": "原始资料"
+    },
+    {
+      "label": "Google：Antigravity SDK本地模型说明",
+      "url": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk/",
+      "section": "原始资料"
+    },
+    {
+      "label": "Antigravity Python SDK代码",
+      "url": "https://github.com/google-antigravity/antigravity-sdk-python",
+      "section": "原始资料"
+    }
+  ]
+}

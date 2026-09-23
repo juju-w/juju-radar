@@ -1,0 +1,123 @@
+{
+  "issue_date": "2026-09-24",
+  "papers": [
+    {
+      "id": "anthropic-art-2026",
+      "title": "Autonomous AI agents discover reverse transcriptases with tandem repeat arrays",
+      "url": "https://www-cdn.anthropic.com/22573675ada52a8ca8a97a1a4b4326b2f208a071.pdf",
+      "doi": null,
+      "published_date": "2026-09-23",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Peter H.",
+          "lastName": "Yoon",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Januka S.",
+          "lastName": "Athukoralage",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Emmanuel",
+          "lastName": "Ameisen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eric",
+          "lastName": "Kauderer-Abrams",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Nicholas T.",
+          "lastName": "Perry",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Matthew G.",
+          "lastName": "Durrant",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "AI for Science",
+        "基因组挖掘",
+        "待阅读"
+      ],
+      "note": "Claude Mythos 5驱动的多Agent搜索在非预设DNA特征中发现ART反转录酶旁的串联重复。作者复核出95个RT簇，28个检测到相邻阵列；已在感染数据与大肠杆菌表达实验中观察到短RNA。\n\n重要的是异常模式的发现方式：一个错误的邻近蛋白假设被排除后，Agent继续读原始非编码序列，看到重复结构。固定输入实验显示，原始DNA读入上下文越多，识别率越高。\n\n边界：十次完整重跑均未再次找回ART阵列；短RNA存在不等于证明靶向、基因编辑或医学用途。功能仍未知。重要度9.6/10。\n\n原文：https://www-cdn.anthropic.com/22573675ada52a8ca8a97a1a4b4326b2f208a071.pdf\n本期资料页：https://www.asteronline.cn/juju-radar/2026-09-24/\n\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://www-cdn.anthropic.com/22573675ada52a8ca8a97a1a4b4326b2f208a071.pdf"
+    },
+    {
+      "id": "mentalhealthbench-2026",
+      "title": "MentalHealthBench: An Expert-Informed Benchmark of AI Capabilities in Realistic Mental Health Conversations",
+      "url": "https://cdn.openai.com/ctf-cdn/MentalHealthBench_A_Comprehensive_Benchmark_of_AI_Capabilities_in_Realistic_Mental_Health_Conversations.pdf",
+      "doi": null,
+      "published_date": "2026-09-23",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Ali",
+          "lastName": "Malik",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Declan",
+          "lastName": "Grabb",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Rebecca",
+          "lastName": "Soskin Hicks",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Rahul K.",
+          "lastName": "Arora",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Preston",
+          "lastName": "Bowman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Michael",
+          "lastName": "Sharman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sahra",
+          "lastName": "Ghalebikesabi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mikhail",
+          "lastName": "Trofimov",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Vinnie",
+          "lastName": "Monaco",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Karan",
+          "lastName": "Singhal",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "心理健康",
+        "模型评测",
+        "待阅读"
+      ],
+      "note": "OpenAI构建1215段合成心理健康对话，由80余名持牌专家设计逐场景评分规则。范围从日常困扰到紧急危机，不仅看模型是否拒绝危险内容，也看能否收集背景、校准紧急程度并提供合适建议。\n\n单独的44人用户研究只覆盖非急性情境：用户更看重具体下一步与语气，专家更看重不贸然下结论。这两种视角互补，不能相互替代。\n\n边界：图2显示中文样本仅1条，不能据此推断中文心理支持质量。对话是合成的，评测由GPT-5.6 Sol自动打分。重要度8.8/10。\n\n原文：https://cdn.openai.com/ctf-cdn/MentalHealthBench_A_Comprehensive_Benchmark_of_AI_Capabilities_in_Realistic_Mental_Health_Conversations.pdf\n本期资料页：https://www.asteronline.cn/juju-radar/2026-09-24/\n\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://cdn.openai.com/ctf-cdn/MentalHealthBench_A_Comprehensive_Benchmark_of_AI_Capabilities_in_Realistic_Mental_Health_Conversations.pdf"
+    }
+  ]
+}
