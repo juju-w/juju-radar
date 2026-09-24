@@ -1,8 +1,8 @@
 {
   "sources": [
     {
-      "label": "AlphaFold蛋白结构数据库及病毒结构入口",
-      "url": "https://alphafold.ebi.ac.uk/",
+      "label": "AlphaFold数据库：病毒结构专题入口",
+      "url": "https://alphafold.ebi.ac.uk/search/thematic-tag/pandemic-preparedness",
       "section": "原始资料"
     },
     {

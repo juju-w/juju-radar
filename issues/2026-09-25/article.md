@@ -79,7 +79,7 @@ StudentBench研究让2,383名成人分别接受AI辅导、人类辅导或不接�
 
 点击文末“阅读原文”，查看本期全部数据库、代码、论文与技术说明。
 
-- [AlphaFold蛋白结构数据库及病毒结构入口](https://alphafold.ebi.ac.uk/)
+- [AlphaFold数据库：病毒结构专题入口](https://alphafold.ebi.ac.uk/search/thematic-tag/pandemic-preparedness)
 - [NVIDIA：病毒蛋白复合物数据发布说明](https://blogs.nvidia.com/blog/open-protein-dataset/)
 - [BioNeMo结构预测流水线代码](https://github.com/NVIDIA-BioNeMo/BioNeMo-Structure-Prediction-Pipeline)
 - [GitHub Security Lab：Fuzzing Taskflow工程文章](https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/)
