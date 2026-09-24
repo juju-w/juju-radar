@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "label": "AlphaFold蛋白结构数据库及病毒结构入口",
+      "url": "https://alphafold.ebi.ac.uk/",
+      "section": "原始资料"
+    },
+    {
+      "label": "NVIDIA：病毒蛋白复合物数据发布说明",
+      "url": "https://blogs.nvidia.com/blog/open-protein-dataset/",
+      "section": "原始资料"
+    },
+    {
+      "label": "BioNeMo结构预测流水线代码",
+      "url": "https://github.com/NVIDIA-BioNeMo/BioNeMo-Structure-Prediction-Pipeline",
+      "section": "原始资料"
+    },
+    {
+      "label": "GitHub Security Lab：Fuzzing Taskflow工程文章",
+      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
+      "section": "原始资料"
+    },
+    {
+      "label": "GitHub Security Lab：Fuzzing Taskflow仓库",
+      "url": "https://github.com/GitHubSecurityLab/seclab-taskflows-fuzzing",
+      "section": "原始资料"
+    },
+    {
+      "label": "vLLM：Gumbel-max水印技术说明",
+      "url": "https://vllm.ai/blog/2026-09-24-watermarking-in-vllm",
+      "section": "原始资料"
+    },
+    {
+      "label": "vLLM水印功能文档",
+      "url": "https://docs.vllm.ai/en/latest/features/watermarking/",
+      "section": "原始资料"
+    },
+    {
+      "label": "StudentBench预印本",
+      "url": "https://arxiv.org/abs/2609.28470",
+      "section": "原始资料"
+    },
+    {
+      "label": "StudentBench代码与数据",
+      "url": "https://github.com/Handshake-AI-Research/studentbench",
+      "section": "原始资料"
+    }
+  ]
+}

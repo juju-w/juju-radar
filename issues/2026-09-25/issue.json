@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-25",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "viral-complexes",
+      "title": "🧬 2800多种病毒的蛋白组合，现在可以直接查结构",
+      "category": "AI for Science / 生物医药",
+      "score": 9.0,
+      "url": "https://alphafold.ebi.ac.uk/",
+      "related_urls": [
+        "https://blogs.nvidia.com/blog/open-protein-dataset/",
+        "https://github.com/NVIDIA-BioNeMo/BioNeMo-Structure-Prediction-Pipeline"
+      ],
+      "published_at": "2026-09-24",
+      "event_time": "2026-09-24",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "EMBL-EBI数据库已可浏览病毒蛋白复合物预测结构，NVIDIA开放生成流水线；结构预测给实验选靶，不等于证实生物功能。",
+      "key_claims": [
+        "AlphaFold DB收录覆盖2,812个病毒蛋白组的新复合物预测，包含5,279个高置信异源二聚体和2,749个高置信同源二聚体。",
+        "NVIDIA同步公开BioNeMo结构预测流水线，可供研究者用自己的序列复现批量预测。",
+        "官方称约30%的蛋白相互作用在实验结构数据库PDB中没有对应记录；这不等于实验证明了这些相互作用。"
+      ]
+    },
+    {
+      "id": "github-fuzzing-taskflow",
+      "title": "🛠️ GitHub让安全Agent盯住模糊测试的覆盖率",
+      "category": "Coding Agent / 开源安全工具",
+      "score": 8.7,
+      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
+      "related_urls": [
+        "https://github.com/GitHubSecurityLab/seclab-taskflows-fuzzing"
+      ],
+      "published_at": "2026-09-24",
+      "event_time": "2026-09-24",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "把写测试入口、读覆盖率、改输入和崩溃分诊连成反馈循环；没有跨项目可靠发现漏洞的独立量化结果。",
+      "key_claims": [
+        "开源Taskflow以LLM选择测试入口和下一步行动，MCP工具运行编译、AFL++和覆盖率读取。",
+        "每个测试程序分别编译为模糊测试版和覆盖率版，依据未覆盖分支调整后续测试。",
+        "作者明确要求在一次性隔离环境运行，并把漏洞判断和补丁视为需要人工审阅的起点。"
+      ]
+    },
+    {
+      "id": "vllm-watermark",
+      "title": "🔎 vLLM把可追溯水印做进推理采样器",
+      "category": "推理基础设施 / AI内容溯源",
+      "score": 8.3,
+      "url": "https://vllm.ai/blog/2026-09-24-watermarking-in-vllm",
+      "related_urls": [
+        "https://docs.vllm.ai/en/latest/features/watermarking/"
+      ],
+      "published_at": "2026-09-24",
+      "event_time": "2026-09-22",
+      "window_status": "followup_not_first_release",
+      "window_uncertain": false,
+      "reason": "9月24日技术说明解释已在此前版本合入的Gumbel-max水印：单步分布不变、GPU融合采样低开销，但短文本及多重检测较弱。",
+      "key_claims": [
+        "带密钥的Gumbel-max采样允许知晓密钥和分词器的检测方统计识别生成文本。",
+        "论文与工程说明强调单token在密钥平均下不失真，不等于简单地保证整段序列不变。",
+        "官方Qwen3.5-27B单H100测试的吞吐变化约-1.1%到+2.0%，不代表所有负载。"
+      ]
+    },
+    {
+      "id": "studentbench",
+      "title": "📚 一小时GRE辅导实验：AI和人类导师效果接近",
+      "category": "AI评测 / 教育研究 / 论文",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2609.28470",
+      "related_urls": [
+        "https://github.com/Handshake-AI-Research/studentbench"
+      ],
+      "published_at": "2026-09-23T17:57:45Z",
+      "event_time": "2026-09-23T17:57:45Z",
+      "window_status": "supplement_outside_window",
+      "window_uncertain": false,
+      "reason": "受试者随机分组并在不借助工具的测验中比较学习增益，比只让LLM评导师回答更接近实际效果；提交时间早于本期窗口约5小时。",
+      "key_claims": [
+        "2,383名成人参与GRE定量和语文辅导，比较AI、人类导师和无辅导条件，论文报告AI与人类导师在该场景统计等效。",
+        "作者估算其中一个AI导师每提高1个百分点所需成本比人类导师低918倍。",
+        "只测英语成人GRE的即时提升，未测数月后的保留、其他年龄学科，也没有单独的自学练习对照组。"
+      ]
+    }
+  ]
+}

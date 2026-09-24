@@ -1,0 +1,55 @@
+{
+  "issue_date": "2026-09-25",
+  "papers": [
+    {
+      "id": "arxiv-2609.28470",
+      "title": "StudentBench: AI and human tutoring yield equivalent GRE learning gains",
+      "url": "https://arxiv.org/abs/2609.28470",
+      "doi": null,
+      "published_date": "2026-09-23",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Curtis",
+          "lastName": "Northcutt",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Inaara",
+          "lastName": "Hasmani",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kevin",
+          "lastName": "Feng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Trevor",
+          "lastName": "Khangi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Andreas",
+          "lastName": "Plesner",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jonas",
+          "lastName": "Mueller",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "AI评测",
+        "教育AI",
+        "补看",
+        "待阅读"
+      ],
+      "note": "2,383名英语成人在一小时GRE辅导实验中被分配给AI、人类或无辅导条件；作者报告AI与专家人类导师在即时学习增益上的统计等效。这比单看模型回答是否漂亮更接近学习结果，因为后测由学生独立完成。\n\n但研究没有长期保留测试，也没有单独比较自行做GRE练习的对照组；作者估算的918倍成本差只适用于实验设定，不能推及一般教育。论文9月23日17:57 UTC提交，即北京时间9月24日01:57，早于本期检索窗口，作为近期补看。\n\n原文：https://arxiv.org/abs/2609.28470\n本期资料页：https://www.asteronline.cn/juju-radar/2026-09-25/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://arxiv.org/pdf/2609.28470"
+    }
+  ]
+}
