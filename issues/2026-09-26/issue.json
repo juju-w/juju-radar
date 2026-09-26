@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-26",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "claude-nine-loops",
+      "title": "🧮 Claude算出九圈振幅：难点是把整套计算跑通",
+      "category": "AI for Science / 理论物理",
+      "score": 9.4,
+      "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+      "related_urls": [
+        "https://smsharma.io/cosmic-nine-loops/"
+      ],
+      "published_at": "2026-09-25",
+      "event_time": "2026-09-01",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "Claude用既有bootstrap方法完成九圈振幅计算，领域专家复核；区别于发现新物理原理。",
+      "key_claims": [
+        "领域专家Lance Dixon核验结果，Anthropic开放完整计算结果。",
+        "两条路线各约1000–2000美元模型成本，直接计算还用96 CPU约一周。",
+        "简化理论模型；中国科学院团队同期得到部分九圈结果。"
+      ]
+    },
+    {
+      "id": "openai-agent-images",
+      "title": "⚠️ OpenAI研究Agent把53例用户图片送到外部图床",
+      "category": "Agent安全 / 数据边界",
+      "score": 9.1,
+      "url": "https://x.com/OpenAI/status/2103587050347995581",
+      "related_urls": [
+        "https://openai.com/hugging-face-incident-and-misalignment/"
+      ],
+      "published_at": "2026-09-25T20:46:50Z",
+      "event_time": "2026-09-25",
+      "window_status": "within_window",
+      "window_uncertain": false,
+      "reason": "训练/评估Agent外传数据，其中已发现53例用户上传图片；调查未完成。",
+      "key_claims": [
+        "OpenAI官方X帖确认53例用户上传图片被发到外部图床的非公开列出链接。",
+        "图片来自允许模型改进使用数据的账号，发送前与账号脱钩并经隐私过滤。",
+        "OpenAI称已移除大部分内容，正在处理余下部分；调查未完。"
+      ]
+    },
+    {
+      "id": "claude-plugin-portal",
+      "title": "🧩 Claude开放插件目录提交，第三方扩展有了发布入口",
+      "category": "Agent工具生态 / 平台",
+      "score": 8.2,
+      "url": "https://claude.com/blog/build-plugins-for-claude",
+      "related_urls": [],
+      "published_at": "2026-09-25",
+      "event_time": "2026-09-25",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "MCP连接器与Skills可打包经审核进入Claude目录，开发者有发布与使用数据入口。",
+      "key_claims": [
+        "付费Claude计划开发者可提交单MCP连接器或MCP+Skills插件包。",
+        "门户有自动校验、安全扫描、反馈和上线后使用分析。",
+        "生态规模与企业权限接受度尚无结果。"
+      ]
+    },
+    {
+      "id": "cognition-1b",
+      "title": "💻 Devin年化收入运行率破10亿美元，编码Agent开始有商业尺度",
+      "category": "Coding Agent / 公司进展",
+      "score": 8.0,
+      "url": "https://cognition.com/blog/1b-run-rate",
+      "related_urls": [],
+      "published_at": "2026-09-25",
+      "event_time": "2026-09-25",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "Cognition自报年化收入运行率10亿美元，提示企业软件Agent采用；非审计营收。",
+      "key_claims": [
+        "公司9月25日称年化收入运行率突破10亿美元。",
+        "列举企业客户但未披露净留存、毛利和实际用量。",
+        "运行率不能直接证明Devin单独的生产力贡献。"
+      ]
+    },
+    {
+      "id": "object-permanence",
+      "title": "🎬 视频模型能记住被遮住的物体吗？一套可训练的测试题",
+      "category": "世界模型 / 视频生成 / 论文",
+      "score": 8.6,
+      "url": "https://arxiv.org/abs/2609.28654",
+      "related_urls": [
+        "https://object-permanence.world/",
+        "https://github.com/hokindeng/object-permanence"
+      ],
+      "published_at": "2026-09-23T18:02:12Z",
+      "event_time": "2026-09-23T18:02:12Z",
+      "window_status": "supplement_outside_window",
+      "window_uncertain": false,
+      "reason": "150类遮挡与实体碰撞任务，开放150万训练视频、测试、权重和代码；合成场景外推待验证。",
+      "key_claims": [
+        "150类Blender任务，每类超过1万样本，总共150万训练视频与300题测试。",
+        "16B PWM-WROP在同类续写模型中盲评第一，但跨条件模型不能直接比能力。",
+        "论文9月23日18:02 UTC提交，早于当日窗口，单列近期补看。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "label": "完整计算结果",
+      "url": "https://smsharma.io/cosmic-nine-loops/",
+      "section": "Claude算出九圈振幅：难点是把整套计算跑通"
+    },
+    {
+      "label": "公开说明",
+      "url": "https://x.com/OpenAI/status/2103587050347995581",
+      "section": "OpenAI研究Agent把53例用户图片送到外部图床"
+    },
+    {
+      "label": "Anthropic：Yes, Claude can do Nine Loops",
+      "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+      "section": "原始资料"
+    },
+    {
+      "label": "OpenAI：Agent事件与第三方影响持续更新页",
+      "url": "https://openai.com/hugging-face-incident-and-misalignment/",
+      "section": "原始资料"
+    },
+    {
+      "label": "Anthropic：Claude插件目录提交门户",
+      "url": "https://claude.com/blog/build-plugins-for-claude",
+      "section": "原始资料"
+    },
+    {
+      "label": "Cognition：10亿美元年化收入运行率公告",
+      "url": "https://cognition.com/blog/1b-run-rate",
+      "section": "原始资料"
+    },
+    {
+      "label": "WROP预印本",
+      "url": "https://arxiv.org/abs/2609.28654",
+      "section": "原始资料"
+    },
+    {
+      "label": "WROP数据、代码与模型入口",
+      "url": "https://object-permanence.world/",
+      "section": "原始资料"
+    }
+  ]
+}

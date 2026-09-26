@@ -1,0 +1,40 @@
+{
+  "issue_date": "2026-09-26",
+  "papers": [
+    {
+      "id": "arxiv-2609.28654",
+      "title": "Training Object Permanence in World Models",
+      "url": "https://arxiv.org/abs/2609.28654",
+      "doi": null,
+      "published_date": "2026-09-23",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Haotian",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Fengyuan",
+          "lastName": "Yu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hokin",
+          "lastName": "Deng",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "世界模型",
+        "视频生成",
+        "补看",
+        "待阅读"
+      ],
+      "note": "WROP用150种Blender任务训练和评估遮挡后物体仍存在、物体不可穿透等物理细节。开放150万训练视频、300题测试、模型答案、权重和代码。16B PWM-WROP在同类续写模型中盲评排名第一；不同输入类型及合成场景限制外推。论文9月23日18:02 UTC提交，早于本期窗口，列近期补看。\n\n原文：https://arxiv.org/abs/2609.28654\n本期资料页：https://www.asteronline.cn/juju-radar/2026-09-26/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://arxiv.org/pdf/2609.28654"
+    }
+  ]
+}
