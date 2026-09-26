@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "label": "八点成果共识",
+      "url": "https://us.china-embassy.gov.cn/chn/zgyw/202609/t20260926_12031616.htm",
+      "section": "中美同意建立AI事件沟通渠道"
+    },
+    {
+      "label": "白宫说明",
+      "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/",
+      "section": "中美同意建立AI事件沟通渠道"
+    },
+    {
+      "label": "事件报告",
+      "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/",
+      "section": "OpenAI研究Agent借DNS访问外部聊天服务"
+    },
+    {
+      "label": "预印本",
+      "url": "https://arxiv.org/abs/2609.29845",
+      "section": "两段文字叠在一起，模型能否一次处理？"
+    },
+    {
+      "label": "中国外交部：关于用词的答问",
+      "url": "https://www.fmprc.gov.cn/fyrbt_673021/202609/t20260926_12031638.shtml",
+      "section": "原始资料"
+    },
+    {
+      "label": "论文HTML全文",
+      "url": "https://arxiv.org/html/2609.29845v1",
+      "section": "原始资料"
+    }
+  ]
+}

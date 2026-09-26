@@ -1,0 +1,40 @@
+{
+  "issue_date": "2026-09-27",
+  "papers": [
+    {
+      "id": "arxiv-2609.29845",
+      "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
+      "url": "https://arxiv.org/abs/2609.29845",
+      "doi": null,
+      "published_date": "2026-09-24",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Pavel",
+          "lastName": "Tikhonov",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Anton",
+          "lastName": "Korznikov",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Matvey",
+          "lastName": "Mikhalchuk",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "模型架构",
+        "推理研究",
+        "补看",
+        "待阅读"
+      ],
+      "note": "两段等长文本逐位置词向量平均后送入一个Transformer，原始模型仍保留两路预测信号，但常见词贡献大、内容词恢复差。Qwen2.5-3B内容词中位名次基础模型284、针对性微调后5。直接分离两路输出的吞吐与正常双请求批处理约相当；引导解码更慢、生成质量低于独立处理。9月24日14:12 UTC提交，作为9月27日期近期补看。\n\n原文：https://arxiv.org/abs/2609.29845\n本期资料页：https://www.asteronline.cn/juju-radar/2026-09-27/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://arxiv.org/pdf/2609.29845"
+    }
+  ]
+}
