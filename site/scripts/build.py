@@ -175,9 +175,9 @@ def build(preview=False):
    heading=re.sub(r'^[^\w\u4e00-\u9fff]+','',heading)
    source,public_url,related_urls=source_for_item(issue_id,info['sources'],item_index,heading,body)
    item_index+=1
-   ps=paragraphs(body);summary=plain(re.sub(r'\[[^\]]+\]\(https?://[^)]+\)', '', next((b for b in body.split('\n\n') if len(plain(b))>45 and not b.lstrip().startswith(('#','>','['))), source.get('reason',''))))
+   ps=paragraphs(body);summary=plain(next((b for b in body.split('\n\n') if len(plain(b))>45 and not b.lstrip().startswith(('#','>','['))), source.get('reason','')))
    category=source.get('category','AI 进展');path='notes/'+date+'-'+str(section_no)+'/'
-   e={'id':date+'-'+str(section_no),'type':'news','kind':'daily','date':date,'dates':[date],'issue_ids':[issue_id],'source_id':source.get('id'),'title':heading,'category':category,'topics':topics(category+' '+heading),'summary':summary,'note':plain(body),'url':public_url,'path':PREFIX+path,'backfill':'补看' in str(source.get('window_status','')), 'related_urls':related_urls}
+   e={'id':date+'-'+str(section_no),'type':'news','kind':'daily','date':date,'dates':[date],'issue_ids':[issue_id],'source_id':source.get('id'),'title':heading,'category':category,'topics':topics(category+' '+heading),'summary':summary,'note':plain(body),'url':public_url,'path':PREFIX+path,'backfill':any(marker in str(source.get('window_status','')) for marker in ('补看','supplement')), 'related_urls':related_urls}
    entries.append(e)
    save(path+'index.html',shell(heading,f'<main class="reading"><a class="back" href="{PREFIX}read/{date}/">返回 {date} 完整精选</a><h1>{E(heading)}</h1><div class="meta">{date} 收录 · {E(category)}</div>{md(body)}<div class="actions"><a href="{E(public_url)}" target="_blank" rel="noopener noreferrer">查看原始资料 {ARROW}</a><a href="{BASE+date}/">本期全部原始资料</a></div></main>',path,description=summary))
   if not special and item_index!=len(info['sources']):raise ValueError(f'{issue_id}: {item_index} scored article sections but {len(info["sources"])} sources')

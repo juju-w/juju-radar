@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-28",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "gemini-flipkart-checkout",
+      "title": "🛒 Gemini测试直接向Flipkart下单",
+      "category": "Agent应用 / 电商",
+      "score": 8,
+      "url": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
+      "related_urls": [
+        "https://uk.finance.yahoo.com/news/google-tests-buying-walmart-owned-013000418.html"
+      ],
+      "published_at": "2026-09-27T01:30:00Z",
+      "event_time": null,
+      "window_status": "within_window",
+      "window_uncertain": false,
+      "reason": "记者实际看到AI界面内的零售商结账流程，合作商家获得交易入口；技术协议和扩大开放时间未获官方确认。",
+      "key_claims": [
+        "部分印度用户在Gemini和AI Mode内看到Flipkart商品Buy按钮，点击后进入Flipkart品牌结账流程。",
+        "测试商品与用户范围有限，Google仅确认常规实验，未详述技术或时间表。",
+        "不能确定采用UCP，也不代表Agent无需用户确认即可付款。"
+      ]
+    },
+    {
+      "id": "copilot-persistent-runtime",
+      "title": "🏢 Copilot把常驻Agent与企业运行环境接在一起",
+      "category": "Agent / 企业软件 / 公司战略",
+      "score": 8.5,
+      "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "related_urls": [],
+      "published_at": "2026-09-25",
+      "event_time": "2026-09-25",
+      "window_status": "supplement_outside_window",
+      "window_uncertain": false,
+      "reason": "把代码生成、租户内托管、独立身份的常驻Agent及按用量计费作为同一套工作产品推出，新增信息不只是界面改版。",
+      "key_claims": [
+        "Home整合聊天、委托任务和可协作的Office文件，Code可构建内部应用并在租户环境中运行。",
+        "Autopilot有自己的身份、记忆、计算机和工作空间，计划月底扩大私测。",
+        "Cowork、Code、Autopilot等长期任务采用按用量计费，功能开放时间各不相同。"
+      ]
+    },
+    {
+      "id": "jev-alignment-evaluation",
+      "title": "🧠 Jev新评测：低成本判断，难题在阈值和上下文",
+      "category": "模型评测 / AI安全 / 论文",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2609.29429",
+      "related_urls": [
+        "https://arxiv.org/html/2609.29429v1",
+        "https://github.com/sumleo/RLCDAlignBench",
+        "https://docs.typesafe.ai/introduction"
+      ],
+      "published_at": "2026-09-24T11:49:30Z",
+      "event_time": "2026-09-24T11:49:30Z",
+      "window_status": "supplement_outside_window",
+      "window_uncertain": false,
+      "reason": "独立研究将多判断调用拆成问题、可见上下文和阈值三个变量，证明排序能力与部署时阈值迁移不是一回事。",
+      "key_claims": [
+        "44个基准、7193条实例；31个适用二元问题的基准中通用问题AUROC中位数0.886，非准确率。",
+        "Jev针对同一输入一次返回多个类型化问题的概率，不靠逐段生成评语再解析。",
+        "19个API裁判评分基准按列价估算Jev总成本0.30美元，对照18.96美元；阈值不能直接迁移。",
+        "研究代码公开；HF数据集需申请访问，不声称所有数据可免审批下载。"
+      ]
+    },
+    {
+      "id": "coding-agent-robot-programs",
+      "title": "🤖 编码Agent先写规划程序，再让程序处理新场景",
+      "category": "机器人 / 任务与运动规划 / 论文",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2609.30233",
+      "related_urls": [
+        "https://arxiv.org/html/2609.30233v1",
+        "https://github.com/tomsilver/robocode"
+      ],
+      "published_at": "2026-09-24T17:53:35Z",
+      "event_time": "2026-09-24T17:53:35Z",
+      "window_status": "supplement_outside_window",
+      "window_uncertain": false,
+      "reason": "把昂贵的Agent交互提前到程序合成阶段，测试时冻结程序且不再调用LLM；能否摊薄成本取决于重复使用。",
+      "key_claims": [
+        "28个模拟环境，980个生成程序，各测试100个未见实例，共98000次评估。",
+        "有手工规划器可对照的16个环境上，三种Agent配置平均成功率56%到95%，规划器47%。",
+        "主实验只给任务与模拟器接口，不给环境源代码；测试时不再调用LLM。",
+        "计算时间优势是每实例口径，不包含前期合成；全状态可见，不是视觉实机测试。"
+      ]
+    }
+  ]
+}

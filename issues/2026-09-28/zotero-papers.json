@@ -1,0 +1,125 @@
+{
+  "issue_date": "2026-09-28",
+  "papers": [
+    {
+      "id": "arxiv-2609.29429",
+      "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
+      "url": "https://arxiv.org/abs/2609.29429",
+      "doi": null,
+      "published_date": "2026-09-24",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Ruoqi",
+          "lastName": "Guo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yi",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gelei",
+          "lastName": "Deng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yuekang",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Lida",
+          "lastName": "Zhao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yutao",
+          "lastName": "Wu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Simin",
+          "lastName": "Chen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ying",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Leo Yu",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "模型评测",
+        "AI安全",
+        "补看",
+        "待阅读"
+      ],
+      "note": "研究将Jev的问题措辞、可见上下文和阈值分开评估。它对同一输入一次回答多个类型化判断，44个基准共7193条实例；31个适用二元问题的基准AUROC中位数0.886，这是排序指标而非准确率。\n\n19个裁判评分基准按列价估算Jev总成本0.30美元，对照18.96美元。排序效果较好不保证固定0.5阈值适用，任务内校准与是否提供定义异常的参照信息更关键。输出主要来自2至7B模型，部分标签未经独立验证；代码公开，HF数据集需申请。重要度8.5/10，作为近期补看。\n\n原文：https://arxiv.org/abs/2609.29429\n本期资料页：https://www.asteronline.cn/juju-radar/2026-09-28/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://arxiv.org/pdf/2609.29429"
+    },
+    {
+      "id": "arxiv-2609.30233",
+      "title": "Coding Agents for Generalized Task and Motion Planning Problems",
+      "url": "https://arxiv.org/abs/2609.30233",
+      "doi": null,
+      "published_date": "2026-09-24",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Matteo",
+          "lastName": "Merler",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bowen",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Josh",
+          "lastName": "Roy",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yichao",
+          "lastName": "Liang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Qianwei",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yixuan",
+          "lastName": "Huang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tom",
+          "lastName": "Silver",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人",
+        "任务与运动规划",
+        "补看",
+        "待阅读"
+      ],
+      "note": "让编码Agent在模拟器内试错写规划程序，冻结程序后测试未见实例，不再调用LLM。共28个模拟环境、980个程序与98000次评估；有规划器可对照的16个环境上，Agent配置成功率56%至95%，手工规划器47%。\n\n主要意义是把模型调用前移到合成阶段，让普通程序重复处理同类任务。每实例运行时间不计前期合成，复用次数决定总成本是否划算。实验提供完整对象状态，未验证视觉感知和实机控制；动态三维扫拢和倾倒仍有失败。代码提供严格黑箱与源代码开放设置，应区分。重要度8.5/10，作为近期补看。\n\n原文：https://arxiv.org/abs/2609.30233\n本期资料页：https://www.asteronline.cn/juju-radar/2026-09-28/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://arxiv.org/pdf/2609.30233"
+    }
+  ]
+}
