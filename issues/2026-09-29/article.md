@@ -8,7 +8,7 @@ sourceNote: 检索窗口为北京时间9月28日07:00至29日07:00。AMD公告�
 
 # Sonnet 5.5发布，AMD拟82亿美元收购World Labs
 
-<!-- reading-stats -->约 3,500 字 · 阅读约 12 分钟<!-- /reading-stats -->
+<!-- reading-stats -->约 3,600 字 · 阅读约 12 分钟<!-- /reading-stats -->
 
 Juju Radar · 2026 年 9 月 29 日
 
@@ -18,7 +18,7 @@ Sonnet 5.5发布了。价格没有变，Anthropic强调的是完成同一项工�
 
 产业端的两件事同样重要。AMD拟以约82亿美元收购李飞飞创立的World Labs，把空间智能研究团队带进芯片公司；NVIDIA推出Agent安全平台，试图用Agent运行环境之外的控制系统拦截越界行为。
 
-本期还看一个能同时使用界面、代码和工具的开源模型，一项用少量实验优化耐热RNA疫苗配方的研究，再补读机器人怎样利用世界模型的预测能力，却不在每次动作前生成未来视频。
+本期还看一个能同时使用界面、代码和工具的开放权重模型，一项用少量实验优化耐热RNA疫苗配方的研究，再补读机器人怎样利用世界模型的预测能力，却不在每次动作前生成未来视频。
 
 ## 🟠 Sonnet 5.5：单价不变，少走步骤才是降本来源
 
@@ -64,9 +64,9 @@ NVIDIA于9月28日[宣布Open Agent Safety Platform](https://nvidianews.nvidia.c
 
 <!-- source-id: holo4 -->
 
-开源模型 / Computer Use · 8.5/10 · 建议试用与复测
+开放权重 / Computer Use · 8.5/10 · 建议试用与复测
 
-H Company[发布Holo4](https://huggingface.co/blog/Hcompany/holo4)，包含27B稠密模型和35B总参数、3B激活参数的混合专家模型。它能点击界面、写代码、调用MCP或API，同一模型覆盖桌面、网页和Android。27B模型的[公开仓库](https://huggingface.co/Hcompany/Holo4-27B)已有实际权重文件；[模型集合](https://huggingface.co/collections/Hcompany/holo4)也提供多种精度版本。
+H Company[发布Holo4](https://huggingface.co/blog/Hcompany/holo4)，包含27B稠密模型和35B总参数、3B激活参数的混合专家模型。它能点击界面、写代码、调用MCP或API，同一模型覆盖桌面、网页和Android。27B模型的[公开仓库](https://huggingface.co/Hcompany/Holo4-27B)已有实际权重文件；[模型集合](https://huggingface.co/collections/Hcompany/holo4)也提供多种精度版本。27B仓库标注CC BY-NC 4.0许可，仅限非商业用途；可下载并不意味着可以任意商用。
 
 更值得看的是训练环境。团队称其任务生成流程已构建约一万项任务，其中一些环境让界面和MCP操作同一份状态。这样，模型可以学习什么时候该点击，什么时候该用工具，避免把一整项业务流程强行塞进单一交互方式。执行框架同时加入了可跟踪数百步的记忆，以及桌面机器上的Shell。
 
