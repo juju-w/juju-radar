@@ -1,0 +1,359 @@
+{
+  "issue_date": "2026-09-29",
+  "papers": [
+    {
+      "id": "doi-10.1038-s41587-026-03331-w",
+      "title": "Accelerated discovery of thermostable mRNA–lipid nanoparticle vaccines using data-efficient AI",
+      "url": "https://www.nature.com/articles/s41587-026-03331-w",
+      "doi": "10.1038/s41587-026-03331-w",
+      "published_date": "2026-09-28",
+      "item_type": "journalArticle",
+      "tags": [
+        "Juju Radar",
+        "AI科研",
+        "生物医药",
+        "待阅读"
+      ],
+      "pdf_url": "https://www.nature.com/articles/s41587-026-03331-w.pdf",
+      "note": "AGENT将高通量实验与贝叶斯优化相连，在一个月内六轮优化固态mRNA-LNP辅料比例。MIT说明先筛近50种辅料、选五种候选，每轮测试两种配方再反馈搜索。新意在少数据下减少昂贵试错，不是大模型直接设计或批准疫苗。\n\n正式摘要报告37℃超过两个月保持生物活性，并在啮齿类与非人灵长类验证免疫反应；MIT另介绍室温一年小鼠实验。正式全文需订阅，未声称全文已读；尚非人用临床或批准产品。论文此前有9月17日预印本，28日为正式期刊发表与机构新闻，重要度9/10。\n\n原文：https://www.nature.com/articles/s41587-026-03331-w\n本期资料页：https://www.asteronline.cn/juju-radar/2026-09-29/\nAI辅助整理。",
+      "creators": [
+        {
+          "firstName": "Jinbi",
+          "lastName": "Tian",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Khanh T. M.",
+          "lastName": "Tran",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Brett H.",
+          "lastName": "Pogostin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Olivia",
+          "lastName": "Sheridan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sevinj",
+          "lastName": "Mursalova",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Amy H.",
+          "lastName": "Lee",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shuai",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jaya",
+          "lastName": "Hamkins",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Daniel",
+          "lastName": "Antov",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alana L.",
+          "lastName": "Power",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zane S.",
+          "lastName": "Dash",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dongsoo",
+          "lastName": "Yun",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mina",
+          "lastName": "Konaković Luković",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Robert S.",
+          "lastName": "Langer",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ana",
+          "lastName": "Jaklenec",
+          "creatorType": "author"
+        }
+      ],
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv-2609.31394",
+      "title": "InternW0-Δ: A World Action Model Bridging Predictive Dynamics and Actions with 20K+ Hours of Open Data",
+      "url": "https://arxiv.org/abs/2609.31394",
+      "doi": null,
+      "published_date": "2026-09-25",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "机器人",
+        "世界动作模型",
+        "补看",
+        "待阅读"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2609.31394",
+      "note": "视频专家与动作专家通过定向注意力耦合，冻结VLM提供任务语义，Causal Imprint用未来监督训练动作相关预测特征。执行输入只有已发生观察，未来视频无需生成，训练期几何教师也不参与推理。\n\n超过两万小时为处理后混合语料，需统一异构状态动作。论文有模拟及多实机平台，跨具身仍需后训练；第一视角数据贡献与外部Agent增强控制消融有限。项目页代码与模型仍Forthcoming，不能写成已经开放权重和整包数据。已读全文，重要度8.5/10，按近期补看收录。\n\n原文：https://arxiv.org/abs/2609.31394\n本期资料页：https://www.asteronline.cn/juju-radar/2026-09-29/\nAI辅助整理。",
+      "creators": [
+        {
+          "firstName": "Xingyu",
+          "lastName": "Miao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zizun",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Baole",
+          "lastName": "Fang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kaiwen",
+          "lastName": "Song",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tenghui",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hanxue",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yating",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xudong",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yuping",
+          "lastName": "He",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xueyuan",
+          "lastName": "Wei",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Chao",
+          "lastName": "Gao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xijie",
+          "lastName": "Yang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yingxiang",
+          "lastName": "Xu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kerui",
+          "lastName": "Ren",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wenqi",
+          "lastName": "Guo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jianjun",
+          "lastName": "Zhou",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xinzhe",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Weiguang",
+          "lastName": "Zhao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ni",
+          "lastName": "Yang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zetao",
+          "lastName": "Cai",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yufei",
+          "lastName": "Xue",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hengjie",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zeyu",
+          "lastName": "He",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yuanzhen",
+          "lastName": "Zhou",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Rong",
+          "lastName": "Fu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jianyang",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Siwei",
+          "lastName": "Cui",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Fuxian",
+          "lastName": "Huang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yunsong",
+          "lastName": "Zhou",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xing",
+          "lastName": "Gao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yifei",
+          "lastName": "Yao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Qiaojun",
+          "lastName": "Yu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kailin",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ming",
+          "lastName": "Zhou",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mu",
+          "lastName": "Huang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xinyue",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wenze",
+          "lastName": "Cui",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bingqi",
+          "lastName": "Jiang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xueyue",
+          "lastName": "Zhu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Junting",
+          "lastName": "Dong",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Haoyu",
+          "lastName": "Guo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tao",
+          "lastName": "Lu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mulin",
+          "lastName": "Yu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bowen",
+          "lastName": "Zhou",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bin",
+          "lastName": "Zhao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tianfan",
+          "lastName": "Xue",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Weinan",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Chunhua",
+          "lastName": "Shen",
+          "creatorType": "author"
+        }
+      ],
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

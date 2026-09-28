@@ -1,0 +1,84 @@
+{
+  "sources": [
+    {
+      "label": "发布Sonnet 5.5",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "section": "Sonnet 5.5：单价不变，少走步骤才是降本来源"
+    },
+    {
+      "label": "系统卡",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "section": "Sonnet 5.5：单价不变，少走步骤才是降本来源"
+    },
+    {
+      "label": "官方公告",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute",
+      "section": "AMD拟收购World Labs：模型研究开始参与算力路线设计"
+    },
+    {
+      "label": "团队公告",
+      "url": "https://www.worldlabs.ai/blog/amd-announcement",
+      "section": "AMD拟收购World Labs：模型研究开始参与算力路线设计"
+    },
+    {
+      "label": "TechCrunch的独立报道",
+      "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+      "section": "AMD拟收购World Labs：模型研究开始参与算力路线设计"
+    },
+    {
+      "label": "宣布Open Agent Safety Platform",
+      "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform",
+      "section": "NVIDIA把Agent的控制系统放到独立硬件上"
+    },
+    {
+      "label": "OpenShell代码",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "section": "NVIDIA把Agent的控制系统放到独立硬件上"
+    },
+    {
+      "label": "发布Holo4",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "section": "Holo4：同一个任务，可以在界面、代码和API之间切换"
+    },
+    {
+      "label": "公开仓库",
+      "url": "https://huggingface.co/Hcompany/Holo4-27B",
+      "section": "Holo4：同一个任务，可以在界面、代码和API之间切换"
+    },
+    {
+      "label": "模型集合",
+      "url": "https://huggingface.co/collections/Hcompany/holo4",
+      "section": "Holo4：同一个任务，可以在界面、代码和API之间切换"
+    },
+    {
+      "label": "评测轨迹",
+      "url": "https://huggingface.co/datasets/Hcompany/trajectories",
+      "section": "Holo4：同一个任务，可以在界面、代码和API之间切换"
+    },
+    {
+      "label": "MIT团队的研究",
+      "url": "https://www.nature.com/articles/s41587-026-03331-w",
+      "section": "AI用少量实验寻找耐热RNA疫苗配方"
+    },
+    {
+      "label": "MIT的介绍",
+      "url": "https://news.mit.edu/2026/new-formulation-helps-rna-vaccines-withstand-high-temperatures-0928",
+      "section": "AI用少量实验寻找耐热RNA疫苗配方"
+    },
+    {
+      "label": "InternW0-Δ论文",
+      "url": "https://arxiv.org/abs/2609.31394",
+      "section": "InternW0-Δ：学会预测变化，执行时不必生成未来视频"
+    },
+    {
+      "label": "方法部分",
+      "url": "https://arxiv.org/html/2609.31394v1",
+      "section": "InternW0-Δ：学会预测变化，执行时不必生成未来视频"
+    },
+    {
+      "label": "项目页",
+      "url": "https://internrobotics.github.io/InternW0-Delta/",
+      "section": "InternW0-Δ：学会预测变化，执行时不必生成未来视频"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "date": "2026-09-29",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "claude-sonnet-5-5",
+      "title": "🟠 Sonnet 5.5：单价不变，少走步骤才是降本来源",
+      "category": "前沿模型 / Coding Agent",
+      "score": 9.5,
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "related_urls": [
+        "https://www.anthropic.com/claude-sonnet-5-5-system-card"
+      ],
+      "published_at": "2026-09-28",
+      "event_time": "2026-09-28",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "终端和代码任务能力改善与调用步骤减少并存；系统卡披露较高推理档位反而降低可合并代码得分，可解释具体部署选择。",
+      "key_claims": [
+        "输入输出单价仍为每百万Token 2/10美元；厂商称输出快30%以上、每任务最多省30%。",
+        "Terminal-Bench 4.0报告70.6%，使用Claude Code及安全备用模型策略，66任务各5次。",
+        "FrontierCode主集Xhigh为52.1%，Max为46.2%；两个已检查案例出现超时或范围外编辑。",
+        "省钱来自Token和步骤减少；较高档位与Opus费用可能接近，非所有任务统一降本。"
+      ]
+    },
+    {
+      "id": "amd-worldlabs",
+      "title": "🏗️ AMD拟收购World Labs：模型研究开始参与算力路线设计",
+      "category": "公司战略 / 空间智能 / 算力",
+      "score": 9.5,
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute",
+      "related_urls": [
+        "https://www.worldlabs.ai/blog/amd-announcement",
+        "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/"
+      ],
+      "published_at": "2026-09-28T16:05:00-04:00",
+      "event_time": "2026-09-28T16:05:00-04:00",
+      "window_status": "in_window",
+      "window_uncertain": false,
+      "reason": "模型研究团队进入芯片公司，直接参与未来硬件、软件及系统路线；全股票交易协议有正式公告与关闭条件，不是普通融资。",
+      "key_claims": [
+        "AMD拟以约82亿美元全股票交易收购World Labs，预计2026年底完成，仍待监管等条件。",
+        "完成后李飞飞出任执行副总裁兼首席科学家，向苏姿丰汇报。",
+        "World Labs称去年已与AMD合作模型训练和推理优化。",
+        "开放生态是目标，尚未列出收购后新增开放工件。"
+      ]
+    },
+    {
+      "id": "nvidia-agent-safety",
+      "title": "🛡️ NVIDIA把Agent的控制系统放到独立硬件上",
+      "category": "Agent安全 / 推理基础设施",
+      "score": 9,
+      "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform",
+      "related_urls": [
+        "https://github.com/NVIDIA/OpenShell"
+      ],
+      "published_at": "2026-09-28",
+      "event_time": "2026-09-28",
+      "window_status": "window_uncertain",
+      "window_uncertain": true,
+      "reason": "把运行时策略与独立DPU监督组合起来，控制权移出Agent工作环境；强调Sentry是参考系统设计，毫秒隔离为厂商未独立验证的声明。",
+      "key_claims": [
+        "OpenShell负责内核层文件、系统调用与网络访问策略；代码已公开。",
+        "Sentry参考设计在BlueField-4 DPU上运行带外监督，与Agent工作环境分离。",
+        "NVIDIA宣称毫秒隔离，公告未给独立测试方法或全面逃逸覆盖证明。",
+        "软件支持与硬件参考设计分开，下载OpenShell不自动获得Sentry。"
+      ]
+    },
+    {
+      "id": "holo4",
+      "title": "💻 Holo4：同一个任务，可以在界面、代码和API之间切换",
+      "category": "开源模型 / Computer Use",
+      "score": 8.5,
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "related_urls": [
+        "https://huggingface.co/Hcompany/Holo4-27B",
+        "https://huggingface.co/collections/Hcompany/holo4",
+        "https://huggingface.co/datasets/Hcompany/trajectories"
+      ],
+      "published_at": "2026-09-28T09:44:05.300Z",
+      "event_time": "2026-09-28T09:44:05.300Z",
+      "window_status": "in_window",
+      "window_uncertain": false,
+      "reason": "跨GUI、代码和MCP/API的混合环境训练与可审阅轨迹形成实际增量；API文件清单有18个模型分片及索引，非仅服务接入。",
+      "key_claims": [
+        "27B稠密、35B总参数3B激活两种规模；覆盖桌面、网页、Android、代码与业务接口。",
+        "任务生成流程称已生成约一万任务，部分GUI和MCP共享同一环境状态。",
+        "增加跨数百步记忆及桌面Shell；成功率依赖模型与执行框架的组合。",
+        "OSWorld 2.0自报61.7%与30.9%；对照任务子集、框架不完全一致，不作统一排名。",
+        "Holo4-27B公开非gated仓库实际有权重分片；仓库创建时间不是首次开放时间。"
+      ]
+    },
+    {
+      "id": "thermostable-rna",
+      "title": "🧬 AI用少量实验寻找耐热RNA疫苗配方",
+      "category": "AI for Science / 生物医药 / 论文",
+      "score": 9,
+      "url": "https://www.nature.com/articles/s41587-026-03331-w",
+      "related_urls": [
+        "https://news.mit.edu/2026/new-formulation-helps-rna-vaccines-withstand-high-temperatures-0928"
+      ],
+      "published_at": "2026-09-28",
+      "event_time": "2026-09-28T09:00:00Z",
+      "window_status": "in_window",
+      "window_uncertain": false,
+      "reason": "正式论文发表与实验优化流程有具体可测结果；不是大模型写药物建议，核心是少数据贝叶斯优化减少配方搜索实验。",
+      "key_claims": [
+        "AGENT将实验反馈与贝叶斯优化结合，正式摘要报告一个月内六轮优化。",
+        "MIT介绍先筛近50辅料、选五种、每轮测两配方再回馈算法。",
+        "固态真空干燥制剂37℃超过两个月保留生物活性；论文有啮齿类及非人灵长类免疫结果。",
+        "MIT新闻另介绍室温一年小鼠实验；不扩展为人类试验或获批新品。",
+        "正式全文为订阅内容，已读摘要、元数据及MIT完整新闻，不声称全文实验附件已核查。"
+      ]
+    },
+    {
+      "id": "internw0-delta",
+      "title": "🤖 InternW0-Δ：学会预测变化，执行时不必生成未来视频",
+      "category": "机器人 / 世界动作模型 / 论文",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2609.31394",
+      "related_urls": [
+        "https://arxiv.org/html/2609.31394v1",
+        "https://internrobotics.github.io/InternW0-Delta/"
+      ],
+      "published_at": "2026-09-25T15:24:25Z",
+      "event_time": "2026-09-25T15:24:25Z",
+      "window_status": "supplement_outside_window",
+      "window_uncertain": false,
+      "reason": "Causal Imprint以训练期未来监督形成预测性特征，推理直接生成动作而不生成视频，解释世界模型到控制的转换；当前代码和模型尚待发布。",
+      "key_claims": [
+        "视频专家与动作专家定向耦合，冻结VLM给语义，训练期4D教师蒸馏几何运动知识。",
+        "未来观察仅用于训练监督，执行输入为已有观察，不存在未来输入泄漏或未来视频生成。",
+        "预训练处理后混合语料超过两万小时，不是新采两万小时或可下载整包。",
+        "跨具身部署仍需后训练；第一视角数据消融和外部Agent增强控制研究有限。",
+        "项目页代码、模型均Forthcoming，不声称权重开放。"
+      ]
+    }
+  ]
+}
