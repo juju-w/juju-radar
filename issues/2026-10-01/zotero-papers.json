@@ -1,0 +1,176 @@
+{
+  "issue_date": "2026-10-01",
+  "papers": [
+    {
+      "id": "10.1038/s41586-026-10965-y",
+      "title": "Function-preserving watermarking of AI-generated proteins",
+      "url": "https://www.nature.com/articles/s41586-026-10965-y",
+      "doi": "10.1038/s41586-026-10965-y",
+      "published_date": "2026-09-30",
+      "item_type": "journalArticle",
+      "tags": [
+        "Juju Radar",
+        "生物安全",
+        "AI for Science",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "firstName": "David",
+          "lastName": "Stutz",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alexander I.",
+          "lastName": "Cowen-Rivers",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Guillermo",
+          "lastName": "Ortiz-Jimenez",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jeremy",
+          "lastName": "Ratcliff",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Vinicius",
+          "lastName": "Zambaldi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Lindsay",
+          "lastName": "Willmore",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Josh",
+          "lastName": "Abramson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Harshnira",
+          "lastName": "Patani",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Christina",
+          "lastName": "Kouridi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Florian",
+          "lastName": "Stimberg",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mel",
+          "lastName": "Vecerik",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alex",
+          "lastName": "Chu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sukhdeep",
+          "lastName": "Singh",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sumanth",
+          "lastName": "Dathathri",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eliseo",
+          "lastName": "Papa",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Valentin",
+          "lastName": "De Bortoli",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Arnaud",
+          "lastName": "Doucet",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Demis",
+          "lastName": "Hassabis",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jue",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sven",
+          "lastName": "Gowal",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Pushmeet",
+          "lastName": "Kohli",
+          "creatorType": "author"
+        }
+      ],
+      "note": "SynthIDBio把带密钥的统计信号嵌入蛋白序列生成，并通过微调AlphaFold 3在结构预测中嵌入水印。作者对VEGF-A、SARS-CoV-2 RBD和PD-L1三个结合靶标做体外实验，报告水印设计的命中率和结合亲和力分布与无水印设计相近。结构水印在作者数据上几乎总能检出，整体精度影响小。新意是来源信号能随数字设计进入实际分子；局限是靶标数少、恶意删除水印与行业标准化尚未解决，不能当作蛋白安全证明。Nature 2026年9月30日发表。\n\n原文：https://www.nature.com/articles/s41586-026-10965-y\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-01/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "10.1038/s41586-026-11036-y",
+      "title": "Scalable decision-making for games of imperfect information",
+      "url": "https://www.nature.com/articles/s41586-026-11036-y",
+      "doi": "10.1038/s41586-026-11036-y",
+      "published_date": "2026-09-30",
+      "item_type": "journalArticle",
+      "tags": [
+        "Juju Radar",
+        "强化学习",
+        "不完全信息博弈",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "firstName": "Samuel",
+          "lastName": "Sokota",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eugene",
+          "lastName": "Vinitsky",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hengyuan",
+          "lastName": "Hu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zhiyuan",
+          "lastName": "Fan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "J. Zico",
+          "lastName": "Kolter",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gabriele",
+          "lastName": "Farina",
+          "creatorType": "author"
+        }
+      ],
+      "note": "Ataraxos结合稳定的自博弈策略学习、对隐藏棋子的信念模型，以及每步行动前的搜索。Nature论文报告对顶尖Stratego选手20局15胜1负4平，训练成本为几千美元，并展示Barrage Stratego、Hanabi和斗地主结果。核心新意不是把局面全穷举，而是随可见信息抽样可能暗牌并优化当前落子。真人对局样本有限，成本比较来自作者，游戏内成绩不能直接推出真实谈判或军事决策能力。Nature 2026年9月30日发表。\n\n原文：https://www.nature.com/articles/s41586-026-11036-y\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-01/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

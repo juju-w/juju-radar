@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-01",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "gemini-4-argon",
+      "title": "🧠 Gemini 4 Argon先给网络防御者用，长任务输出上限升到百万Token",
+      "category": "前沿模型 / 网络安全 / Agent",
+      "score": 9.5,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "related_urls": [
+        "https://deepmind.google/models/gemini/"
+      ],
+      "published_at": "2026-09-30",
+      "event_time": "2026-09-30",
+      "window_status": "window_uncertain",
+      "reason": "前沿模型在长时工作和网络防御上有实质新能力，但只分阶段向可信防御者开放；官方表格也列出弱于竞品的任务。",
+      "key_claims": [
+        "Google宣布先通过Fairwind Program向可信网络防御者提供Argon，开发者和消费者尚待后续开放。",
+        "官方称最大输出从64K扩至1M Token；这是输出上限，不是上下文窗口。",
+        "官方表格DeepSWE v1.1为77.9%，但FrontierSWE v2为55.0%，低于Astra 65.5%；不能写成编码全面领先。",
+        "Google列出前期每百万输入/输出Token 2/10美元，之后拟调为4/20美元。"
+      ]
+    },
+    {
+      "id": "openai-reasoning-extraction",
+      "title": "⚠️ OpenAI披露推理提取行动，称核心活动与Moonshot相关人员有关",
+      "category": "真实AI事故 / 模型安全 / 公司争议",
+      "score": 9.0,
+      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+      "related_urls": [
+        "https://arxiv.org/abs/2608.09867"
+      ],
+      "published_at": "2026-09-30",
+      "event_time": "2026-09-30",
+      "window_status": "window_uncertain",
+      "reason": "披露的是隐藏推理可被跨会话复现的攻击类别与规模化尝试；对Moonshot的归因仍为OpenAI单方判断，须逐层区分。",
+      "key_claims": [
+        "OpenAI称最早活动发生在7月初，7月24–25日出现约1.6万次相关请求；这些是尝试次数，不是成功提取数。",
+        "OpenAI说它把核心活动簇归因于与Moonshot AI有关的个人，同时明确不确定所有操作者是否同属一方；并未证明Kimi模型使用了被提取数据。",
+        "独立研究者8月论文展示跨会话/跨模型重放加密推理块的攻击类别，不能当作对本次行动归因的独立证据。",
+        "OpenAI说已限制账户、修补可重放路径并加强监测；原文明确未发生数据库或用户会话直接入侵。"
+      ]
+    },
+    {
+      "id": "synthid-bio",
+      "title": "🧬 蛋白质也能加水印：SynthID Bio把来源标记放进生成过程",
+      "category": "AI for Science / 生物安全 / 论文",
+      "score": 9.0,
+      "url": "https://www.nature.com/articles/s41586-026-10965-y",
+      "related_urls": [
+        "https://deepmind.google/blog/introducing-synthid-bio/"
+      ],
+      "published_at": "2026-09-30",
+      "event_time": "2026-09-30",
+      "window_status": "window_uncertain",
+      "reason": "蛋白序列水印经过三种靶标的湿实验，结构水印嵌入AlphaFold 3预测流程；把AI来源验证延伸到真实分子而非只看数字文件。",
+      "key_claims": [
+        "ProteinMPNN选氨基酸时用带密钥的tournament sampling写入序列水印，三种靶标的结合实验未见命中率或亲和力分布明显损失。",
+        "结构路线微调AlphaFold 3扩散模块并训练检测器，作者报告接近完美检测和小幅精度影响。",
+        "水印能提供来源线索，但无法替代DNA合成筛查；对有意删除水印的攻击鲁棒性和跨机构标准化仍待研究。",
+        "DeepMind称开放代码、体外数据和研究权重；实际部署仍属概念验证。"
+      ]
+    },
+    {
+      "id": "deepseek-ascend-stack",
+      "title": "💻 DeepSeek把核心算子移到昇腾：同一接口背后重写硬件路径",
+      "category": "开源项目 / 推理基础设施 / 算力",
+      "score": 9.0,
+      "url": "https://github.com/deepseek-ai/DeepGEMM-Ascend",
+      "related_urls": [
+        "https://github.com/deepseek-ai/DeepEP-Ascend",
+        "https://github.com/deepseek-ai/FlashMLA/blob/main/docs/20260930-ascend-prefill-deep-dive.md"
+      ],
+      "published_at": "2026-09-30",
+      "event_time": "2026-09-30",
+      "window_status": "window_uncertain",
+      "reason": "项目方公开可检查的昇腾矩阵乘、专家通信和稀疏注意力实现，说明迁移瓶颈从模型权重进一步落在可复用底层算子。",
+      "key_claims": [
+        "DeepGEMM-Ascend README记载9月30日初版，声称兼容原DeepGEMM API并支持BF16、FP8、FP4。",
+        "DeepEP-Ascend面向MoE专家分发和合并；FlashMLA技术文档写明9月30日昇腾稀疏注意力实现。",
+        "DeepGEMM所列最高99.8%硬件理论峰值，来自Ascend 950DT、CANN 9.20及指定矩阵形状，不代表端到端训练吞吐或所有昇腾机型。",
+        "DeepEP README说明部分带宽测试基于供应商提供的PoC HDK及手动配置，计划中的商业固件仍未公开。"
+      ]
+    },
+    {
+      "id": "ataraxos-stratego",
+      "title": "🎲 电脑终于赢了顶尖斗兽棋选手，关键是在落子前推测暗牌",
+      "category": "强化学习 / 不完全信息博弈 / 论文",
+      "score": 8.5,
+      "url": "https://www.nature.com/articles/s41586-026-11036-y",
+      "related_urls": [
+        "https://news.mit.edu/2026/game-playing-ai-stratego-new-champ-0930"
+      ],
+      "published_at": "2026-09-30",
+      "event_time": "2026-09-30",
+      "window_status": "window_uncertain",
+      "reason": "不完全信息博弈长期由高额计算投入仍难超越顶尖人类，Ataraxos用稳定自博弈和测试时信念搜索取得明确突破，并跨游戏复用。",
+      "key_claims": [
+        "Nature论文报告20局对最资深世界冠军15胜1负4平，训练仅数千美元量级；成本比较来自作者。",
+        "策略价值网络先自博弈学习，belief network按可见线索抽样隐藏棋子，再在每次行动前搜索。",
+        "同一方法延伸到Barrage Stratego、Hanabi和斗地主，但这些仍是游戏；不能直接等同商业谈判或军事决策。"
+      ]
+    }
+  ]
+}

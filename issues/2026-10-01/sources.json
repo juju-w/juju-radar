@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "label": "公布Gemini 4 Argon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "section": "Gemini 4 Argon先给网络防御者用，长任务输出上限升到百万Token"
+    },
+    {
+      "label": "模型页的官方对照表",
+      "url": "https://deepmind.google/models/gemini/",
+      "section": "Gemini 4 Argon先给网络防御者用，长任务输出上限升到百万Token"
+    },
+    {
+      "label": "披露",
+      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+      "section": "OpenAI披露推理提取行动，称核心活动与Moonshot相关人员有关"
+    },
+    {
+      "label": "独立研究者8月发表的论文",
+      "url": "https://arxiv.org/abs/2608.09867",
+      "section": "OpenAI披露推理提取行动，称核心活动与Moonshot相关人员有关"
+    },
+    {
+      "label": "论文",
+      "url": "https://www.nature.com/articles/s41586-026-10965-y",
+      "section": "蛋白质也能加水印：SynthID Bio把来源标记放进生成过程"
+    },
+    {
+      "label": "DeepMind的说明",
+      "url": "https://deepmind.google/blog/introducing-synthid-bio/",
+      "section": "蛋白质也能加水印：SynthID Bio把来源标记放进生成过程"
+    },
+    {
+      "label": "DeepGEMM-Ascend",
+      "url": "https://github.com/deepseek-ai/DeepGEMM-Ascend",
+      "section": "DeepSeek把核心算子移到昇腾：同一接口背后重写硬件路径"
+    },
+    {
+      "label": "DeepEP-Ascend",
+      "url": "https://github.com/deepseek-ai/DeepEP-Ascend",
+      "section": "DeepSeek把核心算子移到昇腾：同一接口背后重写硬件路径"
+    },
+    {
+      "label": "稀疏注意力实现说明",
+      "url": "https://github.com/deepseek-ai/FlashMLA/blob/main/docs/20260930-ascend-prefill-deep-dive.md",
+      "section": "DeepSeek把核心算子移到昇腾：同一接口背后重写硬件路径"
+    },
+    {
+      "label": "Nature论文",
+      "url": "https://www.nature.com/articles/s41586-026-11036-y",
+      "section": "电脑终于赢了顶尖Stratego选手，关键是在落子前推测暗牌"
+    },
+    {
+      "label": "MIT的研究介绍",
+      "url": "https://news.mit.edu/2026/game-playing-ai-stratego-new-champ-0930",
+      "section": "电脑终于赢了顶尖Stratego选手，关键是在落子前推测暗牌"
+    }
+  ]
+}
