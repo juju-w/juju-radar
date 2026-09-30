@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "label": "发布GPT‑6.1 Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "section": "GPT‑6.1 Sol：接近 Astra 的任务表现，价格回到 Sol 档"
+    },
+    {
+      "label": "官方模型页",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "section": "GPT‑6.1 Sol：接近 Astra 的任务表现，价格回到 Sol 档"
+    },
+    {
+      "label": "安全附录",
+      "url": "https://deploymentsafety.openai.com/gpt-6-1-sol/respecting-auto-review",
+      "section": "GPT‑6.1 Sol：接近 Astra 的任务表现，价格回到 Sol 档"
+    },
+    {
+      "label": "推出dots",
+      "url": "https://openai.com/index/introducing-dots/",
+      "section": "Dots：给常驻Agent一台云电脑和持续任务"
+    },
+    {
+      "label": "Decisions API",
+      "url": "https://openai.com/index/devday-2026-recap/",
+      "section": "Decisions API：让模型在预设选项中快速作答"
+    },
+    {
+      "label": "介绍Quine",
+      "url": "https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/",
+      "section": "微软 Quine：把生物模型的预测接回湿实验"
+    },
+    {
+      "label": "项目页",
+      "url": "https://microsoft.github.io/quine/",
+      "section": "微软 Quine：把生物模型的预测接回湿实验"
+    },
+    {
+      "label": "发布Kumo Tabular",
+      "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "section": "NVIDIA发布Kumo Tabular：表格预测不必每题重训"
+    },
+    {
+      "label": "模型权重",
+      "url": "https://huggingface.co/nvidia/Kumo-Tabular",
+      "section": "NVIDIA发布Kumo Tabular：表格预测不必每题重训"
+    },
+    {
+      "label": "推理代码",
+      "url": "https://github.com/NVIDIA/structured-data-models",
+      "section": "NVIDIA发布Kumo Tabular：表格预测不必每题重训"
+    },
+    {
+      "label": "机器人论文",
+      "url": "https://arxiv.org/abs/2609.33378",
+      "section": "机器人也能传“操作手册”：经验从强Agent交给轻Agent"
+    },
+    {
+      "label": "方法全文",
+      "url": "https://arxiv.org/html/2609.33378",
+      "section": "机器人也能传“操作手册”：经验从强Agent交给轻Agent"
+    }
+  ]
+}

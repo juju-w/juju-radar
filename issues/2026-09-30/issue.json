@@ -1,0 +1,125 @@
+{
+  "date": "2026-09-30",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "gpt-6-1-sol",
+      "title": "🧠 GPT‑6.1 Sol：接近 Astra 的任务表现，价格回到 Sol 档",
+      "category": "前沿模型 / Coding Agent",
+      "score": 9.5,
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "related_urls": [
+        "https://deploymentsafety.openai.com/gpt-6-1-sol/respecting-auto-review",
+        "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
+      ],
+      "published_at": "2026-09-29",
+      "event_time": "2026-09-29",
+      "window_status": "in_window_by_devday_keynote",
+      "reason": "能力与价格组合直接改变复杂Agent任务的模型选择，安全能力与基准条件可由官方材料逐项检查。",
+      "key_claims": [
+        "标准输入/输出单价每百万Token 2/10美元，缓存输入0.10美元；与GPT‑6 Sol标准单价相同，不宜写成相对旧Sol降价。",
+        "DeepSWE 1.1官方称接近Astra，OSWorld 2.0离Astra 2.1个百分点，但用离线集的部分奖励。",
+        "Terminal-Bench Science 0.1最高档每任务5.47美元，Astra为23.80美元；Astra分数仍最高。",
+        "安全附录按Critical cybersecurity与High biological/chemical管理；SEC-Bench Pro 78.8%，低于Astra 85.4%。"
+      ]
+    },
+    {
+      "id": "openai-dots",
+      "title": "🟣 Dots：给常驻Agent一台云电脑和持续任务",
+      "category": "Agent / 产品战略 / 安全",
+      "score": 9.5,
+      "url": "https://openai.com/index/introducing-dots/",
+      "related_urls": [
+        "https://openai.com/index/devday-2026-recap/"
+      ],
+      "published_at": "2026-09-29",
+      "event_time": "2026-09-29",
+      "window_status": "in_window_by_devday_keynote",
+      "reason": "从单次对话转向长期负责的个人Agent，云电脑、跨应用权限和主动研究的权限边界构成可检验产品变化。",
+      "key_claims": [
+        "GPT‑6 Astra驱动，独立云电脑、浏览器，可连接已授权应用；Pro与Business Premium分市场逐步开放。",
+        "闲置时主动研究仅可使用已连接应用的只读工具，不能发消息、改内容或控制浏览器。",
+        "写操作有规则与自动审查，部分动作要用户批准；宣传示例不等于规模化可靠性验证。",
+        "第一只dot包含于指定订阅，但深度任务计入套餐额度。"
+      ]
+    },
+    {
+      "id": "decisions-api",
+      "title": "⚡ Decisions API：让模型在预设选项中快速作答",
+      "category": "模型接口 / 高频判断",
+      "score": 8.5,
+      "url": "https://openai.com/index/devday-2026-recap/",
+      "related_urls": [],
+      "published_at": "2026-09-29",
+      "event_time": "2026-09-29",
+      "window_status": "in_window_by_devday_keynote",
+      "reason": "预定义问题和有限答案形成可接入业务逻辑的高频判断节点，与通用长回复分工不同；和Jev方向相关但没有同条件比较。",
+      "key_claims": [
+        "基于Luna，开发者预设有限选项，输入可含文本或图像，用于分类、路由或选下一步Agent动作。",
+        "9月29日仅有限预览，官方称未来几天扩大开放。",
+        "官方Recap没有给价格、延迟、准确率或与Jev同条件测试，不引用二手150毫秒说法。"
+      ]
+    },
+    {
+      "id": "microsoft-quine",
+      "title": "🧬 微软 Quine：把生物模型的预测接回湿实验",
+      "category": "AI for Science / 生物医药",
+      "score": 9,
+      "url": "https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/",
+      "related_urls": [
+        "https://microsoft.github.io/quine/"
+      ],
+      "published_at": "2026-09-29",
+      "event_time": "2026-09-29",
+      "window_status": "window_uncertain",
+      "reason": "同一系统联合基因、蛋白、化学与细胞状态，并以胰腺癌细胞状态干预的湿实验反馈检验候选。",
+      "key_claims": [
+        "Quine包括跨模态生物世界模型与连接工具、文献和实验的执行架构。",
+        "与Broad研究者合作，从数千化合物中选择候选；经典型到基底型状态转换中，排名靠前者在湿实验中产生较大预期变化。",
+        "反向状态转换更难，实验出现第三种表型，团队称预测与实验一致。",
+        "仅限研究合作与Fellows早期访问，非临床诊断或获批疗法；原文未给可复核完整量化数据。"
+      ]
+    },
+    {
+      "id": "nvidia-kumo-tabular",
+      "title": "📊 NVIDIA发布Kumo Tabular：表格预测不必每题重训",
+      "category": "开放权重 / 表格基础模型 / 推理",
+      "score": 8.5,
+      "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "related_urls": [
+        "https://huggingface.co/nvidia/Kumo-Tabular",
+        "https://github.com/NVIDIA/structured-data-models"
+      ],
+      "published_at": "2026-09-29",
+      "event_time": "2026-09-29",
+      "window_status": "window_uncertain",
+      "reason": "纯合成表格预训练后，已标注行作为上下文直接预测新行；权重与推理代码可检查，常见企业表格任务有实际试用入口。",
+      "key_claims": [
+        "28M至215M三种规模，仅在合成表格上预训练，分类和回归均可处理。",
+        "列注意力、行注意力及上下文行的标签共同建模；一次前向输出类别概率或数值。",
+        "官方称在四组基准综合排第一，但相关评价由模型团队报告，需在用户表格留出集验证。",
+        "目前主要支持数值与类别列；文本、图像、时间需预处理，分布漂移可能降准；训练配方和合成数据生成器仍待发布。"
+      ]
+    },
+    {
+      "id": "robot-harness-distillation",
+      "title": "🤖 机器人也能传“操作手册”：经验从强Agent交给轻Agent",
+      "category": "机器人 / Agent / 论文",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2609.33378",
+      "related_urls": [
+        "https://arxiv.org/html/2609.33378"
+      ],
+      "published_at": "2026-09-27T09:01:15Z",
+      "event_time": "2026-09-27T09:01:15Z",
+      "window_status": "supplement_outside_window",
+      "reason": "强Agent把失败干预写成可复用playbook，轻Agent执行反馈后递归修订；无需改VLA权重即可在作者实验中提升成功率。",
+      "key_claims": [
+        "作者真实机械臂实验报告成功率从37.3%升至64.0%。",
+        "SimplerEnv Bridge轻Agent附playbook 66.7%，GR00T-only 41.7%；强Agent附手册79.2%。",
+        "论文9月27日提交；9月29日HF推荐不等于首发。",
+        "单一论文实验，结果依赖场景、基础策略与评价协议，尚未证明跨任意机器人泛化。"
+      ]
+    }
+  ]
+}

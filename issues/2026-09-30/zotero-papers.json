@@ -1,0 +1,50 @@
+{
+  "issue_date": "2026-09-30",
+  "papers": [
+    {
+      "id": "arxiv-2609.33378",
+      "title": "Recursive Harness Distillation across Agents for Robot Manipulation",
+      "url": "https://arxiv.org/abs/2609.33378",
+      "doi": null,
+      "published_date": "2026-09-27",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "机器人",
+        "Agent",
+        "近期补看",
+        "待阅读"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2609.33378",
+      "creators": [
+        {
+          "firstName": "Seungyeon",
+          "lastName": "Kim",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Junhoo",
+          "lastName": "Lee",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Minkyu",
+          "lastName": "Kim",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Baekseung",
+          "lastName": "Kim",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Nojun",
+          "lastName": "Kwak",
+          "creatorType": "author"
+        }
+      ],
+      "note": "强Agent先把对VLA策略的失败诊断与干预方法写成playbook，再根据轻Agent执行反馈递归修订。共享的是外部操作手册，VLA权重不更新。作者在真实机械臂实验中报告成功率由37.3%升至64.0%；SimplerEnv Bridge中轻Agent带手册66.7%，GR00T-only为41.7%。这说明经验可跨Agent复用，但强Agent构建手册有前期成本，结果依赖测试场景，未证明任意机器人泛化。9月27日提交，30日期作近期补看，不当作首发。\n\n原文：https://arxiv.org/abs/2609.33378\n本期资料页：https://www.asteronline.cn/juju-radar/2026-09-30/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
