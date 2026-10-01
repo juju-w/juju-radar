@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "label": "mods",
+      "url": "https://claude.com/blog/claude-code-mods",
+      "section": "Claude Code让插件接管工具调用，权限边界也跟着前移"
+    },
+    {
+      "label": "VM Sandboxes正式可用",
+      "url": "https://modal.com/blog/vm-sandboxes-agent-computers",
+      "section": "Modal把完整虚拟机交给Agent，同时把密钥移到隔壁"
+    },
+    {
+      "label": "Sidecars",
+      "url": "https://modal.com/blog/introducing-sandbox-sidecars-trust-boundary",
+      "section": "Modal把完整虚拟机交给Agent，同时把密钥移到隔壁"
+    },
+    {
+      "label": "公布评测整改",
+      "url": "https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities",
+      "section": "越界事件之后，英国AI安全研究所先给Agent断网"
+    },
+    {
+      "label": "ChatGPT使用情况浏览器",
+      "url": "https://epoch.ai/latest/introducing-the-chatgpt-usage-explorer",
+      "section": "5000人真实聊天记录：重度用户贡献63%的提问"
+    },
+    {
+      "label": "RoboCoach论文",
+      "url": "https://arxiv.org/abs/2609.39685",
+      "section": "近期补看：机器人先在世界模型里试错，再决定向人学哪一步"
+    },
+    {
+      "label": "原事故报告",
+      "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+      "section": "推荐阅读"
+    }
+  ]
+}

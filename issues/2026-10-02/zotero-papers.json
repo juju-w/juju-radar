@@ -1,0 +1,86 @@
+{
+  "issue_date": "2026-10-02",
+  "papers": [
+    {
+      "id": "arxiv:2609.39685",
+      "title": "RoboCoach: World Models as Active Coaches for Compositional Robot Skills",
+      "url": "https://arxiv.org/abs/2609.39685",
+      "doi": "10.48550/arXiv.2609.39685",
+      "published_date": "2026-09-30",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "机器人",
+        "世界模型",
+        "待阅读",
+        "补看"
+      ],
+      "creators": [
+        {
+          "firstName": "Jiajun",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yifan",
+          "lastName": "Chen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yichao",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jiayi",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ruoqu",
+          "lastName": "Chen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shaoxuan",
+          "lastName": "Xie",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Guocai",
+          "lastName": "Yao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mengdi",
+          "lastName": "Xu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sen",
+          "lastName": "Cui",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Changshui",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        }
+      ],
+      "authors": [
+        "Jiajun Liu",
+        "Yifan Chen",
+        "Yichao Liu",
+        "Jiayi Zhang",
+        "Ruoqu Chen",
+        "Shaoxuan Xie",
+        "Guocai Yao",
+        "Mengdi Xu",
+        "Sen Cui",
+        "Changshui Zhang"
+      ],
+      "note": "RoboCoach通过动作条件世界模型想象机器人执行轨迹，定位最早卡住的子任务，再定向采集真人示范，只更新对应技能专家的LoRA。作者在22组任务策略上报告想象与实机成功率相关系数0.840；每平台新增150条子任务示范后，Franka完整任务成功率从13.3%到75%，AgileX从40%到83.8%。这显示世界模型可能帮助分配有限的真实示范采集预算，而非替代真实示范。结果来自两个实机平台和特定任务，世界模型误判失败位置会误导采样；四组未见任务组合平均成功率仍为35%。论文9月30日晚提交，属10月2日期近期补看。\n\n原文：https://arxiv.org/abs/2609.39685\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-02/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

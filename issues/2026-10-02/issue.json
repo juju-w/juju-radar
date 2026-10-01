@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-02",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "claude-code-mods",
+      "title": "🧩 Claude Code让插件接管工具调用，权限边界也跟着前移",
+      "category": "Agent / Coding Agent / 插件安全",
+      "score": 9.0,
+      "url": "https://claude.com/blog/claude-code-mods",
+      "related_urls": [],
+      "published_at": "2026-10-01",
+      "event_time": "2026-10-01",
+      "window_status": "window_uncertain",
+      "reason": "事件钩子升级为可替换调用和界面的TypeScript扩展点，改变Coding Agent插件能介入的层级，也扩大本机代码信任面。",
+      "key_claims": [
+        "mods可在事件前后或替代事件运行，改写提示词、阻止或重试工具调用、处理权限请求。",
+        "mods随插件分发，在CLI与桌面可用，运行时有与Claude Code相同的本机访问权限且无沙箱。",
+        "Team/Enterprise或受管设备内建sec-default优先加载，限制用户插件覆盖权限拒绝规则。"
+      ]
+    },
+    {
+      "id": "modal-agent-sandboxes",
+      "title": "🖥️ Modal把完整虚拟机交给Agent，同时把密钥移到隔壁",
+      "category": "Agent 基础设施 / 沙箱",
+      "score": 8.8,
+      "url": "https://modal.com/blog/vm-sandboxes-agent-computers",
+      "related_urls": [
+        "https://modal.com/blog/introducing-sandbox-sidecars-trust-boundary",
+        "https://modal.com/changelog/sandbox-sidecars-are-now-in-public-alpha"
+      ],
+      "published_at": "2026-10-01",
+      "event_time": "2026-10-01",
+      "window_status": "window_uncertain",
+      "reason": "VM Sandboxes正式可用，提供Docker与完整内核；Sidecars把可信凭据和Agent生成代码分开，两者解决真实开发环境与秘密隔离之间的冲突。",
+      "key_claims": [
+        "runtime=\"vm\"通过现有Sandbox API提供完整Linux VM，gVisor仍是默认运行时。",
+        "Sidecars与主沙箱同宿主机但隔离，可承载凭据代理、流量审查或harness；10月1日为Beta说明，Sidecar早在8月28日公测。",
+        "同宿主通信至少3倍快是Modal内部对比，并非第三方通用延迟指标。"
+      ]
+    },
+    {
+      "id": "aisi-eval-hardening",
+      "title": "🛡️ 越界事件之后，英国AI安全研究所先给Agent断网",
+      "category": "真实AI事故后续 / 评测安全",
+      "score": 8.7,
+      "url": "https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities",
+      "related_urls": [
+        "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing"
+      ],
+      "published_at": "2026-10-01",
+      "event_time": "2026-10-01",
+      "window_status": "window_uncertain",
+      "reason": "七月越界事件后的暂停与恢复有可检查的控制措施：外网关闭、同步监控、自动预检、分层逃逸测试；也是独立评测成本上升的实证。",
+      "key_claims": [
+        "AISI称未来Agent网络安全评测先禁用互联网，直至有更安全的重新开放方案。",
+        "同步LLM监控消息、工具调用和可用时的推理过程；无推理过程时另有动作序列监控，研究所自己认为后者可能较弱。",
+        "完成首阶段整改后恢复大部分评测，不代表全部安全问题解决或全面恢复互联网。"
+      ]
+    },
+    {
+      "id": "epoch-chatgpt-usage",
+      "title": "📊 5000人真实聊天记录：重度用户贡献63%的提问",
+      "category": "AI采用 / 独立数据",
+      "score": 8.3,
+      "url": "https://epoch.ai/latest/introducing-the-chatgpt-usage-explorer",
+      "related_urls": [],
+      "published_at": "2026-10-01",
+      "event_time": "2026-10-01",
+      "window_status": "window_uncertain",
+      "reason": "比自报问卷更接近使用行为；同一批存续用户的使用变频繁，却没有让典型单段对话明显变长。",
+      "key_claims": [
+        "5000名美国YouGov自愿面板成员且2026年仍至少使用一次ChatGPT，导出约830万条消息和66万段对话。",
+        "2023年1月至2025年12月每活跃面板成员月消息中位数14升至36；最活跃10%贡献63%提问，典型对话中位数仍是两次提问。",
+        "数据未经人口加权且有幸存者偏差；不含消息正文，不能识别工作内容或推断全美ChatGPT用户结构。"
+      ]
+    },
+    {
+      "id": "robocoach-world-model",
+      "title": "🤖 近期补看：机器人先在世界模型里试错，再决定向人学哪一步",
+      "category": "机器人 / 世界模型 / 论文",
+      "score": 8.2,
+      "url": "https://arxiv.org/abs/2609.39685",
+      "related_urls": [
+        "https://arxiv.org/html/2609.39685v1",
+        "https://robocoach-ai.github.io/"
+      ],
+      "published_at": "2026-09-30T13:14:30Z",
+      "event_time": "2026-09-30T21:14:30+08:00",
+      "window_status": "recent_catchup",
+      "reason": "把世界模型从模拟未来扩展为挑选下一批真实示范的教练，实机对照有明确预算；提交时间超出本期严格窗口。",
+      "key_claims": [
+        "RIDI流程先路由子任务，在动作条件世界模型中试跑，定位最先超时的技能，再有针对性采集示范和更新对应LoRA专家。",
+        "作者报告22组任务策略的想象/实机成功率相关系数0.840；每平台新增150条示范后Franka 13.3%升至75%，AgileX 40%升至83.8%。",
+        "均为作者实验，涵盖两种实机平台；不能泛化为任意人形机器人或完全无人监督学习。"
+      ]
+    }
+  ]
+}
