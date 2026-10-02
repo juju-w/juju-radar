@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "label": "六篇数学研究",
+      "url": "https://research.meta.ai/blog/solving-open-research-problems-together",
+      "section": "Meta公布六篇人机合写数学论文：有证明，也有前人先解出的题"
+    },
+    {
+      "label": "一篇微分方程论文",
+      "url": "https://ai.meta.com/research/publications/finite-time-blow-up-of-radial-negative-energy-solutions-for-the-mass-critical-biharmonic-nonlinear-schrodinger-equation/",
+      "section": "Meta公布六篇人机合写数学论文：有证明，也有前人先解出的题"
+    },
+    {
+      "label": "另一篇群论论文",
+      "url": "https://ai.meta.com/research/publications/semiabelian-groups-need-not-be-monomial/",
+      "section": "Meta公布六篇人机合写数学论文：有证明，也有前人先解出的题"
+    },
+    {
+      "label": "高斯点椭球拟合论文",
+      "url": "https://ai.meta.com/research/publications/the-strict-threshold-for-gaussian-ellipsoid-fitting/",
+      "section": "Meta公布六篇人机合写数学论文：有证明，也有前人先解出的题"
+    },
+    {
+      "label": "新一代联邦学习系统",
+      "url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
+      "section": "Google让联邦学习的服务器代码可核查，Gboard已采用"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2609.31494",
+      "section": "Google让联邦学习的服务器代码可核查，Gboard已采用"
+    },
+    {
+      "label": "公开了一次推理引擎实验",
+      "url": "https://www.baseten.co/blog/agentic-inference-optimization-faster-than-sota/",
+      "section": "Agent写出专用推理引擎：快90%的前提是一台B200和特定文本"
+    },
+    {
+      "label": "AstaBrief 8B",
+      "url": "https://huggingface.co/blog/allenai/astabrief",
+      "section": "Ai2开源8B科研报告模型，靠更密的引用训练换速度"
+    },
+    {
+      "label": "模型权重",
+      "url": "https://huggingface.co/allenai/AstaBrief_8B",
+      "section": "Ai2开源8B科研报告模型，靠更密的引用训练换速度"
+    },
+    {
+      "label": "Agent容量估算",
+      "url": "https://epoch.ai/publications/estimating-the-agent-population",
+      "section": "未来能同时跑多少Agent？Epoch算出的上限也暴露了需求问题"
+    }
+  ]
+}

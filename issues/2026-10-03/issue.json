@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-03",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "meta-muse-math",
+      "title": "🧮 Meta公布六篇人机合写数学论文：有证明，也有前人先解出的题",
+      "category": "AI for Science / 数学研究",
+      "score": 9.0,
+      "url": "https://research.meta.ai/blog/solving-open-research-problems-together",
+      "related_urls": [
+        "https://ai.meta.com/research/publications/the-strict-threshold-for-gaussian-ellipsoid-fitting/",
+        "https://ai.meta.com/research/publications/finite-time-blow-up-of-radial-negative-energy-solutions-for-the-mass-critical-biharmonic-nonlinear-schrodinger-equation/",
+        "https://ai.meta.com/research/publications/semiabelian-groups-need-not-be-monomial/"
+      ],
+      "published_at": "2026-10-02",
+      "event_time": "2026-10-02",
+      "window_status": "window_uncertain",
+      "reason": "把模型在开放问题中的作用细分到构思、搜索程序、推导和写稿，并配有人工复核与AI参与声明；与竞赛已知答案不同。",
+      "key_claims": [
+        "Meta于10月2日公布六篇与数学家协作的论文，称五篇回答了先前开放的问题。",
+        "Muse Spark 1.1/1.2通过普通meta.ai聊天界面参与，没有定制研究框架；专家主导并由另一组数学家复核。",
+        "高斯椭球拟合阈值有三项8月独立同期成果；384阶群反例另有9月16日不同反例，不能写成模型首次解出。"
+      ]
+    },
+    {
+      "id": "google-verifiable-fl",
+      "title": "🔐 Google让联邦学习的服务器代码可核查，Gboard已采用",
+      "category": "隐私计算 / AI基础设施 / 论文",
+      "score": 8.8,
+      "url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
+      "related_urls": [
+        "https://arxiv.org/abs/2609.31494",
+        "https://github.com/google-parfait/confidential-federated-compute"
+      ],
+      "published_at": "2026-10-02",
+      "event_time": "2026-10-02",
+      "window_status": "window_uncertain",
+      "reason": "把隐私保证从“相信服务器会按承诺加噪”推进到可公开查看的访问策略、可重建代码和TEE证明，同时把梯度计算转移至服务器。",
+      "key_claims": [
+        "设备加密上传数据并预先指定允许处理数据的程序；TEE密钥服务只向符合策略的TEE工作负载放行密钥，策略写入公共透明日志。",
+        "Gboard英语和日语下一词预测模型已采用；论文9月25日首次提交，10月2日是Google发布博客的日期。",
+        "TEE侧信道和软件实现正确性尚未完整解决；不能说Google服务器已经无需信任。"
+      ]
+    },
+    {
+      "id": "baseten-agent-inference",
+      "title": "⚙️ Agent写出专用推理引擎：快90%的前提是一台B200和特定文本",
+      "category": "Coding Agent / 推理工程",
+      "score": 8.7,
+      "url": "https://www.baseten.co/blog/agentic-inference-optimization-faster-than-sota/",
+      "related_urls": [],
+      "published_at": "2026-10-02",
+      "event_time": "2026-10-02",
+      "window_status": "window_uncertain",
+      "reason": "长时间编程Agent在可测性能和精度约束下针对模型、硬件、负载生成专用引擎，显示推理优化从人工调参走向实验驱动搜索。",
+      "key_claims": [
+        "Claude Code/Fable 5在约一周、17亿token和约200 B200小时后，为Qwen-3.6-35B-A3B NVFP4写出VibeQwen。",
+        "单B200、利于推测解码的重复结构文本，单路1792对943 token/s；首token 12对28毫秒；32并发输出吞吐10307对6030 token/s。",
+        "可参考vLLM和TensorRT-LLM已有优化；作者允许微小数值差异但要求BF16基准总体精度不下降；引擎尚未承载生产流量。"
+      ]
+    },
+    {
+      "id": "ai2-astabrief",
+      "title": "📚 Ai2开源8B科研报告模型，靠更密的引用训练换速度",
+      "category": "AI for Science / 开源模型",
+      "score": 8.4,
+      "url": "https://huggingface.co/blog/allenai/astabrief",
+      "related_urls": [
+        "https://huggingface.co/allenai/AstaBrief_8B",
+        "https://huggingface.co/collections/allenai/astabrief"
+      ],
+      "published_at": "2026-10-02",
+      "event_time": "2026-10-02",
+      "window_status": "window_uncertain",
+      "reason": "把科学报告压成一次生成的8B专用模型，并把引用密度作为筛选训练样本的有效信号；模型和数据公开。",
+      "key_claims": [
+        "AstaBrief 8B从Qwen3-8B后训练而来，输入研究问题和检索片段，一次生成带引文报告。",
+        "Ai2报告Asta完整Fast模式平均51.1秒、Thinking模式178.5秒，约3.5倍；训练评估主要在2025年完成，未与当下前沿重比。",
+        "47K监督样本、约6K偏好样本；低引用密度过滤最有效，但正确引用也不保证不扩大结论。"
+      ]
+    },
+    {
+      "id": "epoch-agent-capacity",
+      "title": "📊 未来能同时跑多少Agent？Epoch算出的上限也暴露了需求问题",
+      "category": "算力 / Agent经济 / 独立研究",
+      "score": 8.2,
+      "url": "https://epoch.ai/publications/estimating-the-agent-population",
+      "related_urls": [],
+      "published_at": "2026-10-02",
+      "event_time": "2026-10-02",
+      "window_status": "window_uncertain",
+      "reason": "用HBM供应与真实Agent会话成本估算未来可并发容量，并算出即使只利用五分之一也需要巨大API支出，提示需求可能比芯片更早成为瓶颈。",
+      "key_claims": [
+        "按2025–27年HBM出货全部部署并分配给相应工作负载，模型推算约3000万至1.7亿个并发前沿Agent会话。",
+        "只用中央容量估计的20%仍隐含每年2.6–5.3万亿美元API等价支出；这是推算场景，不是实际用户或收入预测。",
+        "闭源模型容量由Agent每小时API花费、GPU租价、假设毛利倍数反推；硬件到货、供电、需求和价格变化均可改变结果。"
+      ]
+    }
+  ]
+}

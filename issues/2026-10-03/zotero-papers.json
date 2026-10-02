@@ -1,0 +1,129 @@
+{
+  "issue_date": "2026-10-03",
+  "papers": [
+    {
+      "id": "arxiv:2609.31494",
+      "title": "Toward provably private learning from federated data",
+      "url": "https://arxiv.org/abs/2609.31494",
+      "doi": "10.48550/arXiv.2609.31494",
+      "published_date": "2026-09-25",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "隐私计算",
+        "联邦学习",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "firstName": "Katharine",
+          "lastName": "Daly",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yu",
+          "lastName": "Xiao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zachary",
+          "lastName": "Garrett",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Brett",
+          "lastName": "McLarnon",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jianpeng",
+          "lastName": "Hou",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Arun",
+          "lastName": "Ganesh",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yanxiang",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Noriyuki",
+          "lastName": "Takahashi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Haicheng",
+          "lastName": "Sun",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yuanbo",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Timon",
+          "lastName": "Van Overveldt",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Daniel",
+          "lastName": "Ramage",
+          "creatorType": "author"
+        }
+      ],
+      "note": "Google提出基于TEE的联邦学习系统：设备先加密上传并限定许可处理程序，TEE内的密钥服务只向符合策略的处理程序放行密钥；策略和可重建代码供外部审计。Gboard的英日语下一词预测训练已采用。新意在于把原来需相信服务器加噪的承诺，推进到可检查的程序与策略；同时服务器计算减轻设备在线时间约束。TEE侧信道与软件实现正确性仍有限制，不能称为完全无需信任。论文9月25日首次提交，10月2日Google博客介绍应用。\n\n原文：https://arxiv.org/abs/2609.31494\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-03/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "meta-ellipse-2026",
+      "title": "The Strict Threshold for Gaussian Ellipsoid Fitting",
+      "url": "https://ai.meta.com/research/publications/the-strict-threshold-for-gaussian-ellipsoid-fitting/",
+      "doi": null,
+      "published_date": "2026-10-02",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "AI科研",
+        "数学",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "firstName": "Aykut",
+          "lastName": "Arslan",
+          "creatorType": "author"
+        }
+      ],
+      "note": "Meta与数学家协作研究随机高斯点的椭球拟合，给出点数相对维数平方的锐阈值；阈值处行为仍未解决。Muse Spark参与证明策略的提出和修订，数学家检查与完善。必须注意：Meta同时列出三组8月公开的独立同期结果，不能说这篇是唯一或首次解答。\n\n原文：https://ai.meta.com/research/publications/the-strict-threshold-for-gaussian-ellipsoid-fitting/\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-03/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "meta-biharmonic-2026",
+      "title": "Finite-Time Blow-Up of Radial Negative-Energy Solutions for the Mass-Critical Biharmonic Nonlinear Schrödinger Equation",
+      "url": "https://ai.meta.com/research/publications/finite-time-blow-up-of-radial-negative-energy-solutions-for-the-mass-critical-biharmonic-nonlinear-schrodinger-equation/",
+      "doi": null,
+      "published_date": "2026-10-02",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "AI科研",
+        "数学",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "firstName": "Leonard",
+          "lastName": "Dinh",
+          "creatorType": "author"
+        }
+      ],
+      "note": "这篇论文证明在特定聚焦质量临界双调和非线性薛定谔方程中，径向、负能量的解必在有限时间爆发，排除了只在无限时间爆发的未决可能。Muse Spark帮助检验计算和修订论证，研究者选择问题与关键思路，并由另一组数学家复核。结论限于论文给定的方程、对称性与能量条件，不能泛化成所有波动方程。\n\n原文：https://ai.meta.com/research/publications/finite-time-blow-up-of-radial-negative-energy-solutions-for-the-mass-critical-biharmonic-nonlinear-schrodinger-equation/\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-03/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
