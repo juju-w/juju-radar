@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "label": "发布 Kolibri",
+      "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+      "section": "德国 Kolibri 开放权重：78B 总量，实际每步只用 3.46B"
+    },
+    {
+      "label": "Hugging Face 开放 FP8 权重",
+      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+      "section": "德国 Kolibri 开放权重：78B 总量，实际每步只用 3.46B"
+    },
+    {
+      "label": "技术报告",
+      "url": "https://aleph-alpha.com/downloads/tech-report.pdf",
+      "section": "德国 Kolibri 开放权重：78B 总量，实际每步只用 3.46B"
+    },
+    {
+      "label": "公开两组 X-Design 抗体设计案例",
+      "url": "https://www.xaira.com/news/de-novo-design-of-progressable-antibodies-to-therapeutic-targets",
+      "section": "Xaira 的抗体设计走到实验台：难靶点找到可继续优化的候选"
+    },
+    {
+      "label": "“可继续推进的结合分子”的标准",
+      "url": "https://www.xaira.com/news/progressable-binders-the-binders-that-matter",
+      "section": "Xaira 的抗体设计走到实验台：难靶点找到可继续优化的候选"
+    },
+    {
+      "label": "AutoGUIWorld 论文",
+      "url": "https://arxiv.org/abs/2610.01215",
+      "section": "不打开软件，也能造出训练电脑 Agent 的操作轨迹？"
+    },
+    {
+      "label": "全文",
+      "url": "https://arxiv.org/html/2610.01215",
+      "section": "不打开软件，也能造出训练电脑 Agent 的操作轨迹？"
+    },
+    {
+      "label": "ROWBench 论文",
+      "url": "https://arxiv.org/abs/2610.02205",
+      "section": "视频看着对，事件真的按程序发生了吗？"
+    },
+    {
+      "label": "全文",
+      "url": "https://arxiv.org/html/2610.02205",
+      "section": "视频看着对，事件真的按程序发生了吗？"
+    }
+  ]
+}

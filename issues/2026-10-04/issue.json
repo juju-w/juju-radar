@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-04",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "kolibri",
+      "title": "🐦 德国 Kolibri 开放权重：78B 总量，实际每步只用 3.46B",
+      "category": "基础模型 / 开放权重 / 推理部署",
+      "score": 8.8,
+      "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+      "related_urls": [
+        "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+        "https://aleph-alpha.com/downloads/tech-report.pdf"
+      ],
+      "published_at": "2026-10-03",
+      "event_time": "2026-10-03",
+      "window_status": "window_date_confirmed_hour_unconfirmed",
+      "reason": "把德语专门训练、稀疏结构和实际服务并发放在同一模型里衡量；Apache 2.0权重可下载。",
+      "key_claims": [
+        "78.1B总参数、3.46B每token激活；德英双语；FP8权重Apache 2.0。",
+        "1M是扩展并验证的支持长度；原生长上下文训练至262,144 token，官方复杂任务推荐不超过该长度。",
+        "两张H100上，同团队123B试验模型仅3路256k并发，Kolibri为18路且解码快28%；属同团队特定测试，非通用基准。"
+      ]
+    },
+    {
+      "id": "xaira-xdesign",
+      "title": "🧬 Xaira 的抗体设计走到实验台：难靶点找到可继续优化的候选",
+      "category": "AI for Science / 生物医药",
+      "score": 8.6,
+      "url": "https://www.xaira.com/news/de-novo-design-of-progressable-antibodies-to-therapeutic-targets",
+      "related_urls": [
+        "https://www.xaira.com/news/progressable-binders-the-binders-that-matter"
+      ],
+      "published_at": "2026-10-02",
+      "event_time": "2026-10-02",
+      "window_status": "recent_catchup_outside_strict_window",
+      "reason": "不只报告结合率，而是在人源性、可开发性、跨物种结合和功能抑制上给出湿实验结果。",
+      "key_claims": [
+        "XA-1设计182条VHH，18条确认结合，3周得可继续推进的结合分子，7周到先导分子；目标表位和实验材料事先准备好。",
+        "XA-4设计6万条序列，筛出92条复测、7条结合、6条功能抑制；最佳候选IC50 183nM，进入先导优化，未进入临床。",
+        "Xaira称后续才提供系统评估；模型及原始数据未完整公开，跨靶点能力未获独立验证。"
+      ]
+    },
+    {
+      "id": "autoguiworld",
+      "title": "🖥️ 不打开软件，也能造出训练电脑 Agent 的操作轨迹？",
+      "category": "Agent / GUI世界模型 / 论文",
+      "score": 8.4,
+      "url": "https://arxiv.org/abs/2610.01215",
+      "related_urls": [
+        "https://arxiv.org/html/2610.01215"
+      ],
+      "published_at": "2026-10-01T15:22:53+08:00",
+      "event_time": "2026-10-01T15:22:53+08:00",
+      "window_status": "recent_catchup_outside_strict_window",
+      "reason": "用规划器给出动作和应有后果，再由图像模型逐帧生成桌面操作训练数据，摆脱部分软件安装与执行成本。",
+      "key_claims": [
+        "生成79,266个含空间标注的步骤，覆盖Ubuntu、Windows、macOS与Chrome。",
+        "Qwen3.5-35B-A3B在OSWorld平均任务分33.0升至40.8、ScienceBoard成功率14.0升至32.2，均为作者测试。",
+        "Chrome子项反而下降；生成画面可能看似合理却不符合真实软件状态，不能声称已替代真实交互。"
+      ]
+    },
+    {
+      "id": "rowbench",
+      "title": "🎬 视频看着对，事件真的按程序发生了吗？",
+      "category": "视频生成 / 世界模型 / 论文",
+      "score": 7.9,
+      "url": "https://arxiv.org/abs/2610.02205",
+      "related_urls": [
+        "https://arxiv.org/html/2610.02205"
+      ],
+      "published_at": "2026-10-02T01:59:53+08:00",
+      "event_time": "2026-10-02T01:59:53+08:00",
+      "window_status": "recent_catchup_outside_strict_window",
+      "reason": "用可执行事件记录而不只是视觉观感，检查视频模型能否遵守遮挡、重现和时间线。",
+      "key_claims": [
+        "论文标题为ROWBench，摘要称基准PROWBench；170段程序构造情节与600个代理视频。",
+        "记录物体状态、镜头外事件和时间戳，再用可观察结果核对生成视频。",
+        "覆盖的世界和相机设置有限，部分指标依赖视觉语言模型判别，不能据此给所有视频模型排总榜。"
+      ]
+    }
+  ]
+}

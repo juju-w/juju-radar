@@ -1,0 +1,37 @@
+{
+  "issue_date": "2026-10-04",
+  "papers": [
+    {
+      "id": "arxiv:2610.01215",
+      "title": "AutoGUIWorld: Image Generators as Visual World Models for GUI Agent",
+      "url": "https://arxiv.org/abs/2610.01215",
+      "doi": "10.48550/arXiv.2610.01215",
+      "published_date": "2026-10-01",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "近期补看"
+      ],
+      "creators": [],
+      "note": "用规划器与图像生成器合成GUI操作轨迹，减少软件安装运行成本。作者报告OSWorld平均任务分由33.0升至40.8、ScienceBoard成功率由14.0升至32.2，但Chrome子项下降，不能替代真实界面验收。\n\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-04/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2610.02205",
+      "title": "ROWBench: Do Video Models Render What the Program Specifies?",
+      "url": "https://arxiv.org/abs/2610.02205",
+      "doi": "10.48550/arXiv.2610.02205",
+      "published_date": "2026-10-01",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "近期补看"
+      ],
+      "creators": [],
+      "note": "建立可执行的视频世界事件记录，用物体状态、时间戳和镜头外事件核查视频生成。170段情节、600个代理视频；部分指标依赖视觉语言模型，且论文标题ROWBench、摘要称PROWBench。\n\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-04/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
