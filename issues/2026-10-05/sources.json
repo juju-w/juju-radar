@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "label": "Strata 10 月 4 日发布 v0.1.39",
+      "url": "https://github.com/Niko1221/Strata/releases/tag/v0.1.39",
+      "section": "Strata让125B模型在家用显卡上接待多路请求"
+    },
+    {
+      "label": "Qwen3.8-Flash-Next",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "section": "Strata让125B模型在家用显卡上接待多路请求"
+    },
+    {
+      "label": "Axios 10 月 4 日报道",
+      "url": "https://www.axios.com/2026/10/04/reflection-open-weight-ai",
+      "section": "Reflection准备发布开放权重模型，先瞄准企业私有部署"
+    },
+    {
+      "label": "公司官网写明",
+      "url": "https://reflection.ai/about",
+      "section": "Reflection准备发布开放权重模型，先瞄准企业私有部署"
+    },
+    {
+      "label": "《大西洋月刊》撰文",
+      "url": "https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/",
+      "section": "前安全报告负责人离开OpenAI，要求给高能力模型增加多层防护"
+    },
+    {
+      "label": "Hugging Face 事故",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "section": "前安全报告负责人离开OpenAI，要求给高能力模型增加多层防护"
+    },
+    {
+      "label": "OpenAI 发言人向 TechCrunch 回应",
+      "url": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+      "section": "前安全报告负责人离开OpenAI，要求给高能力模型增加多层防护"
+    }
+  ]
+}

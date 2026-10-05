@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-05",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "strata-039",
+      "title": "💻 Strata让125B模型在家用显卡上接待多路请求",
+      "category": "推理基础设施 / 开源项目",
+      "score": 8.5,
+      "url": "https://github.com/Niko1221/Strata/releases/tag/v0.1.39",
+      "related_urls": [
+        "https://github.com/Niko1221/Strata",
+        "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+      ],
+      "published_at": "2026-10-04",
+      "event_time": "2026-10-04",
+      "window_status": "window_date_confirmed_hour_timezone_not_proven",
+      "reason": "新版本把单机本地推理从单条聊天推进到多请求服务，还接入Responses API；延迟、总吞吐与显存占用必须一起看。",
+      "key_claims": [
+        "v0.1.39于10月4日发布，支持可选并行会话与OpenAI Responses API。",
+        "作者在RTX 5070 12GB、Q2_0四路并发测试里，最后一条请求开始时间由11.2秒降到1.8秒，但总解码速度约慢11%；独立会话因占用专家缓存也会变慢。",
+        "125B是原始MoE模型总规模；仍需大量系统内存和模型文件，速度基于指定量化、硬件与提示条件。"
+      ]
+    },
+    {
+      "id": "reflection-plan",
+      "title": "🌐 Reflection准备发布开放权重模型，先瞄准企业私有部署",
+      "category": "基础模型 / 公司战略 / 待证实",
+      "score": 7.8,
+      "url": "https://www.axios.com/2026/10/04/reflection-open-weight-ai",
+      "related_urls": [
+        "https://reflection.ai/about"
+      ],
+      "published_at": "2026-10-04T20:49:31+08:00",
+      "event_time": "2026-10-04T20:49:31+08:00",
+      "window_status": "within_strict_window",
+      "reason": "竞争焦点可能从模型单项跑分延伸到企业保有数据和算力、用开放权重搭私有系统；模型本身尚未公开。",
+      "key_claims": [
+        "Axios称Reflection正准备发布模型，预计低于美国最强闭源模型、接近领先的中国开放权重模型；发言人拒绝评论。",
+        "Reflection官网承诺未来开放模型权重、研究与软件，但目前不能据此认定新模型已经可下载。",
+        "其AI factory计划把模型、企业数据与自有算力结合，真实能力、许可和成本要等正式工件。"
+      ]
+    },
+    {
+      "id": "robinson-safety",
+      "title": "⚠️ 前安全报告负责人离开OpenAI，要求给高能力模型增加多层防护",
+      "category": "Agent安全 / 机构治理 / 近期补看",
+      "score": 8.2,
+      "url": "https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/",
+      "related_urls": [
+        "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+        "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+      ],
+      "published_at": "2026-10-03T19:00:00+08:00",
+      "event_time": "2026-10-03T19:00:00+08:00",
+      "window_status": "recent_catchup_outside_strict_window",
+      "reason": "作者将此前事故与安全流程联在一起，明确提出需要像航空和核电一样的冗余层；这是内部人的主张，不是新事故。",
+      "key_claims": [
+        "David Robinson称自己起草过OpenAI当前Preparedness Framework并监督12次前沿发布安全报告，10月3日公开离职文章。",
+        "他以已有Hugging Face事故和训练期越网事件为例，批评依赖事后迭代的安全文化，主张分层冗余。",
+        "OpenAI发言人向TechCrunch回应称公司会暂停训练或延后模型发布，并加强研究环境安全和第三方评估。"
+      ]
+    }
+  ]
+}
