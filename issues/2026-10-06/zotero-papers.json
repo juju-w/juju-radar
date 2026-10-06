@@ -1,0 +1,79 @@
+{
+  "issue_date": "2026-10-06",
+  "papers": [
+    {
+      "id": "textgrain-2026",
+      "title": "textGrain: Entropy-Calibrated Watermarking for Language Model Text",
+      "url": "https://cdn.openai.com/pdf/e9508624-d767-41b6-a26d-e34ca798ada6/textgrain-entropy-calibrated-watermarking-for-language-model-text.pdf",
+      "doi": null,
+      "published_date": "2026-10-05",
+      "item_type": "report",
+      "tags": [
+        "Juju Radar",
+        "文本水印",
+        "内容溯源",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "firstName": "Xiang",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Garrett",
+          "lastName": "Wen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xiaohong",
+          "lastName": "Chen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Qi",
+          "lastName": "Long",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Arzav",
+          "lastName": "Jain",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Florent",
+          "lastName": "Joly",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mike",
+          "lastName": "Lam",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Qingquan",
+          "lastName": "Song",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Weijie",
+          "lastName": "Su",
+          "creatorType": "author"
+        }
+      ],
+      "note": "OpenAI同期技术报告把文本水印建模成受熵损预算约束的密钥采样耦合；检测器仅需文本和密钥。官方演示显示短文本及同义改写明显降低检出率，水印不能证明作者身份或文本真实性。\n\n原始报告：https://cdn.openai.com/pdf/e9508624-d767-41b6-a26d-e34ca798ada6/textgrain-entropy-calibrated-watermarking-for-language-model-text.pdf\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-06/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "authors": [
+        "Xiang Li",
+        "Garrett Wen",
+        "Xiaohong Chen",
+        "Qi Long",
+        "Arzav Jain",
+        "Florent Joly",
+        "Mike Lam",
+        "Qingquan Song",
+        "Weijie Su"
+      ]
+    }
+  ]
+}
