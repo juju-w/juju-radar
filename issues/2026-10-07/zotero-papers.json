@@ -1,0 +1,59 @@
+{
+  "issue_date": "2026-10-07",
+  "papers": [
+    {
+      "id": "arxiv:2610.06577",
+      "title": "Optimizing the Optimizer: Language Models Discover Faster Molecular Relaxation",
+      "url": "https://arxiv.org/abs/2610.06577",
+      "doi": "10.48550/arXiv.2610.06577",
+      "published_date": "2026-10-05",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "AI for Science",
+        "计算化学",
+        "补看",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "firstName": "Artem",
+          "lastName": "Tsypin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Vladimir",
+          "lastName": "Deshchenya",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kuzma",
+          "lastName": "Khrabrov",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Denis",
+          "lastName": "Potapov",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Maxim",
+          "lastName": "Radchenko",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Artur",
+          "lastName": "Kadurin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Michael G.",
+          "lastName": "Medvedev",
+          "creatorType": "author"
+        }
+      ],
+      "note": "AutoSella让多个大模型在Sella基础上改写分子几何优化器，按受力调用次数和能量下降评估，用防止早停和留出分子泛化两道准入门筛选。作者在r2SCAN-3c DFT设置中报告，同等能量下降所需受力调用为Sella的40.2%—77.2%；这不是总壁钟时间，也未获独立复测。论文北京时间10月5日23:55提交，作为10月7日近期补看收录。\n\n原文：https://arxiv.org/abs/2610.06577\n代码：https://github.com/vdeshchenya/autosella\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-07/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

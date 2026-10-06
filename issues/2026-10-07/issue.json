@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-07",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "openai-math-collection",
+      "title": "🧮 OpenAI公开722份数学稿件，核验工作才刚开始",
+      "category": "AI for Science / 数学",
+      "score": 9.7,
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "related_urls": [
+        "https://github.com/openai/math",
+        "https://github.com/openai/math/blob/main/CONTENTS.md"
+      ],
+      "published_at": "2026-10-06",
+      "event_time": "2026-10-06",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "首次把大量模型产出的数学稿件、部分Lean形式化和产生过程一同开放；学界审核能力将成为关键瓶颈。",
+      "key_claims": [
+        "官方仓库列出722篇手稿、372个结果家族；不是722个已经被证实的新定理。",
+        "部分证明附Lean形式化，仍有许多稿件未形式化；仓库明确提示未形式化结果可能有问题。",
+        "未公开内部模型权重；平均每项用约3小时ChatGPT Pro等价推理计算，约4000道问题进入评估。"
+      ]
+    },
+    {
+      "id": "mistral-large-4",
+      "title": "🧠 Mistral Large 4开放预览：欧洲前沿模型开始争夺专业任务",
+      "category": "基础模型 / 多模态",
+      "score": 9.2,
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "related_urls": [
+        "https://docs.mistral.ai/resources/changelogs"
+      ],
+      "published_at": "2026-10-06",
+      "event_time": "2026-10-06",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "1T总参数、49B激活参数的多模态稀疏模型进入公开API预览，并承诺月内开放权重；欧洲自有算力与模型训练连接成产品。",
+      "key_claims": [
+        "公开API预览已开，权重、完整训练方法与更多评测承诺10月底公布。",
+        "Mistral称在欧洲自有数据中心用3800张NVIDIA Grace Blackwell GPU训练。",
+        "代码、网络安全、专业工作流成绩主要由厂商披露，不能据此判定全面领先。"
+      ]
+    },
+    {
+      "id": "openai-decisions-beta",
+      "title": "🎯 OpenAI Decisions API公测：把高频判断从长回答里拆出来",
+      "category": "决策模型 / Agent基础设施",
+      "score": 9.0,
+      "url": "https://developers.openai.com/api/docs/guides/decisions",
+      "related_urls": [
+        "https://community.openai.com/t/decisions-api-is-now-available-in-public-beta/1403877",
+        "https://developers.openai.com/api/reference/resources/decisions/methods/create"
+      ],
+      "published_at": "2026-10-06",
+      "event_time": "2026-10-06",
+      "window_status": "community_announcement_local_timezone_unconfirmed",
+      "reason": "9月已宣布的接口现进入所有开发者可用公测；专用端点输出谓词概率、选项或评分，产品形态从演示进入调用。",
+      "key_claims": [
+        "当前只支持GPT-6 Luna；接受文本与图像，经/v1/decisions返回预定义问题的答案。",
+        "官方称相对Luna的Responses API最多快10倍，未给跨任务独立测评。",
+        "用途是固定候选的判定与路由，不等于任意JSON抽取；其概率也不自动保证在实际场景校准。"
+      ]
+    },
+    {
+      "id": "embeddinggemma-2",
+      "title": "🔎 Google把图文音视频放进一个可本地运行的检索模型",
+      "category": "开源模型 / 多模态检索",
+      "score": 8.8,
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "related_urls": [
+        "https://huggingface.co/google/embeddinggemma-2",
+        "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
+      ],
+      "published_at": "2026-10-06",
+      "event_time": "2026-10-06",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "已发布Apache-2.0权重的740M多模态嵌入模型，把跨媒体检索推向离线和端侧，同时允许按输入模态裁掉编码器。",
+      "key_claims": [
+        "文本、代码、图像、视频和音频映射到统一768维向量；完整模型740M参数，纯文本只需270M。",
+        "Google在Pixel 11 Pro上报告量化后约191MB纯文本与567MB全模态活动内存，这不是所有手机的保证。",
+        "模型卡提醒半精度float16可能产生NaN或劣化；128维截断对多模态质量有明显损失。"
+      ]
+    },
+    {
+      "id": "personal-agent-protocol",
+      "title": "🔐 Meta与Sierra提议给个人Agent建立商家授权通道",
+      "category": "Agent协议 / 公司战略",
+      "score": 8.5,
+      "url": "https://sierra.ai/uk/blog/introducing-personal-agent-protocol",
+      "related_urls": [],
+      "published_at": "2026-10-06",
+      "event_time": "2026-10-06",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "跨厂商阵营开始讨论个人Agent代用户与商家交易时的身份、权限和会话，而非继续靠模拟人点网页。",
+      "key_claims": [
+        "Meta、Sierra与Genesys、Shopify、Stripe、Walmart等伙伴共同提出协议。",
+        "方案以OAuth会话区分只读和写入授权，商家决定让Agent走网页、API还是自有Agent。",
+        "v0.1规范及参考实现尚未公开，不能说商家已经按这一协议接入或完成安全验证。"
+      ]
+    },
+    {
+      "id": "autosella",
+      "title": "🧪 近期补看：Agent改写分子优化器，少算昂贵的受力步骤",
+      "category": "AI for Science / 论文与代码",
+      "score": 8.3,
+      "url": "https://arxiv.org/abs/2610.06577",
+      "related_urls": [
+        "https://arxiv.org/html/2610.06577v1",
+        "https://github.com/vdeshchenya/autosella"
+      ],
+      "published_at": "2026-10-05T23:55:31+08:00",
+      "event_time": "2026-10-05T23:55:31+08:00",
+      "window_status": "catchup_outside_24h_by_7h04m",
+      "reason": "提交时间比本期窗口早约7小时，在72小时补看内；代码和复现实验材料已经公开，方法具有跨领域的新意。",
+      "key_claims": [
+        "Agent修改经典Sella优化器代码，两道准入门防止过早停止和只对已见分子有效的改进。",
+        "作者报告r2SCAN-3c密度泛函计算中，同等能量下降所需受力调用为Sella的40.2%—77.2%；这是作者实验，不等于总成本同比下降。",
+        "论文是10月5日UTC提交，不能写成10月6日或7日首发；仓库含多个模型产生的冻结版本。"
+      ]
+    }
+  ]
+}

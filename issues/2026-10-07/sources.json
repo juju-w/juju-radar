@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "label": "OpenAI 公开了数学成果合集",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "section": "OpenAI公开722份数学稿件，核验工作才刚开始"
+    },
+    {
+      "label": "GitHub 仓库",
+      "url": "https://github.com/openai/math",
+      "section": "OpenAI公开722份数学稿件，核验工作才刚开始"
+    },
+    {
+      "label": "Mistral 发布 Large 4 的公开预览",
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "section": "Mistral Large 4开放预览：欧洲前沿模型开始争夺专业任务"
+    },
+    {
+      "label": "官方更新记录",
+      "url": "https://docs.mistral.ai/resources/changelogs",
+      "section": "Mistral Large 4开放预览：欧洲前沿模型开始争夺专业任务"
+    },
+    {
+      "label": "10 月 6 日的开发者公告",
+      "url": "https://community.openai.com/t/decisions-api-is-now-available-in-public-beta/1403877",
+      "section": "OpenAI Decisions API公测：把高频判断从长回答里拆出来"
+    },
+    {
+      "label": "接口文档",
+      "url": "https://developers.openai.com/api/docs/guides/decisions",
+      "section": "OpenAI Decisions API公测：把高频判断从长回答里拆出来"
+    },
+    {
+      "label": "Google 发布 EmbeddingGemma 2",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "section": "Google把图文音视频放进一个可本地运行的检索模型"
+    },
+    {
+      "label": "开放权重",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "section": "Google把图文音视频放进一个可本地运行的检索模型"
+    },
+    {
+      "label": "Sierra 宣布与 Meta 等公司共建 Personal Agent Protocol",
+      "url": "https://sierra.ai/uk/blog/introducing-personal-agent-protocol",
+      "section": "Meta与Sierra提议给个人Agent建立商家授权通道"
+    },
+    {
+      "label": "分子几何优化论文",
+      "url": "https://arxiv.org/abs/2610.06577",
+      "section": "近期补看：Agent改写分子优化器，少算昂贵的受力步骤"
+    },
+    {
+      "label": "代码仓库",
+      "url": "https://github.com/vdeshchenya/autosella",
+      "section": "近期补看：Agent改写分子优化器，少算昂贵的受力步骤"
+    },
+    {
+      "label": "EmbeddingGemma 2 模型卡",
+      "url": "https://huggingface.co/google/embeddinggemma-2/",
+      "section": "推荐阅读"
+    }
+  ]
+}
