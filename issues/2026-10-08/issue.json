@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-08",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "gpt6-intelligent-ui",
+      "title": "🧭 GPT-6进聊天页，回答开始变成可操作界面",
+      "category": "基础模型 / 交互",
+      "score": 9.5,
+      "url": "https://openai.com/index/gpt-6-for-everyone/",
+      "related_urls": [
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+      ],
+      "published_at": "2026-10-07",
+      "event_time": "2026-10-07",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "GPT-6此前已供付费用户使用；今天的新事件是ChatGPT聊天页推出Intelligent UI和交错式回答。",
+      "key_claims": [
+        "模型可组合图表、按钮、表单和交互工具；原生组件库与流式编译器让界面边生成边出现。",
+        "Plus/Pro/Business/Enterprise 10月7日开始推送，Free/Go 10月8日扩展；Work和Codex模型不随此次发布变化。",
+        "网页搜索问题平均早44%开始回答是OpenAI内部对GPT-5.6 Instant的评估，不等于最终答案质量提升44%。"
+      ]
+    },
+    {
+      "id": "claude-haiku-55",
+      "title": "⚡ Haiku 5.5把低价模型推到可办事的档位",
+      "category": "基础模型 / Agent成本",
+      "score": 9.2,
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "related_urls": [
+        "https://platform.claude.com/docs/en/models/haiku-5-5/overview"
+      ],
+      "published_at": "2026-10-07",
+      "event_time": "2026-10-07",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "新一代Haiku发布，重点是让高频Agent步骤以较低调用成本完成，而不是只看对话质量。",
+      "key_claims": [
+        "官方给出100k token以内每百万输入/输出token 0.10/0.50美元的标价；长上下文价格另算。",
+        "Anthropic称相对Haiku 4.5平均运行成本低75%，且首次为Haiku提供可调节的推理强度。",
+        "OSWorld 2.1等成绩由厂商按指定设置测得，不能据此推断所有桌面任务已可靠或必然更便宜。"
+      ]
+    },
+    {
+      "id": "mxc-rtx-spark",
+      "title": "🛡️ Windows给AI Agent划边界，本地大内存电脑也来了",
+      "category": "Agent安全 / 端侧算力",
+      "score": 9.0,
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+      "related_urls": [
+        "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+        "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/"
+      ],
+      "published_at": "2026-10-07",
+      "event_time": "2026-10-07",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "Microsoft Execution Containers正式可用，NVIDIA同期开放Windows RTX Spark预订，把本地Agent计算与权限隔离同时推向产品。",
+      "key_claims": [
+        "MXC以外部策略限制Agent的文件、网络和界面访问；Windows会话可采用独立OS身份、桌面和剪贴板。",
+        "Windows 11上的MXC已正式可用；MicroVM模式仍属实验，不能说全部形态已GA。",
+        "RTX Spark机型10月7日开始预订、10月16日供应；128GB统一内存和1PF FP4峰值为特定硬件口径，不是实际Agent吞吐保证。"
+      ]
+    },
+    {
+      "id": "vllm-deepseek-v41-serving",
+      "title": "🚀 vLLM为DeepSeek旧模型提速，关键在少算重复上下文",
+      "category": "推理基础设施 / 开源",
+      "score": 8.8,
+      "url": "https://vllm.ai/blog/2026-10-07-deepseek-v41-flash",
+      "related_urls": [],
+      "published_at": "2026-10-07",
+      "event_time": "2026-10-07",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "模型并非今天首发；新进展是vLLM公开针对DeepSeek-V4.1-Flash的服务优化与测试。",
+      "key_claims": [
+        "优化包括限制滑动窗口重放、CUDA Graph、融合算子和FP4 KV缓存；目标是削减长序列与高并发开销。",
+        "vLLM在特定GB200/GB300、配置和SemiAnalysis AgentX负载下自报低并发约1.9倍、150TPS时约5.3倍吞吐改善。",
+        "滑动窗口近似可能非逐位等价；作者在GSM8K、GPQA上的小规模检查不足以证明所有任务无质量损失。"
+      ]
+    },
+    {
+      "id": "perplexity-pplx-embed-late",
+      "title": "🔎 Perplexity让大小模型共用图文检索索引",
+      "category": "开源模型 / 多模态检索",
+      "score": 8.6,
+      "url": "https://www.perplexity.ai/hub/blog/multimodal-embeddings-beyond-a-single-vector/",
+      "related_urls": [
+        "https://community.perplexity.ai/t/were-releasing-pplx-embed-v2-late-two-late-interaction-embedding-models-that-retrieve-text-images-and-pages-with-a-shared-embedding-space-for-cross-model-querying/6296",
+        "https://huggingface.co/collections/perplexity-ai/pplx-embed-v2"
+      ],
+      "published_at": "2026-10-07T16:30:00Z",
+      "event_time": "2026-10-08T00:30:00+08:00",
+      "window_status": "within_strict_window_announcement",
+      "reason": "两套开放权重的late-interaction模型共享向量空间，可用大模型离线建库、小模型在线查询。",
+      "key_claims": [
+        "9B和0.6B模型为文本、图片和网页页面生成多个局部向量，检索时再比较，不强制先OCR成文字。",
+        "训练以18B教师蒸馏，使大索引与小查询能混用；Perplexity称跨领域基准比小/小组合高1.6个百分点。",
+        "多向量索引和逐项打分增加存储、检索成本；测试来自厂商，技术报告尚待公开。"
+      ]
+    },
+    {
+      "id": "synthid-detector-public",
+      "title": "🔍 Google开放SynthID检测，但查不到水印不等于真人作品",
+      "category": "AI内容溯源 / 安全",
+      "score": 8.2,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+      "related_urls": [],
+      "published_at": "2026-10-07",
+      "event_time": "2026-10-07",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "此前面向媒体专业人士的检测工具扩大到全球英文公众，可验证参与生态的水印内容。",
+      "key_claims": [
+        "支持检查图片、视频与音频中的SynthID水印；Google称全球英文用户现可使用。",
+        "只覆盖采用SynthID的Google和合作伙伴生成内容，不是任何AI内容的通用鉴定器。",
+        "水印可能受处理与转码影响；未检出不能反证素材由人制作。"
+      ]
+    }
+  ]
+}

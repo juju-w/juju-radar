@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "label": "OpenAI在10月7日宣布",
+      "url": "https://openai.com/index/gpt-6-for-everyone/",
+      "section": "GPT-6进聊天页，回答开始变成可操作界面"
+    },
+    {
+      "label": "ChatGPT更新记录",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "section": "GPT-6进聊天页，回答开始变成可操作界面"
+    },
+    {
+      "label": "Anthropic发布Claude Haiku 5.5",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "section": "Haiku 5.5把低价模型推到可办事的档位"
+    },
+    {
+      "label": "模型文档",
+      "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+      "section": "Haiku 5.5把低价模型推到可办事的档位"
+    },
+    {
+      "label": "微软宣布Execution Containers正式可用",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+      "section": "Windows给AI Agent划边界，本地大内存电脑也来了"
+    },
+    {
+      "label": "微软还介绍了Windows的本地与云端AI路线",
+      "url": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+      "section": "Windows给AI Agent划边界，本地大内存电脑也来了"
+    },
+    {
+      "label": "NVIDIA则介绍Windows RTX Spark机型",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/",
+      "section": "Windows给AI Agent划边界，本地大内存电脑也来了"
+    },
+    {
+      "label": "vLLM公开了DeepSeek-V4.1-Flash的新服务优化",
+      "url": "https://vllm.ai/blog/2026-10-07-deepseek-v41-flash",
+      "section": "vLLM为DeepSeek旧模型提速，关键在少算重复上下文"
+    },
+    {
+      "label": "Perplexity发布pplx-embed-v2-late系列",
+      "url": "https://www.perplexity.ai/hub/blog/multimodal-embeddings-beyond-a-single-vector/",
+      "section": "Perplexity让大小模型共用图文检索索引"
+    },
+    {
+      "label": "放出了0.6B和9B两套权重",
+      "url": "https://huggingface.co/collections/perplexity-ai/pplx-embed-v2",
+      "section": "Perplexity让大小模型共用图文检索索引"
+    },
+    {
+      "label": "官方论坛公告",
+      "url": "https://community.perplexity.ai/t/were-releasing-pplx-embed-v2-late-two-late-interaction-embedding-models-that-retrieve-text-images-and-pages-with-a-shared-embedding-space-for-cross-model-querying/6296",
+      "section": "Perplexity让大小模型共用图文检索索引"
+    },
+    {
+      "label": "Google宣布向全球英文用户开放SynthID检测工具",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+      "section": "Google开放SynthID检测，但查不到水印不等于真人作品"
+    }
+  ]
+}
