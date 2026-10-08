@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "label": "Hugging Face生物团队发布Carbon-A与Carbon Annotation Database",
+      "url": "https://huggingface.co/blog/HuggingFaceBio/carbon-annotator-genbank-genome-annotation",
+      "section": "Carbon-A标注两万多种生物，基因预测进入大规模筛查"
+    },
+    {
+      "label": "模型权重和使用说明",
+      "url": "https://huggingface.co/HuggingFaceBio/Carbon-A-1.2B",
+      "section": "Carbon-A标注两万多种生物，基因预测进入大规模筛查"
+    },
+    {
+      "label": "Zenity Labs在10月8日公开AgentCorruption研究",
+      "url": "https://labs.zenity.io/post/agentcorruption-how-a-single-prompt-collapsed-the-entire-cloud-security-model",
+      "section": "一次提示注入，为什么能越过Agent的云端权限边界"
+    },
+    {
+      "label": "分步技术报告",
+      "url": "https://labs.zenity.io/post/agentcorruption-one-role-to-rule-them-all",
+      "section": "一次提示注入，为什么能越过Agent的云端权限边界"
+    },
+    {
+      "label": "AWS回应媒体",
+      "url": "https://thenextweb.com/news/aws-agentcore-zenity-agentcorruption-one-prompt-agents",
+      "section": "一次提示注入，为什么能越过Agent的云端权限边界"
+    },
+    {
+      "label": "OpenAI披露并封禁两组使用ChatGPT的影响行动账户",
+      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations/",
+      "section": "假记者、真投稿：AI影响行动绕过了内容平台这道门"
+    },
+    {
+      "label": "Google在10月8日开源ML Drift",
+      "url": "https://developers.googleblog.com/en/ml-drift-next-gen-gpu-aiml-inference-at-the-edge/",
+      "section": "Google把端侧GPU推理引擎单独开源"
+    },
+    {
+      "label": "代码仓库",
+      "url": "https://github.com/google-ai-edge/ml-drift",
+      "section": "Google把端侧GPU推理引擎单独开源"
+    },
+    {
+      "label": "Comfy团队公开了ComfyStreamerH3的实现",
+      "url": "https://blog.comfy.org/p/how-i-generated-live-video-with-minimax",
+      "section": "单张5090连续生成视频：速度来自整条链的缩减"
+    },
+    {
+      "label": "代码和运行记录",
+      "url": "https://github.com/Comfy-Org/comfystreamerh3",
+      "section": "单张5090连续生成视频：速度来自整条链的缩减"
+    },
+    {
+      "label": "NVIDIA团队的Long-WAM论文",
+      "url": "https://arxiv.org/abs/2610.10528",
+      "section": "近期补看：Long-WAM让机器人学会使用更长的历史"
+    },
+    {
+      "label": "项目仓库",
+      "url": "https://github.com/NVlabs/LongLive",
+      "section": "近期补看：Long-WAM让机器人学会使用更长的历史"
+    }
+  ]
+}

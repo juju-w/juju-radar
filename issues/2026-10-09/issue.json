@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-09",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "carbon-a",
+      "title": "🧬 Carbon-A标注两万多种生物，基因预测进入大规模筛查",
+      "category": "AI for Science / 基因组学",
+      "score": 9.4,
+      "url": "https://huggingface.co/blog/HuggingFaceBio/carbon-annotator-genbank-genome-annotation",
+      "related_urls": [
+        "https://huggingface.co/HuggingFaceBio/Carbon-A-1.2B",
+        "https://huggingface.co/buckets/HuggingFaceBio/Carbon-A-Technical-Report",
+        "https://huggingface.co/collections/HuggingFaceBio/carbon-annotation-database"
+      ],
+      "published_at": "2026-10-08",
+      "event_time": "2026-10-08",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "单个跨物种注释模型和大规模候选目录同时公开；有部分长读长RNA实验佐证，尚无大规模蛋白功能确认。",
+      "key_claims": [
+        "技术报告为Unified Eukaryotic Genome Annotation，15位作者；1.2B参数，在42个基准基因组上报告0.944逐碱基宏平均F1。",
+        "数据库含48,167份组装、22,617个分类单元、566.34百万个预测蛋白编码位点；不等于全部为新发现或经实验证实。",
+        "猫、叙利亚仓鼠、鸡和拟南芥Iso-Seq为部分参考数据库外候选提供转录证据；不能证明蛋白翻译或功能。"
+      ]
+    },
+    {
+      "id": "agentcorruption",
+      "title": "🛡️ 一次提示注入，为什么能越过Agent的云端权限边界",
+      "category": "Agent安全 / 云基础设施",
+      "score": 9.5,
+      "url": "https://labs.zenity.io/post/agentcorruption-how-a-single-prompt-collapsed-the-entire-cloud-security-model",
+      "related_urls": [
+        "https://labs.zenity.io/post/agentcorruption-one-role-to-rule-them-all",
+        "https://labs.zenity.io/post/agentcorruption-weaponizing-agent-memory-for-persistent-hijacking",
+        "https://thenextweb.com/news/aws-agentcore-zenity-agentcorruption-one-prompt-agents"
+      ],
+      "published_at": "2026-10-08",
+      "event_time": "2026-10-08",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "研究者复现IMDS凭据获取、旧默认角色的同账户同区域横向访问；关键权限在公开前已收紧，AWS反对漏洞定性。",
+      "key_claims": [
+        "开放Agent通过网络工具访问IMDS取得临时身份；旧默认IAM角色允许跨Agent调用、会话读取、秘密访问和记忆写入。",
+        "Zenity 2025-12和2026-01报告；2026-09-29复查发现相关默认权限被明显收紧。",
+        "AWS经媒体表示这是预期且已文档化的行为，不同意漏洞定性；研究仅覆盖同一账户、同一区域及特定权限配置。"
+      ]
+    },
+    {
+      "id": "openai-false-front",
+      "title": "📰 假记者、真投稿：AI影响行动绕过了内容平台这道门",
+      "category": "AI滥用 / 信息安全",
+      "score": 9.1,
+      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations/",
+      "related_urls": [],
+      "published_at": "2026-10-08",
+      "event_time": "2026-10-08",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "两起已封禁影响行动通过模型维持假身份、润色文章和邮件，把材料送进真实投稿与组织渠道。",
+      "key_claims": [
+        "OpenAI识别伊朗相关行动七个假记者笔名，公开资料找到近百篇相关刊登或转载文章。",
+        "俄罗斯相关行动利用拉美研究平台及假身份；OpenAI按Breakout Scale评为5类，伊朗行动评为4类。",
+        "操作者夸大战果、部分事件未能公开核证；等级是传播范围评估而非受众被说服数量。"
+      ]
+    },
+    {
+      "id": "google-ml-drift",
+      "title": "📱 Google把端侧GPU推理引擎单独开源",
+      "category": "端侧推理 / 开源基础设施",
+      "score": 8.9,
+      "url": "https://developers.googleblog.com/en/ml-drift-next-gen-gpu-aiml-inference-at-the-edge/",
+      "related_urls": [
+        "https://github.com/google-ai-edge/ml-drift"
+      ],
+      "published_at": "2026-10-08",
+      "event_time": "2026-10-08",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "LiteRT底层GPU引擎公开为独立Apache 2.0库，统一不同GPU接口的张量和着色器；旧TFLite GPU delegate停止新增特性。",
+      "key_claims": [
+        "跨OpenGL ES/OpenCL/Metal/WebGPU，支持5D张量、自定义算子和LLM prefill/decode分阶段优化。",
+        "Google称已用于Chrome、YouTube Shorts、Photos、Meet；Shorts特定效果平均帧延迟最多降40%。",
+        "桌面WebGPU目前是预览；厂商产品指标不能推广为任意模型设备的速度增益。"
+      ]
+    },
+    {
+      "id": "comfy-h3-streamer",
+      "title": "🎬 单张5090连续生成视频：速度来自整条链的缩减",
+      "category": "视频生成 / 推理工程",
+      "score": 8.5,
+      "url": "https://blog.comfy.org/p/how-i-generated-live-video-with-minimax",
+      "related_urls": [
+        "https://github.com/Comfy-Org/comfystreamerh3",
+        "https://github.com/Comfy-Org/comfystreamerh3/tree/main/benchmark-results/fast-h3-15s-rtx5090-2026-10-06"
+      ],
+      "published_at": "2026-10-08",
+      "event_time": "2026-10-08",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "四步蒸馏模型、小文本编码器、稀疏注意力、量化与重叠编码，让低分辨率视频生成进入单张RTX 5090。",
+      "key_claims": [
+        "仓库记录热启动、448×256、两段各15.08秒，11次任务中位数23.51秒，即1.28倍实时吞吐。",
+        "显存从约80GB降至30GB以下；使用FastVideo蒸馏H3而非未改动原版。",
+        "画质、分辨率和长时稳定性仍是限制；不是高分辨率成片成本或速度保证。"
+      ]
+    },
+    {
+      "id": "long-wam",
+      "title": "🤖 近期补看：Long-WAM让机器人学会使用更长的历史",
+      "category": "机器人 / 世界动作模型",
+      "score": 8.8,
+      "url": "https://arxiv.org/abs/2610.10528",
+      "related_urls": [
+        "https://github.com/NVlabs/LongLive",
+        "https://github.com/NVlabs/LongLive/tree/main/Long-WAM"
+      ],
+      "published_at": "2026-10-07T17:58:04Z",
+      "event_time": "2026-10-07T17:58:04Z",
+      "window_status": "recent_supplement_outside_strict_window",
+      "reason": "论文10月7日17:58 UTC提交，10月8日进每日论文页；自回归视频底座保留历史到未来的结构，再用于实时机器人动作。",
+      "key_claims": [
+        "RoboCasa GR-1历史从0到19.2秒，作者报告成功率63.3%至78.7%；双向预训练底座没有净收益。",
+        "RTX 5090每段动作含未来预测约107.4ms；动态叠杯95%为指定真机任务的作者结果。",
+        "代码和检查点开放，尚需独立复测与更多场景验证。"
+      ]
+    }
+  ]
+}

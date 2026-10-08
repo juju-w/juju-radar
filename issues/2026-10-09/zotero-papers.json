@@ -1,0 +1,197 @@
+{
+  "issue_date": "2026-10-09",
+  "papers": [
+    {
+      "id": "report:carbon-a-2026-10-08",
+      "title": "Unified Eukaryotic Genome Annotation: From Gene Prediction to Carbon Annotation Database",
+      "url": "https://huggingface.co/buckets/HuggingFaceBio/Carbon-A-Technical-Report",
+      "doi": null,
+      "published_date": "2026-10-08",
+      "item_type": "report",
+      "creators": [
+        {
+          "firstName": "Georgia",
+          "lastName": "Channing",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zhenghang",
+          "lastName": "Shi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xiaoxing",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mathieu",
+          "lastName": "Morlon",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kashif",
+          "lastName": "Rasul",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Anton",
+          "lastName": "Lozhkov",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shikun",
+          "lastName": "Feng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jiaoyang",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Haiguang",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Diego",
+          "lastName": "di Bernardo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Nieng",
+          "lastName": "Yan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tao",
+          "lastName": "Qin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Thomas",
+          "lastName": "Wolf",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Leandro",
+          "lastName": "von Werra",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Qiuyi",
+          "lastName": "Li",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "AI for Science",
+        "基因组学",
+        "待阅读"
+      ],
+      "note": "Carbon-A用单个1.2B参数模型在多类真核生物的DNA上逐碱基预测蛋白编码区。技术报告和博客给出48,167份组装、22,617个分类单元、约5.66亿个预测位点。它们是待验证候选，不等于新发现或功能确认。42基因组基准报告逐碱基F1 0.944；猫、仓鼠、鸡和拟南芥的Iso-Seq支持部分RefSeq外位点的转录结构，但不证明蛋白翻译。模型权重和目录已开放。\n\n原文：https://huggingface.co/buckets/HuggingFaceBio/Carbon-A-Technical-Report\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-09/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "arxiv:2610.10528",
+      "title": "Long-WAM: Scaling the Context of World-Action Models",
+      "url": "https://arxiv.org/abs/2610.10528",
+      "doi": "10.48550/arXiv.2610.10528",
+      "published_date": "2026-10-07",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Wei",
+          "lastName": "Huang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bohan",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Chenzhi",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Isabella",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shuai",
+          "lastName": "Yang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Weian",
+          "lastName": "Mao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Luozhou",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yicheng",
+          "lastName": "Xiao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Weifeng",
+          "lastName": "Lin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Qixin",
+          "lastName": "Hu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bryan",
+          "lastName": "Chu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sifei",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Linxi",
+          "lastName": "Fan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xiaojuan",
+          "lastName": "Qi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Song",
+          "lastName": "Han",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yukang",
+          "lastName": "Chen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人",
+        "世界动作模型",
+        "补看",
+        "待阅读"
+      ],
+      "note": "Long-WAM先在机器人和第一视角视频上做自回归预测预训练，再适配动作任务，让长视觉历史服务于未来动作。作者报告RoboCasa GR-1的历史从0增至19.2秒时成功率63.3%增至78.7%；双向预训练底座延长历史无净收益。RTX 5090每段动作约107.4ms和动态叠杯95%均是作者特定条件结果，尚待跨场景独立复测。论文10月7日17:58 UTC提交，超出10月9日期严格窗口，作为近期补看。\n\n原文：https://arxiv.org/abs/2610.10528\n代码：https://github.com/NVlabs/LongLive/tree/main/Long-WAM\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-09/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
