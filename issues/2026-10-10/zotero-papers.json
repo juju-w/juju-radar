@@ -1,0 +1,49 @@
+{
+  "issue_date": "2026-10-10",
+  "papers": [
+    {
+      "id": "arxiv:2610.12369",
+      "title": "Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement",
+      "url": "https://arxiv.org/abs/2610.12369",
+      "doi": "10.48550/arXiv.2610.12369",
+      "published_date": "2026-10-08",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Kairui",
+          "lastName": "Hu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Siyuan",
+          "lastName": "Hu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Fangzhou",
+          "lastName": "Hong",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zhaoxi",
+          "lastName": "Chen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ziwei",
+          "lastName": "Liu",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人",
+        "可执行策略",
+        "补看",
+        "待阅读"
+      ],
+      "note": "论文提出Code-Only-as-Policy：编码Agent在离线环境中开发共享代码库，机器人运行时由代码测量与维护显式状态，再由固定规则选动作，无须每步调用VLM/VLA。作者报告RoboDojo 42个双臂仿真任务平均成功率70.24%，最强对照31.38%。然而全部结果在仿真中，程序利用已知相机参数、机器人模型和物体尺寸；真机是否能保持精度与泛化尚未证明。论文2026-10-08 17:29 UTC提交，北京时间10月9日01:29，超出本期严格窗口，作近期补看。\n\n原文：https://arxiv.org/abs/2610.12369\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-10/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

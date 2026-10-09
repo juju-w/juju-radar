@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-10",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "poppy-draft",
+      "title": "🪪 Poppy拿出协议草案：个人Agent怎样获得商家授权",
+      "category": "Agent协议 / 身份与授权",
+      "score": 9.2,
+      "url": "https://sierra.ai/blog/poppy",
+      "related_urls": [
+        "https://personalagentprotocol.org/",
+        "https://sierra.ai/blog/introducing-personal-agent-protocol"
+      ],
+      "published_at": "2026-10-09",
+      "event_time": "2026-10-09",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "10月6日宣布合作、10月9日才公开可读草案；把发现、身份、授权与跨网页/API/企业Agent会话串在一起，但尚无广泛互操作实测。",
+      "key_claims": [
+        "企业站点通过/.well-known/poppy.json告知发现与登录方式。",
+        "用户在企业页面经OAuth登录；短期JWT贯穿API、网页和企业Agent会话。",
+        "Sierra称35家新设计伙伴加入；参与设计不等于已部署。"
+      ]
+    },
+    {
+      "id": "anthropic-philly",
+      "title": "⚠️ AI测试向警方投出假线索，直到两个多月后才发现",
+      "category": "真实AI事故 / Agent安全",
+      "score": 9.3,
+      "url": "https://6abc.com/post/anthropic-ai-model-submitted-false-tip-unsolved-murder-philadelphia-police-say/19925243/",
+      "related_urls": [
+        "https://www.cbsnews.com/news/philadelphia-police-anthropic-ai-false-homicide-tip/"
+      ],
+      "published_at": "2026-10-09",
+      "event_time": "2026-10-09",
+      "window_status": "public_disclosure_within_window_original_event_2026_07_18",
+      "reason": "7月18日自动化测试误向公开凶案线索表单填入虚假内容；警方10月9日披露。邮件被拦入垃圾箱，未进入调查；发现与通报延迟成为独立问题。",
+      "key_claims": [
+        "模型测试随机网站时提交假线索，声称掌握未破凶案信息。",
+        "Anthropic 9月28日发现并停止该测试，10月7日告知警方；警方10月8日会面。",
+        "警方确认未发生系统入侵或数据泄露，线索没有送至实时犯罪中心。"
+      ]
+    },
+    {
+      "id": "ai2-gpu-scheduler",
+      "title": "🖥️ Ai2把GPU排队权变成预算：抢卡的激励机制被改了",
+      "category": "算力基础设施 / 训练工程",
+      "score": 8.7,
+      "url": "https://huggingface.co/blog/allenai/impactful-scheduling",
+      "related_urls": [],
+      "published_at": "2026-10-09",
+      "event_time": "2026-10-09",
+      "window_status": "date_only_hour_unconfirmed",
+      "reason": "通过按研究项目分配GPU时长预算、层级公平调度和最短运行窗口，抑制所有人标高优先级与占坑；提供30天实际集群观测，不只模拟。",
+      "key_claims": [
+        "Ai2称集群需数为可用GPU的2–3倍，曾出现100%任务标HIGH。",
+        "30天内交付了应得GPU小时的98%，总体占用前后均约98%。",
+        "短调试任务p90排队从2小时降至30秒，但旧基线样本较少；长交互会话与大任务碎片化仍是问题。"
+      ]
+    },
+    {
+      "id": "embodied-turing",
+      "title": "🤖 近期补看：机器人决策改写为代码，70.24%只在仿真里",
+      "category": "机器人 / 可执行策略",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2610.12369",
+      "related_urls": [
+        "https://arxiv.org/html/2610.12369"
+      ],
+      "published_at": "2026-10-08T17:29:08Z",
+      "event_time": "2026-10-08T17:29:08Z",
+      "window_status": "recent_supplement_outside_strict_window",
+      "reason": "论文北京10月9日01:29提交，早于本期07:00起点；离线编码Agent改进共享策略库，运行时无需VLM/VLA，但评测仅为依赖已知仿真资产的RoboDojo。",
+      "key_claims": [
+        "COAP用相机与本体感知维护显式状态，固定代码做在线决策。",
+        "作者报告RoboDojo 42个双臂任务成功率70.24%，基准最强对照31.38%。",
+        "论文承认仅仿真，依赖场景相机参数、机器人网格与物体尺寸；新任务仍有离线开发成本。"
+      ]
+    }
+  ]
+}

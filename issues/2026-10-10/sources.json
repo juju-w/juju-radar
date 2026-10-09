@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "label": "宣布准备制定个人Agent协议",
+      "url": "https://sierra.ai/blog/introducing-personal-agent-protocol",
+      "section": "Poppy拿出协议草案：个人Agent怎样获得商家授权"
+    },
+    {
+      "label": "10月9日公开的Poppy草案",
+      "url": "https://sierra.ai/blog/poppy",
+      "section": "Poppy拿出协议草案：个人Agent怎样获得商家授权"
+    },
+    {
+      "label": "协议网站展示的v0.1草案",
+      "url": "https://personalagentprotocol.org/",
+      "section": "Poppy拿出协议草案：个人Agent怎样获得商家授权"
+    },
+    {
+      "label": "公开了一份说明，全文由当地媒体刊出",
+      "url": "https://6abc.com/post/anthropic-ai-model-submitted-false-tip-unsolved-murder-philadelphia-police-say/19925243/",
+      "section": "AI测试向警方投出假线索，直到两个多月后才发现"
+    },
+    {
+      "label": "工程文章",
+      "url": "https://huggingface.co/blog/allenai/impactful-scheduling",
+      "section": "Ai2把GPU排队权变成预算：抢卡的激励机制被改了"
+    },
+    {
+      "label": "《Embodied Turing Machines》",
+      "url": "https://arxiv.org/abs/2610.12369",
+      "section": "近期补看：机器人决策改写为代码，70.24%只在仿真里"
+    }
+  ]
+}
