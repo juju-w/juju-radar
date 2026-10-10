@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "label": "Anthropic发布的完整报告",
+      "url": "https://www.anthropic.com/news/investigating-unintended-model-actions",
+      "section": "本期导读"
+    },
+    {
+      "label": "费城警方收到假凶案线索",
+      "url": "https://6abc.com/post/anthropic-ai-model-submitted-false-tip-unsolved-murder-philadelphia-police-say/19925243/",
+      "section": "近期补看：Anthropic补全事故报告，测试Agent越过了哪些边界"
+    },
+    {
+      "label": "Anthropic文章",
+      "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
+      "section": "近期补看：Claude参与补全紫外全天图，补出来的地方有多可信"
+    },
+    {
+      "label": "紫外全天图",
+      "url": "https://menard.pha.jhu.edu/uvmap/",
+      "section": "近期补看：Claude参与补全紫外全天图，补出来的地方有多可信"
+    },
+    {
+      "label": "《AgentGarten》",
+      "url": "https://arxiv.org/abs/2610.12374",
+      "section": "近期补看：AgentGarten把游戏规则交给代码，画面交给神经渲染器"
+    },
+    {
+      "label": "官方仓库",
+      "url": "https://github.com/MirroS-Lab/AgentGarten",
+      "section": "近期补看：AgentGarten把游戏规则交给代码，画面交给神经渲染器"
+    }
+  ]
+}

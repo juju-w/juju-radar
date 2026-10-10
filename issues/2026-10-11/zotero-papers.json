@@ -1,0 +1,39 @@
+{
+  "issue_date": "2026-10-11",
+  "papers": [
+    {
+      "id": "arxiv:2610.12374",
+      "title": "AgentGarten: Code Worlds for Evolving Agents",
+      "url": "https://arxiv.org/abs/2610.12374",
+      "doi": "10.48550/arXiv.2610.12374",
+      "published_date": "2026-10-08",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Jiawei",
+          "lastName": "Chi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shangchen",
+          "lastName": "Miao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zhiyuan",
+          "lastName": "Shi",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "Agent训练环境",
+        "世界模型",
+        "补看",
+        "待阅读"
+      ],
+      "note": "AgentGarten将程序化模拟器/游戏引擎管理的持久状态和明确规则，与共享神经渲染器生成的视觉观察分离。Agent只看合成的第一视角画面，每轮结束写playbook供下一轮使用。作者在捉迷藏及四个其他世界展示策略改进；四轮与传统自博弈强化学习千万局的对比不是同口径效率比，后者从随机权重开始，前者已有大规模预训练。官方仓库目前放出神经渲染器训练与推理代码，世界环境及Agent练习循环待发布。论文2026-10-08 17:32 UTC提交，本期作近期补看。\n\n原文：https://arxiv.org/abs/2610.12374\n代码：https://github.com/MirroS-Lab/AgentGarten\n本期资料页:https://www.asteronline.cn/juju-radar/2026-10-11/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
