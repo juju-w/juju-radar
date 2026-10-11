@@ -1,0 +1,202 @@
+{
+  "issue_date": "2026-10-12",
+  "papers": [
+    {
+      "id": "arxiv:2610.12242",
+      "title": "TokenRouter: Efficient Serving System for Token-Level LLM Routing",
+      "url": "https://arxiv.org/abs/2610.12242",
+      "doi": "10.48550/arXiv.2610.12242",
+      "published_date": "2026-10-08",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "推理基础设施",
+        "模型路由",
+        "补看",
+        "待阅读"
+      ],
+      "note": "逐词路由在一个答案中频繁交给不同大小的模型，传统单模型批处理会因交接与同步空转。TokenRouter以route/send/receive接口承接策略，运行时为每个模型设置异步子服务和独立KV缓存，并用延迟聚批降低入队等待。论文在五种路由策略、三类负载和指定Qwen组合上报告相对所选基线2.01–64.15倍解码吞吐；实验依赖8张A100-80G，不应外推到跨云API或普遍省钱。代码已公开。本期补看，首稿10月8日16:21 UTC。\n\n原文：https://arxiv.org/abs/2610.12242\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-12/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "creators": [
+        {
+          "firstName": "Tianyu",
+          "lastName": "Fu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tengxuan",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ruoxi",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yixin",
+          "lastName": "Dong",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yi",
+          "lastName": "Ge",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yichen",
+          "lastName": "You",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yu",
+          "lastName": "Wang",
+          "creatorType": "author"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2610.12419",
+      "title": "OneSearch-VL: Unified Multimodal Deep Research Agent for Image and Video",
+      "url": "https://arxiv.org/abs/2610.12419",
+      "doi": "10.48550/arXiv.2610.12419",
+      "published_date": "2026-10-08",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "多模态Agent",
+        "视觉检索",
+        "补看",
+        "待阅读"
+      ],
+      "note": "OneSearch-VL把图像区域、视频帧、网页事实和回答所需的比较/计算组成视觉证据图，同一结构用于造题、筛选工具轨迹及训练奖励。作者开源8B权重、数据与训练/推理代码。论文报告在自建多图、视频基准相对可调用工具的Qwen3-VL-8B提升20.2、17.6个百分点；自建基准与在线检索变化限制独立比较。首稿10月8日17:52 UTC，本期补看。\n\n原文：https://arxiv.org/abs/2610.12419\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-12/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "creators": [
+        {
+          "firstName": "Hongyu",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Manyuan",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kaituo",
+          "lastName": "Feng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shu",
+          "lastName": "Chen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dian",
+          "lastName": "Zheng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hao",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hao",
+          "lastName": "Yu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zhangquan",
+          "lastName": "Chen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zoey",
+          "lastName": "Guo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ray",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shaofei",
+          "lastName": "Huang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tianrui",
+          "lastName": "Hui",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Linjiang",
+          "lastName": "Huang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Si",
+          "lastName": "Liu",
+          "creatorType": "author"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2610.08215",
+      "title": "Learn2Play Bench: How Well Do LLM Agents Learn from Experience in Unfamiliar Environments?",
+      "url": "https://arxiv.org/abs/2610.08215",
+      "doi": "10.48550/arXiv.2610.08215",
+      "published_date": "2026-10-08",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "Agent评测",
+        "经验学习",
+        "补看",
+        "待阅读"
+      ],
+      "note": "Learn2Play用20种隐规则文字游戏观察Agent能否凭试错修正认识。在匹配模型的某些比较中，保留原始交互史优于把经验压成规则；GemForge例子显示一次失败被归纳成过宽禁令。不同模型和代理框架结果不一，人类Top-1峰值高，但平均分比较并非人类全面领先。公开仓库仅含20个游戏模板快照，不含人类玩家记录。论文10月6日初稿、10月8日v2，本期补看。\n\n原文：https://arxiv.org/abs/2610.08215\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-12/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "creators": [
+        {
+          "firstName": "Yibo",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jinhang",
+          "lastName": "Qiu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zhi",
+          "lastName": "Zheng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Qianyun",
+          "lastName": "Guo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jiaying",
+          "lastName": "Wu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shuo",
+          "lastName": "Ji",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bryan",
+          "lastName": "Hooi",
+          "creatorType": "author"
+        }
+      ]
+    }
+  ]
+}

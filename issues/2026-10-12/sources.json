@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "label": "《TokenRouter》",
+      "url": "https://arxiv.org/abs/2610.12242",
+      "section": "近期补看：TokenRouter让大小模型按词接力，推理系统怎么跟上"
+    },
+    {
+      "label": "代码和配置已公开",
+      "url": "https://github.com/thu-nics/TokenRouter",
+      "section": "近期补看：TokenRouter让大小模型按词接力，推理系统怎么跟上"
+    },
+    {
+      "label": "《OneSearch-VL》",
+      "url": "https://arxiv.org/abs/2610.12419",
+      "section": "近期补看：OneSearch-VL把图片线索、网页证据和答案连起来"
+    },
+    {
+      "label": "公开了权重、数据集和训练/推理代码",
+      "url": "https://github.com/appletea233/OneSearch-VL",
+      "section": "近期补看：OneSearch-VL把图片线索、网页证据和答案连起来"
+    },
+    {
+      "label": "HF模型页",
+      "url": "https://huggingface.co/OneSearch-VL/OneSearch-VL-8B",
+      "section": "近期补看：OneSearch-VL把图片线索、网页证据和答案连起来"
+    },
+    {
+      "label": "《Learn2Play Bench》",
+      "url": "https://arxiv.org/abs/2610.08215",
+      "section": "近期补看：Learn2Play测Agent会不会从试错里学到规则"
+    },
+    {
+      "label": "公开仓库",
+      "url": "https://github.com/liushiliushi/Learn2Play-Bench",
+      "section": "近期补看：Learn2Play测Agent会不会从试错里学到规则"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-12",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "tokenrouter",
+      "title": "⚙️ TokenRouter让大小模型按词接力，推理系统怎么跟上",
+      "category": "推理基础设施 / 模型路由",
+      "score": 8.6,
+      "url": "https://arxiv.org/abs/2610.12242",
+      "related_urls": [
+        "https://arxiv.org/html/2610.12242v1",
+        "https://github.com/thu-nics/TokenRouter"
+      ],
+      "published_at": "2026-10-08T16:21:50Z",
+      "event_time": "2026-10-08T16:21:50Z",
+      "window_status": "recent_supplement_outside_strict_window",
+      "reason": "北京10月9日00:21提交，10月9日HF日榜收录。本期为补看。与一次只选一台模型不同，TokenRouter让模型在生成中途交接，用异步子服务与短暂延迟聚批降低来回切换代价。",
+      "key_claims": [
+        "route/send/receive描述一次请求在模型间的交接，运行时为各模型维护独立调度与KV缓存。",
+        "作者在五种逐词路由策略、三种负载和指定Qwen模型组合上报告相对所选基线2.01–64.15倍解码吞吐；不等同端到端费用下降或所有生产负载可得。",
+        "官方GitHub提供代码与配置；论文实验使用8张A100-80G的服务器，主要模型组合为Qwen3-0.6B与32B。"
+      ]
+    },
+    {
+      "id": "onesearch-vl",
+      "title": "🔎 OneSearch-VL把图片线索、网页证据和答案连起来",
+      "category": "多模态Agent / 视觉检索",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2610.12419",
+      "related_urls": [
+        "https://arxiv.org/html/2610.12419v1",
+        "https://github.com/appletea233/OneSearch-VL",
+        "https://huggingface.co/OneSearch-VL/OneSearch-VL-8B"
+      ],
+      "published_at": "2026-10-08T17:52:46Z",
+      "event_time": "2026-10-08T17:52:46Z",
+      "window_status": "recent_supplement_outside_strict_window",
+      "reason": "北京10月9日01:52提交，10月9日HF日榜收录。本期为补看。把画面局部、外部网页事实与回答步骤连成证据图，同一结构用于训练数据、强化学习评分和跨图/视频评测。",
+      "key_claims": [
+        "研究从约250万网页视频筛到7万候选，构造11万监督样本和1万强化学习样本；公开8B权重、数据集和训练/推理代码。",
+        "作者报告8B模型在自建多图与视频基准比可用工具的Qwen3-VL-8B分别高20.2和17.6个百分点；基准由团队构建，不能据此断言全面领先。",
+        "在线检索服务与网页变化会影响复现，论文亦承认自动构图和模型评分可能有偏差。"
+      ]
+    },
+    {
+      "id": "learn2play",
+      "title": "🎮 Learn2Play测Agent会不会从试错里学到规则",
+      "category": "Agent评测 / 经验学习",
+      "score": 8.3,
+      "url": "https://arxiv.org/abs/2610.08215",
+      "related_urls": [
+        "https://arxiv.org/html/2610.08215v2",
+        "https://github.com/liushiliushi/Learn2Play-Bench",
+        "https://liushiliushi.github.io/learn2play-bench-website/"
+      ],
+      "published_at": "2026-10-08T14:07:30Z",
+      "event_time": "2026-10-08T14:07:30Z",
+      "window_status": "recent_supplement_outside_strict_window",
+      "reason": "论文10月6日初稿、10月8日修订，10月9日HF日榜收录。本期为补看。20种隐规则文字游戏要求Agent反复试错，区分背熟已知规则与真正利用交互反馈。",
+      "key_claims": [
+        "作者在三种模型的匹配比较中发现，保留原始交互史有时比把经验压成规则更有效；并非所有模型/所有游戏都如此。",
+        "例子：GemForge一次失败被某总结方法扩写成过宽禁令，连本可成功的组合也被排除。",
+        "人类Top-1峰值84.3、高于测试Agent，但Claude Code/Opus5平均62.3高于Top-1人类53.5；不能写成Agent全面不如人。",
+        "GitHub目前是20个游戏模板的匿名评审代码快照，不含人类玩家记录或全部评测运行包。"
+      ]
+    }
+  ]
+}
