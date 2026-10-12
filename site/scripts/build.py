@@ -27,6 +27,11 @@ def plain(s):
  s=re.sub(r'\[([^\]]+)\]\([^\)]+\)',r'\1',s)
  s=re.sub(r'<!--.*?-->','',s,flags=re.S)
  return re.sub(r'[*#>`]','',s).strip()
+def display_title(title):
+ # Keep catch-up status in source metadata and prose, rather than prefixing website titles.
+ match=re.match(r'^([^\w\u4e00-\u9fff]*)(?:近期(?:论文|安全)?补看|补看)(.*)$',title.strip())
+ remainder=match[2].lstrip(' \t：:｜|') if match else ''
+ return match[1]+remainder if remainder else title
 def inline(s):
  tokens=[]
  def image(m):
@@ -50,7 +55,7 @@ def md(s):
   if not block.strip():continue
   if block.startswith('#'):
    lines=block.split('\n');m=re.match(r'(#{1,6})\s+(.*)',lines[0])
-   if m:out.append(f'<h{len(m[1])}>{inline(m[2])}</h{len(m[1])}>');out.extend('<p>'+inline(x)+'</p>' for x in lines[1:] if x);continue
+   if m:out.append(f'<h{len(m[1])}>{inline(display_title(m[2]))}</h{len(m[1])}>');out.extend('<p>'+inline(x)+'</p>' for x in lines[1:] if x);continue
   if block.startswith('>'):out.append('<blockquote>'+md(re.sub(r'^> ?', '',block,flags=re.M))+'</blockquote>');continue
   if all(re.match(r'^(?:[-*]|\d+\.)\s',x) for x in block.splitlines()):out.append('<ul>'+''.join('<li>'+inline(re.sub(r'^(?:[-*]|\d+\.)\s','',x))+'</li>' for x in block.splitlines())+'</ul>');continue
   if block.strip()=='---':out.append('<hr>');continue
@@ -163,7 +168,7 @@ def build(preview=False):
   date=info.get('date',issue_id[:10]);kind=info.get('kind','daily');special=kind=='special'
   datetime.strptime(date,'%Y-%m-%d')
   if not re.fullmatch(r'\d{4}-\d{2}-\d{2}(?:-[a-z0-9]+)*',issue_id) or not issue_id.startswith(date):raise ValueError('Invalid issue identifier')
-  front=dict(re.findall(r'^(title|summary):\s*(.+)$',article,re.M));title=front['title'];desc=front.get('summary','')
+  front=dict(re.findall(r'^(title|summary):\s*(.+)$',article,re.M));title=display_title(front['title']);desc=front.get('summary','')
   issues.append({'id':issue_id,'date':date,'kind':kind,'section':info.get('section','每日精选'),'published_at':info.get('published_at',date+'T09:00:00+08:00'),'title':title,'summary':desc,'path':PREFIX+'read/'+issue_id+'/','sources_url':BASE+issue_id+'/'})
   if special:
    entries.append({'id':issue_id,'type':'news','kind':'special','date':date,'dates':[date],'issue_ids':[issue_id],'title':title,'category':'特别版 · 深度解读','topics':topics(title+' '+desc),'summary':desc,'note':plain(article),'url':info['sources'][0]['url'],'path':PREFIX+'read/'+issue_id+'/','related_urls':[s['url'] for s in sources]})
@@ -174,6 +179,7 @@ def build(preview=False):
    if special or not re.search(r'\d(?:\.\d)?/10',body[:180]):continue
    heading=re.sub(r'^[^\w\u4e00-\u9fff]+','',heading)
    source,public_url,related_urls=source_for_item(issue_id,info['sources'],item_index,heading,body)
+   heading=display_title(heading)
    item_index+=1
    ps=paragraphs(body);summary=plain(next((b for b in body.split('\n\n') if len(plain(b))>45 and not b.lstrip().startswith(('#','>','['))), source.get('reason','')))
    category=source.get('category','AI 进展');path='notes/'+date+'-'+str(section_no)+'/'

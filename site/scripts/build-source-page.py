@@ -6,6 +6,7 @@ import re
 import sys
 from html import escape
 from pathlib import Path
+from build import display_title
 
 
 def main() -> None:
@@ -16,7 +17,7 @@ def main() -> None:
     article_path = folder / "article.md"
     article = article_path.read_text(encoding="utf-8")
     title_match = re.search(r"^title:\s*(.+)$", article, re.M)
-    title = title_match.group(1).strip() if title_match else folder.name
+    title = display_title(title_match.group(1).strip()) if title_match else folder.name
     note_match = re.search(r"^sourceNote:\s*(.+)$", article, re.M)
     source_note = (
         '<details class="editor-note"><summary>编辑说明</summary><p>'
@@ -31,6 +32,7 @@ def main() -> None:
         heading = re.match(r"^##\s+(.+)$", line)
         if heading:
             current_section = re.sub(r"^[^\w\u4e00-\u9fff]+\s*", "", heading.group(1)).strip()
+            current_section = display_title(current_section)
         for match in re.finditer(r"\[([^\]]+)\]\((https?://[^)]+)\)", line):
             label, url = match.group(1).strip(), match.group(2).strip()
             if url in seen:
