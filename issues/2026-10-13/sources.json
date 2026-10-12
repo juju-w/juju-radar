@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "label": "微软宣布",
+      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "section": "微软公布Maia 300，计划让自研芯片承担主要推理任务"
+    },
+    {
+      "label": "架构说明",
+      "url": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
+      "section": "微软公布Maia 300，计划让自研芯片承担主要推理任务"
+    },
+    {
+      "label": "NVIDIA在OCP峰会公布",
+      "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+      "section": "NVIDIA开放机架与运维设计，把供电散热一起纳入AI部署"
+    },
+    {
+      "label": "Cursor官方宣布",
+      "url": "https://x.com/cursor_ai/status/2109779605699879146",
+      "section": "Cursor加入X统一订阅，模型选择开始受共享额度影响"
+    },
+    {
+      "label": "公开订阅条款",
+      "url": "https://x.ai/legal/bundled-subscription-terms",
+      "section": "Cursor加入X统一订阅，模型选择开始受共享额度影响"
+    },
+    {
+      "label": "Vapi公开了自建审查机器人Pedantic Review Bot的实验",
+      "url": "https://vapi.ai/blog/ai-code-review-bot",
+      "section": "Vapi让审查机器人先跑代码，少发未经验证的评论"
+    }
+  ]
+}

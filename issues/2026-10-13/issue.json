@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-13",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "maia300",
+      "title": "🧠 微软公布Maia 300，计划让自研芯片承担主要推理任务",
+      "category": "推理芯片 / 公司战略",
+      "score": 9,
+      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "related_urls": [
+        "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
+        "https://news.microsoft.com/maia-2026/"
+      ],
+      "published_at": "2026-10-12T13:01:29+00:00",
+      "event_time": "2026-10-12T13:01:29+00:00",
+      "window_status": "within_strict_window",
+      "window_uncertain": false,
+      "reason": "不仅公布第三代芯片，还把Maia定位为自家产品主要推理系统；NUMA局部存储和统一通信域对应长上下文的数据搬运开销，具有路线与采购影响。",
+      "key_claims": [
+        "微软计划从2027年起将Maia扩展为多吉瓦部署，并作为微软产品与服务的主要推理系统；Maia 200已运行生产负载。",
+        "Maia 300每加速器288GB HBM4、18TB/s带宽；96颗整机架167kW，设计中的统一scale-up域最多12,288颗。",
+        "40%更多tokens/MW是微软预期的对比结果，未公布完整GPU基线；相对Maia200最多7倍机架token吞吐含密度翻倍，不能写为单芯片7倍。"
+      ]
+    },
+    {
+      "id": "nvidia-ocp",
+      "title": "🖥️ NVIDIA开放机架与运维设计，把供电散热一起纳入AI部署",
+      "category": "算力基础设施 / 开放标准",
+      "score": 8.5,
+      "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+      "related_urls": [
+        "https://www.nvidia.com/en-us/events/ocp-summit/"
+      ],
+      "published_at": "2026-10-12T15:00:25+00:00",
+      "event_time": "2026-10-12T15:00:25+00:00",
+      "window_status": "within_strict_window",
+      "window_uncertain": false,
+      "reason": "将Vera Rubin关键机架和托盘设计交到OCP，并提供交换机配置、集群压测和机架管理组件，解决高密度AI部署的设施整合瓶颈。",
+      "key_claims": [
+        "MGX 1.2包括盲插液冷、标准化电力与冷却接口，支持最高250kW机架设计。",
+        "DSX新增网络配置、集群就绪压测、机架管理和裸机部署的开源组件。",
+        "开放的是系统设计与运维接口，不是Rubin芯片设计本身；工程兼容是否降低部署成本仍需实施数据。"
+      ]
+    },
+    {
+      "id": "cursor-x-subscription",
+      "title": "🧩 Cursor加入X统一订阅，模型选择开始受共享额度影响",
+      "category": "Coding Agent / 产品战略",
+      "score": 8,
+      "url": "https://x.com/cursor_ai/status/2109779605699879146",
+      "related_urls": [
+        "https://x.ai/legal/x-subscription-terms-of-service",
+        "https://x.ai/legal/bundled-subscription-terms"
+      ],
+      "published_at": "2026-10-12T22:53:50.465+00:00",
+      "event_time": "2026-10-12T22:53:50.465+00:00",
+      "window_status": "within_strict_window_x_post_id_time_correlated_with_aggregate",
+      "window_uncertain": false,
+      "reason": "原有Cursor订阅可保留，新增共享额度池把编辑器和Grok产品使用放在同一预算里；对模型分发与使用激励有实质影响，非模型能力发布。",
+      "key_claims": [
+        "Cursor官方宣布已加入The X Subscription；当前Cursor订阅者可保留原计划或切换。",
+        "官方帖说明付费计划在Cursor、Grok Build和其他Grok产品之间共享使用额度，并倾斜Grok编程使用额度。",
+        "未确认完整价格阶梯和所有地区迁移条件，不声称订阅可无差别无限使用所有模型；条款中第三方模型服务提供方仍需区分。"
+      ],
+      "timestamps": [
+        {
+          "field": "published_at",
+          "value": "2026-10-12T22:53:50.465+00:00",
+          "precision": "milliseconds_inferred_from_x_snowflake_id",
+          "source_url": "https://x.com/cursor_ai/status/2109779605699879146",
+          "note": "X官方oEmbed显示10月12日；Snowflake解码为22:53:50.465Z，聚合记录22:53:50Z与之吻合，非将聚合时间直接当原事件时间。"
+        }
+      ]
+    },
+    {
+      "id": "vapi-review-bot",
+      "title": "🔎 Vapi让审查机器人先跑代码，少发未经验证的评论",
+      "category": "Coding Agent / 工程评测",
+      "score": 8.5,
+      "url": "https://vapi.ai/blog/ai-code-review-bot",
+      "related_urls": [],
+      "published_at": "2026-10-12",
+      "event_time": "2026-10-12",
+      "window_status": "official_blog_date_only_hour_unconfirmed",
+      "window_uncertain": true,
+      "reason": "企业原始工程记录给出分析/发评论的权限隔离、运行测试复现和针对自身代码的对照；最难阻塞只被8/194轮找出，能解释审查机器人真实能力与误判成本。",
+      "key_claims": [
+        "9月2日至10月2日审查1694个PR，在276个PR中提363个blocker；平均合并时间130多小时降到65小时为公司自报。",
+        "分析任务可跟调用链、运行测试或复现；移除Git凭据后产出JSON，另一任务校验再发评论，不能批准或推送。",
+        "101提示实验只在一个PR各跑一次且AI裁判；8/194代码审查轮发现植入的lint阻塞，同预算多次运行结果不可泛化为可靠防漏保证。"
+      ]
+    }
+  ]
+}
