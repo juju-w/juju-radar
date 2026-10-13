@@ -1,0 +1,169 @@
+{
+  "issue_date": "2026-10-14",
+  "papers": [
+    {
+      "id": "doi:10.1038/s41551-026-01804-6",
+      "title": "Interpretable AI model reveals spatial codes of cell recruitment in tissues",
+      "url": "https://www.nature.com/articles/s41551-026-01804-6",
+      "doi": "10.1038/s41551-026-01804-6",
+      "published_date": "2026-10-13",
+      "item_type": "journalArticle",
+      "publicationTitle": "Nature Biomedical Engineering",
+      "creators": [
+        {
+          "firstName": "Jia",
+          "lastName": "Yao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ji Seon",
+          "lastName": "Shim",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kelly",
+          "lastName": "Wong",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "James",
+          "lastName": "Zhu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yunhe",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sung Wook",
+          "lastName": "Kang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kelli",
+          "lastName": "McCord",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bryan M.",
+          "lastName": "Burt",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jong Min",
+          "lastName": "Choi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Claire",
+          "lastName": "Lee",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Idania Carolina",
+          "lastName": "Lubo Julio",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Luisa Maren",
+          "lastName": "Solis Soto",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sharia",
+          "lastName": "Hernandez",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Karen",
+          "lastName": "Colbert Maresso",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yang",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yibo",
+          "lastName": "Dai",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tian",
+          "lastName": "Chu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wei",
+          "lastName": "Lu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Khaja",
+          "lastName": "Khan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Paul F.",
+          "lastName": "Mansfield",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hee-Jin",
+          "lastName": "Jang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "William H.",
+          "lastName": "Hudson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tao",
+          "lastName": "Yue",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bing",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Changwei",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Linghua",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hao",
+          "lastName": "Zhu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hyun-Sung",
+          "lastName": "Lee",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tao",
+          "lastName": "Wang",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "空间转录组",
+        "肿瘤免疫",
+        "待阅读"
+      ],
+      "note": "SPACER使用可解释多实例学习，在保留空间位置的基因活动数据中分析局部细胞招募规则。研究覆盖37个人类肿瘤与小鼠心脏空间转录组数据集，局部抗原呈递与T细胞接近有关，肿瘤黏蛋白与阻碍接近的物理屏障、部分癌种免疫治疗反应和预后相关。\n\n新意在于把细胞位置与附近分子信号联结，形成可复查的招募候选；重要度8/10。已读期刊摘要、图注、数据/代码可用性与研究机构原始说明，付费正文未获取；不把观察相关写成临床因果，不引用未展开指标的4—21倍比较。需要在不同癌种和测量条件下复查，并做干预实验。\n\n原文：https://www.nature.com/articles/s41551-026-01804-6\n代码：https://github.com/yaober/SPACER\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-14/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

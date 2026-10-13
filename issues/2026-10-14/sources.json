@@ -1,0 +1,69 @@
+{
+  "sources": [
+    {
+      "label": "Google宣布",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "section": "Gemini 4 Argon开放使用，安全报告揭示“少说”与“少做”的区别"
+    },
+    {
+      "label": "Google Cloud公告",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud",
+      "section": "Gemini 4 Argon开放使用，安全报告揭示“少说”与“少做”的区别"
+    },
+    {
+      "label": "工程案例",
+      "url": "https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon/",
+      "section": "Gemini 4 Argon开放使用，安全报告揭示“少说”与“少做”的区别"
+    },
+    {
+      "label": "安全报告的配套文章",
+      "url": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+      "section": "Gemini 4 Argon开放使用，安全报告揭示“少说”与“少做”的区别"
+    },
+    {
+      "label": "Character.ai官方确认",
+      "url": "https://blog.character.ai/an-update-on-character-ai/",
+      "section": "Character.ai申请破产，长时间聊天的收入没有覆盖成本"
+    },
+    {
+      "label": "404 Media查阅法院材料后报道",
+      "url": "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work/",
+      "section": "Character.ai申请破产，长时间聊天的收入没有覆盖成本"
+    },
+    {
+      "label": "XBOW宣布",
+      "url": "https://xbow.com/news/xbow-rewarded-for-exploit-affecting-a-billion-users",
+      "section": "一名研究员与AI协作，六天构建Chrome漏洞链"
+    },
+    {
+      "label": "公开Chrome更新记录",
+      "url": "https://chromereleases.googleblog.com/2026/10/long-term-support-channel-update-for.html",
+      "section": "一名研究员与AI协作，六天构建Chrome漏洞链"
+    },
+    {
+      "label": "Anthropic公开了Scion的设计",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "section": "Anthropic重做版本控制，每天三万次合并开始压垮旧流程"
+    },
+    {
+      "label": "Physical Intelligence开放Pi API beta",
+      "url": "https://www.pi.website/blog/api-beta",
+      "section": "Pi开放机器人训练API，让开发者自己完成试错循环"
+    },
+    {
+      "label": "《Nature Biomedical Engineering》发表SPACER研究",
+      "url": "https://www.nature.com/articles/s41551-026-01804-6",
+      "section": "SPACER研究免疫细胞为何停在肿瘤外"
+    },
+    {
+      "label": "研究机构说明",
+      "url": "https://www.eurekalert.org/news-releases/1147417",
+      "section": "SPACER研究免疫细胞为何停在肿瘤外"
+    },
+    {
+      "label": "分析代码已经公开",
+      "url": "https://github.com/yaober/SPACER",
+      "section": "SPACER研究免疫细胞为何停在肿瘤外"
+    }
+  ]
+}

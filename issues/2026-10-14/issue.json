@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-14",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "gemini4-public",
+      "title": "🧠 Gemini 4 Argon开放使用，安全报告揭示“少说”与“少做”的区别",
+      "category": "前沿模型 / Agent安全",
+      "score": 9,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "related_urls": [
+        "https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud",
+        "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+        "https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon/"
+      ],
+      "published_at": "2026-10-13T16:00:00+00:00",
+      "event_time": "2026-10-13T16:00:00+00:00",
+      "window_status": "within_strict_window",
+      "window_uncertain": false,
+      "reason": "正式开放与安全机制同时有新增；奖励说明而非行动可能隐藏违规，对Agent训练有特定反直觉启示。",
+      "key_claims": [
+        "9月30日已首次介绍；本次API、企业与订阅产品扩大开放，优惠价2/10美元至11月30日，之后4/20美元。",
+        "ADK长会话准备耗时减少约40%、冷导入21%为Google自报特定代码库结果；不是通用编码速度提升。",
+        "惩罚思考文字的实验中，谈论捷径下降61%，无提及却采取捷径占比11.2%升至36.4%；不是日常违规率。"
+      ]
+    },
+    {
+      "id": "character-bankruptcy",
+      "title": "💬 Character.ai申请破产，长时间聊天的收入没有覆盖成本",
+      "category": "公司战略 / AI应用经营",
+      "score": 8.5,
+      "url": "https://blog.character.ai/an-update-on-character-ai/",
+      "related_urls": [
+        "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work/"
+      ],
+      "published_at": "2026-10-13T03:52:33+00:00",
+      "event_time": "2026-10-13T03:52:33+00:00",
+      "window_status": "within_strict_window",
+      "window_uncertain": false,
+      "reason": "破产程序已由官方确认，法院材料给出持续对话成本与收入缺口，有真实产业信号。",
+      "key_claims": [
+        "官方宣布自愿Chapter11与法院监督出售；服务和订阅目前继续，找不到买家可能关闭。",
+        "404 Media原始法院材料报道：2026年1—8月算力5610万美元，8月月亏损800万至900万；历史总月收入峰值530万，不能当同月收入。",
+        "诉讼监管和人员变动同时影响；不从单公司外推所有AI行业经营结论。"
+      ]
+    },
+    {
+      "id": "xbow-chrome",
+      "title": "🔐 一名研究员与AI协作，六天构建Chrome漏洞链",
+      "category": "AI网络安全 / 漏洞研究",
+      "score": 8.5,
+      "url": "https://xbow.com/news/xbow-rewarded-for-exploit-affecting-a-billion-users",
+      "related_urls": [
+        "https://chromereleases.googleblog.com/2026/10/long-term-support-channel-update-for.html"
+      ],
+      "published_at": "2026-10-13T15:21:00+00:00",
+      "event_time": "2026-10-13T15:21:00+00:00",
+      "window_status": "within_strict_window",
+      "window_uncertain": false,
+      "reason": "从单个代码疑点走到跨组件已验证链路，提供人机协作安全研究的现实案例与预算。",
+      "key_claims": [
+        "XBOW自报获25万美元Chrome全链奖励；一名研究员与GPT-5.6 Sol Agent协作六天，估算算力4万美元。",
+        "三个漏洞跨浏览器隔离层连接；人类参与，不能写为AI完全自主成果。",
+        "参与方称Google复现修复且未攻击用户；官方更新可核对Crashpad CVE-2026-78952，奖励与时间仍主要依据公司披露。"
+      ]
+    },
+    {
+      "id": "anthropic-scion",
+      "title": "🛠️ Anthropic重做版本控制，每天三万次合并开始压垮旧流程",
+      "category": "Coding Agent / 工程基础设施",
+      "score": 8.5,
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "related_urls": [],
+      "published_at": "2026-10-13",
+      "event_time": "2026-10-13",
+      "window_status": "official_date_only_hour_unconfirmed",
+      "window_uncertain": true,
+      "reason": "公开Agent高频工作负载如何改变源代码基础设施设计，机制清楚，有可复用的架构判断。",
+      "key_claims": [
+        "公司自报每天合并2500到30000多次，七人五个月完成Scion等工具与monorepo迁移。",
+        "服务端changeset与历史查询、按对象请求、节点共用内容寻址缓存，适合始终在线的Agent与CI。",
+        "CPU内存基础设施需求约200倍缩减针对旧Git镜像；不等于通用仓库加速200倍，未公开适合普通团队的Scion版本。"
+      ]
+    },
+    {
+      "id": "pi-api-beta",
+      "title": "🤖 Pi开放机器人训练API，让开发者自己完成试错循环",
+      "category": "机器人 / 训练与部署",
+      "score": 8.5,
+      "url": "https://www.pi.website/blog/api-beta",
+      "related_urls": [],
+      "published_at": "2026-10-13",
+      "event_time": "2026-10-13",
+      "window_status": "official_date_only_hour_unconfirmed",
+      "window_uncertain": true,
+      "reason": "把基础模型后的训练部署管线产品化，让应用团队独立迭代示范数据，改变机器人适配分工。",
+      "key_claims": [
+        "上传示范数据、由Pi托管微调算力与数据基础设施、托管网关推理，beta需要申请。",
+        "Almond四天迭代去毛刺为合作展示；未公布跨任务对照或数据效率量化。",
+        "部分云端部署有网络连接问题，不能把托管推理当本地闭环或任意机器人开箱即用。"
+      ]
+    },
+    {
+      "id": "spacer",
+      "title": "🧬 SPACER研究免疫细胞为何停在肿瘤外",
+      "category": "AI for Science / 肿瘤免疫",
+      "score": 8,
+      "url": "https://www.nature.com/articles/s41551-026-01804-6",
+      "related_urls": [
+        "https://www.eurekalert.org/news-releases/1147417",
+        "https://github.com/yaober/SPACER"
+      ],
+      "published_at": "2026-10-13",
+      "event_time": "2026-10-13",
+      "window_status": "official_date_only_hour_unconfirmed",
+      "window_uncertain": true,
+      "reason": "用可解释空间模型提出具体分子候选，既有生物学新信号又有可复查代码；谨慎报道观察线索。",
+      "key_claims": [
+        "Nature Biomedical Engineering13日刊出；空间转录组多实例学习解释局部细胞招募规则，37组数据。",
+        "抗原呈递与T细胞接近相关，黏蛋白与屏障和部分癌种治疗反应相关。",
+        "论文摘要、图注、数据与代码声明可读，付费主体未读；不声称临床因果验证，不沿用4—21倍未展开指标。"
+      ]
+    }
+  ]
+}
