@@ -126,7 +126,7 @@
         "世界动作模型",
         "待阅读"
       ],
-      "note": "GreenWAM在Cosmos 3 Edge基础上把20类机器人原生动作映射为79个解剖槽位，缺失关节由有效性掩码排除，统一投影层学习物理对应；视觉预测和动作适配相连。原始PDF43页已提取，重点核对动作表示、随机化场景消融、延迟图和限制；不是全页逐段审读或独立复现。\n\n重要度8.2/10。论文10月13日提交，模型库10月14日07:36 UTC创建、四组真实safetensors评测检查点可列出，本期新事件为工件上线。保留世界预测模式在随机化场景中改善约8个百分点；每个评测仍需独立后训练，真实仅一台人形机器人和装箱任务。28.3Hz来自RTX4090，不是已验证机载部署，几何变化和长滚动误差仍待解决。\n\n论文：https://arxiv.org/abs/2610.18774\n权重：https://huggingface.co/SberRoboticsCenter/GreenWAM\n代码：https://github.com/greenvla/GreenWAM\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-15/\nAI辅助整理。",
+      "note": "GreenWAM在Cosmos 3 Edge基础上把20类机器人原生动作映射为79个解剖槽位，缺失关节由有效性掩码排除，统一投影层学习物理对应；视觉预测和动作适配相连。原始PDF43页已提取，重点核对动作表示、随机化场景消融、延迟图和限制；不是全页逐段审读或独立复现。\n\n重要度8.2/10。论文10月13日提交，模型库10月14日07:36 UTC创建、四组真实safetensors评测检查点可列出，本期报道该新建公开工件库；创建时间不证明首次私有转公开时刻，保留检索窗口边界不确定性。保留世界预测模式在随机化场景中改善约8个百分点；每个评测仍需独立后训练，真实仅一台人形机器人和装箱任务。28.3Hz来自RTX4090，不是已验证机载部署，几何变化和长滚动误差仍待解决。\n\n论文：https://arxiv.org/abs/2610.18774\n权重：https://huggingface.co/SberRoboticsCenter/GreenWAM\n代码：https://github.com/greenvla/GreenWAM\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-15/\nAI辅助整理。",
       "evidence_status": "primary_verified",
       "pdf_url": "https://arxiv.org/pdf/2610.18774"
     },

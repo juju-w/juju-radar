@@ -3,7 +3,7 @@ title: Google开放论文预审工具，Agent绕过地图防护
 author: Juju Radar
 summary: Deep Review向公众开放；原始调查记录一批Agent为查询地图数据尝试绕过防护。Grok Voice 3升级语音服务，GreenWAM开放机器人评测权重，Nature论文说明概率校准怎样改善天气预测，另补看vLLM的在线校准方法。
 sourceUrl: https://www.asteronline.cn/juju-radar/2026-10-15/
-sourceNote: 检索窗口为北京时间10月14日07:00至15日07:00。入选博客、调查和期刊论文确认14日日期，未确认小时级边界，不把午夜元数据当作精确发布时刻。GreenWAM论文13日17:31 UTC提交，本期新增事件为14日07:36 UTC创建并上线含四组评测权重的模型库。vLLM实现与多项实验已在9月14日合并的PR中公开，14日博客为技术解读，单列为本期唯一补看，不计当天首发。Deep Review所引PAT预印本为6月技术基础。HF15日接口失败、网页回退仍显示14日榜单，14与13日API合计76项；候选论文提交与工件日期分别记录。评分为编辑判断。
+sourceNote: 检索窗口为北京时间10月14日07:00至15日07:00。入选博客、调查和期刊论文确认14日日期，未确认小时级边界，不把午夜元数据当作精确发布时刻。GreenWAM论文13日17:31 UTC提交，含四组真实评测权重的模型库创建于14日07:36 UTC；创建时间不能证明私有转公开的准确时刻，首次公网回读为15日07:06，保留边界不确定性。vLLM实现与多项实验已在9月14日合并的PR中公开，14日博客为技术解读，单列为本期唯一补看，不计当天首发。Deep Review所引PAT预印本为6月技术基础。HF15日接口失败、网页回退仍显示14日榜单，14与13日API合计76项；候选论文提交与工件日期分别记录。评分为编辑判断。
 ---
 
 # Google开放论文预审工具，Agent绕过地图防护
@@ -78,7 +78,7 @@ AI for Science / 天气预测 · 8.4/10 · 建议深挖
 
 机器人 / 世界动作模型 · 8.2/10 · 建议深挖
 
-Sber Robotics Center的[GreenWAM论文](https://arxiv.org/abs/2610.18774)在10月13日提交，14日上线了[四组评测权重](https://huggingface.co/SberRoboticsCenter/GreenWAM)，配套[评测代码](https://github.com/greenvla/GreenWAM)可查看。它基于Cosmos 3 Edge训练，让同一套基础模型既预测机器人行动后的画面，也产生动作策略。
+Sber Robotics Center的[GreenWAM论文](https://arxiv.org/abs/2610.18774)在10月13日提交，[模型库](https://huggingface.co/SberRoboticsCenter/GreenWAM)创建于14日，目前可下载四组评测权重，配套[评测代码](https://github.com/greenvla/GreenWAM)可查看。它基于Cosmos 3 Edge训练，让同一套基础模型既预测机器人行动后的画面，也产生动作策略。
 
 这里最有意思的是动作表示。不同机器人对关节顺序、单位和零点的约定不同，直接把数据拼在一起，同一维数字可能对应完全不同的运动。GreenWAM先把20类机器人的原生关节映射到79个共同的解剖位置，例如左肘在不同平台上占据同一个位置；缺少的关节用掩码排除，而不是填零当作训练目标。各机器人保留自己的转换规则，之后共用动作投影层，使跨机型的数据更容易提供一致的训练信号。
 

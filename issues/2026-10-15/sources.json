@@ -56,7 +56,7 @@
       "section": "GreenWAM开放权重，把不同机器人的关节放进同一套坐标"
     },
     {
-      "label": "四组评测权重",
+      "label": "模型库",
       "url": "https://huggingface.co/SberRoboticsCenter/GreenWAM",
       "section": "GreenWAM开放权重，把不同机器人的关节放进同一套坐标"
     },
