@@ -1,0 +1,189 @@
+{
+  "issue_date": "2026-10-15",
+  "papers": [
+    {
+      "id": "doi:10.1038/s41586-026-11126-x",
+      "title": "Advancing subseasonal forecasting with machine learning",
+      "url": "https://www.nature.com/articles/s41586-026-11126-x",
+      "doi": "10.1038/s41586-026-11126-x",
+      "published_date": "2026-10-14",
+      "item_type": "journalArticle",
+      "publicationTitle": "Nature",
+      "creators": [
+        {
+          "firstName": "Hannah",
+          "lastName": "Guan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Soukayna",
+          "lastName": "Mouatadid",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Paulo",
+          "lastName": "Orenstein",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Judah",
+          "lastName": "Cohen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Haiyu",
+          "lastName": "Dong",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zekun",
+          "lastName": "Ni",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jeremy",
+          "lastName": "Berman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Genevieve",
+          "lastName": "Flaspohler",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alex",
+          "lastName": "Lu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jakob",
+          "lastName": "Schloer",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Joshua",
+          "lastName": "Talib",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jonathan A.",
+          "lastName": "Weyn",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Lester",
+          "lastName": "Mackey",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "天气预测",
+        "概率校准",
+        "待阅读"
+      ],
+      "note": "PBC对已有物理或AI天气模型的概率分布进行后处理：Debias++校正地点日期分位偏差，Persistence++结合近期观测与气候规律，再约束并合并有效分布。全球1.5度网格的第三第四周评测和2025实时竞赛提供两类证据，原文方法、图注和代码声明已读。\n\n重要度8.4/10。AIFS平均基线约0.03的RPSS翻倍是相对气候基准的概率技能，并非普遍准确率翻倍。MicroDuet是两种校正预测的组合；依赖历史预测和观测，具体地区和时段仍需验证。\n\n原文：https://www.nature.com/articles/s41586-026-11126-x\n代码：https://github.com/mouatadid/pbc\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-15/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://www.nature.com/articles/s41586-026-11126-x.pdf"
+    },
+    {
+      "id": "arxiv:2610.18774",
+      "title": "GreenWAM: A World Foundation Model for Robotics",
+      "url": "https://arxiv.org/abs/2610.18774",
+      "doi": "10.48550/arXiv.2610.18774",
+      "published_date": "2026-10-13",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Gennady",
+          "lastName": "Sidorov",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Valerii",
+          "lastName": "Kornilov",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Denis",
+          "lastName": "Grankin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Polina",
+          "lastName": "Fedotova",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Aleksey",
+          "lastName": "Postnikov",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人",
+        "世界动作模型",
+        "待阅读"
+      ],
+      "note": "GreenWAM在Cosmos 3 Edge基础上把20类机器人原生动作映射为79个解剖槽位，缺失关节由有效性掩码排除，统一投影层学习物理对应；视觉预测和动作适配相连。原始PDF43页已提取，重点核对动作表示、随机化场景消融、延迟图和限制；不是全页逐段审读或独立复现。\n\n重要度8.2/10。论文10月13日提交，模型库10月14日07:36 UTC创建、四组真实safetensors评测检查点可列出，本期新事件为工件上线。保留世界预测模式在随机化场景中改善约8个百分点；每个评测仍需独立后训练，真实仅一台人形机器人和装箱任务。28.3Hz来自RTX4090，不是已验证机载部署，几何变化和长滚动误差仍待解决。\n\n论文：https://arxiv.org/abs/2610.18774\n权重：https://huggingface.co/SberRoboticsCenter/GreenWAM\n代码：https://github.com/greenvla/GreenWAM\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-15/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://arxiv.org/pdf/2610.18774"
+    },
+    {
+      "id": "arxiv:2606.28277",
+      "title": "Towards Automating Scientific Review with Google’s Paper Assistant Tool",
+      "url": "https://arxiv.org/abs/2606.28277",
+      "doi": "10.48550/arXiv.2606.28277",
+      "published_date": "2026-06-26",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "firstName": "Rajesh",
+          "lastName": "Jayaram",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Drew",
+          "lastName": "Tyler",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "David",
+          "lastName": "Woodruff",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Corinna",
+          "lastName": "Cortes",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yossi",
+          "lastName": "Matias",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Vahab",
+          "lastName": "Mirrokni",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Vincent",
+          "lastName": "Cohen-Addad",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "论文预审",
+        "Agent验证",
+        "待阅读",
+        "技术基础"
+      ],
+      "note": "这是10月14日公开Deep Review所引用的6月PAT技术基础，不是新论文或独立补看精选。原始HTML摘要、流程与试点章节可读；PAT给作者提供投稿前批评，与官方录用决定分离。公开Deep Review采用分段、预算、并行验证、全局汇总和外部检查。\n\n当前新服务加入Argon，旧论文的SPOT实验与作者反馈不能直接当新版本独立检错准确率。模型批评可能误报漏报，不替代形式化证明或专家评审。上传保留一年是当前服务条款，不能沿用旧试点及时删除政策。\n\n原文：https://arxiv.org/abs/2606.28277\n新服务公告：https://research.google/blog/analyzing-technical-documents-with-deep-review/\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-15/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://arxiv.org/pdf/2606.28277"
+    }
+  ]
+}

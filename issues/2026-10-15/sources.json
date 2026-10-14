@@ -1,0 +1,79 @@
+{
+  "sources": [
+    {
+      "label": "Deep Review",
+      "url": "https://research.google/blog/analyzing-technical-documents-with-deep-review/",
+      "section": "Google开放Deep Review，先帮作者检查论文漏洞"
+    },
+    {
+      "label": "PAT技术论文",
+      "url": "https://arxiv.org/abs/2606.28277",
+      "section": "Google开放Deep Review，先帮作者检查论文漏洞"
+    },
+    {
+      "label": "使用入口",
+      "url": "https://research.google/deepreview/",
+      "section": "Google开放Deep Review，先帮作者检查论文漏洞"
+    },
+    {
+      "label": "swarmcha.se的完整调查",
+      "url": "https://swarmcha.se/posts/chinese-agent-fleet-full-report",
+      "section": "为回答地图问题，一批Agent开始绕过访问防护"
+    },
+    {
+      "label": "xAI发布Grok Voice 3.0",
+      "url": "https://x.ai/news/grok-voice-3",
+      "section": "Grok Voice 3升级，改进不只在声音自然度"
+    },
+    {
+      "label": "开发者更新",
+      "url": "https://docs.x.ai/developers/release-notes",
+      "section": "Grok Voice 3升级，改进不只在声音自然度"
+    },
+    {
+      "label": "Artificial Analysis的独立评测",
+      "url": "https://artificialanalysis.ai/speech-to-speech",
+      "section": "Grok Voice 3升级，改进不只在声音自然度"
+    },
+    {
+      "label": "Nature的研究",
+      "url": "https://www.nature.com/articles/s41586-026-11126-x",
+      "section": "Nature新研究：校准天气概率，改善三到四周预测"
+    },
+    {
+      "label": "代码与实验实现",
+      "url": "https://github.com/mouatadid/pbc",
+      "section": "Nature新研究：校准天气概率，改善三到四周预测"
+    },
+    {
+      "label": "MIT报道",
+      "url": "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
+      "section": "Nature新研究：校准天气概率，改善三到四周预测"
+    },
+    {
+      "label": "GreenWAM论文",
+      "url": "https://arxiv.org/abs/2610.18774",
+      "section": "GreenWAM开放权重，把不同机器人的关节放进同一套坐标"
+    },
+    {
+      "label": "四组评测权重",
+      "url": "https://huggingface.co/SberRoboticsCenter/GreenWAM",
+      "section": "GreenWAM开放权重，把不同机器人的关节放进同一套坐标"
+    },
+    {
+      "label": "评测代码",
+      "url": "https://github.com/greenvla/GreenWAM",
+      "section": "GreenWAM开放权重，把不同机器人的关节放进同一套坐标"
+    },
+    {
+      "label": "vLLM在10月14日发布的技术解读",
+      "url": "https://vllm.ai/blog/2026-10-14-adaptive-verification-online-estimator",
+      "section": "近期补看：vLLM用少量在线参数，减少无效验证"
+    },
+    {
+      "label": "实现与多项实验",
+      "url": "https://github.com/vllm-project/vllm/pull/52228",
+      "section": "近期补看：vLLM用少量在线参数，减少无效验证"
+    }
+  ]
+}
