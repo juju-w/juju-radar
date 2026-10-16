@@ -1,0 +1,69 @@
+{
+  "sources": [
+    {
+      "label": "Anthropic披露了一项参数溯源结果",
+      "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "section": "Claude找到五种NIST曲线种子的生成方式"
+    },
+    {
+      "label": "2023年悬赏页面",
+      "url": "https://words.filippo.io/seeds-bounty/",
+      "section": "Claude找到五种NIST曲线种子的生成方式"
+    },
+    {
+      "label": "Reflection在16日正式交付Beam权重",
+      "url": "https://reflection.ai/blog/beam-is-available",
+      "section": "Beam正式开放权重，效率优势要和任务能力一起看"
+    },
+    {
+      "label": "vLLM的部署说明",
+      "url": "https://vllm.ai/blog/2026-10-16-reflection-beam",
+      "section": "Beam正式开放权重，效率优势要和任务能力一起看"
+    },
+    {
+      "label": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai/articles/reflection-beam",
+      "section": "Beam正式开放权重，效率优势要和任务能力一起看"
+    },
+    {
+      "label": "Anthropic与哈佛研究者的论文",
+      "url": "https://arxiv.org/abs/2610.22367",
+      "section": "Claude改写量子电路，关键是少存哪些中间过程"
+    },
+    {
+      "label": "研究说明",
+      "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+      "section": "Claude改写量子电路，关键是少存哪些中间过程"
+    },
+    {
+      "label": "Google在16日介绍VERID等三项研究",
+      "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
+      "section": "Google让实验机器人先检查现场，再执行Agent指令"
+    },
+    {
+      "label": "VERID报告",
+      "url": "https://www.gstatic.com/science-ai/verid_semantic_lab.pdf",
+      "section": "Google让实验机器人先检查现场，再执行Agent指令"
+    },
+    {
+      "label": "适配体闭环研究",
+      "url": "https://www.gstatic.com/science-ai/agentic_aptamer_sandbox.pdf",
+      "section": "Google让实验机器人先检查现场，再执行Agent指令"
+    },
+    {
+      "label": "商务部、科技部16日发布公告",
+      "url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_61446ab4beee4f63973d4d0ab3097648.html",
+      "section": "AI技术出口目录征求意见，临时登记要求已开始"
+    },
+    {
+      "label": "Anthropic公开了内部工作研究",
+      "url": "https://www.anthropic.com/research/employment-at-anthropic",
+      "section": "Anthropic内部研究：Agent产出增加后，人的注意力开始吃紧"
+    },
+    {
+      "label": "预期调查",
+      "url": "https://www.anthropic.com/research/ai-expectations-gap",
+      "section": "Anthropic内部研究：Agent产出增加后，人的注意力开始吃紧"
+    }
+  ]
+}

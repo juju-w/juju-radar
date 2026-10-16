@@ -1,0 +1,261 @@
+{
+  "issue_date": "2026-10-17",
+  "papers": [
+    {
+      "id": "arxiv:2610.22367",
+      "title": "Discovering state-of-the-art quantum circuits with large language models",
+      "url": "https://arxiv.org/abs/2610.22367",
+      "doi": "",
+      "published_date": "2026-10-15",
+      "item_type": "preprint",
+      "publicationTitle": "arXiv",
+      "creators": [
+        {
+          "firstName": "Andi",
+          "lastName": "Gu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alek H.",
+          "lastName": "Kemeny",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Susanne F.",
+          "lastName": "Yelin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mikhail D.",
+          "lastName": "Lukin",
+          "creatorType": "author"
+        }
+      ],
+      "authors": [
+        "Andi Gu",
+        "Alek H. Kemeny",
+        "Susanne F. Yelin",
+        "Mikhail D. Lukin"
+      ],
+      "tags": [
+        "Juju Radar",
+        "算法发现",
+        "量子电路",
+        "待阅读"
+      ],
+      "note": "用独立评估器检查候选电路的输出、相位与临时寄存器，并按Toffoli门数和峰值逻辑比特计分。八项任务中七项同时降低两类资源；模逆通过恢复分支历史改变时间空间取舍。重要度9/10，正文、方法、资源表与验证统计已读。\n\n大输入域采用抽样而非穷尽形式证明，部分电路接受受控失败预算；限定可经典检查的电路类。门数乘比特的目标不是全硬件运行时间。15日17:59:20UTC提交，16日官方公布；提交日期与日报日期分开。\n\n原文：https://arxiv.org/abs/2610.22367\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-17/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://arxiv.org/pdf/2610.22367"
+    },
+    {
+      "id": "google-verid-2026-10-16",
+      "title": "Semantic Representation for Agentic Self-Play in Automated Laboratories",
+      "url": "https://www.gstatic.com/science-ai/verid_semantic_lab.pdf",
+      "doi": "",
+      "published_date": "2026-10-16",
+      "item_type": "report",
+      "publicationTitle": "Google Research",
+      "creators": [
+        {
+          "firstName": "Yves",
+          "lastName": "Delley",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Coller",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zachary",
+          "lastName": "Cutts",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alexander",
+          "lastName": "Daryin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mathias",
+          "lastName": "Bellaiche",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jun W.",
+          "lastName": "Kim",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Oscar",
+          "lastName": "Donosa",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Srinidhi B.",
+          "lastName": "Seshadri",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tanner",
+          "lastName": "Clary",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sandy",
+          "lastName": "Klemm",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Avinatan",
+          "lastName": "Hassidim",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yossi",
+          "lastName": "Matias",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Pooja",
+          "lastName": "Rao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Petar",
+          "lastName": "Sirkovic",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Annalisa",
+          "lastName": "Pawlosky",
+          "creatorType": "author"
+        }
+      ],
+      "authors": [
+        "Yves Delley",
+        "John Coller",
+        "Zachary Cutts",
+        "Alexander Daryin",
+        "Mathias Bellaiche",
+        "Jun W. Kim",
+        "Oscar Donosa",
+        "Srinidhi B. Seshadri",
+        "Tanner Clary",
+        "Sandy Klemm",
+        "Avinatan Hassidim",
+        "Yossi Matias",
+        "Pooja Rao",
+        "Petar Sirkovic",
+        "Annalisa Pawlosky"
+      ],
+      "tags": [
+        "Juju Radar",
+        "实验自动化",
+        "物理状态",
+        "待阅读"
+      ],
+      "note": "VERID以持续更新的语义数字孪生维护现场，供Agent查询、仿真和校验后执行，保存动作、视频和状态。三组染料与水案例展示预先挡错、中途恢复和真实物理故障追踪。重要度8.5/10，16页原报告及官方汇总已核验。\n\n仿真为离散状态/体积账本，不能模拟全部流体过程；这份报告的验证不是药物发现或临床试验。另两分子原型报告署期12和14日，本期仅作背景，不能写成已完全整合的自主湿实验室。\n\n原文：https://www.gstatic.com/science-ai/verid_semantic_lab.pdf\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-17/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://www.gstatic.com/science-ai/verid_semantic_lab.pdf"
+    },
+    {
+      "id": "anthropic-employment-2026-10-16",
+      "title": "How employment is changing at Anthropic",
+      "url": "https://www.anthropic.com/research/employment-at-anthropic",
+      "doi": "",
+      "published_date": "2026-10-16",
+      "item_type": "report",
+      "publicationTitle": "The Anthropic Institute",
+      "creators": [
+        {
+          "firstName": "Nathan",
+          "lastName": "Wilmers",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Regina",
+          "lastName": "Catipon",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Maxim",
+          "lastName": "Massenkoff",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "McCrory",
+          "creatorType": "author"
+        }
+      ],
+      "authors": [
+        "Nathan Wilmers",
+        "Regina Catipon",
+        "Maxim Massenkoff",
+        "Peter McCrory"
+      ],
+      "tags": [
+        "Juju Radar",
+        "工作组织",
+        "AI采用",
+        "待阅读"
+      ],
+      "note": "研究整合公司人事、工具、产出和沟通数据并辅以17次访谈。技术初级员工和初级招聘占比下降，Agent输出增加使阅读与决策成为组织约束，员工搭建监控和流程管理。重要度8.5/10，官方HTML完整报告已读。\n\n快速增长单家公司存在采用自选、岗位构成和组织扩张共同变化；占比不等于人数，观察关系不能直接证明AI因果或外推宏观就业。PDF下载本轮403，归档依据官方HTML；附件如有仅为链接，不声称离线保存。\n\n原文：https://www.anthropic.com/research/employment-at-anthropic\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-17/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": ""
+    },
+    {
+      "id": "anthropic-expectations-gap-2026-10-16",
+      "title": "The AI expectations gap",
+      "url": "https://www.anthropic.com/research/ai-expectations-gap",
+      "doi": "",
+      "published_date": "2026-10-16",
+      "item_type": "report",
+      "publicationTitle": "The Anthropic Institute",
+      "creators": [
+        {
+          "firstName": "Szymon",
+          "lastName": "Sacher",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tess",
+          "lastName": "Cotter",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Charles I.",
+          "lastName": "Jones",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Anton",
+          "lastName": "Korinek",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "McCrory",
+          "creatorType": "author"
+        }
+      ],
+      "authors": [
+        "Szymon Sacher",
+        "Tess Cotter",
+        "Charles I. Jones",
+        "Anton Korinek",
+        "Peter McCrory"
+      ],
+      "tags": [
+        "Juju Radar",
+        "AI预期",
+        "调查方法",
+        "待阅读"
+      ],
+      "note": "8月调查比较10980名美国成人在线面板与1334名Anthropic内部受访者。对2030年自身当前工时可被AI完成的平均估计，员工75%、美国在职者28%。作为本期工作组织条目的相关报告归档，官方HTML与抽样脚注已核验。\n\n公众样本加权而员工不加权，岗位和问卷形式也不同；是主观预期而非未来已证实。未采用网站48小时测验等时间矛盾扩展段，也不把模型映射GDP当事实预测；PDF不可下载时保留HTML。\n\n原文：https://www.anthropic.com/research/ai-expectations-gap\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-17/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "pdf_url": ""
+    }
+  ]
+}

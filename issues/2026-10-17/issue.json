@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-17",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "claude-ecdsa",
+      "title": "🔎 Claude找到五种NIST曲线种子的生成方式",
+      "category": "AI科研 / 密码学溯源",
+      "score": 9,
+      "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "related_urls": [
+        "https://words.filippo.io/seeds-bounty/"
+      ],
+      "published_at": "2026-10-16T17:02:00Z",
+      "event_time": "2026-10-16T17:02:00Z",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window",
+      "key_claims": [
+        "从旧PRNG特征恢复公共种子的生成状态；五种素数域曲线可由lrand48与1997至1998年时间戳重现。",
+        "本机独立写出的正向重算脚本对照2023年悬赏页，五组公共种子全部相符；只核验给定配方，不复现发现过程。"
+      ],
+      "reason": "从旧PRNG特征恢复公共种子的生成状态；五种素数域曲线可由lrand48与1997至1998年时间戳重现。"
+    },
+    {
+      "id": "reflection-beam",
+      "title": "🧠 Beam正式开放权重，效率优势要和任务能力一起看",
+      "category": "开放模型 / Agent推理",
+      "score": 8.5,
+      "url": "https://reflection.ai/blog/beam-is-available",
+      "related_urls": [
+        "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+        "https://vllm.ai/blog/2026-10-16-reflection-beam",
+        "https://www.lmsys.org/blog/2026-10-16-beam",
+        "https://artificialanalysis.ai/articles/reflection-beam"
+      ],
+      "published_at": "2026-10-16",
+      "event_time": "2026-10-16",
+      "window_uncertain": true,
+      "window_status": "official_date_only_hour_unconfirmed",
+      "key_claims": [
+        "5日为初次介绍，16日所有者公告实际开放BF16/FP8/NVFP4与推测解码模型，HF列表实际188个BF16权重分片，Apache2.0。",
+        "501B总参数、23B活跃、文本模态、1M上下文；52层中43层512词元局部注意力、9层完整上下文。",
+        "AA每任务约26k输出对比K2Horizon52k；Terminal-Bench4.0为3.0%对Muse8.1%，效率不代表全任务能力领先。"
+      ],
+      "reason": "5日为初次介绍，16日所有者公告实际开放BF16/FP8/NVFP4与推测解码模型，HF列表实际188个BF16权重分片，Apache2.0。"
+    },
+    {
+      "id": "claude-quantum",
+      "title": "⚛️ Claude改写量子电路，关键是少存哪些中间过程",
+      "category": "AI for Science / 算法发现",
+      "score": 9,
+      "url": "https://arxiv.org/abs/2610.22367",
+      "related_urls": [
+        "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+        "https://arxiv.org/html/2610.22367v1"
+      ],
+      "published_at": "2026-10-16T17:29:00Z",
+      "event_time": "2026-10-16T17:29:00Z",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window",
+      "key_claims": [
+        "46页原论文与方法/验证/资源表已读：八类任务中七类同时降低Toffoli门与比特，第八类改善取舍。",
+        "可逆divsteps用当前状态恢复分支历史，减少保存历史；官方举例点加设计比最省比特旧方案多12%比特、门数约1/17。",
+        "任务可在计算基逐轨迹检查输出、相位、输入和临时比特；大域抽样验证，并有失败概率预算。"
+      ],
+      "reason": "46页原论文与方法/验证/资源表已读：八类任务中七类同时降低Toffoli门与比特，第八类改善取舍。",
+      "arxiv_submitted_at": "2026-10-15T17:59:20Z",
+      "announced_at": null,
+      "timestamps": [
+        {
+          "type": "official_research_announcement",
+          "value": "2026-10-16T17:29:00Z",
+          "source_url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits"
+        },
+        {
+          "type": "arxiv_submission",
+          "value": "2026-10-15T17:59:20Z",
+          "source_url": "https://arxiv.org/abs/2610.22367"
+        }
+      ]
+    },
+    {
+      "id": "google-verid",
+      "title": "🤖 Google让实验机器人先检查现场，再执行Agent指令",
+      "category": "AI for Science / 实验自动化",
+      "score": 8.5,
+      "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
+      "related_urls": [
+        "https://www.gstatic.com/science-ai/verid_semantic_lab.pdf",
+        "https://www.gstatic.com/science-ai/agentic_aptamer_sandbox.pdf",
+        "https://www.gstatic.com/science-ai/epitope_excision.pdf"
+      ],
+      "published_at": "2026-10-16",
+      "event_time": "2026-10-16",
+      "window_uncertain": true,
+      "window_status": "official_date_only_hour_unconfirmed",
+      "key_claims": [
+        "VERID报告署期16日，语义数字孪生维护实时实验现场状态，仿真校验后派发，视频/日志用于物理故障发现与恢复。",
+        "VERID三案例是染料和水，不是直接用其全自动筛出药物；另两研究报告署期12、14日，16日被官方一起介绍。",
+        "适配体真实实验读数揭示非特异粘附假阳性，肌红蛋白校正后新设计命中率3.7%升至33.5%，作为背景案例。"
+      ],
+      "reason": "VERID报告署期16日，语义数字孪生维护实时实验现场状态，仿真校验后派发，视频/日志用于物理故障发现与恢复。"
+    },
+    {
+      "id": "china-ai-export",
+      "title": "📜 AI技术出口目录征求意见，临时登记要求已开始",
+      "category": "产业政策 / 技术出口",
+      "score": 9,
+      "url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_61446ab4beee4f63973d4d0ab3097648.html",
+      "related_urls": [],
+      "published_at": "2026-10-16T16:00:00+08:00",
+      "event_time": "2026-10-16T16:00:00+08:00",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window",
+      "key_claims": [
+        "正式48号公告与14页WPS附件已读；拟增AI23项，三领域总40项，征求意见16日至11月15日。",
+        "附件所列技术出口前登记从公告日起实施，已开始未完成也包括；目录修订的最终禁止/限制安排仍在征求意见。",
+        "对外转让/境外授权/境内技术所有权人或实控人变为境外等登记情形；已公共领域技术排除，部分出口情形有自动许可等便利措施。"
+      ],
+      "reason": "正式48号公告与14页WPS附件已读；拟增AI23项，三领域总40项，征求意见16日至11月15日。"
+    },
+    {
+      "id": "anthropic-work",
+      "title": "👥 Anthropic内部研究：Agent产出增加后，人的注意力开始吃紧",
+      "category": "AI采用 / 工作组织",
+      "score": 8.5,
+      "url": "https://www.anthropic.com/research/employment-at-anthropic",
+      "related_urls": [
+        "https://www.anthropic.com/research/ai-expectations-gap"
+      ],
+      "published_at": "2026-10-16T16:26:00Z",
+      "event_time": "2026-10-16T16:26:00Z",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window",
+      "key_claims": [
+        "内部人事、工具使用、产出、沟通与17次访谈；初级技术员工占比21%至14%，技术新聘中的初级占比27%至9%。",
+        "部分非技术员工阅读全部Agent输出的估计占半周，研究描述员工转向监控、审阅与Agent流程维护。",
+        "同日调查预计2030AI可完成自身当前工时：员工平均75%、美国在职受访者平均28%；是观点非预测已兑现。"
+      ],
+      "reason": "内部人事、工具使用、产出、沟通与17次访谈；初级技术员工占比21%至14%，技术新聘中的初级占比27%至9%。"
+    }
+  ]
+}

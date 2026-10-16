@@ -211,6 +211,14 @@
     "title_zh": "Claude优化生物模型：前向提速、内存与精度的权衡",
     "summary": "36套实现覆盖30多个生物模型；13个结构预测模型Fast前向平均提速4.1倍，Exact为另一组14模型平均1.6倍。单节点为八卡，计算机设计评分不等于湿实验结果。"
   },
+  "anthropic-employment-2026-10-16": {
+    "title_zh": "Agent深入公司后，人的工作怎样变化",
+    "summary": "内部记录与17次访谈呈现初级岗位占比、产出和审阅负荷的共同变化。单家高速增长公司的观察不能直接建立AI因果。"
+  },
+  "anthropic-expectations-gap-2026-10-16": {
+    "title_zh": "公众与AI公司员工怎样预期未来工作",
+    "summary": "比较美国在线成人样本与内部员工对能力、采用和自身工作的预期；样本、岗位和加权不同，结果不能当就业预测。"
+  },
   "anthropic-threat-intelligence-september-2026": {
     "title_zh": "Anthropic 2026 年 9 月 AI 滥用报告",
     "summary": "七类案例揭示模型如何参与持续运营，以及账号封禁后的控制范围；归因来自供应商，不能据案例推算整体发生率。"
@@ -291,9 +299,17 @@
     "title_zh": "CodeMidas：从现有源码自动构造Agent训练环境",
     "summary": "让Agent从源码反推功能、生成可执行测试并反复验证，从3185个仓库构造5545项任务。训练实验在多项Coding Agent基准上提升，但任务质量仍取决于自动测试能否覆盖原功能；本期作为MiMo-V2.6配套论文补看。"
   },
+  "arxiv:2610.22367": {
+    "title_zh": "用可计算评估器搜索更省资源的量子电路",
+    "summary": "模型搜索可逆计算的新结构；七类任务同时减少门数和比特，模逆改善取舍。大域采用抽样，资源估计不代表量子硬件已实现加速。"
+  },
   "deepseek-v4.1-flash-technical-report": {
     "summary": "输入与输出采用不同激活规模，通过跨层复用和局部重放压缩两类缓存；权重已公开，节省比例不等于整机成本降幅。",
     "title_zh": "DeepSeek V4.1 Flash：长任务先从缓存省起"
+  },
+  "google-verid-2026-10-16": {
+    "title_zh": "VERID：让实验Agent读取和校验现场状态",
+    "summary": "持续数字孪生、模拟校验及视频日志连接Agent和实验机器人。三组染料与水案例支持挡错与恢复；分子发现原型仍待整合。"
   },
   "mentalhealthbench-2026": {
     "title_zh": "MentalHealthBench：给心理支持AI加上专家评判尺",
