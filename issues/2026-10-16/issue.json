@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-16",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "muse-spark-open",
+      "title": "🧠 Meta开放Muse Spark，816B模型怎样在多台Mac上跑",
+      "category": "前沿模型 / 本地推理",
+      "score": 9,
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+      "related_urls": [
+        "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/tree/main",
+        "https://huggingface.co/blog/meta-muse-spark-open",
+        "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "https://pytorch.org/blog/muse-spark-open/"
+      ],
+      "published_at": "2026-10-15T17:55:52Z",
+      "event_time": "2026-10-15T17:55:52Z",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window",
+      "reason": "816B total / 42B active; input text image video audio, output text; 1M context；Repository tree lists actual 65 BF16 safetensors shards, gated access and Muse custom license; downloadable weights after accepting terms is distinct from API；Apple 4x M5 Ultra Mac Studio, NVFP4, 8192 input tokens, 128 generated tokens, batch1:36.73 decode tok/s; 4.8s TTFT; 2-Mac tensor24.99 vs pipeline15.74",
+      "key_claims": [
+        "816B total / 42B active; input text image video audio, output text; 1M context",
+        "Repository tree lists actual 65 BF16 safetensors shards, gated access and Muse custom license; downloadable weights after accepting terms is distinct from API",
+        "Apple 4x M5 Ultra Mac Studio, NVFP4, 8192 input tokens, 128 generated tokens, batch1:36.73 decode tok/s; 4.8s TTFT; 2-Mac tensor24.99 vs pipeline15.74"
+      ]
+    },
+    {
+      "id": "nemotron-35-bolt",
+      "title": "⚙️ Nemotron Bolt：先定24GB预算，再决定模型怎么压缩",
+      "category": "开放模型 / 推理优化",
+      "score": 8.5,
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "related_urls": [
+        "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Bolt-24GB/",
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF",
+        "https://artificialanalysis.ai/articles/nemotron-3-5-super-and-bolt"
+      ],
+      "published_at": "2026-10-15T15:00:24Z",
+      "event_time": "2026-10-15T15:00:24Z",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window",
+      "reason": "Super VL120B/A12B compressed with StarElastic architecture search into Bolt74B/A9B; routed expert topK22 ->9；Major expert weights IQ2_XXS2.0625bit; MambaNVFP4; embeddings/attention/head Q8_0, so not every weight2bit；QAD and post-training restore capabilities; LiLiCorr speculative decoding official84TPS RTX Spark SPEED-Bench；Super VL and Bolt74B available15Oct; E4B4GB announced for23Oct, not available now",
+      "key_claims": [
+        "Super VL120B/A12B compressed with StarElastic architecture search into Bolt74B/A9B; routed expert topK22 ->9",
+        "Major expert weights IQ2_XXS2.0625bit; MambaNVFP4; embeddings/attention/head Q8_0, so not every weight2bit",
+        "QAD and post-training restore capabilities; LiLiCorr speculative decoding official84TPS RTX Spark SPEED-Bench",
+        "Super VL and Bolt74B available15Oct; E4B4GB announced for23Oct, not available now"
+      ]
+    },
+    {
+      "id": "mai-base2",
+      "title": "🏗️ 微软公开MAI-Base-2训练细节：2.8万亿参数，先解决怎么训",
+      "category": "基础模型 / 训练方法",
+      "score": 9,
+      "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
+      "related_urls": [],
+      "published_at": "2026-10-15T16:09:01Z",
+      "event_time": "2026-10-15T16:09:01Z",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window",
+      "reason": "MAI-Base-2 total2.8T active80B;16kGB200,38days; currently post-training, no public downloadable checkpoint claimed.",
+      "key_claims": [
+        "MAI-Base-2 total2.8T active80B;16kGB200,38days; currently post-training, no public downloadable checkpoint claimed.",
+        "Source scaling keeps repeated-data ratios consistent across small and large experiments; multi-round dropless expert scheduling fixes memory use under routing imbalance.",
+        "4.2–12.3x FLOPs efficiency is fitted compute-to-match internal BPB evaluations against DeepSeek-V4-Pro-Base, not total training bill or agent capability ratio."
+      ]
+    },
+    {
+      "id": "flux3-klein",
+      "title": "🎨 FLUX 3 Image Klein开放权重，画面布局也能用框指定",
+      "category": "图像生成 / 开放权重",
+      "score": 8.5,
+      "url": "https://bfl.ai/blog/flux-3-image-klein",
+      "related_urls": [
+        "https://huggingface.co/blog/flux-3",
+        "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+        "https://github.com/black-forest-labs/flux-3-image-klein"
+      ],
+      "published_at": "2026-10-15T15:00:00Z",
+      "event_time": "2026-10-15T15:00:00Z",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window",
+      "reason": "5.6B image generator excludes text encoder; base and16stepdistilled; up to10references, region/bounding-box layout control.",
+      "key_claims": [
+        "5.6B image generator excludes text encoder; base and16stepdistilled; up to10references, region/bounding-box layout control.",
+        "HF API actual root model.safetensors11,097,404,512bytes plus transformer shards; gated auto accept license, no model downloaded.",
+        "Official INT8+distilled1MP RTX5090about4s specificGPU/framework; not whole API latency, arbitrary resolution or reference count."
+      ]
+    },
+    {
+      "id": "timestral",
+      "title": "📈 Timestral把预测交给数值模型，CPU也能运行",
+      "category": "时间序列 / 开源模型",
+      "score": 8.5,
+      "url": "https://mistral.ai/news/timestral/",
+      "related_urls": [
+        "https://github.com/mistralai/timestral",
+        "https://huggingface.co/collections/mistralai/timestral",
+        "https://huggingface.co/mistralai/Timestral-209M"
+      ],
+      "published_at": "2026-10-15",
+      "event_time": "2026-10-15",
+      "window_uncertain": true,
+      "window_status": "official_date_only_hour_unconfirmed",
+      "reason": "5M/28M/123M/209M models; 32768 time-step context; 21 quantiles；DHF separates history from forecast tokens; covariate role masks allow known-future calendars/plans without feeding future target values；Synthetic-only pretrain8192context, mixed real+synthetic posttrain4xcontext; 21-quantile pinball loss；CPU8threads official one-day forecast from3weeks15minhistory:5M10ms/209M140ms",
+      "key_claims": [
+        "5M/28M/123M/209M models; 32768 time-step context; 21 quantiles",
+        "DHF separates history from forecast tokens; covariate role masks allow known-future calendars/plans without feeding future target values",
+        "Synthetic-only pretrain8192context, mixed real+synthetic posttrain4xcontext; 21-quantile pinball loss",
+        "CPU8threads official one-day forecast from3weeks15minhistory:5M10ms/209M140ms",
+        "HF API lists model.safetensors837,271,648bytes andconfig; actualartifact confirmed, not justAPIclaim."
+      ]
+    },
+    {
+      "id": "eiliko-incident",
+      "title": "⚠️ Eiliko机器人被实测泄露对话，连长期记忆也能被改",
+      "category": "真实AI事故 / 消费硬件",
+      "score": 9,
+      "url": "https://www.theverge.com/tech/1010727/eiliko-robot-hack-energize-lab",
+      "related_urls": [
+        "https://takeonme.org/cves/multiple-energizelab-eilik-eiliko-platform-vulnerabilities/"
+      ],
+      "published_at": "2026-10-15T11:00:00Z",
+      "event_time": "2026-10-15T11:00:00Z",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window",
+      "reason": "Reporter reproduced conversation readout and remote memory/persona tampering on own retail robot; reported accessible scope68kdevices13Mconversations, not proof everydevice compromised.",
+      "key_claims": [
+        "Reporter reproduced conversation readout and remote memory/persona tampering on own retail robot; reported accessible scope68kdevices13Mconversations, not proof everydevice compromised.",
+        "Original research June–September, advisory published15Oct; remediation status is September retests not current rescan.",
+        "The Verge reports no substantive vendor response after repeated contacts; no verified full fix established."
+      ]
+    }
+  ]
+}
