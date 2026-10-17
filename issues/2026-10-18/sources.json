@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "label": "DeepSeek-V4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "section": "DeepSeek更新Flash，重点落在Agent任务效率"
+    },
+    {
+      "label": "更新说明",
+      "url": "https://api-docs.deepseek.com/zh-cn/updates/",
+      "section": "DeepSeek更新Flash，重点落在Agent任务效率"
+    },
+    {
+      "label": "deepseek-recipe",
+      "url": "https://github.com/deepseek-ai/deepseek-recipe",
+      "section": "DeepSeek更新Flash，重点落在Agent任务效率"
+    },
+    {
+      "label": "Artificial Analysis当前这一页",
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash",
+      "section": "DeepSeek更新Flash，重点落在Agent任务效率"
+    },
+    {
+      "label": "OpenCode在北京时间18日凌晨披露",
+      "url": "https://x.com/opencode/status/2111519637049319818",
+      "section": "OpenCode披露安全事件，涉及部分Console用户"
+    },
+    {
+      "label": "可用性状态页",
+      "url": "https://status.opencode.ai/",
+      "section": "OpenCode披露安全事件，涉及部分Console用户"
+    },
+    {
+      "label": "DeepSeek开放了两个独立工具接口",
+      "url": "https://api-docs.deepseek.com/zh-cn/guides/search/",
+      "section": "DeepSeek开放搜索与网页抓取，工具调用开始单独计费"
+    },
+    {
+      "label": "15日提交的JevAgentHarness论文",
+      "url": "https://arxiv.org/abs/2610.21412",
+      "section": "近期补看：Jev接进Agent后，单题高分为何不够"
+    },
+    {
+      "label": "代码与模型材料",
+      "url": "https://github.com/JevAgentHarness/JevAgentHarness",
+      "section": "近期补看：Jev接进Agent后，单题高分为何不够"
+    },
+    {
+      "label": "AgentDecision-4B",
+      "url": "https://huggingface.co/JevAgentHarness/AgentDecision-4B",
+      "section": "近期补看：Jev接进Agent后，单题高分为何不够"
+    }
+  ]
+}

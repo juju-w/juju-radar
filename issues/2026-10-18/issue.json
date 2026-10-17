@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-18",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "deepseek-1017",
+      "title": "🧠 DeepSeek更新Flash，重点落在Agent任务效率",
+      "category": "前沿模型 / Coding Agent",
+      "score": 8.5,
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "related_urls": [
+        "https://api-docs.deepseek.com/zh-cn/updates/",
+        "https://github.com/deepseek-ai/deepseek-recipe",
+        "https://artificialanalysis.ai/models/deepseek-v4-1-flash"
+      ],
+      "published_at": "2026-10-17",
+      "event_time": "2026-10-17",
+      "key_claims": [
+        "17日官方更新与HF实际48个权重分片核验，MIT许可；API别名deepseek-flash与价格不变，网页APP同步更新。",
+        "作者报告Terminal-Bench4.0由31.2升42.3，DeepSWEv1.1由74.2升77.0；分别使用ClaudeCode和Mini-SWE-V2，不能跨任务换算实际提升比例。",
+        "维护Rust/Python协议编码器deepseek-recipe，覆盖三类API请求、思考与工具消息编码和响应解析；参考推理实现不等同生产引擎。"
+      ],
+      "window_uncertain": true,
+      "reason": "17日官方更新与HF实际48个权重分片核验，MIT许可；API别名deepseek-flash与价格不变，网页APP同步更新。",
+      "window_status": "official_date_only_hour_unconfirmed",
+      "artifact_released_at": "2026-10-17"
+    },
+    {
+      "id": "opencode-breach",
+      "title": "⚠️ OpenCode披露安全事件，涉及部分Console用户",
+      "category": "真实事故 / AI服务安全",
+      "score": 8.5,
+      "url": "https://x.com/opencode/status/2111519637049319818",
+      "related_urls": [
+        "https://x.com/opencode/status/2111516673953935833",
+        "https://status.opencode.ai/"
+      ],
+      "published_at": "2026-10-17T17:56:19Z",
+      "event_time": "2026-10-17T17:56:19Z",
+      "key_claims": [
+        "官方X原帖及X自有公开嵌入JSON均已读取；首次披露17日17:56:19UTC，18:08:06UTC编辑增补外部提供方用户范围。",
+        "官方称1.4%的OpenCode Console用户受影响，限定绑定外部模型服务的一个子集，称已发邮件，事件仍在处理中。",
+        "公司将事件与大规模蒸馏攻击联系并称与Anthropic/OpenAI/Google协作；未公布入侵方式、数据类型和攻击方身份。"
+      ],
+      "window_uncertain": false,
+      "reason": "官方X原帖及X自有公开嵌入JSON均已读取；首次披露17日17:56:19UTC，18:08:06UTC编辑增补外部提供方用户范围。",
+      "window_status": "primary_timestamp_within_window"
+    },
+    {
+      "id": "deepseek-search",
+      "title": "🔎 DeepSeek开放搜索与网页抓取，工具调用开始单独计费",
+      "category": "检索工具 / Agent基础设施",
+      "score": 7.5,
+      "url": "https://api-docs.deepseek.com/zh-cn/guides/search/",
+      "related_urls": [
+        "https://api-docs.deepseek.com/zh-cn/updates/"
+      ],
+      "published_at": "2026-10-17",
+      "event_time": "2026-10-17",
+      "key_claims": [
+        "17日更新开放自研Search/Fetch，两独立原始JSON接口；Search可返回摘要、日期、排序和权威性分，正文need_content默认false，Fetch返回Markdown。",
+        "两类工具各5元每千次有结果成功请求，Search返回条数不影响单次价格；每账号两类分别5QPS。",
+        "文档说明现有Harness/ClaudeCode/Codex经DeepSeek服务端工具调用的Search/Fetch此前未收费，将于北京时间11月1日零时按次收费。"
+      ],
+      "window_uncertain": true,
+      "reason": "17日更新开放自研Search/Fetch，两独立原始JSON接口；Search可返回摘要、日期、排序和权威性分，正文need_content默认false，Fetch返回Markdown。",
+      "window_status": "official_date_only_hour_unconfirmed"
+    },
+    {
+      "id": "jev-agent-harness",
+      "title": "🧩 近期补看：Jev接进Agent后，单题高分为何不够",
+      "category": "Agent研究 / 决策模型",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2610.21412",
+      "related_urls": [
+        "https://github.com/JevAgentHarness/JevAgentHarness",
+        "https://huggingface.co/JevAgentHarness/AgentDecision-4B"
+      ],
+      "published_at": "2026-10-15",
+      "event_time": "2026-10-15",
+      "key_claims": [
+        "原论文主文、方法、结果和限制，代码README、实验协议、HF模型卡及264308896字节LoRA工件均已核验。15日提交、16日代码/适配器最后记录；作为近期补看，不计18日新发布。",
+        "AgentDecisionBench区分单题、离线轨迹与执行任务；BFCL工具选择最佳92.2%的模型在移位任务只完成69.5%，按Agent状态训练的模型完成91.5%。",
+        "按决策类型用影子轨迹拟合委派阈值，低于阈值交给LLM；训练包含错误后状态。论文主要节省来自客服/文本家务模拟，不等同编程省89%。"
+      ],
+      "window_uncertain": true,
+      "reason": "原论文主文、方法、结果和限制，代码README、实验协议、HF模型卡及264308896字节LoRA工件均已核验。15日提交、16日代码/适配器最后记录；作为近期补看，不计18日新发布。",
+      "arxiv_submitted_at": "2026-10-15T07:27:08Z",
+      "window_status": "explicit_recent_catchup"
+    }
+  ]
+}

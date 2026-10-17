@@ -1,0 +1,76 @@
+{
+  "issue_date": "2026-10-18",
+  "papers": [
+    {
+      "id": "arxiv:2610.21412",
+      "title": "JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs",
+      "url": "https://arxiv.org/abs/2610.21412",
+      "doi": "",
+      "published_date": "2026-10-15",
+      "item_type": "preprint",
+      "publicationTitle": "arXiv",
+      "creators": [
+        {
+          "firstName": "Kunlun",
+          "lastName": "Zhu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tao",
+          "lastName": "Feng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xu",
+          "lastName": "Han",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Heng",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ling",
+          "lastName": "Yang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xiangru",
+          "lastName": "Tang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jiaxuan",
+          "lastName": "You",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Heng",
+          "lastName": "Ji",
+          "creatorType": "author"
+        }
+      ],
+      "authors": [
+        "Kunlun Zhu",
+        "Tao Feng",
+        "Xu Han",
+        "Heng Wang",
+        "Ling Yang",
+        "Xiangru Tang",
+        "Jiaxuan You",
+        "Heng Ji"
+      ],
+      "tags": [
+        "Juju Radar",
+        "决策模型",
+        "Agent委派",
+        "待阅读",
+        "补看"
+      ],
+      "evidence_status": "primary_verified",
+      "pdf_url": "https://arxiv.org/pdf/2610.21412",
+      "note": "近期补看：15日提交，16日代码和适配器记录，不当18日首发。论文比较固定选择题、录制轨迹与接管Agent三个层次。单题准确率高并不保证执行任务成功；错误会改变后续状态，必须在实际Agent轨迹标定每类决策阈值。AgentDecision-4B以Qwen3-4B LoRA训练，包含错误后的状态与Jev软标签，非Typesafe官方Jev权重。重要度8.5/10。\n\n主实验为英文模拟客服与文本家务，86.3%费用节省及2.5倍速度依赖独占GPU和指定任务，编程收益较小。README74任务路由试验为另外模型和协议，不混入论文主实验。规则改变、不可逆动作和共享GPU会改变效果。代码MIT、适配器CCBYNC4.0分别核验；本轮确认实际adapter_model.safetensors存在，没有运行模型复现实验。\n\n原文：https://arxiv.org/abs/2610.21412\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-18/\nAI辅助整理。"
+    }
+  ]
+}
