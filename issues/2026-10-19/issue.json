@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-19",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "deepseek-arena-1017",
+      "title": "💻 DeepSeek登上网页开发开源榜首，新增独立评测",
+      "category": "独立评测 / Coding Agent",
+      "score": 7.5,
+      "url": "https://arena.ai/leaderboard/code/webdev",
+      "related_urls": [
+        "https://x.com/arena/status/2111894091168682086",
+        "https://arena.ai/blog/code-arena",
+        "https://arena.ai/blog/ranking-method",
+        "https://api-docs.deepseek.com/quick_start/pricing/"
+      ],
+      "published_at": "2026-10-18",
+      "event_time": "2026-10-18",
+      "window_uncertain": true,
+      "window_status": "official_post_date_inside_window_hour_timezone_not_independently_resolved",
+      "key_claims": [
+        "Arena官方18日公告和18日WebDev Overall榜单均为1017 Max检查点；1670±17、1417票，总榜原始名次12，排名区间7–16；开权重模型中当前点估计最高。",
+        "Kimi K3 Max在相同榜单1655±6、19426票，二者分数区间重叠；不是稳定胜出的统计证明。",
+        "榜单每百万输入/输出标价DeepSeek为0.30/1.20美元、Kimi为3/15美元。相同100万输入和10万输出模型费用示例为0.42对4.50美元，不是实际任务节省实测。",
+        "Code Arena采用运行应用后的人类成对偏好；多轮工具执行环境、功能与可用性也参与判断，不等同代码仓库修复成功率。"
+      ],
+      "reason": "独立评测使昨天的效率主张多了一类外部证据，并出现低单价与较高网页开发偏好并存的具体选择；按短版报道，不升级成通用编程第一。"
+    }
+  ]
+}

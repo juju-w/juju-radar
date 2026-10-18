@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "label": "Arena的18日公告",
+      "url": "https://x.com/arena/status/2111894091168682086",
+      "section": "DeepSeek登上网页开发开源榜首，新增独立评测"
+    },
+    {
+      "label": "榜单快照",
+      "url": "https://arena.ai/leaderboard/code/webdev",
+      "section": "DeepSeek登上网页开发开源榜首，新增独立评测"
+    },
+    {
+      "label": "Code Arena的流程",
+      "url": "https://arena.ai/blog/code-arena",
+      "section": "DeepSeek登上网页开发开源榜首，新增独立评测"
+    },
+    {
+      "label": "Arena对这个区间的解释",
+      "url": "https://arena.ai/blog/ranking-method",
+      "section": "DeepSeek登上网页开发开源榜首，新增独立评测"
+    },
+    {
+      "label": "DeepSeek官方定价",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "section": "DeepSeek登上网页开发开源榜首，新增独立评测"
+    }
+  ]
+}
