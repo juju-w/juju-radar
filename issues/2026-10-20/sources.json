@@ -1,0 +1,74 @@
+{
+  "sources": [
+    {
+      "label": "Inception在19日发布Mercury 3",
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "section": "Mercury 3发布，扩散语言模型继续扩大规模"
+    },
+    {
+      "label": "OpenRouter的模型目录",
+      "url": "https://openrouter.ai/inception/mercury-3",
+      "section": "Mercury 3发布，扩散语言模型继续扩大规模"
+    },
+    {
+      "label": "文本扩散路线",
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury",
+      "section": "Mercury 3发布，扩散语言模型继续扩大规模"
+    },
+    {
+      "label": "美国《联邦公报》的公开检查文件",
+      "url": "https://public-inspection.federalregister.gov/2026-21447.pdf",
+      "section": "美国公开DeepSeek移除令，范围延伸到第三方产品"
+    },
+    {
+      "label": "Norforge在19日公布调查",
+      "url": "https://norforge.com/blog/inside_cairn",
+      "section": "一批暴露的控制台，让AI入侵过程留下了记录"
+    },
+    {
+      "label": "The Verge取得的企业回应",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+      "section": "一批暴露的控制台，让AI入侵过程留下了记录"
+    },
+    {
+      "label": "MiniMax确认",
+      "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
+      "section": "MiniMax揭晓Space Bunny，M3.1 Flash正式上线"
+    },
+    {
+      "label": "OpenRouter对匿名试运行的回顾",
+      "url": "https://x.com/OpenRouter/status/2112152045461680591",
+      "section": "MiniMax揭晓Space Bunny，M3.1 Flash正式上线"
+    },
+    {
+      "label": "正式模型与接入文档",
+      "url": "https://platform.minimax.io/docs/guides/text-generation",
+      "section": "MiniMax揭晓Space Bunny，M3.1 Flash正式上线"
+    },
+    {
+      "label": "fal与Black Forest Labs合作推出FLUX 3 Max",
+      "url": "https://x.com/fal/status/2112251022047412492",
+      "section": "FLUX 3 Max提速，视频模型的等待时间开始缩短"
+    },
+    {
+      "label": "fal发布稿",
+      "url": "https://www.prnewswire.com/news-releases/fal-launches-flux-3-max-delivering-1-tier-image-to-video-quality-at-industry-leading-speeds-302913033.html",
+      "section": "FLUX 3 Max提速，视频模型的等待时间开始缩短"
+    },
+    {
+      "label": "Artificial Analysis的图生视频榜",
+      "url": "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+      "section": "FLUX 3 Max提速，视频模型的等待时间开始缩短"
+    },
+    {
+      "label": "可调用服务",
+      "url": "https://fal.ai/models/blackforestlabs/flux-3-max/image-to-video",
+      "section": "FLUX 3 Max提速，视频模型的等待时间开始缩短"
+    },
+    {
+      "label": "布鲁克海文国家实验室等机构与Great Sky公布了硬件示范",
+      "url": "https://www.bnl.gov/newsroom/news.php?a=123222",
+      "section": "超导神经网络芯片，开始处理聚变等离子体数据"
+    }
+  ]
+}

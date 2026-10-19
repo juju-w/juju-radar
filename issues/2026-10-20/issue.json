@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-20",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "mercury3",
+      "title": "⚡ Mercury 3发布，扩散语言模型继续扩大规模",
+      "category": "前沿模型 / 扩散语言模型",
+      "score": 8.5,
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "related_urls": [
+        "https://www.inceptionlabs.ai/blog/introducing-mercury",
+        "https://openrouter.ai/inception/mercury-3"
+      ],
+      "event_time": "2026-10-19",
+      "published_at": "2026-10-19",
+      "key_claims": [
+        "官方19日发布Mercury3，称总参数相对Mercury1扩大40倍以上，NVIDIA GPU上1068词元/秒，上下文100万。",
+        "扩散通过多次并行修正多个位置形成文本；不是一次前向直接给出概率的决策模型，不虚构本轮模型参数数目、GPU数量或训练配方。",
+        "API常规每百万输入/输出0.20/0.70美元，首发减半0.10/0.35；OpenRouter已列出模型。"
+      ],
+      "reason": "离散文本扩散扩容后仍强调低延迟，是不同于传统逐词元生成的可用产品路线，适合检验多轮交互等待能否缩短。",
+      "window_uncertain": true,
+      "window_status": "official_date_only_hour_unconfirmed"
+    },
+    {
+      "id": "dhs-deepseek-order",
+      "title": "📜 美国公开DeepSeek移除令，范围延伸到第三方产品",
+      "category": "AI政策 / 软件供应链",
+      "score": 8.5,
+      "url": "https://public-inspection.federalregister.gov/2026-21447.pdf",
+      "related_urls": [],
+      "event_time": "2026-10-19",
+      "published_at": "2026-10-19",
+      "window_uncertain": true,
+      "window_status": "official_public_inspection_date_verified_not_new_order_signed_today",
+      "key_claims": [
+        "DHS-2026-0628、FR Doc2026-21447，19日8:45列入公开检查，20日正式刊登；附2026-01号命令原始日期7月24日。",
+        "适用于联邦文职行政机构，采购排除DeepSeek及关联实体产品，既有IT移除其产品和使用DeepSeek实现开发的第三方产品服务。",
+        "扫描附录第1页排除国家安全及敏感分隔信息系统，第3页有例外申请条款；不推断面向所有美国企业或个人。"
+      ],
+      "reason": "公开文件把限制从品牌与直接产品延伸到采用其实现的第三方软件，模型来源因此进入政府采购与存量IT管理，是实质供应链政策信息。"
+    },
+    {
+      "id": "cairn-operations",
+      "title": "🔐 一批暴露的控制台，让AI入侵过程留下了记录",
+      "category": "真实事故 / AI安全",
+      "score": 8.5,
+      "url": "https://norforge.com/blog/inside_cairn",
+      "related_urls": [
+        "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins"
+      ],
+      "event_time": "2026-10-19",
+      "published_at": "2026-10-19",
+      "key_claims": [
+        "Norforge19日公布调查，20多个面板被归为疑似恶意活动，最大活动簇14面板超过1100攻击项目，不是1100次成功。",
+        "框架通过共享黑板记录facts/intents、接续动作；报告对一条成功结果做外部验证，实际看到上传后门，非全部任务逐一证实。",
+        "TheVerge向Cummins取得回应称正在调查第三方供应商网站的潜在攻击；不能扩大成全部核心系统失陷。"
+      ],
+      "reason": "有连续执行轨迹与部分外部核实，显示低人工介入的长期任务推进会扩展攻击规模；防守要看第三方小站和执行权限链。",
+      "window_uncertain": true,
+      "window_status": "official_date_only_hour_unconfirmed"
+    },
+    {
+      "id": "minimax-m31",
+      "title": "🐰 MiniMax揭晓Space Bunny，M3.1 Flash正式上线",
+      "category": "前沿模型 / Agent",
+      "score": 8,
+      "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
+      "related_urls": [
+        "https://platform.minimax.io/docs/guides/text-generation",
+        "https://x.com/OpenRouter/status/2112152045461680591"
+      ],
+      "event_time": "2026-10-19",
+      "published_at": "2026-10-19",
+      "key_claims": [
+        "19日官方揭晓Space Bunny为早期M3.1Flash，价格每百万输入0.15输出0.60美元，缓存读取0.015美元。",
+        "官方明确权重10月23日才到；当前报道API与正式身份，不当作权重开放。",
+        "OpenRouter回报匿名期首词元1.95→1.22秒、吞吐70→100词元/秒、错误率1.4%→0.7%；不同模型升级与服务状态一起变化。"
+      ],
+      "reason": "正式版本、稳定计价及匿名试运行期间的可用性改进一起交付，可在多轮办公和编程任务上检验总完成费用。",
+      "window_uncertain": true,
+      "window_status": "official_date_only_hour_unconfirmed"
+    },
+    {
+      "id": "flux3-max",
+      "title": "🎬 FLUX 3 Max提速，视频模型的等待时间开始缩短",
+      "category": "视频生成 / 推理效率",
+      "score": 8,
+      "url": "https://x.com/fal/status/2112251022047412492",
+      "related_urls": [
+        "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+        "https://www.prnewswire.com/news-releases/fal-launches-flux-3-max-delivering-1-tier-image-to-video-quality-at-industry-leading-speeds-302913033.html",
+        "https://fal.ai/models/blackforestlabs/flux-3-max/image-to-video"
+      ],
+      "event_time": "2026-10-19",
+      "published_at": "2026-10-19",
+      "key_claims": [
+        "fal与BlackForestLabs合作19日交付FLUX3Max，提供文生、图生与首尾帧API；未核实权重开放，不称开源。",
+        "AA实时快照FLUX3Max720p为1138±15、5054样本；MiniMaxH3768p1140±16，Seedance2.5为1138±17，区间重叠。",
+        "fal发布稿称10秒视频约10.95秒生成，对原版126.44秒约11.5倍；速度是fal自测，与独立人类偏好分开归因。"
+      ],
+      "reason": "后训练与推理工程对同一基础模型同时改善偏好与等待时间，接近片段时长的生成速度可能改变选镜头的迭代方式。",
+      "window_uncertain": true,
+      "window_status": "official_date_only_hour_unconfirmed"
+    },
+    {
+      "id": "superconducting-fusion",
+      "title": "🧊 超导神经网络芯片，开始处理聚变等离子体数据",
+      "category": "AI for Science / 新型计算",
+      "score": 7.5,
+      "url": "https://www.bnl.gov/newsroom/news.php?a=123222",
+      "related_urls": [],
+      "event_time": "2026-10-19",
+      "published_at": "2026-10-19",
+      "key_claims": [
+        "BNL、PPPL、DIII-D和GreatSky19日公布超导神经网络芯片示范，处理两项已有DIII-D高采样数据任务及一项TORAX仿真任务。",
+        "DIII-D数据采样率每秒100万；芯片跟上输入速度，但公告没有完整预测准确率、系统功耗或误报率。",
+        "团队论文仍在撰写，计划2027年更大神经网络演示及后续DIII-D现场部署；并未完成托卡马克实时闭环控制。"
+      ],
+      "reason": "高速科学仪器的瓶颈是信号来得及处理，而非通用语言榜单；超导神经网络在具体输入速率任务上已有硬件示范，适合探索性观察。",
+      "window_uncertain": true,
+      "window_status": "official_date_only_hour_unconfirmed"
+    }
+  ]
+}
