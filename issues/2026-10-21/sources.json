@@ -1,0 +1,79 @@
+{
+  "sources": [
+    {
+      "label": "DeepSeek开源了DeepInfer",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "section": "DeepSeek公开推理引擎，长任务的成本藏在重复计算里"
+    },
+    {
+      "label": "同时公开的DeepSeek Recipe",
+      "url": "https://github.com/deepseek-ai/deepseek-recipe",
+      "section": "DeepSeek公开推理引擎，长任务的成本藏在重复计算里"
+    },
+    {
+      "label": "部署问答",
+      "url": "https://github.com/deepseek-ai/DeepInfer/blob/main/doc/inference_deployment_qa.md",
+      "section": "DeepSeek公开推理引擎，长任务的成本藏在重复计算里"
+    },
+    {
+      "label": "记忆张量发布的MemT-1.0",
+      "url": "https://arxiv.org/abs/2610.26825",
+      "section": "MemT把历史写进内部状态，记忆不再只靠加长上下文"
+    },
+    {
+      "label": "模型权重",
+      "url": "https://huggingface.co/collections/MemTensor/memt-1",
+      "section": "MemT把历史写进内部状态，记忆不再只靠加长上下文"
+    },
+    {
+      "label": "推理代码",
+      "url": "https://github.com/MemTensor/MemT-1.0",
+      "section": "MemT把历史写进内部状态，记忆不再只靠加长上下文"
+    },
+    {
+      "label": "论文的效率实验",
+      "url": "https://arxiv.org/html/2610.26825v1",
+      "section": "MemT把历史写进内部状态，记忆不再只靠加长上下文"
+    },
+    {
+      "label": "Anthropic公布了一次面向蝎毒神经毒素的蛋白设计实验",
+      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "section": "Claude设计的17个蛋白通过结合测试，离解毒药还有几步"
+    },
+    {
+      "label": "技术报告",
+      "url": "https://www-cdn.anthropic.com/31ac578806cffd8b3d92d8affe6edc4c04d502e1.pdf",
+      "section": "Claude设计的17个蛋白通过结合测试，离解毒药还有几步"
+    },
+    {
+      "label": "OpenAI宣布已收购Orchestra Bio",
+      "url": "https://openai.com/index/openai-to-acquire-orchestra-bio/",
+      "section": "OpenAI收购Orchestra Bio，把研发协调接到Rosalind后面"
+    },
+    {
+      "label": "Google与Meta介绍并开源TorchTPU",
+      "url": "https://pytorch.org/blog/introducing-torchtpu/",
+      "section": "TorchTPU开源，谷歌把PyTorch的使用习惯带到TPU上"
+    },
+    {
+      "label": "仓库",
+      "url": "https://github.com/google-pytorch/torch_tpu",
+      "section": "TorchTPU开源，谷歌把PyTorch的使用习惯带到TPU上"
+    },
+    {
+      "label": "谷歌的发布说明",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus",
+      "section": "TorchTPU开源，谷歌把PyTorch的使用习惯带到TPU上"
+    },
+    {
+      "label": "安全公司Claroc更新了Muse分享调查",
+      "url": "https://blog.claroc.io/ghostshares-muse-passive-dns/",
+      "section": "Meta暂停Muse分享，随机链接也可能被意外发现"
+    },
+    {
+      "label": "媒体询问",
+      "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+      "section": "Meta暂停Muse分享，随机链接也可能被意外发现"
+    }
+  ]
+}

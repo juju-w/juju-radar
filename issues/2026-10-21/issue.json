@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-21",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "deepinfer",
+      "title": "⚙️ DeepSeek公开推理引擎，长任务的成本藏在重复计算里",
+      "category": "推理基础设施 / 开源",
+      "score": 8.5,
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "related_urls": [
+        "https://github.com/deepseek-ai/DeepInfer/blob/main/doc/inference_deployment_qa.md",
+        "https://github.com/deepseek-ai/deepseek-recipe"
+      ],
+      "event_time": "2026-10-20",
+      "published_at": "2026-10-20",
+      "key_claims": [
+        "公开生产推理路径及协议处理组件，减少外部部署者重新猜测、重做性能优化的工作。",
+        "上下文复用降低重复预填充，按草稿接受概率分配验证预算，异步调度把CPU工作与设备计算重叠。",
+        "服务团队能沿已有的推理、协议和算子实现做优化；长任务收益取决于相同前缀的复用比例与并发结构。"
+      ],
+      "reason": "模型权重相同，缓存和验证调度仍能改变每轮任务的计算量；公开这些实现让外部优化有了真实工程对象。",
+      "window_uncertain": true,
+      "window_status": "official_release_or_material_update_date_only_hour_unconfirmed"
+    },
+    {
+      "id": "memt",
+      "title": "🧠 MemT把历史写进内部状态，记忆不再只靠加长上下文",
+      "category": "基础模型 / 记忆架构",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2610.26825",
+      "related_urls": [
+        "https://github.com/MemTensor/MemT-1.0",
+        "https://huggingface.co/collections/MemTensor/memt-1",
+        "https://arxiv.org/html/2610.26825v1"
+      ],
+      "event_time": "2026-10-20",
+      "published_at": "2026-10-20",
+      "key_claims": [
+        "MemT公开可运行模型与记忆推理代码，以固定大小动态状态承接历史，而不是一直增长的原始上下文。",
+        "经训练的读写遗忘门控制会话专属矩阵的更新，后续生成并行读取状态；在线变的是状态而非整个主干权重。",
+        "长历史下减少保存和反复读取历史的负担；128K、双GPU单请求实验自报1.86倍端到端速度和约1/66持久存储。"
+      ],
+      "reason": "紧凑的内部经验能换取长任务成本下降，但无法保证逐字恢复依据；记忆表示决定了收益和丢失信息的方式。",
+      "window_uncertain": true,
+      "window_status": "official_release_or_material_update_date_only_hour_unconfirmed",
+      "artifact_released_at": "2026-10-19T22:06:00Z"
+    },
+    {
+      "id": "claude-binders",
+      "title": "🧬 Claude设计的17个蛋白通过结合测试，离解毒药还有几步",
+      "category": "AI for Science / 蛋白设计",
+      "score": 8.5,
+      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "related_urls": [
+        "https://www-cdn.anthropic.com/31ac578806cffd8b3d92d8affe6edc4c04d502e1.pdf"
+      ],
+      "event_time": "2026-10-20",
+      "published_at": "2026-10-20",
+      "key_claims": [
+        "持续约64小时的受监督设计活动交给外部实验室检验，211个测试设计中17个达到结合标准，实验结果已公开。",
+        "模型协调文献、设计、筛选与实验交付，使一次研究连续推进；真实测量把计算候选与分子行为连接起来。",
+        "研究人员可围绕具有实际结合证据的候选安排后续工作，设计阶段可减少逐工具手动协调，但仍付出约一万GPU小时。"
+      ],
+      "reason": "候选筛选能够更自动化，药物研发瓶颈却继续落在功能、安全与制造证据上；本次只跨过真实结合验证这一步。",
+      "window_uncertain": true,
+      "window_status": "official_release_or_material_update_date_only_hour_unconfirmed"
+    },
+    {
+      "id": "orchestra-bio",
+      "title": "🧪 OpenAI收购Orchestra Bio，把研发协调接到Rosalind后面",
+      "category": "公司战略 / 生物医药AI",
+      "score": 8,
+      "url": "https://openai.com/index/openai-to-acquire-orchestra-bio/",
+      "related_urls": [],
+      "event_time": "2026-10-20",
+      "published_at": "2026-10-20",
+      "key_claims": [
+        "OpenAI官方正文称已收购Orchestra Bio，将负责研发协调的团队和技术结合进Rosalind，未披露金额。",
+        "研发存在跨部门、外部伙伴及研究批次的依赖关系；跟踪这些关系才能把一项科学发现连接到后续决策。",
+        "项目负责人可以获知某个制造或研究环节失败会影响哪些时间安排，再比较应对路径，减少分散系统之间人工拼接。"
+      ],
+      "reason": "科学模型进入药物开发，需要接上研究后的协作和依赖管理；这笔收购补的是流程协调而非又一种分子生成能力。",
+      "window_uncertain": true,
+      "window_status": "official_release_or_material_update_date_only_hour_unconfirmed"
+    },
+    {
+      "id": "torchtpu",
+      "title": "🔧 TorchTPU开源，谷歌把PyTorch的使用习惯带到TPU上",
+      "category": "芯片生态 / 开源软件",
+      "score": 8.5,
+      "url": "https://pytorch.org/blog/introducing-torchtpu/",
+      "related_urls": [
+        "https://github.com/google-pytorch/torch_tpu",
+        "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus"
+      ],
+      "event_time": "2026-10-20",
+      "published_at": "2026-10-20",
+      "key_claims": [
+        "Google与Meta公开原生PyTorch TPU后端，以即时执行、torch.compile和分布式接口降低迁移及调试门槛。",
+        "保留PyTorch分派、即时调试和分布式习惯，再经XLA编译到TPU，不要求开发者先把整个工作流搬成JAX风格。",
+        "芯片采购者可以更低成本地先迁移再做真实任务对照，减少软件移植成本对硬件选择的锁定。"
+      ],
+      "reason": "硬件竞争先得让开发者顺利使用原有代码；调试与分布式生态兼容降低的是迁移成本，性能仍需按完整任务比较。",
+      "window_uncertain": true,
+      "window_status": "official_release_or_material_update_date_only_hour_unconfirmed"
+    },
+    {
+      "id": "muse-ghostshares",
+      "title": "🔐 Meta暂停Muse分享，随机链接也可能被意外发现",
+      "category": "真实事故 / 隐私",
+      "score": 8.5,
+      "url": "https://blog.claroc.io/ghostshares-muse-passive-dns/",
+      "related_urls": [
+        "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+      ],
+      "event_time": "2026-10-20",
+      "published_at": "2026-10-20",
+      "key_claims": [
+        "18日披露的分享暴露在20日有实质处置更新：Meta表示暂停，Claroc复查40个此前可开分享均无法再访问。",
+        "标题和随机标识进入独立主机名后可能被域名解析记录收集；禁止搜索抓取无法代替页面受众权限。",
+        "对使用文件和日程的Agent，分享必须按发布动作管理访问者，否则正确整理的敏感资料也可能流向非预期读者。"
+      ],
+      "reason": "模型输出准确也不能保证数据安全，分享链接的可发现性和访问控制会独立决定整理好的资料最终被谁看到。",
+      "window_uncertain": true,
+      "window_status": "official_release_or_material_update_date_only_hour_unconfirmed"
+    }
+  ]
+}

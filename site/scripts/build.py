@@ -95,7 +95,7 @@ def source_for_item(issue_id,sources,item_index,heading,body):
  public_url=(inline_urls[0] if inline_urls and not source.get('id') else next((u for u in inline_urls if u in known_urls),source.get('url')))
  return source,public_url,uniq([source.get('url'),*source.get('related_urls',[]),*inline_urls])
 def topics(text):
- patterns={'Agent':['agent','astra','终端','客服'],'机器人':['机器人','具身'],'视觉与多模态':['视频','视觉','图像','设计','worldsculpt','3d'],'AI 科研':['science','生物','衰老','数学','科研','navier','费马'],'算力与推理':['推理','缓存','kv','芯片','算力','diffusion'],'开源与训练':['训练','开源','distillation','compile'],'产业与安全':['战略','收购','事故','安全','越界','司法','监控']}
+ patterns={'Agent':['agent','astra','终端','客服'],'机器人':['机器人','具身'],'视觉与多模态':['视频','视觉','图像','worldsculpt','3d'],'AI 科研':['science','生物','衰老','数学','科研','navier','费马'],'算力与推理':['推理','缓存','kv','芯片','算力','diffusion'],'开源与训练':['训练','开源','distillation','compile'],'产业与安全':['战略','收购','事故','安全','越界','司法','监控']}
  result=[k for k,vs in patterns.items() if any(v.lower() in text.lower() for v in vs)]
  return result or ['其他']
 def slug(x):return hashlib.sha256(x.encode()).hexdigest()[:16]
