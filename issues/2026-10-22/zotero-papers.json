@@ -1,0 +1,111 @@
+{
+  "issue_date": "2026-10-22",
+  "papers": [
+    {
+      "id": "10.64898/2026.10.15.759436",
+      "title": "Distributed AI agents enable comprehensive discovery of biological insights at scale",
+      "url": "https://doi.org/10.64898/2026.10.15.759436",
+      "doi": "10.64898/2026.10.15.759436",
+      "published_date": "2026-10-16",
+      "item_type": "preprint",
+      "publicationTitle": "bioRxiv",
+      "authors": [
+        "Sun, A.",
+        "Park, J. J.",
+        "DeTomaso, D.",
+        "Kim, S.",
+        "Liu, A.",
+        "Shringarpure, S.",
+        "Kim, K.",
+        "Thompson, P. C.",
+        "Shi, T.",
+        "Wang, Y.",
+        "Mukamel, E. A.",
+        "Zheng, G. X.",
+        "Jiao, Y. J.",
+        "Jin, X."
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "A",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "J. J",
+          "lastName": "Park"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "D",
+          "lastName": "DeTomaso"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "S",
+          "lastName": "Kim"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "A",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "S",
+          "lastName": "Shringarpure"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "K",
+          "lastName": "Kim"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "P. C",
+          "lastName": "Thompson"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "T",
+          "lastName": "Shi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Y",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "E. A",
+          "lastName": "Mukamel"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "G. X",
+          "lastName": "Zheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Y. J",
+          "lastName": "Jiao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "X",
+          "lastName": "Jin"
+        }
+      ],
+      "pdf_url": "https://www.biorxiv.org/content/10.64898/2026.10.15.759436v1.full.pdf",
+      "tags": [
+        "Juju Radar",
+        "生物研究",
+        "多Agent",
+        "待阅读"
+      ],
+      "evidence_status": "primary_verified",
+      "note": "研究将已有全脑CRISPR扰动数据分给独立AI Agent，各自检索文献、解释细胞反应，再汇总为可查询推理图谱。OpenAI于10月21日介绍研究并提供开放资源入口；预印本原始公开日期由bioRxiv API核实为10月16日，不改为日报日期。\n\n重要度8/10。官方报告32分钟完成的是既有数据分析；固定模型与资源对照下，分布式系统引用逾700篇、单Agent11篇，专家盲评75%偏好前者。Dctn1与胆固醇等联系是需要后续实验的假设，不是治疗结果。\n\n已读官方完整介绍、作者仓库README、bioRxiv原始元数据及摘要。论文全文、PDF和XML返回403，未声称逐项核对正文或复现。PDF仅链接附件，无离线下载。论文：https://doi.org/10.64898/2026.10.15.759436；代码：https://github.com/jinlabneurogenomics/distributed_agent；当期资料页：https://www.asteronline.cn/juju-radar/2026-10-22/。AI辅助整理。"
+    }
+  ]
+}

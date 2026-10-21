@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "label": "Anthropic推出Claude Duet研究预览",
+      "url": "https://claude.com/resources/articles/claude-duet",
+      "section": "Claude Duet开启预览，关上电脑后也能继续工作"
+    },
+    {
+      "label": "LiteLLM确认正式发布流程遭到入侵",
+      "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026",
+      "section": "LiteLLM发布包遭投毒，官方源码标签却是干净的"
+    },
+    {
+      "label": "Wiz的独立分析",
+      "url": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
+      "section": "LiteLLM发布包遭投毒，官方源码标签却是干净的"
+    },
+    {
+      "label": "PHP维护者发布紧急安全更新",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "section": "AI辅助发现PHP核心漏洞，修复难在下游升级"
+    },
+    {
+      "label": "OpenAI披露",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+      "section": "AI辅助发现PHP核心漏洞，修复难在下游升级"
+    },
+    {
+      "label": "Wiz独立发现并报告了两处漏洞",
+      "url": "https://www.wiz.io/blog/php2shell-php-rce",
+      "section": "AI辅助发现PHP核心漏洞，修复难在下游升级"
+    },
+    {
+      "label": "蚂蚁集团与vLLM社区开源Humming",
+      "url": "https://vllm.ai/blog/2026-10-21-humming",
+      "section": "Humming把量化格式、GPU代际和MoE负载放进同一套内核"
+    },
+    {
+      "label": "代码仓库",
+      "url": "https://github.com/vllm-project/humming",
+      "section": "Humming把量化格式、GPU代际和MoE负载放进同一套内核"
+    },
+    {
+      "label": "OpenAI介绍了与PerturbAI、Scripps Research的合作",
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+      "section": "数千个Agent分工读脑细胞数据，增加的是线索覆盖"
+    },
+    {
+      "label": "预印本",
+      "url": "https://doi.org/10.64898/2026.10.15.759436",
+      "section": "数千个Agent分工读脑细胞数据，增加的是线索覆盖"
+    },
+    {
+      "label": "作者代码",
+      "url": "https://github.com/jinlabneurogenomics/distributed_agent",
+      "section": "数千个Agent分工读脑细胞数据，增加的是线索覆盖"
+    },
+    {
+      "label": "OpenAI与Google Cloud宣布合作",
+      "url": "https://openai.com/index/openai-models-google-cloud/",
+      "section": "OpenAI模型将进入Google Cloud，竞争延伸到采购入口"
+    }
+  ]
+}

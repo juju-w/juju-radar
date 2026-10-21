@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-22",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "claude-duet",
+      "title": "Claude Duet开启研究预览，离开电脑后仍可推进任务",
+      "category": "Agent / 产品",
+      "score": 8.5,
+      "url": "https://claude.com/resources/articles/claude-duet",
+      "related_urls": [],
+      "published_at": "2026-10-21",
+      "event_time": "2026-10-21",
+      "key_claims": [
+        "美国Pro/Max候补名单研究预览；独立云端虚拟机及浏览器；每隔数小时检查已连接应用",
+        "读取、草拟与准备可主动推进，发送消息、付款、签署、删除前逐次向用户确认",
+        "后台检查消耗同一订阅额度，尚不能展示浏览器"
+      ],
+      "reason": "把持续观察、任务执行和人工审批组合进常驻云端Agent；比单个聊天功能更新更改变使用方式。",
+      "window_uncertain": true
+    },
+    {
+      "id": "litellm-release-incident",
+      "title": "LiteLLM发布包遭投毒，源码标签与下载产物不一致",
+      "category": "真实事故 / 软件供应链",
+      "score": 9,
+      "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026",
+      "related_urls": [
+        "https://www.wiz.io/blog/litellm-compromised-steals-credentials"
+      ],
+      "published_at": "2026-10-21T11:39:51+00:00",
+      "event_time": "2026-10-21T11:39:51+00:00",
+      "key_claims": [
+        "PyPI 1.107.0七个wheel及特定镜像标签受影响，官方GitHub源码标签未含恶意文件",
+        "20:30UTC初步调查称三个开发者GitHub CLI凭据被利用，组织所有者权限被用于关闭保护、指向仿冒源并签名发布",
+        "Wiz报告观察到失窃云凭据的后续滥用"
+      ],
+      "reason": "实际遭破坏的是发布与身份信任链；签名及源码标签本身不足以证明发布包来源可信。",
+      "window_uncertain": false
+    },
+    {
+      "id": "php2shell",
+      "title": "AI辅助发现PHP核心漏洞，修复需要跨服务商协调",
+      "category": "AI安全 / 漏洞研究",
+      "score": 9,
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "related_urls": [
+        "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+        "https://www.wiz.io/blog/php2shell-php-rce"
+      ],
+      "published_at": "2026-10-21T07:00:00+00:00",
+      "event_time": "2026-10-21T07:00:00+00:00",
+      "key_claims": [
+        "维护者21日发布PHP8.5.12/8.4.27/8.3.36/8.2.35修复两组核心内存安全问题",
+        "Calif用GPT-5.6 Sol发现一处关键缺陷，Wiz独立发现并报告两处，使用Wiz Atlas/Gemini4Argon/GPT-5.6Sol",
+        "涉及长驻请求状态与错误清理；研究方在代表性CMS部署验证无需认证的远程代码执行，合作方提前准备保护"
+      ],
+      "reason": "AI降低复杂漏洞适配成本，发现提速后升级分发及协调会成为修复瓶颈。",
+      "window_uncertain": false
+    },
+    {
+      "id": "humming",
+      "title": "Humming统一量化推理内核，适配多代GPU与MoE",
+      "category": "推理基础设施 / 开源",
+      "score": 8.5,
+      "url": "https://vllm.ai/blog/2026-10-21-humming",
+      "related_urls": [
+        "https://github.com/vllm-project/humming"
+      ],
+      "published_at": "2026-10-21",
+      "event_time": "2026-10-21",
+      "key_claims": [
+        "统一权重/激活量化描述，按设备、矩阵形状和负载配置共享CUDA组件并即时编译",
+        "覆盖Turing及之后架构及真武810E；vLLM0.29.0起集成",
+        "作者8张H20、TP8 DeepSeek-V4.1-Flash实验，改Marlin W4A16为Humming W4A8，端到端吞吐约增14%—43%"
+      ],
+      "reason": "减少格式、GPU代际、稠密与MoE之间的重复实现，将低比特存储收益转为实际服务吞吐。",
+      "window_uncertain": true
+    },
+    {
+      "id": "distributed-biology",
+      "title": "数千个Agent分工解读脑细胞数据，产出可追索的研究线索",
+      "category": "AI for Science / 生物研究",
+      "score": 8,
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+      "related_urls": [
+        "https://doi.org/10.64898/2026.10.15.759436",
+        "https://github.com/jinlabneurogenomics/distributed_agent"
+      ],
+      "published_at": "2026-10-21T04:50:00+00:00",
+      "event_time": "2026-10-21T04:50:00+00:00",
+      "key_claims": [
+        "21日OpenAI介绍与PerturbAI/Scripps合作及公开推理图谱；关联预印本实际公开16日",
+        "各Agent负责基因扰动、细胞反应和文献解释，再汇总为可查询图谱",
+        "官方对照保持模型和资源固定；大负载分布式引用逾700篇、单Agent11篇；盲评75%偏好分布式解释"
+      ],
+      "reason": "并行分工扩大文献覆盖，避免单个长上下文Agent随着工作量增加而压缩检索深度；图谱保留线索与出处供专家筛选。",
+      "window_uncertain": false
+    },
+    {
+      "id": "openai-google-cloud",
+      "title": "OpenAI模型将进入Google Cloud，企业可用既有云承诺采购",
+      "category": "公司战略 / 云平台",
+      "score": 8.5,
+      "url": "https://openai.com/index/openai-models-google-cloud/",
+      "related_urls": [],
+      "published_at": "2026-10-21T12:00:00+00:00",
+      "event_time": "2026-10-21T12:00:00+00:00",
+      "key_claims": [
+        "合作把前沿模型和Codex工作流引入Model Garden，支持Google Cloud Marketplace采购及抵扣GCP消费承诺",
+        "计划未来数周GA，Antigravity与Gemini Agent也将接入",
+        "Microsoft仍为OpenAI主要云伙伴"
+      ],
+      "reason": "预算与数据治理所在云成为模型分发入口，降低换模型时重新采购和迁移管理体系的阻力。",
+      "window_uncertain": false
+    }
+  ]
+}
