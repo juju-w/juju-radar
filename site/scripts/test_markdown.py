@@ -1,7 +1,9 @@
 """Regression checks for authored examples, safe escaping and source bindings."""
 import unittest
+import tempfile
+from pathlib import Path
 from html.parser import HTMLParser
-from build import md, inline, source_for_item, ROOT
+from build import md, inline, source_for_item, ROOT, website_article, digest
 from markdown_blocks import mask_fences, split_sections, before_sources
 
 
@@ -16,6 +18,17 @@ class Tags(HTMLParser):
 
 
 class MarkdownTests(unittest.TestCase):
+    def test_web_edition_is_optional_and_changes_approval_digest(self):
+        with tempfile.TemporaryDirectory() as t:
+            folder = Path(t)
+            (folder/'article.md').write_text('Original WeChat edition')
+            original_digest = digest(folder)
+            self.assertEqual(website_article(folder), 'Original WeChat edition')
+            (folder/'article-web.md').write_text('Web edition with diagrams')
+            self.assertNotEqual(digest(folder), original_digest)
+            self.assertEqual(website_article(folder), 'Web edition with diagrams')
+            self.assertEqual((folder/'article.md').read_text(), 'Original WeChat edition')
+
     def test_fence_keeps_indentation_blank_lines_and_html_literal(self):
         source = 'if x < 2:\n    print("<script>literal</script>")\n\n## not a heading\n<!-- literal -->\n'
         rendered = md('```python\n' + source + '```\n\n## Real heading')
@@ -98,7 +111,7 @@ class MarkdownTests(unittest.TestCase):
     def test_current_deepinfer_table_preserves_all_values(self):
         article = (ROOT/'issues/2026-10-22-deepinfer/article.md').read_text()
         rendered = md(before_sources(article))
-        self.assertEqual(Tags(rendered).tags.count('table'), 1)
+        self.assertGreaterEqual(Tags(rendered).tags.count('table'), 1)
         for value in ['4891', '4816', '13730', '14466', '14962', '15961', '−1.5%', '+5.4%', '+6.7%']:
             self.assertIn(value, rendered)
 

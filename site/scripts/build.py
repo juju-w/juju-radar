@@ -9,10 +9,14 @@ from markdown_blocks import render_markdown, mask_fences, split_sections, before
 ROOT=Path(__file__).resolve().parents[2]; SITE=ROOT/'site'; BASE='https://www.asteronline.cn/juju-radar/'; PREFIX='/juju-radar/'
 E=lambda x:html.escape(str(x),quote=True)
 FILES=['article.md','issue.json','sources.json','zotero-papers.json']
+def website_article(folder):
+ # Optional web edition keeps the saved WeChat source and its receipt intact.
+ override=folder/'article-web.md'
+ return (override if override.is_file() else folder/'article.md').read_text()
 def digest(folder):
  # Delivery metadata can change without editorial changes. Hash only public editorial fields.
  parts=[]
- for name in FILES:
+ for name in FILES+(['article-web.md'] if (folder/'article-web.md').is_file() else []):
   p=folder/name
   if p.exists():
    d=p.read_text()
@@ -174,7 +178,7 @@ def build(preview=False):
   p=out/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text.replace('https://happy.asteronline.cn','https://www.asteronline.cn'))
  issues=[];entries=[];papers={};projects={}
  for folder in folders:
-  issue_id=folder.name;article=(folder/'article.md').read_text();info=json.loads((folder/'issue.json').read_text());sources=json.loads((folder/'sources.json').read_text())['sources']
+  issue_id=folder.name;article=website_article(folder);info=json.loads((folder/'issue.json').read_text());sources=json.loads((folder/'sources.json').read_text())['sources']
   date=info.get('date',issue_id[:10]);kind=info.get('kind','daily');special=kind=='special'
   datetime.strptime(date,'%Y-%m-%d')
   if not re.fullmatch(r'\d{4}-\d{2}-\d{2}(?:-[a-z0-9]+)*',issue_id) or not issue_id.startswith(date):raise ValueError('Invalid issue identifier')
@@ -278,7 +282,7 @@ def build(preview=False):
    ET.SubElement(node,'guid',isPermaLink='true').text=item.get('guid',item['link'].replace('https://www.asteronline.cn','https://happy.asteronline.cn'))
   ET.ElementTree(root).write(out/filename,encoding='utf-8',xml_declaration=True)
  def pub(date):return format_datetime(datetime.fromisoformat(date).replace(hour=9,tzinfo=timezone(timedelta(hours=8))))
- feed('feed.xml','Juju Radar 精选与深度解读',[{'title':('【特别版】' if i['kind']=='special' else '')+i['title'],'link':BASE+'read/'+i['id']+'/','guid':(BASE if i['kind']=='special' else BASE.replace('https://www.asteronline.cn','https://happy.asteronline.cn'))+'read/'+i['id']+'/','description':md(before_sources((ROOT/'issues'/i['id']/'article.md').read_text()),enhanced=False),'pubDate':format_datetime(datetime.fromisoformat(i['published_at'])) if i['kind']=='special' else pub(i['date'])} for i in issues])
+ feed('feed.xml','Juju Radar 精选与深度解读',[{'title':('【特别版】' if i['kind']=='special' else '')+i['title'],'link':BASE+'read/'+i['id']+'/','guid':(BASE if i['kind']=='special' else BASE.replace('https://www.asteronline.cn','https://happy.asteronline.cn'))+'read/'+i['id']+'/','description':md(before_sources(website_article(ROOT/'issues'/i['id'])),enhanced=False),'pubDate':format_datetime(datetime.fromisoformat(i['published_at'])) if i['kind']=='special' else pub(i['date'])} for i in issues])
  feed('papers.xml','Juju Radar 论文',[{'title':p['title'],'link':BASE+'papers/'+slug(ident)+'/','description':md(p['note'],enhanced=False)+'<p><a href="'+E(p['url'])+'">论文原文</a></p>','pubDate':pub(p['date'])} for ident,p in sorted(papers.items(),key=lambda kv:kv[1]['date'],reverse=True)])
  save('about/formatting/index.html',shell('文章排版示例','<main class="reading"><a class="back" href="'+PREFIX+'about/">返回关于页面</a>'+md((SITE/'formatting-example.md').read_text())+'</main>','about/formatting/',description='查看表格、代码高亮与复制、Mermaid流程图和时序图的实际阅读效果。'))
  save('about/index.html',shell('关于 JuJu雷达与引用说明',f'<main class="reading"><h1>关于 JuJu雷达</h1><p class="lead">Juju Radar（JuJu雷达）整理 AI 动态、论文与开源项目，提供中文解读和原始资料链接。</p><h2>内容与来源</h2><p>内容由 AI 辅助整理。文章保留原始来源，论文笔记区分方法与局限；收录不代表独立复现或对结论作出保证。阅读具体判断时，请同时核对原始材料。</p><h2>日期与更正</h2><p>收录日期表示本站整理该资料的日期，不等于事件发生或论文首次公开的日期。后续修订沿用原文章链接。</p><h2>如何引用</h2><p>引用本站中文解读时，请注明文章标题、Juju Radar、文章永久链接及访问日期。引用论文或项目自身的结论时，请优先标注原论文、作者或项目，并保留原始链接。</p><h2>阅读功能</h2><p><a href="{PREFIX}about/formatting/">查看表格、代码和图示的排版示例</a></p><h2>查找与订阅</h2><p><a href="{PREFIX}archive/">往期精选</a> · <a href="{PREFIX}papers/">论文库</a> · <a href="{PREFIX}specials/">深度解读</a> · <a href="{PREFIX}subscribe/">RSS 与文献导出</a></p></main>','about/',description='了解 Juju Radar 的 AI 中文精选、原始资料、收录日期和引用方式。'))

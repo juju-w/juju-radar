@@ -6,7 +6,7 @@ import re
 import sys
 from html import escape
 from pathlib import Path
-from build import display_title
+from build import display_title, website_article
 from markdown_blocks import mask_fences
 
 
@@ -15,8 +15,7 @@ def main() -> None:
         raise SystemExit("Usage: build-source-page.py ISSUE_DIR")
 
     folder = Path(sys.argv[1]).resolve()
-    article_path = folder / "article.md"
-    article = article_path.read_text(encoding="utf-8")
+    article = website_article(folder)
     title_match = re.search(r"^title:\s*(.+)$", article, re.M)
     title = display_title(title_match.group(1).strip()) if title_match else folder.name
     note_match = re.search(r"^sourceNote:\s*(.+)$", article, re.M)
