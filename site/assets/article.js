@@ -38,6 +38,7 @@
       }
       if (copied) announce('已复制');
       else {
+        const details = code.closest('details'); if (details) details.open = true;
         const range = document.createRange(); range.selectNodeContents(code);
         const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
         announce('复制未完成，代码已选中，可手动复制');

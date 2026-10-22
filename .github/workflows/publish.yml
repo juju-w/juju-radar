@@ -28,14 +28,14 @@ jobs:
           tar -xzf "$RUNNER_TEMP/gitleaks.tar.gz" -C "$RUNNER_TEMP" gitleaks
       - name: Scan source and complete history
         run: |
-          "$RUNNER_TEMP/gitleaks" dir . --redact --no-banner
-          "$RUNNER_TEMP/gitleaks" git . --redact --no-banner --log-opts="--all"
+          "$RUNNER_TEMP/gitleaks" dir . --config .gitleaks.toml --redact --no-banner
+          "$RUNNER_TEMP/gitleaks" git . --config .gitleaks.toml --redact --no-banner --log-opts="--all"
       - name: Test WeChat signing service
         run: python3 ops/test-wechat-sign.py
       - name: Build and validate website
         run: python3 site/scripts/package.py
       - name: Scan generated files
-        run: '"$RUNNER_TEMP/gitleaks" dir site/dist --redact --no-banner'
+        run: '"$RUNNER_TEMP/gitleaks" dir site/dist --config .gitleaks.toml --redact --no-banner'
   publish:
     needs: check
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
