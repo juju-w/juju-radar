@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-22",
+  "kind": "special",
+  "sources": [
+    {
+      "id": "deepinfer-code",
+      "title": "从源码拆解DeepInfer的推理效率",
+      "url": "https://github.com/deepseek-ai/DeepInfer/tree/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9",
+      "related_urls": [
+        "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/examples/benchmark.py#L152-L169",
+        "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/examples/sweep/plot_pareto.py#L58-L68",
+        "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/doc/inference_deployment_qa.md",
+        "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/deepinfer/model_executor/models/deepseek.py#L181-L221",
+        "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/deepinfer/model_executor/models/v4_modules/yoco.py#L50-L76",
+        "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/examples/yoco/README.md",
+        "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/csrc/engine/mtp_varlen.hpp#L152-L265",
+        "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/deepinfer/model_executor/layers/tilelang_ops/cuda/schedule_mtp_varlen.py",
+        "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/deepinfer/worker/worker.py#L85-L185",
+        "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/deepinfer/model_executor/models/v4_modules/mlp.py#L528-L572",
+        "https://github.com/deepseek-ai/DeepGEMM/blob/1fc9c66975ee322d628b3288534ca0e9ce12a64d/deep_gemm/include/deep_gemm/impls/sm100_fp8_fp4_mega_moe.cuh#L341-L444",
+        "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/deepinfer/model_executor/eplb/policy.py#L83-L140"
+      ],
+      "category": "推理系统 / 源码解读",
+      "score": 9,
+      "event_time": "2026-10-20",
+      "published_at": "2026-10-20",
+      "reason": "用户要求独立解读性能来源，结合具体实现、受控benchmark口径及未公开组件边界；不声称硬件复现。",
+      "key_claims": [
+        "YOCO compact真减少consumer计算行，但其截断属于近似，与mask等价不证明对off无损。",
+        "DSpark按累计接受概率和实测运行曲线选总验证预算；ZOS异步情况下在GPU补正请求长度。",
+        "Mega MoE融合通信与计算，EPLB复制热点并按历史峰值重排；CPU验证只说明机制。",
+        "benchmark设置强制均衡且图表按外部接受率换算，并非全在线自然请求端到端实测。"
+      ]
+    }
+  ],
+  "issue_id": "2026-10-22-deepinfer",
+  "section": "深度解读",
+  "published_at": "2026-10-22T18:07:40.749625+08:00"
+}

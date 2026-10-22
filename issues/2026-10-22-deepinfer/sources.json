@@ -1,0 +1,69 @@
+{
+  "sources": [
+    {
+      "label": "DeepInfer源码固定到一个提交",
+      "url": "https://github.com/deepseek-ai/DeepInfer/tree/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9",
+      "section": "原始资料"
+    },
+    {
+      "label": "benchmark初始化代码",
+      "url": "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/examples/benchmark.py#L152-L169",
+      "section": "先看懂性能图：每卡吞吐和单个用户速度不是一回事"
+    },
+    {
+      "label": "绘图代码",
+      "url": "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/examples/sweep/plot_pareto.py#L58-L68",
+      "section": "先看懂性能图：每卡吞吐和单个用户速度不是一回事"
+    },
+    {
+      "label": "官方部署说明",
+      "url": "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/doc/inference_deployment_qa.md",
+      "section": "第一处大幅省算：解码层不必把长输入重新跑到底"
+    },
+    {
+      "label": "模型层循环",
+      "url": "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/deepinfer/model_executor/models/deepseek.py#L181-L221",
+      "section": "第一处大幅省算：解码层不必把长输入重新跑到底"
+    },
+    {
+      "label": "边界处理函数",
+      "url": "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/deepinfer/model_executor/models/v4_modules/yoco.py#L50-L76",
+      "section": "第一处大幅省算：解码层不必把长输入重新跑到底"
+    },
+    {
+      "label": "YOCO验证脚本",
+      "url": "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/examples/yoco/README.md",
+      "section": "第一处大幅省算：解码层不必把长输入重新跑到底"
+    },
+    {
+      "label": "C++验证调度器",
+      "url": "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/csrc/engine/mtp_varlen.hpp#L152-L265",
+      "section": "第二处省算：草稿先写五个，主模型未必值得验证五个"
+    },
+    {
+      "label": "GPU分配内核",
+      "url": "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/deepinfer/model_executor/layers/tilelang_ops/cuda/schedule_mtp_varlen.py",
+      "section": "第二处省算：草稿先写五个，主模型未必值得验证五个"
+    },
+    {
+      "label": "Worker执行顺序",
+      "url": "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/deepinfer/worker/worker.py#L85-L185",
+      "section": "第三处提速：让CPU准备下一轮，GPU继续算这一轮"
+    },
+    {
+      "label": "MoE执行路径",
+      "url": "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/deepinfer/model_executor/models/v4_modules/mlp.py#L528-L572",
+      "section": "第四处提速：把专家之间的搬运和计算接起来"
+    },
+    {
+      "label": "DeepGEMM实现",
+      "url": "https://github.com/deepseek-ai/DeepGEMM/blob/1fc9c66975ee322d628b3288534ca0e9ce12a64d/deep_gemm/include/deep_gemm/impls/sm100_fp8_fp4_mega_moe.cuh#L341-L444",
+      "section": "第四处提速：把专家之间的搬运和计算接起来"
+    },
+    {
+      "label": "EPLB策略源码",
+      "url": "https://github.com/deepseek-ai/DeepInfer/blob/9bd9cf243fc53ef9afbf8f04d391d989117d6ab9/deepinfer/model_executor/eplb/policy.py#L83-L140",
+      "section": "第五处提速：多放几份热门专家，减少大家等最忙那张卡"
+    }
+  ]
+}
