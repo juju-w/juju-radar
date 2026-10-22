@@ -1,0 +1,14 @@
+title = "Juju Radar default rules with one verified Mermaid counter false positive"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "generic-api-key"
+
+[[rules.allowlists]]
+description = "Mermaid 12.2.0 atlas-count variable expression, not a credential; bundle SHA is checked during build"
+condition = "AND"
+regexTarget = "match"
+regexes = ['''^m\.keyCount,v=m\.atlasCount;$''']
+paths = ['''(?:^|/)assets/vendor/mermaid-12\.2\.0\.min\.js$''']

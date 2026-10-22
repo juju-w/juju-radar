@@ -4,7 +4,7 @@
  const base=new URL('.',document.currentScript.src).href;
  const get=async name=>{const response=await fetch(base+name);if(!response.ok)throw Error('Music resource unavailable');return response.text();};
  const script=name=>new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=base+name;s.onload=resolve;s.onerror=reject;document.body.append(s);});
- (async()=>{
+ window.jujuReadingReady=(async()=>{
   // Fail quietly without replacing the article if optional music files are unavailable.
   const media=await fetch('/juju-radar/music-v1/playlist.json');if(!media.ok)return;
   const [markup,css]=await Promise.all([get('shell.html'),get('music.css')]);

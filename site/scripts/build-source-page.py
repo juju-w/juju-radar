@@ -7,6 +7,7 @@ import sys
 from html import escape
 from pathlib import Path
 from build import display_title
+from markdown_blocks import mask_fences
 
 
 def main() -> None:
@@ -28,7 +29,7 @@ def main() -> None:
     sources = []
     seen = set()
     current_section = "原始资料"
-    for line in article.splitlines():
+    for line in mask_fences(article).splitlines():
         heading = re.match(r"^##\s+(.+)$", line)
         if heading:
             current_section = re.sub(r"^[^\w\u4e00-\u9fff]+\s*", "", heading.group(1)).strip()

@@ -5,6 +5,7 @@ from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from email.utils import format_datetime
 from xml.etree import ElementTree as ET
+from markdown_blocks import render_markdown, mask_fences, split_sections, before_sources
 ROOT=Path(__file__).resolve().parents[2]; SITE=ROOT/'site'; BASE='https://www.asteronline.cn/juju-radar/'; PREFIX='/juju-radar/'
 E=lambda x:html.escape(str(x),quote=True)
 FILES=['article.md','issue.json','sources.json','zotero-papers.json']
@@ -33,42 +34,37 @@ def display_title(title):
  remainder=match[2].lstrip(' \t：:｜|') if match else ''
  return match[1]+remainder if remainder else title
 def inline(s):
- tokens=[]
+ tokens=[];prefix='RADARINLINE'
+ while prefix in s:prefix+='X'
+ def stash(value):
+  tokens.append(value);return prefix+str(len(tokens)-1)+'END'
+ def code(m):return stash('<code>'+E(m[2].replace('\n',' '))+'</code>')
+ s=re.sub(r'(`+)(.+?)(?<!`)\1(?!`)',code,s,flags=re.S)
+ s=re.sub(r'<!--.*?-->','',s,flags=re.S)
  def image(m):
   u=html.unescape(m[2]);alt=E(m[1])
   if not u.startswith(('https://','http://',PREFIX)):return E(m[0])
-  val=f'<img src="{E(u)}" alt="{alt}" loading="lazy">'
-  tokens.append(val);return f'LINKTOKEN{len(tokens)-1}END'
+  return stash(f'<img src="{E(u)}" alt="{alt}" loading="lazy">')
  def link(m):
-  u=html.unescape(m[2]); label=E(m[1]); val=f'<a href="{E(u)}" target="_blank" rel="noopener noreferrer">{label}</a>' if u.startswith(('https://','http://')) else label
-  tokens.append(val);return f'LINKTOKEN{len(tokens)-1}END'
+  u=html.unescape(m[2]);label=E(m[1])
+  return stash(f'<a href="{E(u)}" target="_blank" rel="noopener noreferrer">{label}</a>' if u.startswith(('https://','http://')) else label)
  s=re.sub(r'!\[([^\]]*)\]\(([^\s)]+)\)',image,s)
  s=re.sub(r'\[([^\]]+)\]\((https?://[^\s)]+)\)',link,s)
- s=E(s);s=re.sub(r'\*\*(.+?)\*\*',r'<strong>\1</strong>',s);s=re.sub(r'`([^`]+)`',r'<code>\1</code>',s)
- for i,t in enumerate(tokens):s=s.replace(f'LINKTOKEN{i}END',t)
+ s=E(s);s=re.sub(r'\*\*(.+?)\*\*',r'<strong>\1</strong>',s)
+ for i,t in reversed(list(enumerate(tokens))):s=s.replace(prefix+str(i)+'END',t)
  return s
 
-def md(s):
- s=re.sub(r'^---\n.*?\n---\n','',s,flags=re.S);s=re.sub(r'<!--.*?-->','',s,flags=re.S)
- out=[]
- for block in re.split(r'\n\s*\n',s.strip()):
-  if not block.strip():continue
-  if block.startswith('#'):
-   lines=block.split('\n');m=re.match(r'(#{1,6})\s+(.*)',lines[0])
-   if m:out.append(f'<h{len(m[1])}>{inline(display_title(m[2]))}</h{len(m[1])}>');out.extend('<p>'+inline(x)+'</p>' for x in lines[1:] if x);continue
-  if block.startswith('>'):out.append('<blockquote>'+md(re.sub(r'^> ?', '',block,flags=re.M))+'</blockquote>');continue
-  if all(re.match(r'^(?:[-*]|\d+\.)\s',x) for x in block.splitlines()):out.append('<ul>'+''.join('<li>'+inline(re.sub(r'^(?:[-*]|\d+\.)\s','',x))+'</li>' for x in block.splitlines())+'</ul>');continue
-  if block.strip()=='---':out.append('<hr>');continue
-  out.append('<p>'+inline(block).replace('\n','<br>')+'</p>')
- return '\n'.join(out)
+def md(s,enhanced=True):
+ return render_markdown(s,inline,display_title,enhanced)
 def paragraphs(text):
  return [plain(x) for x in text.split('\n\n') if len(plain(x))>45 and not x.lstrip().startswith(('#','>','['))]
 def uniq(values):
  return list(dict.fromkeys(v for v in values if v))
 def source_for_item(issue_id,sources,item_index,heading,body):
  """Bind one scored article section to its editorial source, never to a Markdown heading offset."""
- inline_urls=re.findall(r'\]\((https?://[^)]+)\)',body)
- marker=re.search(r'<!--\s*source-id:\s*([^\s>]+)\s*-->',body)
+ prose=mask_fences(body)
+ inline_urls=re.findall(r'\]\((https?://[^)]+)\)',prose)
+ marker=re.search(r'<!--\s*source-id:\s*([^\s>]+)\s*-->',prose)
  if issue_id[:10]>='2026-09-22' and not marker:
   raise ValueError(f'{issue_id}: missing source-id for {heading}')
  source=None
@@ -85,7 +81,7 @@ def source_for_item(issue_id,sources,item_index,heading,body):
  if source is None:
   if item_index>=len(sources):raise ValueError(f'{issue_id}: more scored article sections than sources')
   source=sources[item_index]
- meta=next((plain(x) for x in body.split('\n\n') if re.search(r'\d(?:\.\d)?/10',plain(x))), '')
+ meta=next((plain(x) for x in prose.split('\n\n') if re.search(r'\d(?:\.\d)?/10',plain(x))), '')
  declared=re.split(r'\s+·\s+\d(?:\.\d)?/10',meta,maxsplit=1)[0].strip()
  actual=str(source.get('category','')).strip()
  catnorm=lambda x:re.sub(r'[^0-9a-z\u4e00-\u9fff]+|[与和]','',re.sub(r'^(?:近期)?补看\s*[·｜|:]?\s*','',x).lower())
@@ -127,6 +123,18 @@ def build(preview=False):
   else:old.unlink()
  css=(SITE/'assets/site.css').read_bytes();js=(SITE/'assets/site.js').read_bytes();cv=hashlib.sha256(css).hexdigest()[:10];jv=hashlib.sha256(js).hexdigest()[:10]
  (out/'assets').mkdir();(out/f'assets/site-{cv}.css').write_bytes(css);(out/f'assets/site-{jv}.js').write_bytes(js)
+ article_js=(SITE/'assets/article.js').read_bytes();article_version=hashlib.sha256(article_js).hexdigest()[:10]
+ (out/f'assets/article-{article_version}.js').write_bytes(article_js)
+ vendor=json.loads((SITE/'assets/vendor/licenses.json').read_text())['packages']
+ (out/'assets/vendor').mkdir()
+ for package in vendor:
+  name=package['file'];source=SITE/'assets/vendor'/name
+  if Path(name).name!=name or not re.fullmatch(r'[a-z0-9.-]+\.min\.js',name):raise ValueError('Invalid rendering asset')
+  if hashlib.sha256(source.read_bytes()).hexdigest()!=package['sha256']:raise ValueError('Rendering asset checksum mismatch')
+  shutil.copy2(source,out/'assets/vendor'/name)
+ shutil.copy2(SITE/'assets/vendor/licenses.json',out/'assets/vendor/licenses.json')
+ mermaid_asset=next(p['file'] for p in vendor if p['name']=='mermaid')
+ highlight_asset=next(p['file'] for p in vendor if p['name']=='@highlightjs/cdn-assets')
  music_source=SITE/'assets/music'
  music_names=['bootstrap.js','player.js','liquid-glass.js','music.css','shell.html']
  music_version=hashlib.sha256(b''.join((music_source/n).read_bytes() for n in music_names)).hexdigest()[:10]
@@ -143,6 +151,8 @@ def build(preview=False):
  def share_button(title,path,label='分享'):
   return f'<button type="button" class="share-button" data-share-title="{E(title)}" data-share-url="{E(BASE+path.removeprefix(PREFIX))}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 15V3m-4 4 4-4 4 4M5 12v8h14v-8"/></svg>{label}</button>'
  def shell(title,body,canonical='',script='',description=''):
+  if any(marker in body for marker in ['class="code-block"','class="mermaid-block"','class="table-block"']):
+   script+=f'<script src="{PREFIX}assets/article-{article_version}.js" data-mermaid-src="{PREFIX}assets/vendor/{mermaid_asset}" data-highlight-src="{PREFIX}assets/vendor/{highlight_asset}" defer></script>'
   description=' '.join((description or '每日 AI 动态、论文和开源项目，附中文解读与原始链接。').split())[:180]
   article=canonical.startswith(('notes/','read/','projects/')) or (canonical.startswith('papers/') and canonical!='papers/')
   website={'@type':'WebSite','@id':BASE+'#website','url':BASE,'name':'Juju Radar','alternateName':'JuJu雷达','inLanguage':'zh-CN'}
@@ -172,22 +182,22 @@ def build(preview=False):
   issues.append({'id':issue_id,'date':date,'kind':kind,'section':info.get('section','每日精选'),'published_at':info.get('published_at',date+'T09:00:00+08:00'),'title':title,'summary':desc,'path':PREFIX+'read/'+issue_id+'/','sources_url':BASE+issue_id+'/'})
   if special:
    entries.append({'id':issue_id,'type':'news','kind':'special','date':date,'dates':[date],'issue_ids':[issue_id],'title':title,'category':'特别版 · 深度解读','topics':topics(title+' '+desc),'summary':desc,'note':plain(article),'url':info['sources'][0]['url'],'path':PREFIX+'read/'+issue_id+'/','related_urls':[s['url'] for s in sources]})
-  sections=re.split(r'^##\s+',article,flags=re.M)[1:]
+  sections=split_sections(article)
   item_index=0
   for section_no,section in enumerate(sections,1):
    heading,_,body=section.partition('\n'); heading=heading.strip()
-   if special or not re.search(r'\d(?:\.\d)?/10',body[:180]):continue
+   if special or not re.search(r'\d(?:\.\d)?/10',mask_fences(body)[:180]):continue
    heading=re.sub(r'^[^\w\u4e00-\u9fff]+','',heading)
    source,public_url,related_urls=source_for_item(issue_id,info['sources'],item_index,heading,body)
    heading=display_title(heading)
    item_index+=1
-   ps=paragraphs(body);summary=plain(next((b for b in body.split('\n\n') if len(plain(b))>45 and not b.lstrip().startswith(('#','>','['))), source.get('reason','')))
+   ps=paragraphs(body);summary=plain(next((b for b in mask_fences(body).split('\n\n') if len(plain(b))>45 and not b.lstrip().startswith(('#','>','['))), source.get('reason','')))
    category=source.get('category','AI 进展');path='notes/'+date+'-'+str(section_no)+'/'
    e={'id':date+'-'+str(section_no),'type':'news','kind':'daily','date':date,'dates':[date],'issue_ids':[issue_id],'source_id':source.get('id'),'title':heading,'category':category,'topics':topics(category+' '+heading),'summary':summary,'note':plain(body),'url':public_url,'path':PREFIX+path,'backfill':any(marker in str(source.get('window_status','')) for marker in ('补看','supplement')), 'related_urls':related_urls}
    entries.append(e)
    save(path+'index.html',shell(heading,f'<main class="reading"><a class="back" href="{PREFIX}read/{date}/">返回 {date} 完整精选</a><h1>{E(heading)}</h1><div class="meta">{date} 收录 · {E(category)}</div>{md(body)}<div class="actions"><a href="{E(public_url)}" target="_blank" rel="noopener noreferrer">查看原始资料 {ARROW}</a><a href="{BASE+date}/">本期全部原始资料</a></div></main>',path,description=summary))
   if not special and item_index!=len(info['sources']):raise ValueError(f'{issue_id}: {item_index} scored article sections but {len(info["sources"])} sources')
-  text=article.split('## 原始资料')[0]
+  text=before_sources(article)
   for image_rel in dict.fromkeys(re.findall(r'!\[[^\]]*\]\((images/[A-Za-z0-9._-]+\.png)\)',text)):
    source_image=folder/image_rel
    if not source_image.is_file():raise ValueError(f'{issue_id}: missing article image {image_rel}')
@@ -268,9 +278,10 @@ def build(preview=False):
    ET.SubElement(node,'guid',isPermaLink='true').text=item.get('guid',item['link'].replace('https://www.asteronline.cn','https://happy.asteronline.cn'))
   ET.ElementTree(root).write(out/filename,encoding='utf-8',xml_declaration=True)
  def pub(date):return format_datetime(datetime.fromisoformat(date).replace(hour=9,tzinfo=timezone(timedelta(hours=8))))
- feed('feed.xml','Juju Radar 精选与深度解读',[{'title':('【特别版】' if i['kind']=='special' else '')+i['title'],'link':BASE+'read/'+i['id']+'/','guid':(BASE if i['kind']=='special' else BASE.replace('https://www.asteronline.cn','https://happy.asteronline.cn'))+'read/'+i['id']+'/','description':md((ROOT/'issues'/i['id']/'article.md').read_text().split('## 原始资料')[0]),'pubDate':format_datetime(datetime.fromisoformat(i['published_at'])) if i['kind']=='special' else pub(i['date'])} for i in issues])
- feed('papers.xml','Juju Radar 论文',[{'title':p['title'],'link':BASE+'papers/'+slug(ident)+'/','description':md(p['note'])+'<p><a href="'+E(p['url'])+'">论文原文</a></p>','pubDate':pub(p['date'])} for ident,p in sorted(papers.items(),key=lambda kv:kv[1]['date'],reverse=True)])
- save('about/index.html',shell('关于 JuJu雷达与引用说明',f'<main class="reading"><h1>关于 JuJu雷达</h1><p class="lead">Juju Radar（JuJu雷达）整理 AI 动态、论文与开源项目，提供中文解读和原始资料链接。</p><h2>内容与来源</h2><p>内容由 AI 辅助整理。文章保留原始来源，论文笔记区分方法与局限；收录不代表独立复现或对结论作出保证。阅读具体判断时，请同时核对原始材料。</p><h2>日期与更正</h2><p>收录日期表示本站整理该资料的日期，不等于事件发生或论文首次公开的日期。后续修订沿用原文章链接。</p><h2>如何引用</h2><p>引用本站中文解读时，请注明文章标题、Juju Radar、文章永久链接及访问日期。引用论文或项目自身的结论时，请优先标注原论文、作者或项目，并保留原始链接。</p><h2>查找与订阅</h2><p><a href="{PREFIX}archive/">往期精选</a> · <a href="{PREFIX}papers/">论文库</a> · <a href="{PREFIX}specials/">深度解读</a> · <a href="{PREFIX}subscribe/">RSS 与文献导出</a></p></main>','about/',description='了解 Juju Radar 的 AI 中文精选、原始资料、收录日期和引用方式。'))
+ feed('feed.xml','Juju Radar 精选与深度解读',[{'title':('【特别版】' if i['kind']=='special' else '')+i['title'],'link':BASE+'read/'+i['id']+'/','guid':(BASE if i['kind']=='special' else BASE.replace('https://www.asteronline.cn','https://happy.asteronline.cn'))+'read/'+i['id']+'/','description':md(before_sources((ROOT/'issues'/i['id']/'article.md').read_text()),enhanced=False),'pubDate':format_datetime(datetime.fromisoformat(i['published_at'])) if i['kind']=='special' else pub(i['date'])} for i in issues])
+ feed('papers.xml','Juju Radar 论文',[{'title':p['title'],'link':BASE+'papers/'+slug(ident)+'/','description':md(p['note'],enhanced=False)+'<p><a href="'+E(p['url'])+'">论文原文</a></p>','pubDate':pub(p['date'])} for ident,p in sorted(papers.items(),key=lambda kv:kv[1]['date'],reverse=True)])
+ save('about/formatting/index.html',shell('文章排版示例','<main class="reading"><a class="back" href="'+PREFIX+'about/">返回关于页面</a>'+md((SITE/'formatting-example.md').read_text())+'</main>','about/formatting/',description='查看表格、代码高亮与复制、Mermaid流程图和时序图的实际阅读效果。'))
+ save('about/index.html',shell('关于 JuJu雷达与引用说明',f'<main class="reading"><h1>关于 JuJu雷达</h1><p class="lead">Juju Radar（JuJu雷达）整理 AI 动态、论文与开源项目，提供中文解读和原始资料链接。</p><h2>内容与来源</h2><p>内容由 AI 辅助整理。文章保留原始来源，论文笔记区分方法与局限；收录不代表独立复现或对结论作出保证。阅读具体判断时，请同时核对原始材料。</p><h2>日期与更正</h2><p>收录日期表示本站整理该资料的日期，不等于事件发生或论文首次公开的日期。后续修订沿用原文章链接。</p><h2>如何引用</h2><p>引用本站中文解读时，请注明文章标题、Juju Radar、文章永久链接及访问日期。引用论文或项目自身的结论时，请优先标注原论文、作者或项目，并保留原始链接。</p><h2>阅读功能</h2><p><a href="{PREFIX}about/formatting/">查看表格、代码和图示的排版示例</a></p><h2>查找与订阅</h2><p><a href="{PREFIX}archive/">往期精选</a> · <a href="{PREFIX}papers/">论文库</a> · <a href="{PREFIX}specials/">深度解读</a> · <a href="{PREFIX}subscribe/">RSS 与文献导出</a></p></main>','about/',description='了解 Juju Radar 的 AI 中文精选、原始资料、收录日期和引用方式。'))
  save('robots.txt','User-agent: *\nAllow: /juju-radar/\nDisallow: /juju-radar/api/\nDisallow: /juju-radar/music-v1/\n\nSitemap: '+BASE+'sitemap.xml\n')
  urls=sorted({str(p.relative_to(out)).removesuffix('index.html') for p in out.rglob('index.html') if 'assets' not in p.relative_to(out).parts})
  sm=ET.Element('urlset',xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
