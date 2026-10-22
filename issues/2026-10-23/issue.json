@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-23",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "decisions-api",
+      "title": "OpenAI推出低延迟决策API，让高频小判断单独运行",
+      "category": "模型服务 / 决策推理",
+      "score": 8.5,
+      "url": "https://openai.com/index/decisions-api/",
+      "related_urls": [
+        "https://developers.openai.com/api/docs/guides/decisions"
+      ],
+      "published_at": "2026-10-22T19:00:00+00:00",
+      "event_time": "2026-10-22T19:00:00+00:00",
+      "key_claims": [
+        "Decisions API基于GPT-6 Luna正式可用，接收文本、图像和JSON，返回predicate/choice/score；单请求最多400问",
+        "厂商称相比同一Luna走Responses API最高快10倍；可与GPT-Live集成",
+        "输入0.10美元/百万token，缓存读0.01美元/百万token，无输出token费"
+      ],
+      "reason": "有界答案决策成为独立低延迟服务，可以放进实时会话、路由与执行前检查的高频路径。",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window"
+    },
+    {
+      "id": "redwood-monitor",
+      "title": "外部红队发现OpenAI内部监控漏洞，检查时机本身也是缺口",
+      "category": "AI安全 / 独立审查",
+      "score": 9,
+      "url": "https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent",
+      "related_urls": [],
+      "published_at": "2026-10-22T15:32:17.296Z",
+      "event_time": "2026-10-22T15:32:17.296Z",
+      "key_claims": [
+        "METR和Redwood各一人7月21日至8月11日评估截至7月21日的内部监控系统，10月22日公开摘要",
+        "当时检查依赖交还控制；研究者估计未监控compaction可能令约一成应监控Codex流量漏检，比例不确定",
+        "OpenAI称影响生产防护栈的漏洞均已修补，外部团队没有复评；公开报告可被OpenAI删节"
+      ],
+      "reason": "检查是否运行、何时触发、能否被执行环境影响，是独立于监控模型准确率的系统风险。",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window"
+    },
+    {
+      "id": "mai-dxo-science",
+      "title": "微软诊断研究登上Science，把检查选择和诊断一起评估",
+      "category": "AI for Science / 医疗研究",
+      "score": 8.5,
+      "url": "https://microsoft.ai/news/building-medical-superintelligence/",
+      "related_urls": [
+        "https://doi.org/10.1126/science.aeh7930"
+      ],
+      "published_at": "2026-10-22",
+      "event_time": "2026-10-22",
+      "key_claims": [
+        "Science论文Sequential diagnosis with language models于10月22日正式刊出，MAI-DxO及SDBench的早期研究在2025年已有发布",
+        "新报告同时列304个NEJM复杂病例与MIMIC-IV-ED较常见急诊病例，按逐步问诊、检查和虚拟费用评估",
+        "作者报告NEJM83%，医生无外部参考22%、可用参考36%；急诊80%对47%",
+        "官方称将与Beth Israel Deaconess开展前瞻研究，该真实临床验证尚非本次完成结果"
+      ],
+      "reason": "从静态题库转向序贯诊断，评估诊断路径及获取信息的代价；期刊新结果补充了更接近日常急诊的任务。",
+      "window_uncertain": true,
+      "window_status": "official_date_only_hour_unconfirmed"
+    },
+    {
+      "id": "replit-monitoring",
+      "title": "Replit让Agent处理生产告警，修复与自动发布分别开关",
+      "category": "Agent / 软件运维",
+      "score": 8,
+      "url": "https://replit.com/blog/replit-monitoring-agent",
+      "related_urls": [],
+      "published_at": "2026-10-22T20:24:13.430Z",
+      "event_time": "2026-10-22T20:24:13.430Z",
+      "key_claims": [
+        "Monitoring Agent可以读取生产日志与指标，调查报错、变慢和部署失败，验证修复并汇报",
+        "监控告警与autofix启用后处理问题；auto-publish另行启用，是否自动部署由用户决定"
+      ],
+      "reason": "把应用发布后的日志、修复、验证与重新部署接成一个可配置闭环，扩大了Coding Agent的工作范围。",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window"
+    },
+    {
+      "id": "tau-entity",
+      "title": "语音Agent能流畅交谈，准确记下一个号码仍不容易",
+      "category": "语音 / 可靠性评测",
+      "score": 8,
+      "url": "https://sierra.ai/blog/tau-entity-can-voice-agents-get-the-details-right",
+      "related_urls": [
+        "https://taubench.com"
+      ],
+      "published_at": "2026-10-22T14:02:33.939Z",
+      "event_time": "2026-10-22T14:02:33.939Z",
+      "key_claims": [
+        "当日发布τ-Entity：200任务、10类实体、6语言，要求最终存储值精确一致",
+        "GPT Live 1常规场景60.3%，三种环境同任务均成功的Pass³为34.0%；不是三个成功率的普通均值",
+        "博客引用9月τ-Elicitation旧论文讨论拼读及确认干预，不把该论文重写成10月22日首发"
+      ],
+      "reason": "把流畅程度与关键字段是否落库正确分开，准确采集和真正修复错误会决定多字段业务能否走完。",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window"
+    },
+    {
+      "id": "aw-zero",
+      "title": "近期补看：AW-0把代码、未来画面和机器人动作一起生成",
+      "category": "机器人 / 世界动作模型",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2610.30136",
+      "related_urls": [
+        "https://arxiv.org/html/2610.30136v1"
+      ],
+      "published_at": "2026-10-21T17:59:56Z",
+      "event_time": "2026-10-21T17:59:56Z",
+      "key_claims": [
+        "21日提交AW-0，三路专家共同生成代码、未来视频和连续动作，通过联合注意力与联合去噪相互条件化",
+        "RoboTwin50任务作者自报：默认模式clean80.8%、random20.6%；hybrid为63.1%和29.2%",
+        "附录说明两种配置的训练数据收集和执行模式均不同，不能当仅增加代码执行的纯消融"
+      ],
+      "reason": "把可复用程序作为生成式世界动作模型的一部分，尝试让规划和物理预测互相约束，同时暴露动作与代码之间的可靠性取舍。",
+      "window_uncertain": false,
+      "window_status": "explicit_recent_catchup"
+    }
+  ]
+}

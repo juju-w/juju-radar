@@ -1,0 +1,253 @@
+{
+  "issue_date": "2026-10-23",
+  "papers": [
+    {
+      "id": "10.1126/science.aeh7930",
+      "title": "Sequential diagnosis with language models",
+      "url": "https://doi.org/10.1126/science.aeh7930",
+      "doi": "10.1126/science.aeh7930",
+      "pdf_url": "https://www.science.org/doi/pdf/10.1126/science.aeh7930",
+      "published_date": "2026-10-22",
+      "item_type": "journalArticle",
+      "publicationTitle": "Science",
+      "volume": "394",
+      "issue": "6822",
+      "pages": "423-428",
+      "ISSN": "0036-8075",
+      "creators": [
+        {
+          "firstName": "Harsha",
+          "lastName": "Nori",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mayank",
+          "lastName": "Daswani",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Christopher",
+          "lastName": "Kelly",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Scott",
+          "lastName": "Lundberg",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Marco Tulio",
+          "lastName": "Ribeiro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Marc",
+          "lastName": "Wilson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xiaoxuan",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Viknesh",
+          "lastName": "Sounderajah",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jonathan M.",
+          "lastName": "Carlson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Matthew P.",
+          "lastName": "Lungren",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bay",
+          "lastName": "Gross",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "Hames",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mustafa",
+          "lastName": "Suleyman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dominic",
+          "lastName": "King",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eric",
+          "lastName": "Horvitz",
+          "creatorType": "author"
+        }
+      ],
+      "authors": [
+        "Harsha Nori",
+        "Mayank Daswani",
+        "Christopher Kelly",
+        "Scott Lundberg",
+        "Marco Tulio Ribeiro",
+        "Marc Wilson",
+        "Xiaoxuan Liu",
+        "Viknesh Sounderajah",
+        "Jonathan M. Carlson",
+        "Matthew P. Lungren",
+        "Bay Gross",
+        "Peter Hames",
+        "Mustafa Suleyman",
+        "Dominic King",
+        "Eric Horvitz"
+      ],
+      "tags": [
+        "Juju Radar",
+        "AI医疗",
+        "序贯诊断",
+        "待阅读"
+      ],
+      "evidence_status": "primary_verified",
+      "note": "Juju Radar · 2026-10-23\n\n论文10月22日正式发表于Science；SDBench和MAI-DxO早期版本2025年已公开。本期新增关注正式结果、NEJM复杂病例与MIMIC-IV-ED急诊病例的比较，以及医生能否查参考资料这一条件。作者把有限初始信息逐步扩展为诊断过程，同时估算检查成本。多个角色更新诊断并选择下一项证据。\n\n作者公告报告NEJM准确率83%，医生无外部参考22%、可用参考36%；MIMIC-IV-ED为80%对47%。重点是逐步获取信息及其代价，而不是用最低医生条件制造通用领先倍数。病例回放和模拟费用不等于真实临床疗效；前瞻研究是已宣布的下一步。\n\n本轮核对作者完整公告和Crossref DOI原始元数据；Science全文访问受限，没有声称逐表审读或独立复现。作者公告：https://microsoft.ai/news/building-medical-superintelligence/\n论文：https://doi.org/10.1126/science.aeh7930\n本期资料：https://www.asteronline.cn/juju-radar/2026-10-23/\nAI辅助整理。"
+    },
+    {
+      "id": "arxiv:2610.30136",
+      "title": "Agentic World Action Models",
+      "url": "https://arxiv.org/abs/2610.30136",
+      "doi": "10.48550/arXiv.2610.30136",
+      "pdf_url": "https://arxiv.org/pdf/2610.30136",
+      "published_date": "2026-10-21",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "publicationTitle": "arXiv",
+      "creators": [
+        {
+          "firstName": "Zhuoyang",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dantong",
+          "lastName": "Niu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Botong",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Boning",
+          "lastName": "Shao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jing",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ruijie",
+          "lastName": "Zheng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yuvan",
+          "lastName": "Sharma",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Runyu",
+          "lastName": "Lu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jiaming",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Renrui",
+          "lastName": "Zhang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Roei",
+          "lastName": "Herzig",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yutong",
+          "lastName": "Bai",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ken",
+          "lastName": "Goldberg",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Danfei",
+          "lastName": "Xu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yuke",
+          "lastName": "Zhu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Guanzhi",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Linxi \"Jim\"",
+          "lastName": "Fan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Trevor",
+          "lastName": "Darrell",
+          "creatorType": "author"
+        }
+      ],
+      "authors": [
+        "Zhuoyang Liu",
+        "Dantong Niu",
+        "Botong Zhang",
+        "Boning Shao",
+        "Jing Wang",
+        "Ruijie Zheng",
+        "Yuvan Sharma",
+        "Runyu Lu",
+        "Jiaming Liu",
+        "Renrui Zhang",
+        "Roei Herzig",
+        "Yutong Bai",
+        "Ken Goldberg",
+        "Danfei Xu",
+        "Yuke Zhu",
+        "Guanzhi Wang",
+        "Linxi \"Jim\" Fan",
+        "Trevor Darrell"
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人",
+        "世界动作模型",
+        "补看",
+        "待阅读"
+      ],
+      "evidence_status": "primary_verified",
+      "note": "Juju Radar · 2026-10-23 · 近期补看\n\n10月21日17:59:56 UTC提交，首次公开时分未核实；不将22日HF推荐当论文当天首发。已读论文模型章节、表1、混合执行附录和局限。AW-0用三路Transformer专家共同生成代码、未来视频与连续动作，代码以离散掩码扩散、视频与动作以连续流匹配联合去噪，专家在联合注意力中交换信息。\n\nRoboTwin 2.0的50任务结果：默认配置clean80.8%、random20.6%；hybrid为63.1%、29.2%。混合配置改善视觉变化条件，却降低干净场景表现；附录明确两配置的演示采集和执行模式同时变化，不能当成只增加代码执行的消融。\n\n关注可复用程序与物理预测能否互补，以及仲裁何时应执行代码而非动作。现有失败包括感知接口和控制原语不可靠；真实混合执行只在YAM平台测试，未实现持续在线自学习。项目站访问受阻，没有确认完整代码或权重已发布。\n论文：https://arxiv.org/abs/2610.30136\n全文：https://arxiv.org/html/2610.30136v1\n本期资料：https://www.asteronline.cn/juju-radar/2026-10-23/\nAI辅助整理。"
+    }
+  ]
+}

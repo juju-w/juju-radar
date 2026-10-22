@@ -155,6 +155,9 @@
     },
     "2026-10-22-deepinfer": {
       "sha256": "c66b80893580bbf9a1ea3596fbece4510cc5ee89bdb24928fad3dd1de28989a1"
+    },
+    "2026-10-23": {
+      "sha256": "c59392f258588ba3314ad54feb21c160cef57190a5ae60617e04b17e07faae9c"
     }
   }
 }

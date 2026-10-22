@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "label": "OpenAI正式开放Decisions API",
+      "url": "https://openai.com/index/decisions-api/",
+      "section": "OpenAI推出Decisions API，把高频小判断单独做成服务"
+    },
+    {
+      "label": "官方文档",
+      "url": "https://developers.openai.com/api/docs/guides/decisions",
+      "section": "OpenAI推出Decisions API，把高频小判断单独做成服务"
+    },
+    {
+      "label": "METR与Redwood的试点结果于10月22日公开",
+      "url": "https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent",
+      "section": "外部红队检查OpenAI内部监控，发现缺口不只在判断模型"
+    },
+    {
+      "label": "微软公布了序贯诊断研究的正式论文结果",
+      "url": "https://microsoft.ai/news/building-medical-superintelligence/",
+      "section": "微软诊断研究登上Science，评估的不只是最后答对没有"
+    },
+    {
+      "label": "《Sequential diagnosis with language models》",
+      "url": "https://doi.org/10.1126/science.aeh7930",
+      "section": "微软诊断研究登上Science，评估的不只是最后答对没有"
+    },
+    {
+      "label": "Replit发布Monitoring Agent",
+      "url": "https://replit.com/blog/replit-monitoring-agent",
+      "section": "Replit让Agent接手生产告警，自动修复和自动部署分别控制"
+    },
+    {
+      "label": "Sierra发布τ-Entity实体采集基准",
+      "url": "https://sierra.ai/blog/tau-entity-can-voice-agents-get-the-details-right",
+      "section": "语音Agent说得流畅，准确记下一个号码仍不容易"
+    },
+    {
+      "label": "评测入口在这里",
+      "url": "https://taubench.com",
+      "section": "语音Agent说得流畅，准确记下一个号码仍不容易"
+    },
+    {
+      "label": "AW-0论文",
+      "url": "https://arxiv.org/abs/2610.30136",
+      "section": "近期补看：AW-0把代码、未来画面和机器人动作一起生成"
+    },
+    {
+      "label": "全文表1及附录",
+      "url": "https://arxiv.org/html/2610.30136v1",
+      "section": "近期补看：AW-0把代码、未来画面和机器人动作一起生成"
+    }
+  ]
+}
