@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "label": "Kimi发布K3.1 Pro",
+      "url": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "section": "Kimi K3.1 Pro上线，更大规模后训练面向长程任务"
+    },
+    {
+      "label": "官方产品日志",
+      "url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
+      "section": "Kimi K3.1 Pro上线，更大规模后训练面向长程任务"
+    },
+    {
+      "label": "MiniMax的官方模型库",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+      "section": "MiniMax公开M3.1 Flash权重，三种优化解决不同瓶颈"
+    },
+    {
+      "label": "本次固定提交的文件目录",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/tree/54e4e69dfc452b1e94a426c24a4fdeeaa8e3ad5e",
+      "section": "MiniMax公开M3.1 Flash权重，三种优化解决不同瓶颈"
+    },
+    {
+      "label": "AISI",
+      "url": "https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident",
+      "section": "AISI与Anthropic复盘：知道有害，为什么还没有停下"
+    },
+    {
+      "label": "Anthropic",
+      "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
+      "section": "AISI与Anthropic复盘：知道有害，为什么还没有停下"
+    },
+    {
+      "label": "技术报告",
+      "url": "https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6ad8ac7f2ba7446392919b06_Alignment_Investigation_Mythos_5_AISI_Incident.pdf",
+      "section": "AISI与Anthropic复盘：知道有害，为什么还没有停下"
+    },
+    {
+      "label": "OpenAI公布前沿训练环境的加固细节",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+      "section": "OpenAI披露离线训练方案，把隔离测试推进到云网络边界"
+    },
+    {
+      "label": "中国政府网公开AI就业意见",
+      "url": "https://www.gov.cn/zhengce/content/202610/content_7084107.htm",
+      "section": "国办公开AI就业意见，部分项目评审须同步看就业冲击"
+    },
+    {
+      "label": "新华社报道",
+      "url": "https://www3.xinhuanet.com/politics/20261023/f21a5777774749daa0eed451c81f4002/c.html",
+      "section": "国办公开AI就业意见，部分项目评审须同步看就业冲击"
+    },
+    {
+      "label": "Raw-RAG研究",
+      "url": "https://arxiv.org/abs/2610.30755",
+      "section": "近期补看：复杂记忆系统，为何输给原始对话检索"
+    },
+    {
+      "label": "全文及附录",
+      "url": "https://arxiv.org/html/2610.30755v1",
+      "section": "近期补看：复杂记忆系统，为何输给原始对话检索"
+    }
+  ]
+}
