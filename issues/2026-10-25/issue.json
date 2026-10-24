@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-25",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "diffbot-dspark-tuning",
+      "title": "Diffbot更新DeepSeek部署方案，长草稿有得也有失",
+      "category": "推理效率 / 开源部署",
+      "score": 7.5,
+      "url": "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000/blob/4e691b368c9cb06855c058e80f244b251fed050b/docs/CHANGELOG.md",
+      "related_urls": [
+        "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000/blob/4e691b368c9cb06855c058e80f244b251fed050b/drafter-code-k7/README.md",
+        "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000/blob/4e691b368c9cb06855c058e80f244b251fed050b/docs/PROFILE-8x.md",
+        "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000/blob/4e691b368c9cb06855c058e80f244b251fed050b/recipe/kernels/rowtopk/rowtopk.cu",
+        "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000/blob/4e691b368c9cb06855c058e80f244b251fed050b/docs/SPEED.md",
+        "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000/blob/4e691b368c9cb06855c058e80f244b251fed050b/docs/FIDELITY.md"
+      ],
+      "published_at": "2026-10-24T06:35:50+00:00",
+      "event_time": "2026-10-24T06:35:50+00:00",
+      "artifact_released_at": "2026-10-24T06:35:50+00:00",
+      "key_claims": [
+        "24日更新8卡服务配置、可选代码草稿头和按有效长度工作的索引top-k；目标模型沿用1017量化包",
+        "8卡被分为两个4卡副本，TP4+EP4，每卡96GB；完整专家驻留VRAM；非普通消费两卡部署",
+        "单路Tetris代码基准中原头k3为278.6tok/s、原头k7为398–399，新头k7为396–416；43%主要来自k而非微调",
+        "两卡开发构建从原头k5到新头k7，代码320.2→346.5tok/s，四路46K合计510.9→438.5；公开构建呈同向取舍",
+        "索引器分块处理避免1M窗口128路k7的2.56GiB连续分配；维护者1200次逐位一致测试；valid-prefix top-k在四路46K开发测试+3%"
+      ],
+      "reason": "同一组推测解码参数对单路代码和并发长提示出现相反收益；公开消融能解释为何不能按单路演示选择服务配置。",
+      "window_uncertain": false,
+      "window_status": "primary_timestamp_within_window"
+    }
+  ]
+}

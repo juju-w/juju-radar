@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "label": "24日的更新",
+      "url": "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000/blob/4e691b368c9cb06855c058e80f244b251fed050b/docs/CHANGELOG.md",
+      "section": "Diffbot更新DeepSeek部署方案，长草稿有得也有失"
+    },
+    {
+      "label": "维护者的拆分对照",
+      "url": "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000/blob/4e691b368c9cb06855c058e80f244b251fed050b/drafter-code-k7/README.md",
+      "section": "Diffbot更新DeepSeek部署方案，长草稿有得也有失"
+    },
+    {
+      "label": "新的8卡配置",
+      "url": "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000/blob/4e691b368c9cb06855c058e80f244b251fed050b/docs/PROFILE-8x.md",
+      "section": "八张卡如何分配，和草稿长度一样重要"
+    },
+    {
+      "label": "相关内核",
+      "url": "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000/blob/4e691b368c9cb06855c058e80f244b251fed050b/recipe/kernels/rowtopk/rowtopk.cu",
+      "section": "八张卡如何分配，和草稿长度一样重要"
+    },
+    {
+      "label": "速度表",
+      "url": "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000/blob/4e691b368c9cb06855c058e80f244b251fed050b/docs/SPEED.md",
+      "section": "自建推理应该先测什么"
+    },
+    {
+      "label": "质量检查",
+      "url": "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000/blob/4e691b368c9cb06855c058e80f244b251fed050b/docs/FIDELITY.md",
+      "section": "自建推理应该先测什么"
+    }
+  ]
+}
