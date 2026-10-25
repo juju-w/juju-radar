@@ -47,7 +47,7 @@
         "preserve_thinking用于保留历史助理思考，工具/办公/代码Agent推荐True，普通聊天False；评测Nanbeige开启该选项"
       ],
       "reason": "近期漏看的强模型信号；教师先行、保留跨轮思考的工具模板给出可复核部署选择，保留一条明确补看。",
-      "window_status": "explicit_catchup",
+      "window_status": "outside_window_explicit_supplement",
       "window_uncertain": false
     }
   ]
