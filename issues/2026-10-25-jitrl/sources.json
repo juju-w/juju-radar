@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "label": "JitRL",
+      "url": "https://arxiv.org/abs/2601.18510",
+      "section": "原始资料"
+    },
+    {
+      "label": "方法部分",
+      "url": "https://arxiv.org/html/2601.18510v4#S4",
+      "section": "把一段经历，变成下一步可用的回报"
+    },
+    {
+      "label": "候选补充代码",
+      "url": "https://github.com/liushiliushi/JitRL/blob/143d22185d95fbf633a0befe6861d5e8b732543b/WebArena/memory_agents/jitrl_agent.py#L257-L283",
+      "section": "关键在于，经验进入了动作选择"
+    },
+    {
+      "label": "网页记忆的召回实现",
+      "url": "https://github.com/liushiliushi/JitRL/blob/143d22185d95fbf633a0befe6861d5e8b732543b/WebArena/memory_agents/utils/cross_episode_memory.py#L480-L536",
+      "section": "真正难的是：两次经历，究竟有多像"
+    },
+    {
+      "label": "WebArena主实验",
+      "url": "https://arxiv.org/html/2601.18510v4#S5",
+      "section": "实验说明了什么：同类任务反复执行，确实能受益"
+    },
+    {
+      "label": "附录J.1",
+      "url": "https://arxiv.org/html/2601.18510v4",
+      "section": "便宜30多倍还更强”，需要拆开看"
+    },
+    {
+      "label": "WebArena评分代码，第378行",
+      "url": "https://github.com/liushiliushi/JitRL/blob/143d22185d95fbf633a0befe6861d5e8b732543b/WebArena/memory_agents/jitrl_agent.py#L376-L389",
+      "section": "读源码时，还有一处不能略过的差异"
+    },
+    {
+      "label": "输入概率的获取路径",
+      "url": "https://github.com/liushiliushi/JitRL/blob/143d22185d95fbf633a0befe6861d5e8b732543b/WebArena/memory_agents/jitrl_agent.py#L1017-L1062",
+      "section": "读源码时，还有一处不能略过的差异"
+    },
+    {
+      "label": "选择加分后最大的候选",
+      "url": "https://github.com/liushiliushi/JitRL/blob/143d22185d95fbf633a0befe6861d5e8b732543b/WebArena/memory_agents/jitrl_agent.py#L1119-L1132",
+      "section": "读源码时，还有一处不能略过的差异"
+    }
+  ]
+}

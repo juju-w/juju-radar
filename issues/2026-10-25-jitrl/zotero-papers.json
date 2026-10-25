@@ -1,0 +1,77 @@
+{
+  "issue_date": "2026-10-25",
+  "papers": [
+    {
+      "id": "arxiv:2601.18510",
+      "title": "Just-In-Time Reinforcement Learning: Continual Learning in LLM Agents Without Gradient Updates",
+      "url": "https://arxiv.org/abs/2601.18510",
+      "pdf_url": "https://arxiv.org/pdf/2601.18510v4",
+      "doi": "10.48550/arXiv.2601.18510",
+      "published_date": "2026-01-26",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yibo",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zijie",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ailin",
+          "lastName": "Deng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuan",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yufei",
+          "lastName": "He"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuo",
+          "lastName": "Ji"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tri",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bryan",
+          "lastName": "Hooi"
+        }
+      ],
+      "authors": [
+        "Yibo Li",
+        "Zijie Lin",
+        "Ailin Deng",
+        "Xuan Zhang",
+        "Yufei He",
+        "Shuo Ji",
+        "Tri Cao",
+        "Bryan Hooi"
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "补看",
+        "Agent",
+        "Continual Learning",
+        "Memory"
+      ],
+      "note": "JitRL以冻结LLM生成候选动作，检索相似状态下的历史回报估计动作价值，再调整选择。已读2026年9月27日v4；初稿1月26日提交，本次为用户指定独立深读。\n\nWebArena每任务顺序尝试5次并积累记忆：JitRL平均成功率46.98%，Static35.63%，EvoTest39.24%。同Llama3.1-70B、同训练任务、同留出集、无测试适应时，JitRL40.88%低于WebRL46.06%，但报告成本更低。不能将跨设置成绩和30多倍金额差拼成同条件全面超越。\n\n固定源码143d221在WebArena与Jericho路径对概率/置信度加归一化优势后argmax，未直接实现论文logit加优势的闭式形式。独立算术反例显示两者可选出不同动作；差异不直接证明原论文实验无效。未运行完整Agent基准。\n\n建议先读方法第4节、实验协议与附录J，再核对动作评分、概率获取和状态召回。\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-25-jitrl/\n深度解读：https://www.asteronline.cn/juju-radar/read/2026-10-25-jitrl/\nAI辅助整理；PDF仅链接附件，不声称已离线下载。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

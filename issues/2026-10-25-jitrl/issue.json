@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-25",
+  "kind": "special",
+  "sources": [
+    {
+      "id": "jitrl-paper",
+      "title": "JitRL：用历史回报修正冻结模型的动作选择",
+      "category": "Agent / 持续学习",
+      "score": 8,
+      "url": "https://arxiv.org/abs/2601.18510",
+      "related_urls": [
+        "https://arxiv.org/html/2601.18510v4#S4",
+        "https://arxiv.org/html/2601.18510v4#S5",
+        "https://arxiv.org/html/2601.18510v4",
+        "https://github.com/liushiliushi/JitRL/blob/143d22185d95fbf633a0befe6861d5e8b732543b/WebArena/memory_agents/jitrl_agent.py#L257-L283",
+        "https://github.com/liushiliushi/JitRL/blob/143d22185d95fbf633a0befe6861d5e8b732543b/WebArena/memory_agents/utils/cross_episode_memory.py#L480-L536",
+        "https://github.com/liushiliushi/JitRL/blob/143d22185d95fbf633a0befe6861d5e8b732543b/WebArena/memory_agents/jitrl_agent.py#L376-L389",
+        "https://github.com/liushiliushi/JitRL/blob/143d22185d95fbf633a0befe6861d5e8b732543b/WebArena/memory_agents/jitrl_agent.py#L1017-L1062",
+        "https://github.com/liushiliushi/JitRL/blob/143d22185d95fbf633a0befe6861d5e8b732543b/WebArena/memory_agents/jitrl_agent.py#L1119-L1132"
+      ],
+      "event_time": "2026-01-26T14:16:51+00:00",
+      "published_at": "2026-01-26",
+      "arxiv_submitted_at": "2026-01-26T14:16:51+00:00",
+      "reason": "用户指定的独立深读；解释非参数经验价值如何影响动作选择，核对当前实现、受控实验和费用，而非包装为今日首发。",
+      "key_claims": [
+        "轨迹评价后存储状态、动作和折扣回报；检索邻域估计动作价值，并影响候选选择。",
+        "论文KL正则目标给出指数重加权闭式解；公开代码在概率或置信度上加归一化优势，再argmax，不直接等价。",
+        "WebArena平均46.98%建立在每任务5次尝试持续适应上，非陌生任务一次成功率。",
+        "同Llama3.1-70B、同留出集无测试适应对照JitRL40.88%低于WebRL46.06%，成本较低。"
+      ]
+    }
+  ],
+  "issue_id": "2026-10-25-jitrl",
+  "section": "深度解读",
+  "published_at": "2026-10-25T09:04:25.749489+08:00"
+}

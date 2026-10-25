@@ -164,6 +164,9 @@
     },
     "2026-10-25": {
       "sha256": "99e37e61cbb9fc0a0dfff7e9f239232ddfab663d6e000123d468af30da25144d"
+    },
+    "2026-10-25-jitrl": {
+      "sha256": "5218632a9ffc97b7bace3afa1efcd17344f52bc99b55f5f9f02fd74b5e5b06e8"
     }
   }
 }
