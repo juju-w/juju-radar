@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-26",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "big-agi-key-disclosure",
+      "title": "Big-AGI修复服务端Gemini密钥泄露，调试回显也需要隔离凭据",
+      "category": "安全 / 开源应用",
+      "score": 7.5,
+      "url": "https://github.com/enricoros/big-AGI/security/advisories/GHSA-73r7-jqgh-pm36",
+      "related_urls": [
+        "https://github.com/enricoros/big-AGI/security/advisories/GHSA-m7c8-qj9h-663m",
+        "https://github.com/enricoros/big-AGI/releases/tag/v2.1.2"
+      ],
+      "event_time": "2026-10-25T08:42:15Z",
+      "published_at": "2026-10-25T08:42:15Z",
+      "artifact_released_at": "2026-10-25T04:42:10Z",
+      "key_claims": [
+        "25日公布高危公告，<=2.1.1自部署实例若设置服务端GEMINI_API_KEY，能连接服务器的人可能通过AI Inspector回显读取密钥",
+        "2.1.2不再将密钥写入URL，调试器遮蔽URL中的秘密；维护者要求升级后轮换密钥",
+        "另一个公告修复可选HTTP Basic Auth中间件绕过；默认无此中间件和Vercel部署不属于该第二漏洞影响范围",
+        "托管app.big-agi.com未受Gemini密钥泄露影响，因其没有服务端Gemini密钥；未见确认利用数量披露"
+      ],
+      "reason": "新公开的高危缺陷有明确受影响配置和修复；凭据可经诊断回显离开服务端，揭示AI应用调试功能的具体数据流风险。",
+      "window_status": "primary_timestamp_within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "nanbeige43-33b",
+      "title": "近期补看：Nanbeige开放33B教师模型，面向编码与多轮工具任务",
+      "category": "前沿模型 / Coding Agent",
+      "score": 7.5,
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+      "related_urls": [
+        "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/c1093c501cc6460427c0ac634db7223d0450c0ee/README.md",
+        "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/c1093c501cc6460427c0ac634db7223d0450c0ee/config.json",
+        "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/commits/main"
+      ],
+      "published_at": "2026-10-24",
+      "event_time": null,
+      "artifact_released_at": "2026-10-24T11:57:14Z",
+      "key_claims": [
+        "24日权重上传记录，25日修改配置、图片与README，未将lastModified当首次开放时间",
+        "33.1B稠密Llama架构，BF16权重索引约66.24GB，配置支持524288词元；实际运行另需KV缓存和工作空间",
+        "教师模型面向后续小模型蒸馏；3B学生仍为计划，未核实已交付权重",
+        "作者同超参/harness自报DeepSWE65.5对Qwen3.8-27B42.5，但SWE-Bench Pro60.3低于61.7",
+        "preserve_thinking用于保留历史助理思考，工具/办公/代码Agent推荐True，普通聊天False；评测Nanbeige开启该选项"
+      ],
+      "reason": "近期漏看的强模型信号；教师先行、保留跨轮思考的工具模板给出可复核部署选择，保留一条明确补看。",
+      "window_status": "explicit_catchup",
+      "window_uncertain": false
+    }
+  ]
+}

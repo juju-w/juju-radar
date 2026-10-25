@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "label": "25日的安全公告",
+      "url": "https://github.com/enricoros/big-AGI/security/advisories/GHSA-73r7-jqgh-pm36",
+      "section": "Big-AGI修复密钥泄露，问题出在调试回显"
+    },
+    {
+      "label": "另一条公告",
+      "url": "https://github.com/enricoros/big-AGI/security/advisories/GHSA-m7c8-qj9h-663m",
+      "section": "Big-AGI修复密钥泄露，问题出在调试回显"
+    },
+    {
+      "label": "版本说明",
+      "url": "https://github.com/enricoros/big-AGI/releases/tag/v2.1.2",
+      "section": "Big-AGI修复密钥泄露，问题出在调试回显"
+    },
+    {
+      "label": "Nanbeige4.3-33B",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+      "section": "近期补看：Nanbeige开放33B教师模型，先做强再做小"
+    },
+    {
+      "label": "模型卡",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/c1093c501cc6460427c0ac634db7223d0450c0ee/README.md",
+      "section": "近期补看：Nanbeige开放33B教师模型，先做强再做小"
+    },
+    {
+      "label": "配置",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/c1093c501cc6460427c0ac634db7223d0450c0ee/config.json",
+      "section": "近期补看：Nanbeige开放33B教师模型，先做强再做小"
+    }
+  ]
+}
