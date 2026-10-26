@@ -1,0 +1,57 @@
+{
+  "issue_date": "2026-10-27",
+  "papers": [
+    {
+      "id": "openai-math-eth-20261026",
+      "title": "The Exponential Time Hypothesis is False",
+      "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+      "pdf_url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+      "doi": null,
+      "published_date": "2026-10-26",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "OpenAI"
+        }
+      ],
+      "authors": [
+        "OpenAI"
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "AI for Science",
+        "理论计算机"
+      ],
+      "note": "稿件声称对固定k的CNF满足赋值进行次指数时间、 多项式空间的精确计数，从而反驳ETH。公开Lean范围说明的上界与稿件较锐的上界分列，不能混写；次指数时间并非多项式时间，实际算法常数与求解器收益未确定。\n\n本次26日对外公布，稿件署名OpenAI；稿内日期2026-10-17; revised 2026-10-25，不把稿内日期当首次公开时刻。公告说明外部协作自愿、独立且不付报酬；物理组材料尚未公开，不在本清单中虚构物理论文。\n\n已查看PDF首页与起始论述，未完整复核全稿、未编译Lean，primary_verified仅指文献身份与所述声明核对，不表示结果独立成立。重要度9/10，建议研究者阅读原稿并对照形式化范围。\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-27/\nAI辅助整理；PDF仅链接附件，不声称离线下载。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "openai-math-local-smoothing-20261026",
+      "title": "Local smoothing for the Euclidean wave equation",
+      "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
+      "pdf_url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
+      "doi": null,
+      "published_date": "2026-10-26",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "OpenAI"
+        }
+      ],
+      "authors": [
+        "OpenAI"
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "AI for Science",
+        "数学"
+      ],
+      "note": "稿件声称证明所有至少二维的欧氏波方程局部平滑，并推出Kakeya等结果。已核对首两页与对应Lean形式化范围说明，形式陈述、自然语言推导与数学问题的对应仍需专家逐步检查。\n\n本次26日对外公布，稿件署名OpenAI；稿内日期2026-10-25，不把稿内日期当首次公开时刻。公告说明外部协作自愿、独立且不付报酬；物理组材料尚未公开，不在本清单中虚构物理论文。\n\n已查看PDF首页与起始论述，未完整复核全稿、未编译Lean，primary_verified仅指文献身份与所述声明核对，不表示结果独立成立。重要度9/10，建议研究者阅读原稿并对照形式化范围。\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-27/\nAI辅助整理；PDF仅链接附件，不声称离线下载。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

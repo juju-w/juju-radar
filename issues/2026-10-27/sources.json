@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "label": "OpenAI在26日的公告",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "section": "OpenAI公布三组科学结果，两组材料已公开"
+    },
+    {
+      "label": "指数时间假说稿件",
+      "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+      "section": "OpenAI公布三组科学结果，两组材料已公开"
+    },
+    {
+      "label": "局部平滑稿件",
+      "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
+      "section": "OpenAI公布三组科学结果，两组材料已公开"
+    },
+    {
+      "label": "计算复杂度结果",
+      "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/docs/378.md",
+      "section": "OpenAI公布三组科学结果，两组材料已公开"
+    },
+    {
+      "label": "局部平滑结果",
+      "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/docs/079.md",
+      "section": "OpenAI公布三组科学结果，两组材料已公开"
+    },
+    {
+      "label": "GPT-6.1 Terra",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "section": "Terra把电脑操作推向更低价格"
+    },
+    {
+      "label": "系统卡",
+      "url": "https://deploymentsafety.openai.com/gpt-6-1-terra",
+      "section": "Terra把电脑操作推向更低价格"
+    },
+    {
+      "label": "Cadence发布Maestro模型组合",
+      "url": "https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-introduces-maestro-a-domain-specialized-ai-model.html",
+      "section": "Cadence让芯片设计工具给Agent训练反馈"
+    },
+    {
+      "label": "Cohere披露",
+      "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+      "section": "Cohere公开Qwen异常轨迹，尚不能据此认定后门"
+    },
+    {
+      "label": "轨迹、原始词元和复现脚本",
+      "url": "https://huggingface.co/datasets/CohereLabs/10-2026-qwen-investigation-traces",
+      "section": "Cohere公开Qwen异常轨迹，尚不能据此认定后门"
+    },
+    {
+      "label": "Anthropic宣布提交S-1",
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "section": "Anthropic递交上市申请，企业采用有了公开核对入口"
+    },
+    {
+      "label": "SEC公开文件",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "section": "Anthropic递交上市申请，企业采用有了公开核对入口"
+    }
+  ]
+}

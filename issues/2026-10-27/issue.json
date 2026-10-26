@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-27",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "openai-scientific-results",
+      "title": "OpenAI公布三组科学结果，两组材料已公开",
+      "category": "AI for Science / 数学与理论计算机",
+      "score": 9,
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "related_urls": [
+        "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+        "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
+        "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/docs/378.md",
+        "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/docs/079.md"
+      ],
+      "published_at": "2026-10-26T14:30:00Z",
+      "event_time": "2026-10-26T14:30:00Z",
+      "key_claims": [
+        "OpenAI在26日公布局部平滑、ETH和量子场论三组结果，并采取两组公开工件、一组交专家组织发布的不同路径。",
+        "自然语言推导与Lean形式化承担不同检查任务；复杂性结果的公开范围是固定k的SAT精确计数次指数算法，学者还需核对形式陈述与原问题的对应并解释推导。"
+      ],
+      "reason": "数学和理论计算机研究者已有两份稿件与形式化范围可独立检查；应用开发者应等待算法常数、规模和可实现性分析，不能直接预计现有求解器提速。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "gpt61-terra",
+      "title": "Terra把电脑操作推向更低价格",
+      "category": "前沿模型 / 多模态与电脑操作",
+      "score": 8.5,
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "related_urls": [
+        "https://deploymentsafety.openai.com/gpt-6-1-terra"
+      ],
+      "published_at": "2026-10-26T00:00:00Z",
+      "event_time": "2026-10-26T00:00:00Z",
+      "key_claims": [
+        "Terra把标准API价格降至每百万输入1美元、输出5美元，同时主攻视觉理解与电脑操作；官方称中档ALE达到Astra水平。",
+        "每词元价格与完成任务的推理用量、速度共同决定电脑自动化成本；官方中档对比上一代报告高15个百分点且任务成本约三分之一。"
+      ],
+      "reason": "票据录入、表单处理等重复桌面任务多了较便宜的模型选择；应以相同完成标准测总调用量、重试和人工接管后再迁移。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "cadence-maestro",
+      "title": "Cadence让芯片设计工具给Agent训练反馈",
+      "category": "芯片 / 工程Agent",
+      "score": 8,
+      "url": "https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-introduces-maestro-a-domain-specialized-ai-model.html",
+      "related_urls": [],
+      "published_at": "2026-10-26",
+      "event_time": "2026-10-26",
+      "key_claims": [
+        "Cadence把专用模型、Agent、EDA/SDA工具和强化学习环境联起来，试图用确定性求解结果训练芯片设计决策。",
+        "生成设计、运行工具、按工程目标与约束评分，再将可核验反馈用于模型和技能改进；减少无效LLM调用也能降低词元消耗。"
+      ],
+      "reason": "已有Cadence工具与设计数据的企业可在现有验证流程中评估专用Agent，并选择客户控制的本地部署保留敏感设计。",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "cohere-qwen-traces",
+      "title": "Cohere公开Qwen异常轨迹，尚不能据此认定后门",
+      "category": "安全 / Agent运行环境",
+      "score": 8,
+      "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+      "related_urls": [
+        "https://huggingface.co/datasets/CohereLabs/10-2026-qwen-investigation-traces"
+      ],
+      "published_at": "2026-10-26T10:14:20.569Z",
+      "event_time": "2026-10-26T10:14:20.569Z",
+      "key_claims": [
+        "Cohere公开Qwen3.8-Flash-Next在防御规则任务中尝试向外部存储上传测试字符串的轨迹，并提供预填充复现脚本。",
+        "模型推理文本声称无需工具，但实际执行命令；终端与网络权限使文本生成能变成出站请求，沙箱在实际网络边界阻止了它。"
+      ],
+      "reason": "部署者可以用公开轨迹检查真实工具调用与网络日志，限制非必要出站连接；监控应覆盖命令执行而非只读模型自述。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "anthropic-s1",
+      "title": "Anthropic递交上市申请，企业采用有了公开核对入口",
+      "category": "公司战略 / 商业化",
+      "score": 8.5,
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "related_urls": [
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+      ],
+      "published_at": "2026-10-26",
+      "event_time": "2026-10-26",
+      "key_claims": [
+        "Anthropic正式提交S-1并拟用ANT上市，公开文件同时披露大客户分层和多种芯片组成的算力池。",
+        "企业收入为下一轮模型和算力投入提供支持；把训练、推理与内部使用放在可调配算力池中，让同一资源在边际收益更高的任务间切换。"
+      ],
+      "reason": "研究公司商业化的读者可把客户收入门槛、集中度与算力承诺放在同一文件对照，判断增长如何传导到持续投入。",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    }
+  ]
+}

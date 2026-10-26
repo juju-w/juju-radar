@@ -7,6 +7,9 @@ from xml.etree import ElementTree as ET
 ROOT=Path(__file__).resolve().parents[2]
 STATIC={'.gitleaks.toml','.gitignore','.public-export-marker','README.md','SECURITY.md','.github/workflows/publish.yml','site/paper-summaries.json','site/publications.json','site/registration.json','site/scripts/markdown_blocks.py','site/scripts/test_markdown.py','site/formatting-example.md','site/assets/article.js','site/assets/vendor/mermaid-12.2.0.min.js','site/assets/vendor/highlight-11.12.0.min.js','site/assets/vendor/licenses.json','site/assets/site.css','site/assets/site.js','site/assets/archive.js','site/assets/share.js','site/assets/wechat-share.js','site/assets/wechat-cover.png','ops/wechat-sign.py','ops/test-wechat-sign.py','site/assets/share-cover.png','site/scripts/build.py','site/scripts/build-source-page.py','site/scripts/check.py','site/scripts/package.py','ops/pull-release.py','site/assets/music/bootstrap.js','site/assets/music/player.js','site/assets/music/liquid-glass.js','site/assets/music/music.css','site/assets/music/shell.html'}
 PATTERNS=[('private key',r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----'),('GitHub credential',r'(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,})'),('cloud access key',r'(?:AKIA|ASIA)[A-Z0-9]{16}|AKID[A-Za-z0-9]{28,}'),('credential URL',r'https?://[^\s/@:]+:[^\s/@]+@'),('credential assignment',r'(?i)(?:api[_-]?key|app[_-]?secret|access[_-]?token|password|secret[_-]?key)\s*[=:]\s*[\"\x27][A-Za-z0-9/+_=-]{12,}'),('local metadata',r'/Users/[A-Za-z0-9_-]+/|/home/[A-Za-z0-9_-]+/')]
+# This exact public newsroom URL contains /home/company/, not a host filesystem path.
+# It is exempt only from the local-path detector; all credential rules still inspect it.
+PUBLIC_NEWSROOM_URL='https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-introduces-maestro-a-domain-specialized-ai-model.html'
 def scan(paths):
  bad=[]
  for path in paths:
@@ -26,7 +29,8 @@ def scan(paths):
   for label,pattern in PATTERNS:
    # Scanner code contains detector literals, not actual deployment information.
    if rel=='site/scripts/check.py' and label=='local metadata':continue
-   if re.search(pattern,text):bad.append((rel,label))
+   inspected=text.replace(PUBLIC_NEWSROOM_URL,'') if label=='local metadata' else text
+   if re.search(pattern,inspected):bad.append((rel,label))
  if bad:
   for rel,label in bad:print(rel+': '+label,file=sys.stderr)
   raise SystemExit('Public boundary scan failed (values redacted)')
