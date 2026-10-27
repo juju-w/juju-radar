@@ -1,0 +1,117 @@
+{
+  "issue_date": "2026-10-28",
+  "papers": [
+    {
+      "id": "bighat-antibody-metrics-20261027",
+      "title": "Reasoning in the loop: antibody lead optimization by probing mechanism and measurement",
+      "url": "https://www.bighatbio.com/bighat-anthropic-collaboration-report-10-27-2026",
+      "pdf_url": "https://cdn.prod.website-files.com/64ff35ef45fc1e4545e5ffa1/6ae0ea8e28d4a390cbe66b52_bighat_pilot_retro_final_v2.pdf",
+      "doi": null,
+      "published_date": "2026-10-27",
+      "item_type": "report",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Samuel",
+          "lastName": "Stanton"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Aaron",
+          "lastName": "Solomon"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Emily",
+          "lastName": "Delaney"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Melanie",
+          "lastName": "Montgomery"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Timothy",
+          "lastName": "Acker"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ryan",
+          "lastName": "Henrici"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Charbel",
+          "lastName": "Eid"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Eddie",
+          "lastName": "Abrams"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peyton",
+          "lastName": "Greenside"
+        }
+      ],
+      "authors": [
+        "Samuel Stanton",
+        "Aaron Solomon",
+        "Emily Delaney",
+        "Melanie Montgomery",
+        "Timothy Acker",
+        "Ryan Henrici",
+        "Charbel Eid",
+        "Eddie Abrams",
+        "Peyton Greenside"
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "AI for Science"
+      ],
+      "note": "两种抗体片段、7轮约1010种设计；读取原始散射/荧光曲线，区分展开、聚集与沉淀并调整测量指标。人类指定目标并执行实验，曾提示Agent检查原始曲线。浓度/升温速度扰动的部分预测未成立；最终阈值看结果后设置，领先分子主要1–2重复，须先确认再推广。未做临床验证。重要度8.5/10。已读31页报告的摘要、方法、9–11页结果/讨论/限制及相关附录；没有独立运行实验。\n\n27日随官方研究公告公开；并非论文同行评审或独立证实的声明。\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-28/\nAI辅助整理。PDF归档附件为链接，不声称已离线下载。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "anthropic-expert-judgment-20261027",
+      "title": "Who’s Aligned to Whom? How AI Agents Shape Experts’ Research Judgment Calls",
+      "url": "https://www-cdn.anthropic.com/519c17a5d23a794e8b6d50a854048d0b61e0d73a.pdf",
+      "pdf_url": "https://www-cdn.anthropic.com/519c17a5d23a794e8b6d50a854048d0b61e0d73a.pdf",
+      "doi": null,
+      "published_date": "2026-10-27",
+      "item_type": "report",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Amaç",
+          "lastName": "Herdağdelen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hailey",
+          "lastName": "Joren"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Alex",
+          "lastName": "Tamkin"
+        }
+      ],
+      "authors": [
+        "Amaç Herdağdelen",
+        "Hailey Joren",
+        "Alex Tamkin"
+      ],
+      "tags": [
+        "Juju Radar",
+        "待阅读",
+        "人机协作"
+      ],
+      "note": "50名因果推断从业者分析模拟农业政策数据，Claude Code/Opus4.8High被随机设置5个二元立场；4项分析决定86%与Agent立场一致。没有唯一正确答案，故不是86%错误率。最终建议直接效应不显著；11位自行不使用AI的人不是随机对照。单任务、单模型、刻意强化立场，不能泛化到所有工作。重要度8/10。已核对29页原文5–6页设计、8–13页结果及13–14页局限；没有独立复现实验。\n\n27日随官方研究公告公开；并非论文同行评审或独立证实的声明。\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-28/\nAI辅助整理。PDF归档附件为链接，不声称已离线下载。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

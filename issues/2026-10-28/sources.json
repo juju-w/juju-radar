@@ -1,0 +1,74 @@
+{
+  "sources": [
+    {
+      "label": "Google DeepMind发布Genie 4研究预览",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "section": "Genie 4加入声音，Gemini负责导引场景"
+    },
+    {
+      "label": "Liquid AI发布LFM3家族",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "section": "LFM3用一个小底座，分出六种模型"
+    },
+    {
+      "label": "文本",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "section": "LFM3用一个小底座，分出六种模型"
+    },
+    {
+      "label": "视觉",
+      "url": "https://huggingface.co/LiquidAI/LFM3-VL-2B",
+      "section": "LFM3用一个小底座，分出六种模型"
+    },
+    {
+      "label": "音频",
+      "url": "https://huggingface.co/LiquidAI/LFM3-Audio-2B",
+      "section": "LFM3用一个小底座，分出六种模型"
+    },
+    {
+      "label": "全模态",
+      "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+      "section": "LFM3用一个小底座，分出六种模型"
+    },
+    {
+      "label": "d1",
+      "url": "https://huggingface.co/LiquidAI/d1-2B",
+      "section": "LFM3用一个小底座，分出六种模型"
+    },
+    {
+      "label": "d1-Omni",
+      "url": "https://huggingface.co/LiquidAI/d1-Omni-2B",
+      "section": "LFM3用一个小底座，分出六种模型"
+    },
+    {
+      "label": "对应条款",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE",
+      "section": "LFM3用一个小底座，分出六种模型"
+    },
+    {
+      "label": "Anthropic公布药物研发合作进展",
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "section": "Claude参与抗体优化，先追查指标量到了什么"
+    },
+    {
+      "label": "BigHat原始报告",
+      "url": "https://www.bighatbio.com/bighat-anthropic-collaboration-report-10-27-2026",
+      "section": "Claude参与抗体优化，先追查指标量到了什么"
+    },
+    {
+      "label": "PDF",
+      "url": "https://cdn.prod.website-files.com/64ff35ef45fc1e4545e5ffa1/6ae0ea8e28d4a390cbe66b52_bighat_pilot_retro_final_v2.pdf",
+      "section": "Claude参与抗体优化，先追查指标量到了什么"
+    },
+    {
+      "label": "Anthropic的一项随机实验",
+      "url": "https://www.anthropic.com/research/agents-judgment-calls",
+      "section": "AI没有编造数据，也可能改变专家的分析口径"
+    },
+    {
+      "label": "论文",
+      "url": "https://www-cdn.anthropic.com/519c17a5d23a794e8b6d50a854048d0b61e0d73a.pdf",
+      "section": "AI没有编造数据，也可能改变专家的分析口径"
+    }
+  ]
+}

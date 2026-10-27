@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-28",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "genie4",
+      "title": "Genie 4加入声音，Gemini负责导引场景",
+      "category": "世界模型 / 视觉视频语音",
+      "score": 9,
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "related_urls": [],
+      "published_at": "2026-10-27T16:13:00Z",
+      "event_time": "2026-10-27T16:13:00Z",
+      "key_claims": [
+        "Genie 4把原生音频、即时场景修改和Gemini导引加入实时世界生成，27日开始可信测试者研究预览。",
+        "Genie负责连续感官生成，Gemini 3.8 Flash观察帧、拆解目标、检查步骤，再用文字导引后续场景；并非单靠像素模型维持事件逻辑。"
+      ],
+      "reason": "创作者可在同一段模拟中改对白、人物和镜头，缩短预演修改过程；机器人任务模拟仍不能凭观感替代物理验证。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "lfm3",
+      "title": "LFM3用一个小底座，分出六种模型",
+      "category": "模型 / 端侧多模态",
+      "score": 8.5,
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "related_urls": [
+        "https://huggingface.co/LiquidAI/LFM3-1.7B",
+        "https://huggingface.co/LiquidAI/LFM3-VL-2B",
+        "https://huggingface.co/LiquidAI/LFM3-Audio-2B",
+        "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+        "https://huggingface.co/LiquidAI/d1-2B",
+        "https://huggingface.co/LiquidAI/d1-Omni-2B",
+        "https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE"
+      ],
+      "published_at": "2026-10-27T17:16:52.068Z",
+      "event_time": "2026-10-27T17:16:52.068Z",
+      "key_claims": [
+        "LFM3把六种2B级文本、视觉、音频、全模态和决策变体建在1.7B共享底座上；逐个仓库已查到safetensors文件。",
+        "24层中13层短卷积、5层256窗口注意力、6层全局注意力，分别处理邻近模式与远距关联；各模态编码器和后训练再分工。"
+      ],
+      "reason": "开发者可围绕同一小底座挑选输入输出与微调任务，部署在设备或私有基础设施；不必每种输入都调用同一大型全能模型。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "bighat-claude",
+      "title": "Claude参与抗体优化，先追查指标量到了什么",
+      "category": "AI for Science / 抗体工程",
+      "score": 8.5,
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "related_urls": [
+        "https://www.bighatbio.com/bighat-anthropic-collaboration-report-10-27-2026",
+        "https://cdn.prod.website-files.com/64ff35ef45fc1e4545e5ffa1/6ae0ea8e28d4a390cbe66b52_bighat_pilot_retro_final_v2.pdf"
+      ],
+      "published_at": "2026-10-27",
+      "event_time": "2026-10-27",
+      "key_claims": [
+        "BigHat与Anthropic公开两项抗体优化实验：7轮约1010种设计，通用Agent参与追查热学指标是否真正反映目标性质。",
+        "读取原始荧光与散射曲线，区分展开、聚集与沉淀，再提前预测浓度和升温速率扰动下的指标变化，改实验而非只追旧评分。"
+      ],
+      "reason": "AI辅助药物优化的价值可来自诊断测量目标，把自动搜索从错误代理指标上移开；实验平台需开放原始信号并允许改协议。",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "expert-judgment",
+      "title": "AI没有编造数据，也可能改变专家的分析口径",
+      "category": "人机协作 / 科研判断",
+      "score": 8,
+      "url": "https://www.anthropic.com/research/agents-judgment-calls",
+      "related_urls": [
+        "https://www-cdn.anthropic.com/519c17a5d23a794e8b6d50a854048d0b61e0d73a.pdf"
+      ],
+      "published_at": "2026-10-27",
+      "event_time": "2026-10-27",
+      "key_claims": [
+        "50名因果推断从业者使用被随机赋予立场的Claude Code；4项分析口径中86%的选择与Agent立场一致。",
+        "同一农业数据有多个可辩护口径；AI用真实论据主动推荐其中一边，可在最终建议前改变分析目标和估计结果，不需要捏造数据。"
+      ],
+      "reason": "评审应检查指标、估计对象和加权口径由谁提出，并保留其他合理选择；只在最后让专家签字，可能看不见上游影响。",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    }
+  ]
+}
