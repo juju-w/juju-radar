@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-29",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "gemini-carbon",
+      "title": "Gemini 4 Carbon瞄准持续工程与网络安全",
+      "category": "前沿模型 / 网络安全",
+      "score": 9.5,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "related_urls": [
+        "https://github.com/SEC-bench/SEC-bench-Pro"
+      ],
+      "published_at": "2026-10-28T17:00:00Z",
+      "event_time": "2026-10-28T17:00:00Z",
+      "key_claims": [
+        "Carbon在28日公布，重点提高持续工程与漏洞发现、验证、修复能力，先向部分安全防御者开放。",
+        "官方强调长时Agent执行与多层安全训练、运行时滥用防御及监控；公开材料没有给出新架构，不能从跑分倒推内部机制。三个网络安全基准分别考察发现、利用验证与修补，不能视为一个通用成功率。"
+      ],
+      "reason": "安全团队可以尝试把根因定位与修复交给持续运行的Agent；当前受控访问安排及无护栏评测条件限制直接部署推断。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "copilot-orchestration",
+      "title": "Copilot Fusion把模型选择变成运行时决策",
+      "category": "Agent / 编程基础设施",
+      "score": 8.5,
+      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+      "related_urls": [
+        "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve"
+      ],
+      "published_at": "2026-10-28T16:00:00Z",
+      "event_time": "2026-10-28T16:00:00Z",
+      "key_claims": [
+        "Copilot Fusion正式可用，单模型、级联和互评三种协作；同一Copilot harness通过Foundry供外部开发者使用。",
+        "路由器按任务选择模型；级联先用较便宜模型，再通过质量检查决定是否升级，互评让另一模型反馈并重写。工作流把运行环境和反馈复用为基础设施。"
+      ],
+      "reason": "开发者不必在每一步手动切模型，企业可保留模型策略与预算管理，把后台CI修复和排障接入既有开发流程。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "minicpm-ocr",
+      "title": "MiniCPM-OCR把解析与正确性判别分开",
+      "category": "视觉 / 文档理解",
+      "score": 8,
+      "url": "https://github.com/OpenBMB/MiniCPM-OCR",
+      "related_urls": [
+        "https://huggingface.co/openbmb/MiniCPM-OCR-1.0",
+        "https://huggingface.co/openbmb/MiniCPM-OCR-Jev",
+        "https://github.com/OpenBMB/MiniCPM-OCR/blob/b33b474136088dc43a2341e94590c804ec0c16a5/docs/minicpm_ocr_jev_en.md",
+        "https://github.com/OpenBMB/MiniCPM-OCR/blob/b33b474136088dc43a2341e94590c804ec0c16a5/docs/benchmark_reproduction_en.md"
+      ],
+      "published_at": "2026-10-28",
+      "event_time": "2026-10-28",
+      "key_claims": [
+        "1.3B文档解析器配2B区域正确性判别器，两个权重仓库均有可访问safetensors；OCR Jev用原图、候选文本和渲染图评分。",
+        "Qwen3.5-2B保留视觉和语言骨干，把语言输出头换成二分类头；对齐同一裁剪区域的文字和视觉结果，直接对候选作区分，而非让生成模型自评一句信心。"
+      ],
+      "reason": "可从多个解析器候选中选结果，按区域安排人工复核，让错误定位粒度从整页降到文本、公式或表格块。",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "nemotron-transcribe",
+      "title": "NVIDIA让转写方式成为明确的训练目标",
+      "category": "语音 / 开放模型与数据",
+      "score": 8,
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "related_urls": [
+        "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Transcribe-Technical-Report.pdf",
+        "https://github.com/NVIDIA-NeMo/Speech/blob/main/examples/speechlm2/finetuning/docs/medical-asr-synthetic-data.md",
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
+      ],
+      "published_at": "2026-10-28T14:58:17.125Z",
+      "event_time": "2026-10-28T14:58:17.125Z",
+      "key_claims": [
+        "Nemotron3.5 Transcribe把原话、规范书面形式、术语偏置和说话人归属放进同一语音模型，配Granary v2显式多种转写目标。",
+        "ASR与Sortformer说话人分支并行，把谁在说话的线索加入声学表征，再让混合Mamba-Transformer MoE按指令生成；同一录音可配不同书写目标，减少输出习惯与任务需求的冲突。"
+      ],
+      "reason": "会议存档、专业口述和可检索字幕可以选择不同文本约定，再用领域数据微调；不必把所有转写后处理压在固定ASR输出上。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "alphabet-cloud",
+      "title": "Google Cloud增长翻倍，要分清三种采用信号",
+      "category": "公司战略 / 云与算力",
+      "score": 8.5,
+      "url": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/",
+      "related_urls": [],
+      "published_at": "2026-10-28T21:05:00Z",
+      "event_time": "2026-10-28T21:05:00Z",
+      "key_claims": [
+        "Q3官方讲话称Cloud收入同比增长103%，自有模型API每分钟近320亿词元、环比增长40%，同时强调TPU系统客户需求。",
+        "同一全栈投资经模型服务、云基础设施和TPU系统等渠道转化为使用与收入，Cloud总增速不能直接当成某个模型API的增长。"
+      ],
+      "reason": "AI采用的证据从新品跑分延伸到云收入和实际调用规模；观察供应商时需分别看服务消耗、硬件交付与基础设施扩张。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "axiom-cfsg",
+      "title": "补看：Axiom把有限单群分类证明转成Lean",
+      "category": "AI for Science / 形式化数学",
+      "score": 8.5,
+      "url": "https://axiommath.ai/research/the-enormous-theorem-formalized/",
+      "related_urls": [
+        "https://github.com/AxiomMath/CFSG"
+      ],
+      "published_at": "2026-10-26",
+      "event_time": "2026-10-26",
+      "key_claims": [
+        "26日宣布的CFSG形式化项目公开完整Lean证明入口，称数十个Agent在24天协调约4310万行代码；作为一次明确补看。",
+        "共享证明依赖图把大目标拆为可连接的定理，集成检查识别额外未证假设，分布式缓存复用编译结果，有限计算转为可独立检查的证书；瓶颈包括依赖一致性和复查速度。"
+      ],
+      "reason": "已有巨大人类证明可变成可检查、可复用的库，数学家可追踪具体假设与依赖；这不是重新发现有限单群分类本身。",
+      "window_status": "outside_window_explicit_supplement",
+      "window_uncertain": false
+    }
+  ]
+}

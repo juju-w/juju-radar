@@ -1,0 +1,31 @@
+{
+  "issue_date": "2026-10-29",
+  "papers": [
+    {
+      "id": "nemotron35-transcribe-20261028",
+      "title": "Nemotron 3.5 Transcribe Technical Report",
+      "url": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Transcribe-Technical-Report.pdf",
+      "pdf_url": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Transcribe-Technical-Report.pdf",
+      "doi": null,
+      "published_date": "2026-10-28",
+      "item_type": "report",
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "NVIDIA"
+        }
+      ],
+      "authors": [
+        "NVIDIA"
+      ],
+      "tags": [
+        "Juju Radar",
+        "语音识别",
+        "可控转写",
+        "待阅读"
+      ],
+      "note": "Nemotron 3.5 Transcribe将ASR声学编码器与冻结Sortformer并行，逐帧说话人表征加入声学特征，再接Mamba-Transformer MoE语言骨干。Granary v2为录音构造原话、规范文字等不同目标，把转写约定落实到监督训练。单阶段SFT后短RL，整体约34B、激活约4.3B，离线录音最长1小时。\n\n重要度8/10。医疗合成数据适配按说话人留出：最佳提示下WER22.44%→12.17%，而一般英语略退步，不能把参与调参数据的改善当泛化。中文远场会议、中英混合有限。NIM最高吞吐含量化、推测解码、高并发且优化未全部开放，不代表本地开源实现速度。\n\n已读67页报告身份、5–9页架构、结果/结论与限制及医疗适配对应原始说明，未独立复现实验。报告日期2026-10-28，非补看，未宣称同行评审。模型卡与博客的WER协议数值不同，正文避免混排。\n原始报告：https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Transcribe-Technical-Report.pdf\n博客：https://huggingface.co/blog/nvidia/nemotron-transcribe-granary\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-29/\nAI辅助整理。PDF附件为链接，未声称离线下载。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
