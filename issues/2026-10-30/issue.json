@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-30",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "mistral-large4-weights",
+      "title": "Mistral Large 4开放权重，长上下文部署有具体取舍",
+      "category": "前沿模型 / 推理基础设施",
+      "score": 9.0,
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "related_urls": [
+        "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+        "https://vllm.ai/blog/2026-10-29-mistral-large-4",
+        "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/raw/main/LICENSE"
+      ],
+      "published_at": "2026-10-29T12:00:07Z",
+      "event_time": "2026-10-29T12:00:07Z",
+      "key_claims": [
+        "29日开放继续强化学习后的Large4权重，承接6日API预览；FP8和NVFP4仓库已有权重分片。",
+        "72层MoE把专家选择与历史位置选择分开；9层复用第35层KV，DSpark草稿头一次验证多个词元。上下文并行把重复KV分散到不同GPU，扩容量但有通信开销。"
+      ],
+      "reason": "有私有代码和安全数据的团队可自己部署、定制模型；减少输出长度及缓存重复，可分别降低生成和长上下文驻留成本。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "figma-editing",
+      "title": "Figma把原生画布修改教给专用模型",
+      "category": "Agent / 设计工具",
+      "score": 8.0,
+      "url": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/",
+      "related_urls": [],
+      "published_at": "2026-10-29T21:00:00Z",
+      "event_time": "2026-10-29T21:00:00Z",
+      "key_claims": [
+        "Figma首次详解画布编辑后训练，展示尚未发布的Qwen3.8 27B变体内部评价，并披露整体Agent体验改善。",
+        "用原生Figma文件表示起始设计和修改，教师模型生成候选，结构校验、视觉评分、专家标准分开检查；SFT后继续探索领域RL，避免只模仿训练分布。"
+      ],
+      "reason": "小幅间距、组件、主题更改不必每次消耗长系统提示来解释画布语法，修改仍能回写为可继续编辑的设计对象。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "pika-h3-flex",
+      "title": "Pika H3 Flex把音视频生成压到六步",
+      "category": "视频生成 / 后训练",
+      "score": 8.5,
+      "url": "https://pika.art/blog/pika-h3-flex",
+      "related_urls": [
+        "https://pika.art/blog/pika-h3-flex-research",
+        "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+        "https://github.com/Pika-Labs/Pika-H3-Flex"
+      ],
+      "published_at": "2026-10-29",
+      "event_time": "2026-10-29",
+      "key_claims": [
+        "29日Pika发布在MiniMax H3上后训练的Flex，公开生成适配器与推理代码，以六步联合生成音视频。",
+        "先审美数据SFT，再用PDMD把50步教师蒸馏到6步学生，随后分别训练ReFL和DPO低秩适配器并合并，不增加生成步数；托管侧另加算子、缓存和通信优化。"
+      ],
+      "reason": "创作者可以更快比较草稿，再分别修改镜头、参考内容和混音；公开480/768p生成可自己部署，部分成片工具仍在托管侧。",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "openai-monitoring",
+      "title": "OpenAI公开分层监控，也解释了响应缺口",
+      "category": "AI安全 / 运行监控",
+      "score": 8.5,
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+      "related_urls": [],
+      "published_at": "2026-10-29T09:00:00Z",
+      "event_time": "2026-10-29T09:00:00Z",
+      "key_claims": [
+        "29日公开扩展的内部失准监控架构和外部覆盖条件；同时更新Model Spec，规范目标与运行监控是两条不同工作。",
+        "低成本高召回激活探针先筛，5%未命中随机复查，后续模型审阅、跨上下文调查、网络日志与历史案例逐级增加证据；高敏感训练与内部Codex绕过初筛。"
+      ],
+      "reason": "团队能把异常分诊与证据重建分开预算；判断安全系统时需要查从发现到通知、暂停之间是否真正连通。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "protostar",
+      "title": "ProtoStar要用开放挑战检验科研数据复用",
+      "category": "AI for Science / 开放基础设施",
+      "score": 7.5,
+      "url": "https://huggingface.co/blog/announcing-project-protostar",
+      "related_urls": [
+        "https://huggingface.co/spaces/CMU-OSPO/protostar-challenge-climate-risk-intelligence"
+      ],
+      "published_at": "2026-10-29",
+      "event_time": "2026-10-29",
+      "key_claims": [
+        "HF与大学和开放科学组织29日启动ProtoStar，首场城市气候挑战11月2日开启，以公开科研资产复用为目标。",
+        "将数据、模型、代码配齐元数据、来源与可供机器处理的格式，再通过跨机构复用挑战找文档和互操作障碍；用历史观测与简单统计基线检验预测价值。"
+      ],
+      "reason": "科研团队可减少重新找数据、改格式、追溯来源的重复工作；挑战把AI-ready从文件上架推进到能否真正完成复用。",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "reddit-login",
+      "title": "Reddit计划把更多访问转向登录体验",
+      "category": "公司战略 / 内容与数据",
+      "score": 8.0,
+      "url": "https://www.reddit.com/user/spez/comments/1xiupm0/about_that_login_screen/",
+      "related_urls": [
+        "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
+      ],
+      "published_at": "2026-10-29",
+      "event_time": "2026-10-29",
+      "key_claims": [
+        "29日Reddit宣布逐步转向以登录为主的体验，先在美国以外少量市场测试，回应搜索流量下降与AI抓取。",
+        "把匿名搜索入口引向登录关系，增加可个性化的用户信号并保护内容许可价值；AI摘要减少回访，让内容平台重新安排访问入口。"
+      ],
+      "reason": "依赖开放网页和抓取的研究、检索产品可能面临更多登录/许可摩擦；Reddit试图用更深参与和广告价值应对外部导流减弱。",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    }
+  ]
+}

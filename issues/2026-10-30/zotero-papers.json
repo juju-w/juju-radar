@@ -1,0 +1,32 @@
+{
+  "issue_date": "2026-10-30",
+  "papers": [
+    {
+      "id": "pika-h3-flex-technical-20261029",
+      "title": "Pika H3 Flex Technical Deep Dive",
+      "url": "https://pika.art/blog/pika-h3-flex-research",
+      "pdf_url": null,
+      "doi": null,
+      "published_date": "2026-10-29",
+      "item_type": "report",
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "Pika Team"
+        }
+      ],
+      "authors": [
+        "Pika Team"
+      ],
+      "tags": [
+        "Juju Radar",
+        "视频生成",
+        "蒸馏",
+        "技术报告",
+        "待阅读"
+      ],
+      "note": "官方网页技术报告，未找到独立论文或PDF；不是同行评审论文。Pika团队在MiniMax H3上先审美音视频SFT，再用PDMD把50步教师蒸馏成6步学生，最后分别训练ReFL与DPO低秩适配器并合并，不加采样步骤。\n\n重要度8.5/10。7秒仅15秒768p片段DiT计算；另一组固定六步模型、8xB300/5秒768p测试，完整推理3.409→2.129秒。公开适配器/推理覆盖原生480/768p和混音；4K超分、五轨分离与加速服务栈当前托管，计划开源不算已开放。未独立运行或复现，偏好胜率不能写成质量提升比例。\n\n原始方法、结果、推理计时与产品范围均已读，模型仓库存在适配器和相关权重文件；不是仅据API可用推断权重开放。报告日期2026-10-29，本期非补看。\n原始报告：https://pika.art/blog/pika-h3-flex-research\n代码：https://github.com/Pika-Labs/Pika-H3-Flex\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-30/\nAI辅助整理。归档为网页技术报告，无PDF附件。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

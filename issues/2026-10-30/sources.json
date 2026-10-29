@@ -1,0 +1,74 @@
+{
+  "sources": [
+    {
+      "label": "Mistral开放Large 4（Le Chonk）权重",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "section": "Mistral Large 4开放权重，长上下文部署有具体取舍"
+    },
+    {
+      "label": "模型仓库",
+      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+      "section": "Mistral Large 4开放权重，长上下文部署有具体取舍"
+    },
+    {
+      "label": "vLLM实现说明",
+      "url": "https://vllm.ai/blog/2026-10-29-mistral-large-4",
+      "section": "Mistral Large 4开放权重，长上下文部署有具体取舍"
+    },
+    {
+      "label": "本次许可证",
+      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/raw/main/LICENSE",
+      "section": "Mistral Large 4开放权重，长上下文部署有具体取舍"
+    },
+    {
+      "label": "Figma详解画布编辑模型的后训练",
+      "url": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/",
+      "section": "Figma把原生画布修改教给专用模型"
+    },
+    {
+      "label": "Pika发布H3 Flex",
+      "url": "https://pika.art/blog/pika-h3-flex",
+      "section": "Pika H3 Flex把音视频生成压到六步"
+    },
+    {
+      "label": "技术说明",
+      "url": "https://pika.art/blog/pika-h3-flex-research",
+      "section": "Pika H3 Flex把音视频生成压到六步"
+    },
+    {
+      "label": "公开仓库",
+      "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+      "section": "Pika H3 Flex把音视频生成压到六步"
+    },
+    {
+      "label": "推理代码",
+      "url": "https://github.com/Pika-Labs/Pika-H3-Flex",
+      "section": "Pika H3 Flex把音视频生成压到六步"
+    },
+    {
+      "label": "OpenAI公开扩展后的模型失准监控系统",
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+      "section": "OpenAI公开分层监控，也解释了响应缺口"
+    },
+    {
+      "label": "Hugging Face、大学与开放科学组织启动ProtoStar",
+      "url": "https://huggingface.co/blog/announcing-project-protostar",
+      "section": "ProtoStar要用开放挑战检验科研数据复用"
+    },
+    {
+      "label": "首场城市气候挑战",
+      "url": "https://huggingface.co/spaces/CMU-OSPO/protostar-challenge-climate-risk-intelligence",
+      "section": "ProtoStar要用开放挑战检验科研数据复用"
+    },
+    {
+      "label": "Reddit CEO Steve Huffman在29日的文章中",
+      "url": "https://www.reddit.com/user/spez/comments/1xiupm0/about_that_login_screen/",
+      "section": "Reddit计划把更多访问转向登录体验"
+    },
+    {
+      "label": "TechCrunch对业绩会的报道",
+      "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
+      "section": "Reddit计划把更多访问转向登录体验"
+    }
+  ]
+}
