@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "label": "Google公布Project Suncatcher的新进展",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+      "section": "Google用在轨TPU运行Gemma 4，完整回答已传回地面"
+    },
+    {
+      "label": "项目此前的工程说明",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/",
+      "section": "Google用在轨TPU运行Gemma 4，完整回答已传回地面"
+    },
+    {
+      "label": "Cursor于10月30日更新安全通告",
+      "url": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "section": "Cursor更新恶意扩展范围，代码在加载时就会运行"
+    },
+    {
+      "label": "Gemini更新日志",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "section": "Gemini界面操作工具正式可用，执行循环仍由客户端接通"
+    },
+    {
+      "label": "实现指南",
+      "url": "https://ai.google.dev/gemini-api/docs/computer-use",
+      "section": "Gemini界面操作工具正式可用，执行循环仍由客户端接通"
+    },
+    {
+      "label": "IDM论文",
+      "url": "https://arxiv.org/abs/2610.39633",
+      "section": "IDM公开少步推理代码，把分布统计约束放进训练"
+    },
+    {
+      "label": "公开仓库",
+      "url": "https://github.com/inclusionAI/IDM",
+      "section": "IDM公开少步推理代码，把分布统计约束放进训练"
+    },
+    {
+      "label": "Epoch AI于10月29日发布研究报告",
+      "url": "https://epoch.ai/publications/open-weight-models-patch-gap",
+      "section": "近期补看：公开补丁到用户更新之间，攻击可能先完成"
+    }
+  ]
+}

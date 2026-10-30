@@ -1,0 +1,144 @@
+{
+  "issue_date": "2026-10-31",
+  "papers": [
+    {
+      "id": "2610.39633",
+      "title": "Intrinsic Distribution Matching",
+      "url": "https://arxiv.org/abs/2610.39633",
+      "pdf_url": "https://arxiv.org/pdf/2610.39633",
+      "doi": "10.48550/arXiv.2610.39633",
+      "published_date": "2026-10-29",
+      "item_type": "preprint",
+      "authors": [
+        "Deyuan Liu",
+        "Yansen Han",
+        "Kaiwen Zheng",
+        "Jun Xie",
+        "Jiacheng Liu",
+        "Zhenglin Cheng",
+        "Peng Sun",
+        "Jintao Zhang",
+        "Jianguo Li",
+        "Tao Lin"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Deyuan",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yansen",
+          "lastName": "Han"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kaiwen",
+          "lastName": "Zheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jun",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiacheng",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenglin",
+          "lastName": "Cheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peng",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jintao",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jianguo",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tao",
+          "lastName": "Lin"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "视觉生成",
+        "蒸馏",
+        "待阅读"
+      ],
+      "note": "IDM论文29日提交，公开仓库30日Initial release提供一至两次网络评估的推理入口；权重仍Coming soon。\n\n继承内部速度分支的DMD校正，再用生成器EMA特征的均值和逐维标准差约束总体分布；统计和历史队列只在训练使用，推理不增加外部编码器或额外打分网络。\n\n训练侧增加分布统计约束，尝试在一两步采样下保住文字和细节；同一检查点支持两种步数，便于未来按延迟预算选择。\n\n新增矩损失在共享设定下LongText-CN只增加0.38个百分点；外部横比使用更大文字训练集，不能全归新损失。0.30秒为单A100 BF16批1的作者计时，未独立复现；未放权重，当前无法按其模型完整复现。\n\n提交29日08:57:17UTC；代码30日初始版本4f9a1768f9a5b06c8bb29f997d0249893fb0975c。权重Coming soon；不是已开放模型，未独立复现。PDF37页已取回并核对第7页图4，Zotero附件仍使用链接，不声称已存离线附件。\n\n原始资料：https://arxiv.org/abs/2610.39633\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-31/\nAI辅助整理。",
+      "evidence_status": "primary_verified",
+      "date_kind": "submitted"
+    },
+    {
+      "id": "epoch-patchgap-20261029",
+      "title": "AI can turn security fixes into working exploits before users receive an update",
+      "url": "https://epoch.ai/publications/open-weight-models-patch-gap",
+      "pdf_url": null,
+      "doi": null,
+      "published_date": "2026-10-29",
+      "item_type": "report",
+      "authors": [
+        "Aiden Ament",
+        "Yafah Edelman",
+        "Alexander Barry",
+        "Timothée Chauvin",
+        "Lee Bousfield",
+        "Jaeho Lee"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Aiden",
+          "lastName": "Ament"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yafah",
+          "lastName": "Edelman"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Alexander",
+          "lastName": "Barry"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Timothée",
+          "lastName": "Chauvin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lee",
+          "lastName": "Bousfield"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jaeho",
+          "lastName": "Lee"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "AI安全",
+        "补看",
+        "待阅读"
+      ],
+      "note": "29日报告、30日再介绍的实验显示GLM 5.3借助已公开未推送的安全修复，攻破六个Firefox版本；作为明确补看收录。\n\n模型自动分析未发布修复并迭代调试，把补丁暴露位置的信息变成文件读取攻击；较新版本还需要与另一项未公开漏洞串联。\n\n软件团队从公开修复到稳定版更新的间隔，可能比自动化构造攻击所需的12至48小时更长；防守需要压缩发布间隔而不只提高找漏洞速度。\n\nFirefox前期环境与测试总API费超过10万美元，约1000美元是搭好后的每版本边际成本；Chrome约10万美元未成功。关键未公开漏洞已在27日Firefox159.0修补，未证明对最新版本仍成功。\n\n完整网页研究报告29日，30日Substack再介绍；按补看收录。隔离离线受控实验，无现实受害者证据；没有加入任何攻击实施步骤或代码。无独立PDF，不是同行评审论文。\n\n原始资料：https://epoch.ai/publications/open-weight-models-patch-gap\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-31/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

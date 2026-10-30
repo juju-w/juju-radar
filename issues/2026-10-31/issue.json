@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-31",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "suncatcher-orbit-response",
+      "title": "Google用在轨TPU运行Gemma 4，完整回答已传回地面",
+      "category": "芯片算力 / 在轨计算",
+      "score": 8.5,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+      "related_urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/"
+      ],
+      "key_claims": [
+        "Google于30日披露，10月1日发射的原型卫星已用在轨数据中心级TPU运行Gemma 4，接收地面提示并回传完整回答。",
+        "地面上行指令、在轨主机与TPU启动、模型计算、地面站下行串成端到端路径；长期扩展仍需解决辐射、散热和短距离高带宽星间互连。"
+      ],
+      "reason": "项目从地面模拟和发射成功推进到可获取真实轨道工作负载数据，下一步能测量持续负载下的热与辐射行为。",
+      "published_at": "2026-10-30",
+      "event_time": "this_week_before_2026-10-30_announcement",
+      "window_status": "within_window_original_disclosure",
+      "window_uncertain": true
+    },
+    {
+      "id": "cursor-extension-scope-update",
+      "title": "Cursor更新恶意扩展范围，代码在加载时就会运行",
+      "category": "真实事故 / 开发工具供应链",
+      "score": 8.5,
+      "url": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "related_urls": [],
+      "key_claims": [
+        "Cursor在30日11:30美西时间更新29日恶意扩展通告，澄清受影响版本为2.1.312和2.1.313并更新入侵指标。",
+        "恶意扩展在加载时执行，尝试写入SSH凭据、建立持久化与隧道；不必等待用户向聊天模型发出指令。"
+      ],
+      "reason": "风险检查需要覆盖编辑器启动及扩展供应链，不能只审查Agent对话工具调用；更新后仍须按原通告检查残留。",
+      "published_at": "2026-10-29",
+      "event_time": "2026-10-29T09:27:00Z/2026-10-29T20:35:00Z",
+      "window_status": "within_window_material_update",
+      "window_uncertain": false
+    },
+    {
+      "id": "gemini-computer-use-ga",
+      "title": "Gemini界面操作工具正式可用，执行循环仍由客户端接通",
+      "category": "Agent / 界面自动化",
+      "score": 8.0,
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "related_urls": [
+        "https://ai.google.dev/gemini-api/docs/computer-use"
+      ],
+      "key_claims": [
+        "Gemini Computer Use于30日在Interactions和GenerateContent两个API正式可用。",
+        "模型根据截图建议动作，客户端执行并回传下一张截图；动作的确认或阻断结论需要由客户端实际执行，可选截图提示注入检测。"
+      ],
+      "reason": "没有专门业务API的界面可以接入统一操作循环，但自动化服务仍需承担环境隔离、动作执行和人工确认的工程工作。",
+      "published_at": "2026-10-30",
+      "event_time": "2026-10-30",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "idm-inference-release",
+      "title": "IDM公开少步推理代码，把分布统计约束放进训练",
+      "category": "视觉生成 / 蒸馏",
+      "score": 8.0,
+      "url": "https://arxiv.org/abs/2610.39633",
+      "related_urls": [
+        "https://github.com/inclusionAI/IDM"
+      ],
+      "key_claims": [
+        "IDM论文29日提交，公开仓库30日Initial release提供一至两次网络评估的推理入口；权重仍Coming soon。",
+        "继承内部速度分支的DMD校正，再用生成器EMA特征的均值和逐维标准差约束总体分布；统计和历史队列只在训练使用，推理不增加外部编码器或额外打分网络。"
+      ],
+      "reason": "训练侧增加分布统计约束，尝试在一两步采样下保住文字和细节；同一检查点支持两种步数，便于未来按延迟预算选择。",
+      "published_at": "2026-10-30T06:01:16Z",
+      "event_time": "2026-10-30T06:01:16Z",
+      "window_status": "within_window_new_code_artifact",
+      "window_uncertain": false
+    },
+    {
+      "id": "epoch-patchgap-report",
+      "title": "近期补看：公开补丁到用户更新之间，攻击可能先完成",
+      "category": "AI安全 / 能力研究",
+      "score": 8.5,
+      "url": "https://epoch.ai/publications/open-weight-models-patch-gap",
+      "related_urls": [],
+      "key_claims": [
+        "29日报告、30日再介绍的实验显示GLM 5.3借助已公开未推送的安全修复，攻破六个Firefox版本；作为明确补看收录。",
+        "模型自动分析未发布修复并迭代调试，把补丁暴露位置的信息变成文件读取攻击；较新版本还需要与另一项未公开漏洞串联。"
+      ],
+      "reason": "软件团队从公开修复到稳定版更新的间隔，可能比自动化构造攻击所需的12至48小时更长；防守需要压缩发布间隔而不只提高找漏洞速度。",
+      "published_at": "2026-10-29",
+      "event_time": "experiment_on_2026-09-17_to_2026-10-26_releases",
+      "window_status": "outside_window_explicit_supplement",
+      "window_uncertain": true
+    }
+  ]
+}
