@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "label": "Qwenputer",
+      "url": "https://divagr.com/blog/qwenputer",
+      "section": "原始资料"
+    },
+    {
+      "label": "固定版本的核心实现",
+      "url": "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/chipformer/rv/core.py",
+      "section": "一、先分清：权重保存机器规则，状态保存正在运行的程序"
+    },
+    {
+      "label": "设计文档",
+      "url": "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/docs/rv32.md",
+      "section": "一、先分清：权重保存机器规则，状态保存正在运行的程序"
+    },
+    {
+      "label": "权重生成代码，第236至239行",
+      "url": "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/chipformer/q35/emit.py#L236-L239",
+      "section": "三、代码怎样把“完全覆盖”变成权重"
+    },
+    {
+      "label": "中间表示及数值约束",
+      "url": "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/chipformer/q35/ir.py",
+      "section": "三、代码怎样把“完全覆盖”变成权重"
+    },
+    {
+      "label": "模型合并代码",
+      "url": "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/chipformer/rv/merge.py#L144-L175",
+      "section": "四、不用重新训练，合并时仍要处理归一化和隔离"
+    },
+    {
+      "label": "隔离实现",
+      "url": "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/chipformer/q35/mute.py",
+      "section": "四、不用重新训练，合并时仍要处理归一化和隔离"
+    },
+    {
+      "label": "`RvChat`的执行路径",
+      "url": "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/chipformer/rv/chat.py#L324-L426",
+      "section": "五、模型仍写工具调用，计算却由内部电路接手"
+    },
+    {
+      "label": "Qwenputer-npu公开权重",
+      "url": "https://huggingface.co/divagr1925/Qwenputer-npu",
+      "section": "八、最新NPU扩展：在模型里的CPU上，再跑一个小模型"
+    },
+    {
+      "label": "该程序的实现说明",
+      "url": "https://github.com/divagr18/qwenputer/blob/271723255803900de3cb92b4c6a4635d82a51f85/experimental/riscv/guests/stories260k/README.md",
+      "section": "八、最新NPU扩展：在模型里的CPU上，再跑一个小模型"
+    },
+    {
+      "label": "Loom在4月的预印本",
+      "url": "https://arxiv.org/abs/2604.08816",
+      "section": "九、什么已经有证据，什么还没有"
+    }
+  ]
+}

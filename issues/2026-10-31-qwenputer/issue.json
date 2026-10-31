@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-31",
+  "kind": "special",
+  "sources": [
+    {
+      "id": "qwenputer-compiled-computer",
+      "title": "Qwenputer：编译电路与现成语言模型的整合",
+      "category": "模型架构 / 可编程计算",
+      "score": 8,
+      "url": "https://divagr.com/blog/qwenputer",
+      "related_urls": [
+        "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/chipformer/rv/core.py",
+        "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/docs/rv32.md",
+        "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/chipformer/q35/emit.py#L236-L239",
+        "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/chipformer/q35/ir.py",
+        "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/chipformer/rv/merge.py#L144-L175",
+        "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/chipformer/q35/mute.py",
+        "https://github.com/divagr18/qwenputer/blob/f07a0b2e38271454c4d455dc2b9bf78d3d399170/experimental/riscv/chipformer/rv/chat.py#L324-L426",
+        "https://huggingface.co/divagr1925/Qwenputer-npu",
+        "https://github.com/divagr18/qwenputer/blob/271723255803900de3cb92b4c6a4635d82a51f85/experimental/riscv/guests/stories260k/README.md",
+        "https://arxiv.org/abs/2604.08816"
+      ],
+      "published_at": "2026-10-22",
+      "event_time": "2026-10-22",
+      "artifact_released_at": "2026-10-30T02:05:46Z",
+      "window_status": "user_requested_special_deep_read",
+      "reason": "为学习式语言接口接入可检查的确定性部件提供实物研究样例，能逐层检查编译、状态、固件语义和模型调用策略，而不只看最终答题分数。",
+      "key_claims": [
+        "把解析编译的RV32IM电路放到现成Qwen3.5-4B前，利用Gated DeltaNet状态存内存、寄存器和程序；10月30日NPU扩展用该CPU执行一个26万参数小语言模型。",
+        "通过受约束的衰减、覆盖写入与独热地址，把软关联状态变为可寻址存储；编译器将算术和控制逻辑映射到11个层，驱动隔离trace和普通文本并交接输出控制。"
+      ]
+    }
+  ],
+  "issue_id": "2026-10-31-qwenputer",
+  "section": "深度解读",
+  "published_at": "2026-10-31T15:01:58.558092+08:00"
+}

@@ -1,0 +1,33 @@
+{
+  "issue_date": "2026-10-31",
+  "papers": [
+    {
+      "id": "qwenputer-technical-writeup-20261022",
+      "title": "Qwenputer: a fully functioning, deterministic RISC-V CPU inside Qwen3.5",
+      "url": "https://divagr.com/blog/qwenputer",
+      "pdf_url": null,
+      "doi": null,
+      "published_date": "2026-10-22",
+      "item_type": "report",
+      "authors": [
+        "Divyansh Agrawal"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Divyansh",
+          "lastName": "Agrawal"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "神经计算",
+        "模型架构",
+        "技术长文",
+        "待阅读"
+      ],
+      "note": "把解析编译的RV32IM电路放到现成Qwen3.5-4B前，利用Gated DeltaNet状态存内存、寄存器和程序；10月30日NPU扩展用该CPU执行一个26万参数小语言模型。\n\n通过受约束的衰减、覆盖写入与独热地址，把软关联状态变为可寻址存储；编译器将算术和控制逻辑映射到11个层，驱动隔离trace和普通文本并交接输出控制。\n\n源码补读：merge.py有归一化增益重标定，mute.py写入新增控制列；无梯度后训练不等于导出参数逐位不动。RvChat注入固件、隔离trace并选择电路或Qwen输出；高吞吐路径为等价IR执行器，不全部等同普通HF前向。\n\n报告每组40道算术题，原Qwen55%、内置97.5%、宿主工具100%为大整数乘法一项；旧固件中间分数限制导致20/40，改为全程有理数后40/40，同时运行设置有变，非纯模型消融。NPU内部260K模型每故事词元约41秒，非外层Qwen速度。\n\n本期只做三组数学IR回放42个位置、内存与归一化公式复查；真实BF16/GPU内核与长程自由运行未复现。原文为作者技术报告式长文/软件说明，非正式同行评审论文，无独立PDF。原文日期10月22日，NPU30日工件；用户指定独立深读。\n\n原始报告：https://divagr.com/blog/qwenputer\n固定源码：https://github.com/divagr18/qwenputer/tree/f07a0b2e38271454c4d455dc2b9bf78d3d399170\n本期资料页：https://www.asteronline.cn/juju-radar/2026-10-31-qwenputer/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
