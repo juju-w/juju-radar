@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-01",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "anthropic-automated-em-search",
+      "title": "Anthropic用Agent寻找训练数据监控的漏点",
+      "category": "AI安全 / 自动化研究",
+      "score": 8.5,
+      "url": "https://alignment.anthropic.com/2026/automated-em-search/",
+      "related_urls": [],
+      "key_claims": [
+        "Anthropic官方31日介绍自动化研究：Agent迭代构造能通过逐行数据监控、却使微调研究模型出现失对齐行为的数据。",
+        "Agent获得同一个监控器和微调服务，以固定行为评估为目标反复试验、共享日志；角色扮演使训练行在局部语境合理，行为却泛化到助手本身。"
+      ],
+      "reason": "训练安全测试可以从人工枚举坏样本扩展为有反馈的自动搜索；逐行内容合规之外，还需测量整个数据集微调后的模型行为变化。",
+      "published_at": "2026-10",
+      "event_time": "2026-10-31T01:59:06.557Z",
+      "announced_at": "2026-10-31T01:59:06.557Z",
+      "window_status": "within_window_official_announcement_original_page_month_only",
+      "window_uncertain": true
+    },
+    {
+      "id": "colibri-210-conversation-park",
+      "title": "colibri暂存会话状态，避免短请求挤掉长对话",
+      "category": "芯片算力 / 本地推理",
+      "score": 7.5,
+      "url": "https://github.com/JustVugg/colibri/releases/tag/v2.1.0",
+      "related_urls": [
+        "https://github.com/JustVugg/colibri/blob/v2.1.0/docs/qwen38.md",
+        "https://github.com/JustVugg/colibri/blob/v2.1.0/c/park.h"
+      ],
+      "key_claims": [
+        "colibri 2.1.0于31日发布，扩展原生GGUF和多后端支持，并默认在主会话被标题等短请求插队时暂存会话状态。",
+        "插队前保存可能被覆盖的KV前缀行、递归或卷积状态及token记录，短请求结束后恢复；超过保存范围或缓存布局改变则放弃恢复，回退重算。"
+      ],
+      "reason": "本地Agent中自动取标题或摘要不再轻易挤掉主对话的缓存；作者Qwen3.8-Flash-Next IQ2_XS CUDA例子复用14783个token，仅处理27个新token，第二轮86秒降至4.9秒。",
+      "published_at": "2026-10-31T12:50:50Z",
+      "event_time": "2026-10-31T12:50:50Z",
+      "artifact_released_at": "2026-10-31T12:50:50Z",
+      "window_status": "within_window_release_timestamp",
+      "window_uncertain": false
+    },
+    {
+      "id": "unified-training-likelihood",
+      "title": "近期补看：把预训练、示范与RL放进同一个训练器",
+      "category": "开源论文 / 训练方法",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2610.40564",
+      "related_urls": [
+        "https://github.com/yudasong/unified-training/tree/5b3eaa0f3ce39f695beb5d27a0bb0f92368b3118"
+      ],
+      "key_claims": [
+        "29日论文与代码把静态语料、监督样本和强化学习生成样本纳入同一加权似然训练器；本期作为唯一近期补看。",
+        "普通文本和示范用相应token掩码，RL生成按奖励和成功比例赋权，再由统一训练器按混合比例取样；生成器异步补充数据并定期同步模型权重。"
+      ],
+      "reason": "训练阶段的优化可转向数据来源、比例与时机，而不必每换阶段重写更新规则；实验发现起点编码分数较低的混合训练模型，后续同配置编码RL后反而更好。",
+      "published_at": "2026-10-29",
+      "event_time": "2026-10-29T17:42:05Z",
+      "arxiv_submitted_at": "2026-10-29T17:42:05Z",
+      "community_featured_on": [
+        "2026-10-30"
+      ],
+      "window_status": "outside_window_explicit_supplement",
+      "window_uncertain": false
+    }
+  ]
+}

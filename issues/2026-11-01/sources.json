@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "label": "Anthropic介绍了一项自动化红队实验",
+      "url": "https://alignment.anthropic.com/2026/automated-em-search/",
+      "section": "Anthropic用Agent寻找训练数据监控的漏点"
+    },
+    {
+      "label": "colibri 2.1.0",
+      "url": "https://github.com/JustVugg/colibri/releases/tag/v2.1.0",
+      "section": "colibri暂存会话状态，避免短请求挤掉长对话"
+    },
+    {
+      "label": "Qwen3.8-Flash-Next的实现说明",
+      "url": "https://github.com/JustVugg/colibri/blob/v2.1.0/docs/qwen38.md",
+      "section": "colibri暂存会话状态，避免短请求挤掉长对话"
+    },
+    {
+      "label": "固定版本源码中的保护条件",
+      "url": "https://github.com/JustVugg/colibri/blob/v2.1.0/c/park.h",
+      "section": "colibri暂存会话状态，避免短请求挤掉长对话"
+    },
+    {
+      "label": "《Training Foundation Models with a Single Algorithm》",
+      "url": "https://arxiv.org/abs/2610.40564",
+      "section": "近期补看：把预训练、示范与RL放进同一个训练器"
+    },
+    {
+      "label": "公开实现",
+      "url": "https://github.com/yudasong/unified-training/tree/5b3eaa0f3ce39f695beb5d27a0bb0f92368b3118",
+      "section": "近期补看：把预训练、示范与RL放进同一个训练器"
+    }
+  ]
+}
