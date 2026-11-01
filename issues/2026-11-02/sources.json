@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "label": "PIF与沙特阿美11月1日宣布交易完成",
+      "url": "https://www.aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth",
+      "section": "沙特阿美取得HUMAIN四成九股权"
+    },
+    {
+      "label": "PIF原始公告",
+      "url": "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humain-global-growth/",
+      "section": "沙特阿美取得HUMAIN四成九股权"
+    },
+    {
+      "label": "dsh-superagent原型仓库",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "section": "近期补看：DeepSeek研究原型把消息与授权分开"
+    },
+    {
+      "label": "授权文档",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/docs/002-authorization.md",
+      "section": "近期补看：DeepSeek研究原型把消息与授权分开"
+    },
+    {
+      "label": "源码中的接单校验",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/policy.ts#L18-L61",
+      "section": "近期补看：DeepSeek研究原型把消息与授权分开"
+    },
+    {
+      "label": "执行文档",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/docs/003-execution.md",
+      "section": "近期补看：DeepSeek研究原型把消息与授权分开"
+    }
+  ]
+}

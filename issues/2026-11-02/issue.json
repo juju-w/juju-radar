@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-02",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "humain-aramco-close",
+      "title": "沙特阿美取得HUMAIN四成九股权，资金与AI资产一并整合",
+      "category": "公司战略 / 算力投资",
+      "score": 8,
+      "url": "https://www.aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth",
+      "related_urls": [
+        "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humain-global-growth/"
+      ],
+      "key_claims": [
+        "PIF与沙特阿美11月1日宣布HUMAIN交易完成，PIF保留51%，阿美取得49%；交易包含2026年约26亿美元现金及AI、计算和数字资产。",
+        "把阿美现有AI资产与资金纳入同一公司，并让工业使用者兼任股东和战略伙伴；数据中心供给、模型服务与工业需求由此更容易在同一组织中协调。"
+      ],
+      "reason": "观察沙特算力扩张可以从签约目标推进到股权和资产整合；后续应检查已投运容量、外部客户使用和工业收入，判断整合是否转为有效供给。",
+      "event_time": "2026-11-01",
+      "published_at": "2026-11-01",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain"
+    },
+    {
+      "id": "dsh-superagent-prototype",
+      "title": "近期补看：DeepSeek研究原型把消息、授权与工单分开",
+      "category": "Agent / 编程协作",
+      "score": 8,
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "related_urls": [
+        "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/docs/002-authorization.md",
+        "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/docs/003-execution.md",
+        "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/6337fc823ce20251c8de8085948165c81aaa701e/src/policy.ts#L18-L61"
+      ],
+      "key_claims": [
+        "DeepSeek名下10月31日公开dsh-superagent研究原型，将GitHub及可选飞书消息转成有范围、有授权记录的工单；本期作为唯一近期补看。",
+        "新工作先经确定性准入与模型研判，接单记录策略版本及任务范围；已有线程消息通过订阅送达工单作上下文，不自动扩大授权，超范围请求交回路由。"
+      ],
+      "reason": "团队可以让一个常驻Agent跟进同一仓库的讨论、CI与PR，同时区分需要启动的新工作、已有任务的后续信息及需要人处理的交接，减少重复派工和反复唤醒。",
+      "event_time": "2026-10-31T12:05:39Z",
+      "published_at": "2026-10-31",
+      "artifact_released_at": "2026-10-31T12:05:39Z",
+      "window_uncertain": false,
+      "window_status": "outside_window_explicit_supplement"
+    }
+  ]
+}
