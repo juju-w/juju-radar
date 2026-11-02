@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-03",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "longcat25-formal",
+      "title": "LongCat-2.5正式上线，把量化放到专家分发之前",
+      "category": "前沿模型 / 推理效率",
+      "score": 8.5,
+      "url": "https://longcat.ai/platform/docs/ChangeLog.html",
+      "related_urls": [
+        "https://longcat.ai/blog/longcat-2.5/"
+      ],
+      "key_claims": [
+        "LongCat平台2日更新记录确认2.5正式可用；技术博客标1日，披露原生视觉离散token、长程强化学习与W4A4专家推理实现。",
+        "专家共享输入等价变换，让激活在复制和跨设备分发前量化为INT4，通信与矩阵计算复用同一低比特表示，减少重复转换及搬运。"
+      ],
+      "reason": "低比特的收益可沿通信和计算整条路径兑现；开发者应核对输入、负载、并行与量化配置，而不能仅按模型总参数估算服务成本。",
+      "event_time": "2026-11-02",
+      "published_at": "2026-11-02",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "roboarchitect-code",
+      "title": "RoboArchitect公开代码，让编程模型改写机器人外围程序",
+      "category": "机器人 / 策略控制",
+      "score": 8.5,
+      "url": "https://github.com/roboarchitect-ai/RoboArchitect",
+      "related_urls": [
+        "https://arxiv.org/abs/2610.42141",
+        "https://roboarchitect-ai.github.io/",
+        "https://github.com/roboarchitect-ai/RoboArchitect/blob/67cae09e3e884813c2a56103a70fe73c74da6abd/roboarchitect/optimizer.py"
+      ],
+      "key_claims": [
+        "30日提交的RoboArchitect论文在2日公开实现，固定提交67cae09e；本期报道可检查的代码事件，不把HF推荐日当论文首发。",
+        "冻结VLA权重，Claude Opus 5根据失败录像和轨迹改写harness.py，可加入监测、辅助感知、直接动作与跨回合记忆；训练任务改善才保留修订，最终分开评估留出场景或任务。"
+      ],
+      "reason": "策略不会的补救动作可以先用外部程序试验，开发者能检查补救是否泛化到留出任务；但编码模型、辅助模型、仿真预算也应计入成本。",
+      "event_time": "2026-11-02T03:38:52Z",
+      "published_at": "2026-11-02T03:38:52Z",
+      "window_status": "within_window_verified",
+      "window_uncertain": false,
+      "artifact_released_at": "2026-11-02T03:38:52Z"
+    },
+    {
+      "id": "hume-audio-decision",
+      "title": "Hume直接从音频为候选判断打分",
+      "category": "视觉视频语音 / 音频判别",
+      "score": 8,
+      "url": "https://www.hume.ai/blog/introducing-hume-audio-decision-api",
+      "related_urls": [],
+      "key_claims": [
+        "Hume于2日16:00UTC介绍Audio Decision API：输入音频、问题与候选答案，输出各候选的概率，可保留停顿、叹息、重叠语音和背景声。",
+        "直接以声音作条件回答开发者定义的分类或评分问题，绕过先转录再丢失语气与背景信息的瓶颈；语音Agent可把判断与转录和业务规则结合。"
+      ],
+      "reason": "产品可把一句笼统的情绪识别拆成具体决策，如等待、追问或人工接手，评估也可以围绕每项动作带来的误触发成本设计。",
+      "event_time": "2026-11-02T16:00:00Z",
+      "published_at": "2026-11-02T16:00:00Z",
+      "window_status": "within_window_verified",
+      "window_uncertain": false
+    },
+    {
+      "id": "openai-lifeval",
+      "title": "LifeVal从人们想获得帮助的日常任务出发",
+      "category": "Agent / 日常任务评测",
+      "score": 7.5,
+      "url": "https://openai.com/index/lifeval/",
+      "related_urls": [],
+      "key_claims": [
+        "OpenAI2日介绍LifeVal，以时间使用调查建立日常任务目录，再结合3995名受访者调查选择人们希望AI协助的事情。",
+        "先问用户愿意把哪些步骤交给AI，再评估围绕照护、办事和家庭管理的工作流；幼儿园比较案例仍把家庭偏好留给人决定。"
+      ],
+      "reason": "产品评测可从解题能力转向节省了哪些实际准备工作、保留了哪些人的决定；同一任务需要把可自动准备与必须确认的步骤分别计量。",
+      "event_time": "2026-11-02",
+      "published_at": "2026-11-02",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "openai-grid-protectors",
+      "title": "OpenAI推广电网需求响应，把可削减负荷写进接电安排",
+      "category": "芯片算力 / 电网设施",
+      "score": 8,
+      "url": "https://openai.com/index/grid-protectors-program/",
+      "related_urls": [
+        "https://www.georgiapower.com/news-hub/press-releases/georgia-power-to-serve-openai-project-in-effingham-county.html"
+      ],
+      "key_claims": [
+        "OpenAI2日公布Grid Protectors Program，计划在美国未来园区推广与电力公司协商的需求响应；Georgia先例来自7月原合同。",
+        "园区与电力公司约定可降低的负荷、响应速度和持续时间，并结合现场发电或储能，在电网紧张时少从电网取电。"
+      ],
+      "reason": "新增算力的接入条件开始包括用电灵活性；判断供给要同时看装机、并网容量以及能按约削减多少负荷，不能只累加机房规划MW。",
+      "event_time": "2026-11-02",
+      "published_at": "2026-11-02",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    }
+  ]
+}

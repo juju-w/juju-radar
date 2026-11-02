@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "label": "LongCat平台2日的更新记录",
+      "url": "https://longcat.ai/platform/docs/ChangeLog.html",
+      "section": "LongCat-2.5把量化放到专家分发之前"
+    },
+    {
+      "label": "技术博客",
+      "url": "https://longcat.ai/blog/longcat-2.5/",
+      "section": "LongCat-2.5把量化放到专家分发之前"
+    },
+    {
+      "label": "公开RoboArchitect实现代码",
+      "url": "https://github.com/roboarchitect-ai/RoboArchitect",
+      "section": "机器人策略不动，让程序学会补救"
+    },
+    {
+      "label": "10月30日提交的论文",
+      "url": "https://arxiv.org/abs/2610.42141",
+      "section": "机器人策略不动，让程序学会补救"
+    },
+    {
+      "label": "项目演示",
+      "url": "https://roboarchitect-ai.github.io/",
+      "section": "机器人策略不动，让程序学会补救"
+    },
+    {
+      "label": "优化器源码",
+      "url": "https://github.com/roboarchitect-ai/RoboArchitect/blob/67cae09e3e884813c2a56103a70fe73c74da6abd/roboarchitect/optimizer.py",
+      "section": "机器人策略不动，让程序学会补救"
+    },
+    {
+      "label": "Hume的Audio Decision API",
+      "url": "https://www.hume.ai/blog/introducing-hume-audio-decision-api",
+      "section": "Hume让声音直接参与下一步判断"
+    },
+    {
+      "label": "OpenAI介绍LifeVal",
+      "url": "https://openai.com/index/lifeval/",
+      "section": "LifeVal先问人们想让AI帮什么"
+    },
+    {
+      "label": "OpenAI公布Grid Protectors Program",
+      "url": "https://openai.com/index/grid-protectors-program/",
+      "section": "数据中心接电，也要承诺何时少用电"
+    },
+    {
+      "label": "电力公司7月的原始协议",
+      "url": "https://www.georgiapower.com/news-hub/press-releases/georgia-power-to-serve-openai-project-in-effingham-county.html",
+      "section": "数据中心接电，也要承诺何时少用电"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "issue_date": "2026-11-03",
+  "papers": [
+    {
+      "id": "2610.42141",
+      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+      "url": "https://arxiv.org/abs/2610.42141",
+      "pdf_url": "https://arxiv.org/pdf/2610.42141",
+      "doi": "10.48550/arXiv.2610.42141",
+      "published_date": "2026-10-30",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Shengguang Wu",
+        "Suning Huang",
+        "Cherie Ho",
+        "Ria Doshi",
+        "Hao Zhu",
+        "Serena Yeung-Levy"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Shengguang",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Suning",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Cherie",
+          "lastName": "Ho"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ria",
+          "lastName": "Doshi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hao",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Serena",
+          "lastName": "Yeung-Levy"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人",
+        "外围控制程序",
+        "待阅读"
+      ],
+      "note": "11月2日公开的RoboArchitect实现，让10月30日提交的机器人研究可检查；本期新事件是代码公开。\n\n冻结VLA权重，由Claude Opus 5根据失败录像和轨迹改写外围harness.py，可加入辅助感知、直接控制与跨回合记忆。optimizer.py训练任务分数提高才保留修订，最终单独评估留出场景或任务；新评估从空记忆开始。\n\n外围程序可以表达卡住检测、抬升恢复等补救，将改进位置从权重转向策略周围的控制流程；不等于没有训练或算力成本，编码模型和辅助模型也参与。\n\n全部实验为仿真，未跑真实机器人；跨配置均值包含VLABench部分进度与其他成功率，不当作统一真机成功率。强专用策略改善小，RLDX1一组27.9到27.8。未运行代码或独立复现。\n\n论文：https://arxiv.org/abs/2610.42141\n代码：https://github.com/roboarchitect-ai/RoboArchitect\n固定阅读版本：67cae09e3e884813c2a56103a70fe73c74da6abd\n本期资料页：https://www.asteronline.cn/juju-radar/2026-11-03/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
