@@ -1,0 +1,392 @@
+{
+  "issue_date": "2026-11-04",
+  "papers": [
+    {
+      "id": "2611.03526",
+      "title": "Library of Layers (LoL): Adaptively Ordering Transformer Layers at Runtime",
+      "url": "https://arxiv.org/abs/2611.03526",
+      "pdf_url": "https://arxiv.org/pdf/2611.03526",
+      "doi": "10.48550/arXiv.2611.03526",
+      "published_date": "2026-11-02",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Abdellah Rahmani",
+        "Sean McLeish",
+        "Ang Li",
+        "Sanae Lotfi",
+        "Pascal Frossard",
+        "Micah Goldblum"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Abdellah",
+          "lastName": "Rahmani"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sean",
+          "lastName": "McLeish"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ang",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sanae",
+          "lastName": "Lotfi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Pascal",
+          "lastName": "Frossard"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Micah",
+          "lastName": "Goldblum"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "前沿模型 / 动态架构",
+        "待阅读"
+      ],
+      "note": "arXiv提交日期：2026-11-02；3日首次公开列表已核对。\n\narXiv的3日公开列表收录LoL；2日提交、代码10月31日起已有。将固定深度与唯一层数量分开，运行时从共享库选完整Transformer块。\n\n每个窗口在当前深度选择同一个注意力与MLP块，避免逐token乱选造成Q/K参数不匹配；跨层平移窗口边界传递信息，路由只读取已过去的窗口，防止未来信息泄露。\n\n可把计算路径作为可观察、可干预的对象，检验某类输入如何复用层；减少唯一参数与减少实际执行步数是两个不同问题。\n\n限制与反证：实验约360M和1B规模；1B同预算数学GSM8K为27.9，稠密29.7，未全面领先。策略标签参与部分算法实验，不能称模型自主发现算法；尚无前沿规模普适收益。\n\n未运行模型/机器人或独立复现。\n论文：https://arxiv.org/abs/2611.03526\n代码：https://github.com/arahmani1/library-of-layers\n核对仓库版本：be07d226c2c585e2ac48be41eac1682248087012（主要阅读论文/项目与README，未声称逐文件源码审计）\n本期资料页：https://www.asteronline.cn/juju-radar/2026-11-04/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.01560",
+      "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+      "url": "https://arxiv.org/abs/2611.01560",
+      "pdf_url": "https://arxiv.org/pdf/2611.01560",
+      "doi": "10.48550/arXiv.2611.01560",
+      "published_date": "2026-11-01",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Jiarui Yuan",
+        "Yuxin Zuo",
+        "Xiaoyu Huang",
+        "Wenbo Zhang",
+        "Kwanyoung Park",
+        "Junlin Yang",
+        "Tianxiang Zhang",
+        "Ruoqu Chen",
+        "Yutao Ouyang",
+        "Bingxiang He",
+        "Xingtai Lv",
+        "Hongjin Wu",
+        "Jiajun Liu",
+        "Jiahao Zhao",
+        "Tianwei Luo",
+        "Haozhan Li",
+        "Cheng Qian",
+        "Jiaxin Ge",
+        "Huan-ang Gao",
+        "Kaisen Yang",
+        "Jiaqi Deng",
+        "Qixin Xu",
+        "Siqiao Huang",
+        "Bowen Zhou",
+        "Mengdi Xu",
+        "Zhiyuan Liu",
+        "Pieter Abbeel",
+        "Ning Ding"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Jiarui",
+          "lastName": "Yuan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxin",
+          "lastName": "Zuo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoyu",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenbo",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kwanyoung",
+          "lastName": "Park"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junlin",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianxiang",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruoqu",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yutao",
+          "lastName": "Ouyang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bingxiang",
+          "lastName": "He"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xingtai",
+          "lastName": "Lv"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hongjin",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiajun",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiahao",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianwei",
+          "lastName": "Luo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haozhan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Cheng",
+          "lastName": "Qian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaxin",
+          "lastName": "Ge"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huan-ang",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kaisen",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaqi",
+          "lastName": "Deng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qixin",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Siqiao",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bowen",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mengdi",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhiyuan",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Pieter",
+          "lastName": "Abbeel"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ning",
+          "lastName": "Ding"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人 / 工具与控制",
+        "待阅读"
+      ],
+      "note": "arXiv提交日期：2026-11-01；3日首次公开列表已核对。\n\narXiv机器人3日公开列表收录统一机器人harness；初始代码2日18:05UTC已在窗口前，3日有0.1.0打包及依赖修复提交，不冒称首份代码。\n\n不可变capture绑定图像、标定和机器人状态；后台动作返回job handle，同一机械臂排队执行，独立观测可与动作重叠，取消只清理尚未执行任务。\n\n模型看到的画面与坐标转换必须属于同一次观测，异步执行也必须知道哪些动作仍在队列，才能把通用模型接入实体设备而不制造状态错配。\n\n限制与反证：19项真机比较49.50是部分进度分数而非成功率；Agent有深度，VLA对照仅RGB，输入不匹配。同harness下Astra真机75.50，仿真51.90高于Qwen31.39；不写Qwen全面胜Astra。\n\n未运行模型/机器人或独立复现。\n论文：https://arxiv.org/abs/2611.01560\n代码：https://github.com/Open-RUA/uni-robot-agent\n核对仓库版本：07eeeb08a94ad335e33102c126bcaf287d445054（主要阅读论文/项目与README，未声称逐文件源码审计）\n本期资料页：https://www.asteronline.cn/juju-radar/2026-11-04/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.02332",
+      "title": "LeanGuard: Lean-Verified Guardrails for Tool-Using Agents",
+      "url": "https://arxiv.org/abs/2611.02332",
+      "pdf_url": "https://arxiv.org/pdf/2611.02332",
+      "doi": "10.48550/arXiv.2611.02332",
+      "published_date": "2026-11-02",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Sreehari Sankar",
+        "Debargha Ganguly",
+        "Vikash Singh",
+        "Mohsen Hariri",
+        "Weicong Chen",
+        "Yangyan Zhang",
+        "Shouren Wang",
+        "Wang Yang",
+        "Chaoda Song",
+        "Alexander Nemecek",
+        "Osama Zafar",
+        "Idan Davidovich",
+        "Yuting Shao",
+        "Kai Ye",
+        "Biyao Zhang",
+        "Xinpeng Li",
+        "Joe Stubbs",
+        "Erman Ayday",
+        "Jing Ma",
+        "Vipin Chaudhary"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Sreehari",
+          "lastName": "Sankar"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Debargha",
+          "lastName": "Ganguly"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Vikash",
+          "lastName": "Singh"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mohsen",
+          "lastName": "Hariri"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weicong",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yangyan",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shouren",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wang",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chaoda",
+          "lastName": "Song"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Alexander",
+          "lastName": "Nemecek"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Osama",
+          "lastName": "Zafar"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Idan",
+          "lastName": "Davidovich"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuting",
+          "lastName": "Shao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kai",
+          "lastName": "Ye"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Biyao",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinpeng",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Joe",
+          "lastName": "Stubbs"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Erman",
+          "lastName": "Ayday"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jing",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Vipin",
+          "lastName": "Chaudhary"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "Agent / 权限与验证",
+        "待阅读"
+      ],
+      "note": "arXiv提交日期：2026-11-02；3日首次公开列表已核对。\n\n3日arXiv公开列表中的LeanGuard，把Lean4策略求值放在Agent调用业务工具之前，并将拒绝原因反馈给模型继续任务。\n\n可信适配器读取后端状态和历史，绑定提案参数、版本与单次同意；编译后的Lean求值器判断许可、前提和禁令，缺失事实时拒绝，允许后才分发。\n\n执行权限可从模型自我约束转向业务状态与动作的明确关系，同时让拒绝给出可修正原因，降低反复尝试同一违规动作的浪费。\n\n限制与反证：证明只覆盖形式规则与其语义在可信快照前提下的一致性；不证明英文规则翻译、Python宿主、后端事实或自由文本回答安全。2毫秒为离线修复中位数，不是在线全路径延迟。\n\n未运行模型/机器人或独立复现。\n论文：https://arxiv.org/abs/2611.02332\n代码：https://github.com/DebarghaG/LeanGuard\n核对仓库版本：a8fdab9670d0acefca917451b0def9bffd6ff5d1（主要阅读论文/项目与README，未声称逐文件源码审计）\n本期资料页：https://www.asteronline.cn/juju-radar/2026-11-04/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

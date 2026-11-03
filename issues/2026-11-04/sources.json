@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "label": "OpenAI的物理工程介绍",
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+      "section": "OpenAI把设计文件送进制造审查"
+    },
+    {
+      "label": "Library of Layers（LoL）论文",
+      "url": "https://arxiv.org/abs/2611.03526",
+      "section": "LoL让模型按窗口选择整层"
+    },
+    {
+      "label": "代码仓库",
+      "url": "https://github.com/arahmani1/library-of-layers",
+      "section": "LoL让模型按窗口选择整层"
+    },
+    {
+      "label": "DeepMind介绍的化学信息学工具",
+      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "section": "化学Agent先把分子与证据整理清楚"
+    },
+    {
+      "label": "uni-robot-agent论文",
+      "url": "https://arxiv.org/abs/2611.01560",
+      "section": "机器人先统一观测，再安排异步动作"
+    },
+    {
+      "label": "项目演示",
+      "url": "https://openrua.ai/uni-robot-agent",
+      "section": "机器人先统一观测，再安排异步动作"
+    },
+    {
+      "label": "实现",
+      "url": "https://github.com/Open-RUA/uni-robot-agent",
+      "section": "机器人先统一观测，再安排异步动作"
+    },
+    {
+      "label": "LeanGuard论文",
+      "url": "https://arxiv.org/abs/2611.02332",
+      "section": "LeanGuard把动作许可写成可求值规则"
+    },
+    {
+      "label": "项目实现",
+      "url": "https://github.com/DebarghaG/LeanGuard",
+      "section": "LeanGuard把动作许可写成可求值规则"
+    },
+    {
+      "label": "Google的LLMJacking调查",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models",
+      "section": "被盗云身份怎样变成模型转售额度"
+    }
+  ]
+}

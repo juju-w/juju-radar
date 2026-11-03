@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-04",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "openai-physical-engineering",
+      "title": "OpenAI把设计文件推进到制造审查",
+      "category": "Agent / 工程设计",
+      "score": 8.5,
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+      "related_urls": [],
+      "key_claims": [
+        "3日介绍物理工程探索：两人用不到一周完成对话设备设计，代工方随后在不到一个月内制作小批量原型，并介绍Mazda及赛车工程合作。",
+        "模型连接外壳CAD、零件选择、PCB与固件，在共享约束下反复修订不同专业产物；制造审查暴露公差、装配与生产限制，再反馈设计。"
+      ],
+      "reason": "工程助手需要按能否交给下一道工序验收来评估，跨文件约束一致性和迭代成本比单份看起来合理的CAD更接近真实交付价值。",
+      "event_time": "2026-11-03",
+      "published_at": "2026-11-03",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "lol-layer-library",
+      "title": "LoL让Transformer按窗口选择整层",
+      "category": "前沿模型 / 动态架构",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.03526",
+      "related_urls": [
+        "https://github.com/arahmani1/library-of-layers"
+      ],
+      "key_claims": [
+        "arXiv的3日公开列表收录LoL；2日提交、代码10月31日起已有。将固定深度与唯一层数量分开，运行时从共享库选完整Transformer块。",
+        "每个窗口在当前深度选择同一个注意力与MLP块，避免逐token乱选造成Q/K参数不匹配；跨层平移窗口边界传递信息，路由只读取已过去的窗口，防止未来信息泄露。"
+      ],
+      "reason": "可把计算路径作为可观察、可干预的对象，检验某类输入如何复用层；减少唯一参数与减少实际执行步数是两个不同问题。",
+      "event_time": "2026-11-03",
+      "published_at": "2026-11-03",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "antigravity-cheminformatics",
+      "title": "Antigravity用化学工具缩短候选分子分析",
+      "category": "AI for Science / 药物研究",
+      "score": 8.5,
+      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "related_urls": [],
+      "key_claims": [
+        "DeepMind3日介绍Antigravity新Cheminformatics Skills，以克唑替尼和洛拉替尼相关已知体系演示文献整理、分析、预测模型和新大环候选设计。",
+        "语言模型安排任务和查资料，RDKit执行确定性分子计算，ChEMBL/PubChem提供数据；用匹配分子对隔离环化改动，并以骨架划分检验预测模型的分布外表现。"
+      ],
+      "reason": "把结构身份、来源追踪和验证划分写进工具流程，科学家更快得到可追溯的设计假说，能把精力用在实验选择而非反复搬运分子格式。",
+      "event_time": "2026-11-03",
+      "published_at": "2026-11-03",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "unirobot-unified-harness",
+      "title": "uni-robot-agent统一观测与机械臂工具接口",
+      "category": "机器人 / 工具与控制",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.01560",
+      "related_urls": [
+        "https://openrua.ai/uni-robot-agent",
+        "https://github.com/Open-RUA/uni-robot-agent"
+      ],
+      "key_claims": [
+        "arXiv机器人3日公开列表收录统一机器人harness；初始代码2日18:05UTC已在窗口前，3日有0.1.0打包及依赖修复提交，不冒称首份代码。",
+        "不可变capture绑定图像、标定和机器人状态；后台动作返回job handle，同一机械臂排队执行，独立观测可与动作重叠，取消只清理尚未执行任务。"
+      ],
+      "reason": "模型看到的画面与坐标转换必须属于同一次观测，异步执行也必须知道哪些动作仍在队列，才能把通用模型接入实体设备而不制造状态错配。",
+      "event_time": "2026-11-03",
+      "published_at": "2026-11-03",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "leanguard-tool-policy",
+      "title": "LeanGuard在工具执行前检查形式化规则",
+      "category": "Agent / 权限与验证",
+      "score": 8,
+      "url": "https://arxiv.org/abs/2611.02332",
+      "related_urls": [
+        "https://github.com/DebarghaG/LeanGuard"
+      ],
+      "key_claims": [
+        "3日arXiv公开列表中的LeanGuard，把Lean4策略求值放在Agent调用业务工具之前，并将拒绝原因反馈给模型继续任务。",
+        "可信适配器读取后端状态和历史，绑定提案参数、版本与单次同意；编译后的Lean求值器判断许可、前提和禁令，缺失事实时拒绝，允许后才分发。"
+      ],
+      "reason": "执行权限可从模型自我约束转向业务状态与动作的明确关系，同时让拒绝给出可修正原因，降低反复尝试同一违规动作的浪费。",
+      "event_time": "2026-11-03",
+      "published_at": "2026-11-03",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "google-llmjacking-2026",
+      "title": "Google调查模型资源盗用与非法转售链",
+      "category": "真实事故 / 云端资源盗用",
+      "score": 8,
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models",
+      "related_urls": [],
+      "key_claims": [
+        "可见3日安全调查梳理2026年多起云端模型资源盗用案件；published_time为3日07:00:03+08，恰在本期起点后三秒，JSONLD标2日，保留冲突。",
+        "攻击者获得云身份后可启用模型服务，再把盗来的访问能力接到转售路由；初始入侵与额度聚合销售分工，受害方承担推理账单。"
+      ],
+      "reason": "没有主动部署大模型的云账户也可能被开通模型服务；服务启用、身份权限变化和异常账单应连成同一条排查线，而非只检查提示注入。",
+      "event_time": "2026-11-03T07:00:03+08:00",
+      "published_at": "2026-11-03T07:00:03+08:00",
+      "window_status": "within_window_metadata_conflict",
+      "window_uncertain": true
+    }
+  ]
+}
