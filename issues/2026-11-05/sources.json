@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "label": "Moonshot官方仓库",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "section": "Kimi K3.1 Pro完整权重已可下载"
+    },
+    {
+      "label": "独立发布观察",
+      "url": "https://artificialwatch.com/wire/kimi-k3-1-pro-open-weights-out",
+      "section": "Kimi K3.1 Pro完整权重已可下载"
+    },
+    {
+      "label": "此前官方介绍",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "section": "Kimi K3.1 Pro完整权重已可下载"
+    },
+    {
+      "label": "vLLM部署说明",
+      "url": "https://recipes.vllm.ai/moonshotai/Kimi-K3.1-Pro",
+      "section": "Kimi K3.1 Pro完整权重已可下载"
+    },
+    {
+      "label": "腾讯云ADP团队的正式公告",
+      "url": "https://adp.tencent.com/zh/blog/tencent-cloud-adp-hunyuan-hy4-release",
+      "section": "Hy4正式版把视觉接进操作流程"
+    },
+    {
+      "label": "OpenAI新公布的Linux研究",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+      "section": "漏洞研究开始逐级验证结果与路径"
+    },
+    {
+      "label": "这篇数值稳定性研究",
+      "url": "https://arxiv.org/abs/2611.04449",
+      "section": "一个近零token怎样让训练丢失更新"
+    },
+    {
+      "label": "BEND 2.0",
+      "url": "https://arxiv.org/abs/2611.03806",
+      "section": "DNA模型预测得准，究竟准在哪里"
+    },
+    {
+      "label": "评测代码",
+      "url": "https://github.com/machinelearninglifescience/BEND2",
+      "section": "DNA模型预测得准，究竟准在哪里"
+    },
+    {
+      "label": "GitBook在4日晚公布的正式复盘",
+      "url": "https://www.gitbook.com/status/security-incident-2026-11-03",
+      "section": "GitBook复盘一条跨系统凭据链"
+    }
+  ]
+}

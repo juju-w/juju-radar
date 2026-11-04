@@ -1,0 +1,137 @@
+{
+  "issue_date": "2026-11-05",
+  "papers": [
+    {
+      "id": "2611.04449",
+      "title": "Near-Zero Token Embeddings Silently Stall Training in Gated Sequence Models",
+      "url": "https://arxiv.org/abs/2611.04449",
+      "pdf_url": "https://arxiv.org/pdf/2611.04449",
+      "doi": "10.48550/arXiv.2611.04449",
+      "published_date": "2026-11-03",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Xin Liu",
+        "Boyuan Sun",
+        "Yuxin Wang",
+        "Haoran Song",
+        "Mingjian Zhao",
+        "Mengyu Liu"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Xin",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Boyuan",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxin",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haoran",
+          "lastName": "Song"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingjian",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mengyu",
+          "lastName": "Liu"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "芯片算力推理 / 训练数值稳定性",
+        "待阅读"
+      ],
+      "note": "提交日期：2026-11-03；4日原始arXiv公开列表核实。\n\n4日arXiv公开列表的研究审查291个仓库/280张嵌入表；38个未共享输入输出权重的门控/混合检查点中20个有可达近零行，追踪到完整训练批次的新梯度被清零。\n\n罕见未见token输入行被AdamW持续衰减；零输入关掉历史状态读出，多层RMSNorm放大反向梯度，FP32全局范数溢出成inf后把整批有限梯度除成零，前向损失仍可正常。\n\n适配低资源语言或新模板时，检查新梯度贡献与裁剪范数比只看loss更能识别浪费；GroupClip分开裁剪嵌入和主干并稳健计算范数，让主干学习与问题行恢复。\n\n限制与反证：Nemotron3Nano4B Telugu持续预训练19.8%步丢更新是特定实验，不是所有模型都浪费20%。冻结嵌入LoRA和推理不触发此裁剪故障；GateFloor从头训练仅至370M、1–2种子。FP64范数有临时内存，copy-free变体另论。\n\n主要方法、实验与限制已读；未运行或独立复现。\n论文：https://arxiv.org/abs/2611.04449\n本期资料页：https://www.asteronline.cn/juju-radar/2026-11-05/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.03806",
+      "title": "BEND 2.0: Benchmarking the Capabilities Needed to Design DNA",
+      "url": "https://arxiv.org/abs/2611.03806",
+      "pdf_url": "https://arxiv.org/pdf/2611.03806",
+      "doi": "10.48550/arXiv.2611.03806",
+      "published_date": "2026-11-02",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Andreas Bjerregaard",
+        "Rachael DeVries",
+        "Dionysia Danai Brilli",
+        "Panagiotis Antoniadis",
+        "Yan Li",
+        "Anders Krogh",
+        "Wouter Boomsma",
+        "Ole Winther",
+        "Frederikke Isa Marin"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Andreas",
+          "lastName": "Bjerregaard"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rachael",
+          "lastName": "DeVries"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dionysia Danai",
+          "lastName": "Brilli"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Panagiotis",
+          "lastName": "Antoniadis"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Anders",
+          "lastName": "Krogh"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wouter",
+          "lastName": "Boomsma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ole",
+          "lastName": "Winther"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Frederikke Isa",
+          "lastName": "Marin"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "AI for Science / 基因组评测",
+        "待阅读"
+      ],
+      "note": "提交日期：2026-11-02；4日原始arXiv公开列表核实。\n\n2日提交，4日q-bio.GN原始公开列表确认。八项任务/五套已有实验数据把DNA模型预测拆为序列先验、功能、上下文、交互及候选选择能力。\n\n把跨细胞平均效应与细胞差异分开，把双突变总效果减去两项单突变后再测非加性交互；在已测候选库中隐藏测量值，用模型排序再回读真实结果。\n\n选DNA模型时可按实验需要检验它是否真能选择特定细胞/遗传背景的改动，而不只依据整体相关性或序列建模分数。\n\n限制与反证：在COMPASS的NTv3例子中双突变相关0.500而交互仅0.046，交互重复实验相关也仅0.171，噪声须保留。全部设计选择来自已测库，不是全新序列湿实验或临床验证；线性读出维度/上下文不同影响比较。\n\n主要方法、实验与限制已读；未运行或独立复现。\n论文：https://arxiv.org/abs/2611.03806\n本期资料页：https://www.asteronline.cn/juju-radar/2026-11-05/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

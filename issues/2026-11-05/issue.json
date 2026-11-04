@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-05",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "kimi31-open-weights",
+      "title": "Kimi K3.1 Pro完整权重可下载，长上下文改用稀疏注意力",
+      "category": "前沿模型 / 权重与推理",
+      "score": 9,
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "related_urls": [
+        "https://www.kimi.ai/blog/kimi-k3-1-pro",
+        "https://recipes.vllm.ai/moonshotai/Kimi-K3.1-Pro",
+        "https://artificialwatch.com/wire/kimi-k3-1-pro-open-weights-out"
+      ],
+      "key_claims": [
+        "应用/API更早上线，4日新增事件是完整权重可下载：官方仓库96个safetensors分片约1.56TB。仓库初始提交2日不等于公众可用，官方曾承诺4日前开放；昨日官方列表未列出，今日已列出，独立观察亦记录4日由不可见到可见。",
+        "2.8T总参数、104B激活，69层KDA加24层Gated DSA；原全注意力层换为带门控的稀疏注意力，索引选择top2048位置，减少长上下文全量读取；专家权重MXFP4、激活MXFP8经量化感知训练。"
+      ],
+      "reason": "可在自己基础设施上检查与部署同一检查点，但需处理约1.56TB工件及专门推理后端；长对话回传还要保留reasoning_content和tool_calls，接口实现会影响Agent行为。",
+      "event_time": "2026-11-04",
+      "published_at": "2026-11-04",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "hy4-formal",
+      "title": "Hy4正式版加入视觉和电脑操作，并接入腾讯云ADP",
+      "category": "前沿模型 / 视觉与电脑操作",
+      "score": 8.5,
+      "url": "https://adp.tencent.com/zh/blog/tencent-cloud-adp-hunyuan-hy4-release",
+      "related_urls": [],
+      "key_claims": [
+        "腾讯云ADP团队4日确认Hy4正式版发布并接入；相比Preview首次加入视觉理解和电脑操作，并加强指令、长文、长程任务与深度研究。",
+        "把图像和屏幕状态作为模型决策的输入，再结合CLI、GUI和工具调用处理跨步骤任务；平台继续承担权限、运行记录与执行环境。"
+      ],
+      "reason": "既有腾讯企业工具流程可把图表/截图与执行放到同一模型循环中，验证重点从只看文本回答转为操作后文档或界面状态是否满足任务。",
+      "event_time": "2026-11-04",
+      "published_at": "2026-11-04",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "openai-linux-pipeline",
+      "title": "OpenAI公开Linux漏洞验证与候选补丁流水线",
+      "category": "安全研究 / 自动化验证",
+      "score": 9,
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+      "related_urls": [],
+      "key_claims": [
+        "4日公开10月研究：2308候选、1724动态复现，1169提权利用经变体分析与948份不同候选补丁归为948项独立LPE；API成本1213430美元。",
+        "从可达审计目标到静态候选、隔离环境动态验证、影响评估、补丁及人工复核逐级推进；早期200次成功中20次走了别的漏洞，随后加入独立路径检查。"
+      ],
+      "reason": "自动安全研究要把到达结果和使用指定路径分开验证，再与最新上游版本去重；否则成功次数、紧急程度与可交付补丁会混在一起。",
+      "event_time": "2026-11-04",
+      "published_at": "2026-11-04",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "nearzero-embedding-stalls",
+      "title": "近零token嵌入会让门控模型静默丢失训练更新",
+      "category": "芯片算力推理 / 训练数值稳定性",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.04449",
+      "related_urls": [],
+      "key_claims": [
+        "4日arXiv公开列表的研究审查291个仓库/280张嵌入表；38个未共享输入输出权重的门控/混合检查点中20个有可达近零行，追踪到完整训练批次的新梯度被清零。",
+        "罕见未见token输入行被AdamW持续衰减；零输入关掉历史状态读出，多层RMSNorm放大反向梯度，FP32全局范数溢出成inf后把整批有限梯度除成零，前向损失仍可正常。"
+      ],
+      "reason": "适配低资源语言或新模板时，检查新梯度贡献与裁剪范数比只看loss更能识别浪费；GroupClip分开裁剪嵌入和主干并稳健计算范数，让主干学习与问题行恢复。",
+      "event_time": "2026-11-04",
+      "published_at": "2026-11-04",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "bend2-design-capabilities",
+      "title": "BEND2.0把DNA平均效果、细胞差异和突变交互分开测",
+      "category": "AI for Science / 基因组评测",
+      "score": 8,
+      "url": "https://arxiv.org/abs/2611.03806",
+      "related_urls": [
+        "https://github.com/machinelearninglifescience/BEND2"
+      ],
+      "key_claims": [
+        "2日提交，4日q-bio.GN原始公开列表确认。八项任务/五套已有实验数据把DNA模型预测拆为序列先验、功能、上下文、交互及候选选择能力。",
+        "把跨细胞平均效应与细胞差异分开，把双突变总效果减去两项单突变后再测非加性交互；在已测候选库中隐藏测量值，用模型排序再回读真实结果。"
+      ],
+      "reason": "选DNA模型时可按实验需要检验它是否真能选择特定细胞/遗传背景的改动，而不只依据整体相关性或序列建模分数。",
+      "event_time": "2026-11-04",
+      "published_at": "2026-11-04",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true
+    },
+    {
+      "id": "gitbook-november-postmortem",
+      "title": "GitBook正式复盘从SSO到生产密钥的权限链",
+      "category": "真实事故 / SaaS信任链",
+      "score": 8.5,
+      "url": "https://www.gitbook.com/status/security-incident-2026-11-03",
+      "related_urls": [],
+      "key_claims": [
+        "4日20:30CET正式复盘新增入口与范围：2日SSO漏洞让攻击者冒充员工，读取误配置GitHubApp凭据，经内部代码及Cloudflare密钥到生产服务账户；不把2日入侵说成4日发生。",
+        "可组合的身份/集成权限把一个客户目标扩展为SaaS基础设施访问；封堵和恢复需要同时失效服务身份、轮换基础设施及托管客户密钥，而非只修登录页。"
+      ],
+      "reason": "文档服务连接代码仓库和应用密钥，已成为客户的安全边界；只保护最终数据库会漏掉SSO、GitHubApp和边缘服务的跨系统信任路径。",
+      "event_time": "2026-11-04T20:30+01:00",
+      "published_at": "2026-11-04T20:30+01:00",
+      "window_status": "within_window_verified",
+      "window_uncertain": false
+    }
+  ]
+}
