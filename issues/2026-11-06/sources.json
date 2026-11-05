@@ -1,0 +1,74 @@
+{
+  "sources": [
+    {
+      "label": "OpenAI发布GPT-6 Cyber",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+      "section": "GPT-6 Cyber把授权范围纳入专门训练"
+    },
+    {
+      "label": "系统卡",
+      "url": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "section": "GPT-6 Cyber把授权范围纳入专门训练"
+    },
+    {
+      "label": "百度开放ERNIE 5.5 Flash Base",
+      "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base",
+      "section": "文心开放底座，把长历史分成粗读与细读"
+    },
+    {
+      "label": "权重",
+      "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
+      "section": "文心开放底座，把长历史分成粗读与细读"
+    },
+    {
+      "label": "Preferred Networks开放PLaMo 3 Translate",
+      "url": "https://www.preferred.jp/en/news/pr20261105",
+      "section": "PLaMo把训练阶段的筛选成本换成本地翻译"
+    },
+    {
+      "label": "训练报告",
+      "url": "https://www.preferred.jp/en/blog/tech/plamo-3-translate-weight-release",
+      "section": "PLaMo把训练阶段的筛选成本换成本地翻译"
+    },
+    {
+      "label": "0.8B模型卡",
+      "url": "https://huggingface.co/pfnet/plamo-3-translate-0.8b",
+      "section": "PLaMo把训练阶段的筛选成本换成本地翻译"
+    },
+    {
+      "label": "Mistral Studio本次更新",
+      "url": "https://mistral.ai/news/build-with-studio/",
+      "section": "Mistral让任务状态与运行进程分开"
+    },
+    {
+      "label": "Managed Agents文档",
+      "url": "https://docs.mistral.ai/studio/agents/overview",
+      "section": "Mistral让任务状态与运行进程分开"
+    },
+    {
+      "label": "工作流",
+      "url": "https://docs.mistral.ai/studio/workflows/overview",
+      "section": "Mistral让任务状态与运行进程分开"
+    },
+    {
+      "label": "NEO-VLA",
+      "url": "https://arxiv.org/abs/2611.06918",
+      "section": "NEO-VLA让动作专家保留早期视觉信息"
+    },
+    {
+      "label": "代码",
+      "url": "https://github.com/EvolvingLMMs-Lab/NEO/tree/main/VLAKit",
+      "section": "NEO-VLA让动作专家保留早期视觉信息"
+    },
+    {
+      "label": "检查点",
+      "url": "https://huggingface.co/weepiess2383/NEO-VLA",
+      "section": "NEO-VLA让动作专家保留早期视觉信息"
+    },
+    {
+      "label": "FrontierPhysics",
+      "url": "https://arxiv.org/abs/2611.06910",
+      "section": "FrontierPhysics检查科研中的循环自证"
+    }
+  ]
+}

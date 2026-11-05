@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-06",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "gpt6-cyber-release",
+      "title": "GPT-6 Cyber把漏洞研究与遵守授权一起训练",
+      "category": "前沿模型 / 网络安全",
+      "score": 9.5,
+      "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+      "related_urls": [
+        "https://deploymentsafety.openai.com/gpt-6-cyber"
+      ],
+      "event_time": "2026-11-05",
+      "published_at": "2026-11-05",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "5日新增是GPT-6 Cyber模型发布、系统卡及Daybreak Red受限接入。948项Linux结果与昨天同一批，不作为新漏洞数量重报；Cyber是Astra的网络安全专门后训练版本，Critical网络安全等级并非首次，Astra已有同等级。",
+        "强化学习训练崩溃复现、漏洞验证和方法修正，另加授权范围、诚实报告与防奖励投机信号；蜜罐评测让无关辅助服务易被攻破，但拿到结果仍因越界而失败。"
+      ],
+      "reason": "安全团队可把更少拒绝的模型放入明确目标、沙箱与审批流程；重点从是否拿到flag扩展为是否沿指定漏洞、指定目标取得结果。最初仅部分获批Daybreak Red客户通过API和Codex可用。"
+    },
+    {
+      "id": "ernie55-base-weights",
+      "title": "文心5.5 Flash开放预训练底座，压缩缓存并保留少量细读层",
+      "category": "前沿模型 / 开放权重",
+      "score": 9,
+      "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base",
+      "related_urls": [
+        "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base"
+      ],
+      "event_time": "2026-11-05",
+      "published_at": "2026-11-05",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "5日官方发布280B总参数、14B激活的预训练结束检查点，未做中/后训练；33.5T预训练token，FP8与BF16工件公开，给后训练研究共同起点而非现成聊天助手。",
+        "43层中37层HCA将128token压成一条远程缓存并保留近期窗口；6层MLA-DSA保留逐token缓存，通过索引选择位置细读。专家在2048维潜空间执行，较4096维全宽专家降低通信与计算；ECHO复用末层学习预测后续token。"
+      ],
+      "reason": "外部团队省去大规模预训练，可对同一底座研究领域适配、指令与强化学习；部署成本须同时算激活计算、完整权重、缓存与专门后端，不能用14B激活推断14B显存。"
+    },
+    {
+      "id": "plamo3-translate-weights",
+      "title": "PLaMo 3 Translate把专门翻译模型缩到端侧",
+      "category": "前沿模型 / 端侧翻译",
+      "score": 8.5,
+      "url": "https://www.preferred.jp/en/news/pr20261105",
+      "related_urls": [
+        "https://www.preferred.jp/en/blog/tech/plamo-3-translate-weight-release",
+        "https://huggingface.co/pfnet/plamo-3-translate-0.8b"
+      ],
+      "event_time": "2026-11-05T09:00:00+09:00",
+      "published_at": "2026-11-05T09:00:00+09:00",
+      "window_status": "within_window_verified",
+      "window_uncertain": false,
+      "key_claims": [
+        "PFN5日09:00JST正式开放PLaMo3Translate，0.8B/2B/8B/31B，支持53语言及GGUF/MLX等工件，最小款可在手机离线演示；先前HF上传4日与正式开放公告分列。",
+        "多候选翻译两两比较并融合优点、回译保留自然语言输出，再用当前模型反复改进训练数据；31B完成SFT/DPO后蒸馏到小模型。开发中GRPO虽提升奖励/榜单却降低人工流畅性，最终DPO配SFT和KL约束。"
+      ],
+      "reason": "翻译不再必须随每份文档调用远端通用大模型；可在设备或内网部署，术语表与上下文作为显式输入控制。训练阶段高成本筛选可被大量便宜的本地推理摊销。"
+    },
+    {
+      "id": "mistral-studio-managed",
+      "title": "Mistral Studio扩展托管Agent、流程与应用交付",
+      "category": "Agent / 企业运行平台",
+      "score": 8.5,
+      "url": "https://mistral.ai/news/build-with-studio/",
+      "related_urls": [
+        "https://docs.mistral.ai/studio/agents/overview",
+        "https://docs.mistral.ai/studio/workflows/overview"
+      ],
+      "event_time": "2026-11-05",
+      "published_at": "2026-11-05",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "5日Studio新增ManagedAgents/Apps并扩充工作流。不是重报10月29日LeChonk权重；SDK同份Python定义可在进程、本地worker或托管环境执行。",
+        "把会话和已完成模型/工具调用存成可恢复记录，崩溃后从上一步恢复，人工审批也可跨进程存活；工作流用Temporal记录固定步骤、重试与分支，Agent处理需推理的部分。"
+      ],
+      "reason": "企业能把告警调查、审批和结果回传组合起来，少写队列、状态恢复和审批连接代码；模型、工具、执行进程和状态存储位置须分别选择。"
+    },
+    {
+      "id": "neo-vla-native-visual",
+      "title": "NEO-VLA让动作专家读取视觉计算的中间层",
+      "category": "机器人 / 原生视觉动作",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.06918",
+      "related_urls": [
+        "https://github.com/EvolvingLMMs-Lab/NEO/tree/main/VLAKit",
+        "https://huggingface.co/weepiess2383/NEO-VLA"
+      ],
+      "event_time": "2026-11-05",
+      "published_at": "2026-11-05",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "4日提交、5日cs.CV公开的NEO-VLA取消独立预训练视觉塔，以轻量卷积patch输入与文字共演化；动作专家直接读不同骨干层KV。代码README及HF实际state.pt/骨干文件可见。",
+        "动作依赖几何边界等早期细节，最终语义表示可能丢失；在同40层骨干/28层专家中均匀跨层读取对晚层读取，冻结实验90.9%对86.7%，全微调95.3%对92.5%。直接暴露Qwen视觉塔早层不能复现全部收益。"
+      ],
+      "reason": "设计VLA时可把动作头读哪一层作为独立变量，而不只加大语言骨干；观测外观稳健不等于新空间和新目标的行为适应。",
+      "arxiv_submitted_at": "2026-11-04",
+      "announced_at": "2026-11-05"
+    },
+    {
+      "id": "frontierphysics-research",
+      "title": "FrontierPhysics把数值验证和科研论证一起测",
+      "category": "AI for Science / 物理科研评测",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.06910",
+      "related_urls": [],
+      "event_time": "2026-11-05",
+      "published_at": "2026-11-05",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "4日提交、5日cs.AI公开：42位物理研究者把亲身项目改为56任务，22模型/26配置，各任务3次尝试，最强配置46/168通过，不把46次写成46种科研任务。",
+        "高层问题不给原论文解法；Agent需检索、研究、数值产物和手稿，确定性验证与阻断性科研准则全部通过才计成功。专家复查轨迹后把循环自证、关键误差源判断和文献综合拆开定位。"
+      ],
+      "reason": "科研Agent评测可识别代码跑通但论证不成立的结果；后续训练与审核要检查验证是否依赖原错误假设，而非只补充知识或运行测试。",
+      "arxiv_submitted_at": "2026-11-04",
+      "announced_at": "2026-11-05"
+    }
+  ]
+}
