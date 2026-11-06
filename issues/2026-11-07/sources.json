@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "label": "NVIDIA公布新的Reshard权重同步结果",
+      "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
+      "section": "NVIDIA按目标分片同步权重，减少RL等待"
+    },
+    {
+      "label": "NCCL M2N论文",
+      "url": "https://arxiv.org/abs/2610.07516",
+      "section": "NVIDIA按目标分片同步权重，减少RL等待"
+    },
+    {
+      "label": "参考库",
+      "url": "https://github.com/NVIDIA/nccl-extensions/tree/main/nccl_m2n",
+      "section": "NVIDIA按目标分片同步权重，减少RL等待"
+    },
+    {
+      "label": "NeMo RL接入说明",
+      "url": "https://docs.nvidia.com/nemo/rl/nightly/guides/refit.html",
+      "section": "NVIDIA按目标分片同步权重，减少RL等待"
+    },
+    {
+      "label": "WeLM-Image技术报告",
+      "url": "https://arxiv.org/abs/2611.07392",
+      "section": "WeLM-Image把单卡预算写进图像模型设计"
+    },
+    {
+      "label": "原文表4",
+      "url": "https://arxiv.org/html/2611.07392v1",
+      "section": "WeLM-Image把单卡预算写进图像模型设计"
+    },
+    {
+      "label": "VFlash",
+      "url": "https://arxiv.org/abs/2611.08449",
+      "section": "VFlash不再逐字写出一条空间轨迹"
+    },
+    {
+      "label": "项目页",
+      "url": "https://research.nvidia.com/labs/lpr/vflash/",
+      "section": "VFlash不再逐字写出一条空间轨迹"
+    },
+    {
+      "label": "代码入口",
+      "url": "https://github.com/NVlabs/Eagle/tree/main/Embodied",
+      "section": "VFlash不再逐字写出一条空间轨迹"
+    },
+    {
+      "label": "OpenAI与Ligo的BioBasicsBench",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
+      "section": "BioBasicsBench检查模型有没有读对实验观察"
+    },
+    {
+      "label": "Botpress于11月6日披露",
+      "url": "https://botpress.com/blog/security-incident-disclosure-november-2026",
+      "section": "Botpress事故把内部权限与客户密钥连在一起"
+    },
+    {
+      "label": "METR的独立评估",
+      "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+      "section": "METR看到Anthropic研发提速，也披露证据限制"
+    }
+  ]
+}

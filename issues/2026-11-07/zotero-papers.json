@@ -1,0 +1,359 @@
+{
+  "issue_date": "2026-11-07",
+  "papers": [
+    {
+      "id": "2611.07392",
+      "title": "WeLM-Image: A Unified Image Generation Model towards Visual Intelligence",
+      "url": "https://arxiv.org/abs/2611.07392",
+      "pdf_url": "https://arxiv.org/pdf/2611.07392",
+      "doi": "10.48550/arXiv.2611.07392",
+      "published_date": "2026-11-05",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Canmiao Fu",
+        "Chen Li",
+        "Guohui Zhang",
+        "Hao Lu",
+        "Hongyang Wei",
+        "Huadong Wu",
+        "Huaisong Zhang",
+        "Hubery Yin",
+        "Liyuan Cui",
+        "Qixin Yan",
+        "Tong Shao",
+        "Xiaoqiang Zhou",
+        "Xinhang Leng",
+        "Ying Zhang",
+        "Zhenhai Liu",
+        "Zhipeng Huang"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "lastName": "Fu",
+          "firstName": "Canmiao"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Li",
+          "firstName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhang",
+          "firstName": "Guohui"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Lu",
+          "firstName": "Hao"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Wei",
+          "firstName": "Hongyang"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Wu",
+          "firstName": "Huadong"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhang",
+          "firstName": "Huaisong"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Yin",
+          "firstName": "Hubery"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Cui",
+          "firstName": "Liyuan"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Yan",
+          "firstName": "Qixin"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Shao",
+          "firstName": "Tong"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhou",
+          "firstName": "Xiaoqiang"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Leng",
+          "firstName": "Xinhang"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhang",
+          "firstName": "Ying"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Liu",
+          "firstName": "Zhenhai"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Huang",
+          "firstName": "Zhipeng"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "视觉生成 / 统一图像模型",
+        "待阅读"
+      ],
+      "note": "提交日期：2026-11-05。6日原始arXiv日期列表首次公开核对。\n\n微信视觉团队报告5日提交、6日cs.CV/cs.AI公开。31.7B存储参数、每目标latent token约5.4B生成参数激活；Turbo八步单H20生成1024×1024用4.98秒。只确认论文，HF精确搜索无对应官方模型、GitHub搜索无匹配官方仓库，不声称权重已开放。\n\n文字/语义视觉走理解分支，VAE图像latent走生成分支，两路保留独立投影与专家、共享注意力；推理先算固定指令和参考再缓存，各步只重算目标噪声latent。生成/编辑分别奖励训练，再按噪声阶段蒸馏合并，MeanFlow少步蒸馏降低调用次数。\n\n多参考越多，重复编码固定输入越昂贵，缓存加稀疏激活和少步采样能共同控制在线成本；单卡约束从架构和数据组织起就参与设计，而非最后量化补救。\n\n4.98秒是1024方图，不是原生1.5K的延迟；三次热运行均值排除模型加载。50步base56.99秒，八步Turbo4.98秒，两者CFG次数不同；四步Qwen Lightning同项3.21秒更快。质量领先限作者部分榜单，不是所有榜首。未独立运行，未验证公众产品接入或许可。\n\n阅读范围：关键架构、缓存、训练流程、延迟表及主要质量对照，未逐条核验全部数据样例。\n论文：https://arxiv.org/abs/2611.07392\n本期资料页：https://www.asteronline.cn/juju-radar/2026-11-07/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.08449",
+      "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+      "url": "https://arxiv.org/abs/2611.08449",
+      "pdf_url": "https://arxiv.org/pdf/2611.08449",
+      "doi": "10.48550/arXiv.2611.08449",
+      "published_date": "2026-11-05",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Yu-Cheng Chou",
+        "Shihao Wang",
+        "Jin Huang",
+        "Chi-Pin Huang",
+        "Chiao-An Yang",
+        "Xianzhe Fan",
+        "Jing Wang",
+        "Zhiqi Li",
+        "Yuanguo Kuang",
+        "Ruijie Zheng",
+        "Johan Bjorck",
+        "Sifei Liu",
+        "Hang Su",
+        "Abhishek Badki",
+        "Lei Zhang",
+        "Alan Yuille",
+        "Linxi \"Jim'' Fan",
+        "Jan Kautz",
+        "Zhiding Yu"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "lastName": "Chou",
+          "firstName": "Yu-Cheng"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Wang",
+          "firstName": "Shihao"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Huang",
+          "firstName": "Jin"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Huang",
+          "firstName": "Chi-Pin"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Yang",
+          "firstName": "Chiao-An"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Fan",
+          "firstName": "Xianzhe"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Wang",
+          "firstName": "Jing"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Li",
+          "firstName": "Zhiqi"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Kuang",
+          "firstName": "Yuanguo"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zheng",
+          "firstName": "Ruijie"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Bjorck",
+          "firstName": "Johan"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Liu",
+          "firstName": "Sifei"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Su",
+          "firstName": "Hang"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Badki",
+          "firstName": "Abhishek"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhang",
+          "firstName": "Lei"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Yuille",
+          "firstName": "Alan"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Fan",
+          "firstName": "Linxi \"Jim''"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Kautz",
+          "firstName": "Jan"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Yu",
+          "firstName": "Zhiding"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人 / 视觉规划",
+        "待阅读"
+      ],
+      "note": "提交日期：2026-11-05。6日原始arXiv日期列表首次公开核对。\n\n5日提交、6日cs.RO/cs.CV公开，用轻量diffusion drafter一次产生整个框、2D/3D轨迹等primitive，按结构约束接收，不逐token复现AR目标。文字仍推测验证。\n\n一条十路点轨迹的类型/维度/长度已由接口规定，几何坐标能联合预测；模型逐字一致不是空间准确的必要条件。目标VLM仍做一次前向更新缓存、给动作头提供状态，不能说完全删除目标模型。\n\n批量一的物理系统能在延迟预算内增加空间细节。MolmoSpaces管线Thor/Spark每步约5.1–5.2倍提速，主要来自解码。固定WAM动作架构时，原文本编码基线62.6%，VFlash视觉计划70.2%；AR计划对照61.0%，图像状态63.7%。\n\n62.6到70.2不只更换解码器，也替换了基线文本编码器；同VLM的AR计划对照才更接近解码贡献。密集3D若干误差更差，框无AR回退Dense200掉约20分；结构合法不等于物理安全，不是无损文本推测解码。项目Code入口README仍为LocateAnything，无VFlash字样，未确认本方案完整代码/权重。未跑机器人。\n\n阅读范围：主文方法、空间预测和动作对照、延迟分析；附录未全部审计。\n论文：https://arxiv.org/abs/2611.08449\n本期资料页：https://www.asteronline.cn/juju-radar/2026-11-07/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2610.07516",
+      "title": "NCCL M2N: A Layout- and Topology-Aware Collective for Distributed Tensor Resharding",
+      "url": "https://arxiv.org/abs/2610.07516",
+      "pdf_url": "https://arxiv.org/pdf/2610.07516",
+      "doi": "10.48550/arXiv.2610.07516",
+      "published_date": "2026-10-05",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Kaushik Kandadi",
+        "Youngeun Kwon",
+        "Sreeram Potluri",
+        "Ching-Hsiang Chu",
+        "Ke Wen",
+        "Pouya Kousha",
+        "Sangkug Lym",
+        "Nitin Nitin",
+        "Manjunath Gorentla Venkata"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "lastName": "Kandadi",
+          "firstName": "Kaushik"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Kwon",
+          "firstName": "Youngeun"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Potluri",
+          "firstName": "Sreeram"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Chu",
+          "firstName": "Ching-Hsiang"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Wen",
+          "firstName": "Ke"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Kousha",
+          "firstName": "Pouya"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Lym",
+          "firstName": "Sangkug"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Nitin",
+          "firstName": "Nitin"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Venkata",
+          "firstName": "Manjunath Gorentla"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "芯片算力 / 强化学习基础设施",
+        "待阅读",
+        "原理背景"
+      ],
+      "note": "提交日期：2026-10-05。10月旧论文，作为本期新跨模型refit结果的原理背景引用，不冒充新论文。原论文2.09倍同步/12.7%step收益与本次表格分列。\n\n6日技术文章新增H100/GB200跨模型NeMo RL refit结果，2.7–5.7倍仅权重同步环节；NCCL M2N原理与库不是今天首次发明。10月5日提交的原论文DeepSeek结果5.78→2.77秒，区别于本次表2，不能把博客日期刷新成新论文。\n\n训练与生成使用不同TP/EP/PP/DP布局。根据全局张量、设备mesh和placement求源目标分片交集，只发需要的区域；跨网送一份、机内NVLink复制，平衡网卡流量。NeMo RL大FFN权重约95%参数用Reshard，小QKV/mamba权重仍走原方式。\n\n非共置RL可缩短训练更新与下一轮rollout之间的等待，让生成GPU更快拿到新策略；4.3秒2.4T是仅refit微基准，不是完整训练耗时。当前参考库README明确experimental与copy/staging-backed，不能沿根README写成全路径零拷贝。\n\nH100 DeepSeek V3 14.9→2.6秒，Qwen3 235B 6.4→1.9；GB200 DeepSeek6.1→2.3。硬件布局不同，不把最大倍数当所有RL加速。训练总耗时收益取决refit占比。NeMo RL当前弹性恢复要重建通信组，shrink/grow是计划；代码未编译运行。\n\n阅读范围：摘要、布局/路由设计与原始结果；未编译库或复算集群。\n论文：https://arxiv.org/abs/2610.07516\n本期资料页：https://www.asteronline.cn/juju-radar/2026-11-07/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "metr-anthropic-2026-11-05",
+      "title": "Independent Assessment of AI R&D Acceleration at Anthropic in October 2026",
+      "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+      "doi": null,
+      "published_date": "2026-11-05",
+      "date_kind": "published",
+      "item_type": "report",
+      "authors": [
+        "METR"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "METR"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "AI研发加速",
+        "补看",
+        "待阅读"
+      ],
+      "note": "11月5日公共网页研究报告，本期唯一明确补看。不是新闻网页当论文，也不是未公开的百页完整报告。\n\n11月5日原报告，本期唯一超窗补看；11周、约2.5FTE查看Anthropic内部训练/评测/访谈。AECI增长率相对2025年10月前约1.9倍、95%CI1.5–2.8；主观综合判断约2倍，1.3–3也不惊讶，不把两类估计混写。\n\n能力增长的观测趋势先与训练算力、人员、算法、数据等解释对照，再用访谈与自报辅助归因。模型辅助降低实现、实验与分析开销，增加能尝试的想法；当前主要仍是人类研发中的AI辅助。\n\nAI研发加速应逐段量度投入、产出、瓶颈与反事实；一个员工自报12倍速度不能直接变成实验室整体12倍进步。可验证题的速度趋势应与难测真实任务分开。\n\n非随机因果试验，无法直接观察没有AI的反事实。AECI链接函数假设给1.1–2.9倍，换行业frontier基线约1.4倍。大部分最有信息量证据被Anthropic删节，公众须更多依赖METR判断；并非完整员工级访问、没调用非公开模型。多数采集/分析使用Claude，潜在偏差在报告自检，未独立复算。全文中主要方法、稳健性、过程、限制及COI已读，AEF表未逐格审计；网页公共版不等于未公开百页完整版。\n\n原报告：https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/\n本期资料页：https://www.asteronline.cn/juju-radar/2026-11-07/\nAI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

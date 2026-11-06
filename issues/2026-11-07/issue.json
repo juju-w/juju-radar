@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-07",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "nvidia-reshard-refit",
+      "title": "NVIDIA缩短RL权重同步，按目标分片发送",
+      "category": "芯片算力 / 强化学习基础设施",
+      "score": 9,
+      "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
+      "related_urls": [
+        "https://github.com/NVIDIA/nccl-extensions/tree/main/nccl_m2n",
+        "https://docs.nvidia.com/nemo/rl/nightly/guides/refit.html",
+        "https://arxiv.org/abs/2610.07516"
+      ],
+      "event_time": "2026-11-06T18:03:26+00:00",
+      "published_at": "2026-11-06T18:03:26+00:00",
+      "window_status": "within_window_verified",
+      "window_uncertain": false,
+      "key_claims": [
+        "6日技术文章新增H100/GB200跨模型NeMo RL refit结果，2.7–5.7倍仅权重同步环节；NCCL M2N原理与库不是今天首次发明。10月5日提交的原论文DeepSeek结果5.78→2.77秒，区别于本次表2，不能把博客日期刷新成新论文。",
+        "训练与生成使用不同TP/EP/PP/DP布局。根据全局张量、设备mesh和placement求源目标分片交集，只发需要的区域；跨网送一份、机内NVLink复制，平衡网卡流量。NeMo RL大FFN权重约95%参数用Reshard，小QKV/mamba权重仍走原方式。"
+      ],
+      "reason": "非共置RL可缩短训练更新与下一轮rollout之间的等待，让生成GPU更快拿到新策略；4.3秒2.4T是仅refit微基准，不是完整训练耗时。当前参考库README明确experimental与copy/staging-backed，不能沿根README写成全路径零拷贝。"
+    },
+    {
+      "id": "welm-image-report",
+      "title": "WeLM-Image把生成、编辑与多参考放进单卡预算",
+      "category": "视觉生成 / 统一图像模型",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.07392",
+      "related_urls": [
+        "https://arxiv.org/html/2611.07392v1"
+      ],
+      "event_time": "2026-11-06",
+      "published_at": "2026-11-06",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "微信视觉团队报告5日提交、6日cs.CV/cs.AI公开。31.7B存储参数、每目标latent token约5.4B生成参数激活；Turbo八步单H20生成1024×1024用4.98秒。只确认论文，HF精确搜索无对应官方模型、GitHub搜索无匹配官方仓库，不声称权重已开放。",
+        "文字/语义视觉走理解分支，VAE图像latent走生成分支，两路保留独立投影与专家、共享注意力；推理先算固定指令和参考再缓存，各步只重算目标噪声latent。生成/编辑分别奖励训练，再按噪声阶段蒸馏合并，MeanFlow少步蒸馏降低调用次数。"
+      ],
+      "reason": "多参考越多，重复编码固定输入越昂贵，缓存加稀疏激活和少步采样能共同控制在线成本；单卡约束从架构和数据组织起就参与设计，而非最后量化补救。",
+      "arxiv_submitted_at": "2026-11-05",
+      "announced_at": "2026-11-06"
+    },
+    {
+      "id": "vflash-visual-planning",
+      "title": "VFlash把完整空间计划并行解码",
+      "category": "机器人 / 视觉规划",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.08449",
+      "related_urls": [
+        "https://research.nvidia.com/labs/lpr/vflash/",
+        "https://github.com/NVlabs/Eagle/tree/main/Embodied"
+      ],
+      "event_time": "2026-11-06",
+      "published_at": "2026-11-06",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "5日提交、6日cs.RO/cs.CV公开，用轻量diffusion drafter一次产生整个框、2D/3D轨迹等primitive，按结构约束接收，不逐token复现AR目标。文字仍推测验证。",
+        "一条十路点轨迹的类型/维度/长度已由接口规定，几何坐标能联合预测；模型逐字一致不是空间准确的必要条件。目标VLM仍做一次前向更新缓存、给动作头提供状态，不能说完全删除目标模型。"
+      ],
+      "reason": "批量一的物理系统能在延迟预算内增加空间细节。MolmoSpaces管线Thor/Spark每步约5.1–5.2倍提速，主要来自解码。固定WAM动作架构时，原文本编码基线62.6%，VFlash视觉计划70.2%；AR计划对照61.0%，图像状态63.7%。",
+      "arxiv_submitted_at": "2026-11-05",
+      "announced_at": "2026-11-06"
+    },
+    {
+      "id": "biobasicsbench-wetlab",
+      "title": "BioBasicsBench检查日常实验数据能否被读对",
+      "category": "AI for Science / 实验数据评测",
+      "score": 8.5,
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
+      "related_urls": [],
+      "event_time": "2026-11-06",
+      "published_at": "2026-11-06",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "OpenAI与Ligo构建100项常规湿实验数据任务，7模型37设置×5次得到18500份结果。Astra xhigh平均66.7%可得分值、6.1Sol62.0%，指标是rubric部分得分，不是任务全成功率。官网原文通过web完整取得，终端403。",
+        "看原始凝胶/平板/显微图及仪器记录，专家rubric要求核对控制、识别信息不足。任务抽样bootstrap保留每任务五次输出成组；题型重叠不把各类数量相加。"
+      ],
+      "reason": "科研助手的可信度除了专业问答，还取决于能否拒绝不受原始观察支持的结论；视觉、计数、对照与文字推理应连起来审核。"
+    },
+    {
+      "id": "botpress-november-disclosure",
+      "title": "Botpress披露内部身份通向客户集成密钥的事故",
+      "category": "真实事故 / Agent平台安全",
+      "score": 8.5,
+      "url": "https://botpress.com/blog/security-incident-disclosure-november-2026",
+      "related_urls": [],
+      "event_time": "2026-10-12/2026-10-21",
+      "published_at": "2026-11-06T20:10:29.190Z",
+      "window_status": "within_window_verified",
+      "window_uncertain": false,
+      "key_claims": [
+        "6日首次披露10月入侵，不是6日新发生。身份验证代理校验漏洞伪造员工session，未见员工IdP账户失陷证据。21日07:44–08:23UTC读取16客户workspace bot配置；另一个集成初始化弱点让另2workspace各一项集成被改。",
+        "攻击者拿到跨多个客户workspace有管理员权限的员工APIcredential；读取配置可暴露AI供应商key、消息token与CRMsecret。内部身份权限与客户集成凭据通过管理工具连在一起。"
+      ],
+      "reason": "排查不能止于修登录代理，应追踪管理员能读到哪些客户配置、哪些第三方密钥需撤销和轮换；受影响主体与管理员权限要分开盘点。"
+    },
+    {
+      "id": "metr-anthropic-acceleration",
+      "title": "METR评估Anthropic研发提速与证据开放程度",
+      "category": "战略研究 / AI研发加速",
+      "score": 9,
+      "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+      "related_urls": [],
+      "event_time": "2026-11-05",
+      "published_at": "2026-11-05",
+      "window_status": "outside_window_explicit_supplement",
+      "window_uncertain": false,
+      "key_claims": [
+        "11月5日原报告，本期唯一超窗补看；11周、约2.5FTE查看Anthropic内部训练/评测/访谈。AECI增长率相对2025年10月前约1.9倍、95%CI1.5–2.8；主观综合判断约2倍，1.3–3也不惊讶，不把两类估计混写。",
+        "能力增长的观测趋势先与训练算力、人员、算法、数据等解释对照，再用访谈与自报辅助归因。模型辅助降低实现、实验与分析开销，增加能尝试的想法；当前主要仍是人类研发中的AI辅助。"
+      ],
+      "reason": "AI研发加速应逐段量度投入、产出、瓶颈与反事实；一个员工自报12倍速度不能直接变成实验室整体12倍进步。可验证题的速度趋势应与难测真实任务分开。"
+    }
+  ]
+}
