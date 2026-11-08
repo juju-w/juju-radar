@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "label": "Open WebUI 0.13.1",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.1",
+      "section": "Open WebUI把编码Agent接到真实电脑"
+    },
+    {
+      "label": "Tether桌面端",
+      "url": "https://github.com/open-webui/tether/tree/v0.1.11",
+      "section": "Open WebUI把编码Agent接到真实电脑"
+    },
+    {
+      "label": "用户报告的缓存问题",
+      "url": "https://github.com/open-webui/open-webui/issues/33852",
+      "section": "Open WebUI把编码Agent接到真实电脑"
+    },
+    {
+      "label": "相关源码",
+      "url": "https://github.com/open-webui/open-webui/blob/v0.13.1/backend/open_webui/utils/middleware.py",
+      "section": "Open WebUI把编码Agent接到真实电脑"
+    },
+    {
+      "label": "0.13.2",
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.2",
+      "section": "Open WebUI把编码Agent接到真实电脑"
+    },
+    {
+      "label": "许可",
+      "url": "https://github.com/open-webui/tether/blob/v0.1.11/LICENSE",
+      "section": "Open WebUI把编码Agent接到真实电脑"
+    },
+    {
+      "label": "11月6日的事故更新",
+      "url": "https://workos.com/security/bulletins/update-for-october-30th-2026-data-security-incident",
+      "section": "近期安全补看：WorkOS披露研究Agent误入生产系统"
+    }
+  ]
+}

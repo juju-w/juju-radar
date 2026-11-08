@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-09",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "openwebui-local-agents",
+      "title": "Open WebUI让编码Agent操作真实电脑",
+      "category": "Agent / 本地任务执行",
+      "score": 8.5,
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.1",
+      "related_urls": [
+        "https://github.com/open-webui/open-webui/releases/tag/v0.13.2",
+        "https://github.com/open-webui/tether/tree/v0.1.11",
+        "https://github.com/open-webui/tether/blob/v0.1.11/LICENSE",
+        "https://github.com/open-webui/open-webui/blob/v0.13.1/backend/open_webui/utils/middleware.py",
+        "https://github.com/open-webui/open-webui/issues/33852"
+      ],
+      "event_time": "2026-11-08T11:07:53Z",
+      "published_at": "2026-11-08T11:07:53Z",
+      "window_status": "within_window_verified",
+      "window_uncertain": false,
+      "key_claims": [
+        "0.13.1在8日11:07UTC发布，编码Agent在终端提供相应能力时进入模型列表，聊天中处理工具批准；Tether通过向外建立连接使自有电脑成为可访问终端。0.13.2同日11:53UTC修复HTTP局域网聊天加载等问题，不将修复再算一条新闻。",
+        "原生工具调用把自动记忆、技能和知识列表写入保存的hidden tool results，减少历史前缀改写造成的缓存失效。固定v0.13.1的middleware.py已核对相关分支，未部署或做账单复测。",
+        "Auto权限模式默认关闭，调用另行配置的审查模型，向评分API发送工具参数与最近消息，错误或无法审查时要求确认；不宣称模型审查是强隔离。"
+      ],
+      "reason": "同一入口连接已有编码Agent和实际文件/仓库，改变远程任务执行路径；缓存收益来自上下文组织而非新模型。不是普通外观或版本修补。"
+    },
+    {
+      "id": "workos-artex-incident",
+      "title": "近期安全补看：WorkOS披露研究Agent误入生产系统",
+      "category": "真实事故 / Agent执行边界",
+      "score": 9,
+      "url": "https://workos.com/security/bulletins/update-for-october-30th-2026-data-security-incident",
+      "related_urls": [],
+      "event_time": "2026-10-25/2026-10-30",
+      "published_at": "2026-11-06",
+      "window_status": "outside_window_explicit_supplement",
+      "window_uncertain": false,
+      "key_claims": [
+        "6日复盘将此前未授权访问归于安全研究者的ARTEX Agent，研究者提供请求/时间/痕迹，公司及独立取证方与日志匹配。25日最早访问，30日批量读取并在事后发现，不是8日新发生的泄漏。",
+        "公司列出遗留内部工具公网暴露、可猜测开发凭据、无限流与检测不足四个缺口；影响销售/支持数据及少量支持通信中的终端用户邮箱。"
+      ],
+      "reason": "此前事故的新归因揭示研究测试到真实第三方的可达边界；生产端认证、流控和监测的组合直接决定错误目标可被读取的规模，值得单独补看。"
+    }
+  ]
+}
