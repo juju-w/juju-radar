@@ -1,0 +1,374 @@
+{
+  "issue_date": "2026-11-10",
+  "papers": [
+    {
+      "id": "2611.08577",
+      "title": "Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation",
+      "url": "https://arxiv.org/abs/2611.08577",
+      "pdf_url": "https://arxiv.org/pdf/2611.08577",
+      "doi": "10.48550/arXiv.2611.08577",
+      "published_date": "2026-11-09",
+      "date_kind": "first_public",
+      "item_type": "preprint",
+      "authors": [
+        "Meituan Robotics Team",
+        "Caicheng Wang",
+        "Chen Zhao",
+        "Chengpeng Jin",
+        "Duo Xu",
+        "Fengjiao Chen",
+        "Guanglu Wan",
+        "Heqing Yang",
+        "Jia Wang",
+        "Jiacong Zhou",
+        "Jie Hu",
+        "Jiyuan Ru",
+        "Lingfeng Zhang",
+        "Linjiang Huang",
+        "Manyuan Zhang",
+        "Ningchu Liu",
+        "Shijie Zhou",
+        "Si Liu",
+        "Shuo Li",
+        "Tianyi Zhang",
+        "Xi Zhang",
+        "Xin Chen",
+        "Xuezhi Cao",
+        "Xunliang Cai",
+        "Yanbin Zeng",
+        "Yang Yang",
+        "Yang Yi",
+        "Yanli Tan",
+        "Yifu Xu",
+        "Yimeng Jia",
+        "Yuchen Tang",
+        "Yuchen Xie",
+        "Yuxiang Zheng",
+        "Zerwei Chng",
+        "Zilong Huang",
+        "Zipeng Ye",
+        "Ziyuan Qin",
+        "Ziqin Wang"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "Meituan Robotics Team"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Wang",
+          "firstName": "Caicheng"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhao",
+          "firstName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Jin",
+          "firstName": "Chengpeng"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Xu",
+          "firstName": "Duo"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Chen",
+          "firstName": "Fengjiao"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Wan",
+          "firstName": "Guanglu"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Yang",
+          "firstName": "Heqing"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Wang",
+          "firstName": "Jia"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhou",
+          "firstName": "Jiacong"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Hu",
+          "firstName": "Jie"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Ru",
+          "firstName": "Jiyuan"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhang",
+          "firstName": "Lingfeng"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Huang",
+          "firstName": "Linjiang"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhang",
+          "firstName": "Manyuan"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Liu",
+          "firstName": "Ningchu"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhou",
+          "firstName": "Shijie"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Liu",
+          "firstName": "Si"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Li",
+          "firstName": "Shuo"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhang",
+          "firstName": "Tianyi"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhang",
+          "firstName": "Xi"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Chen",
+          "firstName": "Xin"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Cao",
+          "firstName": "Xuezhi"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Cai",
+          "firstName": "Xunliang"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zeng",
+          "firstName": "Yanbin"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Yang",
+          "firstName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Yi",
+          "firstName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Tan",
+          "firstName": "Yanli"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Xu",
+          "firstName": "Yifu"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Jia",
+          "firstName": "Yimeng"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Tang",
+          "firstName": "Yuchen"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Xie",
+          "firstName": "Yuchen"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zheng",
+          "firstName": "Yuxiang"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Chng",
+          "firstName": "Zerwei"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Huang",
+          "firstName": "Zilong"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Ye",
+          "firstName": "Zipeng"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Qin",
+          "firstName": "Ziyuan"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Wang",
+          "firstName": "Ziqin"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人 / 交互纠错",
+        "待阅读"
+      ],
+      "note": "首次公开：2026-11-09；提交：2026-11-05。\n\nMR0首次公开报告给出Rollback采样及CFG-DAgger，将失败动作与纠正动作保留为两种条件。\n\n操作员回到失败前锚点，重新演示正确后续；共享流匹配网络学习正、负、无条件分支，推理向正例靠近并远离负例。\n\n困难接触任务可集中采集失败附近的有用轨迹；事件记忆规划避免每帧重新推理整个长任务。\n\n网线插接650条轨迹对照每策略30次，CFG成功70%对RECAP60%，90%是进度分；HG/RECAP/CFG是不同协议而非顺序三轮RL。\n\n本期判断：保留失败路径才让纠正说明该避开什么，只有成功演示会丢掉这部分训练信号。\n\n已核对主文相关方法、实验与局限；未独立复现。非补看。原始论文：https://arxiv.org/abs/2611.08577；本期资料页：https://www.asteronline.cn/juju-radar/2026-11-10/ 。AI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.09382",
+      "title": "Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations",
+      "url": "https://arxiv.org/abs/2611.09382",
+      "pdf_url": "https://arxiv.org/pdf/2611.09382",
+      "doi": "10.48550/arXiv.2611.09382",
+      "published_date": "2026-11-09",
+      "date_kind": "first_public",
+      "item_type": "preprint",
+      "authors": [
+        "Junru Hu",
+        "Cheng Tang",
+        "Wei Li",
+        "Hongze Zhu",
+        "Chun-Mei Feng",
+        "Qi Zhang",
+        "Yirong Chen",
+        "Ming Hu"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "lastName": "Hu",
+          "firstName": "Junru"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Tang",
+          "firstName": "Cheng"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Li",
+          "firstName": "Wei"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhu",
+          "firstName": "Hongze"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Feng",
+          "firstName": "Chun-Mei"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Zhang",
+          "firstName": "Qi"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Chen",
+          "firstName": "Yirong"
+        },
+        {
+          "creatorType": "author",
+          "lastName": "Hu",
+          "firstName": "Ming"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "开源论文 / 权重编辑",
+        "待阅读"
+      ],
+      "note": "首次公开：2026-11-09；提交：2026-11-06。\n\n新研究16次权重编辑搜索中6次保留原模型；最佳0.8B数学修改1023个BF16值，MATH500留出评估8.35%到37.80%。\n\nGPT6Astra通过持续Python及GPU工具读写张量、调用开发评测，局部下投影方向干预减少反复自我怀疑；无梯度但有搜索与验证。\n\n已有能力被局部行为缺陷阻塞时，小修改可释放能力；大规模参数改动未必产生更大收益。\n\n9B数学开发集上涨29.69个百分点，留出下降0.35；三次0.8B数学搜索收益差异大，跨任务不均；仓库根仅PDF，未复现。\n\n本期判断：最有希望的是诊断特定行为故障后做定向修复，不能据此将直接编辑权重视为稳定通用训练替代品。\n\n已核对主文相关方法、实验与局限；未独立复现。非补看。原始论文：https://arxiv.org/abs/2611.09382；本期资料页：https://www.asteronline.cn/juju-radar/2026-11-10/ 。AI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "claude-fable-mythos-52-system-card",
+      "title": "System Card: Claude Fable 5.2 & Claude Mythos 5.2",
+      "url": "https://www.anthropic.com/document/claude-fable-5-2-mythos-5-2-system-card",
+      "pdf_url": "https://www.anthropic.com/document/claude-fable-5-2-mythos-5-2-system-card",
+      "doi": "",
+      "published_date": "2026-11-09",
+      "date_kind": "first_public",
+      "item_type": "report",
+      "authors": [
+        "Anthropic"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "Anthropic"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "基础模型 / 多模态",
+        "待阅读"
+      ],
+      "note": "机构作者与标题已在PDF首页视觉核实。系统卡明确标2026-11-09；本轮只读执行摘要及部分能力/安全段落，不声称通读全部系统卡。\n\n5.2每百万token基础输入/输出8/40美元，相比5.1的10/50美元下降20%；电子设计出现由人类工程师组装验证的三种电路原型。\n\n训练阶段限制部分加速器内核优化和LLM架构研究，同时提升通用coding、科学与硬件任务；在线以更低单价和更快生成承接长任务。\n\n开发者可在相同token预算下降低费用；电路设计由文本建议走到物理原型验证，但工程师仍负责组装、测试与量产。\n\n快模式16/80美元另收费；生成速度不是端到端任务速度；三种原型不代表认证或长期可靠性；Mythos仍限制访问。\n\n非补看；作者报告，未独立实测。本期资料页：https://www.asteronline.cn/juju-radar/2026-11-10/ 。AI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "groot2-technical-report",
+      "title": "GR00T 2: Scaling Robot Foundation Models for Generalization, Dexterity, and Adaptation",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf",
+      "pdf_url": "https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf",
+      "doi": "",
+      "published_date": "2026-11-09",
+      "date_kind": "first_public",
+      "item_type": "report",
+      "authors": [
+        "NVIDIA"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "NVIDIA"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人 / 世界动作模型",
+        "待阅读"
+      ],
+      "note": "机构作者与标题已在PDF首页视觉核实。白皮书封面标2026年11月，9日CoRL公告链接作为本轮首次公开依据；视觉核对第6页Figure2，未通读全部附录。\n\nGR00T 2在目标Dexter机器人未训练过的50项任务上，零示范平均40%、一示范微调71%、五示范微调95%。\n\n未来视频和动作共享去噪模型，用人类视频、UMI和多机器人遥操作预训练，再用目标机器人少量演示LoRA微调。\n\n新机器人不必为每个任务从零采集大规模遥操作；单RTX5090约30分钟微调是作者报告的目标适配代价。\n\n任务可能已出现在人类或其他机器人数据；40/50曾完成不是80%试验成功率；未验证GR00T2权重实际已公开下载，未独立跑机器人。\n\n非补看；作者报告，未独立实测。本期资料页：https://www.asteronline.cn/juju-radar/2026-11-10/ 。AI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

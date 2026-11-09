@@ -1,0 +1,119 @@
+{
+  "sources": [
+    {
+      "label": "Claude Fable 5.2与Mythos 5.2",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "section": "Fable 5.2降价，电路设计走到实物验证"
+    },
+    {
+      "label": "API说明",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "section": "Fable 5.2降价，电路设计走到实物验证"
+    },
+    {
+      "label": "电子设计测试",
+      "url": "https://www.anthropic.com/research/claude-electronics-design",
+      "section": "Fable 5.2降价，电路设计走到实物验证"
+    },
+    {
+      "label": "系统卡",
+      "url": "https://www.anthropic.com/document/claude-fable-5-2-mythos-5-2-system-card",
+      "section": "Fable 5.2降价，电路设计走到实物验证"
+    },
+    {
+      "label": "GR00T 2",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-2",
+      "section": "GR00T 2：五次示范之后，还要做一次微调"
+    },
+    {
+      "label": "白皮书",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf",
+      "section": "GR00T 2：五次示范之后，还要做一次微调"
+    },
+    {
+      "label": "同批公告",
+      "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+      "section": "GR00T 2：五次示范之后，还要做一次微调"
+    },
+    {
+      "label": "Meituan-Robotics-0（MR0）",
+      "url": "https://arxiv.org/abs/2611.08577",
+      "section": "美团MR0把失败现场留在训练里"
+    },
+    {
+      "label": "官方仓库",
+      "url": "https://github.com/Meituan-Robotics/Meituan-Robotics-0/tree/opensource",
+      "section": "美团MR0把失败现场留在训练里"
+    },
+    {
+      "label": "Rollback纠错方法",
+      "url": "https://arxiv.org/html/2611.08577v1",
+      "section": "美团MR0把失败现场留在训练里"
+    },
+    {
+      "label": "TPU 8tx与TPU 8iMax",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/tpu-8tx-and-tpu-8i-max",
+      "section": "Google用现有TPU重新配置推理系统"
+    },
+    {
+      "label": "TPU Sync",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-tpu-sync-fast-kv-cache-and-weight-transfer-on-tpu",
+      "section": "Google用现有TPU重新配置推理系统"
+    },
+    {
+      "label": "Agent Compute",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive",
+      "section": "Google用现有TPU重新配置推理系统"
+    },
+    {
+      "label": "这篇新研究",
+      "url": "https://arxiv.org/abs/2611.09382",
+      "section": "权重编辑复查：小修复有效，通用方法还不稳定"
+    },
+    {
+      "label": "项目仓库",
+      "url": "https://github.com/WSP-Scope/WSP-Scope-Project",
+      "section": "权重编辑复查：小修复有效，通用方法还不稳定"
+    },
+    {
+      "label": "软银、Grab与PETROS签署联合开发协议",
+      "url": "https://group.softbank/en/news/press/20261109_0",
+      "section": "马来西亚算力协议，资本跟着客户里程碑投入"
+    },
+    {
+      "label": "GR00T人类视频数据",
+      "url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Human-1M-100K",
+      "section": "原始资料"
+    },
+    {
+      "label": "Isaac Lab 3.0版本说明",
+      "url": "https://github.com/isaac-sim/IsaacLab/releases/tag/v3.0.0",
+      "section": "原始资料"
+    },
+    {
+      "label": "MR0项目页",
+      "url": "https://meituan-robotics.github.io/Meituan-Robotics-0/",
+      "section": "原始资料"
+    },
+    {
+      "label": "模型入口",
+      "url": "https://huggingface.co/MeituanRobotics/Meituan-Robotics-0",
+      "section": "原始资料"
+    },
+    {
+      "label": "AMD主机配置公告",
+      "url": "https://newsroom.amd.com/news/amd-epyc-expands-leadership-foundation-ai/",
+      "section": "原始资料"
+    },
+    {
+      "label": "权重编辑论文全文",
+      "url": "https://arxiv.org/html/2611.09382v1",
+      "section": "原始资料"
+    },
+    {
+      "label": "研究项目页",
+      "url": "https://wsp-scope.github.io/",
+      "section": "原始资料"
+    }
+  ]
+}
