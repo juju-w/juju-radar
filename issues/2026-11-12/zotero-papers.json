@@ -1,0 +1,203 @@
+{
+  "issue_date": "2026-11-12",
+  "papers": [
+    {
+      "id": "alphagenome2-report",
+      "title": "AlphaGenome 2 predicts regulatory activity and variant effects across cell states",
+      "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/alphagenome-2.pdf",
+      "pdf_url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/alphagenome-2.pdf",
+      "doi": "",
+      "published_date": "2026-11-11",
+      "date_kind": "first_public",
+      "item_type": "report",
+      "authors": [
+        "Adam Gayoso",
+        "Anne Mottram",
+        "Alexander Karollus",
+        "Guido Novati",
+        "Pavol Drotár",
+        "John Reid",
+        "Laetitia Meng-Papaxanthos",
+        "Adam Kosiorek",
+        "Eirini Arvaniti",
+        "Vincent Dutordoir",
+        "Soham De",
+        "Tom Ward",
+        "Lai Hong Wong",
+        "Matteo Perino",
+        "Kyle Taylor",
+        "Jun Cheng",
+        "Natasha Latysheva",
+        "Joshua Pan",
+        "Dhavanthi Hariharan",
+        "Clare Bycroft",
+        "Lauren Nicolaisen",
+        "Demis Hassabis",
+        "Pushmeet Kohli",
+        "Žiga Avsec"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Adam",
+          "lastName": "Gayoso"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Anne",
+          "lastName": "Mottram"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Alexander",
+          "lastName": "Karollus"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guido",
+          "lastName": "Novati"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Pavol",
+          "lastName": "Drotár"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "John",
+          "lastName": "Reid"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Laetitia",
+          "lastName": "Meng-Papaxanthos"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Adam",
+          "lastName": "Kosiorek"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Eirini",
+          "lastName": "Arvaniti"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Vincent",
+          "lastName": "Dutordoir"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Soham",
+          "lastName": "De"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tom",
+          "lastName": "Ward"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lai Hong",
+          "lastName": "Wong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Matteo",
+          "lastName": "Perino"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kyle",
+          "lastName": "Taylor"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jun",
+          "lastName": "Cheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Natasha",
+          "lastName": "Latysheva"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Joshua",
+          "lastName": "Pan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dhavanthi",
+          "lastName": "Hariharan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Clare",
+          "lastName": "Bycroft"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lauren",
+          "lastName": "Nicolaisen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Demis",
+          "lastName": "Hassabis"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Pushmeet",
+          "lastName": "Kohli"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Žiga",
+          "lastName": "Avsec"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "AI for Science / 基因调控",
+        "待阅读"
+      ],
+      "note": "AlphaGenome 2把组织、细胞类型与状态作为条件，扩展到未见过的单细胞表达谱。\n\n条件从序列模型早期层注入；细胞编码器把表达谱映射到冻结的条件化序列骨干，而非每换细胞都重新训练整网。\n\n同一变异可按不同细胞状态排序，帮助选择优先湿实验；每个条件仍需独立前向计算。\n\nTenK10K上90%精确率下召回率16%到30%，不是总体准确率翻倍；稀有/疾病状态、远端调控和因果干预仍有缺口。\n\n基因预测开始回答变异在什么细胞状态下重要，但观测表达谱不自动带来因果解释。\n\n首次公开依据：11日官方公告及其报告链接；报告PDF未核实独立DOI。\n\n定向核对方法、关键结果与局限，未独立复现。非补看。本期资料页：https://www.asteronline.cn/juju-radar/2026-11-12/ 。AI辅助整理。",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.14210",
+      "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+      "url": "https://arxiv.org/abs/2611.14210",
+      "pdf_url": "https://arxiv.org/pdf/2611.14210",
+      "doi": "10.48550/arXiv.2611.14210",
+      "published_date": "2026-11-11",
+      "date_kind": "first_public",
+      "item_type": "preprint",
+      "authors": [
+        "Salloum, Hadi",
+        "Ali, Ammar"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Hadi",
+          "lastName": "Salloum"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ammar",
+          "lastName": "Ali"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "开源论文 / 权重编辑",
+        "待阅读"
+      ],
+      "note": "Tree-Ising将Qwen3.5-0.8B已知推理循环修复写成BF16稀疏离散优化。\n\n前向统计确定循环与结论方向，按输出行建立QUBO，用GPU模拟退火或模拟分岔选择翻转符号/二次幂缩放。\n\n已知故障和干预位置可被编成可复用配方；核心是目标构造与约束，而不是量子硬件。\n\n54.6%对51.7%是同协议MATH500@4平均正确率，不是pass@4；0.90美元固定执行复用了已有层选择和修复思路，不含前期发现成本。\n\n从一次成功的Agent诊断提炼优化配方有价值，尚不能证明自动发现任意故障或通用训练替代。\n\n首次公开依据：arXiv cs.LG 11日原始公告日期组；10日15:32:04UTC提交，HF推荐时间另存。\n\n定向核对方法、关键结果与局限，未独立复现。非补看。本期资料页：https://www.asteronline.cn/juju-radar/2026-11-12/ 。AI辅助整理。",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

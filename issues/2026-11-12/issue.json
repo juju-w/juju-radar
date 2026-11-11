@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-12",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "qwen4-code-preview",
+      "title": "Qwen4开始预览，Qwen Code开放1.0预览版",
+      "category": "基础模型 / Agent编程",
+      "score": 8.5,
+      "url": "https://help.aliyun.com/zh/model-studio/qwen4-max-preview",
+      "related_urls": [
+        "https://github.com/QwenLM/qwen-code/releases/tag/v1.0.0-preview",
+        "https://github.com/QwenLM/qwen-code/blob/v1.0.0-preview/README.md",
+        "https://docs.qwencloud.com/developer-guides/getting-started/latest-model"
+      ],
+      "event_time": "2026-11-11T10:00:00+08:00",
+      "published_at": "2026-11-11T10:00:00+08:00",
+      "window_status": "within_window_verified",
+      "window_uncertain": false,
+      "key_claims": [
+        "Qwen4-Max于11日10时开放限时预览，Qwen Code 1.0-preview同日发布。",
+        "模型支持图文视频输入与工具调用；编程工具整合Qwen与Qoder的执行框架，模型预算将思考和答案合并计算。",
+        "迁移现有工具时须重新检查输出预算、思考字段和会话恢复；模型接入与完整代码任务交付应分别测试。",
+        "预览通过Token Plan访问，无按量付费；版本25日24时退役。没有本轮独立能力基准或权重开放证据。"
+      ],
+      "reason": "本次可验证的新信号是接入与工具交付，不能把预览上线直接写成能力跃升。"
+    },
+    {
+      "id": "alphagenome2-cell-states",
+      "title": "AlphaGenome 2将DNA预测细化到细胞状态",
+      "category": "AI for Science / 基因调控",
+      "score": 9,
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "related_urls": [
+        "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/alphagenome-2.pdf"
+      ],
+      "event_time": "2026-11-11",
+      "published_at": "2026-11-11",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "AlphaGenome 2把组织、细胞类型与状态作为条件，扩展到未见过的单细胞表达谱。",
+        "条件从序列模型早期层注入；细胞编码器把表达谱映射到冻结的条件化序列骨干，而非每换细胞都重新训练整网。",
+        "同一变异可按不同细胞状态排序，帮助选择优先湿实验；每个条件仍需独立前向计算。",
+        "TenK10K上90%精确率下召回率16%到30%，不是总体准确率翻倍；稀有/疾病状态、远端调控和因果干预仍有缺口。"
+      ],
+      "reason": "基因预测开始回答变异在什么细胞状态下重要，但观测表达谱不自动带来因果解释。"
+    },
+    {
+      "id": "tree-ising-repair",
+      "title": "Tree-Ising把已知权重修复变成离散优化",
+      "category": "开源论文 / 权重编辑",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.14210",
+      "related_urls": [
+        "https://arxiv.org/html/2611.14210v1",
+        "https://github.com/TheQuantumGOAT/Tree-Ising"
+      ],
+      "event_time": "2026-11-11",
+      "published_at": "2026-11-11",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "Tree-Ising将Qwen3.5-0.8B已知推理循环修复写成BF16稀疏离散优化。",
+        "前向统计确定循环与结论方向，按输出行建立QUBO，用GPU模拟退火或模拟分岔选择翻转符号/二次幂缩放。",
+        "已知故障和干预位置可被编成可复用配方；核心是目标构造与约束，而不是量子硬件。",
+        "54.6%对51.7%是同协议MATH500@4平均正确率，不是pass@4；0.90美元固定执行复用了已有层选择和修复思路，不含前期发现成本。"
+      ],
+      "reason": "从一次成功的Agent诊断提炼优化配方有价值，尚不能证明自动发现任意故障或通用训练替代。"
+    },
+    {
+      "id": "ntt-physics-world-model",
+      "title": "NTT让机器人先预测动作后果，再筛选执行方案",
+      "category": "机器人 / 物理世界模型",
+      "score": 7.5,
+      "url": "https://group.ntt/en/newsrelease/2026/11/11/261111b.html",
+      "related_urls": [],
+      "event_time": "2026-11-11",
+      "published_at": "2026-11-11",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "NTT公布带物理控制适配器的世界模型，并报告小型机器人货架装载实验。",
+        "先估计位置、姿态、速度、质量等物理量，再用运动方程约束视频预测，对已有策略提出的候选动作评分。",
+        "把落物/倒塌等后果预估放到执行前，可以保留现有控制器并增设动作筛选。",
+        "73.1%到92.3%为公司特定实验，未公开足够样本量与置信区间；机场行李场景仍为拟开展验证，延迟与遮挡鲁棒性未独立测试。"
+      ],
+      "reason": "安全收益要由预测错误率与筛选延迟验证，视觉更逼真并不等于实际安全认证。"
+    },
+    {
+      "id": "deepl-aure-prosody",
+      "title": "DeepL Aure持续跟随原声语气生成译音",
+      "category": "视觉视频语音 / 语音翻译",
+      "score": 7.5,
+      "url": "https://www.deepl.com/en/press-release/aure-voice-ai-model",
+      "related_urls": [],
+      "event_time": "2026-11-11",
+      "published_at": "2026-11-11",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "Aure语音模型已用于DeepL实时会议、面对面与API翻译服务。",
+        "持续同时接收译文与源语音，分离声音身份、韵律和内容，跟随重音、速度和情绪变化。",
+        "长对话中的语气变化不再仅依赖开头静态声纹样本，适合需要表达意图的实时跨语言交流。",
+        "首批八种语言不含中文；公告没有量化端到端延迟与独立对照，嘈杂/重叠说话下的可靠性仍须实测。"
+      ],
+      "reason": "语音翻译开始更细地保留表达方式，使用时仍要把译意准确和声线相似分开验收。"
+    }
+  ]
+}

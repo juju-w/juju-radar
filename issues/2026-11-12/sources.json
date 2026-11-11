@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "label": "Qwen4-Max Preview",
+      "url": "https://help.aliyun.com/zh/model-studio/qwen4-max-preview",
+      "section": "Qwen4开始预览，编程工具也有了新入口"
+    },
+    {
+      "label": "接口文档",
+      "url": "https://docs.qwencloud.com/developer-guides/getting-started/latest-model",
+      "section": "Qwen4开始预览，编程工具也有了新入口"
+    },
+    {
+      "label": "Qwen Code 1.0预览版",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v1.0.0-preview",
+      "section": "Qwen4开始预览，编程工具也有了新入口"
+    },
+    {
+      "label": "固定版本README",
+      "url": "https://github.com/QwenLM/qwen-code/blob/v1.0.0-preview/README.md",
+      "section": "Qwen4开始预览，编程工具也有了新入口"
+    },
+    {
+      "label": "AlphaGenome 2",
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "section": "AlphaGenome 2：同一段DNA，要放到具体细胞里看"
+    },
+    {
+      "label": "技术报告",
+      "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/alphagenome-2.pdf",
+      "section": "AlphaGenome 2：同一段DNA，要放到具体细胞里看"
+    },
+    {
+      "label": "Tree-Ising",
+      "url": "https://arxiv.org/abs/2611.14210",
+      "section": "Tree-Ising把权重修复写成优化配方"
+    },
+    {
+      "label": "方法正文",
+      "url": "https://arxiv.org/html/2611.14210v1",
+      "section": "Tree-Ising把权重修复写成优化配方"
+    },
+    {
+      "label": "代码仓库",
+      "url": "https://github.com/TheQuantumGOAT/Tree-Ising",
+      "section": "Tree-Ising把权重修复写成优化配方"
+    },
+    {
+      "label": "NTT的新方案",
+      "url": "https://group.ntt/en/newsrelease/2026/11/11/261111b.html",
+      "section": "NTT让机器人先看动作后果，再决定执行"
+    },
+    {
+      "label": "DeepL Aure",
+      "url": "https://www.deepl.com/en/press-release/aure-voice-ai-model",
+      "section": "DeepL Aure让译音持续跟随语气变化"
+    }
+  ]
+}
