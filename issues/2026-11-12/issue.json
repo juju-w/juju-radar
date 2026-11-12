@@ -105,6 +105,44 @@
         "首批八种语言不含中文；公告没有量化端到端延迟与独立对照，嘈杂/重叠说话下的可靠性仍须实测。"
       ],
       "reason": "语音翻译开始更细地保留表达方式，使用时仍要把译意准确和声线相似分开验收。"
+    },
+    {
+      "id": "gemini-carbon-availability",
+      "title": "Gemini 4 Carbon扩大开放，长任务增加验证预算",
+      "category": "基础模型 / Agent编程",
+      "score": 9,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "related_urls": [],
+      "event_time": "2026-11-10",
+      "published_at": "2026-11-10",
+      "window_status": "explicit_user_requested_supplement",
+      "window_uncertain": false,
+      "key_claims": [
+        "11月10日从网络安全受限计划扩大至付费开发者与企业，并向Ultra用户逐步开放。",
+        "长任务用更多token探索和验证；Antigravity预览/swarm把深推理角色与较轻模型分工。",
+        "开发者可按角色分配模型，并比较完整任务费用；入门价每百万输入2美元、输出10美元，11月30日后4/20美元。",
+        "价格是公开访问版限时价；更长推理可能抵消单价优势；排行榜与演示未独立复现。"
+      ],
+      "reason": "新信号是访问范围和任务组织方式改变，不把两周前模型受限发布重新包装成首次发布。"
+    },
+    {
+      "id": "gemini-robotics-25",
+      "title": "Gemini Robotics 2.5把工作流推理与动作控制分层",
+      "category": "机器人 / 具身操作",
+      "score": 9,
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "related_urls": [],
+      "event_time": "2026-11-10",
+      "published_at": "2026-11-10",
+      "window_status": "explicit_user_requested_supplement",
+      "window_uncertain": false,
+      "key_claims": [
+        "11月10日发布并向机器人合作伙伴推出；奔驰两地生产线Apollo2配料试点报告96%成功率。",
+        "ER追踪工作流，2.5控制手臂与手部；Argon生成仿真练习，结合真实示范并分析失败。",
+        "可将具体零件分拣排序工作拆成任务管理与连续操作；合成练习扩大场景覆盖。",
+        "96%为特定概念验证非整厂通用率；公告缺完整样本和停机/人工接管成本；安全拒绝基准不是物理事故率。"
+      ],
+      "reason": "训练数据扩展与分层执行一起推进，但部署收益仍取决于具体工位失败后的恢复成本。"
     }
   ]
 }

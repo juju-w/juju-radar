@@ -54,6 +54,16 @@
       "label": "DeepL Aure",
       "url": "https://www.deepl.com/en/press-release/aure-voice-ai-model",
       "section": "DeepL Aure让译音持续跟随语气变化"
+    },
+    {
+      "label": "Gemini 4 Carbon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "section": "Gemini 4 Carbon扩大开放，长任务增加验证预算"
+    },
+    {
+      "label": "Gemini Robotics 2.5",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "section": "Gemini Robotics 2.5把工作流与动作控制分层"
     }
   ]
 }
