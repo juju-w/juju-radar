@@ -431,6 +431,10 @@
     "title_zh": "补丁间隙：修复公开后，攻击能否先于更新完成",
     "summary": "Epoch隔离实验中GLM 5.3攻破六个Firefox版本，约1000美元是搭好环境后的每版本边际成本；总研究投入逾10万美元，Chrome未成功。关键附加漏洞已修补，按29日原报告补看。"
   },
+  "gemini4-hydrogen-model-card": {
+    "title_zh": "Gemini 4 Hydrogen：执行模型与上下文限制",
+    "summary": "官方模型卡说明Hydrogen由Carbon适配，输入输出共用1M窗口；同步默认64K输出，后台长解码另有上限。性能与安全结论仍属机构自报。"
+  },
   "google-verid-2026-10-16": {
     "title_zh": "VERID：让实验Agent读取和校验现场状态",
     "summary": "持续数字孪生、模拟校验及视频日志连接Agent和实验机器人。三组染料与水案例支持挡错与恢复；分子发现原型仍待整合。"

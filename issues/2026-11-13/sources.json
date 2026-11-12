@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "label": "官方发布",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "section": "Gemini新增Hydrogen，让模型按任务分工"
+    },
+    {
+      "label": "模型卡",
+      "url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-4-Hydrogen-Model-Card.pdf",
+      "section": "Gemini新增Hydrogen，让模型按任务分工"
+    },
+    {
+      "label": "NVIDIA公告",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx",
+      "section": "NVIDIA宣布管理层交接"
+    },
+    {
+      "label": "SEC 8-K文件",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+      "section": "NVIDIA宣布管理层交接"
+    },
+    {
+      "label": "Anthropic研究原文",
+      "url": "https://safeguards.anthropic.com/2026/automated-red-teaming/",
+      "section": "Anvil把更强模型用于测试安全防线"
+    },
+    {
+      "label": "Google官方说明",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "section": "补充：Gemini把小判断做成专用接口"
+    }
+  ]
+}

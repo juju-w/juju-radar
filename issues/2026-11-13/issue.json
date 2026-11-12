@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-13",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "gemini-hydrogen",
+      "title": "Gemini 4 Hydrogen加入多模型执行流程",
+      "category": "基础模型 / Agent编程",
+      "score": 9,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "related_urls": [
+        "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-4-Hydrogen-Model-Card.pdf"
+      ],
+      "event_time": "2026-11-12T18:00:00+00:00",
+      "published_at": "2026-11-12T18:00:00+00:00",
+      "window_status": "within_window_verified",
+      "window_uncertain": false,
+      "key_claims": [
+        "Hydrogen正式发布，Antigravity新增同会话动态选模型的Orchestrator。",
+        "Carbon承担复杂判断，Hydrogen执行与验证，路由按任务阶段分配模型成本。",
+        "开发团队可把架构决策与批量代码执行分开；官方Terminal-Bench 4.0上近Carbon成功率、配额少24%、耗时少19%。",
+        "官方测量未独立复现，配额不是美元；模型卡说明1M输入输出共用，同步默认64K、后台长解码最高1M。"
+      ],
+      "reason": "任务分工能否降低总成本，取决于切换、传递上下文和返工开销是否小于省下的执行成本。"
+    },
+    {
+      "id": "nvidia-transition",
+      "title": "NVIDIA宣布CEO与董事会领导交接",
+      "category": "公司战略 / 算力产业",
+      "score": 9,
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx",
+      "related_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+      ],
+      "event_time": "2026-11-11",
+      "published_at": "2026-11-12",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "NVIDIA于12日公告黄仁勋辞去总裁、CEO及董事职务，CFO Kress兼任临时CEO。",
+        "经营管理与董事会监督分别交由临时CEO和新任董事长Harvey Jones承担，正式继任者仍待遴选。",
+        "芯片客户须关注既有交付承诺与路线图执行，17日财报是下一公开核对节点。",
+        "董事会称业务及路线图预计不中断，这是一项承诺而非已验证结果；人事变动不能推出GPU供给下降。"
+      ],
+      "reason": "算力供应链的关键人风险转为管理交接执行问题，应以交付与路线图验证而非股价推断技术变化。"
+    },
+    {
+      "id": "anthropic-anvil",
+      "title": "Anvil用更强内部模型加速安全测试",
+      "category": "安全研究 / 自动红队",
+      "score": 8.5,
+      "url": "https://safeguards.anthropic.com/2026/automated-red-teaming/",
+      "related_urls": [],
+      "event_time": "2026-11-12",
+      "published_at": "2026-11-12",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "Anvil在生物安全、网络安全和反蒸馏防护测试中超过外聘红队表现。",
+        "多个独立调查会话并行迭代，利用内部分类器反馈搜索防护弱点，再将失败样本用于评估和修补。",
+        "内部安全测试可在部署前更快找到弱点，反蒸馏静态评估漏过比例由31.5%降至0.4%。",
+        "攻击模型关闭自身防护并享有内部反馈；与外部人类的条件不对称，生物和网络分类器未在本文实验中采用Anvil闭环训练。"
+      ],
+      "reason": "安全评估的攻击者能力必须随被测模型升级，过去人工测不破的防线不能沿用为未来安全证据。"
+    },
+    {
+      "id": "gemini-decisions",
+      "title": "Gemini Decisions以一次前向计算处理多项判断",
+      "category": "Agent工具 / 多模态判断",
+      "score": 8,
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "related_urls": [],
+      "event_time": "2026-11-11T18:00:00+00:00",
+      "published_at": "2026-11-11T18:00:00+00:00",
+      "window_status": "outside_window_explicit_supplement",
+      "window_uncertain": false,
+      "key_claims": [
+        "11日发布Gemini Decision 1，单次前向计算给封闭选项打分，输入跨文本图像音视频PDF。",
+        "共享上下文只处理一次，多个问题共用输入，避免逐token输出解释。",
+        "工具路由、相关性筛选和分类可以单独调用判定接口，低置信度分流给强模型或人。",
+        "150–250ms对应官方最多16K上下文等条件，不保证256K/1000问同延迟；置信度不等于事实概率，候选集合不能漏掉拒绝或未知。"
+      ],
+      "reason": "高频小判断可从生成流程抽离，但选项设计和回退规则决定了错误会被拦住还是更快传播。"
+    }
+  ]
+}

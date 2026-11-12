@@ -1,0 +1,32 @@
+{
+  "issue_date": "2026-11-13",
+  "papers": [
+    {
+      "id": "gemini4-hydrogen-model-card",
+      "title": "Gemini 4 Hydrogen — Model Card",
+      "url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-4-Hydrogen-Model-Card.pdf",
+      "pdf_url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-4-Hydrogen-Model-Card.pdf",
+      "doi": "",
+      "published_date": "2026-11",
+      "date_kind": "published",
+      "item_type": "report",
+      "authors": [
+        "Google DeepMind"
+      ],
+      "creators": [
+        {
+          "name": "Google DeepMind",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "模型卡",
+        "Agent",
+        "待阅读"
+      ],
+      "evidence_status": "primary_verified",
+      "note": "Google DeepMind的Hydrogen模型卡，核对其由Carbon适配而来、输入输出共用1M窗口、同步默认64K输出和后台长解码上限。模型定位为快速执行，必须在真实工作流核算路由与返工成本。\n\n模型卡为机构自报，发布日期只有2026年11月；日报日期不是报告精确发布日期。没有独立性能复现。已定向阅读模型信息与安全限制，不宣称全面审计。\n\n本期资料页：https://www.asteronline.cn/juju-radar/2026-11-13/ 。AI辅助整理。"
+    }
+  ]
+}
