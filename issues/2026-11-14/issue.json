@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-14",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "tm-4bit",
+      "title": "4-bit训练把计算与通信一起压缩",
+      "category": "训练系统 / 低精度计算",
+      "score": 9,
+      "url": "https://thinkingmachines.ai/blog/end-to-end-4-bit-training/",
+      "related_urls": [],
+      "event_time": "2026-11-13",
+      "published_at": "2026-11-13",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "Inkling 2 Small将低精度配方贯穿预训练、SFT与RL，官方报告相对MXFP8预训练快8%、RL快20%。",
+        "MoE前向NVFP4、反向MXFP8；已量化值转置后随机舍入保持期望一致，专家通信另用低精度和Hadamard变换。",
+        "计算提速后通信会成为瓶颈，量化与内核融合必须一起设计，不能按GPU峰值推算整项训练收益。",
+        "末尾六分之一层仍用MXFP8；预训练约损失2%计算效率，GB300特定系统自报，未独立复现。"
+      ],
+      "reason": "低精度的收益来自误差、通信和内核共同控制，位数下降不会按比例变成训练提速。"
+    },
+    {
+      "id": "deepseek-app",
+      "title": "DeepSeek开放应用侧搜索与文件能力",
+      "category": "Agent工具 / 应用开发",
+      "score": 8.5,
+      "url": "https://api-docs.deepseek.com/news/news261113",
+      "related_urls": [
+        "https://api-docs.deepseek.com/guides/build_a_chatbot",
+        "https://github.com/deepseek-ai/chat-demo"
+      ],
+      "event_time": "2026-11-13",
+      "published_at": "2026-11-13",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "DeepSeek于13日开放完整应用侧API，模型接口可使用服务端搜索、文件和URL阅读。",
+        "模型与内置工具在服务端往返执行，客户端展示并原样传回内容块，减少自行编排检索链路。",
+        "应用开发者可减少工具接线，但工具收费与多次模型推理都须进入整轮成本统计。",
+        "属于接口能力发布而非新模型权重；启用部分内置能力会忽略temperature等参数，max_tokens不是整轮总预算。"
+      ],
+      "reason": "把工具执行交给服务端降低集成成本，也使成本与采样控制转为整轮会话管理问题。"
+    },
+    {
+      "id": "jev-teacher",
+      "title": "Jev不擅长执行，也可能擅长教",
+      "category": "Agent训练 / 过程监督",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.17167",
+      "related_urls": [
+        "https://github.com/ZJU-REAL/decision-agents"
+      ],
+      "event_time": "2026-11-13",
+      "published_at": "2026-11-13",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "同一决策模型作为执行者、事后评判者和训练教师，表现明显不同。",
+        "回看完整轨迹后问每一步是否有助目标，把组内居中的步骤分加入GRPO终局奖励优势。",
+        "Qwen2.5-1.5B在ALFWorld成功率72.8%到82.9%，WebShop56.8%到71.4%，教师仅用于训练。",
+        "仅两种文本交互环境；问最终是否成功无法区分步骤贡献，不能直接推出真实网页或新闻筛选能力。"
+      ],
+      "reason": "执行需要预判后果，事后教学可以利用已发生后果；角色与问题设计决定监督有没有信息。",
+      "announced_at": "2026-11-13"
+    },
+    {
+      "id": "foam",
+      "title": "FOAM削减SOAP的额外开销",
+      "category": "训练算法 / 优化器",
+      "score": 8,
+      "url": "https://arxiv.org/abs/2611.16905",
+      "related_urls": [
+        "https://github.com/naver-ai/foam"
+      ],
+      "event_time": "2026-11-13",
+      "published_at": "2026-11-13",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "FOAM用单侧预条件与行列分解保留接近SOAP的优化效果。",
+        "只保留输入侧曲率因子，省掉输出侧特征分解；密集二阶矩改用行列统计近似。",
+        "760M实验达到SOAP质量区间用约51%的时间，优化器状态约减半，便于权衡收敛与系统开销。",
+        "达到AdamW目标损失10.53小时对10.55小时，不能写成比AdamW快一倍；代码仓库仍标内部审核待发布。"
+      ],
+      "reason": "优化器要按同一目标损失比较总耗时，步数更少可能被每步额外计算抵消。",
+      "announced_at": "2026-11-13"
+    },
+    {
+      "id": "justrua",
+      "title": "JustRUA拆解机器人控制流程",
+      "category": "机器人 / 具身智能",
+      "score": 8,
+      "url": "https://arxiv.org/abs/2611.16009",
+      "related_urls": [
+        "https://github.com/ZefanW/JustRUA",
+        "https://zefanw.github.io/JustRUA"
+      ],
+      "event_time": "2026-11-13",
+      "published_at": "2026-11-13",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "固定模型和运动规划器，通过拆解控制流程识别历史、反馈与几何信息的收益。",
+        "保留整段历史，每次最多执行20个控制步再观察；补充夹爪实测位置、RGB预测深度和代码坐标计算。",
+        "111回合覆盖42任务的仿真子集，综合得分29.7到50.3；更及时的状态反馈有助修正执行偏差。",
+        "50.3为允许部分得分的综合分而非成功率；最后方案移除100次决策上限，预算不完全一致且非真机。"
+      ],
+      "reason": "机器人系统的反馈间隔和可观察状态会影响模型发挥，不能把整套控制流程的收益全归于模型。",
+      "announced_at": "2026-11-13"
+    },
+    {
+      "id": "cram",
+      "title": "CRAM用经典能量模型检验推理基准",
+      "category": "开源论文 / 推理评测",
+      "score": 8,
+      "url": "https://arxiv.org/abs/2611.17309",
+      "related_urls": [
+        "https://github.com/Prefrontal-AI/CRAM",
+        "https://energy-based-reasoners.github.io/"
+      ],
+      "event_time": "2026-11-13",
+      "published_at": "2026-11-13",
+      "window_status": "date_only_window_uncertain",
+      "window_uncertain": true,
+      "key_claims": [
+        "可学习的经典成对能量模型在数独和迷宫任务中达到极高解题率，训练耗时远低于循环神经模型。",
+        "学习解答中的变量约束代价，推理固定题目条件、搜索低能量解，并利用能量阈值停止。",
+        "提示这些结构化基准可能更奖励合适的约束表示，而非通用推理架构的可扩展性。",
+        "42/132毫秒是作者训练计时而非单题推理；CRAM取首轮后七次中位数，循环基线包含冷启动编译，比较口径不对称。"
+      ],
+      "reason": "当手工写出的约束也能解满分，漂亮的神经推理成绩须和简单算法基线一起解释。",
+      "announced_at": "2026-11-13"
+    }
+  ]
+}

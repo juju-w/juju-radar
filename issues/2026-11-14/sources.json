@@ -1,0 +1,74 @@
+{
+  "sources": [
+    {
+      "label": "技术博客",
+      "url": "https://thinkingmachines.ai/blog/end-to-end-4-bit-training/",
+      "section": "4-bit训练：算得更快以后，数据传输成了瓶颈"
+    },
+    {
+      "label": "官方发布",
+      "url": "https://api-docs.deepseek.com/news/news261113",
+      "section": "DeepSeek把搜索、文件阅读接进应用API"
+    },
+    {
+      "label": "接入指南",
+      "url": "https://api-docs.deepseek.com/guides/build_a_chatbot",
+      "section": "DeepSeek把搜索、文件阅读接进应用API"
+    },
+    {
+      "label": "聊天示例",
+      "url": "https://github.com/deepseek-ai/chat-demo",
+      "section": "DeepSeek把搜索、文件阅读接进应用API"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.17167",
+      "section": "Jev执行不好，为什么还能当好老师？"
+    },
+    {
+      "label": "代码仓库",
+      "url": "https://github.com/ZJU-REAL/decision-agents",
+      "section": "Jev执行不好，为什么还能当好老师？"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.16905",
+      "section": "FOAM让SOAP省下开销，别误读成全面跑赢AdamW"
+    },
+    {
+      "label": "代码发布状态",
+      "url": "https://github.com/naver-ai/foam",
+      "section": "FOAM让SOAP省下开销，别误读成全面跑赢AdamW"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.16009",
+      "section": "JustRUA：先让机器人及时看见自己做了什么"
+    },
+    {
+      "label": "策略代码",
+      "url": "https://github.com/ZefanW/JustRUA",
+      "section": "JustRUA：先让机器人及时看见自己做了什么"
+    },
+    {
+      "label": "项目与回放",
+      "url": "https://zefanw.github.io/JustRUA",
+      "section": "JustRUA：先让机器人及时看见自己做了什么"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.17309",
+      "section": "经典能量模型，给“推理基准”换一把尺子"
+    },
+    {
+      "label": "代码",
+      "url": "https://github.com/Prefrontal-AI/CRAM",
+      "section": "经典能量模型，给“推理基准”换一把尺子"
+    },
+    {
+      "label": "项目页",
+      "url": "https://energy-based-reasoners.github.io/",
+      "section": "经典能量模型，给“推理基准”换一把尺子"
+    }
+  ]
+}

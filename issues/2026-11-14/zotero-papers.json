@@ -1,0 +1,263 @@
+{
+  "issue_date": "2026-11-14",
+  "papers": [
+    {
+      "id": "2611.17167",
+      "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+      "url": "https://arxiv.org/abs/2611.17167",
+      "pdf_url": "https://arxiv.org/pdf/2611.17167",
+      "doi": "10.48550/arXiv.2611.17167",
+      "published_date": "2026-11-12",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Haochen Liu",
+        "Qianhao Zhu",
+        "Zixuan Wang",
+        "Dingming Li",
+        "Tongbo Chen",
+        "Peng Qiu",
+        "Yingqi Qu",
+        "Weiming Lu",
+        "Jun Xiao",
+        "Yongliang Shen"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Haochen",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qianhao",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zixuan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dingming",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tongbo",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peng",
+          "lastName": "Qiu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yingqi",
+          "lastName": "Qu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weiming",
+          "lastName": "Lu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jun",
+          "lastName": "Xiao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yongliang",
+          "lastName": "Shen"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "Agent训练 / 过程监督",
+        "待阅读"
+      ],
+      "note": "同一决策模型作为执行者、事后评判者和训练教师，表现明显不同。\n\n回看完整轨迹后问每一步是否有助目标，把组内居中的步骤分加入GRPO终局奖励优势。\n\nQwen2.5-1.5B在ALFWorld成功率72.8%到82.9%，WebShop56.8%到71.4%，教师仅用于训练。\n\n仅两种文本交互环境；问最终是否成功无法区分步骤贡献，不能直接推出真实网页或新闻筛选能力。\n\n入选理由（8.5/10）：执行需要预判后果，事后教学可以利用已发生后果；角色与问题设计决定监督有没有信息。\n\n提交日期：2026-11-12；arXiv公开列表日期11月13日，公开小时未知。非补看，未独立复现实验。AI辅助整理。\n原始论文：https://arxiv.org/abs/2611.17167\n相关资料：https://github.com/ZJU-REAL/decision-agents\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-14/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.16905",
+      "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
+      "url": "https://arxiv.org/abs/2611.16905",
+      "pdf_url": "https://arxiv.org/pdf/2611.16905",
+      "doi": "10.48550/arXiv.2611.16905",
+      "published_date": "2026-11-12",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Jaemyung Yu",
+        "Byeongho Heo",
+        "Sangdoo Yun",
+        "Dongyoon Han"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Jaemyung",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Byeongho",
+          "lastName": "Heo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sangdoo",
+          "lastName": "Yun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dongyoon",
+          "lastName": "Han"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "训练算法 / 优化器",
+        "待阅读"
+      ],
+      "note": "FOAM用单侧预条件与行列分解保留接近SOAP的优化效果。\n\n只保留输入侧曲率因子，省掉输出侧特征分解；密集二阶矩改用行列统计近似。\n\n760M实验达到SOAP质量区间用约51%的时间，优化器状态约减半，便于权衡收敛与系统开销。\n\n达到AdamW目标损失10.53小时对10.55小时，不能写成比AdamW快一倍；代码仓库仍标内部审核待发布。\n\n入选理由（8/10）：优化器要按同一目标损失比较总耗时，步数更少可能被每步额外计算抵消。\n\n提交日期：2026-11-12；arXiv公开列表日期11月13日，公开小时未知。非补看，未独立复现实验。AI辅助整理。\n原始论文：https://arxiv.org/abs/2611.16905\n相关资料：https://github.com/naver-ai/foam\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-14/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.16009",
+      "title": "JustRUA: A Controlled Study of GPT-6 Robot-Use Agents",
+      "url": "https://arxiv.org/abs/2611.16009",
+      "pdf_url": "https://arxiv.org/pdf/2611.16009",
+      "doi": "10.48550/arXiv.2611.16009",
+      "published_date": "2026-11-11",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Zefan Wang",
+        "Yufan Dang",
+        "Xuanwei Shi",
+        "Mingqi Gao",
+        "Cheng Yin",
+        "SikYuen Tam",
+        "Hanyu Liu",
+        "Yasheng Wang",
+        "Yaxi Lu",
+        "Songyang Zhang",
+        "Xin Cong",
+        "Yuan Yao"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Zefan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yufan",
+          "lastName": "Dang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuanwei",
+          "lastName": "Shi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingqi",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Cheng",
+          "lastName": "Yin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "SikYuen",
+          "lastName": "Tam"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hanyu",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yasheng",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yaxi",
+          "lastName": "Lu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Songyang",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xin",
+          "lastName": "Cong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuan",
+          "lastName": "Yao"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人 / 具身智能",
+        "待阅读"
+      ],
+      "note": "固定模型和运动规划器，通过拆解控制流程识别历史、反馈与几何信息的收益。\n\n保留整段历史，每次最多执行20个控制步再观察；补充夹爪实测位置、RGB预测深度和代码坐标计算。\n\n111回合覆盖42任务的仿真子集，综合得分29.7到50.3；更及时的状态反馈有助修正执行偏差。\n\n50.3为允许部分得分的综合分而非成功率；最后方案移除100次决策上限，预算不完全一致且非真机。\n\n入选理由（8/10）：机器人系统的反馈间隔和可观察状态会影响模型发挥，不能把整套控制流程的收益全归于模型。\n\n提交日期：2026-11-11；arXiv公开列表日期11月13日，公开小时未知。非补看，未独立复现实验。AI辅助整理。\n原始论文：https://arxiv.org/abs/2611.16009\n相关资料：https://github.com/ZefanW/JustRUA；https://zefanw.github.io/JustRUA\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-14/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.17309",
+      "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+      "url": "https://arxiv.org/abs/2611.17309",
+      "pdf_url": "https://arxiv.org/pdf/2611.17309",
+      "doi": "10.48550/arXiv.2611.17309",
+      "published_date": "2026-11-12",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Benjamin Hoover",
+        "Hugh Blayney",
+        "James C. R. Whittington"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Benjamin",
+          "lastName": "Hoover"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hugh",
+          "lastName": "Blayney"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "James C. R.",
+          "lastName": "Whittington"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "开源论文 / 推理评测",
+        "待阅读"
+      ],
+      "note": "可学习的经典成对能量模型在数独和迷宫任务中达到极高解题率，训练耗时远低于循环神经模型。\n\n学习解答中的变量约束代价，推理固定题目条件、搜索低能量解，并利用能量阈值停止。\n\n提示这些结构化基准可能更奖励合适的约束表示，而非通用推理架构的可扩展性。\n\n42/132毫秒是作者训练计时而非单题推理；CRAM取首轮后七次中位数，循环基线包含冷启动编译，比较口径不对称。\n\n入选理由（8/10）：当手工写出的约束也能解满分，漂亮的神经推理成绩须和简单算法基线一起解释。\n\n提交日期：2026-11-12；arXiv公开列表日期11月13日，公开小时未知。非补看，未独立复现实验。AI辅助整理。\n原始论文：https://arxiv.org/abs/2611.17309\n相关资料：https://github.com/Prefrontal-AI/CRAM；https://energy-based-reasoners.github.io/\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-14/",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
