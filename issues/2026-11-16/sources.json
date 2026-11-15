@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "label": "维护者发布说明",
+      "url": "https://discourse.openrobotics.org/t/mocap4ros2-2-0-0-released-one-interface-for-optitrack-vicon-qualisys-and-gazebo-new-tools-and-website/59801",
+      "section": "动捕设备换一家，标定和评测工具可以继续用"
+    },
+    {
+      "label": "架构说明",
+      "url": "https://mocap4ros2-project.github.io/2.0.0/concepts/architecture.html",
+      "section": "动捕设备换一家，标定和评测工具可以继续用"
+    },
+    {
+      "label": "机器人评测指南",
+      "url": "https://mocap4ros2-project.github.io/2.0.0/guides/robot_groundtruth.html",
+      "section": "动捕设备换一家，标定和评测工具可以继续用"
+    },
+    {
+      "label": "MaaS发布记录",
+      "url": "https://support.huaweicloud.com/bulletin-maas/bulletin-maas-0001.html",
+      "section": "盘古2.1上线，重点是鸿蒙代码与昇腾算子"
+    },
+    {
+      "label": "华为伙伴信息页",
+      "url": "https://www.huaweicloud.com/partners/support/news/latestnews/20261106.html",
+      "section": "盘古2.1上线，重点是鸿蒙代码与昇腾算子"
+    }
+  ]
+}

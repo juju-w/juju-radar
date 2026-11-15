@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-16",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "mocap2",
+      "title": "MOCAP4ROS2 2.0统一动捕接口与机器人评测流程",
+      "category": "机器人 / 研究工具",
+      "url": "https://discourse.openrobotics.org/t/mocap4ros2-2-0-0-released-one-interface-for-optitrack-vicon-qualisys-and-gazebo-new-tools-and-website/59801",
+      "event_time": "2026-11-15T08:19:17.633Z",
+      "published_at": "2026-11-15T08:19:17.633Z",
+      "key_claims": [
+        "多种动捕系统共用接口与工具；Gazebo可模拟测试",
+        "同帧话题共享capture stamp与frame_number",
+        "ground truth丢失跟踪不外推；标定和时间同步仍需用户完成",
+        "二进制待各ROS发行版下次sync，当前可源码构建"
+      ],
+      "reason": "大版本重构同时涵盖接口、时间戳、标定和轨迹误差工具；能具体解释实验室集成成本如何下降，非模型能力跃迁。",
+      "window_uncertain": false,
+      "window_status": "within_window",
+      "related_urls": [
+        "https://mocap4ros2-project.github.io/2.0.0/concepts/architecture.html",
+        "https://mocap4ros2-project.github.io/2.0.0/guides/robot_groundtruth.html"
+      ],
+      "score": 7.5
+    },
+    {
+      "id": "pangu21",
+      "title": "openPangu-2.1-Pro上线MaaS，面向鸿蒙与昇腾开发",
+      "category": "Agent工具 / 代码开发",
+      "url": "https://support.huaweicloud.com/bulletin-maas/bulletin-maas-0001.html",
+      "event_time": "2026-11-15",
+      "published_at": "2026-11-15",
+      "key_claims": [
+        "版本20261115；贵阳一预置服务；512K上下文",
+        "新增版本记录列出前缀缓存和思维链；2.0已有512K",
+        "11月6日华为伙伴页预告重点ArkTS代码及昇腾算子流程"
+      ],
+      "reason": "预告已转为实际服务版本记录；专门开发生态是观察价值，未核实到独立效率评测，不写重大能力跃迁。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "related_urls": [
+        "https://www.huaweicloud.com/partners/support/news/latestnews/20261106.html"
+      ],
+      "score": 7
+    }
+  ]
+}
