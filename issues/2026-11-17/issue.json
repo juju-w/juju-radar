@@ -4,7 +4,7 @@
   "sources": [
     {
       "id": "qwen4",
-      "title": "Qwen4-Max正式发布，减少单次激活与任务输出",
+      "title": "Qwen4-Max正式发布，减少激活计算与token用量",
       "category": "基础模型 / 多模态",
       "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max?_p_lc=1",
       "event_time": "2026-11-16",
@@ -12,7 +12,7 @@
       "key_claims": [
         "2.4T总参数、71B激活；Work360高推理档比3.8少35%token、任务成本约降60%。"
       ],
-      "reason": "同样2.4T总参数并不意味着同样推理开销，71B激活和更短任务轨迹分别影响计算与账单。",
+      "reason": "同样2.4T总参数并不意味着同样推理开销，71B激活和更低token用量分别影响计算与账单。",
       "window_uncertain": true,
       "window_status": "date_only_window_uncertain",
       "related_urls": [
