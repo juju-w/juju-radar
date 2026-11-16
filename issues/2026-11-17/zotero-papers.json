@@ -1,0 +1,131 @@
+{
+  "issue_date": "2026-11-17",
+  "papers": [
+    {
+      "id": "2611.18482",
+      "title": "MMFlash: Faster Speculative Decoding for Vision-Language Models",
+      "url": "https://arxiv.org/abs/2611.18482",
+      "pdf_url": "https://arxiv.org/pdf/2611.18482",
+      "doi": "10.48550/arXiv.2611.18482",
+      "published_date": "2026-11-13",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Feng, Sicheng",
+        "Chen, Zigeng",
+        "Wang, Song",
+        "Fang, Gongfan",
+        "Wang, Xinchao"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Sicheng",
+          "lastName": "Feng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zigeng",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Song",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Gongfan",
+          "lastName": "Fang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinchao",
+          "lastName": "Wang"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "推理效率",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。视觉依赖最高四分位token接受率22%，最低46%；视觉加权训练改善推测解码。\n\n比较有图无图目标分布识别视觉依赖，将训练权重给依赖图像且预测困难的token，目标模型继续验证。多模态服务可优先减少草稿被拒绝造成的无效计算，长视频用稀疏草稿上下文控制成本。\n\n单H200、SGLang、主实验并发1且关闭thinking；高并发加速收窄，速度不是端到端服务SLA。\n\n13日提交，16日arXiv公告；本期非补看。原文：https://arxiv.org/abs/2611.18482\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-17/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.17619",
+      "title": "TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real",
+      "url": "https://arxiv.org/abs/2611.17619",
+      "pdf_url": "https://arxiv.org/pdf/2611.17619",
+      "doi": "10.48550/arXiv.2611.17619",
+      "published_date": "2026-11-13",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Han, Huiwen",
+        "Chen, Nuo",
+        "Zeng, Ziyao",
+        "Li, Dayou",
+        "Wang, Hao",
+        "Rahmati, Amir Hossein",
+        "Qian, Xiaoning",
+        "Liu, Bangya",
+        "Fan, Zhiwen"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Huiwen",
+          "lastName": "Han"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Nuo",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ziyao",
+          "lastName": "Zeng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dayou",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hao",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Amir Hossein",
+          "lastName": "Rahmati"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoning",
+          "lastName": "Qian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bangya",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhiwen",
+          "lastName": "Fan"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人触觉",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。880触点手套将真实触觉引入MuJoCo；杯子实验握力比从0.31或1.55校准到0.99。\n\n视频只能观察手指停在表面的位置，触觉补足继续施力程度，再在模拟中改变质量摩擦扩充数据。机器人数据团队可以把一次触觉采集扩成带力标签的成功与失败示范，补充视频不能直接观测的信号。\n\n策略只在模拟中开环测试，杯子任务及小留出集；未做真实机器人迁移，不能写成机器人成功率。\n\n13日提交，16日arXiv公告；本期非补看。原文：https://arxiv.org/abs/2611.17619\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-17/",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

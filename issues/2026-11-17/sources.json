@@ -1,0 +1,74 @@
+{
+  "sources": [
+    {
+      "label": "阿里正式发布说明",
+      "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max?_p_lc=1",
+      "section": "Qwen4-Max正式上线，同样总参数不等于同样开销"
+    },
+    {
+      "label": "预览版与正式版说明",
+      "url": "https://www.alibabacloud.com/help/zh/model-studio/qwen4-max-preview",
+      "section": "Qwen4-Max正式上线，同样总参数不等于同样开销"
+    },
+    {
+      "label": "腾讯发布说明",
+      "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+      "section": "Hy4 flash把办公成本拆到缓存与输出长度"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.18482",
+      "section": "MMFlash：草稿模型最需要补的是“看图的词”"
+    },
+    {
+      "label": "实验全文",
+      "url": "https://arxiv.org/html/2611.18482v1",
+      "section": "MMFlash：草稿模型最需要补的是“看图的词”"
+    },
+    {
+      "label": "代码与模型说明",
+      "url": "https://github.com/fscdc/MMFlash",
+      "section": "MMFlash：草稿模型最需要补的是“看图的词”"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.17619",
+      "section": "TouchTwin：手指停在哪里，不代表用了多大力"
+    },
+    {
+      "label": "方法与局限",
+      "url": "https://arxiv.org/html/2611.17619v1",
+      "section": "TouchTwin：手指停在哪里，不代表用了多大力"
+    },
+    {
+      "label": "OpenAI发布",
+      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams/",
+      "section": "医疗Agent先连接软件之间的断点"
+    },
+    {
+      "label": "评测项目",
+      "url": "https://som-shahlab.github.io/health-admin-bench-website/",
+      "section": "医疗Agent先连接软件之间的断点"
+    },
+    {
+      "label": "CVS Agent Kit",
+      "url": "https://github.com/cvs-health/cua-agent-kit",
+      "section": "医疗Agent先连接软件之间的断点"
+    },
+    {
+      "label": "加州司法部公告",
+      "url": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over",
+      "section": "加州起诉OpenAI，争议进入测试责任层面"
+    },
+    {
+      "label": "诉状",
+      "url": "https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf",
+      "section": "加州起诉OpenAI，争议进入测试责任层面"
+    },
+    {
+      "label": "公司回应报道",
+      "url": "https://www.washingtonpost.com/technology/2026/11/16/california-sues-openai-arguing-it-tested-models-without-adequate-safeguards/",
+      "section": "加州起诉OpenAI，争议进入测试责任层面"
+    }
+  ]
+}

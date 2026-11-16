@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-17",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "qwen4",
+      "title": "Qwen4-Max正式发布，减少单次激活与任务输出",
+      "category": "基础模型 / 多模态",
+      "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max?_p_lc=1",
+      "event_time": "2026-11-16",
+      "published_at": "2026-11-16",
+      "key_claims": [
+        "2.4T总参数、71B激活；Work360高推理档比3.8少35%token、任务成本约降60%。"
+      ],
+      "reason": "同样2.4T总参数并不意味着同样推理开销，71B激活和更短任务轨迹分别影响计算与账单。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "related_urls": [
+        "https://www.alibabacloud.com/help/zh/model-studio/qwen4-max-preview"
+      ],
+      "score": 8.5
+    },
+    {
+      "id": "hy4flash",
+      "title": "Hy4 flash用短输出与小缓存降低办公成本",
+      "category": "基础模型 / 推理效率",
+      "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+      "event_time": "2026-11-16",
+      "published_at": "2026-11-16",
+      "key_claims": [
+        "224B含64B Engram、12B激活、1M上下文；目录价输入0.5输出2元每百万token。"
+      ],
+      "reason": "缩短完成任务的输出和压低缓存占用同时省钱，低价模型的优势应按返工后的整单成本检验。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "related_urls": [],
+      "score": 8
+    },
+    {
+      "id": "mmflash",
+      "title": "MMFlash针对看图难词训练草稿模型",
+      "category": "芯片算力推理 / 开源论文",
+      "url": "https://arxiv.org/abs/2611.18482",
+      "event_time": "2026-11-16",
+      "published_at": "2026-11-16",
+      "key_claims": [
+        "视觉依赖最高四分位token接受率22%，最低46%；视觉加权训练改善推测解码。"
+      ],
+      "reason": "草稿模型的难点集中在真正需要看图的词，增加普通文本训练未必能补上这种拒绝率差距。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "related_urls": [
+        "https://arxiv.org/html/2611.18482v1",
+        "https://github.com/fscdc/MMFlash"
+      ],
+      "score": 8
+    },
+    {
+      "id": "touchtwin",
+      "title": "TouchTwin把接触力带回机器人模拟示范",
+      "category": "机器人 / 开源论文",
+      "url": "https://arxiv.org/abs/2611.17619",
+      "event_time": "2026-11-16",
+      "published_at": "2026-11-16",
+      "key_claims": [
+        "880触点手套将真实触觉引入MuJoCo；杯子实验握力比从0.31或1.55校准到0.99。"
+      ],
+      "reason": "仿真示范的多样性必须建立在可观测的接触力上，外形动作相似仍可能生成完全不同的握力。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "related_urls": [
+        "https://arxiv.org/html/2611.17619v1"
+      ],
+      "score": 7.5
+    },
+    {
+      "id": "healthcua",
+      "title": "医疗电脑操作Agent推进跨系统行政流程",
+      "category": "Agent工具 / 医疗工作流",
+      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams/",
+      "event_time": "2026-11-16",
+      "published_at": "2026-11-16",
+      "key_claims": [
+        "OpenAI公布医疗行政电脑操作评测；CVS公开用于浏览器和Windows工作流的Agent Kit。"
+      ],
+      "reason": "医疗行政自动化的入口是现有软件间的断点，减少搬运步骤仍需逐步审计与提交前的人员判断。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "related_urls": [
+        "https://som-shahlab.github.io/health-admin-bench-website/",
+        "https://github.com/cvs-health/cua-agent-kit"
+      ],
+      "score": 8
+    },
+    {
+      "id": "california-oai",
+      "title": "加州就AI测试网络事件起诉OpenAI",
+      "category": "真实事故 / 公司治理",
+      "url": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over",
+      "event_time": "2026-11-16",
+      "published_at": "2026-11-16",
+      "key_claims": [
+        "16日在旧金山高等法院提诉；指控测试隔离与监督不足及误导公众，基于公共妨害与不正当竞争法。"
+      ],
+      "reason": "Agent接入真实网络后的风险会进入实验室责任范围，测试隔离和监督能力可能影响继续开发的成本。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "related_urls": [
+        "https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf",
+        "https://www.washingtonpost.com/technology/2026/11/16/california-sues-openai-arguing-it-tested-models-without-adequate-safeguards/"
+      ],
+      "score": 8.5
+    }
+  ]
+}
