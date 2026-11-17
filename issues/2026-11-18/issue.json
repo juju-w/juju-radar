@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-18",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "gpt62",
+      "title": "GPT-6.2发布，专业任务同时压缩输出与单价",
+      "category": "基础模型 / 多模态",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "event_time": "2026-11-17",
+      "published_at": "2026-11-17",
+      "key_claims": [
+        "Astra与Sol进入Work、Codex和API；Astra在GDPval v2提高6.2个百分点，输出token减少22%。"
+      ],
+      "reason": "少输出与降单价可以叠加省钱，但若遗漏阻塞导致误报完成，节省的调用费仍可能转化为人工返工。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "related_urls": [
+        "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/internal-deployment-of-gpt-6.2-astra-and-gpt-6.2-sol"
+      ],
+      "score": 9
+    },
+    {
+      "id": "k2horizon",
+      "title": "K2-Horizon把训练中间过程一起开放",
+      "category": "开源论文 / 基础模型",
+      "url": "https://arxiv.org/abs/2611.21003",
+      "event_time": "2026-11-17",
+      "published_at": "2026-11-17",
+      "key_claims": [
+        "六种模型覆盖0.9B至375B-A23B，报告列出中间检查点、数据、日志和训练代码。"
+      ],
+      "reason": "开放训练轨迹的价值在于可对照的过程；解码提速则必须把单用户速度与系统吞吐分开核算。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "related_urls": [
+        "https://ifm.ai/k2/",
+        "https://huggingface.co/IFM/K2-Horizon-7B"
+      ],
+      "score": 8.5
+    },
+    {
+      "id": "scalevla",
+      "title": "ScaleVLA让机器人直接使用大模型特征",
+      "category": "机器人 / 开源论文",
+      "url": "https://arxiv.org/abs/2611.21607",
+      "event_time": "2026-11-17",
+      "published_at": "2026-11-17",
+      "key_claims": [
+        "552B底座冻结后接动作头，四张H200上RoboCasa动作块中位延迟216毫秒，实机插头任务参考布局9/10成功。"
+      ],
+      "reason": "大模型可作为动作策略的特征来源；省去文字生成能降低反应时延，但四张H200和小规模实机样本仍是部署门槛。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "related_urls": [
+        "https://galaxygeneralrobotics.github.io/scalevla/"
+      ],
+      "score": 8.5
+    },
+    {
+      "id": "swecowork",
+      "title": "SWE-CoWork发现完整需求仍不能保证交付",
+      "category": "Agent / Coding评测",
+      "url": "https://arxiv.org/abs/2611.20218",
+      "event_time": "2026-11-17",
+      "published_at": "2026-11-17",
+      "key_claims": [
+        "101项仓库任务加26位模拟同事；GPT-6 Astra完整需求下F2P升15.93点，整项通过率仍为7.92%。"
+      ],
+      "reason": "补全提示里的需求能提高局部完成度，但如果实现与验收没有逐条追踪，整项任务仍会卡在遗漏处。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "related_urls": [
+        "https://github.com/TokenWave-AI/swe-cowork-bench"
+      ],
+      "score": 8
+    },
+    {
+      "id": "calpha",
+      "title": "Calpha把蛋白质结构头接到语言模型内部",
+      "category": "AI for Science / 生物医药",
+      "url": "https://arxiv.org/abs/2611.20986",
+      "event_time": "2026-11-17",
+      "published_at": "2026-11-17",
+      "key_claims": [
+        "Qwen3.5-9B的残基隐藏状态驱动SimpleFold结构头，可输出单链蛋白坐标，但尚未证明语言推理改善折叠。"
+      ],
+      "reason": "把结构生成接进语言模型不自动带来推理收益；目前证明的是信息能穿过这一接口，尚未证明科学预测变好。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "related_urls": [
+        "https://github.com/yliust/Calpha"
+      ],
+      "score": 7.5
+    }
+  ]
+}

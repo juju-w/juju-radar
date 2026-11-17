@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "label": "OpenAI发布说明",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "section": "GPT-6.2发布：更少输出，再叠加更低单价"
+    },
+    {
+      "label": "部署与安全说明",
+      "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/internal-deployment-of-gpt-6.2-astra-and-gpt-6.2-sol",
+      "section": "GPT-6.2发布：更少输出，再叠加更低单价"
+    },
+    {
+      "label": "技术报告",
+      "url": "https://arxiv.org/abs/2611.21003",
+      "section": "K2-Horizon：开放最终权重，也开放训练轨迹"
+    },
+    {
+      "label": "项目与工件索引",
+      "url": "https://ifm.ai/k2/",
+      "section": "K2-Horizon：开放最终权重，也开放训练轨迹"
+    },
+    {
+      "label": "7B模型",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B",
+      "section": "K2-Horizon：开放最终权重，也开放训练轨迹"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.21607",
+      "section": "ScaleVLA：让大模型特征直接变成动作"
+    },
+    {
+      "label": "项目演示",
+      "url": "https://galaxygeneralrobotics.github.io/scalevla/",
+      "section": "ScaleVLA：让大模型特征直接变成动作"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.20218",
+      "section": "SWE-CoWork：需求给全了，任务也未必做完"
+    },
+    {
+      "label": "评测仓库",
+      "url": "https://github.com/TokenWave-AI/swe-cowork-bench",
+      "section": "SWE-CoWork：需求给全了，任务也未必做完"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.20986",
+      "section": "Calpha：坐标能从语言模型内部产生，收益仍待证明"
+    },
+    {
+      "label": "代码与说明",
+      "url": "https://github.com/yliust/Calpha",
+      "section": "Calpha：坐标能从语言模型内部产生，收益仍待证明"
+    }
+  ]
+}

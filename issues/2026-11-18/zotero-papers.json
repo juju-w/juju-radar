@@ -1,0 +1,935 @@
+{
+  "issue_date": "2026-11-18",
+  "papers": [
+    {
+      "id": "2611.21003",
+      "title": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
+      "url": "https://arxiv.org/abs/2611.21003",
+      "pdf_url": "https://arxiv.org/pdf/2611.21003",
+      "doi": "10.48550/arXiv.2611.21003",
+      "published_date": "2026-11-16",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "K2 Team",
+        "Liu, Zhengzhong",
+        "Li, Haonan",
+        "Ma, Xuezhe",
+        "Moreno, Alexander",
+        "Sahoo, Subham Sekhar",
+        "Srivastava, Rupesh Kumar",
+        "Yurochkin, Mikhail",
+        "Abdine, Hadi",
+        "Akhauri, Yash",
+        "Babu, Adharsh",
+        "Bellamy, David",
+        "Bhandari, Jalaj",
+        "Bouch, Dani",
+        "Bouhedja, Wail",
+        "Cao, Weili",
+        "Chamma, Ahmad",
+        "Chang, Po-Chun",
+        "Chen, Junlin",
+        "Chen, Lingjie",
+        "Cheng, Zhoujun",
+        "Chickering, Kyle",
+        "Diandaru, Ryandito",
+        "Dufraisse, Evan",
+        "Dwivedi, Chaitanya",
+        "Bouardi, Bilal El",
+        "Fan, Desai",
+        "Fan, Richard",
+        "Gao, Chengqian",
+        "Genadi, Rifo Ahmad",
+        "Geuter, Jonathan",
+        "Guille-Escuret, Charles",
+        "Guo, Willis",
+        "Gupta, Dhawal",
+        "Han, Seungwook",
+        "Han, Tingxu",
+        "Hao, Shibo",
+        "Hassan, Besher",
+        "He, Guowei",
+        "Hee, Ming Shan",
+        "Hestness, Joel",
+        "Huang, Yu",
+        "Huang, Yuan",
+        "Jia, Haolong",
+        "Jin, Linghao",
+        "Kim, Junu",
+        "Kong, Lingjing",
+        "Laiyk, Nurkhan",
+        "Leban, Andrej",
+        "Ma, Liqun",
+        "Maggs, John",
+        "Mohamed, Amr",
+        "Narra, Mukhesh",
+        "Pangarkar, Omkar",
+        "Pareja, Aldo",
+        "Pham, Khiem",
+        "Pimpalkhute, Varad",
+        "Ranjan, Nikhil",
+        "Rebrova, Elizaveta",
+        "Ren, Hector",
+        "Rohatgi, Shaurya",
+        "Shang, Guokan",
+        "She, Jianshu",
+        "Shi, Chufan",
+        "Singh, Aaryamonvikram",
+        "Soboleva, Daria",
+        "Sreenivasan, Kartik",
+        "Sun, Suqi",
+        "Sun, Yuekai",
+        "Tan, Bowen",
+        "Tang, Liping",
+        "Tang, Shengkun",
+        "Tao, Muzi",
+        "Tupakula, Mallikarjuna",
+        "Villmow, Micah",
+        "Wang, Hongyi",
+        "Wang, Huijuan",
+        "Wang, Renxi",
+        "Wang, Yongxin",
+        "Wang, Yuqi",
+        "Wang, Zhenting",
+        "Wen, Shicheng",
+        "Wu, Yingquan",
+        "Xie, Anze",
+        "Xing, Andrew",
+        "Yang, Matthew",
+        "Yu, Shuanghai",
+        "Zaman, Kerem",
+        "Zhai, Zenan",
+        "Zhan, Hongli",
+        "Zhang, Xuezhou",
+        "Zheng, Anshun Asher",
+        "Zhou, Zhe",
+        "Zhuang, Richard",
+        "Xing, Eric P."
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "K2",
+          "lastName": "Team"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhengzhong",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haonan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuezhe",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Alexander",
+          "lastName": "Moreno"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Subham Sekhar",
+          "lastName": "Sahoo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rupesh Kumar",
+          "lastName": "Srivastava"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mikhail",
+          "lastName": "Yurochkin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hadi",
+          "lastName": "Abdine"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yash",
+          "lastName": "Akhauri"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Adharsh",
+          "lastName": "Babu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "David",
+          "lastName": "Bellamy"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jalaj",
+          "lastName": "Bhandari"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dani",
+          "lastName": "Bouch"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wail",
+          "lastName": "Bouhedja"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weili",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ahmad",
+          "lastName": "Chamma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Po-Chun",
+          "lastName": "Chang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junlin",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lingjie",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhoujun",
+          "lastName": "Cheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kyle",
+          "lastName": "Chickering"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ryandito",
+          "lastName": "Diandaru"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Evan",
+          "lastName": "Dufraisse"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chaitanya",
+          "lastName": "Dwivedi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bilal El",
+          "lastName": "Bouardi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Desai",
+          "lastName": "Fan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Richard",
+          "lastName": "Fan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chengqian",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rifo Ahmad",
+          "lastName": "Genadi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jonathan",
+          "lastName": "Geuter"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Charles",
+          "lastName": "Guille-Escuret"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Willis",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dhawal",
+          "lastName": "Gupta"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Seungwook",
+          "lastName": "Han"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tingxu",
+          "lastName": "Han"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shibo",
+          "lastName": "Hao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Besher",
+          "lastName": "Hassan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guowei",
+          "lastName": "He"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ming Shan",
+          "lastName": "Hee"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Joel",
+          "lastName": "Hestness"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yu",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuan",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haolong",
+          "lastName": "Jia"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Linghao",
+          "lastName": "Jin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junu",
+          "lastName": "Kim"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lingjing",
+          "lastName": "Kong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Nurkhan",
+          "lastName": "Laiyk"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Andrej",
+          "lastName": "Leban"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Liqun",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "John",
+          "lastName": "Maggs"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Amr",
+          "lastName": "Mohamed"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mukhesh",
+          "lastName": "Narra"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Omkar",
+          "lastName": "Pangarkar"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Aldo",
+          "lastName": "Pareja"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Khiem",
+          "lastName": "Pham"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Varad",
+          "lastName": "Pimpalkhute"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Nikhil",
+          "lastName": "Ranjan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Elizaveta",
+          "lastName": "Rebrova"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hector",
+          "lastName": "Ren"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shaurya",
+          "lastName": "Rohatgi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guokan",
+          "lastName": "Shang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jianshu",
+          "lastName": "She"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chufan",
+          "lastName": "Shi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Aaryamonvikram",
+          "lastName": "Singh"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Daria",
+          "lastName": "Soboleva"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kartik",
+          "lastName": "Sreenivasan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Suqi",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuekai",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bowen",
+          "lastName": "Tan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Liping",
+          "lastName": "Tang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shengkun",
+          "lastName": "Tang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Muzi",
+          "lastName": "Tao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mallikarjuna",
+          "lastName": "Tupakula"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Micah",
+          "lastName": "Villmow"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hongyi",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huijuan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Renxi",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yongxin",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuqi",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenting",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shicheng",
+          "lastName": "Wen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yingquan",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Anze",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Andrew",
+          "lastName": "Xing"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Matthew",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuanghai",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kerem",
+          "lastName": "Zaman"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zenan",
+          "lastName": "Zhai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hongli",
+          "lastName": "Zhan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuezhou",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Anshun Asher",
+          "lastName": "Zheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhe",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Richard",
+          "lastName": "Zhuang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Eric P.",
+          "lastName": "Xing"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "开源论文",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。六种模型覆盖0.9B至375B-A23B，报告列出中间检查点、数据、日志和训练代码。\n\n多种规模共享预训练配方，让研究者比较规模与稀疏性的影响；Uno在同一模型内增加并行预测适配器。开放中间状态允许追查某项能力在哪个训练阶段出现，减少只拿最终权重猜测训练效果的局限。\n\n未逐个下载全部工件；Uno的2.2倍为7B单请求条件，批量64约1.5倍，不能推广到旗舰模型。\n\n2026-11-16提交，17日arXiv公告；非补看。原文：https://arxiv.org/abs/2611.21003\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-18/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.21607",
+      "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
+      "url": "https://arxiv.org/abs/2611.21607",
+      "pdf_url": "https://arxiv.org/pdf/2611.21607",
+      "doi": "10.48550/arXiv.2611.21607",
+      "published_date": "2026-11-16",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Yu, Ruixi",
+        "Liu, Dairu",
+        "Chen, Xuchuan",
+        "Qi, Zekun",
+        "Li, Zekai",
+        "Cao, Zhuo",
+        "Niu, Luyang",
+        "Zhang, Yingsheng",
+        "Liang, Sikai",
+        "Fan, Ke",
+        "Wang, He",
+        "Yi, Li"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Ruixi",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dairu",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuchuan",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zekun",
+          "lastName": "Qi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zekai",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhuo",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Luyang",
+          "lastName": "Niu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yingsheng",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sikai",
+          "lastName": "Liang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ke",
+          "lastName": "Fan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "He",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Li",
+          "lastName": "Yi"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。552B底座冻结后接动作头，四张H200上RoboCasa动作块中位延迟216毫秒，实机插头任务参考布局9/10成功。\n\n只读取底座因果编码器的内部表示，不执行解码器或生成思维文字；训练动作头直接输出连续动作块。机器人团队可以复用大规模预训练的视觉空间知识，以更少示范训练策略，而无需每个控制步骤先写推理文本。\n\n实机参考布局仅10次、扰动布局15次；实机动作块延迟384毫秒，不能把模拟时延当成实机反馈速度。\n\n2026-11-16提交，17日arXiv公告；非补看。原文：https://arxiv.org/abs/2611.21607\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-18/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.20218",
+      "title": "SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations",
+      "url": "https://arxiv.org/abs/2611.20218",
+      "pdf_url": "https://arxiv.org/pdf/2611.20218",
+      "doi": "10.48550/arXiv.2611.20218",
+      "published_date": "2026-11-15",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Lei, Xinping",
+        "Liu, Minghao",
+        "Zhu, Ruijie",
+        "Hu, Xiaohui",
+        "Li, Xingqiao",
+        "Zhang, Ao",
+        "Chai, Wenhao",
+        "Li, Han",
+        "Wang, Tao",
+        "Zhang, Jingyuan",
+        "Zhao, Enduo",
+        "Shi, Yunfeng",
+        "Liang, Yiming",
+        "Yang, Zetao",
+        "Wang, Xingjian",
+        "Yao, Yifan",
+        "Ma, Xinkai",
+        "Li, Yingru",
+        "Yang, Tianhan",
+        "Zhou, Huan",
+        "Shi, Weiran",
+        "Yan, Shen",
+        "Liu, Jiaheng",
+        "Huang, Stephen",
+        "Cheung, Eli",
+        "Xuan, Weihao"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Xinping",
+          "lastName": "Lei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Minghao",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruijie",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaohui",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xingqiao",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ao",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenhao",
+          "lastName": "Chai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Han",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tao",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingyuan",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Enduo",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yunfeng",
+          "lastName": "Shi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yiming",
+          "lastName": "Liang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zetao",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xingjian",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yifan",
+          "lastName": "Yao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinkai",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yingru",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianhan",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huan",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weiran",
+          "lastName": "Shi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shen",
+          "lastName": "Yan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaheng",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Stephen",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Eli",
+          "lastName": "Cheung"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weihao",
+          "lastName": "Xuan"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "Agent",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。101项仓库任务加26位模拟同事；GPT-6 Astra完整需求下F2P升15.93点，整项通过率仍为7.92%。\n\n需求分散在同事与记录中，评测分别检查新增行为与旧功能；信息获取、实现和最终声明存在连续断点。团队应把每条需求与实现位置、测试证据和未完成状态关联，不能用总测试通过比例替代整项交付。\n\n模拟组织不等同真实团队；各模型执行框架不同，未评测刚发布的GPT-6.2，不能据此判断新版本效果。\n\n2026-11-15提交，17日arXiv公告；非补看。原文：https://arxiv.org/abs/2611.20218\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-18/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.20986",
+      "title": "Calpha: Toward Native Biomolecular Intelligence in a General-Purpose Language Model",
+      "url": "https://arxiv.org/abs/2611.20986",
+      "pdf_url": "https://arxiv.org/pdf/2611.20986",
+      "doi": "10.48550/arXiv.2611.20986",
+      "published_date": "2026-11-16",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Liu, Yong",
+        "Shi, Zhanpeng",
+        "Lin, Peicong",
+        "Zhong, Zhenyi",
+        "Dang, Yizhou",
+        "Wu, Wendi",
+        "Li, Haoling",
+        "Zheng, Shuangjia"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yong",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhanpeng",
+          "lastName": "Shi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peicong",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenyi",
+          "lastName": "Zhong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yizhou",
+          "lastName": "Dang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wendi",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haoling",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuangjia",
+          "lastName": "Zheng"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "AI for Science",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。Qwen3.5-9B的残基隐藏状态驱动SimpleFold结构头，可输出单链蛋白坐标，但尚未证明语言推理改善折叠。\n\nESM2特征进入Qwen，特殊token触发结构头；结构头只通过语言模型状态获得蛋白信息，连接文本与连续坐标。给科研模型提供了内部表示连接专业输出的实验路径，可继续测试文献信息或条件描述是否真正改变构象。\n\n长链成绩低于直接ESM2基线，训练设置不完全一致；MMLU-Pro的350题子集从77.4%降至70.3%。\n\n2026-11-16提交，17日arXiv公告；非补看。原文：https://arxiv.org/abs/2611.20986\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-18/",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
