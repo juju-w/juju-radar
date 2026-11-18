@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-19",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "gemini-neon",
+      "title": "Gemini 4 Neon拓宽快推理档的任务范围",
+      "category": "基础模型 / 多模态",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "event_time": "2026-11-18T21:00:00+00:00",
+      "published_at": "2026-11-18T21:00:00+00:00",
+      "key_claims": [
+        "Google发布四档推理强度的Neon，支持百万token上下文，开始在API、Antigravity和Gemini应用推送。"
+      ],
+      "related_urls": [],
+      "reason": "Neon的单价给出成本起点，选型仍应固定工具和验收条件，因为换框架也能明显改变任务结果。",
+      "score": 9,
+      "window_uncertain": false,
+      "window_status": "within_window"
+    },
+    {
+      "id": "genie-4-rollout",
+      "title": "Genie 4开放边探索边改场景",
+      "category": "视觉视频 / 世界模型",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "event_time": "2026-11-18T18:00:00+00:00",
+      "published_at": "2026-11-18T18:00:00+00:00",
+      "key_claims": [
+        "10月公布的Genie 4首次向符合条件的Ultra用户开放，加入实时文字修改以及随场景变化的原生音频。"
+      ],
+      "related_urls": [
+        "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "https://deepmind.google/models/model-cards/genie-4/"
+      ],
+      "reason": "世界模型开始让用户在生成途中改条件，仍需分别验证操作响应、长期一致性和物理可信度。",
+      "score": 8,
+      "window_uncertain": false,
+      "window_status": "within_window"
+    },
+    {
+      "id": "fastframes",
+      "title": "FastFrames把视频交互的等待压到几十毫秒",
+      "category": "视觉视频 / 推理效率",
+      "url": "https://arxiv.org/abs/2611.23226",
+      "event_time": "2026-11-18",
+      "published_at": "2026-11-18",
+      "key_claims": [
+        "Apple团队报告480p实验中，1.3B版本单张B200每次响应36毫秒，14B版本八张B200为45毫秒。"
+      ],
+      "related_urls": [
+        "https://apple-aiml-research.github.io/ml-fastframes/",
+        "https://github.com/apple-aiml-research/ml-fastframes",
+        "https://huggingface.co/apple/FastFrames-S",
+        "https://huggingface.co/apple/FastFrames-L"
+      ],
+      "reason": "按反馈而非帧数计速后，缓存更新与像素呈现进入同一张延迟账单，优化对象也随之改变。",
+      "score": 8.5,
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "arxiv_submitted_at": "2026-11-17T18:59:13+00:00",
+      "announced_at": "2026-11-18",
+      "artifact_released_at": null,
+      "community_featured_on": null
+    },
+    {
+      "id": "tcp4d",
+      "title": "TCP4D从普通视频恢复机械臂的动作标签",
+      "category": "机器人 / 开源论文",
+      "url": "https://arxiv.org/abs/2611.23143",
+      "event_time": "2026-11-18",
+      "published_at": "2026-11-18",
+      "key_claims": [
+        "共享时空场景表示可从单目视频和初始二维查询恢复带尺度的末端位姿与夹爪状态，也可预测后续轨迹。"
+      ],
+      "related_urls": [
+        "https://livioni.github.io/TCP4D/",
+        "https://github.com/Livioni/TCP4D",
+        "https://huggingface.co/collections/HarrisonPENG/tcp-4d-models"
+      ],
+      "reason": "视频里的末端运动可以变成跨平台标签，但精细任务仍必须检验感知误差和目标机械臂能否执行。",
+      "score": 8,
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "arxiv_submitted_at": "2026-11-17T17:59:42+00:00",
+      "announced_at": "2026-11-18",
+      "artifact_released_at": null,
+      "community_featured_on": null
+    },
+    {
+      "id": "xing4-report",
+      "title": "星辰 4 披露昇腾集群训练与长上下文调度",
+      "category": "芯片算力推理 / 开源论文",
+      "url": "https://arxiv.org/abs/2611.22115",
+      "event_time": "2026-11-18",
+      "published_at": "2026-11-18",
+      "key_claims": [
+        "新技术报告给出285B模型以8192张昇腾910C预训练的工程细节，另有29B总参数、4B激活的既有开放型号。"
+      ],
+      "related_urls": [
+        "https://github.com/XingChen-AGI/Xing4.0-29B-A4B",
+        "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
+        "https://github.com/mindspore-ai/hyper-parallel"
+      ],
+      "reason": "这次新增的是训练系统的细节。给大集群增加卡数之前，还要解决慢链接和最重分片拖慢全局的问题。",
+      "score": 8,
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "arxiv_submitted_at": "2026-11-17T02:58:31+00:00",
+      "announced_at": "2026-11-18",
+      "artifact_released_at": "2026-09-17",
+      "community_featured_on": null
+    },
+    {
+      "id": "sciworkbench",
+      "title": "SciWorkBench把科研判断放回工作流评测",
+      "category": "AI for Science / Agent评测",
+      "url": "https://arxiv.org/abs/2611.22490",
+      "event_time": "2026-11-18",
+      "published_at": "2026-11-18",
+      "key_claims": [
+        "98项工作流中，13种模型与框架组合的最高平均分57.38。对同一个模型，框架切换带来的分数变化可正可负。"
+      ],
+      "related_urls": [],
+      "reason": "科研Agent的交付衡量应与模型、框架和研究步骤绑定，因为完成计算不保证解释有足够证据。",
+      "score": 8,
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "arxiv_submitted_at": "2026-11-17T09:46:16+00:00",
+      "announced_at": "2026-11-18",
+      "artifact_released_at": null,
+      "community_featured_on": null
+    }
+  ]
+}

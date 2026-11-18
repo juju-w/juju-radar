@@ -1,0 +1,1151 @@
+{
+  "issue_date": "2026-11-19",
+  "papers": [
+    {
+      "id": "2611.23226",
+      "title": "FastFrames: Video Generation at Interactive Latency",
+      "url": "https://arxiv.org/abs/2611.23226",
+      "pdf_url": "https://arxiv.org/pdf/2611.23226",
+      "doi": "10.48550/arXiv.2611.23226",
+      "published_date": "2026-11-17",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Chou, Gene",
+        "Yang, Guandao",
+        "Luan, Fujun",
+        "Mescheder, Lars",
+        "Dong, Wei",
+        "Richter, Stephan",
+        "Koltun, Vladlen"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Gene",
+          "lastName": "Chou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guandao",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fujun",
+          "lastName": "Luan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lars",
+          "lastName": "Mescheder"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wei",
+          "lastName": "Dong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Stephan",
+          "lastName": "Richter"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Vladlen",
+          "lastName": "Koltun"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "视觉视频",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。Apple团队报告480p实验中，1.3B版本单张B200每次响应36毫秒，14B版本八张B200为45毫秒。\n\n专用的轻量像素解码器和缓存修正网络替换昂贵的通用阶段，缩短从输入变化到第一帧反馈的关键路径。实时相机控制和可交互视频应测稳态反馈时延，单次生成多帧的吞吐指标可能掩盖观众体验中的等待。\n\n36与45毫秒来自作者固定硬件和480p条件，不含公网传输；720p增加明显延迟，大模型需要八张B200。\n\n11月17日提交，18日列入arXiv公告。本期入选，非补看。原文：https://arxiv.org/abs/2611.23226\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-19/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.23143",
+      "title": "TCP4D: A Unified Tool-Center-Point Tracking and Generation Model for Robot Manipulation",
+      "url": "https://arxiv.org/abs/2611.23143",
+      "pdf_url": "https://arxiv.org/pdf/2611.23143",
+      "doi": "10.48550/arXiv.2611.23143",
+      "published_date": "2026-11-17",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Peng, Haosong",
+        "Liu, Xiangyang",
+        "Zhang, Zhengshen",
+        "Fan, Yunfeng",
+        "Qi, Tianyu",
+        "Xia, Xin",
+        "Zhan, Yufeng",
+        "Xu, Wenchao"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Haosong",
+          "lastName": "Peng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiangyang",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhengshen",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yunfeng",
+          "lastName": "Fan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianyu",
+          "lastName": "Qi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xin",
+          "lastName": "Xia"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yufeng",
+          "lastName": "Zhan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenchao",
+          "lastName": "Xu"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。共享时空场景表示可从单目视频和初始二维查询恢复带尺度的末端位姿与夹爪状态，也可预测后续轨迹。\n\n通过提取末端轨迹把视觉演示转换成动作监督，并以共同的工具中心点表示重定向给另一种机器人。已有录像若缺少同步状态日志，可以先补动作标签，降低每更换一种机械臂就重新收集全部演示的成本。\n\n报告的DROID与RoboLab误差分别为7.60和16.07毫米，随机化环境表现受限，夹爪和平台覆盖仍有限。\n\n11月17日提交，18日列入arXiv公告。本期入选，非补看。原文：https://arxiv.org/abs/2611.23143\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-19/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.22115",
+      "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
+      "url": "https://arxiv.org/abs/2611.22115",
+      "pdf_url": "https://arxiv.org/pdf/2611.22115",
+      "doi": "10.48550/arXiv.2611.22115",
+      "published_date": "2026-11-17",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Lab, Xingchen AGI",
+        ":",
+        "Hu, Baotian",
+        "Yang, Bingkai",
+        "Wang, Boyang",
+        "Pan, Changzai",
+        "Lyu, Chao",
+        "Wang, Chao",
+        "Li, Chen",
+        "Pan, Chenshuo",
+        "Lin, Chenyu",
+        "Zhang, Chenyuan",
+        "Liu, Chongming",
+        "Fan, Dawei",
+        "Wu, Di",
+        "Guo, Dong",
+        "Li, Dong",
+        "Li, Dongfang",
+        "Liu, Enlin",
+        "Xiao, Fanye",
+        "Li, Fengkai",
+        "Yao, Fubei",
+        "Lin, Gang",
+        "Gao, Han",
+        "Wu, Hanming",
+        "He, Haowei",
+        "Liu, Huapeng",
+        "Wang, Hua",
+        "Xu, Huinan",
+        "Xiong, Jiahong",
+        "Peng, Jiaxin",
+        "Ma, Jianxiang",
+        "Zhuge, Jianxing",
+        "Zhang, Jie",
+        "Xiong, Ji",
+        "Chen, Jinglin",
+        "Li, Jingqi",
+        "Li, Jingxuan",
+        "Ye, Jiwang",
+        "Li, Junchen",
+        "Li, Junbiao",
+        "Wu, Junyang",
+        "Yu, Kaidong",
+        "Jia, Kaipeng",
+        "Chen, Kehai",
+        "Li, Kuai",
+        "Liu, Laobin",
+        "Li, Lei",
+        "Qin, Libo",
+        "Shi, Lingling",
+        "Pu, Luwen",
+        "Xu, Menghao",
+        "Bao, Mengjiao",
+        "Chen, Mengqi",
+        "Zhang, Min",
+        "Wang, Mingrui",
+        "Wang, Naying",
+        "Han, Peicong",
+        "Guo, Peiming",
+        "Li, Pengfei",
+        "Feng, Qiang",
+        "Wang, Qi",
+        "Zhu, Qingjun",
+        "Li, Qingli",
+        "Ding, Qitai",
+        "Xie, Qiyi",
+        "Zhao, Quanchao",
+        "Han, Rongbao",
+        "Xue, Rui",
+        "Fang, Ruiyu",
+        "Song, Ruiting",
+        "Li, Shijie",
+        "Wang, Shiquan",
+        "Song, Shuangyong",
+        "Xiong, Sishi",
+        "Su, Teng",
+        "Bao, Wankang",
+        "Zhang, Weijie",
+        "Mao, Wei",
+        "Fu, Weiwei",
+        "Huang, Weiyang",
+        "Deng, Wenmin",
+        "Hu, Wenqing",
+        "Zhong, Wujie",
+        "Yu, Xi",
+        "Hu, Xiaohui",
+        "Fang, Xiaomin",
+        "Huang, Xiaomeng",
+        "Shi, Xiaoqiong",
+        "Shang, Xiaotong",
+        "Li, Xiaoyu",
+        "Xu, Xinglei",
+        "Jiang, Xin",
+        "Wang, Xin",
+        "Zhang, Xin",
+        "Liu, Xinzhang",
+        "Liu, Xue",
+        "Bai, Xuefeng",
+        "He, Xuewei",
+        "Li, Yahan",
+        "Zhang, Yanhan",
+        "Xue, Yanlei",
+        "Wu, Yanzhang",
+        "Yu, Yang",
+        "Liu, Yi",
+        "Zhang, Yin",
+        "Li, Yingyan",
+        "Yao, Yitong",
+        "Li, Yixuan",
+        "Xia, Yongqiang",
+        "Li, Yongxiang",
+        "Zhu, Yinzhou",
+        "Zhao, Yu",
+        "Jiang, Yuhao",
+        "Zhang, Yunpeng",
+        "Lin, Yuting",
+        "Wu, Yuxuan",
+        "Huang, Yuyao",
+        "Wang, Yuyi",
+        "Peng, Zebo",
+        "Pei, Zhenwu",
+        "Li, Zhenxiong",
+        "Wang, Zhao",
+        "Zhang, Zhaoxi",
+        "Yang, Zhihao",
+        "Dong, Zhiqiang",
+        "Yan, Zhiwei",
+        "Lu, Zhilong",
+        "Guo, Zhonghao",
+        "Wu, Zhongheng",
+        "He, Zhongjiang",
+        "Li, Zhongqiu",
+        "Yuan, Zhu",
+        "Jiang, Zhuoru",
+        "Wei, Zhuoyi",
+        "Guo, Zijia",
+        "Huang, Zilu",
+        "Guo, Zhipeng",
+        "Li, Zirui",
+        "Wang, Zihan"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Xingchen AGI",
+          "lastName": "Lab"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "",
+          "lastName": ":"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Baotian",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bingkai",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Boyang",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Changzai",
+          "lastName": "Pan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chao",
+          "lastName": "Lyu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chao",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chen",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenshuo",
+          "lastName": "Pan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenyu",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenyuan",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chongming",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dawei",
+          "lastName": "Fan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Di",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dong",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dong",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Dongfang",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Enlin",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fanye",
+          "lastName": "Xiao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fengkai",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fubei",
+          "lastName": "Yao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Gang",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Han",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hanming",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Haowei",
+          "lastName": "He"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huapeng",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hua",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huinan",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiahong",
+          "lastName": "Xiong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaxin",
+          "lastName": "Peng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jianxiang",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jianxing",
+          "lastName": "Zhuge"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jie",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ji",
+          "lastName": "Xiong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jinglin",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingqi",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingxuan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiwang",
+          "lastName": "Ye"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junchen",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junbiao",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junyang",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kaidong",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kaipeng",
+          "lastName": "Jia"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kehai",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kuai",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Laobin",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lei",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Libo",
+          "lastName": "Qin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lingling",
+          "lastName": "Shi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Luwen",
+          "lastName": "Pu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Menghao",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mengjiao",
+          "lastName": "Bao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mengqi",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Min",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mingrui",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Naying",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peicong",
+          "lastName": "Han"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Peiming",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Pengfei",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qiang",
+          "lastName": "Feng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qi",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qingjun",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qingli",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qitai",
+          "lastName": "Ding"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qiyi",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Quanchao",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rongbao",
+          "lastName": "Han"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rui",
+          "lastName": "Xue"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruiyu",
+          "lastName": "Fang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruiting",
+          "lastName": "Song"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shijie",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shiquan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuangyong",
+          "lastName": "Song"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sishi",
+          "lastName": "Xiong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Teng",
+          "lastName": "Su"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wankang",
+          "lastName": "Bao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weijie",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wei",
+          "lastName": "Mao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weiwei",
+          "lastName": "Fu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weiyang",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenmin",
+          "lastName": "Deng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenqing",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wujie",
+          "lastName": "Zhong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xi",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaohui",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaomin",
+          "lastName": "Fang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaomeng",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoqiong",
+          "lastName": "Shi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaotong",
+          "lastName": "Shang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoyu",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinglei",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xin",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xin",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xin",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinzhang",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xue",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuefeng",
+          "lastName": "Bai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuewei",
+          "lastName": "He"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yahan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yanhan",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yanlei",
+          "lastName": "Xue"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yanzhang",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yang",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yi",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yin",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yingyan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yitong",
+          "lastName": "Yao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yixuan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yongqiang",
+          "lastName": "Xia"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yongxiang",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yinzhou",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yu",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuhao",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yunpeng",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuting",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxuan",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuyao",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuyi",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zebo",
+          "lastName": "Peng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenwu",
+          "lastName": "Pei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenxiong",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhao",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhaoxi",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhihao",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhiqiang",
+          "lastName": "Dong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhiwei",
+          "lastName": "Yan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhilong",
+          "lastName": "Lu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhonghao",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhongheng",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhongjiang",
+          "lastName": "He"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhongqiu",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhu",
+          "lastName": "Yuan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhuoru",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhuoyi",
+          "lastName": "Wei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zijia",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zilu",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhipeng",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zirui",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zihan",
+          "lastName": "Wang"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "芯片算力推理",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。新技术报告给出285B模型以8192张昇腾910C预训练的工程细节，另有29B总参数、4B激活的既有开放型号。\n\n拓扑感知分片区分高速域内通信和较慢域间通信，将梯度通信与反向计算重叠，并分配长序列负载。算力团队可检查瓶颈在互联、负载不均还是注意力读写，再选择分片与布局策略，避免只有模型架构指标。\n\n报告的性能倍率基于作者指定的模型、基线与环境，不能外推到不同硬件，也没有核实285B权重公开。\n\n11月17日提交，18日列入arXiv公告。本期入选，非补看。原文：https://arxiv.org/abs/2611.22115\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-19/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.22490",
+      "title": "SciWorkBench: A Benchmark for Real Scientific Workflows",
+      "url": "https://arxiv.org/abs/2611.22490",
+      "pdf_url": "https://arxiv.org/pdf/2611.22490",
+      "doi": "10.48550/arXiv.2611.22490",
+      "published_date": "2026-11-17",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "authors": [
+        "Zhang, Yuchen",
+        "Han, Taolin",
+        "Wang, Jinghang",
+        "Wang, Jinxin",
+        "Wu, Yun",
+        "Chiu, Wai Yuet",
+        "Li, Xiaogang",
+        "Fu, Yuting",
+        "Sun, Kewei",
+        "Li, Jiaxin",
+        "Jin, Qile",
+        "Li, Jiajia",
+        "Chen, Ruodan",
+        "Chen, Qingteng",
+        "Nie, Jialu",
+        "Li, Junchao",
+        "Zhang, Yifei",
+        "Zhao, Chen",
+        "Wei, Hu",
+        "Qu, Lin",
+        "Yin, Yanni",
+        "Zhao, Bing"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yuchen",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Taolin",
+          "lastName": "Han"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jinghang",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jinxin",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yun",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wai Yuet",
+          "lastName": "Chiu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaogang",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuting",
+          "lastName": "Fu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kewei",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiaxin",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qile",
+          "lastName": "Jin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiajia",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruodan",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qingteng",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jialu",
+          "lastName": "Nie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junchao",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yifei",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chen",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hu",
+          "lastName": "Wei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lin",
+          "lastName": "Qu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yanni",
+          "lastName": "Yin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bing",
+          "lastName": "Zhao"
+        }
+      ],
+      "tags": [
+        "Juju Radar",
+        "AI for Science",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。98项工作流中，13种模型与框架组合的最高平均分57.38。对同一个模型，框架切换带来的分数变化可正可负。\n\n任务将原始数据检查、分析与可辩护结论连在一起，通过评分规则发现知识难以落到步骤和证据衔接的问题。部署科研Agent时，可以分阶段保留数据质量、分析依据和结论限制，定向检查会导致返工的中间环节。\n\n任务覆盖有限，长任务的重复次数少，评分规则还有待独立验证。57.38是平均分，不能读成科研任务成功率。\n\n11月17日提交，18日列入arXiv公告。本期入选，非补看。原文：https://arxiv.org/abs/2611.22490\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-19/",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

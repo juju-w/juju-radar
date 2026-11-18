@@ -1,0 +1,94 @@
+{
+  "sources": [
+    {
+      "label": "Google 发布说明",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "section": "Gemini 4 Neon发布，补上快推理与复杂任务之间的一档"
+    },
+    {
+      "label": "本次开放公告",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "section": "Genie 4开放，探索途中可以改写场景"
+    },
+    {
+      "label": "10月技术预告",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "section": "Genie 4开放，探索途中可以改写场景"
+    },
+    {
+      "label": "模型卡",
+      "url": "https://deepmind.google/models/model-cards/genie-4/",
+      "section": "Genie 4开放，探索途中可以改写场景"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.23226",
+      "section": "FastFrames把视频反馈的等待压到几十毫秒"
+    },
+    {
+      "label": "项目演示",
+      "url": "https://apple-aiml-research.github.io/ml-fastframes/",
+      "section": "FastFrames把视频反馈的等待压到几十毫秒"
+    },
+    {
+      "label": "实现代码",
+      "url": "https://github.com/apple-aiml-research/ml-fastframes",
+      "section": "FastFrames把视频反馈的等待压到几十毫秒"
+    },
+    {
+      "label": "小模型权重",
+      "url": "https://huggingface.co/apple/FastFrames-S",
+      "section": "FastFrames把视频反馈的等待压到几十毫秒"
+    },
+    {
+      "label": "大模型权重",
+      "url": "https://huggingface.co/apple/FastFrames-L",
+      "section": "FastFrames把视频反馈的等待压到几十毫秒"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.23143",
+      "section": "TCP4D给机器人旧录像补上动作标签"
+    },
+    {
+      "label": "项目与演示",
+      "url": "https://livioni.github.io/TCP4D/",
+      "section": "TCP4D给机器人旧录像补上动作标签"
+    },
+    {
+      "label": "实现代码",
+      "url": "https://github.com/Livioni/TCP4D",
+      "section": "TCP4D给机器人旧录像补上动作标签"
+    },
+    {
+      "label": "模型集合",
+      "url": "https://huggingface.co/collections/HarrisonPENG/tcp-4d-models",
+      "section": "TCP4D给机器人旧录像补上动作标签"
+    },
+    {
+      "label": "技术报告",
+      "url": "https://arxiv.org/abs/2611.22115",
+      "section": "星辰 4 新报告披露 8192 张昇腾卡如何协同"
+    },
+    {
+      "label": "29B 项目",
+      "url": "https://github.com/XingChen-AGI/Xing4.0-29B-A4B",
+      "section": "星辰 4 新报告披露 8192 张昇腾卡如何协同"
+    },
+    {
+      "label": "公开权重",
+      "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
+      "section": "星辰 4 新报告披露 8192 张昇腾卡如何协同"
+    },
+    {
+      "label": "分布式框架",
+      "url": "https://github.com/mindspore-ai/hyper-parallel",
+      "section": "星辰 4 新报告披露 8192 张昇腾卡如何协同"
+    },
+    {
+      "label": "论文与评测设计",
+      "url": "https://arxiv.org/abs/2611.22490",
+      "section": "SciWorkBench发现科研智能体对执行框架很敏感"
+    }
+  ]
+}
