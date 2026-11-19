@@ -1,0 +1,207 @@
+{
+  "issue_date": "2026-11-20",
+  "papers": [
+    {
+      "id": "2611.24738",
+      "title": "Jeveration: System One Models Now Generate",
+      "url": "https://arxiv.org/abs/2611.24738",
+      "pdf_url": "https://arxiv.org/pdf/2611.24738",
+      "doi": "10.48550/arXiv.2611.24738",
+      "published_date": "2026-11-18",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yuhe",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qi",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shihua",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinchao",
+          "lastName": "Wang"
+        }
+      ],
+      "authors": [
+        "Liu, Yuhe",
+        "Li, Qi",
+        "Zhang, Shihua",
+        "Wang, Xinchao"
+      ],
+      "tags": [
+        "Juju Radar",
+        "视觉生成",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。冻结的视觉语言模型通过一次前向预测整幅图的编码。论文在单张H200上报告512像素方图77.8毫秒，GenEval为0.74。\n\n同一提示允许不同作品，各位置如果独立采样容易互相冲突。共享随机状态让各位置随同一次抽样协同变化，分阶段训练避免忽略此状态。交互式设计工具可以更快尝试候选构图。画质、分辨率和端到端时延仍应按真实应用再测。\n\n122倍仅为论文选定的Janus-Pro-7B对照，不代表对各类现代扩散模型的通用优势。未核实公开权重或实测线上吞吐。\n\n重要度 8.5/10。11月19日arXiv公告，非补看。原文：https://arxiv.org/abs/2611.24738\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-20/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "olala-v1-0-mini-report",
+      "title": "Olala v1.0 mini Technical Report",
+      "url": "https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf",
+      "pdf_url": "https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/resolve/main/Olala-v1.0-mini.pdf",
+      "doi": "",
+      "published_date": "2026-11-19",
+      "item_type": "report",
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "OVHai LLM Research Team"
+        }
+      ],
+      "authors": [
+        "OVHai LLM Research Team"
+      ],
+      "tags": [
+        "Juju Radar",
+        "推理效率",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。11月17日先预告，19日正式公开Olala mini模型库工件。模型约70亿总参数，每个token约10亿激活。\n\n36层中29层使用Mamba-3维护递推状态，7层注意力保留键值缓存。混合专家层减少每步参与的参数。关注本地部署的团队可以具体比较长对话时的显存增长、计算开销和框架兼容性。欧洲公共超算参与训练。\n\n缓存比例不能直接换算整机内存或速度。框架实现、量化和任务长度均影响结果，未独立复测。\n\n重要度 8/10。11月19日工件与技术报告可取，非补看。原文：https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-20/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.23499",
+      "title": "BiCAT: Bimanual Coordination Action Tokenization",
+      "url": "https://arxiv.org/abs/2611.23499",
+      "pdf_url": "https://arxiv.org/pdf/2611.23499",
+      "doi": "10.48550/arXiv.2611.23499",
+      "published_date": "2026-11-17",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Xuanwei",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guipu",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhongyi",
+          "lastName": "Luo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiafei",
+          "lastName": "Duan"
+        }
+      ],
+      "authors": [
+        "Liu, Xuanwei",
+        "Cao, Guipu",
+        "Luo, Zhongyi",
+        "Duan, Jiafei"
+      ],
+      "tags": [
+        "Juju Radar",
+        "机器人",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。作者在RoboTwin 2.0十项任务相对最强基线提高17.6个百分点，另在三种机器人上评估六项实机任务。\n\n两臂共享动作编码器和表示空间，通过跨臂注意力交换信息。推理时各臂内部并行，第二臂的预测以第一臂为条件。需要一只手稳定物体、另一只手作业的任务可以更好保留配合关系，避免每次都由策略重新学会两臂角色。\n\n单H200、批量1测得每个动作块40.5毫秒，结论受所选动作编码器、平台、任务和离线延迟口径限制。\n\n重要度 8/10。11月19日arXiv公告，非补看。原文：https://arxiv.org/abs/2611.23499\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-20/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.23779",
+      "title": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
+      "url": "https://arxiv.org/abs/2611.23779",
+      "pdf_url": "https://arxiv.org/pdf/2611.23779",
+      "doi": "10.48550/arXiv.2611.23779",
+      "published_date": "2026-11-18",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Pau",
+          "lastName": "Mateo-Bernadó"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Saivenkata Nagavyjayanthi",
+          "lastName": "Polapragada"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "David",
+          "lastName": "Bonet"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Pol Arbiol",
+          "lastName": "Rakuljic"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Laia Mogas",
+          "lastName": "Pladevall"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Marçal Comajoan",
+          "lastName": "Cara"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jesus",
+          "lastName": "Gonzalez-Ferrer"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jordi",
+          "lastName": "Abante"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Daniel Mas",
+          "lastName": "Montserrat"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "David",
+          "lastName": "Haussler"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Alexander G.",
+          "lastName": "Ioannidis"
+        }
+      ],
+      "authors": [
+        "Mateo-Bernadó, Pau",
+        "Polapragada, Saivenkata Nagavyjayanthi",
+        "Bonet, David",
+        "Rakuljic, Pol Arbiol",
+        "Pladevall, Laia Mogas",
+        "Cara, Marçal Comajoan",
+        "Gonzalez-Ferrer, Jesus",
+        "Abante, Jordi",
+        "Montserrat, Daniel Mas",
+        "Haussler, David",
+        "Ioannidis, Alexander G."
+      ],
+      "tags": [
+        "Juju Radar",
+        "AI for Science",
+        "待阅读"
+      ],
+      "note": "AI辅助整理。基准整理94个公开生物医药表格数据集并比较23个模型实现。较大的高维数据上部分基础模型评估未完成。\n\n统一划分、训练内预处理与评估，并记录超时、显存不足等失败。作者用完整案例和缺失值填补并行分析排名。项目可以在真正的计算预算下用梯度提升树和调优神经网络作基线，同时衡量预测效果与运行成功率。\n\n主排名使用适用所有数据的21个模型。缺项填补有假设，且回顾性公开数据表现未验证临床效果。\n\n重要度 7.5/10。11月19日arXiv公告，非补看。原文：https://arxiv.org/abs/2611.23779\n当期资料页：https://www.asteronline.cn/juju-radar/2026-11-20/",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

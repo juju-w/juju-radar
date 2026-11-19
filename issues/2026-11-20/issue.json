@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-20",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "anthropic-listing",
+      "title": "Anthropic开始交易，公开发售与产业配售并行",
+      "category": "公司战略 / 资本市场",
+      "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+      "score": 9.5,
+      "event_time": "2026-11-19T15:30:00-05:00",
+      "published_at": "2026-11-19T15:30:00-05:00",
+      "key_claims": [
+        "纳斯达克确认ANT首日开始交易，开盘111.50美元。正式文件给出83美元发行价和9.8亿股公开发售规模。"
+      ],
+      "related_urls": [
+        "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074937/anthropicpbc-fwppricing.htm",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      "reason": "研究投入的资金来源需要分开追踪公司发行收入、老股转让和附条件产业配售，首日股价不能直接回答资金到账情况。",
+      "window_uncertain": false,
+      "window_status": "within_window"
+    },
+    {
+      "id": "jeveration",
+      "title": "Jeveration用共享随机状态协调一次出图",
+      "category": "视觉生成 / 开源论文",
+      "url": "https://arxiv.org/abs/2611.24738",
+      "score": 8.5,
+      "event_time": "2026-11-19",
+      "published_at": "2026-11-19",
+      "key_claims": [
+        "冻结的视觉语言模型通过一次前向预测整幅图的编码。论文在单张H200上报告512像素方图77.8毫秒，GenEval为0.74。"
+      ],
+      "related_urls": [],
+      "reason": "单次生成的难点转移到位置之间如何确定共同构图，统一随机条件让并行输出具备协调依据。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "arxiv_submitted_at": "2026-11-18T16:56:59+00:00",
+      "announced_at": "2026-11-19",
+      "artifact_released_at": null,
+      "community_featured_on": [
+        "2026-11-19"
+      ]
+    },
+    {
+      "id": "olala-open",
+      "title": "OVHcloud公开Olala mini模型工件与技术报告",
+      "category": "基础模型 / 推理效率",
+      "url": "https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B",
+      "score": 8,
+      "event_time": "2026-11-19T10:13:13+00:00",
+      "published_at": "2026-11-19T10:13:13+00:00",
+      "key_claims": [
+        "11月17日先预告，19日正式公开Olala mini模型库工件。模型约70亿总参数，每个token约10亿激活。"
+      ],
+      "related_urls": [
+        "https://corporate.ovhcloud.com/en-ie/newsroom/news/ovh-olala-mini/",
+        "https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf",
+        "https://github.com/orgs/OVHai-LLM/repositories"
+      ],
+      "reason": "给本地模型选硬件应分开测权重占用与上下文新增内存。Olala的稀疏激活和少量注意力层分别作用在不同部分。",
+      "window_uncertain": false,
+      "window_status": "within_window",
+      "artifact_released_at": "2026-11-19T10:13:13+00:00",
+      "announced_at": "2026-11-17"
+    },
+    {
+      "id": "bicat",
+      "title": "BiCAT把双臂协调写进动作编码",
+      "category": "机器人 / 开源论文",
+      "url": "https://arxiv.org/abs/2611.23499",
+      "score": 8,
+      "event_time": "2026-11-19",
+      "published_at": "2026-11-19",
+      "key_claims": [
+        "作者在RoboTwin 2.0十项任务相对最强基线提高17.6个百分点，另在三种机器人上评估六项实机任务。"
+      ],
+      "related_urls": [
+        "https://magiclab-nus.github.io/BiCAT/",
+        "https://github.com/MAGICLAB-NUS/BiCAT"
+      ],
+      "reason": "双臂协作依赖条件关系，两次并行块预测用一个额外步骤保留互相配合的信息。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "arxiv_submitted_at": "2026-11-17T20:50:13+00:00",
+      "announced_at": "2026-11-19",
+      "artifact_released_at": null,
+      "community_featured_on": [
+        "2026-11-19"
+      ]
+    },
+    {
+      "id": "tabbiomed",
+      "title": "TabBioMed比较生物医药表格模型与资源成本",
+      "category": "AI for Science / 生物医药",
+      "url": "https://arxiv.org/abs/2611.23779",
+      "score": 7.5,
+      "event_time": "2026-11-19",
+      "published_at": "2026-11-19",
+      "key_claims": [
+        "基准整理94个公开生物医药表格数据集并比较23个模型实现。较大的高维数据上部分基础模型评估未完成。"
+      ],
+      "related_urls": [
+        "https://github.com/AI-sandbox/TabBioMed",
+        "https://huggingface.co/datasets/TabBioMed/TabBioMed"
+      ],
+      "reason": "将评估失败纳入选型后，基础模型的平均得分优势不能代替某个数据规模和预算下的可运行性判断。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "arxiv_submitted_at": "2026-11-18T03:35:35+00:00",
+      "announced_at": "2026-11-19",
+      "artifact_released_at": null,
+      "community_featured_on": [
+        "2026-11-19"
+      ]
+    },
+    {
+      "id": "ec-cyber-disclosure",
+      "title": "欧委会披露10月网络事件调查进度",
+      "category": "真实事故 / 安全治理",
+      "url": "https://audiovisual.ec.europa.eu/en/media/video/I-298222",
+      "score": 8,
+      "event_time": "2026-11-19",
+      "published_at": "2026-11-19",
+      "key_claims": [
+        "欧委会11月19日在记者会上确认10月网络事件涉及AI工具使用。事件10月22日检出、26日经初查确认。"
+      ],
+      "related_urls": [
+        "https://apnews.com/article/79705095e8141cd650196dbff1cf3c70"
+      ],
+      "reason": "公开处置进度、AI使用证据与数据影响分别更新，用户才能判断服务已恢复后还有哪些问题待确认。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain"
+    }
+  ]
+}

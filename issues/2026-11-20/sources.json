@@ -1,0 +1,89 @@
+{
+  "sources": [
+    {
+      "label": "纳斯达克确认",
+      "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+      "section": "Anthropic开始交易，公开发售之外还有产业配售"
+    },
+    {
+      "label": "发行人公告",
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "section": "Anthropic开始交易，公开发售之外还有产业配售"
+    },
+    {
+      "label": "SEC 定价文件",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074937/anthropicpbc-fwppricing.htm",
+      "section": "Anthropic开始交易，公开发售之外还有产业配售"
+    },
+    {
+      "label": "正式招股书",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm",
+      "section": "Anthropic开始交易，公开发售之外还有产业配售"
+    },
+    {
+      "label": "论文与消融实验",
+      "url": "https://arxiv.org/abs/2611.24738",
+      "section": "Jeveration让整张图共用一次随机抽样"
+    },
+    {
+      "label": "模型与权重",
+      "url": "https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B",
+      "section": "Olala mini公开权重，36层里7层保留注意力缓存"
+    },
+    {
+      "label": "厂商预告",
+      "url": "https://corporate.ovhcloud.com/en-ie/newsroom/news/ovh-olala-mini/",
+      "section": "Olala mini公开权重，36层里7层保留注意力缓存"
+    },
+    {
+      "label": "技术报告",
+      "url": "https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf",
+      "section": "Olala mini公开权重，36层里7层保留注意力缓存"
+    },
+    {
+      "label": "代码目录",
+      "url": "https://github.com/orgs/OVHai-LLM/repositories",
+      "section": "Olala mini公开权重，36层里7层保留注意力缓存"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.23499",
+      "section": "BiCAT把两只机械臂的配合写进动作编码"
+    },
+    {
+      "label": "项目演示",
+      "url": "https://magiclab-nus.github.io/BiCAT/",
+      "section": "BiCAT把两只机械臂的配合写进动作编码"
+    },
+    {
+      "label": "代码仓库",
+      "url": "https://github.com/MAGICLAB-NUS/BiCAT",
+      "section": "BiCAT把两只机械臂的配合写进动作编码"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.23779",
+      "section": "TabBioMed把跑不完的评估也纳入表格模型比较"
+    },
+    {
+      "label": "代码与评测说明",
+      "url": "https://github.com/AI-sandbox/TabBioMed",
+      "section": "TabBioMed把跑不完的评估也纳入表格模型比较"
+    },
+    {
+      "label": "数据集",
+      "url": "https://huggingface.co/datasets/TabBioMed/TabBioMed",
+      "section": "TabBioMed把跑不完的评估也纳入表格模型比较"
+    },
+    {
+      "label": "欧委会记者会",
+      "url": "https://audiovisual.ec.europa.eu/en/media/video/I-298222",
+      "section": "欧委会披露10月网络事件涉及AI工具"
+    },
+    {
+      "label": "美联社采访",
+      "url": "https://apnews.com/article/79705095e8141cd650196dbff1cf3c70",
+      "section": "欧委会披露10月网络事件涉及AI工具"
+    }
+  ]
+}
