@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-21",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "depth-pro-2",
+      "title": "苹果 Depth Pro 2 给视频逐帧估计距离",
+      "category": "视觉视频 / 开源论文",
+      "url": "https://arxiv.org/abs/2611.26603",
+      "score": 9,
+      "event_time": "2026-11-20",
+      "published_at": "2026-11-20",
+      "related_urls": [
+        "https://apple-aiml-research.github.io/ml-depth-pro-2/",
+        "https://github.com/apple-aiml-research/ml-depth-pro-2"
+      ],
+      "key_claims": [
+        "同一套网络支持单帧、整段视频和实时输入，并以原始图像分辨率输出以米计的像素深度。"
+      ],
+      "reason": "视频测距把跨帧稳定性和单帧边缘精度放进一套可切换推理模式的网络，选型时可按反馈时限决定使用多少邻帧。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "arxiv_submitted_at": "2026-11-19T18:55:41+00:00",
+      "announced_at": "2026-11-20",
+      "artifact_released_at": null,
+      "community_featured_on": [
+        "2026-11-20"
+      ]
+    },
+    {
+      "id": "lightning-moba",
+      "title": "LightningMoBA 让选中同一缓存块的查询共用一次搬运",
+      "category": "芯片算力 / 推理系统",
+      "url": "https://arxiv.org/abs/2611.26268",
+      "score": 8.5,
+      "event_time": "2026-11-20",
+      "published_at": "2026-11-20",
+      "related_urls": [
+        "https://github.com/Tencent/LightningMoBA"
+      ],
+      "key_claims": [
+        "腾讯团队在五套模型检查点上以平均 Top-16 保留预算对照 FlashMoBA，端到端生成报告加速 1.20 至 1.60 倍。"
+      ],
+      "reason": "即使保留的注意力块一样多，改变分组和搬运顺序仍能提速，稀疏比例不足以预测解码服务的收益。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "arxiv_submitted_at": "2026-11-19T15:38:08+00:00",
+      "announced_at": "2026-11-20",
+      "artifact_released_at": null,
+      "community_featured_on": [
+        "2026-11-20"
+      ]
+    },
+    {
+      "id": "automaster",
+      "title": "AutoMaster 用技能提示改写教师示范",
+      "category": "Agent / 后训练",
+      "url": "https://arxiv.org/abs/2611.26510",
+      "score": 8.5,
+      "event_time": "2026-11-20",
+      "published_at": "2026-11-20",
+      "related_urls": [
+        "https://aweai-team.github.io/AutoMaster/",
+        "https://github.com/RUCAIBox/AutoMaster",
+        "https://huggingface.co/collections/RUC-AIBOX/automaster"
+      ],
+      "key_claims": [
+        "研究在固定教师、题池、训练样本量和微调方案后，观察到改变教师示范过程仍能改善学生成绩。"
+      ],
+      "reason": "教师完成同一道题时采取的检查顺序会改变学生学到的东西，保留示范产生时使用的指导可提供额外上下文。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "arxiv_submitted_at": "2026-11-19T17:57:59+00:00",
+      "announced_at": "2026-11-20",
+      "artifact_released_at": null,
+      "community_featured_on": [
+        "2026-11-20"
+      ]
+    },
+    {
+      "id": "wemm-video",
+      "title": "WeMM-Video 发布中英双语音画理解模型",
+      "category": "基础模型 / 多模态",
+      "url": "https://arxiv.org/abs/2611.26409",
+      "score": 8,
+      "event_time": "2026-11-20T03:57:36+00:00",
+      "published_at": "2026-11-20",
+      "related_urls": [
+        "https://github.com/Tencent/WeMM-Video",
+        "https://huggingface.co/tencent/WeMM-Video-35BA3B"
+      ],
+      "key_claims": [
+        "团队公开同时读取视频帧和原声的中英双语模型，覆盖三档稠密模型和一档稀疏专家模型。"
+      ],
+      "reason": "面向有声视频评估时应把时序和声画对应单独列为指标，否则画面问答平均分可能遮住模型最有价值的改进。",
+      "window_uncertain": false,
+      "window_status": "within_window",
+      "arxiv_submitted_at": "2026-11-19T16:58:15+00:00",
+      "announced_at": "2026-11-20",
+      "artifact_released_at": "2026-11-20T03:57:36+00:00",
+      "community_featured_on": [
+        "2026-11-20"
+      ]
+    },
+    {
+      "id": "mind2act-world",
+      "title": "Mind2Act World 按失败环节拆开机器人评测",
+      "category": "机器人 / 开源论文",
+      "url": "https://arxiv.org/abs/2611.26444",
+      "score": 8,
+      "event_time": "2026-11-20",
+      "published_at": "2026-11-20",
+      "related_urls": [
+        "https://mind2act-world.com/",
+        "https://github.com/Mind2Act/Mind2Act_World"
+      ],
+      "key_claims": [
+        "技术报告把三十项模拟操作任务分成重记忆推理、重物理执行和需要二者接续的任务，并记录首个不可恢复的失败。"
+      ],
+      "reason": "组合任务的低成功率把注意力拉回记忆和动作的交接处，定位首个失败能为下一轮数据收集指路。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain",
+      "arxiv_submitted_at": "2026-11-19T17:15:38+00:00",
+      "announced_at": "2026-11-20",
+      "artifact_released_at": null,
+      "community_featured_on": [
+        "2026-11-20"
+      ]
+    },
+    {
+      "id": "anthropic-ipo-close",
+      "title": "Anthropic 完成 IPO 与同期产业配售交割",
+      "category": "公司战略 / 资本市场",
+      "url": "https://www.anthropic.com/news/ipo-close",
+      "score": 8,
+      "event_time": "2026-11-20",
+      "published_at": "2026-11-20",
+      "related_urls": [
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      ],
+      "key_claims": [
+        "公司确认承销商全数行使额外认购权，公开发售和同期七家产业伙伴认购均已完成交割。"
+      ],
+      "reason": "昨日的预期交割变成公司公布的实际交割，计算融资规模时仍需从公开发售额里扣除老股转让部分。",
+      "window_uncertain": true,
+      "window_status": "date_only_window_uncertain"
+    }
+  ]
+}

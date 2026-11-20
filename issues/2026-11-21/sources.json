@@ -1,0 +1,89 @@
+{
+  "sources": [
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.26603",
+      "section": "苹果 Depth Pro 2 给视频逐帧估计距离"
+    },
+    {
+      "label": "项目与演示",
+      "url": "https://apple-aiml-research.github.io/ml-depth-pro-2/",
+      "section": "苹果 Depth Pro 2 给视频逐帧估计距离"
+    },
+    {
+      "label": "推理代码与权重",
+      "url": "https://github.com/apple-aiml-research/ml-depth-pro-2",
+      "section": "苹果 Depth Pro 2 给视频逐帧估计距离"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.26268",
+      "section": "LightningMoBA 让选中同一缓存块的查询共用一次搬运"
+    },
+    {
+      "label": "实现与复现实验",
+      "url": "https://github.com/Tencent/LightningMoBA",
+      "section": "LightningMoBA 让选中同一缓存块的查询共用一次搬运"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.26510",
+      "section": "AutoMaster 用技能提示改写教师示范"
+    },
+    {
+      "label": "项目与案例",
+      "url": "https://aweai-team.github.io/AutoMaster/",
+      "section": "AutoMaster 用技能提示改写教师示范"
+    },
+    {
+      "label": "公开技能和推理配置",
+      "url": "https://github.com/RUCAIBox/AutoMaster",
+      "section": "AutoMaster 用技能提示改写教师示范"
+    },
+    {
+      "label": "模型和数据入口",
+      "url": "https://huggingface.co/collections/RUC-AIBOX/automaster",
+      "section": "AutoMaster 用技能提示改写教师示范"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.26409",
+      "section": "WeMM-Video 发布中英双语音画理解模型"
+    },
+    {
+      "label": "代码和评测入口",
+      "url": "https://github.com/Tencent/WeMM-Video",
+      "section": "WeMM-Video 发布中英双语音画理解模型"
+    },
+    {
+      "label": "35B-A3B 权重",
+      "url": "https://huggingface.co/tencent/WeMM-Video-35BA3B",
+      "section": "WeMM-Video 发布中英双语音画理解模型"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.26444",
+      "section": "Mind2Act World 按失败环节拆开机器人评测"
+    },
+    {
+      "label": "公开基准和任务说明",
+      "url": "https://mind2act-world.com/",
+      "section": "Mind2Act World 按失败环节拆开机器人评测"
+    },
+    {
+      "label": "任务实现",
+      "url": "https://github.com/Mind2Act/Mind2Act_World",
+      "section": "Mind2Act World 按失败环节拆开机器人评测"
+    },
+    {
+      "label": "交割公告",
+      "url": "https://www.anthropic.com/news/ipo-close",
+      "section": "Anthropic 完成 IPO 与同期产业配售交割"
+    },
+    {
+      "label": "正式招股书",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm",
+      "section": "Anthropic 完成 IPO 与同期产业配售交割"
+    }
+  ]
+}

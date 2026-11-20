@@ -1,0 +1,554 @@
+{
+  "issue_date": "2026-11-21",
+  "papers": [
+    {
+      "id": "2611.26603",
+      "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+      "url": "https://arxiv.org/abs/2611.26603",
+      "pdf_url": "https://arxiv.org/pdf/2611.26603",
+      "doi": "10.48550/arXiv.2611.26603",
+      "published_date": "2026-11-19",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "视觉视频",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Peiyun",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Marko",
+          "lastName": "Mihajlovic"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lyndon",
+          "lastName": "Duong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lahav",
+          "lastName": "Lipson"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wei",
+          "lastName": "Dong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Amaël",
+          "lastName": "Delaunoy"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Stephan R.",
+          "lastName": "Richter"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Vladlen",
+          "lastName": "Koltun"
+        }
+      ],
+      "authors": [
+        "Hu, Peiyun",
+        "Mihajlovic, Marko",
+        "Duong, Lyndon",
+        "Lipson, Lahav",
+        "Dong, Wei",
+        "Delaunoy, Amaël",
+        "Richter, Stephan R.",
+        "Koltun, Vladlen"
+      ],
+      "note": "AI辅助整理。同一套网络支持单帧、整段视频和实时输入，并以原始图像分辨率输出以米计的像素深度。\n\n后段编码层交替处理帧内和跨帧注意力，通过跨帧共享视觉特征保持同一物体的估计稳定，再用高分辨率特征恢复细边缘。视频遮挡合成及相机测距工具能在离线模式重视一致性，在直播模式重视反馈时间，部署时可以共享模型权重。\n\n模型家族的体积跨度大。论文计时使用已知焦距，未计入焦距估计。在焦距未知、场景突变和硬件受限时需单独测试。\n\n重要度 9/10。11月20日arXiv公告。原文 https://arxiv.org/abs/2611.26603\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-21/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.26268",
+      "title": "Accelerating Mixture of Block Attention via Dynamic Routing, KV-Centric Execution and Runtime Pipelining",
+      "url": "https://arxiv.org/abs/2611.26268",
+      "pdf_url": "https://arxiv.org/pdf/2611.26268",
+      "doi": "10.48550/arXiv.2611.26268",
+      "published_date": "2026-11-19",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "芯片算力",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yingqi",
+          "lastName": "Shi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junru",
+          "lastName": "Lu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yun",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Di",
+          "lastName": "Yin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xing",
+          "lastName": "Sun"
+        }
+      ],
+      "authors": [
+        "Shi, Yingqi",
+        "Lu, Junru",
+        "Liu, Yun",
+        "Yin, Di",
+        "Sun, Xing"
+      ],
+      "note": "AI辅助整理。腾讯团队在五套模型检查点上以平均 Top-16 保留预算对照 FlashMoBA，端到端生成报告加速 1.20 至 1.60 倍。\n\n动态分数阈值允许每个查询保留不同数量的块，把选中同一键值块的查询重新分组，重用GPU已加载的数据，并让搬运与计算重叠。长文推理工程师可以将单查询的保留预算与GPU任务粒度分开调，减少多个工作单元反复读取相同缓存的成本。\n\n主实验使用 Hopper 系列执行路径、八路张量并行与批大小一。基准均分上升，但部分模型或子任务降分。\n\n重要度 8.5/10。11月20日arXiv公告。原文 https://arxiv.org/abs/2611.26268\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-21/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.26510",
+      "title": "AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher",
+      "url": "https://arxiv.org/abs/2611.26510",
+      "pdf_url": "https://arxiv.org/pdf/2611.26510",
+      "doi": "10.48550/arXiv.2611.26510",
+      "published_date": "2026-11-19",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "Agent",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Guoxin",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuang",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fanzhe",
+          "lastName": "Meng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinyu",
+          "lastName": "Tang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruihua",
+          "lastName": "Song"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wayne Xin",
+          "lastName": "Zhao"
+        }
+      ],
+      "authors": [
+        "Chen, Guoxin",
+        "Sun, Shuang",
+        "Meng, Fanzhe",
+        "Tang, Xinyu",
+        "Song, Ruihua",
+        "Zhao, Wayne Xin"
+      ],
+      "note": "AI辅助整理。研究在固定教师、题池、训练样本量和微调方案后，观察到改变教师示范过程仍能改善学生成绩。\n\n智能体从轨迹中发现重复试错和浅验证，编写文字技能改变教师做题过程，再从新轨迹筛数据用于监督微调。准备后训练数据的团队可以将示范包含的具体行为列入数据质量检查，例如它有没有实际运行验证或先检查依赖。\n\n结果集中在三类任务和两个学生尺寸。4B在两项评测的配对置信区间跨零。生成和筛选高质量示范也要消耗推理预算。\n\n重要度 8.5/10。11月20日arXiv公告。原文 https://arxiv.org/abs/2611.26510\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-21/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.26409",
+      "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
+      "url": "https://arxiv.org/abs/2611.26409",
+      "pdf_url": "https://arxiv.org/pdf/2611.26409",
+      "doi": "10.48550/arXiv.2611.26409",
+      "published_date": "2026-11-19",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "基础模型",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Changli",
+          "lastName": "Tang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jie",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianyi",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lei",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Daoze",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zijie",
+          "lastName": "Xin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhan",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Li",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jinchang",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fengyun",
+          "lastName": "Rao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chao",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jing",
+          "lastName": "Lyu"
+        }
+      ],
+      "authors": [
+        "Tang, Changli",
+        "Yang, Jie",
+        "Wang, Tianyi",
+        "Li, Lei",
+        "Zhang, Daoze",
+        "Xin, Zijie",
+        "Liu, Zhan",
+        "Li, Li",
+        "Xu, Jinchang",
+        "Rao, Fengyun",
+        "Zhang, Chao",
+        "Lyu, Jing"
+      ],
+      "note": "AI辅助整理。团队公开同时读取视频帧和原声的中英双语模型，覆盖三档稠密模型和一档稀疏专家模型。\n\n训练加入沿同一时间轴描述动作、对白和环境声的材料，推理允许直接回答或先进行显式推理。视频索引和质检可以围绕声源与画面事件联合提问，并在需要定位时间时检查线索是否同步。\n\n端到端效果依赖抽帧与音频处理。作者对照在部分有声视频基准上获益，表现因任务和推理方式而异。\n\n重要度 8/10。11月20日arXiv公告。原文 https://arxiv.org/abs/2611.26409\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-21/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.26444",
+      "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2611.26444",
+      "pdf_url": "https://arxiv.org/pdf/2611.26444",
+      "doi": "10.48550/arXiv.2611.26444",
+      "published_date": "2026-11-19",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "机器人",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yuzhi",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jie",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Fanding",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junchao",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weichen",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ziyi",
+          "lastName": "Xiong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yang",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhengwei",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhimin",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhen",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiazhen",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuzheng",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuche",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hongyi",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chen",
+          "lastName": "Tang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shixiang",
+          "lastName": "Tang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hakan",
+          "lastName": "Aktas"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Adam",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Duo",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kangye",
+          "lastName": "Ji"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuzhao",
+          "lastName": "Xie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huanan",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weijue",
+          "lastName": "Bu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenxin",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinyuan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianyi",
+          "lastName": "Bai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yinan",
+          "lastName": "Mao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiawei",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Minglei",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Heng",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ehsan",
+          "lastName": "Adeli"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Minchen",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yong-Lu",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Cengiz",
+          "lastName": "Öztireli"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Huazhe",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chao",
+          "lastName": "Yu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jing",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shanghang",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weitao",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenwu",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Cheng",
+          "lastName": "Chi"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jingyan",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhi",
+          "lastName": "Wang"
+        }
+      ],
+      "authors": [
+        "Huang, Yuzhi",
+        "Wu, Jie",
+        "Huang, Fanding",
+        "Lin, Junchao",
+        "Zhang, Weichen",
+        "Xiong, Ziyi",
+        "Li, Yang",
+        "Xie, Zhengwei",
+        "Wang, Zhimin",
+        "Liu, Zhen",
+        "Huang, Jiazhen",
+        "Zhang, Yuzheng",
+        "Liu, Yuche",
+        "Yang, Hongyi",
+        "Tang, Chen",
+        "Tang, Shixiang",
+        "Aktas, Hakan",
+        "Wu, Adam",
+        "Wu, Duo",
+        "Ji, Kangye",
+        "Xie, Shuzhao",
+        "Liu, Huanan",
+        "Bu, Weijue",
+        "Li, Chenxin",
+        "Wang, Xinyuan",
+        "Bai, Tianyi",
+        "Mao, Yinan",
+        "Wang, Jiawei",
+        "Li, Minglei",
+        "Yu, Heng",
+        "Adeli, Ehsan",
+        "Li, Minchen",
+        "Li, Yong-Lu",
+        "Öztireli, Cengiz",
+        "Xu, Huazhe",
+        "Yu, Chao",
+        "Zhang, Jing",
+        "Zhang, Shanghang",
+        "Zhou, Weitao",
+        "Zhu, Wenwu",
+        "Chi, Cheng",
+        "Jiang, Jingyan",
+        "Wang, Zhi"
+      ],
+      "note": "AI辅助整理。技术报告把三十项模拟操作任务分成重记忆推理、重物理执行和需要二者接续的任务，并记录首个不可恢复的失败。\n\n任务以可验证的物理状态定义成功，按不同难度和场景布置检查在哪一步遗失状态或没有完成所需的接触。机器人开发者可以追踪应补哪一类训练样本，比如持续接触、目标状态记忆或执行后的确认，而不只看总通过率。\n\n三类任务的长度与要求并不相同。该结果来自仿真以及特定智能体执行框架，不能由分组差距估计单一能力的因果贡献。\n\n重要度 8/10。11月20日arXiv公告。原文 https://arxiv.org/abs/2611.26444\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-21/",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
