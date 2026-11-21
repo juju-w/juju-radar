@@ -245,6 +245,9 @@
     },
     "2026-11-21-riemann-hypothesis": {
       "sha256": "fcb2cdbf7b951de0b5978203cef8b4af3b842838d71c7c7c40388f3bfb43ab55"
+    },
+    "2026-11-22": {
+      "sha256": "21287f3d0d348080988a9bb0e610e63a656e22a31c9f35e432e0904b0c4f3610"
     }
   }
 }

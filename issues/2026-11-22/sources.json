@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "label": "Transformers 发行说明",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.24.0",
+      "section": "Transformers更新缓存接口，正式支持循环层模型"
+    },
+    {
+      "label": "PyPI 版本",
+      "url": "https://pypi.org/project/transformers/5.24.0/",
+      "section": "Transformers更新缓存接口，正式支持循环层模型"
+    },
+    {
+      "label": "循环架构文档",
+      "url": "https://huggingface.co/docs/transformers/v5.24.0/en/model_doc/inkling2_loop",
+      "section": "Transformers更新缓存接口，正式支持循环层模型"
+    },
+    {
+      "label": "Inkling 2 Mini 模型卡",
+      "url": "https://thinkingmachines.ai/model-card/inkling-2-mini/",
+      "section": "Transformers更新缓存接口，正式支持循环层模型"
+    },
+    {
+      "label": "核验更新",
+      "url": "https://math.mit.edu/~drew/grh/",
+      "section": "黎曼证明的独立核验新增两条约数和不等式"
+    },
+    {
+      "label": "不等式目标文件",
+      "url": "https://math.mit.edu/~drew/grh/ArithChallenge.lean",
+      "section": "黎曼证明的独立核验新增两条约数和不等式"
+    },
+    {
+      "label": "公理记录",
+      "url": "https://math.mit.edu/~drew/grh/arith-audit.log",
+      "section": "黎曼证明的独立核验新增两条约数和不等式"
+    },
+    {
+      "label": "nanoda 日志",
+      "url": "https://math.mit.edu/~drew/grh/arith-nanoda.log",
+      "section": "黎曼证明的独立核验新增两条约数和不等式"
+    },
+    {
+      "label": "Lagarias 原论文",
+      "url": "https://arxiv.org/abs/math/0008177",
+      "section": "黎曼证明的独立核验新增两条约数和不等式"
+    },
+    {
+      "label": "克雷数学研究所",
+      "url": "https://www.claymath.org/millennium/Riemann-Hypothesis/",
+      "section": "黎曼证明的独立核验新增两条约数和不等式"
+    }
+  ]
+}

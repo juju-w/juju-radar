@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-22",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "transformers-524",
+      "title": "Transformers 5.24 统一生成缓存接口",
+      "category": "开源工具 / 推理框架",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.24.0",
+      "score": 8.5,
+      "event_time": "2026-11-21T12:28:26+00:00",
+      "published_at": "2026-11-21T12:28:26+00:00",
+      "key_claims": [
+        "正式版本增加 Inkling 2 Mini、Dory、HY4-VL 等架构支持，将注意力键值和递推状态在生成接口中都叫 cache。"
+      ],
+      "related_urls": [
+        "https://pypi.org/project/transformers/5.24.0/",
+        "https://huggingface.co/docs/transformers/v5.24.0/en/model_doc/inkling2_loop",
+        "https://thinkingmachines.ai/model-card/inkling-2-mini/"
+      ],
+      "reason": "正式版本增加 Inkling 2 Mini、Dory、HY4-VL 等架构支持，将注意力键值和递推状态在生成接口中都叫 cache。",
+      "window_uncertain": false,
+      "window_status": "within_window"
+    },
+    {
+      "id": "riemann-divisor-check",
+      "title": "黎曼猜想的形式核验延伸到两条约数和不等式",
+      "category": "AI for Science / 数学",
+      "url": "https://math.mit.edu/~drew/grh/",
+      "score": 8.5,
+      "event_time": "2026-11-21T12:55:00+00:00",
+      "published_at": "2026-11-21T12:55:00+00:00",
+      "key_claims": [
+        "Sutherland 将同一份黎曼猜想证明接入独立的 Robin1984 形式化，两个内核接受导出证明，新增两条不引用ζ函数定义的无条件约数和命题。"
+      ],
+      "related_urls": [
+        "https://math.mit.edu/~drew/grh/ArithChallenge.lean",
+        "https://math.mit.edu/~drew/grh/arith-audit.log",
+        "https://math.mit.edu/~drew/grh/arith-nanoda.log",
+        "https://arxiv.org/abs/math/0008177",
+        "https://www.claymath.org/millennium/Riemann-Hypothesis/"
+      ],
+      "reason": "Sutherland 将同一份黎曼猜想证明接入独立的 Robin1984 形式化，两个内核接受导出证明，新增两条不引用ζ函数定义的无条件约数和命题。",
+      "window_uncertain": false,
+      "window_status": "within_window"
+    }
+  ]
+}
