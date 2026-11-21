@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-21",
+  "kind": "special",
+  "sources": [
+    {
+      "id": "alpoge-claude-riemann",
+      "title": "黎曼猜想的 Lean 证明里，Claude 的 √X 用在了哪里？",
+      "url": "https://alpo.ge/remark.pdf",
+      "category": "数论 / AI 辅助证明",
+      "score": 10,
+      "published_at": "2026-11-20",
+      "event_time": "2026-11-20",
+      "related_urls": [
+        "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Supplements/Kernels/MainTheorems.lean#L1-L15",
+        "https://dlmf.nist.gov/27.12#E7",
+        "https://www.claymath.org/millennium/Riemann-Hypothesis/",
+        "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf",
+        "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Formalism/GammaFactorNonvanishing/RhOfRight.lean#L1-L54",
+        "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Formalism/GammaFactorNonvanishing/CritLine.lean#L29-L32",
+        "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Statements.lean#L1-L16",
+        "https://people.math.ethz.ch/~kowalski/exponential-sums-elementary.pdf#page=51",
+        "https://alpo.ge/remark.pdf#page=3",
+        "https://alpo.ge/remark.pdf#page=4",
+        "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean#L1-L15",
+        "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Main.lean#L1-L8",
+        "https://github.com/Deicyde/riemann-hypothesis/blob/e50d09817ad81469f737e8f637561e6ccf86c670/src/Challenge.lean",
+        "https://math.mit.edu/~drew/grh/",
+        "https://lean-lang.org/doc/reference/latest/ValidatingProofs/",
+        "https://www.claymath.org/millennium-problems/rules/"
+      ],
+      "reason": "以作者明确归因给 Claude 的 θ 提升链长度为主线，解释证明构造、最后归约和独立检查的不同作用。",
+      "key_claims": [
+        "Alpöge 四页说明把约 √X 的链长建议归功于 Claude，后续还需控制范数、整除与提升成本。",
+        "固定 Lean 源码从整族狄利克雷 L 函数右半平面无零点归约到 Mathlib 的经典黎曼猜想。",
+        "Sutherland 公开报告五个命题的依赖审计和两个独立内核接受导出证明。"
+      ],
+      "window_status": "user_requested_special_deep_read"
+    }
+  ],
+  "issue_id": "2026-11-21-riemann-hypothesis",
+  "section": "深度解读",
+  "published_at": "2026-11-21T08:27:09.286851+08:00"
+}

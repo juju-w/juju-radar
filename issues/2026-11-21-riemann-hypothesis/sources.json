@@ -1,0 +1,89 @@
+{
+  "sources": [
+    {
+      "label": "Alpöge 的四页说明",
+      "url": "https://alpo.ge/remark.pdf",
+      "section": "原始资料"
+    },
+    {
+      "label": "证明入口与归约",
+      "url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Supplements/Kernels/MainTheorems.lean#L1-L15",
+      "section": "原始资料"
+    },
+    {
+      "label": "素数计数的等价表述",
+      "url": "https://dlmf.nist.gov/27.12#E7",
+      "section": "一、为什么数素数会变成找零点"
+    },
+    {
+      "label": "克雷数学研究所的题目说明",
+      "url": "https://www.claymath.org/millennium/Riemann-Hypothesis/",
+      "section": "一、为什么数素数会变成找零点"
+    },
+    {
+      "label": "Bombieri 的数学说明",
+      "url": "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf",
+      "section": "一、为什么数素数会变成找零点"
+    },
+    {
+      "label": "Lean 的右半平面归约",
+      "url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Formalism/GammaFactorNonvanishing/RhOfRight.lean#L1-L54",
+      "section": "二、源码最后只需要排除右半边"
+    },
+    {
+      "label": "经典猜想的特例归约",
+      "url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Formalism/GammaFactorNonvanishing/CritLine.lean#L29-L32",
+      "section": "二、源码最后只需要排除右半边"
+    },
+    {
+      "label": "正式命题",
+      "url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Statements.lean#L1-L16",
+      "section": "二、源码最后只需要排除右半边"
+    },
+    {
+      "label": "Kowalski 讲义第 4.3 节",
+      "url": "https://people.math.ethz.ch/~kowalski/exponential-sums-elementary.pdf#page=51",
+      "section": "三、Stepanov 的方法为什么要讲重数"
+    },
+    {
+      "label": "作者提纲第 3 页",
+      "url": "https://alpo.ge/remark.pdf#page=3",
+      "section": "三、Stepanov 的方法为什么要讲重数"
+    },
+    {
+      "label": "作者提纲第 4 页",
+      "url": "https://alpo.ge/remark.pdf#page=4",
+      "section": "四、Claude 的 √X 到底选在了哪里"
+    },
+    {
+      "label": "无零点定理的源码入口",
+      "url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean#L1-L15",
+      "section": "四、Claude 的 √X 到底选在了哪里"
+    },
+    {
+      "label": "Lean 主文件",
+      "url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Main.lean#L1-L8",
+      "section": "五、独立核验怎样检查这份证明"
+    },
+    {
+      "label": "独立目标文件",
+      "url": "https://github.com/Deicyde/riemann-hypothesis/blob/e50d09817ad81469f737e8f637561e6ccf86c670/src/Challenge.lean",
+      "section": "五、独立核验怎样检查这份证明"
+    },
+    {
+      "label": "Sutherland 核验报告与日志",
+      "url": "https://math.mit.edu/~drew/grh/",
+      "section": "五、独立核验怎样检查这份证明"
+    },
+    {
+      "label": "Lean 如何核验一份证明",
+      "url": "https://lean-lang.org/doc/reference/latest/ValidatingProofs/",
+      "section": "五、独立核验怎样检查这份证明"
+    },
+    {
+      "label": "克雷数学研究所奖项规则",
+      "url": "https://www.claymath.org/millennium-problems/rules/",
+      "section": "五、独立核验怎样检查这份证明"
+    }
+  ]
+}
