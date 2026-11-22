@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "label": "OpenRouter 公告",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "section": "OpenRouter 移除 125 个推理端点的零留存资格"
+    },
+    {
+      "label": "Novita 隐私通知",
+      "url": "https://novita.ai/blog/minimax-requests-privacy-notice/",
+      "section": "OpenRouter 移除 125 个推理端点的零留存资格"
+    },
+    {
+      "label": "Together 事件说明",
+      "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
+      "section": "OpenRouter 移除 125 个推理端点的零留存资格"
+    },
+    {
+      "label": "Phala 初步报告",
+      "url": "https://phala.com/posts/phala-november-preliminary-incident-report",
+      "section": "OpenRouter 移除 125 个推理端点的零留存资格"
+    },
+    {
+      "label": "零留存路由规则",
+      "url": "https://openrouter.ai/docs/guides/features/zdr",
+      "section": "OpenRouter 移除 125 个推理端点的零留存资格"
+    },
+    {
+      "label": "MIT 核验报告",
+      "url": "https://math.mit.edu/~drew/grh/",
+      "section": "黎曼猜想的 Lean 证明经隔离重建复现同一份导出"
+    },
+    {
+      "label": "隔离重建日志",
+      "url": "https://math.mit.edu/~drew/grh/sandbox-timeline.txt",
+      "section": "黎曼猜想的 Lean 证明经隔离重建复现同一份导出"
+    },
+    {
+      "label": "五条主命题比对",
+      "url": "https://math.mit.edu/~drew/grh/con-ron-compare.log",
+      "section": "黎曼猜想的 Lean 证明经隔离重建复现同一份导出"
+    },
+    {
+      "label": "约数和命题比对",
+      "url": "https://math.mit.edu/~drew/grh/arith-con-ron-compare.log",
+      "section": "黎曼猜想的 Lean 证明经隔离重建复现同一份导出"
+    },
+    {
+      "label": "KoboldCpp 发行说明",
+      "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.125.1",
+      "section": "KoboldCpp 接入本地语音转写和逐词对齐"
+    },
+    {
+      "label": "转写模型目录",
+      "url": "https://huggingface.co/koboldcpp/whisper/tree/main/audiocpp-asr",
+      "section": "KoboldCpp 接入本地语音转写和逐词对齐"
+    },
+    {
+      "label": "对齐模型目录",
+      "url": "https://huggingface.co/koboldcpp/whisper/tree/main/audiocpp-aligner",
+      "section": "KoboldCpp 接入本地语音转写和逐词对齐"
+    }
+  ]
+}

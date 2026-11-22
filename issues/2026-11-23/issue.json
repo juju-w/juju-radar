@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-23",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "openrouter-zdr-audit",
+      "title": "OpenRouter 移除 125 个推理端点的零留存资格",
+      "category": "真实事故 / 推理数据",
+      "score": 9,
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "event_time": "2026-11-22",
+      "published_at": "2026-11-22",
+      "key_claims": [
+        "OpenRouter 首次集中披露处置：三家推理供应商退出平台，125 个端点失去零数据留存资格，其中包括预防性移除。平台将核验实际网络路径。"
+      ],
+      "reason": "OpenRouter 首次集中披露处置：三家推理供应商退出平台，125 个端点失去零数据留存资格，其中包括预防性移除。平台将核验实际网络路径。",
+      "window_status": "within_window_corroborated",
+      "window_uncertain": false,
+      "related_urls": [
+        "https://novita.ai/blog/minimax-requests-privacy-notice/",
+        "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
+        "https://phala.com/posts/phala-november-preliminary-incident-report",
+        "https://openrouter.ai/docs/guides/features/zdr"
+      ]
+    },
+    {
+      "id": "riemann-rebuild-export",
+      "title": "黎曼猜想的 Lean 证明经隔离重建复现同一份导出",
+      "category": "AI for Science / 数学",
+      "score": 8.5,
+      "url": "https://math.mit.edu/~drew/grh/",
+      "event_time": "2026-11-22T16:20:00Z",
+      "published_at": "2026-11-22T16:20:00Z",
+      "key_claims": [
+        "跨机器的无网络重建产生与原版本逐字节一致的约 61.6 GB 证明导出，Rust 版 con-ron 完成 5 个主命题与 2 个约数和命题的目标比对。"
+      ],
+      "reason": "跨机器的无网络重建产生与原版本逐字节一致的约 61.6 GB 证明导出，Rust 版 con-ron 完成 5 个主命题与 2 个约数和命题的目标比对。",
+      "window_status": "within_window",
+      "window_uncertain": false,
+      "related_urls": [
+        "https://math.mit.edu/~drew/grh/sandbox-timeline.txt",
+        "https://math.mit.edu/~drew/grh/con-ron-compare.log",
+        "https://math.mit.edu/~drew/grh/arith-con-ron-compare.log"
+      ]
+    },
+    {
+      "id": "koboldcpp-local-align",
+      "title": "KoboldCpp 接入本地语音转写和逐词对齐",
+      "category": "语音 / 开源工具",
+      "score": 7.5,
+      "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.125.1",
+      "event_time": "2026-11-22T07:54:20Z",
+      "published_at": "2026-11-22T07:54:20Z",
+      "key_claims": [
+        "KoboldCpp v1.125.1 新增 Qwen3ASR、SenseVoice 和两类强制对齐模型，在同一套本地工具中打通音频、文本、词级时间戳。"
+      ],
+      "reason": "KoboldCpp v1.125.1 新增 Qwen3ASR、SenseVoice 和两类强制对齐模型，在同一套本地工具中打通音频、文本、词级时间戳。",
+      "window_status": "within_window",
+      "window_uncertain": false,
+      "related_urls": [
+        "https://huggingface.co/koboldcpp/whisper/tree/main/audiocpp-asr",
+        "https://huggingface.co/koboldcpp/whisper/tree/main/audiocpp-aligner"
+      ]
+    }
+  ]
+}
