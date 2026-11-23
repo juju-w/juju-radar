@@ -1,0 +1,111 @@
+{
+  "issue_date": "2026-11-24",
+  "papers": [
+    {
+      "id": "2611.27973",
+      "title": "MemOnce: A Scalable Memory Architecture for Large Language Models",
+      "url": "https://arxiv.org/abs/2611.27973",
+      "pdf_url": "https://arxiv.org/pdf/2611.27973",
+      "doi": "10.48550/arXiv.2611.27973",
+      "published_date": "2026-11-20",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Chang",
+          "lastName": "Nie"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chaoyou",
+          "lastName": "Fu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Songlin",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yiqing",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Caifeng",
+          "lastName": "Shan"
+        }
+      ],
+      "authors": [
+        "Nie, Chang",
+        "Fu, Chaoyou",
+        "Liu, Songlin",
+        "Hu, Yiqing",
+        "Shan, Caifeng"
+      ],
+      "tags": [
+        "Juju Radar",
+        "长上下文",
+        "稀疏注意力",
+        "推理效率",
+        "待阅读"
+      ],
+      "note": "AI 辅助整理。论文记录 4B 适配在百万词元下的活跃显存缓存为 25 MB，约 640 MB 紧凑历史外置，并同时公布预填充和解码吞吐。\n\n每段只缓存一小部分末层隐藏状态。每次新输入只检索一遍相关历史，再把取回的向量投影成各注意力层所需的 KV。\n\n持续交互的推理预算可由当前需要读的记忆子集决定。论文 4B 同表从 286.86 秒降至 41.36 秒的首轮上下文处理可用于设计复测。\n\n显存数字只计活跃缓存，基座权重、外置内存与读写仍有成本。部分基线单张 H100 80GB 放不下而用多卡。长程编码和多步工具使用仍待系统检验。\n\n重要度 8.5/10。11月20日18:51:29 UTC提交。官方 arXiv cs.CL 列在 23 日新论文段，按官方日程对应22日美国东部20:00（23日01 UTC）批次，窗口内。HF 权重历史最早检查点为11日09:51 UTC。\n论文 https://arxiv.org/abs/2611.27973\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-24/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.27963",
+      "title": "Non-penetrating World Models",
+      "url": "https://arxiv.org/abs/2611.27963",
+      "pdf_url": "https://arxiv.org/pdf/2611.27963",
+      "doi": "10.48550/arXiv.2611.27963",
+      "published_date": "2026-11-20",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yuhang",
+          "lastName": "Dai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yinwei",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ziyue",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Han",
+          "lastName": "Ji"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xingyi",
+          "lastName": "Yang"
+        }
+      ],
+      "authors": [
+        "Dai, Yuhang",
+        "Wu, Yinwei",
+        "Lin, Ziyue",
+        "Ji, Han",
+        "Yang, Xingyi"
+      ],
+      "tags": [
+        "Juju Radar",
+        "视频世界模型",
+        "碰撞检测",
+        "闭环控制",
+        "待阅读"
+      ],
+      "note": "AI 辅助整理。视频世界模型在训练后仍可从中间特征看出碰撞，作者用小预测头把它变成动作修正信号。\n\n冻结生成器，读第一步去噪中的激活判断动作是否穿过障碍，再在允许的动作里尽量保留用户方向，包括沿墙滑动。\n\n六个生成器在闭环几何测试中平均违规率从 74% 降到 16%，提供避免制作穿墙视频的一步控制手段。\n\n论文统计检验的是特定视频环境的穿透，不覆盖物理引擎的其他规律，预测性干预还可能拦下正常指令。\n\n重要度 8.5/10。11月20日18:44:57 UTC提交。arXiv cs.CV 23日新论文段与官方日程支持窗口内公告。仓库明示21日开放代码、预测头和数据集，权重历史同日首批文件，工件早于窗口。\n论文 https://arxiv.org/abs/2611.27963\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-24/",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

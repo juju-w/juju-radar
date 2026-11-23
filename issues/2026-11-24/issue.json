@@ -1,0 +1,127 @@
+{
+  "date": "2026-11-24",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "glm54-loop",
+      "title": "GLM-5.4 让同一组 28 层运行两遍",
+      "category": "基础模型 / 多模态",
+      "score": 9,
+      "url": "https://z.ai/blog/glm-5.4",
+      "event_time": "2026-11-23",
+      "published_at": "2026-11-23",
+      "related_urls": [
+        "https://zcode.z.ai/en/docs/qa"
+      ],
+      "key_claims": [
+        "智谱在预训练基座上继续训练，把 28 层改为两轮共享权重的计算，第二轮复用稀疏索引和远端缓存，保留自己的局部窗口。"
+      ],
+      "reason": "智谱在预训练基座上继续训练，把 28 层改为两轮共享权重的计算，第二轮复用稀疏索引和远端缓存，保留自己的局部窗口。",
+      "window_status": "within_window_corroborated",
+      "window_uncertain": false
+    },
+    {
+      "id": "memonce-memory",
+      "title": "MemOnce 把长上下文缓存改为按需重建",
+      "category": "开源论文 / 推理效率",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.27973",
+      "event_time": "2026-11-23",
+      "published_at": "2026-11-23",
+      "related_urls": [
+        "https://clare-nie.github.io/MemOnce/",
+        "https://github.com/Clare-Nie/MemOnce",
+        "https://huggingface.co/ClareNie/MemOnce"
+      ],
+      "key_claims": [
+        "MemOnce 将末层稀疏记忆存入可卸载的历史池，每次查询只检索一次，再按层重建所需 KV。"
+      ],
+      "reason": "MemOnce 将末层稀疏记忆存入可卸载的历史池，每次查询只检索一次，再按层重建所需 KV。",
+      "window_status": "within_window_corroborated",
+      "window_uncertain": false,
+      "arxiv_submitted_at": "2026-11-20T18:51:29+00:00",
+      "artifact_released_at": "2026-11-11T09:51:35Z",
+      "community_featured_on": "2026-11-23"
+    },
+    {
+      "id": "nopeworld-collision",
+      "title": "NoPeWorld 读取扩散模型的中间状态来拦下穿墙",
+      "category": "视觉视频 / 世界模型",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.27963",
+      "event_time": "2026-11-23",
+      "published_at": "2026-11-23",
+      "related_urls": [
+        "https://nopeworld.github.io/",
+        "https://github.com/yuhangdai427/NoPeWorld",
+        "https://huggingface.co/PeterDAI/NoPeWorld",
+        "https://huggingface.co/datasets/PeterDAI/NoPeBench"
+      ],
+      "key_claims": [
+        "NoPeWorld 从冻结视频扩散模型的隐藏状态判断候选动作是否穿透，再换成尽量保留原意的滑动或停止。"
+      ],
+      "reason": "NoPeWorld 从冻结视频扩散模型的隐藏状态判断候选动作是否穿透，再换成尽量保留原意的滑动或停止。",
+      "window_status": "within_window_corroborated",
+      "window_uncertain": false,
+      "arxiv_submitted_at": "2026-11-20T18:44:57+00:00",
+      "artifact_released_at": "2026-11-21T14:01:04Z",
+      "community_featured_on": "2026-11-23"
+    },
+    {
+      "id": "opencode-browser",
+      "title": "OpenCode 桌面版把浏览器会话与自动任务接到一起",
+      "category": "Agent / Coding",
+      "score": 8,
+      "url": "https://github.com/anomalyco/opencode/releases/tag/v2.4.0",
+      "event_time": "2026-11-23T09:22:21Z",
+      "published_at": "2026-11-23T09:22:21Z",
+      "related_urls": [
+        "https://opencode.ai/changelog/v2.4.0"
+      ],
+      "key_claims": [
+        "OpenCode v2.4.0 提供内置持久浏览器配置和定时、周期、事件触发的自动任务。"
+      ],
+      "reason": "OpenCode v2.4.0 提供内置持久浏览器配置和定时、周期、事件触发的自动任务。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "helios-azure-lab",
+      "title": "Azure 在实验室验证 AMD Helios 整柜推理",
+      "category": "芯片算力 / 推理设施",
+      "score": 8,
+      "url": "https://newsroom.amd.com/news/microsoft-running-workload-validation-amd-helios-rackscale-solution/",
+      "event_time": "2026-11-23T13:58:40.858Z",
+      "published_at": "2026-11-23T13:58:40.858Z",
+      "related_urls": [
+        "https://newsroom.amd.com/press-kits/press-kit-helios-rackscale-solution/"
+      ],
+      "key_claims": [
+        "AMD 公开了微软研究实验室在交付后通电，并在 Helios 整柜运行早期负载的验证细节。"
+      ],
+      "reason": "AMD 公开了微软研究实验室在交付后通电，并在 Helios 整柜运行早期负载的验证细节。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    },
+    {
+      "id": "riemann-lean-kernel",
+      "title": "黎曼证明的完整导出通过 Lean 官方两种内核复核",
+      "category": "AI for Science / 数学",
+      "score": 8,
+      "url": "https://math.mit.edu/~drew/grh/",
+      "event_time": "2026-11-23T14:35:00Z",
+      "published_at": "2026-11-23T14:35:00Z",
+      "related_urls": [
+        "https://math.mit.edu/~drew/grh/lean-default-kernel-tuned.log",
+        "https://math.mit.edu/~drew/grh/lean-paranoid-kernel-tuned.log",
+        "https://math.mit.edu/~drew/grh/comparator-v4.33.0.log"
+      ],
+      "key_claims": [
+        "原版 Lean 二进制的默认和 paranoid 内核直接检查完整导出成功。调整分配器的全堆回收频率缩短运行过程，未改变核验逻辑。"
+      ],
+      "reason": "原版 Lean 二进制的默认和 paranoid 内核直接检查完整导出成功。调整分配器的全堆回收频率缩短运行过程，未改变核验逻辑。",
+      "window_status": "within_window",
+      "window_uncertain": false
+    }
+  ]
+}

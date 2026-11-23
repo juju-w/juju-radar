@@ -1,0 +1,99 @@
+{
+  "sources": [
+    {
+      "label": "智谱技术公告",
+      "url": "https://z.ai/blog/glm-5.4",
+      "section": "GLM-5.4 让同一组 28 层运行两遍"
+    },
+    {
+      "label": "ZCode 接入说明",
+      "url": "https://zcode.z.ai/en/docs/qa",
+      "section": "GLM-5.4 让同一组 28 层运行两遍"
+    },
+    {
+      "label": "MemOnce 论文",
+      "url": "https://arxiv.org/abs/2611.27973",
+      "section": "MemOnce 把长上下文缓存改为按需重建"
+    },
+    {
+      "label": "项目页",
+      "url": "https://clare-nie.github.io/MemOnce/",
+      "section": "MemOnce 把长上下文缓存改为按需重建"
+    },
+    {
+      "label": "代码",
+      "url": "https://github.com/Clare-Nie/MemOnce",
+      "section": "MemOnce 把长上下文缓存改为按需重建"
+    },
+    {
+      "label": "适配权重",
+      "url": "https://huggingface.co/ClareNie/MemOnce",
+      "section": "MemOnce 把长上下文缓存改为按需重建"
+    },
+    {
+      "label": "NoPeWorld 论文",
+      "url": "https://arxiv.org/abs/2611.27963",
+      "section": "NoPeWorld 读取扩散模型的中间状态来拦下穿墙"
+    },
+    {
+      "label": "项目页",
+      "url": "https://nopeworld.github.io/",
+      "section": "NoPeWorld 读取扩散模型的中间状态来拦下穿墙"
+    },
+    {
+      "label": "实现",
+      "url": "https://github.com/yuhangdai427/NoPeWorld",
+      "section": "NoPeWorld 读取扩散模型的中间状态来拦下穿墙"
+    },
+    {
+      "label": "预测头权重",
+      "url": "https://huggingface.co/PeterDAI/NoPeWorld",
+      "section": "NoPeWorld 读取扩散模型的中间状态来拦下穿墙"
+    },
+    {
+      "label": "NoPeBench 数据",
+      "url": "https://huggingface.co/datasets/PeterDAI/NoPeBench",
+      "section": "NoPeWorld 读取扩散模型的中间状态来拦下穿墙"
+    },
+    {
+      "label": "GitHub 发行记录",
+      "url": "https://github.com/anomalyco/opencode/releases/tag/v2.4.0",
+      "section": "OpenCode 桌面版把浏览器会话与自动任务接到一起"
+    },
+    {
+      "label": "OpenCode 更新日志",
+      "url": "https://opencode.ai/changelog/v2.4.0",
+      "section": "OpenCode 桌面版把浏览器会话与自动任务接到一起"
+    },
+    {
+      "label": "AMD 验证进度",
+      "url": "https://newsroom.amd.com/news/microsoft-running-workload-validation-amd-helios-rackscale-solution/",
+      "section": "Azure 在实验室验证 AMD Helios 整柜推理"
+    },
+    {
+      "label": "Helios 整柜资料",
+      "url": "https://newsroom.amd.com/press-kits/press-kit-helios-rackscale-solution/",
+      "section": "Azure 在实验室验证 AMD Helios 整柜推理"
+    },
+    {
+      "label": "MIT 核验报告",
+      "url": "https://math.mit.edu/~drew/grh/",
+      "section": "黎曼证明的完整导出通过 Lean 官方两种内核复核"
+    },
+    {
+      "label": "默认内核日志",
+      "url": "https://math.mit.edu/~drew/grh/lean-default-kernel-tuned.log",
+      "section": "黎曼证明的完整导出通过 Lean 官方两种内核复核"
+    },
+    {
+      "label": "严格模式日志",
+      "url": "https://math.mit.edu/~drew/grh/lean-paranoid-kernel-tuned.log",
+      "section": "黎曼证明的完整导出通过 Lean 官方两种内核复核"
+    },
+    {
+      "label": "Comparator 日志",
+      "url": "https://math.mit.edu/~drew/grh/comparator-v4.33.0.log",
+      "section": "黎曼证明的完整导出通过 Lean 官方两种内核复核"
+    }
+  ]
+}
