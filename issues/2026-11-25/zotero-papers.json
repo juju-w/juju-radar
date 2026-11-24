@@ -1,0 +1,248 @@
+{
+  "issue_date": "2026-11-25",
+  "papers": [
+    {
+      "id": "2611.30207",
+      "title": "What Makes Good Data for Training Coding Agents? A Systematic Study on SWE-Gym",
+      "url": "https://arxiv.org/abs/2611.30207",
+      "pdf_url": "https://arxiv.org/pdf/2611.30207",
+      "doi": "10.48550/arXiv.2611.30207",
+      "published_date": "2026-11-23",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "代码智能体",
+        "训练数据",
+        "奖励标签",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yikai",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mai",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yunbei",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qirui",
+          "lastName": "Jin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kenan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuwen",
+          "lastName": "Jia"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jinwei",
+          "lastName": "Yao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiangyu",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jielun",
+          "lastName": "Tan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jin",
+          "lastName": "Pan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zijian",
+          "lastName": "Jin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiao",
+          "lastName": "Sun"
+        }
+      ],
+      "authors": [
+        "Zhang, Yikai",
+        "Xu, Mai",
+        "Zhang, Yunbei",
+        "Jin, Qirui",
+        "Li, Kenan",
+        "Jia, Yuwen",
+        "Yao, Jinwei",
+        "Zhang, Xiangyu",
+        "Tan, Jielun",
+        "Pan, Jin",
+        "Jin, Zijian",
+        "Sun, Xiao"
+      ],
+      "note": "AI 辅助整理。论文以执行证据复核代码训练里的奖励标签，最难任务组出现更多测试错杀。\n\n两组模型先标疑点，研究者要求给出可以实际执行的反例。确认问题后修订题面、测试或剔除任务，最后在匹配难度与数据量的条件下训练对比。\n\n同一个训练预算下，经过审计的数据在两组留出评测上分别提高了2.4和2.7个百分点。做训练数据筛选时可把高难失败拆成能力问题和判分问题。\n\n研究仅覆盖一套基座、代理框架和强化学习配方。测试检查偏向特定断言和回归，也无法保证留出集自身完全干净。\n\n重要度 8.5/10。arXiv cs.CL 24 日新论文段，按arXiv日程对应23日20:00美东（24日01:00 UTC）公告批次。初稿23日07:45:13 UTC提交，数据和博客18日已可见。\n原文 https://arxiv.org/abs/2611.30207\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-25/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.31115",
+      "title": "RUIBench: What Makes a Good Robot-Use Interface?",
+      "url": "https://arxiv.org/abs/2611.31115",
+      "pdf_url": "https://arxiv.org/pdf/2611.31115",
+      "doi": "10.48550/arXiv.2611.31115",
+      "published_date": "2026-11-23",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "具身智能",
+        "机器人接口",
+        "基准评测",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yanzhe",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhijun",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zechen",
+          "lastName": "Bai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wenzheng",
+          "lastName": "Zeng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kevin Yuchen",
+          "lastName": "Ma"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yiqi",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guoqiang",
+          "lastName": "Liang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaokang",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ke",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kevin Qinghong",
+          "lastName": "Lin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Mike Zheng",
+          "lastName": "Shou"
+        }
+      ],
+      "authors": [
+        "Chen, Yanzhe",
+        "Cao, Zhijun",
+        "Bai, Zechen",
+        "Zeng, Wenzheng",
+        "Ma, Kevin Yuchen",
+        "Lin, Yiqi",
+        "Liang, Guoqiang",
+        "Liu, Xiaokang",
+        "Sun, Ke",
+        "Lin, Kevin Qinghong",
+        "Shou, Mike Zheng"
+      ],
+      "note": "AI 辅助整理。控制相同感知和执行框架，逐一比较13种接口，发现操作抽象本身就能显著改变任务成功率。\n\n作者把逐步发命令和组合动作程序同六类动作抽象交叉。较好的接口合并能一次做完的决定，保留接触、位置等仍需闭环检查的信息。\n\n模拟中观察到同一前沿代理从45%到81%的接口差异。机器人选型和换底座之前，可以先分离测量控制抽象和结果验证的贡献。\n\n45%至81%属于论文仿真对比。真机研究只有单臂、五项任务，某些模拟中有效的接口在真机条件下排序会变。\n\n重要度 8.5/10。arXiv cs.RO 24 日新论文段核实，官方日程对应24日01:00 UTC公告批次。初稿23日17:52:55 UTC提交。\n原文 https://arxiv.org/abs/2611.31115\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-25/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.28315",
+      "title": "Stochastic climate emulation at reduced cost with ACE2.5-ERA5",
+      "url": "https://arxiv.org/abs/2611.28315",
+      "pdf_url": "https://arxiv.org/pdf/2611.28315",
+      "doi": "10.48550/arXiv.2611.28315",
+      "published_date": "2026-11-20",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "气候模拟",
+        "集合预报",
+        "AI for Science",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Jeremy",
+          "lastName": "McGibbon"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Troy",
+          "lastName": "Arcomano"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Spencer K.",
+          "lastName": "Clark"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "James P. C.",
+          "lastName": "Duncan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Brian",
+          "lastName": "Henn"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Oliver",
+          "lastName": "Watt-Meyer"
+        }
+      ],
+      "authors": [
+        "McGibbon, Jeremy",
+        "Arcomano, Troy",
+        "Clark, Spencer K.",
+        "Duncan, James P. C.",
+        "Henn, Brian",
+        "Watt-Meyer, Oliver"
+      ],
+      "note": "AI 辅助整理。Ai2新论文报告气候模拟中更接近参考再分析数据的小尺度降水频谱，并在模型更小的条件下给出多个分辨率的工件。\n\n在网络中注入随机性，训练同时看地点上的概率分布和空间频谱的误差。再缩减频谱算子的参数并改变日尺度版本的预测步长。\n\n同一初始条件可以抽样多条天气轨迹，保留更多小尺度变化。论文的日尺度版本让做长期模拟和集合实验的团队有可复核的成本选项。\n\n频谱改善只比较所报的波数段，不能代替长时标的不确定性校准。论文说两代模型的全球平均地表气温年际波动都未校准。\n\n重要度 8.5/10。arXiv physics.ao-ph 24 日新论文段核实，官方日程对应24日01:00 UTC公开批次。初稿20日21:06:14 UTC提交，现有公开检查点可追溯到19日。\n原文 https://arxiv.org/abs/2611.28315\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-25/",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

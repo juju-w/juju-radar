@@ -1,0 +1,74 @@
+{
+  "sources": [
+    {
+      "label": "商汤发布公告",
+      "url": "https://www.sensetime.com/cn/news/sensenova-u1-6-open-source-20261124-1152",
+      "section": "SenseNova U1.6 让图像模型检查并重画文字"
+    },
+    {
+      "label": "开放权重",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.6-8B-MoT",
+      "section": "SenseNova U1.6 让图像模型检查并重画文字"
+    },
+    {
+      "label": "自修正实例",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1/blob/main/docs/u1.6_showcases.md",
+      "section": "SenseNova U1.6 让图像模型检查并重画文字"
+    },
+    {
+      "label": "适配器",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.6-8B-MoT-LoRAs",
+      "section": "SenseNova U1.6 让图像模型检查并重画文字"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.30207",
+      "section": "SWE-Gym 审计发现难题中的测试会误判正确补丁"
+    },
+    {
+      "label": "审计代码",
+      "url": "https://github.com/Arist12/SWE-Gym-Verified",
+      "section": "SWE-Gym 审计发现难题中的测试会误判正确补丁"
+    },
+    {
+      "label": "数据集",
+      "url": "https://huggingface.co/datasets/Arist12/SWE-Gym-Verified",
+      "section": "SWE-Gym 审计发现难题中的测试会误判正确补丁"
+    },
+    {
+      "label": "作者说明",
+      "url": "https://arist12.github.io/writing/swe-gym-verified/",
+      "section": "SWE-Gym 审计发现难题中的测试会误判正确补丁"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.31115",
+      "section": "RUIBench 只换操作接口，机器人成功率就变了"
+    },
+    {
+      "label": "项目页",
+      "url": "https://showlab.github.io/RUIBench/",
+      "section": "RUIBench 只换操作接口，机器人成功率就变了"
+    },
+    {
+      "label": "代码仓库",
+      "url": "https://github.com/showlab/RUIBench",
+      "section": "RUIBench 只换操作接口，机器人成功率就变了"
+    },
+    {
+      "label": "论文",
+      "url": "https://arxiv.org/abs/2611.28315",
+      "section": "ACE2.5-ERA5 用随机集合保留降水的小尺度结构"
+    },
+    {
+      "label": "模型检查点",
+      "url": "https://huggingface.co/allenai/ACE2.5-ERA5",
+      "section": "ACE2.5-ERA5 用随机集合保留降水的小尺度结构"
+    },
+    {
+      "label": "ACE 运行时",
+      "url": "https://github.com/ai2cm/ace",
+      "section": "ACE2.5-ERA5 用随机集合保留降水的小尺度结构"
+    }
+  ]
+}

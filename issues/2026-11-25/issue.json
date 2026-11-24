@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-25",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "sense-u16-revise",
+      "title": "SenseNova U1.6 让图像模型检查并重画文字",
+      "category": "视觉视频 / 图像生成",
+      "score": 9,
+      "url": "https://www.sensetime.com/cn/news/sensenova-u1-6-open-source-20261124-1152",
+      "related_urls": [
+        "https://huggingface.co/sensenova/SenseNova-U1.6-8B-MoT",
+        "https://github.com/OpenSenseNova/SenseNova-U1/blob/main/docs/u1.6_showcases.md",
+        "https://huggingface.co/sensenova/SenseNova-U1.6-8B-MoT-LoRAs"
+      ],
+      "event_time": "2026-11-24T03:52:24.504Z",
+      "published_at": "2026-11-24T03:52:24.504Z",
+      "key_claims": [
+        "商汤正式发布原生图像自修正能力，开放版模型在匹配运行时中可生成、检查和修改同一张图。"
+      ],
+      "reason": "信息图制作可以直接针对漏字、错拼和编号错误返工，输出仍可按首稿和二次结果分别验收。",
+      "window_uncertain": false,
+      "window_status": "within_window"
+    },
+    {
+      "id": "swe-gym-audit",
+      "title": "SWE-Gym 审计发现难题中的测试会误判正确补丁",
+      "category": "Agent / 训练数据",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.30207",
+      "related_urls": [
+        "https://github.com/Arist12/SWE-Gym-Verified",
+        "https://huggingface.co/datasets/Arist12/SWE-Gym-Verified",
+        "https://arist12.github.io/writing/swe-gym-verified/"
+      ],
+      "event_time": "2026-11-24",
+      "published_at": "2026-11-24",
+      "key_claims": [
+        "论文以执行证据复核代码训练里的奖励标签，最难任务组出现更多测试错杀。"
+      ],
+      "reason": "同一个训练预算下，经过审计的数据在两组留出评测上分别提高了2.4和2.7个百分点。做训练数据筛选时可把高难失败拆成能力问题和判分问题。",
+      "window_uncertain": false,
+      "window_status": "within_window_corroborated",
+      "arxiv_submitted_at": "2026-11-23T07:45:13+00:00",
+      "community_featured_on": "2026-11-24"
+    },
+    {
+      "id": "ruibench-interface",
+      "title": "RUIBench 只换操作接口，机器人成功率就变了",
+      "category": "机器人 / 具身评测",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.31115",
+      "related_urls": [
+        "https://showlab.github.io/RUIBench/",
+        "https://github.com/showlab/RUIBench"
+      ],
+      "event_time": "2026-11-24",
+      "published_at": "2026-11-24",
+      "key_claims": [
+        "控制相同感知和执行框架，逐一比较13种接口，发现操作抽象本身就能显著改变任务成功率。"
+      ],
+      "reason": "模拟中观察到同一前沿代理从45%到81%的接口差异。机器人选型和换底座之前，可以先分离测量控制抽象和结果验证的贡献。",
+      "window_uncertain": false,
+      "window_status": "within_window_corroborated",
+      "arxiv_submitted_at": "2026-11-23T17:52:55+00:00",
+      "community_featured_on": "2026-11-24"
+    },
+    {
+      "id": "ace25-ensembles",
+      "title": "ACE2.5-ERA5 用随机集合保留降水的小尺度结构",
+      "category": "AI for Science / 气候",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.28315",
+      "related_urls": [
+        "https://huggingface.co/allenai/ACE2.5-ERA5",
+        "https://github.com/ai2cm/ace"
+      ],
+      "event_time": "2026-11-24",
+      "published_at": "2026-11-24",
+      "key_claims": [
+        "Ai2新论文报告气候模拟中更接近参考再分析数据的小尺度降水频谱，并在模型更小的条件下给出多个分辨率的工件。"
+      ],
+      "reason": "同一初始条件可以抽样多条天气轨迹，保留更多小尺度变化。论文的日尺度版本让做长期模拟和集合实验的团队有可复核的成本选项。",
+      "window_uncertain": false,
+      "window_status": "within_window_corroborated",
+      "arxiv_submitted_at": "2026-11-20T21:06:14+00:00",
+      "community_featured_on": null
+    }
+  ]
+}
