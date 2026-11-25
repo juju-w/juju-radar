@@ -1,0 +1,267 @@
+{
+  "issue_date": "2026-11-26",
+  "papers": [
+    {
+      "id": "2611.32736",
+      "title": "Qwen-Image-HD: Autoregressive Diffusion for High Definition Image Generation",
+      "url": "https://arxiv.org/abs/2611.32736",
+      "pdf_url": "https://arxiv.org/pdf/2611.32736",
+      "doi": "10.48550/arXiv.2611.32736",
+      "published_date": "2026-11-24",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "图像生成",
+        "扩散模型",
+        "高分辨率",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Zihao",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zekai",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shengming",
+          "lastName": "Yin"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zikai",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Donghao",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenyang",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lihan",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ningyuan",
+          "lastName": "Tang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bingxuan",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yanran",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yan",
+          "lastName": "Shu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhening",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiahao",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jie",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kaiyuan",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kun",
+          "lastName": "Yan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Qihang",
+          "lastName": "Ai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rui",
+          "lastName": "Song"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shuo",
+          "lastName": "Cao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiao",
+          "lastName": "Xu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoyue",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuxiang",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhendong",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhouyang",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bo",
+          "lastName": "Zheng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jun",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiu",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chenfei",
+          "lastName": "Wu"
+        }
+      ],
+      "authors": [
+        "Liu, Zihao",
+        "Zhang, Zekai",
+        "Yin, Shengming",
+        "Zhou, Zikai",
+        "Zhou, Donghao",
+        "Zhu, Chenyang",
+        "Jiang, Lihan",
+        "Tang, Ningyuan",
+        "Zhao, Bingxuan",
+        "Zhang, Yanran",
+        "Shu, Yan",
+        "Liu, Zhening",
+        "Li, Jiahao",
+        "Zhang, Jie",
+        "Gao, Kaiyuan",
+        "Yan, Kun",
+        "Ai, Qihang",
+        "Song, Rui",
+        "Cao, Shuo",
+        "Xu, Xiao",
+        "Chen, Xiaoyue",
+        "Chen, Yuxiang",
+        "Wang, Zhendong",
+        "Li, Zhouyang",
+        "Zheng, Bo",
+        "Zhou, Jun",
+        "Li, Xiu",
+        "Wu, Chenfei"
+      ],
+      "note": "AI 辅助整理。Qwen-Image-HD用局部训练适配Qwen-Image 2.0，4K对照中以更少训练算力得到更少重复条纹，且保留跨区构图。 \n\n逐块合成时同时输入上方、左侧的高清边缘和已完成画面的低清缩略图，三者共享画布坐标，兼顾接缝和构图。 \n\n在同基座对照中，作者报告局部训练方案累计使用966 GPU小时，整图微调对照为4426 GPU小时。并行波前缩短了按图等待的时间。 \n\n训练步数不同，测得的是完整方案的成本。四卡优化波前平均139秒，逐块串行四卡为166秒，但综合质量评分从59.44降至58.52。尚未核实HD专用权重公开。 \n\n重要度 9/10。arXiv cs.CV 25日新论文对应24日20:00美东、25日01:00 UTC公告批次。初稿24日14:52:10 UTC提交。\n原文 https://arxiv.org/abs/2611.32736\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-26/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.33010",
+      "title": "Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies",
+      "url": "https://arxiv.org/abs/2611.33010",
+      "pdf_url": "https://arxiv.org/pdf/2611.33010",
+      "doi": "10.48550/arXiv.2611.33010",
+      "published_date": "2026-11-24",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "具身智能",
+        "真机评测",
+        "镜面反射",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Xuanchen",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hejun",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Boxuan",
+          "lastName": "Dong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ying",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Heshuai",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Wen",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yonghong",
+          "lastName": "Tian"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Weihao",
+          "lastName": "Yu"
+        }
+      ],
+      "authors": [
+        "Liu, Xuanchen",
+        "Zhang, Hejun",
+        "Dong, Boxuan",
+        "Wu, Ying",
+        "Li, Heshuai",
+        "Gao, Wen",
+        "Tian, Yonghong",
+        "Yu, Weihao"
+      ],
+      "note": "AI 辅助整理。北大RoboDojo-Mirror把同一操作策略放进有镜和无镜场景，另用形状相同的不反光面板对照。 \n\n反射会在画面中额外生成看似可抓取的目标，也会改变真实物体的视觉轮廓。轨迹显示部分策略向倒影伸手或错误定位实物。 \n\n纳入反光对照能让桌面操作评测提前发现换工作台或遇到玻璃隔板后出现的误抓，压力测试可以保持任务与权重固定。 \n\n50%至88%是按受测策略分别计算、无记录面板接触的镜面特有失败比例。真机为一台Franka、两种策略、四项任务，范围有限。 \n\n重要度 8.5/10。arXiv cs.CV 25日新论文对应24日20:00美东、25日01:00 UTC公告批次。初稿24日17:32:00 UTC提交。\n原文 https://arxiv.org/abs/2611.33010\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-26/",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

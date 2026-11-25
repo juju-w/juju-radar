@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-26",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "qwen-image-hd",
+      "title": "Qwen-Image-HD 把 4K 画布拆成 16 块",
+      "category": "视觉视频 / 图像生成",
+      "score": 9,
+      "url": "https://arxiv.org/abs/2611.32736",
+      "related_urls": [
+        "https://arxiv.org/pdf/2611.32736"
+      ],
+      "event_time": "2026-11-25",
+      "published_at": "2026-11-25",
+      "key_claims": [
+        "Qwen-Image-HD用局部训练适配Qwen-Image 2.0，4K对照中以更少训练算力得到更少重复条纹，且保留跨区构图。 "
+      ],
+      "reason": "在同基座对照中，作者报告局部训练方案累计使用966 GPU小时，整图微调对照为4426 GPU小时。并行波前缩短了按图等待的时间。 ",
+      "window_uncertain": false,
+      "window_status": "within_window_corroborated",
+      "arxiv_submitted_at": "2026-11-24T14:52:10+00:00",
+      "community_featured_on": "2026-11-25"
+    },
+    {
+      "id": "robodojo-mirror",
+      "title": "一面镜子就能拉低机器人的操作成功率",
+      "category": "机器人 / 具身评测",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.33010",
+      "related_urls": [
+        "https://github.com/iPPLab/robodojo-mirror",
+        "https://arxiv.org/pdf/2611.33010"
+      ],
+      "event_time": "2026-11-25",
+      "published_at": "2026-11-25",
+      "key_claims": [
+        "北大RoboDojo-Mirror把同一操作策略放进有镜和无镜场景，另用形状相同的不反光面板对照。 "
+      ],
+      "reason": "纳入反光对照能让桌面操作评测提前发现换工作台或遇到玻璃隔板后出现的误抓，压力测试可以保持任务与权重固定。 ",
+      "window_uncertain": false,
+      "window_status": "within_window_corroborated",
+      "arxiv_submitted_at": "2026-11-24T17:32:00+00:00",
+      "community_featured_on": "2026-11-25"
+    },
+    {
+      "id": "inkling-single-gpu",
+      "title": "Inkling 2 Mini 在单张 RTX PRO 6000 上测到 190.6 token/s",
+      "category": "芯片算力 / 推理",
+      "score": 8.5,
+      "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+      "related_urls": [
+        "https://github.com/NielsRogge/inkling-2-mini-hillclimb",
+        "https://thinkingmachines.ai/news/inkling-2-mini/"
+      ],
+      "event_time": "2026-11-25T00:00:00.777Z",
+      "published_at": "2026-11-25T00:00:00.777Z",
+      "key_claims": [
+        "Hugging Face工程团队公开单卡Blackwell工作站的46次有效推理对照，并留下可检查的配置、脚本和日志。 "
+      ],
+      "reason": "在所报设置下，单用户136到190.6 token每秒，8用户合计约570到716；验证性能时可分别拆出运行时和投机解码的增益。 ",
+      "window_uncertain": false,
+      "window_status": "within_window"
+    }
+  ]
+}

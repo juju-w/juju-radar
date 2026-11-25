@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "label": "论文摘要",
+      "url": "https://arxiv.org/abs/2611.32736",
+      "section": "Qwen-Image-HD 把 4K 画布拆成 16 块"
+    },
+    {
+      "label": "论文全文与表 3、表 4",
+      "url": "https://arxiv.org/pdf/2611.32736",
+      "section": "Qwen-Image-HD 把 4K 画布拆成 16 块"
+    },
+    {
+      "label": "论文摘要",
+      "url": "https://arxiv.org/abs/2611.33010",
+      "section": "一面镜子就能拉低机器人的操作成功率"
+    },
+    {
+      "label": "评测代码",
+      "url": "https://github.com/iPPLab/robodojo-mirror",
+      "section": "一面镜子就能拉低机器人的操作成功率"
+    },
+    {
+      "label": "论文全文与真机结果",
+      "url": "https://arxiv.org/pdf/2611.33010",
+      "section": "一面镜子就能拉低机器人的操作成功率"
+    },
+    {
+      "label": "Hugging Face 实测",
+      "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+      "section": "Inkling 2 Mini 在单张 RTX PRO 6000 上测到 190.6 token/s"
+    },
+    {
+      "label": "脚本和原始日志",
+      "url": "https://github.com/NielsRogge/inkling-2-mini-hillclimb",
+      "section": "Inkling 2 Mini 在单张 RTX PRO 6000 上测到 190.6 token/s"
+    },
+    {
+      "label": "底座模型说明",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "section": "Inkling 2 Mini 在单张 RTX PRO 6000 上测到 190.6 token/s"
+    }
+  ]
+}
