@@ -1,0 +1,254 @@
+{
+  "issue_date": "2026-11-27",
+  "papers": [
+    {
+      "id": "2611.33966",
+      "title": "PatternMiner: Automated Mathematical Discovery Through LLM-Guided Training and Interpretation of Small Models",
+      "url": "https://arxiv.org/abs/2611.33966",
+      "pdf_url": "https://arxiv.org/pdf/2611.33966",
+      "doi": "10.48550/arXiv.2611.33966",
+      "published_date": "2026-11-25",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "代数组合",
+        "数学猜想",
+        "反例搜索",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Michael Ruofan",
+          "lastName": "Zeng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Junaid",
+          "lastName": "Hasan"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xuanyu",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Emily Xia",
+          "lastName": "Meng"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Henry",
+          "lastName": "Kvinge"
+        }
+      ],
+      "authors": [
+        "Zeng, Michael Ruofan",
+        "Hasan, Junaid",
+        "Yang, Xuanyu",
+        "Meng, Emily Xia",
+        "Kvinge, Henry"
+      ],
+      "note": "AI 辅助整理。华盛顿大学和PNNL研究者报告在代数组合的开放问题中，用窄模型的可解释结果提出具体猜想，并区分有限搜索和证明。 \n\n语言模型生成算例和训练任务，解释小模型学到的条件，再用数学软件搜反例。反例进入新一轮训练或缩小猜想范围。 \n\n一例用递归构造证明固定保留若干维度的投影测试不能判定所有零系数。研究者可查附录推导和实验记录。 \n\n只评估代数组合的五个问题，作者记录了关键的人类改向。有限算例支持猜想检验，不能替代一般证明；尚未做独立复核。 \n\n重要度 9/10。arXiv cs.AI 26日新论文批次，按周三20:00美东为26日01:00 UTC。25日08:30:13 UTC提交；仓库创建在24日，不当作当前新开源。\n原文 https://arxiv.org/abs/2611.33966\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-27/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.34849",
+      "title": "Real2SimLab: A Unified Platform for Real-to-Simulation Transfer",
+      "url": "https://arxiv.org/abs/2611.34849",
+      "pdf_url": "https://arxiv.org/pdf/2611.34849",
+      "doi": "10.48550/arXiv.2611.34849",
+      "published_date": "2026-11-25",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "机器人仿真",
+        "可执行评测",
+        "代码智能体",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yongchang",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jie",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yunhe",
+          "lastName": "Ni"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ningyu",
+          "lastName": "Zhou"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Guangyu",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ruixun",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Rui",
+          "lastName": "Huang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yidi",
+          "lastName": "Wu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "TianZe",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zixiang",
+          "lastName": "Jiang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiang",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Kevin",
+          "lastName": "Shen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yiwu",
+          "lastName": "Zhong"
+        }
+      ],
+      "authors": [
+        "Zhang, Yongchang",
+        "Huang, Jie",
+        "Ni, Yunhe",
+        "Zhou, Ningyu",
+        "Zhao, Guangyu",
+        "Liu, Ruixun",
+        "Huang, Rui",
+        "Wu, Yidi",
+        "Zhang, TianZe",
+        "Jiang, Zixiang",
+        "Li, Xiang",
+        "Shen, Kevin",
+        "Zhong, Yiwu"
+      ],
+      "note": "AI 辅助整理。北大等团队把编码代理和不同仿真基准接入可执行评测，统一输入与结果记录的接口。 \n\n系统冻结代理提交的仿真程序，独立重跑，用对应基准的原评分器比较输出。另有轨迹重建评分，可用静止场景作参照。 \n\n相同方法能接入多个基准而无须为每个方法与基准组合重写一套代码；可提前比较换视角、轨迹复现等不同输出。 \n\n六项接入中五项沿用原评分，IRIS仅适配落球子集并另设轨迹评分。看似一致的可执行模拟仍可能使用不同真实物理参数。 \n\n重要度 8.5/10。arXiv cs.RO 26日新论文批次，按周三20:00美东为26日01:00 UTC。25日18:23:41 UTC提交；代码库17日已建，26日08:45 UTC有push。\n原文 https://arxiv.org/abs/2611.34849\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-27/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "2611.34912",
+      "title": "LiveVAE: Causal Window Attention Makes Efficient Streaming Video VAE",
+      "url": "https://arxiv.org/abs/2611.34912",
+      "pdf_url": "https://arxiv.org/pdf/2611.34912",
+      "doi": "10.48550/arXiv.2611.34912",
+      "published_date": "2026-11-25",
+      "date_kind": "submitted",
+      "item_type": "preprint",
+      "tags": [
+        "Juju Radar",
+        "视频编码",
+        "流式生成",
+        "模型蒸馏",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Jiachen",
+          "lastName": "An"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Sijie",
+          "lastName": "Zhao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Le",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Hongyu",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhiyuan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianyu",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoyu",
+          "lastName": "Kong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xunliang",
+          "lastName": "Cai"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yong",
+          "lastName": "Zhang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Chi-Man",
+          "lastName": "Pun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaoming",
+          "lastName": "Wei"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiaodong",
+          "lastName": "Cun"
+        }
+      ],
+      "authors": [
+        "An, Jiachen",
+        "Zhao, Sijie",
+        "Li, Le",
+        "Liu, Hongyu",
+        "Li, Zhiyuan",
+        "Yang, Tianyu",
+        "Kong, Xiaoyu",
+        "Cai, Xunliang",
+        "Zhang, Yong",
+        "Pun, Chi-Man",
+        "Wei, Xiaoming",
+        "Cun, Xiaodong"
+      ],
+      "note": "AI 辅助整理。LiveVAE分析既有视频VAE局部性的证据，用同一思路同时改善编码与解码的流式处理。 \n\n用空间局部窗口和有限的过去时间步处理片块，使缓存不会随视频时长一直增大。蒸馏保留原扩散模型使用的潜空间。 \n\nMiniMax-H3短片重建实验中，编码阶段快5.2至6.2倍，解码快3.0至3.3倍。流式编辑也能减少输入帧编码的等待。 \n\n速度是短片VAE阶段与原VAE在作者设置中的对比。部分细节发糊，H3的人物保真和物理一致性子项仍落后，仓库未见配套权重。 \n\n重要度 8.5/10。arXiv cs.CV 26日新论文批次，按周三20:00美东为26日01:00 UTC。25日18:57:14 UTC提交；项目页面及说明仓库可打开，权重待释出。\n原文 https://arxiv.org/abs/2611.34912\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-27/",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}

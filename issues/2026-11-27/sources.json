@@ -1,0 +1,109 @@
+{
+  "sources": [
+    {
+      "label": "MIT 复核记录",
+      "url": "https://math.mit.edu/~drew/shortgrh/",
+      "section": "黎曼猜想的短版 Lean 证明通过多套检查器"
+    },
+    {
+      "label": "短版固定提交",
+      "url": "https://github.com/lsernau/grh-lean/tree/72fead10",
+      "section": "黎曼猜想的短版 Lean 证明通过多套检查器"
+    },
+    {
+      "label": "误差界形式化",
+      "url": "https://github.com/AndrewVSutherland/schoenfeld-rh-lean/tree/0e52d7b1",
+      "section": "黎曼猜想的短版 Lean 证明通过多套检查器"
+    },
+    {
+      "label": "滑铁卢大学 Rubinstein 的复核记录",
+      "url": "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/",
+      "section": "黎曼猜想的短版 Lean 证明通过多套检查器"
+    },
+    {
+      "label": "英伟达训练说明",
+      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "section": "英伟达公开训练文档解析模型的三套数据"
+    },
+    {
+      "label": "图表数据",
+      "url": "https://huggingface.co/datasets/nvidia/Synthetic-Charts-V1",
+      "section": "英伟达公开训练文档解析模型的三套数据"
+    },
+    {
+      "label": "表格数据",
+      "url": "https://huggingface.co/datasets/nvidia/Synthetic-Tables-V1",
+      "section": "英伟达公开训练文档解析模型的三套数据"
+    },
+    {
+      "label": "多语言 OCR 数据",
+      "url": "https://huggingface.co/datasets/nvidia/OCR-Synthetic-Multilingual-v2",
+      "section": "英伟达公开训练文档解析模型的三套数据"
+    },
+    {
+      "label": "训练配方",
+      "url": "https://github.com/NVIDIA-NeMo/Nemotron/blob/main/docs/nemotron/parse/index.md",
+      "section": "英伟达公开训练文档解析模型的三套数据"
+    },
+    {
+      "label": "正式版本记录",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6",
+      "section": "Qwen Code 让等待审批的会话在重启后恢复"
+    },
+    {
+      "label": "暂停与恢复验收测试",
+      "url": "https://github.com/QwenLM/qwen-code/pull/18276",
+      "section": "Qwen Code 让等待审批的会话在重启后恢复"
+    },
+    {
+      "label": "后台输出捕获改动",
+      "url": "https://github.com/QwenLM/qwen-code/pull/17953",
+      "section": "Qwen Code 让等待审批的会话在重启后恢复"
+    },
+    {
+      "label": "论文摘要",
+      "url": "https://arxiv.org/abs/2611.33966",
+      "section": "PatternMiner 用小模型提线索，再用反例改写猜想"
+    },
+    {
+      "label": "论文全文与证明附录",
+      "url": "https://arxiv.org/pdf/2611.33966",
+      "section": "PatternMiner 用小模型提线索，再用反例改写猜想"
+    },
+    {
+      "label": "代码和实验记录",
+      "url": "https://github.com/uw-math-ai/PatternMiner",
+      "section": "PatternMiner 用小模型提线索，再用反例改写猜想"
+    },
+    {
+      "label": "论文摘要",
+      "url": "https://arxiv.org/abs/2611.34849",
+      "section": "Real2SimLab 把从视频写仿真的方法放到同一套评测里"
+    },
+    {
+      "label": "评测代码",
+      "url": "https://github.com/Real2SimHub/Real2SimLab",
+      "section": "Real2SimLab 把从视频写仿真的方法放到同一套评测里"
+    },
+    {
+      "label": "项目与基准说明",
+      "url": "https://real2simhub.github.io/",
+      "section": "Real2SimLab 把从视频写仿真的方法放到同一套评测里"
+    },
+    {
+      "label": "论文摘要",
+      "url": "https://arxiv.org/abs/2611.34912",
+      "section": "LiveVAE 用局部窗口同时加快视频编码和解码"
+    },
+    {
+      "label": "模型结构与展示",
+      "url": "https://livevae.github.io/",
+      "section": "LiveVAE 用局部窗口同时加快视频编码和解码"
+    },
+    {
+      "label": "项目仓库",
+      "url": "https://github.com/MeiGen-AI/LiveVAE",
+      "section": "LiveVAE 用局部窗口同时加快视频编码和解码"
+    }
+  ]
+}

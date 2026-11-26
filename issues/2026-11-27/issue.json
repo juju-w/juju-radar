@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-27",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "riemann-compact-check",
+      "title": "黎曼猜想的短版 Lean 证明通过多套检查器",
+      "category": "AI for Science / 数学",
+      "score": 9.5,
+      "url": "https://math.mit.edu/~drew/shortgrh/",
+      "related_urls": [
+        "https://github.com/lsernau/grh-lean/tree/72fead10",
+        "https://github.com/AndrewVSutherland/schoenfeld-rh-lean/tree/0e52d7b1",
+        "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/"
+      ],
+      "event_time": "2026-11-26T20:46:00Z",
+      "published_at": "2026-11-26T20:46:00Z",
+      "key_claims": [
+        "MIT的Sutherland公布对简写版五条定理的独立回放结果，并记录用紧凑版推出Schoenfeld素数误差界的机器核验。 "
+      ],
+      "reason": "紧凑版约7.6万行，让独立检查成本下降。lean4lean在同一大机器对紧凑版用约7GB，易读版用约332GB。 ",
+      "window_uncertain": false,
+      "window_status": "within_window"
+    },
+    {
+      "id": "nemotron-parse-data",
+      "title": "英伟达公开训练文档解析模型的三套数据",
+      "category": "视觉视频 / 文档理解",
+      "score": 9,
+      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "related_urls": [
+        "https://huggingface.co/datasets/nvidia/Synthetic-Charts-V1",
+        "https://huggingface.co/datasets/nvidia/Synthetic-Tables-V1",
+        "https://huggingface.co/datasets/nvidia/OCR-Synthetic-Multilingual-v2",
+        "https://github.com/NVIDIA-NeMo/Nemotron/blob/main/docs/nemotron/parse/index.md"
+      ],
+      "event_time": "2026-11-26T05:05:36.737Z",
+      "published_at": "2026-11-26T05:05:36.737Z",
+      "key_claims": [
+        "英伟达正式披露文档解析模型Parse 3.5的图表、表格与多语言OCR数据及微调配方，三套数据许可明确。 "
+      ],
+      "reason": "同条件开发检查点中，触发重复检测的页面从126降到29，达到9000词元上限的从185降到35。团队可用三套带答案数据补专业版式。 ",
+      "window_uncertain": false,
+      "window_status": "within_window"
+    },
+    {
+      "id": "qwen-code-recovery",
+      "title": "Qwen Code 让等待审批的会话在重启后恢复",
+      "category": "Agent / Coding",
+      "score": 8.5,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6",
+      "related_urls": [
+        "https://github.com/QwenLM/qwen-code/pull/18276",
+        "https://github.com/QwenLM/qwen-code/pull/17953"
+      ],
+      "event_time": "2026-11-26T05:51:04Z",
+      "published_at": "2026-11-26T05:51:04Z",
+      "key_claims": [
+        "Qwen Code v0.28.6把部分等审批、提问和后台任务的托管会话变成可暂停保存并冷恢复的状态。 "
+      ],
+      "reason": "长任务等待人决策时不必一直占用同一常驻会话，进程故障也不必让整轮从头重跑。 ",
+      "window_uncertain": false,
+      "window_status": "within_window"
+    },
+    {
+      "id": "pattern-miner",
+      "title": "PatternMiner 用小模型提线索，再用反例改写猜想",
+      "category": "AI for Science / 数学",
+      "score": 9,
+      "url": "https://arxiv.org/abs/2611.33966",
+      "related_urls": [
+        "https://arxiv.org/pdf/2611.33966",
+        "https://github.com/uw-math-ai/PatternMiner"
+      ],
+      "event_time": "2026-11-26",
+      "published_at": "2026-11-26",
+      "key_claims": [
+        "华盛顿大学和PNNL研究者报告在代数组合的开放问题中，用窄模型的可解释结果提出具体猜想，并区分有限搜索和证明。 "
+      ],
+      "reason": "一例用递归构造证明固定保留若干维度的投影测试不能判定所有零系数。研究者可查附录推导和实验记录。 ",
+      "window_uncertain": false,
+      "window_status": "within_window_corroborated",
+      "arxiv_submitted_at": "2026-11-25T08:30:13+00:00",
+      "community_featured_on": null
+    },
+    {
+      "id": "real2simlab-platform",
+      "title": "Real2SimLab 把从视频写仿真的方法放到同一套评测里",
+      "category": "机器人 / 仿真评测",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.34849",
+      "related_urls": [
+        "https://github.com/Real2SimHub/Real2SimLab",
+        "https://real2simhub.github.io/"
+      ],
+      "event_time": "2026-11-26",
+      "published_at": "2026-11-26",
+      "key_claims": [
+        "北大等团队把编码代理和不同仿真基准接入可执行评测，统一输入与结果记录的接口。 "
+      ],
+      "reason": "相同方法能接入多个基准而无须为每个方法与基准组合重写一套代码；可提前比较换视角、轨迹复现等不同输出。 ",
+      "window_uncertain": false,
+      "window_status": "within_window_corroborated",
+      "arxiv_submitted_at": "2026-11-25T18:23:41+00:00",
+      "community_featured_on": "2026-11-26"
+    },
+    {
+      "id": "livevae-streaming",
+      "title": "LiveVAE 用局部窗口同时加快视频编码和解码",
+      "category": "视觉视频 / 视频推理",
+      "score": 8.5,
+      "url": "https://arxiv.org/abs/2611.34912",
+      "related_urls": [
+        "https://livevae.github.io/",
+        "https://github.com/MeiGen-AI/LiveVAE"
+      ],
+      "event_time": "2026-11-26",
+      "published_at": "2026-11-26",
+      "key_claims": [
+        "LiveVAE分析既有视频VAE局部性的证据，用同一思路同时改善编码与解码的流式处理。 "
+      ],
+      "reason": "MiniMax-H3短片重建实验中，编码阶段快5.2至6.2倍，解码快3.0至3.3倍。流式编辑也能减少输入帧编码的等待。 ",
+      "window_uncertain": false,
+      "window_status": "within_window_corroborated",
+      "arxiv_submitted_at": "2026-11-25T18:57:14+00:00",
+      "community_featured_on": "2026-11-26"
+    }
+  ]
+}
