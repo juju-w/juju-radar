@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-28",
+  "kind": "daily",
+  "sources": [
+    {
+      "id": "lingbot-memory",
+      "title": "LingBot 把地图纠偏写回记忆，导航能接着用",
+      "category": "机器人 / 地图与导航",
+      "score": 9.5,
+      "url": "https://via.tt.se/pressmeddelande/4660319/robbyant-open-sources-lingbot-map-20-and-lingbot-navi-enabling-long-term-spatial-memory-and-autonomous-navigation-for-robots?lang=en&publisherId=259167",
+      "related_urls": [
+        "https://github.com/Robbyant/lingbot-map-v2/blob/main/docs/lingbot-map-v2_paper.pdf",
+        "https://github.com/Robbyant/lingbot-navi/blob/main/tech_report/Scene-aware%20Navigation%20with%20Spatial%20Memory.pdf",
+        "https://github.com/Robbyant/lingbot-map-v2",
+        "https://huggingface.co/robbyant/lingbot-navi",
+        "https://huggingface.co/datasets/robbyant/LingBot-Navi"
+      ],
+      "event_time": "2026-11-27T08:10:00Z",
+      "published_at": "2026-11-27T08:10:00Z",
+      "key_claims": [
+        "蚂蚁灵波的正式发布把两项模型放进同一套评估，公开了重算历史关键帧后更新空间记忆以及替换地图模型的受控数字。"
+      ],
+      "reason": "VBR轨迹误差从1.0基线31.12米降到2.0纯流式17.01米和开启纠偏4.72米。无需重训Navi，替换地图模型也能改善两套评估下的导航成功率。",
+      "window_uncertain": false,
+      "window_status": "within_window"
+    },
+    {
+      "id": "kvae-latent",
+      "title": "KVAE 3.0 压小视频表示，并保留供生成模型使用的线索",
+      "category": "视觉视频 / 多模态编码",
+      "score": 8.5,
+      "url": "https://huggingface.co/blog/kandinskylab/kvae-3",
+      "related_urls": [
+        "https://huggingface.co/kandinskylab/KVAE-3D-3.0",
+        "https://github.com/kandinskylab/kvae",
+        "https://huggingface.co/collections/kandinskylab/kvae-30"
+      ],
+      "event_time": "2026-11-27T13:32:51.034Z",
+      "published_at": "2026-11-27T13:32:51.034Z",
+      "key_claims": [
+        "Kandinsky Lab在27日上传新版图像和视频权重并发布三种模态的技术对照；音频权重在26日已经可见。"
+      ],
+      "reason": "按表示元素数计算，新版视频潜空间约为上一版一半，相应生成管线可以用更细的潜空间分块；音频版用共享表示同时编码左右声道。",
+      "window_uncertain": false,
+      "window_status": "within_window"
+    },
+    {
+      "id": "xpeng-iron-guangzhou",
+      "title": "小鹏让八台 IRON 上展台，香港研发中心正式成立",
+      "category": "公司战略 / 具身部署",
+      "score": 8,
+      "url": "https://www.xiaopeng.com/news/company_news/5627.html",
+      "related_urls": [],
+      "event_time": "2026-11-27T07:27:00Z",
+      "published_at": "2026-11-27T07:27:00Z",
+      "key_claims": [
+        "小鹏在广州车展披露8台IRON在单一公开场地承担导览等任务，同时明确香港中心职能和海外部署计划。"
+      ],
+      "reason": "可观察的交付变成机器人能否完成重复服务并报告异常，为同场多台机器人运营提供考察场景。公司将海外部署放在2027年下半年。",
+      "window_uncertain": false,
+      "window_status": "within_window"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "issue_date": "2026-11-28",
+  "papers": [
+    {
+      "id": "lingbot-map-2-report",
+      "title": "Reconsolidatable Streaming 3D Reconstruction",
+      "url": "https://github.com/Robbyant/lingbot-map-v2/blob/main/docs/lingbot-map-v2_paper.pdf",
+      "pdf_url": "https://raw.githubusercontent.com/Robbyant/lingbot-map-v2/main/docs/lingbot-map-v2_paper.pdf",
+      "doi": null,
+      "published_date": "2026-11-27",
+      "item_type": "report",
+      "publicationTitle": "Robbyant",
+      "tags": [
+        "Juju Radar",
+        "三维重建",
+        "具身智能",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Yihang",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lin-Zhuo",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jian",
+          "lastName": "Gao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiacheng",
+          "lastName": "Dong"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yao",
+          "lastName": "Yao"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Nan",
+          "lastName": "Xue"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xing",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yujun",
+          "lastName": "Shen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yinghao",
+          "lastName": "Xu"
+        }
+      ],
+      "authors": [
+        "Chen, Yihang",
+        "Chen, Lin-Zhuo",
+        "Gao, Jian",
+        "Dong, Jiacheng",
+        "Yao, Yao",
+        "Xue, Nan",
+        "Zhu, Xing",
+        "Shen, Yujun",
+        "Xu, Yinghao"
+      ],
+      "note": "AI 辅助整理。报告阐述只重算高层关键帧并改写空间缓存。VBR的4.72米对应GCR条件，当前公开的因果流式基座参照为17.01米。完整GCR权重未核到。\n\n与另一份报告一起理解地图与导航的接口。记录的是模型方实验设置及正式发布。技术文件在发稿前已可见，归档按成套联合公告记录日期。\n\n原文 https://github.com/Robbyant/lingbot-map-v2/blob/main/docs/lingbot-map-v2_paper.pdf\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-28/",
+      "evidence_status": "primary_verified"
+    },
+    {
+      "id": "lingbot-navi-report",
+      "title": "Scene-aware Navigation with Spatial Memory",
+      "url": "https://github.com/Robbyant/lingbot-navi/blob/main/tech_report/Scene-aware%20Navigation%20with%20Spatial%20Memory.pdf",
+      "pdf_url": "https://raw.githubusercontent.com/Robbyant/lingbot-navi/main/tech_report/Scene-aware%20Navigation%20with%20Spatial%20Memory.pdf",
+      "doi": null,
+      "published_date": "2026-11-27",
+      "item_type": "report",
+      "publicationTitle": "Robbyant",
+      "tags": [
+        "Juju Radar",
+        "机器人导航",
+        "具身智能",
+        "待阅读"
+      ],
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "Huanhang",
+          "lastName": "Hu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xiao",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Lingyuan",
+          "lastName": "Yang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tong",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Tianlong",
+          "lastName": "Sun"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jie",
+          "lastName": "Ding"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Bo",
+          "lastName": "Chen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Ge",
+          "lastName": "Mu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zhenhang",
+          "lastName": "Guo"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yuzheng",
+          "lastName": "Liu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Jiawei",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zixuan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Zihan",
+          "lastName": "Wang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Shizhe",
+          "lastName": "Zang"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xing",
+          "lastName": "Zhu"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yujun",
+          "lastName": "Shen"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Yangyan",
+          "lastName": "Li"
+        },
+        {
+          "creatorType": "author",
+          "firstName": "Xinghe",
+          "lastName": "Li"
+        }
+      ],
+      "authors": [
+        "Hu, Huanhang",
+        "Li, Xiao",
+        "Yang, Lingyuan",
+        "Wang, Tong",
+        "Sun, Tianlong",
+        "Ding, Jie",
+        "Chen, Bo",
+        "Mu, Ge",
+        "Guo, Zhenhang",
+        "Liu, Yuzheng",
+        "Wang, Jiawei",
+        "Wang, Zixuan",
+        "Wang, Zihan",
+        "Zang, Shizhe",
+        "Zhu, Xing",
+        "Shen, Yujun",
+        "Li, Yangyan",
+        "Li, Xinghe"
+      ],
+      "note": "AI 辅助整理。语义特征附在点云上，便于目标检索、视点定位和轨迹预测。GOAT-Bench的模拟器代执行与端到端配置分开。更换地图模型的成功率变化来自两组官方评估。\n\n与另一份报告一起理解地图与导航的接口。记录的是模型方实验设置及正式发布。技术文件在发稿前已可见，归档按成套联合公告记录日期。\n\n原文 https://github.com/Robbyant/lingbot-navi/blob/main/tech_report/Scene-aware%20Navigation%20with%20Spatial%20Memory.pdf\n当期资料页 https://www.asteronline.cn/juju-radar/2026-11-28/",
+      "evidence_status": "primary_verified"
+    }
+  ]
+}
